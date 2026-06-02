@@ -3,6 +3,334 @@
 @section('title', 'Textarea')
 
 @push('styles')
+<style>
+/* ============================================
+   START: Textarea Component Styles
+   ============================================ */
+
+/* Textarea Grid */
+.textarea-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.textarea-grid.three-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.textarea-grid.full-width {
+    grid-template-columns: 1fr;
+}
+
+/* Section Title */
+.ta-section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 32px 0 16px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.ta-section-title i {
+    color: var(--accent);
+    font-size: 20px;
+}
+
+/* Textarea Control */
+.textarea-control {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    line-height: 1.6;
+    transition: all 0.2s;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    resize: vertical;
+    overflow-y: auto;
+}
+
+.textarea-control:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.1);
+}
+
+.textarea-control::placeholder {
+    color: var(--text-tertiary);
+}
+
+/* Size Variants */
+.textarea-sm {
+    min-height: 60px;
+}
+
+.textarea-md {
+    min-height: 100px;
+}
+
+.textarea-lg {
+    min-height: 160px;
+}
+
+.textarea-xl {
+    min-height: 240px;
+}
+
+/* Resize Options */
+.textarea-resize-none {
+    resize: none;
+}
+
+.textarea-resize-vertical {
+    resize: vertical;
+}
+
+.textarea-resize-both {
+    resize: both;
+}
+
+/* Monospace (Code) */
+.textarea-monospace {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    background: var(--bg-secondary);
+    tab-size: 4;
+}
+
+/* Validation States */
+.textarea-control.is-valid {
+    border-color: var(--success);
+}
+
+.textarea-control.is-valid:focus {
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.textarea-control.is-invalid {
+    border-color: var(--danger);
+}
+
+.textarea-control.is-invalid:focus {
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+/* Disabled & Read-only */
+.textarea-control:disabled {
+    background: var(--bg-secondary);
+    color: var(--text-tertiary);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.textarea-control[readonly] {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    cursor: text;
+}
+
+/* With Toolbar */
+.textarea-with-toolbar {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* Character Counter */
+.char-counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+.char-count {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.char-counter.warning .char-count {
+    color: var(--warning);
+}
+
+.char-counter.danger .char-count {
+    color: var(--danger);
+}
+
+.char-counter.warning {
+    color: var(--warning);
+}
+
+.char-counter.danger {
+    color: var(--danger);
+}
+
+/* Rich Text Toolbar */
+.rich-text-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.rich-text-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+    font-size: 14px;
+}
+
+.rich-text-btn:hover {
+    background: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+.rich-text-btn.active {
+    background: var(--accent-bg);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.rich-text-divider {
+    width: 1px;
+    height: 24px;
+    background: var(--border-color);
+    margin: 0 4px;
+}
+
+/* Labels & Hints */
+.ta-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.ta-hint {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--text-tertiary);
+    margin-left: 4px;
+}
+
+.ta-helper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    padding: 8px 0;
+}
+
+.ta-helper i {
+    font-size: 14px;
+    color: var(--accent);
+}
+
+/* Feature List */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.feature-list li i {
+    color: var(--success);
+    font-size: 14px;
+}
+
+/* Code Block */
+.code-block {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 12px;
+    overflow-x: auto;
+}
+
+.code-block code {
+    display: block;
+    line-height: 1.6;
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background: var(--border-color);
+    margin: 20px 0;
+}
+
+/* Helper Text */
+.helper-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    padding: 12px;
+    background: var(--bg-secondary);
+    border-radius: 6px;
+}
+
+.helper-text i {
+    color: var(--info);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .textarea-grid.three-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .textarea-grid,
+    .textarea-grid.three-cols {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
+   END: Textarea Component Styles
+   ============================================ */
+</style>
 @endpush
 
 @section('content')
@@ -786,3 +1114,255 @@ console.log(greet('World'));</textarea>
     </div>
 </div>
 @endsection
+
+@push('scripts')
+<script>
+$(document).ready(function() {
+    // Character counter functionality
+    $('textarea[maxlength]').each(function() {
+        const $textarea = $(this);
+        const $example = $textarea.closest('.ta-example');
+        const $counter = $example.find('.char-counter');
+        const maxlength = parseInt($textarea.attr('maxlength'));
+        
+        function updateCounter() {
+            const length = $textarea.val().length;
+            const remaining = maxlength - length;
+            
+            // Update counter text
+            $counter.find('.char-count').text(length + ' / ' + maxlength);
+            
+            // Update counter color based on usage
+            $counter.removeClass('warning danger');
+            
+            if (remaining <= 5) {
+                $counter.addClass('danger');
+                $counter.find('span:first').html('🚨 Limit reached!');
+            } else if (remaining <= maxlength * 0.2) {
+                $counter.addClass('warning');
+                $counter.find('span:first').html('⚠️ Approaching limit');
+            } else {
+                $counter.find('span:first').text('Characters used');
+            }
+        }
+        
+        // Initial update
+        updateCounter();
+        
+        // Update on input
+        $textarea.on('input', updateCounter);
+    });
+    
+    // Word and line counter
+    $('.ta-example').each(function() {
+        const $example = $(this);
+        const $textarea = $example.find('textarea');
+        const $counter = $example.find('.char-counter');
+        
+        // Check if this is a word/line counter (has "Words:" in the counter)
+        if ($counter.length && $counter.find('span:first').text().includes('Words:')) {
+            function updateWordLineCount() {
+                const text = $textarea.val().trim();
+                const chars = $textarea.val().length;
+                const words = text ? text.split(/\s+/).length : 0;
+                const lines = text ? text.split('\n').length : 0;
+                
+                $counter.find('span:first').text(`Words: ${words} | Lines: ${lines}`);
+                $counter.find('.char-count').text(chars + ' chars');
+            }
+            
+            // Initial update
+            updateWordLineCount();
+            
+            // Update on input
+            $textarea.on('input', updateWordLineCount);
+        }
+    });
+    
+    // Auto-resize textarea (optional enhancement)
+    $('textarea').on('input', function() {
+        // Only auto-resize if it has a specific class or data attribute
+        if ($(this).hasClass('textarea-auto-resize')) {
+            $(this).css('height', 'auto');
+            $(this).css('height', $(this)[0].scrollHeight + 'px');
+        }
+    });
+    
+    // Tab key support for code textareas
+    $('textarea.textarea-monospace').on('keydown', function(e) {
+        if (e.key === 'Tab') {
+            e.preventDefault();
+            
+            const start = this.selectionStart;
+            const end = this.selectionEnd;
+            const value = $(this).val();
+            
+            // Insert 4 spaces
+            $(this).val(value.substring(0, start) + '    ' + value.substring(end));
+            
+            // Move cursor
+            this.selectionStart = this.selectionEnd = start + 4;
+            
+            // Trigger input event
+            $(this).trigger('input');
+        }
+    });
+    
+    // Rich text toolbar buttons (visual only)
+    $('.rich-text-btn').on('click', function(e) {
+        e.preventDefault();
+        
+        // Toggle active state
+        $(this).toggleClass('active');
+        
+        // Show feedback
+        const title = $(this).attr('title');
+        if (title) {
+            Swal.fire({
+                toast: true,
+                position: 'top-end',
+                icon: 'info',
+                title: title + ' toggled',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+    });
+    
+    // Contact form submission
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+        
+        const $form = $(this);
+        const formData = {};
+        
+        // Collect form data
+        $form.find('input[type="text"], input[type="email"], textarea').each(function() {
+            const $input = $(this);
+            const label = $input.closest('.ta-example').find('.ta-label').text().replace(' *', '').trim();
+            const value = $input.val().trim();
+            
+            if (value) {
+                formData[label] = value;
+            }
+        });
+        
+        // Validate required fields
+        const requiredFields = ['Full Name', 'Email', 'Subject', 'Message'];
+        const missingFields = requiredFields.filter(field => !formData[field]);
+        
+        if (missingFields.length > 0) {
+            Swal.fire({
+                toast: true,
+                position: 'top-end',
+                icon: 'warning',
+                title: 'Please fill in: ' + missingFields.join(', '),
+                showConfirmButton: false,
+                timer: 3000
+            });
+            
+            // Focus first missing field
+            const firstMissing = missingFields[0];
+            $form.find('.ta-label').each(function() {
+                if ($(this).text().includes(firstMissing)) {
+                    $(this).closest('.ta-example').find('input, textarea').first().focus();
+                    return false;
+                }
+            });
+            return;
+        }
+        
+        // Validate message length (min 50 chars)
+        if (formData['Message'] && formData['Message'].length < 50) {
+            Swal.fire({
+                toast: true,
+                position: 'top-end',
+                icon: 'warning',
+                title: 'Message must be at least 50 characters',
+                showConfirmButton: false,
+                timer: 2500
+            });
+            $form.find('textarea').focus();
+            return;
+        }
+        
+        // Show success message
+        Swal.fire({
+            icon: 'success',
+            title: 'Message Sent!',
+            html: `
+                <div style="text-align: left; font-size: 13px;">
+                    <p><strong>From:</strong> ${formData['Full Name']}</p>
+                    <p><strong>Email:</strong> ${formData['Email']}</p>
+                    <p><strong>Subject:</strong> ${formData['Subject']}</p>
+                    <p><strong>Message:</strong> ${formData['Message'].substring(0, 100)}${formData['Message'].length > 100 ? '...' : ''}</p>
+                </div>
+            `,
+            confirmButtonText: 'OK',
+            confirmButtonColor: 'var(--accent)'
+        });
+        
+        console.log('Form Data:', formData);
+    });
+    
+    // Form reset
+    $('form').on('reset', function(e) {
+        e.preventDefault();
+        
+        // Clear all inputs
+        $(this).find('input, textarea').val('');
+        
+        // Reset character counters
+        $(this).find('.char-counter').each(function() {
+            const $counter = $(this);
+            $counter.removeClass('warning danger');
+            $counter.find('.char-count').text('0 / ' + ($counter.closest('.ta-example').find('textarea').attr('maxlength') || '500'));
+            
+            if ($counter.find('span:first').text().includes('Minimum')) {
+                $counter.find('span:first').text('Minimum 50 characters');
+            } else {
+                $counter.find('span:first').text('Characters used');
+            }
+        });
+        
+        // Reset word/line counters
+        $(this).find('textarea').trigger('input');
+        
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'info',
+            title: 'Form reset',
+            showConfirmButton: false,
+            timer: 1500
+        });
+    });
+    
+    // Textarea validation on blur
+    $('textarea[required]').on('blur', function() {
+        const $textarea = $(this);
+        const $example = $textarea.closest('.ta-example');
+        
+        if ($textarea.val().trim() === '') {
+            $textarea.removeClass('is-valid').addClass('is-invalid');
+            
+            // Add error message if not exists
+            if ($example.find('.ta-helper.text-error').length === 0) {
+                $example.append('<div class="ta-helper text-error" style="color: var(--danger);"><i class="fa-solid fa-circle-exclamation"></i><span>This field is required</span></div>');
+            }
+        } else {
+            $textarea.removeClass('is-invalid').addClass('is-valid');
+            
+            // Remove error message
+            $example.find('.ta-helper.text-error').remove();
+        }
+    });
+    
+    // Remove validation state on input
+    $('textarea').on('input', function() {
+        $(this).removeClass('is-invalid is-valid');
+        $(this).closest('.ta-example').find('.ta-helper.text-error').remove();
+    });
+});
+</script>
+@endpush
