@@ -3,6 +3,422 @@
 @section('title', 'Range Slider')
 
 @push('styles')
+<style>
+/* Range Slider Section Title */
+.rs-section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-primary);
+}
+
+.rs-section-title i {
+    color: var(--accent);
+}
+
+/* Range Slider Example */
+.rs-example {
+    margin-bottom: 24px;
+}
+
+.rs-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.rs-range {
+    font-size: 11px;
+    color: var(--text-tertiary);
+    font-weight: 400;
+}
+
+.rs-helper {
+    font-size: 12px;
+    color: var(--text-tertiary);
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Range Slider Wrapper */
+.range-slider-wrapper {
+    width: 100%;
+    padding: 8px 0;
+}
+
+/* Base Range Slider */
+.range-slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #e8e8e8 0%, #f5f5f5 100%);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* Range Slider Thumb - Webkit */
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #0078D4 0%, #006CBE 100%);
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0, 120, 212, 0.3), 0 1px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.range-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+    box-shadow: 0 3px 12px rgba(0, 120, 212, 0.4), 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.range-slider::-webkit-slider-thumb:active {
+    transform: scale(0.95);
+}
+
+/* Range Slider Thumb - Firefox */
+.range-slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #0078D4 0%, #006CBE 100%);
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0, 120, 212, 0.3), 0 1px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.range-slider::-moz-range-thumb:hover {
+    transform: scale(1.15);
+    box-shadow: 0 3px 12px rgba(0, 120, 212, 0.4), 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Range Slider Focus */
+.range-slider:focus {
+    outline: none;
+}
+
+.range-slider:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.2), 0 2px 8px rgba(0, 120, 212, 0.3);
+}
+
+/* Disabled State */
+.range-slider:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.range-slider:disabled::-webkit-slider-thumb {
+    background: #d0d0d0;
+    cursor: not-allowed;
+}
+
+/* Size Variants */
+.range-slider-sm {
+    height: 4px !important;
+    border-radius: 2px !important;
+}
+
+.range-slider-sm::-webkit-slider-thumb {
+    width: 16px !important;
+    height: 16px !important;
+    border-width: 2px !important;
+}
+
+.range-slider-sm::-moz-range-thumb {
+    width: 16px !important;
+    height: 16px !important;
+    border-width: 2px !important;
+}
+
+.range-slider-lg {
+    height: 12px !important;
+    border-radius: 6px !important;
+}
+
+.range-slider-lg::-webkit-slider-thumb {
+    width: 32px !important;
+    height: 32px !important;
+    border-width: 4px !important;
+}
+
+.range-slider-lg::-moz-range-thumb {
+    width: 32px !important;
+    height: 32px !important;
+    border-width: 4px !important;
+}
+
+/* Color Variants */
+.range-slider-success::-webkit-slider-thumb {
+    background: linear-gradient(180deg, var(--success) 0%, #059669 100%);
+}
+
+.range-slider-success::-moz-range-thumb {
+    background: linear-gradient(180deg, var(--success) 0%, #059669 100%);
+}
+
+.range-slider-danger::-webkit-slider-thumb {
+    background: linear-gradient(180deg, var(--danger) 0%, #dc2626 100%);
+}
+
+.range-slider-danger::-moz-range-thumb {
+    background: linear-gradient(180deg, var(--danger) 0%, #dc2626 100%);
+}
+
+.range-slider-warning::-webkit-slider-thumb {
+    background: linear-gradient(180deg, var(--warning) 0%, #d97706 100%);
+}
+
+.range-slider-warning::-moz-range-thumb {
+    background: linear-gradient(180deg, var(--warning) 0%, #d97706 100%);
+}
+
+.range-slider-info::-webkit-slider-thumb {
+    background: linear-gradient(180deg, var(--info) 0%, #0891b2 100%);
+}
+
+.range-slider-info::-moz-range-thumb {
+    background: linear-gradient(180deg, var(--info) 0%, #0891b2 100%);
+}
+
+/* Range Value Display */
+.range-value {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--accent-bg);
+    color: var(--accent);
+    border-radius: var(--radius-md);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 12px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.range-value-lg {
+    font-size: 28px;
+    padding: 12px 24px;
+}
+
+/* Steps Indicator */
+.steps-indicator {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.step-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    transition: all 0.2s;
+}
+
+.step-dot.active {
+    background: var(--accent);
+    box-shadow: 0 0 0 2px rgba(var(--accent-rgb), 0.2);
+}
+
+/* Preview Box */
+.range-preview {
+    padding: 16px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    margin-top: 16px;
+}
+
+.range-preview-label {
+    font-size: 12px;
+    color: var(--text-tertiary);
+    margin-bottom: 6px;
+}
+
+.range-preview-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.range-preview-unit {
+    font-size: 16px;
+    color: var(--text-tertiary);
+    font-weight: 400;
+}
+
+/* Dual Range Visual */
+.dual-range-visual {
+    position: relative;
+    height: 8px;
+    background: linear-gradient(180deg, #e8e8e8 0%, #f5f5f5 100%);
+    border-radius: 4px;
+    margin: 16px 0;
+}
+
+.dual-range-fill {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent) 0%, #006CBE 100%);
+    border-radius: 4px;
+}
+
+.dual-range-thumb {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid var(--accent);
+    box-shadow: 0 2px 8px rgba(0, 120, 212, 0.3);
+    cursor: grab;
+    z-index: 10;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.dual-range-thumb:active {
+    cursor: grabbing;
+    box-shadow: 0 3px 12px rgba(0, 120, 212, 0.5);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.dual-range-thumb-left {
+    left: 20%;
+}
+
+.dual-range-thumb-right {
+    left: 70%;
+}
+
+/* Vertical Slider */
+.vertical-slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px;
+    min-height: 350px;
+}
+
+.vertical-slider-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 250px;
+}
+
+.vertical-slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 250px;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #e8e8e8 0%, #f5f5f5 100%);
+    outline: none;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transform-origin: center center;
+}
+
+.vertical-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #0078D4 0%, #006CBE 100%);
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0, 120, 212, 0.3);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.vertical-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+    box-shadow: 0 3px 12px rgba(0, 120, 212, 0.4);
+}
+
+.vertical-slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #0078D4 0%, #006CBE 100%);
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0, 120, 212, 0.3);
+    cursor: pointer;
+}
+
+.vertical-slider-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    text-align: center;
+}
+
+.vertical-slider-value {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.vertical-slider-unit {
+    font-size: 14px;
+    color: var(--text-tertiary);
+}
+
+/* Progress Bar Visual */
+.progress-bar-visual {
+    width: 100%;
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent) 0%, #006CBE 100%);
+    border-radius: 3px;
+    transition: width 0.3s;
+}
+
+/* Range Slider Grid */
+@media (max-width: 1024px) {
+    .range-slider-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .range-slider-grid.three-cols {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 @endpush
 
 @section('content')
@@ -583,18 +999,18 @@
                     Price Range Filter
                     <span class="rs-range">$0 - $1000</span>
                 </label>
-                <div class="dual-range-visual">
-                    <div class="dual-range-fill"></div>
-                    <div class="dual-range-thumb dual-range-thumb-left"></div>
-                    <div class="dual-range-thumb dual-range-thumb-right"></div>
+                <div class="dual-range-visual" data-min="0" data-max="1000" data-step="10">
+                    <div class="dual-range-fill" style="left: 20%; right: 30%;"></div>
+                    <div class="dual-range-thumb dual-range-thumb-left" style="left: 20%;" data-position="20" data-value="200"></div>
+                    <div class="dual-range-thumb dual-range-thumb-right" style="left: 70%;" data-position="70" data-value="700"></div>
                 </div>
-                <div style="display: flex; gap: 12px; margin-top: 8px;">
-                    <div class="range-value">$200</div>
-                    <div class="range-value">$700</div>
+                <div style="display: flex; gap: 12px; margin-top: 12px;">
+                    <div class="range-value dual-range-value-left">$200</div>
+                    <div class="range-value dual-range-value-right">$700</div>
                 </div>
                 <div class="rs-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Range: $200 - $700
+                    Drag thumbs to adjust range
                 </div>
             </div>
 
@@ -603,14 +1019,18 @@
                     Age Range
                     <span class="rs-range">18 - 65</span>
                 </label>
-                <div class="dual-range-visual">
-                    <div class="dual-range-fill" style="left: 25%; right: 40%;"></div>
-                    <div class="dual-range-thumb dual-range-thumb-left" style="left: 25%;"></div>
-                    <div class="dual-range-thumb dual-range-thumb-right" style="right: 40%;"></div>
+                <div class="dual-range-visual" data-min="18" data-max="65" data-step="1">
+                    <div class="dual-range-fill" style="left: 14.9%; right: 42.6%;"></div>
+                    <div class="dual-range-thumb dual-range-thumb-left" style="left: 14.9%;" data-position="14.9" data-value="25"></div>
+                    <div class="dual-range-thumb dual-range-thumb-right" style="left: 57.4%;" data-position="57.4" data-value="45"></div>
                 </div>
-                <div style="display: flex; gap: 12px; margin-top: 8px;">
-                    <div class="range-value">25 years</div>
-                    <div class="range-value">45 years</div>
+                <div style="display: flex; gap: 12px; margin-top: 12px;">
+                    <div class="range-value dual-range-value-left">25 years</div>
+                    <div class="range-value dual-range-value-right">45 years</div>
+                </div>
+                <div class="rs-helper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Drag thumbs to adjust age range
                 </div>
             </div>
 
@@ -639,18 +1059,19 @@
             <div class="rs-example">
                 <label class="rs-label">Temperature Control</label>
                 <div class="vertical-slider-wrapper">
-                    <div style="text-align: center;">
-                        <div style="font-size: 32px; font-weight: 700; color: var(--accent); margin-bottom: 8px;">25°C</div>
-                        <div style="font-size: 12px; color: var(--text-tertiary);">Current</div>
-                    </div>
-                    <input type="range" class="vertical-slider" min="16" max="30" value="25" step="1">
-                    <div style="text-align: center;">
-                        <div style="font-size: 14px; margin-bottom: 4px;">30°C</div>
-                        <div style="height: 200px; border-left: 2px solid var(--border); position: relative;">
-                            <div style="position: absolute; bottom: 0; left: -2px; width: 2px; height: 65%; background: var(--accent);"></div>
+                    <div class="vertical-slider-value">25°C</div>
+                    <div class="vertical-slider-container">
+                        <div class="vertical-slider-labels">
+                            <div style="font-size: 14px; font-weight: 600;">30°C</div>
+                            <div style="font-size: 12px; color: var(--text-tertiary);">Hot</div>
                         </div>
-                        <div style="font-size: 14px; margin-top: 4px;">16°C</div>
+                        <input type="range" class="vertical-slider" min="16" max="30" value="25" step="1">
+                        <div class="vertical-slider-labels">
+                            <div style="font-size: 14px; font-weight: 600;">16°C</div>
+                            <div style="font-size: 12px; color: var(--text-tertiary);">Cold</div>
+                        </div>
                     </div>
+                    <div class="vertical-slider-unit">Use slider to adjust temperature</div>
                 </div>
                 <div class="rs-helper">
                     <i class="fa-solid fa-circle-info"></i>
@@ -789,36 +1210,36 @@
         </div>
         <div class="card-body">
             <div style="display: flex; flex-direction: column; gap: 20px;">
-                <div>
+                <div class="audio-control-group">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                         <label class="rs-label" style="margin: 0;">🔊 Volume</label>
                         <div class="range-value">75%</div>
                     </div>
                     <div class="range-slider-wrapper">
-                        <input type="range" class="range-slider" min="0" max="100" value="75">
+                        <input type="range" class="range-slider" min="0" max="100" value="75" id="volumeSlider">
                     </div>
                     <div class="progress-bar-visual">
                         <div class="progress-bar-fill" style="width: 75%;"></div>
                     </div>
                 </div>
 
-                <div>
+                <div class="audio-control-group">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                         <label class="rs-label" style="margin: 0;">☀️ Brightness</label>
                         <div class="range-value">60%</div>
                     </div>
                     <div class="range-slider-wrapper">
-                        <input type="range" class="range-slider range-slider-warning" min="0" max="100" value="60">
+                        <input type="range" class="range-slider range-slider-warning" min="0" max="100" value="60" id="brightnessSlider">
                     </div>
                 </div>
 
-                <div>
+                <div class="audio-control-group">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                         <label class="rs-label" style="margin: 0;">⚡ Speed</label>
                         <div class="range-value">1.5x</div>
                     </div>
                     <div class="range-slider-wrapper">
-                        <input type="range" class="range-slider range-slider-info" min="0.5" max="2" value="1.5" step="0.1">
+                        <input type="range" class="range-slider range-slider-info" min="0.5" max="2" value="1.5" step="0.1" id="speedSlider">
                     </div>
                 </div>
 
@@ -931,3 +1352,307 @@
     </div>
 </div>
 @endsection
+
+@push('scripts')
+<script>
+$(document).ready(function() {
+    // Update range value display on slider input
+    $('.range-slider').on('input', function() {
+        const $wrapper = $(this).closest('.rs-example');
+        const $valueDisplay = $wrapper.find('.range-value');
+        const value = $(this).val();
+        const min = $(this).attr('min');
+        const max = $(this).attr('max');
+        const step = $(this).attr('step') || 1;
+        
+        // Update value display
+        if ($valueDisplay.length) {
+            // Check if it's a special format
+            const text = $valueDisplay.text();
+            
+            if (text.includes('$')) {
+                // Currency format
+                $valueDisplay.text('$' + parseInt(value).toLocaleString());
+            } else if (text.includes('Rp')) {
+                // Rupiah format
+                $valueDisplay.text('Rp' + parseInt(value) + 'M');
+            } else if (text.includes('€')) {
+                // Euro format
+                $valueDisplay.text('€' + parseInt(value).toLocaleString());
+            } else if (text.includes('years')) {
+                // Age format
+                $valueDisplay.text(value + ' years');
+            } else if (text.includes('/10')) {
+                // Score format
+                $valueDisplay.text(value + '/10');
+            } else if (text.includes('x')) {
+                // Speed format
+                $valueDisplay.text(parseFloat(value).toFixed(1) + 'x');
+            } else if (text.includes('°C')) {
+                // Temperature format
+                $valueDisplay.text(value + '°C');
+            } else if (text.includes('%')) {
+                // Percentage format
+                $valueDisplay.text(value + '%');
+            } else {
+                // Default number format
+                $valueDisplay.text(value);
+            }
+        }
+        
+        // Update preview box if exists
+        const $previewValue = $wrapper.find('.range-preview-value');
+        if ($previewValue.length) {
+            $previewValue.html(value + '<span class="range-preview-unit">/ ' + max + '</span>');
+        }
+        
+        // Update helper text with current step info
+        const $helper = $wrapper.find('.rs-helper');
+        if ($helper.length && !$helper.find('.fa-circle-exclamation').length) {
+            $helper.html('<i class="fa-solid fa-circle-info"></i> Value: ' + value + ' (Step: ' + step + ')');
+        }
+        
+        // Log to console
+        console.log('Slider changed:', {
+            value: value,
+            min: min,
+            max: max,
+            step: step
+        });
+    });
+    
+    // Update all range sliders on page load
+    $('.range-slider').each(function() {
+        $(this).trigger('input');
+    });
+    
+    // Vertical slider update
+    $('.vertical-slider').on('input', function() {
+        const value = $(this).val();
+        const $wrapper = $(this).closest('.vertical-slider-wrapper');
+        const $valueDisplay = $wrapper.find('.vertical-slider-value');
+        
+        if ($valueDisplay.length) {
+            $valueDisplay.text(value + '°C');
+        }
+        
+        console.log('Temperature:', value + '°C');
+    });
+    
+    // Audio player sliders update
+    $('.audio-control-group .range-slider').each(function() {
+        const $slider = $(this);
+        const $group = $slider.closest('.audio-control-group');
+        const $valueDisplay = $group.find('.range-value');
+        const $progressBar = $group.find('.progress-bar-fill');
+        
+        $slider.on('input', function() {
+            const value = $(this).val();
+            const min = parseFloat($(this).attr('min')) || 0;
+            const max = parseFloat($(this).attr('max')) || 100;
+            
+            // Update value display
+            if ($valueDisplay.length) {
+                const text = $valueDisplay.text();
+                if (text.includes('x')) {
+                    $valueDisplay.text(parseFloat(value).toFixed(1) + 'x');
+                } else if (text.includes('%')) {
+                    $valueDisplay.text(value + '%');
+                } else {
+                    $valueDisplay.text(value);
+                }
+            }
+            
+            // Update progress bar if exists
+            if ($progressBar.length) {
+                const percent = ((value - min) / (max - min)) * 100;
+                $progressBar.css('width', percent + '%');
+            }
+        });
+        
+        // Trigger initial update
+        $slider.trigger('input');
+    });
+    
+    // Media control buttons
+    $('.btn-primary:contains("Try Slider")').on('click', function() {
+        // Scroll to first slider
+        $('html, body').animate({
+            scrollTop: $('.range-slider').first().offset().top - 100
+        }, 500);
+        
+        // Focus first slider
+        setTimeout(() => {
+            $('.range-slider').first().focus();
+        }, 600);
+    });
+    
+    // Media player play button
+    $('button[title="Play"]').on('click', function() {
+        const $btn = $(this);
+        if ($btn.text().includes('▶')) {
+            $btn.text('⏸️');
+            $btn.attr('title', 'Pause');
+        } else {
+            $btn.text('▶️');
+            $btn.attr('title', 'Play');
+        }
+    });
+    
+    // Previous/Next buttons animation
+    $('button[title="Previous"], button[title="Next"]').on('click', function() {
+        $(this).css('transform', 'scale(0.9)');
+        setTimeout(() => {
+            $(this).css('transform', 'scale(1)');
+        }, 150);
+    });
+    
+    // Keyboard navigation hint
+    $('.range-slider').on('keydown', function(e) {
+        const step = parseFloat($(this).attr('step')) || 1;
+        const value = parseFloat($(this).val());
+        
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
+            e.preventDefault();
+            $(this).val(value - step);
+            $(this).trigger('input');
+        } else if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
+            e.preventDefault();
+            $(this).val(value + step);
+            $(this).trigger('input');
+        }
+    });
+    
+    // Dual range visual - make thumbs draggable
+    let isDragging = false;
+    let currentThumb = null;
+    let $dualRange = null;
+    let dragStarted = false;
+    let startX = 0;
+    
+    $('.dual-range-thumb').on('mousedown touchstart', function(e) {
+        isDragging = true;
+        currentThumb = $(this);
+        $dualRange = $(this).closest('.dual-range-visual');
+        dragStarted = false;
+        startX = e.type === 'touchstart' ? e.originalEvent.touches[0].pageX : e.pageX;
+        e.preventDefault();
+        e.stopPropagation();
+    });
+    
+    $(document).on('mousemove touchmove', function(e) {
+        if (!isDragging || !currentThumb || !$dualRange) return;
+        
+        const touch = e.type === 'touchmove' ? e.originalEvent.touches[0] : e;
+        const pageX = touch.pageX;
+        
+        // Check if actually dragging (moved more than 3px)
+        if (!dragStarted && Math.abs(pageX - startX) > 3) {
+            dragStarted = true;
+        }
+        
+        if (!dragStarted) return;
+        
+        const offset = $dualRange.offset();
+        const width = $dualRange.outerWidth();
+        
+        // Calculate percent based on mouse position relative to the track
+        let percent = ((pageX - offset.left) / width) * 100;
+        
+        // Clamp between 0 and 100
+        percent = Math.max(0, Math.min(100, percent));
+        
+        // Get min/max values
+        const min = parseFloat($dualRange.data('min'));
+        const max = parseFloat($dualRange.data('max'));
+        const step = parseFloat($dualRange.data('step')) || 1;
+        
+        // Calculate value from percent
+        let value = min + (percent / 100) * (max - min);
+        
+        // Round to step
+        value = Math.round(value / step) * step;
+        
+        // Clamp to min/max
+        value = Math.max(min, Math.min(max, value));
+        
+        // Recalculate percent from rounded value
+        percent = ((value - min) / (max - min)) * 100;
+        
+        const $leftThumb = $dualRange.find('.dual-range-thumb-left');
+        const $rightThumb = $dualRange.find('.dual-range-thumb-right');
+        const $fill = $dualRange.find('.dual-range-fill');
+        
+        // Get current positions
+        let leftPercent = parseFloat($leftThumb.attr('data-position')) || parseFloat($leftThumb.css('left'));
+        let rightPercent = parseFloat($rightThumb.attr('data-position')) || parseFloat($rightThumb.css('left'));
+        
+        if (currentThumb.hasClass('dual-range-thumb-left')) {
+            // Left thumb cannot go past right thumb
+            if (percent >= rightPercent - 5) {
+                percent = rightPercent - 5;
+                value = min + (percent / 100) * (max - min);
+                value = Math.round(value / step) * step;
+                percent = ((value - min) / (max - min)) * 100;
+            }
+            
+            currentThumb.css('left', percent + '%');
+            currentThumb.attr('data-position', percent);
+            currentThumb.attr('data-value', value);
+            
+            // Update fill
+            $fill.css('left', percent + '%');
+            
+            // Update value display
+            const $valueDisplay = $dualRange.siblings().find('.dual-range-value-left');
+            if ($valueDisplay.length) {
+                const text = $valueDisplay.text();
+                if (text.includes('$')) {
+                    $valueDisplay.text('$' + parseInt(value).toLocaleString());
+                } else if (text.includes('years')) {
+                    $valueDisplay.text(parseInt(value) + ' years');
+                } else {
+                    $valueDisplay.text(value);
+                }
+            }
+        } else {
+            // Right thumb cannot go past left thumb
+            if (percent <= leftPercent + 5) {
+                percent = leftPercent + 5;
+                value = min + (percent / 100) * (max - min);
+                value = Math.round(value / step) * step;
+                percent = ((value - min) / (max - min)) * 100;
+            }
+            
+            // Always use left property for consistency
+            currentThumb.css('left', percent + '%');
+            currentThumb.attr('data-position', percent);
+            currentThumb.attr('data-value', value);
+            
+            // Update fill - right is 100 - percent
+            $fill.css('right', (100 - percent) + '%');
+            
+            // Update value display
+            const $valueDisplay = $dualRange.siblings().find('.dual-range-value-right');
+            if ($valueDisplay.length) {
+                const text = $valueDisplay.text();
+                if (text.includes('$')) {
+                    $valueDisplay.text('$' + parseInt(value).toLocaleString());
+                } else if (text.includes('years')) {
+                    $valueDisplay.text(parseInt(value) + ' years');
+                } else {
+                    $valueDisplay.text(value);
+                }
+            }
+        }
+    });
+    
+    $(document).on('mouseup touchend', function() {
+        isDragging = false;
+        currentThumb = null;
+        $dualRange = null;
+        dragStarted = false;
+    });
+});
+</script>
+@endpush

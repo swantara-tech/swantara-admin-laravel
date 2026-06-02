@@ -5617,6 +5617,22 @@ select.form-control[multiple] option {
     grid-template-columns: 1fr;
 }
 
+/* Range Slider Grid */
+.range-slider-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.range-slider-grid.three-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.range-slider-grid.full-width {
+    grid-template-columns: 1fr;
+}
+
 .sw-section-title {
     font-size: 15px;
     font-weight: 600;
