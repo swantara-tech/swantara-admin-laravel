@@ -1666,10 +1666,10 @@ select.form-control[multiple] option {
 /* Custom Checkbox */
 .custom-checkbox {
     display: inline-flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
     cursor: pointer;
-    padding: 10px 12px;
+    padding: 8px 12px;
     border-radius: var(--radius-sm);
     transition: var(--transition-fast);
     user-select: none;
@@ -1679,44 +1679,74 @@ select.form-control[multiple] option {
     background: var(--surface-hover);
 }
 
+
+
 .custom-checkbox input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--border);
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    width: 20px !important;
+    height: 20px !important;
+    border: 2px solid #6b7280 !important;
     border-radius: 4px;
     cursor: pointer;
     position: relative;
-    transition: var(--transition-fast);
+    transition: all 0.2s ease;
     flex-shrink: 0;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    margin: 2px 0 0 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.custom-checkbox input[type="checkbox"]:hover {
+    border-color: #0078D4;
+    box-shadow: 0 1px 4px rgba(0, 120, 212, 0.15);
 }
 
 .custom-checkbox input[type="checkbox"]:checked {
-    background: var(--accent);
-    border-color: var(--accent);
+    background: linear-gradient(180deg, #0078D4 0%, #006CBE 100%) !important;
+    border-color: #006CBE !important;
+    box-shadow: 0 2px 6px rgba(0, 120, 212, 0.35);
 }
 
 .custom-checkbox input[type="checkbox"]:checked::after {
-    content: 'âœ“';
+    content: '✓' !important;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    color: white !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: block !important;
 }
 
 .custom-checkbox input[type="checkbox"]:disabled {
-    opacity: 0.4;
+    opacity: 0.5;
     cursor: not-allowed;
+    background: #e8e8e8;
+    border-color: #c0c0c0;
+}
+
+.custom-checkbox input[type="checkbox"]:disabled:checked {
+    background: #c0c0c0;
+    border-color: #b0b0b0;
 }
 
 .custom-checkbox input[type="checkbox"]:focus {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+
+.custom-checkbox span {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 2px;
+}
+
+
 
 /* Custom Radio */
 .custom-radio {
@@ -1790,60 +1820,99 @@ select.form-control[multiple] option {
 .toggle-switch {
     position: relative;
     display: inline-flex;
-    align-items: center;
-    gap: 12px;
+    align-items: flex-start;
+    gap: 14px;
     cursor: pointer;
     user-select: none;
+    padding: 4px 0;
 }
 
 .toggle-switch input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
-    width: 48px;
-    height: 26px;
-    background: var(--border);
-    border-radius: 13px;
+    width: 52px;
+    height: 28px;
+    background: linear-gradient(180deg, #e8e8e8 0%, #f5f5f5 100%);
+    border: 2px solid #d0d0d0;
+    border-radius: 14px;
     position: relative;
     cursor: pointer;
-    transition: var(--transition-fast);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     flex-shrink: 0;
+    margin-top: 2px;
 }
+
+.toggle-switch input[type="checkbox"]::before {
+    content: none;
+    display: none;
+}
+
+
 
 .toggle-switch input[type="checkbox"]::after {
     content: '';
     position: absolute;
-    top: 3px;
-    left: 3px;
+    top: 2px;
+    left: 2px;
     width: 20px;
     height: 20px;
-    background: white;
+    background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition: var(--transition-fast);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .toggle-switch input[type="checkbox"]:checked {
-    background: var(--accent);
+    background: linear-gradient(180deg, #0078D4 0%, #006CBE 100%);
+    border-color: #006CBE;
 }
 
 .toggle-switch input[type="checkbox"]:checked::after {
-    left: 25px;
+    left: 26px;
+    box-shadow: 0 2px 8px rgba(0, 120, 212, 0.3), 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-switch input[type="checkbox"]:hover {
+    border-color: #b0b0b0;
+}
+
+.toggle-switch input[type="checkbox"]:hover::after {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-switch input[type="checkbox"]:checked:hover {
+    border-color: #005a9e;
+}
+
+.toggle-switch input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.2);
 }
 
 .toggle-switch input[type="checkbox"]:disabled {
-    opacity: 0.4;
+    opacity: 0.5;
     cursor: not-allowed;
+    background: #e0e0e0;
+}
+
+.toggle-switch input[type="checkbox"]:disabled::after {
+    background: #d0d0d0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .toggle-label {
     font-size: 14px;
+    font-weight: 500;
     color: var(--text-primary);
+    line-height: 1.4;
 }
 
 .toggle-description {
     font-size: 12px;
     color: var(--text-secondary);
-    margin-top: 2px;
+    margin-top: 3px;
+    line-height: 1.5;
 }
 
 /* Checkbox Card */
@@ -5478,7 +5547,7 @@ select.form-control[multiple] option {
 .toggle-switch input[type="checkbox"]::after {
     content: '';
     position: absolute;
-    top: 3px;
+    top: 1px;
     left: 3px;
     width: 22px;
     height: 22px;
@@ -7079,3 +7148,57 @@ select.form-control[multiple] option {
 /* END VALIDATION STYLE */
 
 
+
+
+/* Kotak Utama */
+label.custom-checkbox input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc; /* Warna garis pinggir saat tidak dicentang */
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Warna saat dicentang */
+label.custom-checkbox input[type="checkbox"]:checked {
+  background-color: #007bff; /* Warna latar saat dicentang */
+  border-color: #007bff;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e"); /* Ikon centang putih */
+  background-size: 100% 100%;
+}
+
+
+
+label.custom-checkbox {
+    display: flex;         /* Mengaktifkan mode flex */
+    align-items: center;    /* Menyejajarkan checkbox & teks tepat di tengah secara vertikal */
+    gap: 8px;              /* Memberi jarak antara checkbox dan teks */
+    cursor: pointer;
+}
+
+/* Memastikan elemen di dalamnya tidak merusak baris */
+label.custom-checkbox input[type="checkbox"],
+label.custom-checkbox span {
+    display: inline-block;
+    margin: 0;              /* Menghapus margin bawaan yang bisa membuat miring */
+    vertical-align: middle;
+}
+
+/* Opsional: gaya untuk label yang disabled agar teksnya juga terlihat pudar */
+label.custom-checkbox input[disabled] + span {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+label.custom-radio input[type="radio"],
+label.custom-radio span {
+  display: inline-block;
+  vertical-align: middle;
+}

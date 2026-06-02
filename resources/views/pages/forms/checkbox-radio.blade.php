@@ -445,7 +445,6 @@
         <div class="card-body">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
                 <div class="checkbox-card selected" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
-                    <input type="checkbox" checked style="appearance: none; width: 20px; height: 20px; border: 2px solid var(--accent); border-radius: 4px; background: var(--accent); position: relative; cursor: pointer;">
                     <input type="checkbox" checked hidden>
                     <div class="checkbox-card-title">💎 Premium</div>
                     <div class="checkbox-card-desc">Full access to all features</div>
