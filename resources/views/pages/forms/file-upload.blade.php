@@ -3,6 +3,430 @@
 @section('title', 'File Upload')
 
 @push('styles')
+<style>
+/* ============================================
+   START: File Upload Component Styles
+   ============================================ */
+
+/* File Upload Grid */
+.file-upload-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.file-upload-grid.full-width {
+    grid-template-columns: 1fr;
+}
+
+/* Section Title */
+.fu-section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 32px 0 16px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.fu-section-title i {
+    color: var(--accent);
+    font-size: 20px;
+}
+
+/* Upload Zone */
+.upload-zone {
+    border: 2px dashed var(--border-color);
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: var(--bg-secondary);
+    position: relative;
+}
+
+.upload-zone:hover {
+    border-color: var(--accent);
+    background: var(--accent-bg);
+}
+
+.upload-zone.drag-over {
+    border-color: var(--accent);
+    background: var(--accent-bg);
+    border-style: solid;
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px rgba(0, 120, 212, 0.2);
+}
+
+.upload-zone-icon {
+    font-size: 48px;
+    color: var(--accent);
+    margin-bottom: 12px;
+    transition: transform 0.3s;
+}
+
+.upload-zone:hover .upload-zone-icon {
+    transform: translateY(-4px);
+}
+
+.upload-zone-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.upload-zone-desc {
+    font-size: 13px;
+    color: var(--text-tertiary);
+    margin-bottom: 16px;
+}
+
+.upload-zone-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--accent);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.upload-zone:hover .upload-zone-btn {
+    background: var(--accent-dark, #005a9e);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 120, 212, 0.3);
+}
+
+/* File Input */
+.file-input-wrapper {
+    position: relative;
+}
+
+.file-input-wrapper input[type="file"] {
+    position: absolute;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.file-input-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-primary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.file-input-label:hover {
+    border-color: var(--accent);
+    background: var(--bg-secondary);
+}
+
+.file-input-icon {
+    font-size: 20px;
+    color: var(--text-tertiary);
+    flex-shrink: 0;
+}
+
+.file-input-text {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.file-input-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+.file-input-text {
+    font-size: 12px;
+    color: var(--text-tertiary);
+    margin-top: 2px;
+}
+
+/* File List */
+.file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-primary);
+    transition: all 0.2s;
+}
+
+.file-item:hover {
+    border-color: var(--accent);
+    background: var(--bg-secondary);
+}
+
+.file-item-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.file-item-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.file-item-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 14px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-item-size {
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+
+.file-item-remove {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.file-item-remove:hover {
+    background: var(--danger-bg);
+    color: var(--danger);
+}
+
+/* File Preview */
+.file-preview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.file-preview-item {
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.file-preview-item:hover {
+    border-color: var(--accent);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.file-preview-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.file-preview-item:hover .file-preview-overlay {
+    opacity: 1;
+}
+
+.file-preview-remove {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: var(--danger);
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+.file-preview-remove:hover {
+    background: var(--danger-dark, #b91c1c);
+    transform: scale(1.1);
+}
+
+/* Upload Progress */
+.upload-progress {
+    margin-top: 8px;
+}
+
+.progress-bar-bg {
+    width: 100%;
+    height: 6px;
+    background: var(--bg-tertiary);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 3px;
+    transition: width 0.3s;
+}
+
+.progress-bar-fill.success {
+    background: var(--success);
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--text-tertiary);
+}
+
+/* Labels & Hints */
+.fu-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.fu-hint {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--text-tertiary);
+    margin-left: 4px;
+}
+
+.fu-helper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    padding: 8px 0;
+}
+
+.fu-helper i {
+    font-size: 14px;
+    color: var(--accent);
+}
+
+/* Feature List */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.feature-list li i {
+    color: var(--success);
+    font-size: 14px;
+}
+
+/* Code Block */
+.code-block {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 12px;
+    overflow-x: auto;
+}
+
+.code-block code {
+    display: block;
+    line-height: 1.6;
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background: var(--border-color);
+    margin: 20px 0;
+}
+
+/* Helper Text */
+.helper-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    padding: 12px;
+    background: var(--bg-secondary);
+    border-radius: 6px;
+}
+
+.helper-text i {
+    color: var(--info);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .file-upload-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .file-preview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================
+   END: File Upload Component Styles
+   ============================================ */
+</style>
 @endpush
 
 @section('content')
@@ -61,7 +485,7 @@
                     Upload Files
                     <span class="fu-hint">Max 10MB</span>
                 </label>
-                <div class="upload-zone" ondragover="this.classList.add('drag-over')" ondragleave="this.classList.remove('drag-over')" ondrop="this.classList.remove('drag-over')">
+                <div class="upload-zone" id="uploadZone1">
                     <div class="upload-zone-icon">
                         <i class="fa-solid fa-cloud-arrow-up"></i>
                     </div>
@@ -743,3 +1167,433 @@
     </div>
 </div>
 @endsection
+
+@push('scripts')
+<script>
+$(document).ready(function() {
+    // Initialize all upload zones
+    let isTriggeringClick = false;
+    
+    $('.upload-zone').each(function() {
+        const $zone = $(this);
+        
+        // Create hidden file input if not exists
+        let $input = $zone.find('input[type="file"]');
+        if ($input.length === 0) {
+            $input = $('<input type="file" style="display: none;">');
+            $zone.append($input);
+        }
+        
+        // Click to browse
+        $zone.on('click', function(e) {
+            // Don't trigger if clicking remove buttons
+            if ($(e.target).closest('.file-item-remove, .file-preview-remove').length) {
+                return;
+            }
+            
+            // Prevent infinite loop
+            if (isTriggeringClick) return;
+            isTriggeringClick = true;
+            
+            $input.trigger('click');
+            
+            // Reset flag after a short delay
+            setTimeout(() => {
+                isTriggeringClick = false;
+            }, 100);
+        });
+    });
+    
+    // Global drag and drop handlers
+    $(document).on('dragover dragenter', '.upload-zone', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).addClass('drag-over');
+    });
+    
+    $(document).on('dragleave', '.upload-zone', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        // Only remove if actually leaving the zone
+        if (!$(this).is(e.relatedTarget) && !$(this).has(e.relatedTarget).length) {
+            $(this).removeClass('drag-over');
+        }
+    });
+    
+    $(document).on('drop', '.upload-zone', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).removeClass('drag-over');
+        
+        const files = e.originalEvent.dataTransfer.files;
+        if (files && files.length > 0) {
+            handleFiles(files, $(this));
+        }
+    });
+    
+    // File input change (delegated)
+    $(document).on('change', '.upload-zone input[type="file"]', function() {
+        const $zone = $(this).closest('.upload-zone');
+        const files = this.files;
+        if (files && files.length > 0) {
+            handleFiles(files, $zone);
+            // Reset input so same file can be selected again
+            $(this).val('');
+        }
+    });
+    
+    // Handle file input change
+    $('.file-input-wrapper input[type="file"]').on('change', function() {
+        const $input = $(this);
+        const $label = $input.siblings('.file-input-label');
+        const files = this.files;
+        
+        if (files.length > 0) {
+            const file = files[0];
+            const fileName = file.name;
+            const fileSize = formatFileSize(file.size);
+            const fileType = getFileExtension(fileName);
+            
+            $label.html(`
+                <i class="fa-solid fa-file file-input-icon"></i>
+                <div>
+                    <div class="file-input-name">${escapeHtml(fileName)}</div>
+                    <div class="file-input-text">${fileSize} • ${fileType.toUpperCase()}</div>
+                </div>
+            `);
+            
+            // Show success toast
+            showToast('File selected: ' + fileName, 'success');
+        }
+    });
+    
+    // Handle dropped/selected files
+    function handleFiles(files, $zone) {
+        if (!files || files.length === 0) {
+            console.log('No files to handle');
+            return;
+        }
+        
+        console.log('Handling', files.length, 'file(s)');
+        
+        Array.from(files).forEach(file => {
+            console.log('Processing file:', file.name, file.size, file.type);
+            
+            // Validate file
+            if (!validateFile(file)) {
+                console.log('File validation failed:', file.name);
+                return;
+            }
+            
+            console.log('File validated:', file.name);
+            
+            // Show success message
+            showToast('File added: ' + file.name, 'success');
+            
+            // Simulate upload progress
+            simulateUpload(file);
+        });
+    }
+    
+    // Validate file
+    function validateFile(file) {
+        const maxSize = 10 * 1024 * 1024; // 10MB
+        const allowedTypes = [
+            'image/jpeg', 'image/png', 'image/gif',
+            'application/pdf', 'application/msword',
+            'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            'application/vnd.ms-excel',
+            'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+            'text/plain'
+        ];
+        
+        // Check file size
+        if (file.size > maxSize) {
+            Swal.fire({
+                toast: true,
+                position: 'top-end',
+                icon: 'error',
+                title: 'File too large! Max 10MB',
+                showConfirmButton: false,
+                timer: 2500
+            });
+            return false;
+        }
+        
+        // Check file type
+        if (!allowedTypes.includes(file.type)) {
+            Swal.fire({
+                toast: true,
+                position: 'top-end',
+                icon: 'warning',
+                title: 'Invalid file type!',
+                showConfirmButton: false,
+                timer: 2500
+            });
+            return false;
+        }
+        
+        return true;
+    }
+    
+    // Simulate upload progress
+    function simulateUpload(file) {
+        const fileName = file.name;
+        const fileSize = formatFileSize(file.size);
+        const fileType = getFileExtension(fileName);
+        
+        // Create file item with progress
+        const $fileItem = $(`
+            <div class="file-item upload-item-${Date.now()}">
+                <div class="file-item-icon">${getFileIcon(fileType)}</div>
+                <div class="file-item-content">
+                    <div class="file-item-name">${escapeHtml(fileName)}</div>
+                    <div class="file-item-size">${fileSize} • Uploading...</div>
+                    <div class="upload-progress">
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 0%;"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span>0 MB / ${fileSize}</span>
+                            <span>0%</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="file-item-remove">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        `);
+        
+        // Add to first upload zone example
+        const $firstExample = $('.fu-example').first();
+        if ($firstExample.find('.file-list').length === 0) {
+            $firstExample.append('<div class="file-list"></div>');
+        }
+        $firstExample.find('.file-list').append($fileItem);
+        
+        // Simulate progress
+        let progress = 0;
+        const interval = setInterval(() => {
+            progress += Math.random() * 15;
+            
+            if (progress >= 100) {
+                progress = 100;
+                clearInterval(interval);
+                
+                // Update to complete
+                $fileItem.find('.file-item-size').text(`${fileSize} • Upload complete`);
+                $fileItem.find('.progress-bar-fill').addClass('success');
+                $fileItem.find('.progress-text').html(`
+                    <span>Upload successful</span>
+                    <span style="color: var(--success);">✓</span>
+                `);
+                $fileItem.find('.file-item-icon').text('✅');
+                
+                showToast('Upload complete: ' + fileName, 'success');
+            } else {
+                const uploadedSize = (progress / 100 * file.size);
+                $fileItem.find('.file-item-size').text(`${fileSize} • ${Math.round(progress)}% uploaded`);
+                $fileItem.find('.progress-bar-fill').css('width', progress + '%');
+                $fileItem.find('.progress-text').html(`
+                    <span>${formatFileSize(uploadedSize)} / ${fileSize}</span>
+                    <span>${Math.round(progress)}%</span>
+                `);
+            }
+        }, 300);
+    }
+    
+    // Remove file from list
+    $(document).on('click', '.file-item-remove', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const $item = $(this).closest('.file-item');
+        const fileName = $item.find('.file-item-name').text();
+        
+        Swal.fire({
+            title: 'Remove file?',
+            text: `Remove "${fileName}" from list?`,
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: 'var(--danger)',
+            cancelButtonColor: 'var(--text-tertiary)',
+            confirmButtonText: 'Yes, remove',
+            cancelButtonText: 'Cancel'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $item.fadeOut(300, function() {
+                    $(this).remove();
+                    showToast('File removed: ' + fileName, 'info');
+                });
+            }
+        });
+    });
+    
+    // Remove file from preview
+    $(document).on('click', '.file-preview-remove', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const $item = $(this).closest('.file-preview-item');
+        
+        $item.fadeOut(300, function() {
+            $(this).remove();
+            showToast('Image removed', 'info');
+        });
+    });
+    
+    // Helper functions
+    function formatFileSize(bytes) {
+        if (bytes === 0) return '0 Bytes';
+        const k = 1024;
+        const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+        const i = Math.floor(Math.log(bytes) / Math.log(k));
+        return Math.round(bytes / Math.pow(k, i) * 100) / 100 + ' ' + sizes[i];
+    }
+    
+    function getFileExtension(filename) {
+        return filename.split('.').pop().toLowerCase();
+    }
+    
+    function getFileIcon(type) {
+        const icons = {
+            'pdf': '📄',
+            'doc': '📝',
+            'docx': '📝',
+            'xls': '📊',
+            'xlsx': '📊',
+            'jpg': '🖼️',
+            'jpeg': '🖼️',
+            'png': '🖼️',
+            'gif': '🖼️',
+            'txt': '📃',
+            'zip': '📦',
+            'mp4': '🎥'
+        };
+        return icons[type] || '📄';
+    }
+    
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+    
+    function showToast(message, type = 'success') {
+        const icon = type === 'success' ? 'fa-circle-check' : 
+                    type === 'error' ? 'fa-circle-xmark' : 
+                    type === 'warning' ? 'fa-triangle-exclamation' : 'fa-circle-info';
+        
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: type,
+            title: message,
+            showConfirmButton: false,
+            timer: 2500
+        });
+    }
+    
+    // Page header buttons
+    $('.page-header .btn-primary').on('click', function() {
+        $('.upload-zone').first().trigger('click');
+    });
+    
+    $('.page-header .btn-secondary').on('click', function() {
+        Swal.fire({
+            icon: 'info',
+            title: 'File Upload Documentation',
+            html: `
+                <div style="text-align: left; font-size: 13px;">
+                    <p><strong>File Upload</strong> features include:</p>
+                    <ul>
+                        <li>Drag & drop support</li>
+                        <li>File validation</li>
+                        <li>Progress tracking</li>
+                        <li>Image preview</li>
+                        <li>Multiple file upload</li>
+                    </ul>
+                </div>
+            `,
+            confirmButtonText: 'OK',
+            confirmButtonColor: 'var(--accent)'
+        });
+    });
+    
+    // Form submission
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+        
+        const $form = $(this);
+        const formData = new FormData();
+        
+        // Collect form data
+        $form.find('input[type="text"], input[type="email"]').each(function() {
+            const value = $(this).val().trim();
+            if (value) {
+                formData.append($(this).attr('placeholder') || 'field', value);
+            }
+        });
+        
+        // Validate required fields
+        const requiredFields = $form.find('[required]');
+        let allFilled = true;
+        
+        requiredFields.each(function() {
+            if (!$(this).val().trim()) {
+                allFilled = false;
+                $(this).focus();
+                return false;
+            }
+        });
+        
+        if (!allFilled) {
+            Swal.fire({
+                toast: true,
+                position: 'top-end',
+                icon: 'warning',
+                title: 'Please fill in all required fields',
+                showConfirmButton: false,
+                timer: 2500
+            });
+            return;
+        }
+        
+        // Show success
+        Swal.fire({
+            icon: 'success',
+            title: 'Application Submitted!',
+            text: 'Your job application has been submitted successfully.',
+            confirmButtonText: 'OK',
+            confirmButtonColor: 'var(--accent)'
+        });
+        
+        console.log('Form Data:', formData);
+    });
+    
+    // Form reset
+    $('form').on('reset', function(e) {
+        e.preventDefault();
+        
+        // Reset file inputs
+        $(this).find('input[type="file"]').val('');
+        
+        // Reset file input labels
+        $(this).find('.file-input-label').html(`
+            <i class="fa-solid fa-paperclip file-input-icon"></i>
+            <span class="file-input-text">Choose file...</span>
+        `);
+        
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'info',
+            title: 'Form reset',
+            showConfirmButton: false,
+            timer: 1500
+        });
+    });
+});
+</script>
+@endpush
