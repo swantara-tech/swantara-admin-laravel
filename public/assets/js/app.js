@@ -29,6 +29,7 @@ const MetroAdmin = {
         this.initNumberInputs();
         this.initSearchInputs();
         this.initInputGroupDropdowns();
+        // Touch Spin initialized in touch-spin.js
     },
 
     // ==========================================

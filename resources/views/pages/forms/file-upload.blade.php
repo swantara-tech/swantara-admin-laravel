@@ -1480,20 +1480,7 @@ $(document).ready(function() {
         return div.innerHTML;
     }
     
-    function showToast(message, type = 'success') {
-        const icon = type === 'success' ? 'fa-circle-check' : 
-                    type === 'error' ? 'fa-circle-xmark' : 
-                    type === 'warning' ? 'fa-triangle-exclamation' : 'fa-circle-info';
-        
-        Swal.fire({
-            toast: true,
-            position: 'top-end',
-            icon: type,
-            title: message,
-            showConfirmButton: false,
-            timer: 2500
-        });
-    }
+
     
     // Page header buttons
     $('.page-header .btn-primary').on('click', function() {

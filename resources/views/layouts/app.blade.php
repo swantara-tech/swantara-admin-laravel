@@ -69,6 +69,7 @@
     <script src="{{ asset('assets/js/swal-config.js') }}"></script>
     
     <script src="{{ asset('assets/js/app.js') }}"></script>
+    <script src="{{ asset('assets/js/touch-spin.js') }}"></script>
     
     @stack('scripts')
 </body>
