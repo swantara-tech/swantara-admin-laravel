@@ -4062,7 +4062,7 @@ select.form-control[multiple] option {
 .floating-label-group textarea,
 .floating-label-group select {
     width: 100%;
-    padding: 16px 14px 6px 14px;
+    padding: 10px 14px 6px 14px;
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
     background: var(--surface);
@@ -4073,9 +4073,60 @@ select.form-control[multiple] option {
     transition: var(--transition-fast);
 }
 
-.floating-label-group input:focus,
-.floating-label-group textarea:focus,
+/* Professional Select Styling */
+.floating-label-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 0px 40px 6px 14px;
+    cursor: pointer;
+    color: var(--text-primary) !important;
+    font-size: 14px;
+    font-family: inherit;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2.5 4.5L6 8L9.5 4.5' stroke='%236b7280' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.floating-label-group select:hover {
+    border-color: var(--accent);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2.5 4.5L6 8L9.5 4.5' stroke='%233b82f6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
 .floating-label-group select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-light);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2.5 4.5L6 8L9.5 4.5' stroke='%233b82f6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* Style select options */
+.floating-label-group select option {
+    padding: 10px 14px;
+    font-size: 14px;
+    background: var(--surface);
+    color: var(--text-primary);
+}
+
+.floating-label-group select option:hover {
+    background: var(--accent-light);
+}
+
+/* Dark mode support for select */
+@media (prefers-color-scheme: dark) {
+    .floating-label-group select {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2.5 4.5L6 8L9.5 4.5' stroke='%239ca3af' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+    
+    .floating-label-group select:hover,
+    .floating-label-group select:focus {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2.5 4.5L6 8L9.5 4.5' stroke='%2360a5fa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+}
+
+.floating-label-group input:focus,
+.floating-label-group textarea:focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 3px var(--accent-light);
 }
@@ -4098,13 +4149,27 @@ select.form-control[multiple] option {
     transform: none;
 }
 
+/* Select label always floats up */
+.floating-label-group select ~ label {
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 11px;
+    background: var(--surface);
+    font-weight: 500;
+    color: var(--text-tertiary);
+}
+
+/* When select has value, color the label */
+.floating-label-group select.has-value ~ label,
+.floating-label-group select:focus ~ label {
+    color: var(--accent);
+}
+
 /* Float the label when input has value or is focused */
 .floating-label-group input:focus ~ label,
 .floating-label-group input:not(:placeholder-shown) ~ label,
 .floating-label-group textarea:focus ~ label,
-.floating-label-group textarea:not(:placeholder-shown) ~ label,
-.floating-label-group select:focus ~ label,
-.floating-label-group select.has-value ~ label {
+.floating-label-group textarea:not(:placeholder-shown) ~ label {
     top: 0;
     transform: translateY(-50%);
     font-size: 11px;
@@ -4149,10 +4214,16 @@ select.form-control[multiple] option {
 
 /* Disabled State */
 .floating-label-group input:disabled,
-.floating-label-group textarea:disabled {
-    opacity: 0.5;
+.floating-label-group textarea:disabled,
+.floating-label-group select:disabled {
+    opacity: 0.7;
     cursor: not-allowed;
     background: var(--bg-secondary);
+    color: var(--text-secondary) !important;
+}
+
+.floating-label-group select:disabled {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M2.5 4.5L6 8L9.5 4.5' stroke='%239ca3af' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
 }
 
 /* With Icon */

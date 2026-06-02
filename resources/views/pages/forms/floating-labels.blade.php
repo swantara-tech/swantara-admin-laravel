@@ -5,6 +5,91 @@
 @push('styles')
 @endpush
 
+@push('scripts')
+<!-- IMask.js Library -->
+<script src="https://unpkg.com/imask@7.1.3/dist/imask.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize input masks
+        
+        // Phone number mask (Indonesian format)
+        document.querySelectorAll('[data-mask="phone"]').forEach(input => {
+            IMask(input, {
+                mask: '+62 {000}-{0000}-{0000}'
+            });
+        });
+
+        // Credit card mask
+        document.querySelectorAll('[data-mask="credit-card"]').forEach(input => {
+            IMask(input, {
+                mask: '0000 0000 0000 0000'
+            });
+        });
+
+        // Expiry date mask (MM/YY)
+        document.querySelectorAll('[data-mask="expiry-date"]').forEach(input => {
+            IMask(input, {
+                mask: 'MM{/}YY',
+                blocks: {
+                    MM: {
+                        mask: IMask.MaskedRange,
+                        from: 1,
+                        to: 12,
+                        maxLength: 2
+                    },
+                    YY: {
+                        mask: IMask.MaskedRange,
+                        from: 0,
+                        to: 99,
+                        maxLength: 2
+                    }
+                }
+            });
+        });
+
+        // CVV mask (3-4 digits)
+        document.querySelectorAll('[data-mask="cvv"]').forEach(input => {
+            IMask(input, {
+                mask: '0009',
+                lazy: false
+            });
+        });
+
+        // Handle select elements - add 'has-value' class when changed
+        document.querySelectorAll('.floating-label-group select').forEach(select => {
+            // Add has-value class if option is selected
+            if (select.value) {
+                select.classList.add('has-value');
+            }
+            
+            // Listen for changes
+            select.addEventListener('change', function() {
+                if (this.value) {
+                    this.classList.add('has-value');
+                } else {
+                    this.classList.remove('has-value');
+                }
+            });
+            
+            // Trigger change event to ensure initial state
+            select.dispatchEvent(new Event('change'));
+        });
+
+        // Handle form reset
+        const forms = document.querySelectorAll('form');
+        forms.forEach(form => {
+            form.addEventListener('reset', function() {
+                setTimeout(() => {
+                    this.querySelectorAll('select').forEach(select => {
+                        select.classList.remove('has-value');
+                    });
+                }, 0);
+            });
+        });
+    });
+</script>
+@endpush
+
 @section('content')
 <div class="page-header">
     <div>
@@ -72,7 +157,7 @@
             </div>
 
             <div class="floating-label-group">
-                <input type="tel" id="phone" placeholder=" ">
+                <input type="tel" id="phone" placeholder=" " data-mask="phone">
                 <label for="phone">Phone Number</label>
             </div>
         </div>
@@ -148,7 +233,7 @@
 
             <div class="floating-label-group floating-label-with-icon">
                 <i class="fa-solid fa-phone"></i>
-                <input type="tel" id="uphone" placeholder=" ">
+                <input type="tel" id="uphone" placeholder=" " data-mask="phone">
                 <label for="uphone">Phone Number</label>
             </div>
 
@@ -175,7 +260,7 @@
         <div class="card-body">
             <div class="floating-label-group floating-label-with-icon">
                 <i class="fa-solid fa-credit-card"></i>
-                <input type="text" id="card" placeholder=" " value="4111 1111 1111 1111">
+                <input type="text" id="card" placeholder=" " value="4111 1111 1111 1111" data-mask="credit-card">
                 <label for="card">Card Number</label>
             </div>
 
@@ -187,13 +272,13 @@
 
             <div class="floating-label-group floating-label-with-icon">
                 <i class="fa-solid fa-calendar"></i>
-                <input type="text" id="expiry" placeholder=" " value="12/25">
+                <input type="text" id="expiry" placeholder=" " value="12/25" data-mask="expiry-date">
                 <label for="expiry">Expiry Date</label>
             </div>
 
             <div class="floating-label-group floating-label-with-icon">
                 <i class="fa-solid fa-lock"></i>
-                <input type="text" id="cvv" placeholder=" ">
+                <input type="text" id="cvv" placeholder=" " data-mask="cvv" maxlength="4">
                 <label for="cvv">CVV</label>
             </div>
         </div>
@@ -226,7 +311,7 @@
             </div>
 
             <div class="floating-label-group">
-                <textarea id="message" rows="4" placeholder=" " value="Hello, I would like to..."></textarea>
+                <textarea id="message" rows="4" placeholder=" ">Hello, I would like to...</textarea>
                 <label for="message">Message</label>
             </div>
 
@@ -302,7 +387,7 @@
                     <option value="wita">WITA (UTC+8)</option>
                     <option value="wit">WIT (UTC+9)</option>
                 </select>
-                <label for="timezone">Timezone</option>
+                <label for="timezone">Timezone</label>
             </div>
 
             <div class="divider"></div>
@@ -354,7 +439,7 @@
             </div>
 
             <div class="floating-label-group" style="margin-top: 20px;">
-                <input type="tel" id="valid-phone" class="is-valid" placeholder=" " value="+62 812-3456-7890">
+                <input type="tel" id="valid-phone" class="is-valid" placeholder=" " value="+62 812-3456-7890" data-mask="phone">
                 <label for="valid-phone">Phone Number</label>
             </div>
             <div class="helper-text success-text">
@@ -528,7 +613,7 @@
                 </div>
 
                 <div class="floating-label-group">
-                    <input type="tel" id="reg-phone" placeholder=" ">
+                    <input type="tel" id="reg-phone" placeholder=" " data-mask="phone">
                     <label for="reg-phone">Phone Number</label>
                 </div>
 
