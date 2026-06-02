@@ -3,6 +3,192 @@
 @section('title', 'Switch')
 
 @push('styles')
+<style>
+/* Switch Section Title */
+.sw-section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 32px 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-primary);
+}
+
+.sw-section-title i {
+    color: var(--accent);
+}
+
+/* Switch Example */
+.sw-example {
+    margin-bottom: 20px;
+}
+
+.sw-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.sw-helper {
+    font-size: 12px;
+    color: var(--text-tertiary);
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Toggle Switch Label */
+.toggle-switch-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Color Variants */
+.toggle-switch-success input[type="checkbox"]:checked {
+    background: linear-gradient(180deg, var(--success) 0%, #059669 100%);
+    border-color: #059669;
+}
+
+.toggle-switch-danger input[type="checkbox"]:checked {
+    background: linear-gradient(180deg, var(--danger) 0%, #dc2626 100%);
+    border-color: #dc2626;
+}
+
+.toggle-switch-warning input[type="checkbox"]:checked {
+    background: linear-gradient(180deg, var(--warning) 0%, #d97706 100%);
+    border-color: #d97706;
+}
+
+.toggle-switch-info input[type="checkbox"]:checked {
+    background: linear-gradient(180deg, var(--info) 0%, #0891b2 100%);
+    border-color: #0891b2;
+}
+
+/* Status Indicator */
+.status-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.status-on {
+    background: rgba(var(--success-rgb), 0.1);
+    color: var(--success);
+}
+
+.status-off {
+    background: rgba(var(--danger-rgb), 0.1);
+    color: var(--danger);
+}
+
+/* List Switch */
+.list-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg-primary);
+    transition: all 0.2s;
+}
+
+.list-switch:hover {
+    border-color: var(--accent);
+    background: var(--bg-secondary);
+}
+
+.list-switch-content {
+    flex: 1;
+}
+
+.list-switch-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.list-switch-desc {
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+
+/* Card Switch */
+.card-switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 16px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--bg-primary);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.card-switch:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.card-switch.active {
+    border-color: var(--accent);
+    background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.05) 0%, rgba(var(--accent-rgb), 0.02) 100%);
+}
+
+.card-switch-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.card-switch-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.card-switch-desc {
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+
+/* Switch Grid Responsive */
+@media (max-width: 1024px) {
+    .switch-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .switch-grid.four-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .switch-grid.three-cols {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .switch-grid.four-cols {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 @endpush
 
 @section('content')
@@ -972,3 +1158,126 @@
     </div>
 </div>
 @endsection
+
+@push('scripts')
+<script>
+$(document).ready(function() {
+    // Update status indicators when switches change
+    $('.toggle-switch input[type="checkbox"]').on('change', function() {
+        const $switch = $(this).closest('.toggle-switch');
+        const $example = $switch.closest('.sw-example');
+        const $statusIndicator = $example.find('.status-indicator');
+        const $helper = $example.find('.sw-helper');
+        
+        if ($(this).is(':checked')) {
+            // Update status indicator
+            if ($statusIndicator.length) {
+                $statusIndicator.removeClass('status-off').addClass('status-on');
+                $statusIndicator.html('<i class="fa-solid fa-check"></i> ON');
+            }
+            
+            // Update helper text
+            if ($helper.length) {
+                $helper.html('<i class="fa-solid fa-circle-info"></i> Currently: ON');
+            }
+        } else {
+            // Update status indicator
+            if ($statusIndicator.length) {
+                $statusIndicator.removeClass('status-on').addClass('status-off');
+                $statusIndicator.html('<i class="fa-solid fa-xmark"></i> OFF');
+            }
+            
+            // Update helper text
+            if ($helper.length) {
+                $helper.html('<i class="fa-solid fa-circle-info"></i> Currently: OFF');
+            }
+        }
+    });
+    
+    // Card switch click to toggle
+    $('.card-switch').on('click', function() {
+        $(this).toggleClass('active');
+        
+        const $card = $(this);
+        const $statusIndicator = $card.closest('.card-body').find('.status-indicator');
+        
+        if ($card.hasClass('active')) {
+            $statusIndicator.removeClass('status-off').addClass('status-on');
+            $statusIndicator.html('<i class="fa-solid fa-check"></i> Enabled');
+        } else {
+            $statusIndicator.removeClass('status-on').addClass('status-off');
+            $statusIndicator.html('<i class="fa-solid fa-xmark"></i> Disabled');
+        }
+    });
+    
+    // Settings panel save button
+    $('.btn-primary:contains("Save Settings")').on('click', function(e) {
+        e.preventDefault();
+        
+        const switches = [];
+        $('.toggle-switch input[type="checkbox"]').each(function() {
+            const id = $(this).attr('id');
+            const checked = $(this).is(':checked');
+            switches.push({ id, checked });
+        });
+        
+        // Show success message
+        if (typeof MetroAdmin !== 'undefined' && MetroAdmin.showToast) {
+            MetroAdmin.showToast('Settings saved successfully!', 'success');
+        } else {
+            Swal.fire({
+                icon: 'success',
+                title: 'Saved!',
+                text: 'Settings have been saved successfully.',
+                timer: 2000,
+                showConfirmButton: false
+            });
+        }
+        
+        console.log('Settings:', switches);
+    });
+    
+    // Reset button
+    $('.btn-secondary:contains("Reset Defaults")').on('click', function(e) {
+        e.preventDefault();
+        
+        Swal.fire({
+            title: 'Reset Settings?',
+            text: 'All settings will be reset to default values.',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: 'var(--accent)',
+            cancelButtonColor: 'var(--danger)',
+            confirmButtonText: 'Yes, reset it!',
+            cancelButtonText: 'Cancel'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Reset all switches to default
+                $('.toggle-switch input[type="checkbox"]').prop('checked', false);
+                
+                // Set default checked switches
+                $('#settings1, #settings2, #settings4, #settings6, #settings7').prop('checked', true);
+                
+                // Trigger change event
+                $('.toggle-switch input[type="checkbox"]').trigger('change');
+                
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Reset!',
+                    text: 'Settings have been reset to defaults.',
+                    timer: 2000,
+                    showConfirmButton: false
+                });
+            }
+        });
+    });
+    
+    // Log switch changes for debugging
+    $('.toggle-switch input[type="checkbox"]').on('change', function() {
+        const id = $(this).attr('id');
+        const state = $(this).is(':checked') ? 'ON' : 'OFF';
+        console.log(`Switch ${id}: ${state}`);
+    });
+});
+</script>
+@endpush

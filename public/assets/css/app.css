@@ -5609,6 +5609,10 @@ select.form-control[multiple] option {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.switch-grid.four-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .switch-grid.full-width {
     grid-template-columns: 1fr;
 }
@@ -5714,7 +5718,7 @@ select.form-control[multiple] option {
 /* Size Variants */
 .toggle-switch-sm input[type="checkbox"] {
     width: 40px;
-    height: 22px;
+    height: 25px;
     border-radius: 11px;
 }
 
@@ -6417,6 +6421,7 @@ select.form-control[multiple] option {
 
 .touch-spin .spin-btn {
     width: 40px;
+    height: 42px;
     border: 1px solid var(--border);
     background: var(--bg-secondary);
     color: var(--text-secondary);
@@ -6428,6 +6433,7 @@ select.form-control[multiple] option {
     align-items: center;
     justify-content: center;
     user-select: none;
+    flex-shrink: 0;
 }
 
 .touch-spin .spin-btn:hover {
@@ -6452,6 +6458,7 @@ select.form-control[multiple] option {
 
 .touch-spin .spin-input {
     flex: 1;
+    height: 42px;
     text-align: center;
     border: 1px solid var(--border);
     background: var(--surface);
@@ -6460,8 +6467,9 @@ select.form-control[multiple] option {
     color: var(--text-primary);
     font-family: 'Consolas', 'Monaco', monospace;
     outline: none;
-    padding: 10px;
+    padding: 0 10px;
     transition: var(--transition-fast);
+    min-width: 0;
 }
 
 .touch-spin .spin-input:focus {
@@ -6478,22 +6486,28 @@ select.form-control[multiple] option {
 /* Size Variants */
 .touch-spin-sm .spin-btn {
     width: 32px;
+    height: 34px;
     font-size: 14px;
 }
 
 .touch-spin-sm .spin-input {
-    font-size: 14px;
-    padding: 6px;
+    height: 34px;
+    font-size: 13px;
 }
 
+/* Medium (default) - already defined in base styles */
+/* Button: 40px width, 42px height, 18px font */
+/* Input: 42px height, 16px font */
+
 .touch-spin-lg .spin-btn {
-    width: 48px;
-    font-size: 22px;
+    width: 56px;
+    height: 58px;
+    font-size: 26px;
 }
 
 .touch-spin-lg .spin-input {
-    font-size: 18px;
-    padding: 12px;
+    height: 58px;
+    font-size: 22px;
 }
 
 /* Step Size Indicator */
@@ -6674,6 +6688,13 @@ select.form-control[multiple] option {
     .touchspin-grid.three-cols {
         grid-template-columns: 1fr;
     }
+}
+
+/* Touch Spin Shake Animation */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+    20%, 40%, 60%, 80% { transform: translateX(4px); }
 }
 
 /* END TOUCH SPIN STYLE */
