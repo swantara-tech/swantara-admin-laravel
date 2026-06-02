@@ -23,6 +23,11 @@ const MetroAdmin = {
         this.initKeyboardShortcuts();
         this.initCounters();
         this.initCharts();
+        this.initColorPickers();
+        this.initPasswordToggle();
+        this.initRangeSliders();
+        this.initNumberInputs();
+        this.initSearchInputs();
     },
 
     // ==========================================
@@ -460,6 +465,152 @@ const MetroAdmin = {
                 }
             });
         }
+    },
+
+    // ==========================================
+    // COLOR PICKER SYNC
+    // ==========================================
+    initColorPickers() {
+        // Find all color picker groups
+        $('input[type="color"]').each(function() {
+            const colorInput = $(this);
+            const parent = colorInput.closest('.form-group');
+            const textInput = parent.find('input[type="text"][readonly]');
+            
+            if (textInput.length) {
+                // Sync color picker to text input
+                colorInput.on('input', function() {
+                    const colorValue = $(this).val();
+                    textInput.val(colorValue);
+                });
+                
+                // Sync text input to color picker (if user edits manually)
+                textInput.on('input', function() {
+                    const textValue = $(this).val();
+                    // Validate hex color format
+                    if (/^#[0-9A-Fa-f]{6}$/.test(textValue)) {
+                        colorInput.val(textValue);
+                    }
+                });
+            }
+        });
+    },
+
+    // ==========================================
+    // PASSWORD VISIBILITY TOGGLE
+    // ==========================================
+    initPasswordToggle() {
+        $(document).on('click', '.input-with-icon-right i.fa-eye, .input-with-icon-right i.fa-eye-slash', function() {
+            const icon = $(this);
+            const input = icon.siblings('input');
+            
+            if (input.attr('type') === 'password') {
+                input.attr('type', 'text');
+                icon.removeClass('fa-eye').addClass('fa-eye-slash');
+                icon.attr('title', 'Hide password');
+            } else {
+                input.attr('type', 'password');
+                icon.removeClass('fa-eye-slash').addClass('fa-eye');
+                icon.attr('title', 'Toggle password visibility');
+            }
+        });
+    },
+
+    // ==========================================
+    // RANGE SLIDER VALUE DISPLAY
+    // ==========================================
+    initRangeSliders() {
+        $('input[type="range"]').each(function() {
+            const rangeInput = $(this);
+            const helperText = rangeInput.closest('.form-group').find('.helper-text');
+            
+            // Function to update helper text based on range label
+            const updateDisplay = function() {
+                const value = rangeInput.val();
+                const min = rangeInput.attr('min') || 0;
+                const max = rangeInput.attr('max') || 100;
+                const label = rangeInput.closest('.form-group').find('label').first().text();
+                
+                // Update helper text with current value
+                if (label.includes('Volume')) {
+                    helperText.html('<i class="fa-solid fa-volume-high"></i> Current: ' + value + '%');
+                } else if (label.includes('Price')) {
+                    helperText.html('<i class="fa-solid fa-dollar-sign"></i> Current: $' + value);
+                } else if (label.includes('Brightness')) {
+                    helperText.html('<i class="fa-solid fa-sun"></i> Current: ' + value);
+                } else {
+                    helperText.html('<i class="fa-solid fa-sliders"></i> Current: ' + value + ' (' + min + '-' + max + ')');
+                }
+            };
+            
+            // Update on input change
+            rangeInput.on('input', updateDisplay);
+            
+            // Initial display
+            updateDisplay();
+        });
+    },
+
+    // ==========================================
+    // NUMBER INPUT SPINNER
+    // ==========================================
+    initNumberInputs() {
+        $('input[type="number"]').each(function() {
+            const numberInput = $(this);
+            const helperText = numberInput.closest('.form-group').find('.helper-text');
+            
+            numberInput.on('input change', function() {
+                const value = $(this).val();
+                const min = $(this).attr('min');
+                const max = $(this).attr('max');
+                const step = $(this).attr('step');
+                
+                // Update helper text if exists
+                if (helperText.length) {
+                    const label = $(this).closest('.form-group').find('label').first().text();
+                    
+                    if (label.includes('Decimal')) {
+                        helperText.html('<i class="fa-solid fa-coins"></i> Value: ' + value + ' (Step: ' + step + ')');
+                    } else if (label.includes('Range')) {
+                        helperText.html('<i class="fa-solid fa-arrows-left-right"></i> Min: ' + min + ', Max: ' + max + ', Current: ' + value);
+                    } else {
+                        helperText.html('<i class="fa-solid fa-circle-info"></i> Current value: ' + value);
+                    }
+                }
+            });
+        });
+    },
+
+    // ==========================================
+    // SEARCH INPUT CLEAR BUTTON
+    // ==========================================
+    initSearchInputs() {
+        $('input[type="search"]').each(function() {
+            const searchInput = $(this);
+            const parent = searchInput.closest('.input-with-icon');
+            
+            // Add clear button if not exists
+            if (!parent.find('.search-clear').length) {
+                searchInput.after('<i class="fa-solid fa-xmark search-clear" style="position: absolute; right: 12px; cursor: pointer; color: var(--text-tertiary); display: none;"></i>');
+            }
+            
+            const clearBtn = parent.find('.search-clear');
+            
+            // Show/hide clear button
+            searchInput.on('input', function() {
+                if ($(this).val().length > 0) {
+                    clearBtn.show();
+                } else {
+                    clearBtn.hide();
+                }
+            });
+            
+            // Clear on click
+            clearBtn.on('click', function() {
+                searchInput.val('').focus();
+                clearBtn.hide();
+            });
+        });
     }
 };
 

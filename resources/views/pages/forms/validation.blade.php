@@ -5,6 +5,10 @@
 @push('styles')
 @endpush
 
+@push('scripts')
+<script src="{{ asset('assets/js/form-validation.js') }}"></script>
+@endpush
+
 @section('content')
 <div class="page-header">
     <div>
