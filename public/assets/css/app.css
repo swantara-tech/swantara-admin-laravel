@@ -4402,7 +4402,7 @@ select.form-control[multiple] option {
 }
 
 .input-group .dropdown-menu {
-    display: none;
+    display: none !important;
     position: absolute;
     top: 100%;
     left: 0;
@@ -4417,7 +4417,7 @@ select.form-control[multiple] option {
 }
 
 .input-group .dropdown-menu.show {
-    display: block;
+    display: block !important;
 }
 
 .input-group .dropdown-menu .dropdown-item {

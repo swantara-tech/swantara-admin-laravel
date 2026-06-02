@@ -5,6 +5,12 @@
 @push('styles')
 @endpush
 
+@push('scripts')
+<!-- IMask.js Library -->
+<script src="https://unpkg.com/imask@7.1.3/dist/imask.min.js"></script>
+<script src="{{ asset('assets/js/input-mask.js') }}"></script>
+@endpush
+
 @section('content')
 <div class="page-header">
     <div>
@@ -65,7 +71,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-mobile-screen"></i>
                     </span>
-                    <input type="text" class="form-control" value="+62 812-3456-7890" readonly>
+                    <input type="text" class="form-control" placeholder="+62 812-3456-7890" data-mask="phone">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -82,7 +88,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-phone"></i>
                     </span>
-                    <input type="text" class="form-control" value="(021) 123-4567" readonly>
+                    <input type="text" class="form-control" placeholder="(021) 123-4567" data-mask="landline">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -99,7 +105,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-headset"></i>
                     </span>
-                    <input type="text" class="form-control" value="800-123-4567" readonly>
+                    <input type="text" class="form-control" placeholder="800-123-4567" data-mask="toll-free">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -136,7 +142,7 @@
                 </label>
                 <div class="input-group">
                     <span class="input-group-text">🇺🇸</span>
-                    <input type="text" class="form-control" value="(555) 123-4567" readonly>
+                    <input type="text" class="form-control" placeholder="(555) 123-4567" data-mask="phone-us">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -151,7 +157,7 @@
                 </label>
                 <div class="input-group">
                     <span class="input-group-text">🇬🇧</span>
-                    <input type="text" class="form-control" value="+44 20 7946 0958" readonly>
+                    <input type="text" class="form-control" placeholder="+44 20 7946 0958" data-mask="phone-uk">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -166,7 +172,7 @@
                 </label>
                 <div class="input-group">
                     <span class="input-group-text">🇯🇵</span>
-                    <input type="text" class="form-control" value="+81-90-1234-5678" readonly>
+                    <input type="text" class="form-control" placeholder="+81-90-1234-5678" data-mask="phone-jp">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -230,7 +236,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-calendar-days"></i>
                     </span>
-                    <input type="text" class="form-control" value="31/05/2026" readonly>
+                    <input type="text" class="form-control" placeholder="DD/MM/YYYY" data-mask="date-dmy">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -247,7 +253,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-calendar-check"></i>
                     </span>
-                    <input type="text" class="form-control" value="05-31-2026" readonly>
+                    <input type="text" class="form-control" placeholder="MM-DD-YYYY" data-mask="date-mdy">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -264,7 +270,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-calendar-week"></i>
                     </span>
-                    <input type="text" class="form-control" value="2026.05.31" readonly>
+                    <input type="text" class="form-control" placeholder="YYYY.MM.DD" data-mask="date-ymd">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -303,7 +309,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-clock"></i>
                     </span>
-                    <input type="text" class="form-control" value="14:30" readonly>
+                    <input type="text" class="form-control" placeholder="HH:MM" data-mask="time-24h">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -320,7 +326,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-sun"></i>
                     </span>
-                    <input type="text" class="form-control" value="02:30 PM" readonly>
+                    <input type="text" class="form-control" placeholder="HH:MM AM/PM" data-mask="time-12h">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -337,7 +343,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-calendar-clock"></i>
                     </span>
-                    <input type="text" class="form-control" value="31/05/2026 14:30" readonly>
+                    <input type="text" class="form-control" placeholder="DD/MM/YYYY HH:MM" data-mask="datetime">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -399,7 +405,7 @@
                 </label>
                 <div class="input-group">
                     <span class="input-group-text">#</span>
-                    <input type="text" class="form-control" value="123456789" readonly>
+                    <input type="text" class="form-control" placeholder="123456789" data-mask="integer">
                 </div>
             </div>
 
@@ -410,7 +416,7 @@
                 </label>
                 <div class="input-group">
                     <span class="input-group-text">#</span>
-                    <input type="text" class="form-control" value="123.45" readonly>
+                    <input type="text" class="form-control" placeholder="123.45" data-mask="decimal">
                 </div>
             </div>
 
@@ -421,7 +427,7 @@
                 </label>
                 <div class="input-group">
                     <span class="input-group-text">#</span>
-                    <input type="text" class="form-control" value="1,234,567" readonly>
+                    <input type="text" class="form-control" placeholder="1,234,567" data-mask="number-thousands">
                 </div>
             </div>
         </div>
@@ -448,7 +454,7 @@
                 <div class="input-group">
                     <span class="input-group-text">$
                     </span>
-                    <input type="text" class="form-control" value="1,234.56" readonly>
+                    <input type="text" class="form-control" placeholder="$1,234.56" data-mask="currency-usd">
                 </div>
             </div>
 
@@ -459,7 +465,7 @@
                 </label>
                 <div class="input-group">
                     <span class="input-group-text">Rp</span>
-                    <input type="text" class="form-control" value="1.234.567" readonly>
+                    <input type="text" class="form-control" placeholder="Rp 1.234.567" data-mask="currency-idr">
                 </div>
             </div>
 
@@ -470,7 +476,7 @@
                 </label>
                 <div class="input-group">
                     <span class="input-group-text">€</span>
-                    <input type="text" class="form-control" value="1.234,56" readonly>
+                    <input type="text" class="form-control" placeholder="€1.234,56" data-mask="currency-eur">
                 </div>
             </div>
         </div>
@@ -495,7 +501,7 @@
                     <span class="mask-pattern">###%</span>
                 </label>
                 <div class="input-group">
-                    <input type="text" class="form-control" value="85" readonly>
+                    <input type="text" class="form-control" placeholder="85" data-mask="percentage">
                     <span class="input-group-text">%</span>
                 </div>
             </div>
@@ -506,7 +512,7 @@
                     <span class="mask-pattern">##.##%</span>
                 </label>
                 <div class="input-group">
-                    <input type="text" class="form-control" value="12.50" readonly>
+                    <input type="text" class="form-control" placeholder="12.50" data-mask="percentage-decimal">
                     <span class="input-group-text">%</span>
                 </div>
             </div>
@@ -517,7 +523,7 @@
                     <span class="mask-pattern">###</span>
                 </label>
                 <div class="input-group">
-                    <input type="text" class="form-control" value="75" readonly>
+                    <input type="text" class="form-control" placeholder="75" data-mask="percentage">
                     <span class="input-group-text">/100</span>
                 </div>
             </div>
@@ -554,7 +560,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-credit-card"></i>
                     </span>
-                    <input type="text" class="form-control" value="4111 1111 1111 1111" readonly maxlength="19">
+                    <input type="text" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19" data-mask="credit-card">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -571,7 +577,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-lock"></i>
                     </span>
-                    <input type="text" class="form-control" value="123" readonly maxlength="4">
+                    <input type="text" class="form-control" placeholder="123" maxlength="4" data-mask="cvv">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -588,7 +594,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-building-columns"></i>
                     </span>
-                    <input type="text" class="form-control" value="1234567890" readonly maxlength="12">
+                    <input type="text" class="form-control" placeholder="1234567890" maxlength="12" data-mask="bank-account">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -627,7 +633,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-id-card"></i>
                     </span>
-                    <input type="text" class="form-control" value="3201234567890001" readonly maxlength="16">
+                    <input type="text" class="form-control" placeholder="3201234567890001" maxlength="16" data-mask="nik">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -644,7 +650,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-passport"></i>
                     </span>
-                    <input type="text" class="form-control" value="A1234567" readonly maxlength="9">
+                    <input type="text" class="form-control" placeholder="A1234567" maxlength="9" data-mask="passport">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -661,7 +667,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-file-invoice-dollar"></i>
                     </span>
-                    <input type="text" class="form-control" value="12.345.678.9-012.345" readonly>
+                    <input type="text" class="form-control" placeholder="12.345.678.9-012.345" data-mask="npwp">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -725,7 +731,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-book"></i>
                     </span>
-                    <input type="text" class="form-control" value="978-3-16148-410-0" readonly>
+                    <input type="text" class="form-control" placeholder="978-3-16148-410-0" data-mask="isbn">
                 </div>
             </div>
 
@@ -738,7 +744,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-fingerprint"></i>
                     </span>
-                    <input type="text" class="form-control" value="ABC-123-45678" readonly>
+                    <input type="text" class="form-control" placeholder="ABC-123-45678" data-mask="serial">
                 </div>
             </div>
 
@@ -751,7 +757,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-car"></i>
                     </span>
-                    <input type="text" class="form-control" value="B 1234 XYZ" readonly>
+                    <input type="text" class="form-control" placeholder="B 1234 XYZ" data-mask="license-plate">
                 </div>
             </div>
         </div>
@@ -779,7 +785,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-wifi"></i>
                     </span>
-                    <input type="text" class="form-control" value="192.168.1.100" readonly>
+                    <input type="text" class="form-control" placeholder="192.168.1.100" data-mask="ip-address">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -796,7 +802,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-ethernet"></i>
                     </span>
-                    <input type="text" class="form-control" value="00:1B:44:11:3A:B7" readonly>
+                    <input type="text" class="form-control" placeholder="00:1B:44:11:3A:B7" data-mask="mac-address">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -813,7 +819,7 @@
                     <span class="input-group-text">
                         <i class="fa-solid fa-palette"></i>
                     </span>
-                    <input type="text" class="form-control" value="#0078D4" readonly maxlength="7">
+                    <input type="text" class="form-control" placeholder="#0078D4" maxlength="7" data-mask="hex-color">
                 </div>
                 <div class="mask-placeholder">
                     <i class="fa-solid fa-circle-info"></i>
@@ -856,7 +862,7 @@
                         <span class="input-group-text">
                             <i class="fa-solid fa-credit-card"></i>
                         </span>
-                        <input type="text" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19">
+                        <input type="text" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19" data-mask="credit-card">
                     </div>
                     <div class="mask-placeholder">
                         <i class="fa-solid fa-circle-info"></i>
@@ -868,7 +874,7 @@
                     <div class="form-group">
                         <label style="font-weight: 600; margin-bottom: 8px; display: block;">Expiry Date <span style="color: var(--danger);">*</span></label>
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="MM/YY" maxlength="5">
+                            <input type="text" class="form-control" placeholder="MM/YY" maxlength="5" data-mask="expiry-date">
                             <span class="input-group-text">
                                 <i class="fa-solid fa-calendar"></i>
                             </span>
@@ -882,7 +888,7 @@
                     <div class="form-group">
                         <label style="font-weight: 600; margin-bottom: 8px; display: block;">CVV <span style="color: var(--danger);">*</span></label>
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="123" maxlength="4">
+                            <input type="text" class="form-control" placeholder="123" maxlength="4" data-mask="cvv">
                             <span class="input-group-text">
                                 <i class="fa-solid fa-lock"></i>
                             </span>
@@ -903,7 +909,7 @@
                             <option>🇮🇩 +62</option>
                             <option>🇺🇸 +1</option>
                         </select>
-                        <input type="tel" class="form-control" placeholder="812-3456-7890">
+                        <input type="tel" class="form-control" placeholder="812-3456-7890" data-mask="phone">
                     </div>
                 </div>
 
@@ -911,7 +917,7 @@
                     <label style="font-weight: 600; margin-bottom: 8px; display: block;">Payment Amount</label>
                     <div class="input-group">
                         <span class="input-group-text">Rp</span>
-                        <input type="text" class="form-control" placeholder="1.234.567">
+                        <input type="text" class="form-control" placeholder="1.234.567" data-mask="currency-idr">
                     </div>
                 </div>
 
