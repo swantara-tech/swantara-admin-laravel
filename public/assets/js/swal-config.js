@@ -1,148 +1,177 @@
 /**
- * SweetAlert2 Custom Configuration
- * Auto-apply custom styling to all SweetAlert2 instances
- * Global configuration - no need to add customClass manually
+ * Custom Toast Notification System
+ * Menggunakan custom toast dengan animasi slide-in
+ * Mengganti SweetAlert2 dan Metro UI Toast
  */
 
-// Override SweetAlert2 default configuration
-(function() {
-    // Store original Swal.fire
-    const originalSwalFire = Swal.fire;
-    const originalSwalMixin = Swal.mixin;
-    
-    // Override Swal.fire to auto-apply custom class
-    Swal.fire = function(config) {
-        // If config is an object, add customClass automatically
-        if (typeof config === 'object' && config !== null) {
-            config.customClass = config.customClass || {};
-            config.customClass.popup = 'custom-swal';
-        }
-        
-        // Call original Swal.fire with modified config
-        return originalSwalFire.call(Swal, config);
-    };
-    
-    // Also override mixin to ensure consistency
-    Swal.mixin = function(defaultParams) {
-        defaultParams.customClass = defaultParams.customClass || {};
-        defaultParams.customClass.popup = 'custom-swal';
-        
-        return originalSwalMixin.call(Swal, defaultParams);
-    };
-    
-    // Preserve original methods if needed
-    Swal.originalFire = originalSwalFire;
-    Swal.originalMixin = originalSwalMixin;
-})();
+// Toast container
+let toastContainer = null;
 
-// Toast notification helper
-function showToast(message, type = 'success', position = 'top-end') {
-    const iconMap = {
-        'success': 'success',
-        'error': 'error',
-        'warning': 'warning',
-        'info': 'info'
-    };
-    
-    return Swal.fire({
-        icon: iconMap[type] || 'info',
-        title: message,
-        toast: true,
-        position: position,
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        customClass: {
-            popup: 'custom-swal-toast'
-        }
-    });
+// Toast configuration
+const toastConfig = {
+    timer: 4000,
+    success: {
+        icon: '✓',
+        text: 'Success'
+    },
+    error: {
+        icon: '✕',
+        text: 'Error'
+    },
+    warning: {
+        icon: '⚠',
+        text: 'Warning'
+    },
+    info: {
+        icon: 'ℹ',
+        text: 'Info'
+    }
+};
+
+// Initialize toast container
+function initToastContainer() {
+    if (!toastContainer) {
+        toastContainer = document.createElement('ul');
+        toastContainer.className = 'custom-notifications';
+        document.body.appendChild(toastContainer);
+    }
+    return toastContainer;
 }
 
-// Confirmation dialog helper
+// Remove toast
+function removeToast(toast) {
+    toast.classList.add('hide');
+    if (toast.timeoutId) clearTimeout(toast.timeoutId);
+    setTimeout(() => toast.remove(), 300);
+}
+
+// Create toast
+function createToast(type, message) {
+    const container = initToastContainer();
+    const config = toastConfig[type] || toastConfig.info;
+    
+    const toast = document.createElement('li');
+    toast.className = `custom-toast ${type}`;
+    toast.innerHTML = `
+        <div class="toast-column">
+            <span class="toast-icon">${config.icon}</span>
+            <span class="toast-message">${message}</span>
+        </div>
+        <span class="toast-close" onclick="removeToast(this.parentElement)">×</span>
+    `;
+    
+    container.appendChild(toast);
+    toast.timeoutId = setTimeout(() => removeToast(toast), toastConfig.timer);
+    
+    return toast;
+}
+
+// ========================
+// Toast helper
+// ========================
+function showToast(message, type = 'success', position = 'top-right') {
+    // Position handling (will be controlled by CSS)
+    const container = initToastContainer();
+    container.className = `custom-notifications position-${position}`;
+    
+    return createToast(type, message);
+}
+
+
+// ========================
+// Dialog helpers (Metro UI Notify)
+// ========================
 function showConfirm(title, text = '', confirmText = 'Ya', cancelText = 'Batal') {
-    return Swal.fire({
-        icon: 'warning',
-        title: title,
-        text: text,
-        showCancelButton: true,
-        confirmButtonColor: '#0078D4',
-        cancelButtonColor: '#d33',
-        confirmButtonText: confirmText,
-        cancelButtonText: cancelText
-    });
-}
+    return new Promise((resolve) => {
+        const notify = Metro.notify.create(
+            `<div>
+                <p style="margin-bottom: 12px;">${text}</p>
+                <div style="display: flex; gap: 8px; justify-content: flex-end;">
+                    <button class="button button-small" id="notify-cancel">${cancelText}</button>
+                    <button class="button button-small primary" id="notify-confirm">${confirmText}</button>
+                </div>
+            </div>`,
+            title,
+            {
+                width: 400,
+                keepOpen: true,
+                clsNotify: 'dialog-notify',
+                onClose: () => resolve({ isConfirmed: false, isDenied: false, dismiss: 'close' })
+            }
+        );
 
-// Success notification helper
-function showSuccess(title, text = '', timer = 2000) {
-    return Swal.fire({
-        icon: 'success',
-        title: title,
-        text: text,
-        timer: timer,
-        showConfirmButton: false
-    });
-}
+        setTimeout(() => {
+            const confirmBtn = document.getElementById('notify-confirm');
+            const cancelBtn = document.getElementById('notify-cancel');
 
-// Error notification helper
-function showError(title, text = '') {
-    return Swal.fire({
-        icon: 'error',
-        title: title,
-        text: text
-    });
-}
-
-// Warning notification helper
-function showWarning(title, text = '') {
-    return Swal.fire({
-        icon: 'warning',
-        title: title,
-        text: text
-    });
-}
-
-// Info notification helper
-function showInfo(title, text = '') {
-    return Swal.fire({
-        icon: 'info',
-        title: title,
-        text: text
-    });
-}
-
-// Loading dialog helper
-function showLoading(text = 'Loading...') {
-    return Swal.fire({
-        title: text,
-        allowOutsideClick: false,
-        allowEscapeKey: false,
-        showConfirmButton: false,
-        willOpen: () => {
-            Swal.showLoading();
-        }
-    });
-}
-
-// Auto-close loading and show success
-function showLoadingSuccess(text = 'Loading...', successTitle, successText, timer = 1500) {
-    return Swal.fire({
-        title: text,
-        allowOutsideClick: false,
-        allowEscapeKey: false,
-        showConfirmButton: false,
-        willOpen: () => {
-            Swal.showLoading();
-        },
-        didOpen: () => {
-            setTimeout(() => {
-                Swal.fire({
-                    icon: 'success',
-                    title: successTitle,
-                    text: successText,
-                    timer: timer,
-                    showConfirmButton: false
+            if (confirmBtn) {
+                confirmBtn.addEventListener('click', () => {
+                    Metro.notify.kill(notify);
+                    resolve({ isConfirmed: true, isDenied: false });
                 });
-            }, 1500);
-        }
+            }
+
+            if (cancelBtn) {
+                cancelBtn.addEventListener('click', () => {
+                    Metro.notify.kill(notify);
+                    resolve({ isConfirmed: false, isDenied: false, dismiss: 'cancel' });
+                });
+            }
+        }, 100);
     });
+}
+
+function showSuccess(title, text = '', timer = 2000) {
+    return Metro.notify.create(text || title, title, {
+        timeout: timer,
+        clsNotify: 'success'
+    });
+}
+
+function showError(title, text = '') {
+    return Metro.notify.create(text || title, title, {
+        timeout: 5000,
+        keepOpen: true,
+        clsNotify: 'alert'
+    });
+}
+
+function showWarning(title, text = '') {
+    return Metro.notify.create(text || title, title, {
+        timeout: 5000,
+        clsNotify: 'warning'
+    });
+}
+
+function showInfo(title, text = '') {
+    return Metro.notify.create(text || title, title, {
+        timeout: 5000,
+        clsNotify: 'info'
+    });
+}
+
+function showLoading(text = 'Loading...') {
+    return Metro.notify.create(
+        `<div style="display: flex; align-items: center; gap: 12px;">
+            <span class="mif-spinner animate-spin"></span>
+            <span>${text}</span>
+        </div>`,
+        null,
+        {
+            keepOpen: true,
+            clsNotify: 'loading-notify',
+            width: 300
+        }
+    );
+}
+
+function showLoadingSuccess(text = 'Loading...', successTitle, successText, timer = 1500) {
+    const loadingNotify = showLoading(text);
+
+    setTimeout(() => {
+        Metro.notify.kill(loadingNotify);
+        showSuccess(successTitle, successText, timer);
+    }, 1500);
+
+    return loadingNotify;
 }
