@@ -28,6 +28,7 @@ const MetroAdmin = {
         this.initRangeSliders();
         this.initNumberInputs();
         this.initSearchInputs();
+        this.initInputGroupDropdowns();
     },
 
     // ==========================================
@@ -610,6 +611,73 @@ const MetroAdmin = {
                 searchInput.val('').focus();
                 clearBtn.hide();
             });
+        });
+    },
+
+    // ==========================================
+    // INPUT GROUP DROPDOWNS
+    // ==========================================
+    initInputGroupDropdowns() {
+        // Dropdown toggle button click
+        $(document).on('click', '.input-group .dropdown-toggle', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const btn = $(this);
+            const inputGroup = btn.closest('.input-group');
+            
+            // Check if dropdown menu already exists
+            let dropdownMenu = inputGroup.find('.dropdown-menu');
+            
+            if (!dropdownMenu.length) {
+                // Create dropdown menu
+                dropdownMenu = $('<div class="dropdown-menu">').html(`
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                    <a class="dropdown-item" href="#">Action 3</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else</a>
+                `);
+                
+                inputGroup.append(dropdownMenu);
+            }
+            
+            // Toggle dropdown
+            dropdownMenu.toggleClass('show');
+            
+            // Position dropdown below input group
+            const inputGroupOffset = inputGroup.offset();
+            const inputGroupHeight = inputGroup.outerHeight();
+            
+            dropdownMenu.css({
+                position: 'absolute',
+                top: inputGroupHeight + 'px',
+                left: 0,
+                zIndex: 1000
+            });
+        });
+        
+        // Close dropdown when clicking outside
+        $(document).on('click', function(e) {
+            if (!$(e.target).closest('.input-group').length) {
+                $('.input-group .dropdown-menu').removeClass('show');
+            }
+        });
+        
+        // Handle dropdown item click
+        $(document).on('click', '.input-group .dropdown-menu .dropdown-item', function(e) {
+            e.preventDefault();
+            const text = $(this).text();
+            const inputGroup = $(this).closest('.input-group');
+            const input = inputGroup.find('input.form-control');
+            
+            // Update input value
+            if (input.length) {
+                input.val(text);
+            }
+            
+            // Close dropdown
+            inputGroup.find('.dropdown-menu').removeClass('show');
         });
     }
 };

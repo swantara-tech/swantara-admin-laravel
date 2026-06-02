@@ -661,8 +661,8 @@
                             <button class="btn btn-success">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
-                            <button class="btn btn-success" style="border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
-                                <i class="fa-solid fa-filter"></i>
+                            <button class="btn btn-success dropdown-toggle" style="border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
+                                <i class="fa-solid fa-caret-down"></i>
                             </button>
                         </div>
                     </div>
