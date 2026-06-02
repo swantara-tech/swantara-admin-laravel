@@ -79,99 +79,92 @@ function showToast(message, type = 'success', position = 'top-right') {
 
 
 // ========================
-// Dialog helpers (Metro UI Notify)
+// Dialog helpers (SweetAlert2)
 // ========================
 function showConfirm(title, text = '', confirmText = 'Ya', cancelText = 'Batal') {
-    return new Promise((resolve) => {
-        const notify = Metro.notify.create(
-            `<div>
-                <p style="margin-bottom: 12px;">${text}</p>
-                <div style="display: flex; gap: 8px; justify-content: flex-end;">
-                    <button class="button button-small" id="notify-cancel">${cancelText}</button>
-                    <button class="button button-small primary" id="notify-confirm">${confirmText}</button>
-                </div>
-            </div>`,
-            title,
-            {
-                width: 400,
-                keepOpen: true,
-                clsNotify: 'dialog-notify',
-                onClose: () => resolve({ isConfirmed: false, isDenied: false, dismiss: 'close' })
-            }
-        );
-
-        setTimeout(() => {
-            const confirmBtn = document.getElementById('notify-confirm');
-            const cancelBtn = document.getElementById('notify-cancel');
-
-            if (confirmBtn) {
-                confirmBtn.addEventListener('click', () => {
-                    Metro.notify.kill(notify);
-                    resolve({ isConfirmed: true, isDenied: false });
-                });
-            }
-
-            if (cancelBtn) {
-                cancelBtn.addEventListener('click', () => {
-                    Metro.notify.kill(notify);
-                    resolve({ isConfirmed: false, isDenied: false, dismiss: 'cancel' });
-                });
-            }
-        }, 100);
+    return Swal.fire({
+        icon: 'warning',
+        title: title,
+        text: text,
+        showCancelButton: true,
+        confirmButtonColor: '#E81123',
+        cancelButtonColor: '#8a8a8a',
+        confirmButtonText: confirmText,
+        cancelButtonText: cancelText
     });
 }
 
 function showSuccess(title, text = '', timer = 2000) {
-    return Metro.notify.create(text || title, title, {
-        timeout: timer,
-        clsNotify: 'success'
+    return Swal.fire({
+        icon: 'success',
+        title: title,
+        text: text,
+        timer: timer,
+        showConfirmButton: false
     });
 }
 
 function showError(title, text = '') {
-    return Metro.notify.create(text || title, title, {
-        timeout: 5000,
-        keepOpen: true,
-        clsNotify: 'alert'
+    return Swal.fire({
+        icon: 'error',
+        title: title,
+        text: text
     });
 }
 
 function showWarning(title, text = '') {
-    return Metro.notify.create(text || title, title, {
-        timeout: 5000,
-        clsNotify: 'warning'
+    return Swal.fire({
+        icon: 'warning',
+        title: title,
+        text: text
     });
 }
 
 function showInfo(title, text = '') {
-    return Metro.notify.create(text || title, title, {
-        timeout: 5000,
-        clsNotify: 'info'
+    return Swal.fire({
+        icon: 'info',
+        title: title,
+        text: text
     });
 }
 
 function showLoading(text = 'Loading...') {
-    return Metro.notify.create(
-        `<div style="display: flex; align-items: center; gap: 12px;">
-            <span class="mif-spinner animate-spin"></span>
-            <span>${text}</span>
-        </div>`,
-        null,
-        {
-            keepOpen: true,
-            clsNotify: 'loading-notify',
-            width: 300
+    return Swal.fire({
+        title: text,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        showConfirmButton: false,
+        willOpen: () => {
+            Swal.showLoading();
         }
-    );
+    });
+}
+
+function closeLoading() {
+    Swal.close();
 }
 
 function showLoadingSuccess(text = 'Loading...', successTitle, successText, timer = 1500) {
-    const loadingNotify = showLoading(text);
-
-    setTimeout(() => {
-        Metro.notify.kill(loadingNotify);
-        showSuccess(successTitle, successText, timer);
-    }, 1500);
-
-    return loadingNotify;
+    return Swal.fire({
+        title: text,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        showConfirmButton: false,
+        willOpen: () => {
+            Swal.showLoading();
+        },
+        didOpen: () => {
+            setTimeout(() => {
+                Swal.fire({
+                    icon: 'success',
+                    title: successTitle,
+                    text: successText,
+                    timer: timer,
+                    showConfirmButton: false
+                });
+            }, 1500);
+        }
+    });
 }
+
+
