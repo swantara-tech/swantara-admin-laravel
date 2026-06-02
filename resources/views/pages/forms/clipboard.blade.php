@@ -3,7 +3,379 @@
 @section('title', 'Clipboard')
 
 @push('styles')
+<style>
+/* ============================================
+   START: Clipboard Component Styles
+   ============================================ */
 
+/* Clipboard Grid */
+.clipboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.clipboard-grid.full-width {
+    grid-template-columns: 1fr;
+}
+
+/* Section Title */
+.cb-section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 32px 0 16px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.cb-section-title i {
+    color: var(--accent);
+    font-size: 20px;
+}
+
+/* Clipboard Group */
+.clipboard-group {
+    display: flex;
+    gap: 0;
+    margin-bottom: 8px;
+}
+
+.clipboard-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid var(--border-color);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 14px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    transition: all 0.2s;
+}
+
+.clipboard-input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+/* Clipboard Button */
+.clipboard-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 16px;
+    border: 2px solid var(--border-color);
+    border-radius: 0 8px 8px 0;
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.clipboard-btn:hover {
+    background: var(--bg-secondary);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.clipboard-btn:hover span,
+.clipboard-btn:hover i {
+    color: var(--accent);
+}
+
+.clipboard-btn.copied {
+    background: var(--success);
+    border-color: var(--success);
+    color: white !important;
+}
+
+.clipboard-btn.copied span,
+.clipboard-btn.copied i {
+    color: white !important;
+}
+
+/* Copy Button (Standalone) */
+.copy-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 8px;
+}
+
+.copy-btn:hover {
+    background: var(--bg-secondary);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.copy-btn:hover span,
+.copy-btn:hover i {
+    color: var(--accent);
+}
+
+.copy-btn.copied {
+    background: var(--success);
+    border-color: var(--success);
+    color: white !important;
+}
+
+.copy-btn.copied span,
+.copy-btn.copied i {
+    color: white !important;
+}
+
+/* Copy Area */
+.copy-area {
+    padding: 16px;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 14px;
+    color: var(--text-primary);
+    word-break: break-all;
+}
+
+/* Code Block with Clipboard */
+.code-block-clipboard {
+    position: relative;
+    padding: 16px;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-x: auto;
+    color: var(--text-primary);
+}
+
+.code-block-clipboard code {
+    display: block;
+    white-space: pre;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+/* Copy Button Absolute */
+.copy-btn-absolute {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.code-block-clipboard:hover .copy-btn-absolute {
+    opacity: 1;
+}
+
+.copy-btn-absolute:hover {
+    background: var(--bg-secondary);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.copy-btn-absolute:hover span,
+.copy-btn-absolute:hover i {
+    color: var(--accent);
+}
+
+.copy-btn-absolute.copied {
+    background: var(--success);
+    border-color: var(--success);
+    color: white !important;
+    opacity: 1;
+}
+
+.copy-btn-absolute.copied span,
+.copy-btn-absolute.copied i {
+    color: white !important;
+}
+
+/* Toast Notification */
+.copy-toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    background: var(--success);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 9999;
+    animation: toastSlideIn 0.3s ease;
+}
+
+.copy-toast.hide {
+    animation: toastSlideOut 0.3s ease;
+}
+
+.copy-toast i {
+    font-size: 18px;
+}
+
+@keyframes toastSlideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes toastSlideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Labels & Hints */
+.cb-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.cb-hint {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--text-tertiary);
+    margin-left: 4px;
+}
+
+.cb-helper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    padding: 8px 0;
+}
+
+.cb-helper i {
+    font-size: 14px;
+    color: var(--accent);
+}
+
+/* Feature List */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.feature-list li i {
+    color: var(--success);
+    font-size: 14px;
+}
+
+/* Code Block */
+.code-block {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 12px;
+    overflow-x: auto;
+}
+
+.code-block code {
+    display: block;
+    line-height: 1.6;
+}
+
+/* Divider */
+.divider {
+    height: 1px;
+    background: var(--border-color);
+    margin: 20px 0;
+}
+
+/* Helper Text */
+.helper-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    padding: 12px;
+    background: var(--bg-secondary);
+    border-radius: 6px;
+}
+
+.helper-text i {
+    color: var(--info);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .clipboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .copy-btn-absolute {
+        opacity: 1;
+    }
+}
+
+/* ============================================
+   END: Clipboard Component Styles
+   ============================================ */
+</style>
 @endpush
 
 @section('content')
@@ -623,69 +995,189 @@
     </div>
 </div>
 
+@endsection
+
+@push('scripts')
 <script>
+// Copy to clipboard function
 function copyToClipboard(button, text) {
+    // Try modern Clipboard API first
     if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(text).then(() => {
-            const originalHTML = button.innerHTML;
-            button.classList.add('copied');
-            button.innerHTML = '<i class="fa-solid fa-check"></i> <span>Copied!</span>';
-            
-            setTimeout(() => {
-                button.classList.remove('copied');
-                button.innerHTML = originalHTML;
-            }, 2000);
-            
-            showToast('Copied to clipboard!');
+            handleCopySuccess(button);
         }).catch(err => {
             console.error('Failed to copy:', err);
+            handleCopyError();
         });
     } else {
         // Fallback for older browsers
-        const textarea = document.createElement('textarea');
-        textarea.value = text;
-        textarea.style.position = 'fixed';
-        textarea.style.opacity = '0';
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textarea);
-        
-        const originalHTML = button.innerHTML;
-        button.classList.add('copied');
-        button.innerHTML = '<i class="fa-solid fa-check"></i> <span>Copied!</span>';
-        
-        setTimeout(() => {
-            button.classList.remove('copied');
-            button.innerHTML = originalHTML;
-        }, 2000);
-        
-        showToast('Copied to clipboard!');
+        try {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            textarea.style.left = '-9999px';
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            
+            handleCopySuccess(button);
+        } catch (err) {
+            console.error('Fallback copy failed:', err);
+            handleCopyError();
+        }
     }
 }
 
+// Handle copy success
+function handleCopySuccess(button) {
+    const originalHTML = button.innerHTML;
+    
+    // Add copied class
+    button.classList.add('copied');
+    
+    // Change button content
+    button.innerHTML = '<i class="fa-solid fa-check"></i> <span>Copied!</span>';
+    
+    // Show toast notification
+    showToast('Copied to clipboard!');
+    
+    // Reset button after 2 seconds
+    setTimeout(() => {
+        button.classList.remove('copied');
+        button.innerHTML = originalHTML;
+    }, 2000);
+}
+
+// Handle copy error
+function handleCopyError() {
+    Swal.fire({
+        toast: true,
+        position: 'top-end',
+        icon: 'error',
+        title: 'Failed to copy to clipboard',
+        showConfirmButton: false,
+        timer: 2000
+    });
+}
+
+// Copy from code block
 function copyCode(button) {
     const codeBlock = button.parentElement.querySelector('code');
+    
+    if (!codeBlock) {
+        console.error('Code block not found');
+        handleCopyError();
+        return;
+    }
+    
     const text = codeBlock.textContent;
     copyToClipboard(button, text);
 }
 
-function showToast(message) {
+// Show toast notification
+function showToast(message, type = 'success') {
+    // Remove existing toast
     const existingToast = document.querySelector('.copy-toast');
-    if (existingToast) existingToast.remove();
+    if (existingToast) {
+        existingToast.remove();
+    }
     
+    // Create toast element
     const toast = document.createElement('div');
     toast.className = 'copy-toast';
+    
+    // Set icon based on type
+    let icon = 'fa-solid fa-circle-check';
+    let bgColor = 'var(--success)';
+    let boxShadow = '0 4px 16px rgba(16, 185, 129, 0.3)';
+    
+    if (type === 'warning') {
+        icon = 'fa-solid fa-triangle-exclamation';
+        bgColor = 'var(--warning)';
+        boxShadow = '0 4px 16px rgba(245, 158, 11, 0.3)';
+    } else if (type === 'info') {
+        icon = 'fa-solid fa-circle-info';
+        bgColor = 'var(--info)';
+        boxShadow = '0 4px 16px rgba(59, 130, 246, 0.3)';
+    }
+    
+    toast.style.background = bgColor;
+    toast.style.boxShadow = boxShadow;
+    
     toast.innerHTML = `
-        <i class="fa-solid fa-circle-check"></i>
+        <i class="${icon}"></i>
         <span>${message}</span>
     `;
+    
     document.body.appendChild(toast);
     
+    // Remove after 3 seconds
     setTimeout(() => {
         toast.classList.add('hide');
-        setTimeout(() => toast.remove(), 300);
+        setTimeout(() => {
+            if (toast.parentElement) {
+                toast.remove();
+            }
+        }, 300);
     }, 3000);
 }
+
+// Page header buttons
+$(document).ready(function() {
+    // Try Clipboard button
+    $('.page-header .btn-primary').on('click', function() {
+        const sampleText = 'https://example.com';
+        copyToClipboard(this, sampleText);
+    });
+    
+    // Documentation button
+    $('.page-header .btn-secondary').on('click', function() {
+        Swal.fire({
+            icon: 'info',
+            title: 'Clipboard Documentation',
+            html: `
+                <div style="text-align: left; font-size: 13px;">
+                    <p><strong>Clipboard API</strong> allows copying text to clipboard.</p>
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                        <li>One-click copy</li>
+                        <li>Visual feedback</li>
+                        <li>Toast notifications</li>
+                        <li>Fallback support</li>
+                    </ul>
+                </div>
+            `,
+            confirmButtonText: 'OK',
+            confirmButtonColor: 'var(--accent)'
+        });
+    });
+    
+    // Toast demo buttons
+    $('.btn-primary[onclick*="showToast"]').on('click', function(e) {
+        e.preventDefault();
+        const text = 'Sample text copied';
+        copyToClipboard(this, text);
+    });
+    
+    $('.btn-success[onclick*="showToast"]').on('click', function(e) {
+        e.preventDefault();
+        const url = 'https://example.com/page';
+        copyToClipboard(this, url);
+    });
+    
+    $('.btn-warning[onclick*="showToast"]').on('click', function(e) {
+        e.preventDefault();
+        const code = 'console.log("Hello World");';
+        copyToClipboard(this, code);
+    });
+    
+    $('.btn-info[onclick*="showToast"]').on('click', function(e) {
+        e.preventDefault();
+        const email = 'contact@example.com';
+        copyToClipboard(this, email);
+    });
+});
 </script>
-@endsection
+@endpush
