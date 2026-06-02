@@ -458,12 +458,13 @@ ul.submenu li.active a.nav-link::before {
    ============================================ */
 .app-main {
     flex: 1;
+    z-index: 101 !important;
     margin-left: var(--sidebar-width);
     display: flex;
     flex-direction: column;
     height: 100vh;
     transition: margin-left var(--transition-normal);
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     padding-top: var(--navbar-height);
 }

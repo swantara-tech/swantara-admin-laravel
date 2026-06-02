@@ -3,23 +3,47 @@
 @section('title', 'Datetimepicker')
 
 @push('styles')
+<style>
+    /* Fix z-index for Metro UI picker dropdowns */
+    .time-picker {
+        z-index: 10 !important;
+    }
+    .date-picker {
+        z-index: 10 !important;
+    }
+
+    .calendar-content {
+        z-index: 10 !important;
+    }   
+    .calendar-picker .calendar-for-picker {
+        z-index: 10 !important;
+    }
+    .calendar-picker {
+        overflow: visible;
+    }
+    .content-card {
+        overflow: visible;
+    }
+    .card-body {
+        overflow: visible;
+    }
+    .dtp-example {
+        overflow: visible;
+    }
+</style>
 @endpush
 
 @section('content')
 <div class="page-header">
     <div>
         <h1>Datetimepicker</h1>
-        <p>Date and time picker components dengan berbagai format dan preset</p>
+        <p>Date and time picker components menggunakan Metro UI built-in</p>
     </div>
     <div style="display: flex; gap: 10px;">
-        <button class="btn btn-secondary">
+        <a href="https://v5.metroui.org.ua/components/calendar-picker/" target="_blank" class="btn btn-secondary">
             <i class="fa-solid fa-book"></i>
             <span>Documentation</span>
-        </button>
-        <button class="btn btn-primary">
-            <i class="fa-solid fa-calendar-days"></i>
-            <span>Try Picker</span>
-        </button>
+        </a>
     </div>
 </div>
 
@@ -29,17 +53,23 @@
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
             <div style="flex: 1;">
-                <h4 style="margin-bottom: 4px; font-size: 14px;">Date & Time Picker Libraries</h4>
-                <p style="font-size: 13px; color: var(--text-secondary); margin: 0;">Popular libraries include <strong>Flatpickr</strong>, <strong>Bootstrap Datepicker</strong>, and native HTML5 <code>&lt;input type="date"&gt;</code>. Examples below show formatted outputs and configurations.</p>
+                <h4 style="margin-bottom: 4px; font-size: 14px;">Metro UI Date & Time Components</h4>
+                <p style="font-size: 13px; color: var(--text-secondary); margin: 0;">
+                    Metro UI menyediakan 4 komponen: 
+                    <strong>Calendar Picker</strong> (input + calendar popup), 
+                    <strong>Date Picker</strong> (wheel-based), 
+                    <strong>Time Picker</strong> (wheel-based), dan 
+                    <strong>Calendar</strong> (inline). Semua sudah ter-include di <code>metro.js</code>.
+                </p>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Date Pickers -->
+<!-- Calendar Picker Section -->
 <div class="dtp-section-title">
     <i class="fa-solid fa-calendar-days"></i>
-    Date Pickers <span class="badge badge-primary">Essential</span>
+    Calendar Picker <span class="badge badge-primary">Recommended</span>
 </div>
 
 <div class="datetimepicker-grid">
@@ -50,85 +80,63 @@
                     <i class="fa-solid fa-calendar"></i>
                 </div>
                 <div>
-                    <h3>Single Date</h3>
-                    <p class="card-subtitle">Date selection formats</p>
+                    <h3>Basic Calendar Picker</h3>
+                    <p class="card-subtitle">Input field with calendar popup</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Default Date
-                    <span class="dtp-pattern">YYYY-MM-DD</span>
+                    Default
+                    <span class="dtp-pattern">data-role="calendar-picker"</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-calendar-days"></i>
-                    </span>
-                    <input type="date" class="form-control" value="2026-05-31">
-                </div>
+                <input data-role="calendar-picker">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Format: <code>YYYY-MM-DD</code>
+                    Basic calendar picker dengan format default
                 </div>
             </div>
 
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Date with Icon
+                    With Value
+                    <span class="dtp-pattern">value="2026/06/15"</span>
+                </label>
+                <input data-role="calendar-picker" value="2026/06/15">
+                <div class="dtp-helper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Dengan initial value
+                </div>
+            </div>
+
+            <div class="dtp-example">
+                <label class="dtp-label">
+                    Custom Format
                     <span class="dtp-pattern">DD/MM/YYYY</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-calendar-check"></i>
-                    </span>
-                    <input type="text" class="form-control" value="31/05/2026" readonly>
-                </div>
+                <input data-role="calendar-picker" 
+                       data-format="DD/MM/YYYY" 
+                       value="2026/06/15">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Display: <code>DD/MM/YYYY</code>
+                    Format: <code>DD/MM/YYYY</code>
                 </div>
             </div>
 
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Date Range Start
-                    <span class="dtp-pattern">From Date</span>
+                    With Clear Button
+                    <span class="dtp-pattern">clear-button</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-calendar-plus"></i>
-                    </span>
-                    <input type="date" class="form-control" value="2026-01-01">
-                </div>
+                <input data-role="calendar-picker" 
+                       data-clear-button="true"
+                       data-format="DD, MMM YYYY"
+                       value="2026/07/01">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Range start date
+                    Dengan tombol clear & format: <code>DD, MMM YYYY</code>
                 </div>
-            </div>
-
-            <div class="dtp-example">
-                <label class="dtp-label">
-                    Date Range End
-                    <span class="dtp-pattern">To Date</span>
-                </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-calendar-minus"></i>
-                    </span>
-                    <input type="date" class="form-control" value="2026-12-31">
-                </div>
-                <div class="dtp-helper">
-                    <i class="fa-solid fa-circle-info"></i>
-                    Range end date
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="date-display">
-                <div class="date-display-label">Selected Date:</div>
-                <div class="date-display-value">31 May 2026 (Sunday)</div>
             </div>
         </div>
     </div>
@@ -137,97 +145,83 @@
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-success">
-                    <i class="fa-solid fa-calendar-week"></i>
+                    <i class="fa-solid fa-clock"></i>
                 </div>
                 <div>
-                    <h3>Month & Year</h3>
-                    <p class="card-subtitle">Month and year pickers</p>
+                    <h3>Calendar Picker + Time</h3>
+                    <p class="card-subtitle">Date and time selection</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Month Picker
-                    <span class="dtp-pattern">YYYY-MM</span>
+                    DateTime
+                    <span class="dtp-pattern">show-time="true"</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-calendar"></i>
-                    </span>
-                    <input type="month" class="form-control" value="2026-05">
-                </div>
+                <input data-role="calendar-picker" 
+                       data-show-time="true"
+                       data-format="DD/MM/YYYY HH:mm">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Format: <code>YYYY-MM</code>
+                    Calendar picker dengan time selection
                 </div>
             </div>
 
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Year Picker
-                    <span class="dtp-pattern">YYYY</span>
+                    With Initial Time
+                    <span class="dtp-pattern">initial-time="14:30"</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-calendar-day"></i>
-                    </span>
-                    <input type="text" class="form-control" value="2026" readonly>
-                </div>
+                <input data-role="calendar-picker" 
+                       data-show-time="true"
+                       data-initial-time="14:30"
+                       data-format="DD/MM/YYYY HH:mm"
+                       value="2026/06/15">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Format: <code>YYYY</code>
+                    Dengan waktu awal 14:30
                 </div>
             </div>
 
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Week Picker
-                    <span class="dtp-pattern">YYYY-W##</span>
+                    Min/Max Date
+                    <span class="dtp-pattern">Restricted range</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-calendar-week"></i>
-                    </span>
-                    <input type="week" class="form-control" value="2026-W22">
-                </div>
+                <input data-role="calendar-picker" 
+                       data-min-date="2026/01/01"
+                       data-max-date="2026/12/31"
+                       data-format="DD/MM/YYYY"
+                       data-clear-button="true">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Format: <code>YYYY-W##</code>
+                    Hanya bisa pilih tanggal tahun 2026
                 </div>
             </div>
 
-            <div class="divider"></div>
-
-            <div class="form-group">
-                <h4 style="font-size: 14px; margin-bottom: 12px;">Features:</h4>
-                <ul class="feature-list">
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        <span>Native HTML5 date inputs</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        <span>Calendar popup interface</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        <span>Month/Year selection</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        <span>Week number support</span>
-                    </li>
-                </ul>
+            <div class="dtp-example">
+                <label class="dtp-label">
+                    Week Start Monday
+                    <span class="dtp-pattern">week-start="1"</span>
+                </label>
+                <input data-role="calendar-picker" 
+                       data-week-start="1"
+                       data-format="DD/MM/YYYY"
+                       data-show-week-number="true">
+                <div class="dtp-helper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Minggu dimulai Senin + nomor minggu
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Time Pickers -->
+<!-- Date Picker (Wheel) Section -->
 <div class="dtp-section-title">
-    <i class="fa-solid fa-clock"></i>
-    Time Pickers
+    <i class="fa-solid fa-arrows-up-down"></i>
+    Date Picker <span class="badge badge-info">Wheel-based</span>
 </div>
 
 <div class="datetimepicker-grid">
@@ -235,71 +229,68 @@
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-info">
-                    <i class="fa-solid fa-clock"></i>
+                    <i class="fa-solid fa-arrows-up-down"></i>
                 </div>
                 <div>
-                    <h3>Time Selection</h3>
-                    <p class="card-subtitle">24-hour and 12-hour formats</p>
+                    <h3>Wheel Date Picker</h3>
+                    <p class="card-subtitle">Scroll-based date selection</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div class="dtp-example">
                 <label class="dtp-label">
-                    24-Hour Format
-                    <span class="dtp-pattern">HH:MM</span>
+                    Default
+                    <span class="dtp-pattern">data-role="date-picker"</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-clock"></i>
-                    </span>
-                    <input type="time" class="form-control" value="14:30">
-                </div>
+                <input data-role="date-picker">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Format: <code>HH:MM</code> (24-hour)
+                    Wheel-based date picker default
                 </div>
             </div>
 
             <div class="dtp-example">
                 <label class="dtp-label">
-                    12-Hour Format
-                    <span class="dtp-pattern">HH:MM AM/PM</span>
+                    Custom Format
+                    <span class="dtp-pattern">DD/MM/YYYY</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-sun"></i>
-                    </span>
-                    <input type="text" class="form-control" value="02:30 PM" readonly>
-                </div>
+                <input data-role="date-picker" 
+                       data-format="DD/MM/YYYY"
+                       data-value="2026/06/15">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Format: <code>HH:MM AM/PM</code>
+                    Format: <code>DD/MM/YYYY</code>
                 </div>
             </div>
 
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Time with Seconds
-                    <span class="dtp-pattern">HH:MM:SS</span>
+                    Month & Year Only
+                    <span class="dtp-pattern">day="false"</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-stopwatch"></i>
-                    </span>
-                    <input type="text" class="form-control" value="14:30:45" readonly>
-                </div>
+                <input data-role="date-picker" 
+                       data-day="false"
+                       data-format="MMM YYYY">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Format: <code>HH:MM:SS</code>
+                    Tanpa pemilihan hari
                 </div>
             </div>
 
-            <div class="divider"></div>
-
-            <div class="date-display">
-                <div class="date-display-label">Current Time:</div>
-                <div class="date-display-value">14:30:45 (2:30 PM)</div>
+            <div class="dtp-example">
+                <label class="dtp-label">
+                    Year Range
+                    <span class="dtp-pattern">min/max year</span>
+                </label>
+                <input data-role="date-picker" 
+                       data-min-year="2020"
+                       data-max-year="2030"
+                       data-format="YYYY-MM-DD">
+                <div class="dtp-helper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Tahun dibatasi 2020-2030
+                </div>
             </div>
         </div>
     </div>
@@ -308,90 +299,78 @@
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-warning">
-                    <i class="fa-solid fa-business-time"></i>
+                    <i class="fa-solid fa-clock"></i>
                 </div>
                 <div>
-                    <h3>Time Range</h3>
-                    <p class="card-subtitle">Start and end time</p>
+                    <h3>Wheel Time Picker</h3>
+                    <p class="card-subtitle">Scroll-based time selection</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Start Time
-                    <span class="dtp-pattern">From</span>
+                    Default (H:M:S)
+                    <span class="dtp-pattern">data-role="time-picker"</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-play"></i>
-                    </span>
-                    <input type="time" class="form-control" value="09:00">
-                </div>
+                <input data-role="time-picker">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Opening time
+                    Wheel-based time picker default (jam, menit, detik)
                 </div>
             </div>
 
             <div class="dtp-example">
                 <label class="dtp-label">
-                    End Time
-                    <span class="dtp-pattern">To</span>
+                    Hours & Minutes Only
+                    <span class="dtp-pattern">seconds="false"</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-stop"></i>
-                    </span>
-                    <input type="time" class="form-control" value="17:00">
-                </div>
+                <input data-role="time-picker" 
+                       data-seconds="false"
+                       data-value="14:30:00">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Closing time
+                    Tanpa detik, initial value 14:30
                 </div>
             </div>
 
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Duration
+                    Custom Steps
+                    <span class="dtp-pattern">15-minute steps</span>
                 </label>
-                <div class="date-display">
-                    <div class="date-display-label">Calculated Duration:</div>
-                    <div class="date-display-value">8 hours (09:00 - 17:00)</div>
+                <input data-role="time-picker" 
+                       data-seconds="false"
+                       data-minutes-step="15">
+                <div class="dtp-helper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Menit naik per 15 (00, 15, 30, 45)
                 </div>
             </div>
 
-            <div class="divider"></div>
-
-            <div class="form-group">
-                <h4 style="font-size: 14px; margin-bottom: 12px;">Time Features:</h4>
-                <ul class="feature-list">
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        <span>24-hour format (00-23)</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        <span>12-hour format (AM/PM)</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        <span>Seconds support</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-check"></i>
-                        <span>Time range calculation</span>
-                    </li>
-                </ul>
+            <div class="dtp-example">
+                <label class="dtp-label">
+                    With Label
+                    <span class="dtp-pattern">data-label</span>
+                </label>
+                <input data-role="time-picker" 
+                       data-label="Select time"
+                       data-seconds="false"
+                       data-hours-step="1"
+                       data-minutes-step="5">
+                <div class="dtp-helper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Menit step 5, dengan label
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- DateTime Combined -->
+<!-- Inline Calendar Section -->
 <div class="dtp-section-title">
-    <i class="fa-solid fa-calendar-clock"></i>
-    DateTime Combined <span class="badge badge-success">Popular</span>
+    <i class="fa-solid fa-calendar"></i>
+    Inline Calendar
 </div>
 
 <div class="datetimepicker-grid">
@@ -399,71 +378,21 @@
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-primary">
-                    <i class="fa-solid fa-clock"></i>
+                    <i class="fa-solid fa-calendar"></i>
                 </div>
                 <div>
-                    <h3>Date & Time</h3>
-                    <p class="card-subtitle">Combined date-time selection</p>
+                    <h3>Basic Calendar</h3>
+                    <p class="card-subtitle">Embedded calendar display</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Event DateTime
-                    <span class="dtp-pattern">DD/MM/YYYY HH:MM</span>
+                    Default Calendar
+                    <span class="dtp-pattern">data-role="calendar"</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-calendar-clock"></i>
-                    </span>
-                    <input type="datetime-local" class="form-control" value="2026-06-15T14:30">
-                </div>
-                <div class="dtp-helper">
-                    <i class="fa-solid fa-circle-info"></i>
-                    Format: <code>DD/MM/YYYY HH:MM</code>
-                </div>
-            </div>
-
-            <div class="dtp-example">
-                <label class="dtp-label">
-                    Meeting Schedule
-                    <span class="dtp-pattern">From</span>
-                </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-calendar-plus"></i>
-                    </span>
-                    <input type="datetime-local" class="form-control" value="2026-06-15T10:00">
-                </div>
-                <div class="dtp-helper">
-                    <i class="fa-solid fa-circle-info"></i>
-                    Meeting start time
-                </div>
-            </div>
-
-            <div class="dtp-example">
-                <label class="dtp-label">
-                    Meeting End
-                    <span class="dtp-pattern">To</span>
-                </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-calendar-minus"></i>
-                    </span>
-                    <input type="datetime-local" class="form-control" value="2026-06-15T12:00">
-                </div>
-                <div class="dtp-helper">
-                    <i class="fa-solid fa-circle-info"></i>
-                    Meeting end time
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="date-display">
-                <div class="date-display-label">Meeting Duration:</div>
-                <div class="date-display-value">2 hours (10:00 - 12:00)</div>
+                <div data-role="calendar"></div>
             </div>
         </div>
     </div>
@@ -472,71 +401,36 @@
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-success">
-                    <i class="fa-solid fa-hourglass-start"></i>
+                    <i class="fa-solid fa-calendar-check"></i>
                 </div>
                 <div>
-                    <h3>Date Range Picker</h3>
-                    <p class="card-subtitle">Start and end date selection</p>
+                    <h3>Calendar Options</h3>
+                    <p class="card-subtitle">Customized inline calendars</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Check-in Date
-                    <span class="dtp-pattern">Arrival</span>
+                    With Time
+                    <span class="dtp-pattern">show-time="true"</span>
                 </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-plane-arrival"></i>
-                    </span>
-                    <input type="date" class="form-control" value="2026-07-01">
-                </div>
-            </div>
-
-            <div class="dtp-example">
-                <label class="dtp-label">
-                    Check-out Date
-                    <span class="dtp-pattern">Departure</span>
-                </label>
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <i class="fa-solid fa-plane-departure"></i>
-                    </span>
-                    <input type="date" class="form-control" value="2026-07-07">
-                </div>
-            </div>
-
-            <div class="dtp-example">
-                <label class="dtp-label">
-                    Stay Duration
-                </label>
-                <div class="date-display">
-                    <div class="date-display-label">Total Nights:</div>
-                    <div class="date-display-value">6 nights (Jul 1 - Jul 7)</div>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="preset-buttons">
-                <button class="preset-btn">Today</button>
-                <button class="preset-btn">Tomorrow</button>
-                <button class="preset-btn">This Week</button>
-                <button class="preset-btn">Next Week</button>
-                <button class="preset-btn">This Month</button>
+                <div data-role="calendar" 
+                     data-show-time="true"
+                     data-initial-time="09:30"
+                     data-buttons="today, clear, done"></div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Preset Ranges -->
+<!-- Multi-Select & Wide Calendar -->
 <div class="dtp-section-title">
-    <i class="fa-solid fa-bolt"></i>
-    Preset Date Ranges
+    <i class="fa-solid fa-calendar-week"></i>
+    Advanced Calendar
 </div>
 
-<div class="datetimepicker-grid full-width">
+<div class="datetimepicker-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -544,78 +438,55 @@
                     <i class="fa-solid fa-list-check"></i>
                 </div>
                 <div>
-                    <h3>Quick Select Presets</h3>
-                    <p class="card-subtitle">One-click date range selection</p>
+                    <h3>Multi Select</h3>
+                    <p class="card-subtitle">Select multiple dates</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;">
-                <div style="padding: 12px; border: 1px solid var(--border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition-fast);" onmouseover="this.style.borderColor='var(--accent)'; this.style.background='var(--accent-light)'" onmouseout="this.style.borderColor='var(--border)'; this.style.background='transparent'">
-                    <div style="font-weight: 600; font-size: 13px; margin-bottom: 4px;">📅 Today</div>
-                    <div style="font-size: 11px; color: var(--text-tertiary);">May 31, 2026</div>
-                </div>
-
-                <div style="padding: 12px; border: 1px solid var(--border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition-fast);" onmouseover="this.style.borderColor='var(--accent)'; this.style.background='var(--accent-light)'" onmouseout="this.style.borderColor='var(--border)'; this.style.background='transparent'">
-                    <div style="font-weight: 600; font-size: 13px; margin-bottom: 4px;">📆 Yesterday</div>
-                    <div style="font-size: 11px; color: var(--text-tertiary);">May 30, 2026</div>
-                </div>
-
-                <div style="padding: 12px; border: 1px solid var(--border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition-fast);" onmouseover="this.style.borderColor='var(--accent)'; this.style.background='var(--accent-light)'" onmouseout="this.style.borderColor='var(--border)'; this.style.background='transparent'">
-                    <div style="font-weight: 600; font-size: 13px; margin-bottom: 4px;">📊 This Week</div>
-                    <div style="font-size: 11px; color: var(--text-tertiary);">May 25 - 31</div>
-                </div>
-
-                <div style="padding: 12px; border: 1px solid var(--border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition-fast);" onmouseover="this.style.borderColor='var(--accent)'; this.style.background='var(--accent-light)'" onmouseout="this.style.borderColor='var(--border)'; this.style.background='transparent'">
-                    <div style="font-weight: 600; font-size: 13px; margin-bottom: 4px;">📈 Last Week</div>
-                    <div style="font-size: 11px; color: var(--text-tertiary);">May 18 - 24</div>
-                </div>
-
-                <div style="padding: 12px; border: 1px solid var(--border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition-fast);" onmouseover="this.style.borderColor='var(--accent)'; this.style.background='var(--accent-light)'" onmouseout="this.style.borderColor='var(--border)'; this.style.background='transparent'">
-                    <div style="font-weight: 600; font-size: 13px; margin-bottom: 4px;">📅 This Month</div>
-                    <div style="font-size: 11px; color: var(--text-tertiary);">May 1 - 31</div>
-                </div>
-
-                <div style="padding: 12px; border: 1px solid var(--border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition-fast);" onmouseover="this.style.borderColor='var(--accent)'; this.style.background='var(--accent-light)'" onmouseout="this.style.borderColor='var(--border)'; this.style.background='transparent'">
-                    <div style="font-weight: 600; font-size: 13px; margin-bottom: 4px;">📉 Last Month</div>
-                    <div style="font-size: 11px; color: var(--text-tertiary);">Apr 1 - 30</div>
-                </div>
-
-                <div style="padding: 12px; border: 1px solid var(--border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition-fast);" onmouseover="this.style.borderColor='var(--accent)'; this.style.background='var(--accent-light)'" onmouseout="this.style.borderColor='var(--border)'; this.style.background='transparent'">
-                    <div style="font-weight: 600; font-size: 13px; margin-bottom: 4px;">📆 Last 7 Days</div>
-                    <div style="font-size: 11px; color: var(--text-tertiary);">May 24 - 31</div>
-                </div>
-
-                <div style="padding: 12px; border: 1px solid var(--border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition-fast);" onmouseover="this.style.borderColor='var(--accent)'; this.style.background='var(--accent-light)'" onmouseout="this.style.borderColor='var(--border)'; this.style.background='transparent'">
-                    <div style="font-weight: 600; font-size: 13px; margin-bottom: 4px;">📊 Last 30 Days</div>
-                    <div style="font-size: 11px; color: var(--text-tertiary);">May 1 - 31</div>
+            <div class="dtp-example">
+                <label class="dtp-label">
+                    Multi-Select Calendar
+                    <span class="dtp-pattern">multi-select="true"</span>
+                </label>
+                <div data-role="calendar" 
+                     data-multi-select="true"
+                     data-buttons="today, clear, done"
+                     data-week-start="1"></div>
+                <div class="dtp-helper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Klik beberapa tanggal untuk multi-select
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="divider"></div>
-
-            <div class="form-group">
-                <h4 style="font-size: 14px; margin-bottom: 12px;">Custom Range:</h4>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-                    <div class="dtp-example">
-                        <label class="dtp-label">From Date</label>
-                        <div class="input-group">
-                            <span class="input-group-text">
-                                <i class="fa-solid fa-calendar-plus"></i>
-                            </span>
-                            <input type="date" class="form-control" value="2026-05-01">
-                        </div>
-                    </div>
-
-                    <div class="dtp-example">
-                        <label class="dtp-label">To Date</label>
-                        <div class="input-group">
-                            <span class="input-group-text">
-                                <i class="fa-solid fa-calendar-minus"></i>
-                            </span>
-                            <input type="date" class="form-control" value="2026-05-31">
-                        </div>
-                    </div>
+    <div class="content-card">
+        <div class="card-header">
+            <div class="card-header-left">
+                <div class="card-icon bg-warning">
+                    <i class="fa-solid fa-arrows-left-right"></i>
+                </div>
+                <div>
+                    <h3>Wide Calendar</h3>
+                    <p class="card-subtitle">Wide layout with week numbers</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="dtp-example">
+                <label class="dtp-label">
+                    Wide Mode
+                    <span class="dtp-pattern">wide="true"</span>
+                </label>
+                <div data-role="calendar" 
+                     data-wide="true"
+                     data-show-week-number="true"
+                     data-week-start="1"
+                     data-buttons="today, clear"></div>
+                <div class="dtp-helper">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Layout lebar dengan nomor minggu
                 </div>
             </div>
         </div>
@@ -625,7 +496,7 @@
 <!-- Booking Form Example -->
 <div class="dtp-section-title">
     <i class="fa-solid fa-clipboard-list"></i>
-    Booking Form Example
+    Real-World Form Example
 </div>
 
 <div class="datetimepicker-grid full-width">
@@ -637,76 +508,61 @@
                 </div>
                 <div>
                     <h3>Hotel Booking Form</h3>
-                    <p class="card-subtitle">Real-world example with date/time pickers</p>
+                    <p class="card-subtitle">Contoh penggunaan di form nyata</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <form style="max-width: 800px;">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
                     <div class="dtp-example">
                         <label class="dtp-label">Check-in Date <span style="color: var(--danger);">*</span></label>
-                        <div class="input-group">
-                            <span class="input-group-text">
-                                <i class="fa-solid fa-plane-arrival"></i>
-                            </span>
-                            <input type="date" class="form-control" value="2026-07-01" required>
-                        </div>
+                        <input data-role="calendar-picker" 
+                               data-format="DD/MM/YYYY"
+                               data-min-date="2026/01/01"
+                               data-clear-button="true"
+                               id="checkin-date">
                     </div>
 
                     <div class="dtp-example">
                         <label class="dtp-label">Check-out Date <span style="color: var(--danger);">*</span></label>
-                        <div class="input-group">
-                            <span class="input-group-text">
-                                <i class="fa-solid fa-plane-departure"></i>
-                            </span>
-                            <input type="date" class="form-control" value="2026-07-07" required>
-                        </div>
+                        <input data-role="calendar-picker" 
+                               data-format="DD/MM/YYYY"
+                               data-min-date="2026/01/01"
+                               data-clear-button="true"
+                               id="checkout-date">
                     </div>
                 </div>
 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
                     <div class="dtp-example">
                         <label class="dtp-label">Check-in Time</label>
-                        <div class="input-group">
-                            <span class="input-group-text">
-                                <i class="fa-solid fa-clock"></i>
-                            </span>
-                            <input type="time" class="form-control" value="14:00">
-                        </div>
+                        <input data-role="time-picker" 
+                               data-seconds="false"
+                               data-value="14:00:00">
                     </div>
 
                     <div class="dtp-example">
                         <label class="dtp-label">Check-out Time</label>
-                        <div class="input-group">
-                            <span class="input-group-text">
-                                <i class="fa-solid fa-clock"></i>
-                            </span>
-                            <input type="time" class="form-control" value="12:00">
-                        </div>
+                        <input data-role="time-picker" 
+                               data-seconds="false"
+                               data-value="12:00:00">
                     </div>
                 </div>
 
-                <div class="dtp-example">
-                    <label class="dtp-label">Special Request Date (Optional)</label>
-                    <div class="input-group">
-                        <span class="input-group-text">
-                            <i class="fa-solid fa-calendar-check"></i>
-                        </span>
-                        <input type="datetime-local" class="form-control">
-                    </div>
+                <div class="dtp-example" style="margin-bottom: 20px;">
+                    <label class="dtp-label">Event Date & Time (Optional)</label>
+                    <input data-role="calendar-picker" 
+                           data-show-time="true"
+                           data-format="DD/MM/YYYY HH:mm"
+                           data-clear-button="true">
                     <div class="dtp-helper">
                         <i class="fa-solid fa-circle-info"></i>
-                        For scheduled services or events
+                        Untuk layanan atau event terjadwal
                     </div>
                 </div>
 
                 <div class="divider"></div>
-
-                <div class="date-display" style="margin-bottom: 20px;">
-                    <div class="date-display-label">Booking Summary:</div>
-                    <div class="date-display-value">6 nights | Jul 1 - Jul 7, 2026</div>
-                </div>
 
                 <div style="display: flex; gap: 12px;">
                     <button type="submit" class="btn btn-primary" style="flex: 1;">
@@ -724,6 +580,11 @@
 </div>
 
 <!-- Implementation Guide -->
+<div class="dtp-section-title">
+    <i class="fa-solid fa-code"></i>
+    Implementation Guide
+</div>
+
 <div class="datetimepicker-grid full-width">
     <div class="content-card">
         <div class="card-header">
@@ -732,74 +593,86 @@
                     <i class="fa-solid fa-code"></i>
                 </div>
                 <div>
-                    <h3>Implementation Guide</h3>
-                    <p class="card-subtitle">How to implement datetime pickers with Flatpickr</p>
+                    <h3>Usage Examples</h3>
+                    <p class="card-subtitle">How to implement Metro UI date/time pickers</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div class="code-block">
-                <div style="color: var(--text-tertiary); margin-bottom: 8px;">1. Include Flatpickr:</div>
+                <div style="color: var(--text-tertiary); margin-bottom: 8px;">1. Calendar Picker (Input + Popup):</div>
                 <code style="color: var(--accent);">
-                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"&gt;<br>
-                    &lt;script src="https://cdn.jsdelivr.net/npm/flatpickr"&gt;&lt;/script&gt;
+                    &lt;input data-role="calendar-picker"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-format="DD/MM/YYYY"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-clear-button="true"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-show-time="true"&gt;
                 </code>
             </div>
 
             <div class="code-block">
-                <div style="color: var(--text-tertiary); margin-bottom: 8px; margin-top: 16px;">2. Initialize Date Picker:</div>
+                <div style="color: var(--text-tertiary); margin-bottom: 8px; margin-top: 16px;">2. Date Picker (Wheel-based):</div>
                 <code style="color: var(--success);">
-                    flatpickr("#dateInput", {<br>
-                    &nbsp;&nbsp;dateFormat: "d/m/Y",<br>
-                    &nbsp;&nbsp;minDate: "today",<br>
-                    &nbsp;&nbsp;disableMobile: true<br>
-                    });
+                    &lt;input data-role="date-picker"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-format="YYYY-MM-DD"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-min-year="2020"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-max-year="2030"&gt;
                 </code>
             </div>
 
             <div class="code-block">
-                <div style="color: var(--text-tertiary); margin-bottom: 8px; margin-top: 16px;">3. Initialize DateTime Picker:</div>
+                <div style="color: var(--text-tertiary); margin-bottom: 8px; margin-top: 16px;">3. Time Picker (Wheel-based):</div>
                 <code style="color: var(--warning);">
-                    flatpickr("#datetimeInput", {<br>
-                    &nbsp;&nbsp;enableTime: true,<br>
-                    &nbsp;&nbsp;dateFormat: "d/m/Y H:i",<br>
-                    &nbsp;&nbsp;time_24hr: true,<br>
-                    &nbsp;&nbsp;minDate: "today"<br>
-                    });
+                    &lt;input data-role="time-picker"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-seconds="false"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-minutes-step="15"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-value="14:30:00"&gt;
                 </code>
             </div>
 
             <div class="code-block">
-                <div style="color: var(--text-tertiary); margin-bottom: 8px; margin-top: 16px;">4. Initialize Date Range:</div>
+                <div style="color: var(--text-tertiary); margin-bottom: 8px; margin-top: 16px;">4. Inline Calendar:</div>
                 <code style="color: var(--info);">
-                    flatpickr("#rangeInput", {<br>
-                    &nbsp;&nbsp;mode: "range",<br>
-                    &nbsp;&nbsp;dateFormat: "d/m/Y",<br>
-                    &nbsp;&nbsp;minDate: "today"<br>
-                    });
+                    &lt;div data-role="calendar"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-multi-select="true"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-show-time="true"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-buttons="today, clear, done"&gt;&lt;/div&gt;
+                </code>
+            </div>
+
+            <div class="code-block">
+                <div style="color: var(--text-tertiary); margin-bottom: 8px; margin-top: 16px;">5. JavaScript API:</div>
+                <code style="color: var(--text-primary);">
+                    // Get/Set value<br>
+                    const picker = Metro.getPlugin('#myPicker', 'calendar-picker');<br>
+                    picker.val('2026/12/25');<br>
+                    const value = picker.val();<br><br>
+                    // Time picker<br>
+                    const tp = Metro.getPlugin('#myTime', 'time-picker');<br>
+                    tp.val('14:30:00');<br>
+                    const time = tp.time(); // {h: 14, m: 30, s: 0}
                 </code>
             </div>
 
             <div class="divider"></div>
 
             <div class="form-group">
-                <h4 style="font-size: 14px; margin-bottom: 12px;">Popular Libraries:</h4>
+                <h4 style="font-size: 14px; margin-bottom: 12px;">Available Components:</h4>
                 <ul class="feature-list">
                     <li>
                         <i class="fa-solid fa-circle-check"></i>
-                        <span><strong>Flatpickr</strong> - Lightweight, feature-rich</span>
+                        <span><strong>calendar-picker</strong> - Input + calendar popup (recommended)</span>
                     </li>
                     <li>
                         <i class="fa-solid fa-circle-check"></i>
-                        <span><strong>Bootstrap Datepicker</strong> - Bootstrap integration</span>
+                        <span><strong>date-picker</strong> - Wheel/scroll-based date selection</span>
                     </li>
                     <li>
                         <i class="fa-solid fa-circle-check"></i>
-                        <span><strong>HTML5 Native</strong> - No library needed</span>
+                        <span><strong>time-picker</strong> - Wheel/scroll-based time selection</span>
                     </li>
                     <li>
                         <i class="fa-solid fa-circle-check"></i>
-                        <span><strong>React Datepicker</strong> - React component</span>
+                        <span><strong>calendar</strong> - Inline embedded calendar</span>
                     </li>
                 </ul>
             </div>
