@@ -65,6 +65,23 @@
                 </a>
             </li>
 
+            <li class="nav-section">Tables</li>
+            <li class="nav-item has-submenu {{ request()->routeIs('tables.*') ? 'open' : '' }}">
+                <a href="#" class="nav-link" data-tooltip="Tables">
+                    <i class="fa-solid fa-table"></i>
+                    <span>Tables</span>
+                    <i class="fa-solid fa-chevron-right submenu-arrow"></i>
+                </a>
+                <ul class="submenu">
+                    <li class="{{ request()->routeIs('tables.basic') ? 'active' : '' }}">
+                        <a href="{{ route('tables.basic') }}" class="nav-link"><span>Basic Table</span></a>
+                    </li>
+                    <li class="{{ request()->routeIs('tables.datatable') ? 'active' : '' }}">
+                        <a href="{{ route('tables.datatable') }}" class="nav-link"><span>DataTable</span></a>
+                    </li>
+                </ul>
+            </li>
+
             <li class="nav-section">Forms</li>
             <li class="nav-item has-submenu {{ request()->routeIs('forms.*') ? 'open' : '' }}">
                 <a href="#" class="nav-link" data-tooltip="Forms">

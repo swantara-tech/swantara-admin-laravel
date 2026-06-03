@@ -48,6 +48,17 @@ Route::get('/reports', function () {
     return view('pages.reports.index');
 })->name('reports.index');
 
+// Tables Routes
+Route::prefix('tables')->group(function () {
+    Route::get('/basic', function () {
+        return view('pages.tables.basic');
+    })->name('tables.basic');
+    
+    Route::get('/datatable', function () {
+        return view('pages.tables.datatable');
+    })->name('tables.datatable');
+});
+
 // System Routes
 Route::get('/notifications', function () {
     return view('pages.notifications.index');
