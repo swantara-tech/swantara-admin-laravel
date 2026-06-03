@@ -417,6 +417,271 @@
         </div>
     </div>
 </div>
+
+<!-- Product Inventory Table -->
+<div class="content-card" style="margin-top: 24px;">
+    <div class="card-header">
+        <div class="card-header-left">
+            <div class="card-icon bg-success">
+                <i class="fa-solid fa-box"></i>
+            </div>
+            <div>
+                <h3>Product Inventory</h3>
+                <p class="card-subtitle">Daftar produk dan stok tersedia</p>
+            </div>
+        </div>
+        <button class="btn btn-success">
+            <i class="fa-solid fa-plus"></i>
+            <span>Add Product</span>
+        </button>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th style="width: 60px;">#</th>
+                        <th>Product</th>
+                        <th>SKU</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                        <th>Status</th>
+                        <th style="width: 150px;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-laptop" style="color: white; font-size: 20px;"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; margin-bottom: 2px;">Laptop ASUS ROG</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Intel i7, 16GB RAM</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><code style="background: var(--bg-secondary); padding: 4px 8px; border-radius: 4px; font-size: 12px;">SKU-LPT-001</code></td>
+                        <td><span class="badge badge-primary"><i class="fa-solid fa-laptop" style="margin-right: 4px;"></i>Electronics</span></td>
+                        <td>
+                            <div style="font-weight: 600; color: var(--accent);">Rp 18.500.000</div>
+                        </td>
+                        <td>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <div style="flex: 1; height: 6px; background: var(--bg-secondary); border-radius: 3px; overflow: hidden;">
+                                    <div style="width: 75%; height: 100%; background: linear-gradient(90deg, var(--success), #3dd84a); border-radius: 3px;"></div>
+                                </div>
+                                <span style="font-size: 12px; font-weight: 600;">45</span>
+                            </div>
+                        </td>
+                        <td><span class="badge badge-success"><i class="fa-solid fa-check-circle" style="margin-right: 4px;"></i>In Stock</span></td>
+                        <td>
+                            <div style="display: flex; gap: 6px;">
+                                <button class="btn btn-sm btn-info" title="View Details">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" title="Edit">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+                                <button class="btn btn-sm btn-danger" title="Delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-mobile-screen" style="color: white; font-size: 20px;"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; margin-bottom: 2px;">iPhone 15 Pro</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">256GB, Titanium</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><code style="background: var(--bg-secondary); padding: 4px 8px; border-radius: 4px; font-size: 12px;">SKU-PHN-002</code></td>
+                        <td><span class="badge badge-primary"><i class="fa-solid fa-mobile-screen" style="margin-right: 4px;"></i>Smartphone</span></td>
+                        <td>
+                            <div style="font-weight: 600; color: var(--accent);">Rp 21.000.000</div>
+                        </td>
+                        <td>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <div style="flex: 1; height: 6px; background: var(--bg-secondary); border-radius: 3px; overflow: hidden;">
+                                    <div style="width: 20%; height: 100%; background: linear-gradient(90deg, var(--warning), #ffd43d); border-radius: 3px;"></div>
+                                </div>
+                                <span style="font-size: 12px; font-weight: 600;">8</span>
+                            </div>
+                        </td>
+                        <td><span class="badge badge-warning"><i class="fa-solid fa-exclamation-triangle" style="margin-right: 4px;"></i>Low Stock</span></td>
+                        <td>
+                            <div style="display: flex; gap: 6px;">
+                                <button class="btn btn-sm btn-info" title="View Details">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" title="Edit">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+                                <button class="btn btn-sm btn-danger" title="Delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-headphones" style="color: white; font-size: 20px;"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; margin-bottom: 2px;">Sony WH-1000XM5</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Wireless, Noise Cancelling</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><code style="background: var(--bg-secondary); padding: 4px 8px; border-radius: 4px; font-size: 12px;">SKU-HDP-003</code></td>
+                        <td><span class="badge badge-info"><i class="fa-solid fa-headphones" style="margin-right: 4px;"></i>Accessories</span></td>
+                        <td>
+                            <div style="font-weight: 600; color: var(--accent);">Rp 5.999.000</div>
+                        </td>
+                        <td>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <div style="flex: 1; height: 6px; background: var(--bg-secondary); border-radius: 3px; overflow: hidden;">
+                                    <div style="width: 90%; height: 100%; background: linear-gradient(90deg, var(--success), #3dd84a); border-radius: 3px;"></div>
+                                </div>
+                                <span style="font-size: 12px; font-weight: 600;">120</span>
+                            </div>
+                        </td>
+                        <td><span class="badge badge-success"><i class="fa-solid fa-check-circle" style="margin-right: 4px;"></i>In Stock</span></td>
+                        <td>
+                            <div style="display: flex; gap: 6px;">
+                                <button class="btn btn-sm btn-info" title="View Details">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" title="Edit">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+                                <button class="btn btn-sm btn-danger" title="Delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-keyboard" style="color: white; font-size: 20px;"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; margin-bottom: 2px;">Logitech MX Keys</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">Wireless, Backlit</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><code style="background: var(--bg-secondary); padding: 4px 8px; border-radius: 4px; font-size: 12px;">SKU-KBD-004</code></td>
+                        <td><span class="badge badge-info"><i class="fa-solid fa-keyboard" style="margin-right: 4px;"></i>Accessories</span></td>
+                        <td>
+                            <div style="font-weight: 600; color: var(--accent);">Rp 1.850.000</div>
+                        </td>
+                        <td>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <div style="flex: 1; height: 6px; background: var(--bg-secondary); border-radius: 3px; overflow: hidden;">
+                                    <div style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--danger), #ff6b6b); border-radius: 3px;"></div>
+                                </div>
+                                <span style="font-size: 12px; font-weight: 600;">0</span>
+                            </div>
+                        </td>
+                        <td><span class="badge badge-danger"><i class="fa-solid fa-times-circle" style="margin-right: 4px;"></i>Out of Stock</span></td>
+                        <td>
+                            <div style="display: flex; gap: 6px;">
+                                <button class="btn btn-sm btn-info" title="View Details">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" title="Edit">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+                                <button class="btn btn-sm btn-danger" title="Delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fa-solid fa-monitor" style="color: white; font-size: 20px;"></i>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; margin-bottom: 2px;">LG UltraWide 34"</div>
+                                    <div style="font-size: 12px; color: var(--text-tertiary);">4K, HDR, 144Hz</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td><code style="background: var(--bg-secondary); padding: 4px 8px; border-radius: 4px; font-size: 12px;">SKU-MNT-005</code></td>
+                        <td><span class="badge badge-primary"><i class="fa-solid fa-monitor" style="margin-right: 4px;"></i>Monitor</span></td>
+                        <td>
+                            <div style="font-weight: 600; color: var(--accent);">Rp 12.500.000</div>
+                        </td>
+                        <td>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <div style="flex: 1; height: 6px; background: var(--bg-secondary); border-radius: 3px; overflow: hidden;">
+                                    <div style="width: 50%; height: 100%; background: linear-gradient(90deg, var(--info), #3dd8f4); border-radius: 3px;"></div>
+                                </div>
+                                <span style="font-size: 12px; font-weight: 600;">25</span>
+                            </div>
+                        </td>
+                        <td><span class="badge badge-success"><i class="fa-solid fa-check-circle" style="margin-right: 4px;"></i>In Stock</span></td>
+                        <td>
+                            <div style="display: flex; gap: 6px;">
+                                <button class="btn btn-sm btn-info" title="View Details">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+                                <button class="btn btn-sm btn-secondary" title="Edit">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+                                <button class="btn btn-sm btn-danger" title="Delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Pagination & Info -->
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+            <div style="font-size: 13px; color: var(--text-tertiary);">
+                <i class="fa-solid fa-circle-info" style="margin-right: 6px;"></i>
+                Showing <strong>1</strong> to <strong>5</strong> of <strong>5</strong> entries
+            </div>
+            <div style="display: flex; gap: 4px;">
+                <button class="btn btn-sm btn-secondary" disabled>
+                    <i class="fa-solid fa-chevron-left" style="margin-right: 4px;"></i>
+                    Previous
+                </button>
+                <button class="btn btn-sm btn-primary">1</button>
+                <button class="btn btn-sm btn-secondary" disabled>
+                    Next
+                    <i class="fa-solid fa-chevron-right" style="margin-left: 4px;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 
 @push('scripts')
