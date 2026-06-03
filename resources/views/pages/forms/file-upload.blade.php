@@ -1017,8 +1017,8 @@
                 <div class="fu-example">
                     <label class="fu-label">Cover Letter</label>
                     <div class="file-input-wrapper">
-                        <input type="file" accept=".pdf,.doc,.docx">
-                        <div class="file-input-label">
+                        <input type="file" id="coverLetter" accept=".pdf,.doc,.docx" style="display: none;">
+                        <div class="file-input-label" style="cursor: pointer;">
                             <i class="fa-solid fa-paperclip file-input-icon"></i>
                             <span class="file-input-text">Choose cover letter...</span>
                         </div>
@@ -1242,28 +1242,81 @@ $(document).ready(function() {
         }
     });
     
-    // Handle file input change
-    $('.file-input-wrapper input[type="file"]').on('change', function() {
+    // Handle file input change (delegated)
+    $(document).on('change', '.file-input-wrapper input[type="file"]', function() {
+        console.log('File input changed:', this.id || 'unnamed');
+        
         const $input = $(this);
         const $label = $input.siblings('.file-input-label');
         const files = this.files;
         
+        console.log('Files selected:', files.length);
+        
         if (files.length > 0) {
-            const file = files[0];
-            const fileName = file.name;
-            const fileSize = formatFileSize(file.size);
-            const fileType = getFileExtension(fileName);
+            // Handle multiple files
+            if (files.length > 1) {
+                const fileNames = Array.from(files).map(f => f.name).join(', ');
+                const totalSize = Array.from(files).reduce((sum, f) => sum + f.size, 0);
+                
+                $label.html(`
+                    <i class="fa-solid fa-folder-open file-input-icon"></i>
+                    <div>
+                        <div class="file-input-name">${files.length} files selected</div>
+                        <div class="file-input-text">${formatFileSize(totalSize)} • ${escapeHtml(fileNames.substring(0, 50))}${fileNames.length > 50 ? '...' : ''}</div>
+                    </div>
+                `);
+                
+                showToast(`${files.length} files selected`, 'success');
+            } else {
+                // Handle single file
+                const file = files[0];
+                const fileName = file.name;
+                const fileSize = formatFileSize(file.size);
+                const fileType = getFileExtension(fileName);
+                
+                $label.html(`
+                    <i class="fa-solid fa-file file-input-icon"></i>
+                    <div>
+                        <div class="file-input-name">${escapeHtml(fileName)}</div>
+                        <div class="file-input-text">${fileSize} • ${fileType.toUpperCase()}</div>
+                    </div>
+                `);
+                
+                // Show success toast
+                showToast('File selected: ' + fileName, 'success');
+            }
+        } else {
+            // Reset to default state
+            const isMultiple = $input.attr('multiple');
             
-            $label.html(`
-                <i class="fa-solid fa-file file-input-icon"></i>
-                <div>
-                    <div class="file-input-name">${escapeHtml(fileName)}</div>
-                    <div class="file-input-text">${fileSize} • ${fileType.toUpperCase()}</div>
-                </div>
-            `);
-            
-            // Show success toast
-            showToast('File selected: ' + fileName, 'success');
+            if (isMultiple) {
+                $label.html(`
+                    <i class="fa-solid fa-folder-open file-input-icon"></i>
+                    <span class="file-input-text">Choose files...</span>
+                `);
+            } else {
+                $label.html(`
+                    <i class="fa-solid fa-paperclip file-input-icon"></i>
+                    <span class="file-input-text">Choose a file...</span>
+                `);
+            }
+        }
+    });
+    
+    console.log('File input handler attached');
+    
+    // Make file input label clickable
+    $(document).on('click', '.file-input-label', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        console.log('File label clicked');
+        const $label = $(this);
+        const $input = $label.siblings('input[type="file"]');
+        
+        if ($input.length > 0) {
+            console.log('Triggering file input click');
+            $input.trigger('click');
         }
     });
     
