@@ -861,3 +861,137 @@
     </div>
 </div>
 @endsection
+
+@push('scripts')
+<script>
+$(document).ready(function() {
+    // Form validation feedback
+    $('form').on('submit', function(e) {
+        e.preventDefault();
+        
+        const form = this;
+        let isValid = true;
+        
+        // Check required fields
+        $(form).find('[required]').each(function() {
+            if (!$(this).val()) {
+                isValid = false;
+                $(this).addClass('is-invalid');
+                
+                // Add invalid feedback if not exists
+                if (!$(this).next('.invalid-feedback').length) {
+                    $(this).after('<div class="invalid-feedback">This field is required</div>');
+                }
+            } else {
+                $(this).removeClass('is-invalid').addClass('is-valid');
+            }
+        });
+        
+        if (isValid) {
+            showToast('Form submitted successfully!', 'success');
+            
+            // Optional: Reset form after 1 second
+            setTimeout(() => {
+                // form.reset();
+                // $(form).find('.is-valid').removeClass('is-valid');
+            }, 1000);
+        } else {
+            showError('Please fill in all required fields');
+        }
+    });
+    
+    // Remove validation state on input
+    $('form').on('input change', '.form-control', function() {
+        $(this).removeClass('is-invalid');
+        
+        if ($(this).val()) {
+            $(this).addClass('is-valid');
+        } else {
+            $(this).removeClass('is-valid');
+        }
+    });
+    
+    // Card number formatting
+    $('input[placeholder="1234 5678 9012 3456"]').on('input', function() {
+        let value = $(this).val().replace(/\s/g, '').replace(/[^0-9]/gi, '');
+        let formattedValue = value.match(/.{1,4}/g)?.join(' ') || '';
+        $(this).val(formattedValue);
+    });
+    
+    // CVV formatting (numbers only)
+    $('input[placeholder="123"]').on('input', function() {
+        $(this).val($(this).val().replace(/[^0-9]/g, ''));
+    });
+    
+    // Phone number formatting
+    $('input[type="tel"]').on('input', function() {
+        let value = $(this).val().replace(/[^0-9+\-\s()]/g, '');
+        $(this).val(value);
+    });
+    
+    // Form reset confirmation
+    $('button[type="reset"]').on('click', function(e) {
+        e.preventDefault();
+        
+        showConfirm('Reset Form', 'Are you sure you want to clear all form data?', 'Yes, Reset').then((result) => {
+            if (result.isConfirmed) {
+                $(this).closest('form')[0].reset();
+                $(this).closest('form').find('.is-valid, .is-invalid').removeClass('is-valid is-invalid');
+                $(this).closest('form').find('.invalid-feedback').remove();
+                showToast('Form has been reset', 'info');
+            }
+        });
+    });
+    
+    // Password strength indicator (for registration form)
+    $('input[type="password"]').on('input', function() {
+        const password = $(this).val();
+        
+        if (password.length > 0) {
+            let strength = 0;
+            
+            // Length check
+            if (password.length >= 8) strength++;
+            if (password.length >= 12) strength++;
+            
+            // Complexity checks
+            if (/[a-z]/.test(password)) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/[^a-zA-Z0-9]/.test(password)) strength++;
+            
+            // Remove existing strength indicator
+            $(this).next('.password-strength').remove();
+            
+            // Add strength indicator
+            let strengthClass = 'strength-weak';
+            let strengthText = 'Weak';
+            let strengthColor = 'var(--danger)';
+            
+            if (strength >= 5) {
+                strengthClass = 'strength-strong';
+                strengthText = 'Strong';
+                strengthColor = 'var(--success)';
+            } else if (strength >= 3) {
+                strengthClass = 'strength-medium';
+                strengthText = 'Medium';
+                strengthColor = 'var(--warning)';
+            }
+            
+            const strengthHtml = `
+                <div class="password-strength" style="margin-top: 8px;">
+                    <div style="height: 4px; background: var(--border); border-radius: 2px; overflow: hidden;">
+                        <div style="height: 100%; width: ${strength * 16.66}%; background: ${strengthColor}; transition: all 0.3s;"></div>
+                    </div>
+                    <div style="font-size: 11px; color: ${strengthColor}; margin-top: 4px;">${strengthText}</div>
+                </div>
+            `;
+            
+            $(this).after(strengthHtml);
+        } else {
+            $(this).next('.password-strength').remove();
+        }
+    });
+});
+</script>
+@endpush

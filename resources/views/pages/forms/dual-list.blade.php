@@ -658,3 +658,121 @@
     </div>
 </div>
 @endsection
+
+@push('scripts')
+<script>
+$(document).ready(function() {
+    // Handle item click to select/deselect
+    $(document).on('click', '.list-box-item', function(e) {
+        if (e.target.tagName !== 'INPUT') {
+            const checkbox = $(this).find('input[type="checkbox"]');
+            checkbox.prop('checked', !checkbox.prop('checked'));
+            $(this).toggleClass('selected');
+        }
+    });
+
+    // Handle checkbox change
+    $(document).on('change', '.list-box-item input[type="checkbox"]', function() {
+        $(this).closest('.list-box-item').toggleClass('selected', this.checked);
+    });
+
+    // Transfer selected items to right
+    $(document).on('click', '.transfer-buttons .transfer-btn:first-child', function() {
+        const container = $(this).closest('.dual-list-container');
+        const leftList = container.find('.list-box:first-child .list-box-items');
+        const rightList = container.find('.list-box:last-child .list-box-items');
+        
+        leftList.find('.list-box-item.selected').each(function() {
+            const clone = $(this).clone();
+            clone.removeClass('selected');
+            clone.find('input[type="checkbox"]').prop('checked', false);
+            rightList.append(clone);
+            $(this).remove();
+        });
+        
+        updateCounts(container);
+        showToast('Items transferred', 'success');
+    });
+
+    // Transfer selected items to left
+    $(document).on('click', '.transfer-buttons .transfer-btn:nth-child(2)', function() {
+        const container = $(this).closest('.dual-list-container');
+        const leftList = container.find('.list-box:first-child .list-box-items');
+        const rightList = container.find('.list-box:last-child .list-box-items');
+        
+        rightList.find('.list-box-item.selected').each(function() {
+            const clone = $(this).clone();
+            clone.removeClass('selected');
+            clone.find('input[type="checkbox"]').prop('checked', false);
+            leftList.append(clone);
+            $(this).remove();
+        });
+        
+        updateCounts(container);
+        showToast('Items transferred back', 'info');
+    });
+
+    // Transfer all items to right
+    $(document).on('click', '.transfer-buttons .transfer-btn:nth-child(3)', function() {
+        const container = $(this).closest('.dual-list-container');
+        const leftList = container.find('.list-box:first-child .list-box-items');
+        const rightList = container.find('.list-box:last-child .list-box-items');
+        
+        leftList.find('.list-box-item').each(function() {
+            const clone = $(this).clone();
+            clone.removeClass('selected');
+            clone.find('input[type="checkbox"]').prop('checked', false);
+            rightList.append(clone);
+            $(this).remove();
+        });
+        
+        updateCounts(container);
+        showToast('All items transferred', 'success');
+    });
+
+    // Transfer all items to left
+    $(document).on('click', '.transfer-buttons .transfer-btn:nth-child(4)', function() {
+        const container = $(this).closest('.dual-list-container');
+        const leftList = container.find('.list-box:first-child .list-box-items');
+        const rightList = container.find('.list-box:last-child .list-box-items');
+        
+        rightList.find('.list-box-item').each(function() {
+            const clone = $(this).clone();
+            clone.removeClass('selected');
+            clone.find('input[type="checkbox"]').prop('checked', false);
+            leftList.append(clone);
+            $(this).remove();
+        });
+        
+        updateCounts(container);
+        showToast('All items transferred back', 'info');
+    });
+
+    // Search functionality
+    $(document).on('input', '.list-box-search input', function() {
+        const searchTerm = $(this).val().toLowerCase();
+        const listItems = $(this).closest('.list-box').find('.list-box-item');
+        
+        listItems.each(function() {
+            const title = $(this).find('.list-box-item-title').text().toLowerCase();
+            const desc = $(this).find('.list-box-item-desc').text().toLowerCase();
+            
+            if (title.includes(searchTerm) || desc.includes(searchTerm)) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+    });
+
+    // Update counts
+    function updateCounts(container) {
+        const leftCount = container.find('.list-box:first-child .list-box-items .list-box-item').length;
+        const rightCount = container.find('.list-box:last-child .list-box-items .list-box-item').length;
+        
+        container.find('.list-box:first-child .list-box-count').text(leftCount);
+        container.find('.list-box:last-child .list-box-count').text(rightCount);
+    }
+});
+</script>
+@endpush
