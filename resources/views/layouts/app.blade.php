@@ -38,6 +38,9 @@
         <!-- Sidebar -->
         @include('partials.sidebar')
 
+        <!-- Sidebar Overlay (Mobile) -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
         <!-- Main Content Area -->
         <div class="app-main">
             <!-- Top Navbar -->

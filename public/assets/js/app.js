@@ -80,6 +80,13 @@ const MetroAdmin = {
         // Mobile toggle
         $('#mobileToggle').on('click', () => {
             sidebar.toggleClass('mobile-open');
+            $('#sidebarOverlay').toggleClass('active');
+        });
+
+        // Close sidebar on overlay click (mobile)
+        $('#sidebarOverlay').on('click', () => {
+            sidebar.removeClass('mobile-open');
+            $('#sidebarOverlay').removeClass('active');
         });
 
         // Close sidebar on outside click (mobile)
@@ -87,7 +94,16 @@ const MetroAdmin = {
             if ($(window).width() < 992) {
                 if (!$(e.target).closest('.app-sidebar, #mobileToggle').length) {
                     sidebar.removeClass('mobile-open');
+                    $('#sidebarOverlay').removeClass('active');
                 }
+            }
+        });
+
+        // Close sidebar when clicking nav link (mobile)
+        $('.sidebar-nav .nav-link').on('click', function() {
+            if ($(window).width() < 992 && !$(this).parent().hasClass('has-submenu')) {
+                sidebar.removeClass('mobile-open');
+                $('#sidebarOverlay').removeClass('active');
             }
         });
 
