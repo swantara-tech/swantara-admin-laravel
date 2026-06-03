@@ -473,6 +473,12 @@ ul.submenu li.active a.nav-link::before {
     margin-left: var(--sidebar-collapsed);
 }
 
+/* Navbar adjustment when sidebar collapsed */
+.app-sidebar.collapsed ~ .app-main .app-navbar {
+    left: var(--sidebar-collapsed);
+    width: calc(100% - var(--sidebar-collapsed));
+}
+
 /* ============================================
    NAVBAR
    ============================================ */
@@ -486,13 +492,14 @@ ul.submenu li.active a.nav-link::before {
     padding: 0 32px;
     position: fixed;
     top: 0;
-    left: 0;
+    left: var(--sidebar-width);
     right: 0;
-    width: 100%;
-    z-index: 100;
+    width: calc(100% - var(--sidebar-width));
+    z-index: 102;
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+    transition: left var(--transition-normal), width var(--transition-normal);
 }
 
 [data-theme="dark"] .app-navbar {
@@ -506,6 +513,8 @@ ul.submenu li.active a.nav-link::before {
     min-width: 0;
     flex: 1;
 }
+
+
 
 .breadcrumb-area {
     display: flex;
