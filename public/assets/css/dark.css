@@ -320,6 +320,31 @@
 }
 
 /* ============================================
+   Footer Dark Mode
+   ============================================ */
+[data-theme="dark"] .app-footer {
+    background: rgba(42, 42, 42, 0.8);
+    border-top-color: var(--border-subtle);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .footer-left {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .footer-left strong {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .footer-right a {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .footer-right a:hover {
+    color: var(--accent);
+}
+
+/* ============================================
    Forms & Inputs
    ============================================ */
 [data-theme="dark"] .form-control,

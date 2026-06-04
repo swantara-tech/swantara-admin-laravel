@@ -49,6 +49,21 @@
             <!-- Page Content -->
             <main class="app-content">
                 @yield('content')
+                
+                <!-- Footer -->
+                <footer class="app-footer">
+                    <div class="footer-content">
+                        <div class="footer-left">
+                            <span>&copy; {{ date('Y') }}, made with <i class="fa-solid fa-heart heartbeat-icon"></i> by <strong>Swantara</strong></span>
+                        </div>
+                        <div class="footer-right">
+                            <a href="#">License</a>
+                            <a href="#">More Themes</a>
+                            <a href="#">Documentation</a>
+                            <a href="#">Support</a>
+                        </div>
+                    </div>
+                </footer>
             </main>
         </div>
     </div>

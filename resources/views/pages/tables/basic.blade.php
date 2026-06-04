@@ -60,8 +60,8 @@
                 <label style="font-size: 13px; color: var(--text-secondary);">entries</label>
             </div>
             <div style="position: relative;">
-                <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-tertiary); font-size: 14px;"></i>
-                <input type="text" class="form-control" placeholder="Search users..." style="padding-left: 38px; min-width: 250px; height: 36px;">
+                <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-tertiary); font-size: 14px; z-index: 1; pointer-events: none;"></i>
+                <input type="text" class="form-control" placeholder="Search users..." style="padding-left: 38px; min-width: 250px; height: 36px; position: relative;">
             </div>
         </div>
 
