@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Swantara Admin - Windows 11 Dashboard')</title>
     
+    <!-- Prevent FOUC (Flash of Unstyled Content) - Apply theme before render -->
+    <script>
+        (function() {
+            try {
+                var theme = localStorage.getItem('metro-theme');
+                if (theme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            } catch (e) {}
+        })();
+    </script>
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
