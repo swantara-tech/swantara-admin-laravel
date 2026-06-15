@@ -7,9 +7,6 @@
             </div>
             <span class="brand-text">Swantara Admin</span>
         </div>
-        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle Sidebar">
-            <i class="fa-solid fa-bars"></i>
-        </button>
     </div>
 
     <nav class="sidebar-nav" id="sidebarNav">

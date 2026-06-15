@@ -4,6 +4,9 @@
         <button class="mobile-toggle" id="mobileToggle">
             <i class="fa-solid fa-bars"></i>
         </button>
+        <button class="sidebar-toggle-navbar" id="sidebarToggleNav" aria-label="Toggle Sidebar">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </button>
         <div class="breadcrumb-area">
             <span class="breadcrumb-current" id="pageTitle">@yield('breadcrumb', 'Dashboard')</span>
         </div>

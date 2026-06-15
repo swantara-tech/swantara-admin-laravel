@@ -71,11 +71,27 @@ const MetroAdmin = {
             sidebar.addClass('collapsed');
         }
 
-        // Toggle sidebar
-        $('#sidebarToggle').on('click', () => {
+        // Toggle sidebar (from navbar)
+        $('#sidebarToggleNav').on('click', () => {
             sidebar.toggleClass('collapsed');
             this.state.sidebarCollapsed = sidebar.hasClass('collapsed');
             localStorage.setItem('sidebar-collapsed', this.state.sidebarCollapsed);
+        });
+
+        // Auto-expand sidebar when clicking submenu items
+        $('.nav-item.has-submenu > .nav-link').on('click', function(e) {
+            if (sidebar.hasClass('collapsed')) {
+                e.preventDefault();
+                sidebar.removeClass('collapsed');
+                MetroAdmin.state.sidebarCollapsed = false;
+                localStorage.setItem('sidebar-collapsed', 'false');
+                
+                // Open the submenu after expand
+                const parentItem = $(this).parent();
+                setTimeout(() => {
+                    parentItem.toggleClass('open');
+                }, 200);
+            }
         });
 
         // Close sidebar on overlay click (mobile)
