@@ -18,6 +18,7 @@ const MetroAdmin = {
         this.initSidebar();
         this.initNavbar();
         this.initCommandPalette();
+        this.initMobileMenu();
         this.initNotificationPanel();
         this.initNProgress();
         this.initKeyboardShortcuts();
@@ -77,12 +78,6 @@ const MetroAdmin = {
             localStorage.setItem('sidebar-collapsed', this.state.sidebarCollapsed);
         });
 
-        // Mobile toggle
-        $('#mobileToggle').on('click', () => {
-            sidebar.toggleClass('mobile-open');
-            $('#sidebarOverlay').toggleClass('active');
-        });
-
         // Close sidebar on overlay click (mobile)
         $('#sidebarOverlay').on('click', () => {
             sidebar.removeClass('mobile-open');
@@ -125,6 +120,64 @@ const MetroAdmin = {
                 }
             });
             $('.nav-section').toggle(query === '');
+        });
+    },
+
+    // Mobile Menu Initialization
+    initMobileMenu() {
+        // Mobile toggle - Open mobile menu popup
+        $('#mobileToggle').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            openMobileMenu();
+        });
+
+        // Mobile menu close button
+        $('#mobileMenuClose').on('click', function() {
+            closeMobileMenu();
+        });
+
+        // Close mobile menu on overlay click
+        $('#mobileMenuOverlay').on('click', function(e) {
+            if (e.target === this) {
+                closeMobileMenu();
+            }
+        });
+
+        // Mobile menu search functionality
+        $('#mobileMenuSearch').on('input', function() {
+            const searchTerm = $(this).val().toLowerCase();
+            filterMobileMenu(searchTerm);
+        });
+
+        // Mobile submenu toggle
+        $('.mobile-menu-group-header').on('click', function() {
+            const submenu = $(this).siblings('.mobile-menu-submenu');
+            const arrow = $(this).find('.submenu-arrow');
+            
+            submenu.toggleClass('active');
+            arrow.toggleClass('rotated');
+        });
+
+        // Mobile menu item click
+        $('.mobile-menu-item[data-link]').on('click', function() {
+            const link = $(this).data('link');
+            if (link && link !== '#') {
+                closeMobileMenu();
+                setTimeout(() => {
+                    window.location.href = link;
+                }, 200);
+            }
+        });
+
+        // Mobile theme toggle
+        $('#mobileThemeToggle').on('click', function() {
+            MetroAdmin.toggleTheme();
+        });
+
+        // Mobile fullscreen toggle
+        $('#mobileFullscreenToggle').on('click', function() {
+            MetroAdmin.toggleFullscreen();
         });
     },
 
@@ -703,3 +756,30 @@ const MetroAdmin = {
 $(document).ready(() => {
     MetroAdmin.init();
 });
+
+// Global Mobile Menu Functions
+function openMobileMenu() {
+    $('#mobileMenuOverlay').addClass('active');
+    $('body').css('overflow', 'hidden');
+    setTimeout(() => {
+        $('#mobileMenuSearch').focus();
+    }, 300);
+}
+
+function closeMobileMenu() {
+    $('#mobileMenuOverlay').removeClass('active');
+    $('body').css('overflow', '');
+}
+
+function filterMobileMenu(searchTerm) {
+    const items = $('.mobile-menu-item, .mobile-submenu-item');
+    
+    items.each(function() {
+        const text = $(this).text().toLowerCase();
+        if (text.includes(searchTerm)) {
+            $(this).show();
+        } else {
+            $(this).hide();
+        }
+    });
+}
