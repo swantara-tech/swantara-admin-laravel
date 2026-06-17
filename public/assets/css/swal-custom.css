@@ -527,8 +527,15 @@
 }
 
 .custom-notifications.position-top {
-    right: 50%;
-    transform: translateX(50%);
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+}
+
+.custom-notifications.position-top-center {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
 }
 
 .custom-notifications.position-bottom-right {
@@ -547,8 +554,17 @@
 .custom-notifications.position-bottom {
     top: auto;
     bottom: 30px;
-    right: 50%;
-    transform: translateX(50%);
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+}
+
+.custom-notifications.position-bottom-center {
+    top: auto;
+    bottom: 30px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
 }
 
 .custom-notifications.position-center {
@@ -582,6 +598,41 @@
     border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
+/* Animations for different positions */
+.custom-notifications.position-top-center .custom-toast,
+.custom-notifications.position-top .custom-toast {
+    animation: slideInDown 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.custom-notifications.position-bottom-center .custom-toast,
+.custom-notifications.position-bottom .custom-toast,
+.custom-notifications.position-bottom-left .custom-toast,
+.custom-notifications.position-bottom-right .custom-toast {
+    animation: slideInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%) scale(0.95);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100%) scale(0.95);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
 @keyframes slideInRight {
     0% {
         transform: translateX(100%) scale(0.95);
@@ -595,6 +646,41 @@
 
 .custom-toast.hide {
     animation: slideOutRight 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Slide out animations for different positions */
+.custom-notifications.position-top-center .custom-toast.hide,
+.custom-notifications.position-top .custom-toast.hide {
+    animation: slideOutUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.custom-notifications.position-bottom-center .custom-toast.hide,
+.custom-notifications.position-bottom .custom-toast.hide,
+.custom-notifications.position-bottom-left .custom-toast.hide,
+.custom-notifications.position-bottom-right .custom-toast.hide {
+    animation: slideOutDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideOutUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%) scale(0.95);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutDown {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%) scale(0.95);
+        opacity: 0;
+    }
 }
 
 @keyframes slideOutRight {
@@ -907,7 +993,9 @@
 
     .custom-notifications.position-top,
     .custom-notifications.position-bottom,
-    .custom-notifications.position-center {
+    .custom-notifications.position-center,
+    .custom-notifications.position-top-center,
+    .custom-notifications.position-bottom-center {
         width: calc(100% - 24px);
     }
 

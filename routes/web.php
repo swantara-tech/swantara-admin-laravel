@@ -147,3 +147,130 @@ Route::prefix('forms')->group(function () {
         return view('pages.forms.default');
     })->name('forms.default');
 });
+
+// Utilities Routes
+Route::prefix('utilities')->group(function () {
+    Route::get('/accordions', function () {
+        return view('pages.utilities.accordions');
+    })->name('utilities.accordions');
+    
+    Route::get('/alerts', function () {
+        return view('pages.utilities.alerts');
+    })->name('utilities.alerts');
+    
+    Route::get('/images', function () {
+        return view('pages.utilities.images');
+    })->name('utilities.images');
+    
+    Route::get('/badges', function () {
+        return view('pages.utilities.badges');
+    })->name('utilities.badges');
+    
+    Route::get('/breadcrumb', function () {
+        return view('pages.utilities.breadcrumb');
+    })->name('utilities.breadcrumb');
+    
+    Route::get('/buttons', function () {
+        return view('pages.utilities.buttons');
+    })->name('utilities.buttons');
+    
+    Route::get('/cards', function () {
+        return view('pages.utilities.cards');
+    })->name('utilities.cards');
+    
+    Route::get('/carousel', function () {
+        return view('pages.utilities.carousel');
+    })->name('utilities.carousel');
+    
+    Route::get('/collapse', function () {
+        return view('pages.utilities.collapse');
+    })->name('utilities.collapse');
+    
+    Route::get('/colors', function () {
+        return view('pages.utilities.colors');
+    })->name('utilities.colors');
+    
+    Route::get('/dropdowns', function () {
+        return view('pages.utilities.dropdowns');
+    })->name('utilities.dropdowns');
+    
+    Route::get('/videos', function () {
+        return view('pages.utilities.videos');
+    })->name('utilities.videos');
+    
+    Route::get('/grid', function () {
+        return view('pages.utilities.grid');
+    })->name('utilities.grid');
+    
+    Route::get('/links', function () {
+        return view('pages.utilities.links');
+    })->name('utilities.links');
+    
+    Route::get('/list-group', function () {
+        return view('pages.utilities.list-group');
+    })->name('utilities.list-group');
+    
+    Route::get('/modals', function () {
+        return view('pages.utilities.modals');
+    })->name('utilities.modals');
+    
+    Route::get('/notifications', function () {
+        return view('pages.utilities.notifications');
+    })->name('utilities.notifications');
+    
+    Route::get('/offcanvas', function () {
+        return view('pages.utilities.offcanvas');
+    })->name('utilities.offcanvas');
+    
+    Route::get('/placeholders', function () {
+        return view('pages.utilities.placeholders');
+    })->name('utilities.placeholders');
+    
+    Route::get('/pagination', function () {
+        return view('pages.utilities.pagination');
+    })->name('utilities.pagination');
+    
+    Route::get('/popovers', function () {
+        return view('pages.utilities.popovers');
+    })->name('utilities.popovers');
+    
+    Route::get('/progress', function () {
+        return view('pages.utilities.progress');
+    })->name('utilities.progress');
+    
+    Route::get('/scrollspy', function () {
+        return view('pages.utilities.scrollspy');
+    })->name('utilities.scrollspy');
+    
+    Route::get('/tabs', function () {
+        return view('pages.utilities.tabs');
+    })->name('utilities.tabs');
+    
+    Route::get('/tooltips', function () {
+        return view('pages.utilities.tooltips');
+    })->name('utilities.tooltips');
+    
+    Route::get('/typography', function () {
+        return view('pages.utilities.typography');
+    })->name('utilities.typography');
+    
+    Route::get('/toasts', function () {
+        return view('pages.utilities.toasts');
+    })->name('utilities.toasts');
+    
+    Route::get('/spinners', function () {
+        return view('pages.utilities.spinners');
+    })->name('utilities.spinners');
+    
+    Route::get('/skeletons', function () {
+        return view('pages.utilities.skeletons');
+    })->name('utilities.skeletons');
+    
+    Route::get('/avatars', function () {
+        return view('pages.utilities.avatars');
+    })->name('utilities.avatars');
+    
+    Route::get('/timelines', function () {
+        return view('pages.utilities.timelines');
+    })->name('utilities.timelines');
+});

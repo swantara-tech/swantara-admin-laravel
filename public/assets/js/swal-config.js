@@ -4,8 +4,8 @@
  * Mengganti SweetAlert2 dan Metro UI Toast
  */
 
-// Toast container
-let toastContainer = null;
+// Toast containers (one per position)
+let toastContainers = {};
 
 // Toast configuration
 const toastConfig = {
@@ -28,14 +28,23 @@ const toastConfig = {
     }
 };
 
-// Initialize toast container
-function initToastContainer() {
-    if (!toastContainer) {
-        toastContainer = document.createElement('ul');
-        toastContainer.className = 'custom-notifications';
-        document.body.appendChild(toastContainer);
+// Initialize toast container for specific position
+function initToastContainer(position = 'top-right') {
+    const containerId = `toast-container-${position}`;
+    
+    // Return existing container if it exists
+    if (toastContainers[position]) {
+        return toastContainers[position];
     }
-    return toastContainer;
+    
+    // Create new container for this position
+    const container = document.createElement('ul');
+    container.id = containerId;
+    container.className = `custom-notifications position-${position}`;
+    document.body.appendChild(container);
+    toastContainers[position] = container;
+    
+    return container;
 }
 
 // Remove toast
@@ -46,8 +55,7 @@ function removeToast(toast) {
 }
 
 // Create toast
-function createToast(type, message) {
-    const container = initToastContainer();
+function createToast(type, message, container) {
     const config = toastConfig[type] || toastConfig.info;
     
     const toast = document.createElement('li');
@@ -70,11 +78,10 @@ function createToast(type, message) {
 // Toast helper
 // ========================
 function showToast(message, type = 'success', position = 'top-right') {
-    // Position handling (will be controlled by CSS)
-    const container = initToastContainer();
-    container.className = `custom-notifications position-${position}`;
+    // Get container for specific position
+    const container = initToastContainer(position);
     
-    return createToast(type, message);
+    return createToast(type, message, container);
 }
 
 
