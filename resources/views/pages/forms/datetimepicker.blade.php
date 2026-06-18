@@ -3,6 +3,22 @@
 @section('title', 'Datetimepicker')
 
 @push('styles')
+<style>
+    /* Additional z-index fixes for Metro UI picker dropdowns */
+    .time-picker {
+        z-index: 10 !important;
+    }
+    .date-picker {
+        z-index: 10 !important;
+    }
+
+    .calendar-content {
+        z-index: 10 !important;
+    }   
+    .calendar-picker .calendar-for-picker {
+        z-index: 10 !important;
+    }
+</style>
 @endpush
 
 @section('content')

@@ -12665,6 +12665,9 @@ table.dataTable tbody tr:nth-child(even):hover {
     overflow: visible !important;
 }
 
+.content-card {
+    overflow: visible !important;
+}
 /* Dropdown Example Container */
 .dd-example {
     padding: 24px;
@@ -21505,6 +21508,12 @@ table.dataTable tbody tr:nth-child(even):hover {
 .calendar {
     position: relative;
     z-index: auto;
+}
+
+/* Calendar Picker Container - ensure it expands to show full calendar content */
+.calendar.calendar-for-picker.open {
+    height: auto !important;
+    overflow: visible !important;
 }
 
 /* Card containing open picker gets elevated z-index */
