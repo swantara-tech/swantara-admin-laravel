@@ -8415,3 +8415,299 @@ $(document).ready(function() {
         console.log('✅ Avatar interactive features initialized');
     }
 });
+
+/**
+ * Auto-generate mobile menu from sidebar navigation
+ * This ensures mobile menu always matches sidebar content
+ */
+function generateMobileMenuFromSidebar() {
+    const $sidebarNav = $('#sidebarNav');
+    const $mobileContent = $('#mobileMenuContent');
+    
+    if ($sidebarNav.length === 0 || $mobileContent.length === 0) {
+        console.warn('⚠️ Sidebar or mobile menu container not found');
+        return;
+    }
+    
+    // Clear existing content
+    $mobileContent.empty();
+    
+    // Color mapping for menu icons
+    const bgColors = ['bg-primary', 'bg-success', 'bg-info', 'bg-warning', 'bg-danger', 'bg-secondary'];
+    let colorIndex = 0;
+    
+    console.log('🔄 Generating mobile menu from sidebar...');
+    
+    // Process each nav item in sidebar
+    $sidebarNav.find('.nav-list > li').each(function(index) {
+        const $li = $(this);
+        
+        // Handle section headers
+        if ($li.hasClass('nav-section')) {
+            const sectionText = $li.text().trim();
+            $mobileContent.append(`
+                <div class="mobile-menu-section-title">${sectionText}</div>
+            `);
+            console.log(`  📁 Section: ${sectionText}`);
+            return;
+        }
+        
+        // Handle nav items
+        const $navLink = $li.find('> .nav-link');
+        if ($navLink.length === 0) return;
+        
+        const isActive = $li.hasClass('active');
+        const hasSubmenu = $li.hasClass('has-submenu');
+        
+        // Get icon - try multiple selectors
+        let iconHtml = '';
+        const $icon = $navLink.find('i.fas, i.fa-solid, i.far, i.fa-regular, svg').first();
+        if ($icon.length > 0) {
+            iconHtml = $icon.prop('outerHTML');
+            console.log(`  ✓ Icon found:`, iconHtml.substring(0, 50));
+        } else {
+            console.warn(`  ⚠ No icon found for: ${$navLink.find('> span').text()}`);
+        }
+        
+        const menuText = $navLink.find('> span').first().text().trim();
+        const href = $navLink.attr('href') || '#';
+        const badge = $navLink.find('.nav-badge').length > 0 ? $navLink.find('.nav-badge').prop('outerHTML') : '';
+        
+        // Get description (use parent section or default)
+        const $sectionHeader = $li.prevAll('.nav-section').first();
+        const sectionText = $sectionHeader.length > 0 ? $sectionHeader.text().trim() : 'Menu';
+        
+        if (hasSubmenu) {
+            // Create menu group with submenu
+            const $submenu = $li.find('> .submenu');
+            let submenuItems = '';
+            
+            $submenu.find('li').each(function() {
+                const $subLink = $(this).find('.nav-link');
+                const subHref = $subLink.attr('href') || '#';
+                const subText = $subLink.find('span').text().trim();
+                const subActive = $(this).hasClass('active');
+                
+                // Check if submenu item has icon
+                let subIconHtml = '';
+                const $subIcon = $subLink.find('i.fas, i.fa-solid, i.far, i.fa-regular, svg').first();
+                if ($subIcon.length > 0) {
+                    // Clone the icon from sidebar
+                    subIconHtml = $subIcon.prop('outerHTML');
+                } else {
+                    // Use bullet dot if no icon
+                    subIconHtml = '<span class="submenu-bullet">•</span>';
+                }
+                
+                submenuItems += `
+                    <a href="${subHref}" class="mobile-submenu-item ${subActive ? 'active' : ''}">
+                        ${subIconHtml}
+                        <span>${subText}</span>
+                    </a>
+                `;
+            });
+            
+            const bgColor = bgColors[colorIndex % bgColors.length];
+            colorIndex++;
+            
+            $mobileContent.append(`
+                <div class="mobile-menu-group">
+                    <div class="mobile-menu-group-header">
+                        <div class="mobile-menu-item ${isActive ? 'active' : ''}" data-link="${href}">
+                            <div class="mobile-menu-icon ${bgColor}">
+                                ${iconHtml}
+                            </div>
+                            <div class="mobile-menu-text">
+                                <div class="mobile-menu-title">${menuText}</div>
+                                <div class="mobile-menu-desc">${sectionText}</div>
+                            </div>
+                            ${badge}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6"></path></svg>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-submenu">
+                        ${submenuItems}
+                    </div>
+                </div>
+            `);
+            
+            console.log(`  📂 Menu (with submenu): ${menuText}`);
+        } else {
+            // Create simple menu item
+            const bgColor = bgColors[colorIndex % bgColors.length];
+            colorIndex++;
+            
+            $mobileContent.append(`
+                <div class="mobile-menu-item ${isActive ? 'active' : ''}" data-link="${href}">
+                    <div class="mobile-menu-icon ${bgColor}">
+                        ${iconHtml}
+                    </div>
+                    <div class="mobile-menu-text">
+                        <div class="mobile-menu-title">${menuText}</div>
+                        <div class="mobile-menu-desc">${sectionText}</div>
+                    </div>
+                    ${badge}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"></path></svg>
+                </div>
+            `);
+            
+            console.log(`  📄 Menu: ${menuText}`);
+        }
+    });
+    
+    // Add click handlers for menu items
+    setupMobileMenuClickHandlers();
+    
+    console.log('✅ Mobile menu generated from sidebar');
+}
+
+/**
+ * Setup click handlers for mobile menu items
+ */
+function setupMobileMenuClickHandlers() {
+    // Simple menu items - navigate to link
+    $('.mobile-menu-item[data-link]').on('click', function(e) {
+        const $item = $(this);
+        const $group = $item.closest('.mobile-menu-group');
+        
+        // If this is a group header, toggle submenu
+        if ($group.length > 0) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const $submenu = $group.find('.mobile-menu-submenu');
+            const $arrow = $item.find('svg.lucide-chevron-down, svg.lucide-chevron-right');
+            
+            if ($submenu.hasClass('open')) {
+                $submenu.slideUp(200).removeClass('open');
+                $arrow.css('transform', 'rotate(0deg)');
+                console.log('🔽 Submenu closed');
+            } else {
+                $submenu.slideDown(200).addClass('open');
+                $arrow.css('transform', 'rotate(180deg)');
+                console.log('🔼 Submenu opened');
+            }
+            return;
+        }
+        
+        // Simple menu item - navigate
+        const link = $item.data('link');
+        if (link && link !== '#') {
+            console.log('🔗 Navigating to:', link);
+            window.location.href = link;
+        }
+    });
+    
+    // Submenu items - navigate directly
+    $('.mobile-submenu-item').on('click', function(e) {
+        const href = $(this).attr('href');
+        if (href && href !== '#') {
+            e.preventDefault();
+            console.log('🔗 Navigating to submenu:', href);
+            window.location.href = href;
+        }
+    });
+    
+    console.log('✅ Mobile menu click handlers setup');
+}
+
+/**
+ * Setup mobile menu search functionality
+ */
+function setupMobileMenuSearch() {
+    const $searchInput = $('#mobileMenuSearch');
+    
+    if ($searchInput.length === 0) {
+        console.warn('⚠️ Mobile menu search input not found');
+        return;
+    }
+    
+    $searchInput.on('input', function() {
+        const searchTerm = $(this).val().toLowerCase().trim();
+        
+        console.log('🔍 Search term:', searchTerm || '(empty)');
+        
+        if (searchTerm === '') {
+            // Show all items when search is empty
+            $('.mobile-menu-item').show();
+            $('.mobile-menu-submenu').hide().removeClass('open');
+            $('.mobile-menu-section-title').show();
+            $('.mobile-submenu-item').show();
+            console.log('✅ All menu items shown');
+            return;
+        }
+        
+        // Hide all first
+        $('.mobile-menu-item').hide();
+        $('.mobile-menu-section-title').hide();
+        $('.mobile-menu-submenu').hide().removeClass('open');
+        
+        let matchCount = 0;
+        
+        // Search through section titles and their children
+        $('.mobile-menu-section-title').each(function() {
+            const $sectionTitle = $(this);
+            let sectionHasMatch = false;
+            
+            // Get all items until next section title
+            const $items = $sectionTitle.nextUntil('.mobile-menu-section-title');
+            
+            $items.each(function() {
+                const $item = $(this);
+                
+                // Check menu groups (with submenus)
+                if ($item.hasClass('mobile-menu-group')) {
+                    const $header = $item.find('.mobile-menu-item').first();
+                    const menuTitle = $header.find('.mobile-menu-title').text().toLowerCase();
+                    const menuDesc = $header.find('.mobile-menu-desc').text().toLowerCase();
+                    
+                    let groupHasMatch = menuTitle.includes(searchTerm) || menuDesc.includes(searchTerm);
+                    
+                    // Check submenu items
+                    $item.find('.mobile-submenu-item').each(function() {
+                        const subText = $(this).text().toLowerCase();
+                        if (subText.includes(searchTerm)) {
+                            $(this).show();
+                            groupHasMatch = true;
+                        } else {
+                            $(this).hide();
+                        }
+                    });
+                    
+                    if (groupHasMatch) {
+                        $header.show();
+                        $item.find('.mobile-menu-submenu').slideDown(200).addClass('open');
+                        sectionHasMatch = true;
+                        matchCount++;
+                    }
+                }
+                // Check simple menu items
+                else if ($item.hasClass('mobile-menu-item')) {
+                    const menuTitle = $item.find('.mobile-menu-title').text().toLowerCase();
+                    const menuDesc = $item.find('.mobile-menu-desc').text().toLowerCase();
+                    
+                    if (menuTitle.includes(searchTerm) || menuDesc.includes(searchTerm)) {
+                        $item.show();
+                        sectionHasMatch = true;
+                        matchCount++;
+                    }
+                }
+            });
+            
+            // Show section title only if it has matching children
+            if (sectionHasMatch) {
+                $sectionTitle.show();
+            }
+        });
+        
+        console.log(`✅ Found ${matchCount} matching menu items`);
+    });
+    
+    console.log('✅ Mobile menu search functionality setup');
+}
+
+// Generate mobile menu on page load
+$(document).ready(function() {
+    generateMobileMenuFromSidebar();
+    setupMobileMenuSearch();
+});
