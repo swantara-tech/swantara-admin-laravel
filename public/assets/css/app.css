@@ -1,4 +1,4 @@
-﻿/* ============================================
+/* ============================================
    Metro Admin - Core Stylesheet
    Windows 11 Fluent Design Inspired
    ============================================ */
@@ -2403,7 +2403,7 @@ select.form-control[multiple] option {
 }
 
 .custom-checkbox input[type="checkbox"]:checked::after {
-    content: '✓' !important;
+    content: '?' !important;
     position: absolute;
     top: 50% !important;
     left: 50% !important;
@@ -3086,302 +3086,6 @@ select.form-control[multiple] option {
 
 /* END CLIPBOARD STYLE */
 
-
-/* START DATETIMEPICKER STYLE */
-/* === datetimepicker.blade.php === */
-
-.datetimepicker-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    margin-bottom: 24px;
-}
-
-.datetimepicker-grid.three-cols {
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.datetimepicker-grid.full-width {
-    grid-template-columns: 1fr;
-}
-
-.dtp-section-title {
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 16px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid var(--accent);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.dtp-section-title i {
-    color: var(--accent);
-}
-
-.dtp-example {
-    margin-bottom: 16px;
-}
-
-.dtp-example:last-child {
-    margin-bottom: 0;
-}
-
-.dtp-label {
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--text-secondary);
-    margin-bottom: 6px;
-    display: block;
-}
-
-.dtp-pattern {
-    font-family: 'Consolas', 'Monaco', monospace;
-    font-size: 11px;
-    color: var(--accent);
-    background: var(--accent-light);
-    padding: 2px 6px;
-    border-radius: 4px;
-    margin-left: 8px;
-}
-
-.dtp-helper {
-    font-size: 11px;
-    color: var(--text-tertiary);
-    margin-top: 4px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.dtp-helper code {
-    background: var(--bg-secondary);
-    padding: 2px 4px;
-    border-radius: 3px;
-    font-family: monospace;
-}
-
-.input-group {
-    display: flex;
-    align-items: stretch;
-    width: 100%;
-}
-
-.input-group .form-control {
-    flex: 1;
-    border-radius: 0;
-}
-
-.input-group .form-control:first-child {
-    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
-}
-
-.input-group .form-control:last-child {
-    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-}
-
-.input-group-text {
-    display: flex;
-    align-items: center;
-    padding: 10px 14px;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--text-secondary);
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-.input-group-text:first-child {
-    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
-    border-right: none;
-}
-
-.input-group-text:last-child {
-    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    border-left: none;
-}
-
-.input-group-text i {
-    font-size: 16px;
-}
-
-.date-display {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    padding: 12px;
-    margin-top: 8px;
-}
-
-.date-display-label {
-    font-size: 11px;
-    color: var(--text-tertiary);
-    margin-bottom: 4px;
-}
-
-.date-display-value {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--accent);
-    font-family: 'Consolas', 'Monaco', monospace;
-}
-
-.badge {
-    display: inline-block;
-    padding: 4px 10px;
-    font-size: 11px;
-    font-weight: 600;
-    border-radius: 12px;
-    margin-left: 8px;
-}
-
-.badge-primary {
-    background: var(--accent-light);
-    color: var(--accent);
-}
-
-.badge-success {
-    background: var(--success-bg);
-    color: var(--success);
-}
-
-.badge-warning {
-    background: var(--warning-bg);
-    color: var(--warning);
-}
-
-.badge-info {
-    background: var(--info-bg);
-    color: var(--info);
-}
-
-.badge-danger {
-    background: var(--danger-bg);
-    color: var(--danger);
-}
-
-.divider {
-    height: 1px;
-    background: var(--border);
-    margin: 20px 0;
-}
-
-.feature-list {
-    list-style: none;
-    padding: 0;
-}
-
-.feature-list li {
-    padding: 8px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 13px;
-}
-
-.feature-list li i {
-    color: var(--success);
-    font-size: 14px;
-}
-
-.helper-text {
-    font-size: 12px;
-    color: var(--text-tertiary);
-    margin-top: 6px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.code-block {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    padding: 16px;
-    font-family: 'Consolas', 'Monaco', monospace;
-    font-size: 12px;
-    overflow-x: auto;
-    margin-top: 16px;
-}
-
-.preset-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 12px;
-}
-
-.preset-btn {
-    padding: 6px 12px;
-    font-size: 12px;
-    border: 1px solid var(--border);
-    background: var(--surface);
-    border-radius: var(--radius-sm);
-    cursor: pointer;
-    transition: var(--transition-fast);
-}
-
-.preset-btn:hover {
-    background: var(--accent-light);
-    border-color: var(--accent);
-    color: var(--accent);
-}
-
-@media (max-width: 1200px) {
-    .datetimepicker-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .datetimepicker-grid.three-cols {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .datetimepicker-grid.three-cols {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Metro UI Picker Z-Index Fix */
-.time-picker {
-    z-index: 10 !important;
-}
-
-.date-picker {
-    z-index: 10 !important;
-}
-
-.calendar-content {
-    z-index: 10 !important;
-}
-
-.calendar-picker .calendar-for-picker {
-    z-index: 10 !important;
-}
-
-.calendar-picker {
-    overflow: visible;
-}
-
-.content-card {
-    overflow: visible;
-}
-
-.card-body {
-    overflow: visible !important;
-    overflow: visible;
-}
-
-.dtp-example {
-    overflow: visible;
-}
-
-/* END DATETIMEPICKER STYLE */
 
 
 /* START DEFAULT FORM STYLE */
@@ -20156,7 +19860,7 @@ table.dataTable tbody tr:nth-child(even):hover {
    }
    
    .dsgt-typo-blockquote footer::before {
-       content: "— ";
+       content: "� ";
    }
    
    /* Blockquote Variants */
@@ -20193,7 +19897,7 @@ table.dataTable tbody tr:nth-child(even):hover {
    }
    
    .dsgt-typo-list li::before {
-       content: '•';
+       content: '�';
        position: absolute;
        left: 0;
        color: var(--accent);
@@ -21240,3 +20944,647 @@ table.dataTable tbody tr:nth-child(even):hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* ============================================
+   DSGT DARK TABLE COMPONENT
+   ============================================ */
+
+/* Dark Table Container */
+.dsgt-dark-table {
+    background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.dsgt-dark-table .table-responsive {
+    margin: 0;
+}
+
+/* Dark Table Base */
+.dsgt-dark-table table {
+    margin: 0;
+    background: transparent;
+    color: #f1f5f9;
+    border-collapse: collapse;
+}
+
+/* Dark Table Header */
+.dsgt-dark-table thead tr {
+    background: linear-gradient(135deg, #1e293b 0%, #2d3748 100%);
+    border-bottom: 2px solid #3b82f6;
+}
+
+.dsgt-dark-table thead th {
+    color: #94a3b8;
+    font-weight: 600;
+    padding: 16px;
+    border-bottom: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.dsgt-dark-table thead th i {
+    margin-right: 8px;
+}
+
+/* Dark Table Body */
+.dsgt-dark-table tbody tr {
+    border-bottom: 1px solid #334155;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Alternating Row Colors */
+.dsgt-dark-table tbody tr:nth-child(odd) {
+    background: #1e293b;
+}
+
+.dsgt-dark-table tbody tr:nth-child(even) {
+    background: #0f172a;
+}
+
+/* Hover Effect */
+.dsgt-dark-table table.table-hover tbody tr:hover {
+    background: #253347 !important;
+    transform: translateX(2px);
+    box-shadow: -4px 0 12px rgba(59, 130, 246, 0.15);
+}
+
+.dsgt-dark-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.dsgt-dark-table tbody td {
+    padding: 16px;
+    color: #f1f5f9;
+    vertical-align: middle;
+}
+
+/* Server Info Cell */
+.dsgt-server-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dsgt-server-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.dsgt-server-icon i {
+    color: white;
+    font-size: 18px;
+}
+
+.dsgt-server-name {
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+.dsgt-server-region {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* IP Address Code */
+.dsgt-ip-code {
+    background: #334155;
+    color: #60a5fa;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+    display: inline-block;
+}
+
+/* Progress Bar Container */
+.dsgt-progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dsgt-progress-bar {
+    flex: 1;
+    height: 8px;
+    background: #334155;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dsgt-progress-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Progress Colors */
+.dsgt-progress-fill.dsgt-progress-success {
+    background: linear-gradient(90deg, #10b981, #34d399);
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.dsgt-progress-fill.dsgt-progress-warning {
+    background: linear-gradient(90deg, #f59e0b, #fbbf24);
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+.dsgt-progress-fill.dsgt-progress-danger {
+    background: linear-gradient(90deg, #ef4444, #f87171);
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+.dsgt-progress-fill.dsgt-progress-info {
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.dsgt-progress-value {
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 40px;
+    text-align: right;
+}
+
+.dsgt-progress-value.dsgt-text-success {
+    color: #10b981;
+}
+
+.dsgt-progress-value.dsgt-text-warning {
+    color: #f59e0b;
+}
+
+.dsgt-progress-value.dsgt-text-danger {
+    color: #ef4444;
+}
+
+.dsgt-progress-value.dsgt-text-info {
+    color: #3b82f6;
+}
+
+/* Status Badge */
+.dsgt-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.dsgt-status-dot {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* Status Colors */
+.dsgt-status-badge.dsgt-status-online {
+    background: linear-gradient(135deg, #10b981, #059669);
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+    color: white;
+}
+
+.dsgt-status-badge.dsgt-status-high-load {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+    color: white;
+}
+
+.dsgt-status-badge.dsgt-status-offline {
+    background: linear-gradient(135deg, #64748b, #475569);
+    box-shadow: 0 2px 8px rgba(100, 116, 139, 0.3);
+    color: white;
+}
+
+.dsgt-status-badge.dsgt-status-error {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+    color: white;
+}
+
+/* Pulse Animation for Active Status */
+@keyframes dsgt-pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+}
+
+.dsgt-status-dot.dsgt-pulse {
+    animation: dsgt-pulse 2s infinite;
+}
+
+/* Icon Colors for Headers */
+.dsgt-icon-blue {
+    color: #3b82f6;
+}
+
+.dsgt-icon-green {
+    color: #10b981;
+}
+
+.dsgt-icon-orange {
+    color: #f59e0b;
+}
+
+.dsgt-icon-purple {
+    color: #8b5cf6;
+}
+
+.dsgt-icon-cyan {
+    color: #06b6d4;
+}
+
+.dsgt-icon-pink {
+    color: #ec4899;
+}
+
+/* Server Icon Background Colors */
+.dsgt-server-icon.dsgt-bg-success {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.dsgt-server-icon.dsgt-bg-info {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.dsgt-server-icon.dsgt-bg-warning {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.dsgt-server-icon.dsgt-bg-secondary {
+    background: linear-gradient(135deg, #64748b, #475569);
+}
+
+.dsgt-server-icon.dsgt-bg-danger {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* Shimmer Animation for Loading State */
+@keyframes dsgt-shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.dsgt-shimmer {
+    background: linear-gradient(90deg, var(--bg-secondary) 25%, #e0e7ff 50%, var(--bg-secondary) 75%);
+    background-size: 200% 100%;
+    animation: dsgt-shimmer 1.5s infinite;
+}
+
+/* ============================================
+   DSGT ADVANCED SEARCH FILTER COMPONENT
+   ============================================ */
+
+/* Advanced Search Toggle Button */
+.dsgt-advanced-search-toggle {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.dsgt-advanced-search-toggle:hover {
+    color: var(--accent-hover);
+}
+
+.dsgt-advanced-search-toggle i.fa-chevron-down {
+    font-size: 12px;
+    transition: transform 0.3s;
+}
+
+/* Advanced Search Filter Form Container */
+.dsgt-filter-form {
+    background: var(--bg-secondary);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.dsgt-filter-form.dsgt-filter-collapsed {
+    max-height: 0;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.dsgt-filter-form.dsgt-filter-expanded {
+    max-height: 2000px;
+    opacity: 1;
+    padding: 24px;
+}
+
+/* Filter Fields Container */
+.dsgt-filter-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Individual Filter Row */
+.dsgt-filter-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.dsgt-filter-label {
+    min-width: 180px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+.dsgt-filter-inputs {
+    display: flex;
+    gap: 8px;
+    flex: 1;
+}
+
+/* Filter Operator Select */
+.dsgt-filter-operator {
+    width: 100px;
+    height: 40px;
+    padding: 8px 12px;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.dsgt-filter-operator:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+/* Filter Input Fields */
+.dsgt-filter-input {
+    flex: 1;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 16px;
+    background: white;
+    transition: border-color 0.2s;
+}
+
+.dsgt-filter-input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+/* Calendar Picker in Filter */
+.dsgt-filter-input[data-role="calendar-picker"] {
+    flex: 1;
+}
+
+/* Metro UI Calendar Picker Override for Filter */
+.dsgt-filter-inputs .calendar-picker {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+}
+
+.dsgt-filter-inputs .calendar-picker input[type="text"] {
+    height: 40px !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px 0 0 8px !important;
+    padding: 8px 16px !important;
+    background: white !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.dsgt-filter-inputs .calendar-picker input[type="text"]:focus {
+    outline: none !important;
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.1) !important;
+    z-index: 2;
+}
+
+.dsgt-filter-inputs .calendar-picker .dropdown-button,
+.dsgt-filter-inputs .calendar-picker button.dropdown-button {
+    height: 40px !important;
+    min-height: 40px !important;
+    width: 40px !important;
+    min-width: 40px !important;
+    padding: 0 !important;
+    border: 1px solid var(--border) !important;
+    border-left: none !important;
+    border-radius: 0 8px 8px 0 !important;
+    background: var(--bg-secondary) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative;
+    z-index: 1;
+}
+
+.dsgt-filter-inputs .calendar-picker .dropdown-button:hover {
+    background: var(--accent) !important;
+    border-color: var(--accent) !important;
+    z-index: 2;
+}
+
+.dsgt-filter-inputs .calendar-picker .dropdown-button i,
+.dsgt-filter-inputs .calendar-picker .dropdown-button .mif-calendar {
+    color: var(--text-primary) !important;
+    font-size: 16px !important;
+}
+
+.dsgt-filter-inputs .calendar-picker .dropdown-button:hover i,
+.dsgt-filter-inputs .calendar-picker .dropdown-button:hover .mif-calendar {
+    color: white !important;
+}
+
+/* ============================================
+   DSGT METRO UI PICKER Z-INDEX FIX
+   Ensures picker popups render above cards
+   but below modals and navbar dropdowns
+   z-index stack:
+     9999  = Modal backdrop
+     1000  = Picker popup (calendar, date, time)
+      200  = Navbar dropdown
+      102  = App header
+      101  = Sidebar
+   ============================================ */
+
+/* Calendar Picker */
+.calendar-picker {
+    position: relative;
+    z-index: auto;
+}
+
+.calendar-picker.open,
+.calendar-picker.active {
+    z-index: 1000;
+}
+
+/* Calendar Picker Popup */
+.calendar-picker .dropdown-menu,
+.calendar-picker .calendar-picker-dropdown,
+.calendar-picker .calendar-container {
+    z-index: 1000 !important;
+}
+
+/* Filter context - same z-index */
+.dsgt-filter-inputs .calendar-picker .dropdown-menu,
+.dsgt-filter-inputs .calendar-picker .calendar-picker-dropdown {
+    z-index: 1000 !important;
+}
+
+/* Date Picker (Wheel) */
+.date-picker {
+    position: relative;
+    z-index: auto;
+}
+
+.date-picker.open,
+.date-picker.active {
+    z-index: 1000;
+}
+
+.date-picker .dropdown-menu,
+.date-picker .date-picker-dropdown {
+    z-index: 1000 !important;
+}
+
+/* Time Picker (Wheel) */
+.time-picker {
+    position: relative;
+    z-index: auto;
+}
+
+.time-picker.open,
+.time-picker.active {
+    z-index: 1000;
+}
+
+.time-picker .dropdown-menu,
+.time-picker .time-picker-dropdown {
+    z-index: 1000 !important;
+}
+
+/* Inline Calendar - no popup, just ensure proper stacking */
+.calendar {
+    position: relative;
+    z-index: auto;
+}
+
+/* Card containing open picker gets elevated z-index */
+.content-card:has(.calendar-picker.open),
+.content-card:has(.calendar-picker.active),
+.content-card:has(.date-picker.open),
+.content-card:has(.date-picker.active),
+.content-card:has(.time-picker.open),
+.content-card:has(.time-picker.active) {
+    position: relative;
+    z-index: 500 !important;
+}
+
+/* Card body with open picker */
+.card-body:has(.calendar-picker.open),
+.card-body:has(.calendar-picker.active),
+.card-body:has(.date-picker.open),
+.card-body:has(.date-picker.active),
+.card-body:has(.time-picker.open),
+.card-body:has(.time-picker.active) {
+    overflow: visible !important;
+    position: relative;
+    z-index: auto;
+}
+
+/* Filter form with open picker - allow popup to escape */
+.dsgt-filter-form:has(.calendar-picker.open),
+.dsgt-filter-form:has(.calendar-picker.active) {
+    overflow: visible !important;
+}
+
+
+.dsgt-filter-select {
+    flex: 1;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 16px;
+    background: white;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.dsgt-filter-select:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+/* Date Separator */
+.dsgt-date-separator {
+    display: flex;
+    align-items: center;
+    color: var(--text-tertiary);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Filter Actions */
+.dsgt-filter-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dsgt-filter-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .dsgt-filter-label {
+        min-width: 100%;
+    }
+    
+    .dsgt-filter-inputs {
+        width: 100%;
+    }
+}
+

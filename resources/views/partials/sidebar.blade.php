@@ -262,7 +262,7 @@
             </li>
             {{-- END BASE UI Components --}}
             <li class="nav-item has-submenu {{ request()->routeIs('tables.*') ? 'open' : '' }}">
-                <a href="#" class="nav-link" data-tooltip="Component">
+                <a href="#" class="nav-link" data-tooltip="Tables">
                     <i class="fa-solid fa-table"></i>
                     <span>Tables</span>
                     <i class="fa-solid fa-chevron-right submenu-arrow"></i>

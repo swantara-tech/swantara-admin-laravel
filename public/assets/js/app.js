@@ -8710,4 +8710,116 @@ function setupMobileMenuSearch() {
 $(document).ready(function() {
     generateMobileMenuFromSidebar();
     setupMobileMenuSearch();
+    initAdvancedSearchFilters();
 });
+
+/* ============================================
+   DSGT ADVANCED SEARCH FILTER COMPONENT
+   ============================================ */
+
+function initAdvancedSearchFilters() {
+    console.log('🔍 [DSGT] Advanced Search Filter initializing');
+    
+    // Initialize all advanced search toggles
+    $('.dsgt-advanced-search-toggle').each(function() {
+        const $toggle = $(this);
+        const targetId = $toggle.attr('href');
+        const $icon = $toggle.find('.fa-chevron-down');
+        const $filterForm = $(targetId);
+        
+        if ($filterForm.length === 0) return;
+        
+        // Set initial state
+        let isExpanded = true;
+        $filterForm.addClass('dsgt-filter-expanded');
+        
+        // Toggle click handler
+        $toggle.on('click', function(e) {
+            e.preventDefault();
+            
+            if (isExpanded) {
+                // Collapse
+                $filterForm.removeClass('dsgt-filter-expanded').addClass('dsgt-filter-collapsed');
+                if ($icon) $icon.css('transform', 'rotate(-90deg)');
+                isExpanded = false;
+            } else {
+                // Expand
+                $filterForm.removeClass('dsgt-filter-collapsed').addClass('dsgt-filter-expanded');
+                if ($icon) $icon.css('transform', 'rotate(0deg)');
+                isExpanded = true;
+            }
+        });
+    });
+    
+    console.log('✅ [DSGT] Advanced Search Filter initialized');
+}
+
+// Toggle date inputs for BETWEEN operator
+function dsgtToggleDateInputs(operatorId, containerId, input1Id) {
+    const operator = document.getElementById(operatorId)?.value;
+    const container = document.getElementById(containerId);
+    
+    if (!operator || !container) return;
+    
+    // Check if second date input already exists
+    let dateInput2 = container.querySelector('.dsgt-filter-input.dsgt-date-input-2');
+    let separator = container.querySelector('.dsgt-date-separator');
+    
+    if (operator === 'BETWEEN') {
+        // Add second date input if not exists
+        if (!dateInput2) {
+            // Create separator "to"
+            separator = document.createElement('span');
+            separator.className = 'dsgt-date-separator';
+            separator.textContent = 'to';
+            
+            // Create second date input with Metro UI calendar-picker
+            dateInput2 = document.createElement('input');
+            dateInput2.type = 'text';
+            dateInput2.className = 'dsgt-filter-input dsgt-date-input-2';
+            dateInput2.setAttribute('data-role', 'calendar-picker');
+            dateInput2.setAttribute('data-format', 'DD/MM/YYYY');
+            dateInput2.setAttribute('data-clear-button', 'true');
+            dateInput2.placeholder = 'Select end date...';
+            
+            // Append to container
+            container.appendChild(separator);
+            container.appendChild(dateInput2);
+            
+            // Re-initialize Metro UI calendar picker for new element
+            if (typeof Metro !== 'undefined' && Metro.init) {
+                Metro.init(dateInput2);
+            }
+        }
+    } else {
+        // Remove second date input if exists
+        if (dateInput2) {
+            // Destroy Metro UI component before removing
+            if (typeof Metro !== 'undefined' && Metro.destroy) {
+                Metro.destroy(dateInput2);
+            }
+            dateInput2.remove();
+        }
+        if (separator) separator.remove();
+    }
+}
+
+// Reset filter form
+function dsgtResetFilterForm(formId, dateOperatorId) {
+    const form = document.getElementById(formId);
+    if (form) {
+        form.reset();
+        
+        // Reset date inputs if date operator exists
+        if (dateOperatorId) {
+            const operator = document.getElementById(dateOperatorId);
+            if (operator) {
+                dsgtToggleDateInputs(
+                    dateOperatorId,
+                    operator.closest('.dsgt-filter-inputs')?.id || '',
+                    ''
+                );
+            }
+        }
+    }
+}
