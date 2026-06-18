@@ -21516,6 +21516,48 @@ table.dataTable tbody tr:nth-child(even):hover {
     overflow: visible !important;
 }
 
+/* Inline Calendar Display */
+[data-role="calendar"] {
+    margin-top: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 16px;
+}
+
+/* Inline Calendar buttons */
+[data-role="calendar"] .calendar-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+}
+
+[data-role="calendar"] .calendar-buttons button {
+    padding: 6px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 13px;
+    transition: all var(--transition-fast);
+}
+
+[data-role="calendar"] .calendar-buttons button:hover {
+    background: var(--accent-light);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+[data-role="calendar"] .calendar-buttons button.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
 /* Card containing open picker gets elevated z-index */
 .content-card:has(.calendar-picker.open),
 .content-card:has(.calendar-picker.active),
