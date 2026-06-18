@@ -21478,6 +21478,31 @@ table.dataTable tbody tr:nth-child(even):hover {
     z-index: auto;
 }
 
+/* Date Picker input field styling */
+.date-picker input[type="text"],
+input[data-role="date-picker"] {
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    color: var(--text-primary);
+    font-size: 14px;
+    transition: all var(--transition-fast);
+}
+
+.date-picker input[type="text"]:hover,
+input[data-role="date-picker"]:hover {
+    border-color: var(--text-tertiary);
+}
+
+.date-picker input[type="text"]:focus,
+input[data-role="date-picker"]:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-light);
+}
+
 .date-picker.open,
 .date-picker.active {
     z-index: 1000;
@@ -21488,10 +21513,71 @@ table.dataTable tbody tr:nth-child(even):hover {
     z-index: 1000 !important;
 }
 
+/* Date Picker Wheel Dropdown Styling */
+.date-picker .dropdown-menu {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius-md) !important;
+    box-shadow: var(--shadow-dropdown) !important;
+    padding: 12px !important;
+    min-width: 280px !important;
+}
+
+/* Wheel items styling */
+.date-picker .dropdown-menu .wheelpicker-item,
+.date-picker select {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius-sm) !important;
+    color: var(--text-primary) !important;
+    padding: 8px 12px !important;
+    margin: 2px !important;
+    font-size: 14px !important;
+    transition: all var(--transition-fast) !important;
+}
+
+.date-picker .dropdown-menu .wheelpicker-item:hover,
+.date-picker select:hover {
+    background: var(--accent-light) !important;
+    border-color: var(--accent) !important;
+}
+
+.date-picker .dropdown-menu .wheelpicker-item:focus,
+.date-picker select:focus {
+    outline: none !important;
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 3px var(--accent-light) !important;
+}
+
 /* Time Picker (Wheel) */
 .time-picker {
     position: relative;
     z-index: auto;
+}
+
+/* Time Picker input field styling */
+.time-picker input[type="text"],
+input[data-role="time-picker"] {
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    color: var(--text-primary);
+    font-size: 14px;
+    transition: all var(--transition-fast);
+}
+
+.time-picker input[type="text"]:hover,
+input[data-role="time-picker"]:hover {
+    border-color: var(--text-tertiary);
+}
+
+.time-picker input[type="text"]:focus,
+input[data-role="time-picker"]:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-light);
 }
 
 .time-picker.open,
@@ -21502,6 +21588,42 @@ table.dataTable tbody tr:nth-child(even):hover {
 .time-picker .dropdown-menu,
 .time-picker .time-picker-dropdown {
     z-index: 1000 !important;
+}
+
+/* Time Picker Wheel Dropdown Styling */
+.time-picker .dropdown-menu {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius-md) !important;
+    box-shadow: var(--shadow-dropdown) !important;
+    padding: 12px !important;
+    min-width: 240px !important;
+}
+
+/* Time wheel items */
+.time-picker .dropdown-menu .wheelpicker-item,
+.time-picker select {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius-sm) !important;
+    color: var(--text-primary) !important;
+    padding: 8px 12px !important;
+    margin: 2px !important;
+    font-size: 14px !important;
+    transition: all var(--transition-fast) !important;
+}
+
+.time-picker .dropdown-menu .wheelpicker-item:hover,
+.time-picker select:hover {
+    background: var(--accent-light) !important;
+    border-color: var(--accent) !important;
+}
+
+.time-picker .dropdown-menu .wheelpicker-item:focus,
+.time-picker select:focus {
+    outline: none !important;
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 3px var(--accent-light) !important;
 }
 
 /* Inline Calendar - no popup, just ensure proper stacking */
@@ -21596,4 +21718,5 @@ table.dataTable tbody tr:nth-child(even):hover {
         width: 100%;
     }
 }
+
 
