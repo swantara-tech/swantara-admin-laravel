@@ -21383,21 +21383,27 @@ table.dataTable tbody tr:nth-child(even):hover {
 .dsgt-filter-inputs .calendar-picker input[type="text"] {
     height: 40px !important;
     border: 1px solid var(--border) !important;
-    border-radius: 8px 0 0 8px !important;
+    border-radius: var(--radius-sm) !important;
     padding: 8px 16px !important;
-    background: white !important;
+    background: var(--surface) !important;
+    color: var(--text-primary) !important;
     font-size: 14px !important;
     line-height: 1.5 !important;
     flex: 1;
     min-width: 0;
     position: relative;
     z-index: 1;
+    transition: all var(--transition-fast) !important;
+}
+
+.dsgt-filter-inputs .calendar-picker input[type="text"]:hover {
+    border-color: var(--text-tertiary) !important;
 }
 
 .dsgt-filter-inputs .calendar-picker input[type="text"]:focus {
     outline: none !important;
     border-color: var(--accent) !important;
-    box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.1) !important;
+    box-shadow: 0 0 0 3px var(--accent-light) !important;
     z-index: 2;
 }
 
@@ -21410,13 +21416,15 @@ table.dataTable tbody tr:nth-child(even):hover {
     padding: 0 !important;
     border: 1px solid var(--border) !important;
     border-left: none !important;
-    border-radius: 0 8px 8px 0 !important;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0 !important;
     background: var(--bg-secondary) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     position: relative;
     z-index: 1;
+    transition: all var(--transition-fast) !important;
+    cursor: pointer !important;
 }
 
 .dsgt-filter-inputs .calendar-picker .dropdown-button:hover {
@@ -21429,11 +21437,22 @@ table.dataTable tbody tr:nth-child(even):hover {
 .dsgt-filter-inputs .calendar-picker .dropdown-button .mif-calendar {
     color: var(--text-primary) !important;
     font-size: 16px !important;
+    transition: color var(--transition-fast) !important;
 }
 
 .dsgt-filter-inputs .calendar-picker .dropdown-button:hover i,
 .dsgt-filter-inputs .calendar-picker .dropdown-button:hover .mif-calendar {
     color: white !important;
+}
+
+/* Calendar Picker Dropdown Popup in Filter */
+.dsgt-filter-inputs .calendar-picker .dropdown-menu {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius-md) !important;
+    box-shadow: var(--shadow-dropdown) !important;
+    padding: 12px !important;
+    z-index: 1000 !important;
 }
 
 /* ============================================
