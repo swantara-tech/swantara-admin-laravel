@@ -23,7 +23,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-dsgt-avatar-info-card">
+<div class="dsgt-avatar-info-card content-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -58,23 +58,23 @@
             <span class="dsgt-avatar-example-label">Image Avatars</span>
             <div style="display: flex; gap: 20px; align-items: center;">
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-dsgt-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=1') center/cover;"></div>
+                    <div class="dsgt-avatar dsgt-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=1') center/cover;"></div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Small</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-dsgt-avatar-xl" style="background: url('https://i.pravatar.cc/150?img=2') center/cover;"></div>
+                    <div class="dsgt-avatar dsgt-avatar-xl" style="background: url('https://i.pravatar.cc/150?img=2') center/cover;"></div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Medium</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-dsgt-avatar-2xl" style="background: url('https://i.pravatar.cc/150?img=3') center/cover;"></div>
+                    <div class="dsgt-avatar dsgt-avatar-2xl" style="background: url('https://i.pravatar.cc/150?img=3') center/cover;"></div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Large</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-dsgt-avatar-xl dsgt-dsgt-avatar-bordered" style="background: url('https://i.pravatar.cc/150?img=4') center/cover;"></div>
+                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-bordered" style="background: url('https://i.pravatar.cc/150?img=4') center/cover;"></div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Bordered</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-dsgt-avatar-xl dsgt-dsgt-avatar-status online" style="background: url('https://i.pravatar.cc/150?img=5') center/cover;"></div>
+                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-status online" style="background: url('https://i.pravatar.cc/150?img=5') center/cover;"></div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Online</div>
                 </div>
             </div>
@@ -501,6 +501,17 @@
                     <input type="text" id="avatarText" class="form-control" value="JD" maxlength="3" style="width: 100%;" placeholder="Enter initials">
                 </div>
                 
+                <div style="margin-bottom: 16px;">
+                    <label style="font-size: 12px; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 8px;">Background Color</label>
+                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;">
+                        <button class="color-btn" data-color="" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid var(--border-color); background: var(--accent); cursor: pointer;" title="Default"></button>
+                        <button class="color-btn" data-color="dsgt-avatar-success" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: var(--success); cursor: pointer;" title="Success"></button>
+                        <button class="color-btn" data-color="dsgt-avatar-warning" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: var(--warning); cursor: pointer;" title="Warning"></button>
+                        <button class="color-btn" data-color="dsgt-avatar-danger" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: var(--danger); cursor: pointer;" title="Danger"></button>
+                        <button class="color-btn" data-color="dsgt-avatar-info" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: var(--info); cursor: pointer;" title="Info"></button>
+                    </div>
+                </div>
+                
                 <button class="btn btn-secondary" id="resetAvatarBtn" style="width: 100%;">
                     <i class="fa-solid fa-rotate-left"></i> Reset to Default
                 </button>
@@ -508,18 +519,29 @@
             
             <!-- Preview -->
             <div>
-                <h4 style="font-size: 14px; margin-bottom: 16px; color: var(--text-primary);">Live Preview</h4>
+                <h4 style="font-size: 14px; margin-bottom: 16px; color: var(--text-primary);">
+                    <i class="fa-solid fa-eye" style="color: var(--accent); margin-right: 8px;"></i>
+                    Live Preview
+                </h4>
                 
-                <div style="min-height: 300px; background: rgba(0, 0, 0, 0.02); border: 1px solid var(--border-color); border-radius: 8px; display: flex; align-items: center; justify-content: center; position: relative;">
+                <div style="min-height: 300px; background: linear-gradient(135deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.05) 100%); border: 2px dashed var(--border-color); border-radius: 12px; display: flex; align-items: center; justify-content: center; position: relative;">
                     <div id="avatarPreview" class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-status online">
                         JD
                     </div>
                 </div>
                 
-                <div style="margin-top: 16px; padding: 12px; background: rgba(0, 0, 0, 0.03); border-radius: 6px;">
-                    <code id="avatarCode" style="font-size: 12px; color: var(--accent);">
+                <div style="margin-top: 20px; padding: 16px; background: var(--surface-dark); border-radius: 8px; border-left: 4px solid var(--accent);">
+                    <div style="font-size: 11px; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">HTML Code</div>
+                    <code id="avatarCode" style="font-size: 12px; color: var(--accent); font-family: 'Fira Code', 'Courier New', monospace;">
                         &lt;div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-status online"&gt;JD&lt;/div&gt;
                     </code>
+                </div>
+                
+                <div style="margin-top: 12px; padding: 12px 16px; background: rgba(var(--success-rgb), 0.1); border-radius: 6px; border-left: 3px solid var(--success);">
+                    <div style="font-size: 11px; color: var(--success); font-weight: 600; margin-bottom: 4px;">
+                        <i class="fa-solid fa-circle-check"></i> Ready to Use
+                    </div>
+                    <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">Copy the code above and paste it into your HTML. Customize classes as needed.</p>
                 </div>
             </div>
         </div>
@@ -658,7 +680,7 @@
                 <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-square">
                     <i class="fa-solid fa-user dsgt-avatar-icon"></i>
                 </div>
-                <div class="dsgt-avatar dsgt-avatar-xl dsgt-dsgt-avatar-rounded-lg">
+                <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-rounded-lg">
                     <i class="fa-solid fa-user dsgt-avatar-icon"></i>
                 </div>
             </div>
@@ -752,31 +774,3 @@
 </div>
 
 @endsection
-
-@push('scripts')
-<script>
-/**
- * DSGT Metro Template - Avatar Page
- * Uses global MetroAdmin avatar functions from app.js
- */
-
-// Initialize on page load
-$(document).ready(function() {
-    console.log('✨ DSGT Metro Template - Avatars page loaded successfully');
-    console.log('💡 Interactive avatar builder ready');
-    
-    // Avatar builder event handlers
-    $('#avatarSize, #avatarStyle, #avatarShape, #avatarStatus, #avatarText').on('change input', function() {
-        MetroAdmin.updateAvatarPreview();
-    });
-    
-    // Reset button handler
-    $('#resetAvatarBtn').on('click', function() {
-        MetroAdmin.resetAvatarPreview();
-    });
-    
-    // Initial update
-    MetroAdmin.updateAvatarPreview();
-});
-</script>
-@endpush

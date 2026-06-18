@@ -1255,11 +1255,12 @@ const MetroAdmin = {
      * @param {Object} config - Avatar configuration {size, style, shape, status, text, previewId, codeId}
      */
     updateAvatarPreview(config = {}) {
-        const size = config.size || $('#avatarSize').val() || 'avatar-lg';
+        const size = config.size || $('#avatarSize').val() || 'dsgt-avatar-lg';
         const style = config.style || $('#avatarStyle').val() || 'initials';
-        const shape = config.shape || $('#avatarShape').val() || 'avatar-rounded';
+        const shape = config.shape || $('#avatarShape').val() || 'dsgt-avatar-rounded';
         const status = config.status || $('#avatarStatus').val() || '';
         const text = config.text || $('#avatarText').val() || 'JD';
+        const color = config.color || window.selectedAvatarColor || '';
         
         const previewId = config.previewId || '#avatarPreview';
         const codeId = config.codeId || '#avatarCode';
@@ -1267,9 +1268,12 @@ const MetroAdmin = {
         const $preview = $(previewId);
         const $code = $(codeId);
         
-        if ($preview.length === 0) return;
+        if ($preview.length === 0) {
+            console.warn('⚠️ Avatar preview element not found:', previewId);
+            return;
+        }
         
-        // Reset classes
+        // Reset classes and styles
         $preview.attr('class', 'dsgt-avatar');
         $preview.removeAttr('style');
         
@@ -1279,13 +1283,18 @@ const MetroAdmin = {
         // Add shape class
         $preview.addClass(shape);
         
+        // Add color class if selected
+        if (color) {
+            $preview.addClass(color);
+        }
+        
         // Add status if selected
         if (status) {
             $preview.addClass('dsgt-avatar-status');
             $preview.addClass(status);
         }
         
-        // Apply style
+        // Apply style based on type
         switch(style) {
             case 'initials':
                 $preview.text(text);
@@ -1303,15 +1312,32 @@ const MetroAdmin = {
                 break;
         }
         
-        // Update code display
-        if ($code.length > 0) {
-            let codeHTML = `&lt;div class="dsgt-avatar ${size} ${shape}`;
-            if (status) codeHTML += ` dsgt-avatar-status ${status}`;
-            codeHTML += `"&gt;${style === 'icon' ? '&lt;i class="fa-solid fa-user"&gt;&lt;/i&gt;' : text}&lt;/div&gt;`;
-            $code.html(codeHTML);
+        // Generate HTML code for display
+        let classList = ['dsgt-avatar', size, shape];
+        if (color) classList.push(color);
+        if (status) classList.push('dsgt-avatar-status', status);
+        
+        let styleAttr = '';
+        if (style === 'image') {
+            styleAttr = " style=\"background: url('https://i.pravatar.cc/150?img=12') center/cover;\"";
+        } else if (style === 'gradient') {
+            styleAttr = " style=\"background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\"";
         }
         
-        console.log(`🎨 DSGT Avatar updated: ${size}, ${style}, ${shape}, ${status}`);
+        let content = text;
+        if (style === 'icon') {
+            content = '<i class="fa-solid fa-user"></i>';
+        } else if (style === 'image') {
+            content = '';
+        }
+        
+        const htmlCode = `&lt;div class="${classList.join(' ')}"${styleAttr}&gt;${content}&lt;/div&gt;`;
+        
+        if ($code.length > 0) {
+            $code.html(htmlCode);
+        }
+        
+        console.log('✅ Avatar preview updated:', { size, style, shape, status, text, color });
         
         return $preview;
     },
@@ -1322,9 +1348,9 @@ const MetroAdmin = {
      */
     resetAvatarPreview(config = {}) {
         const defaults = {
-            size: config.size || 'avatar-lg',
+            size: config.size || 'dsgt-avatar-lg',
             style: config.style || 'initials',
-            shape: config.shape || 'avatar-rounded',
+            shape: config.shape || 'dsgt-avatar-rounded',
             status: config.status || 'online',
             text: config.text || 'JD'
         };
@@ -1335,8 +1361,13 @@ const MetroAdmin = {
         $('#avatarStatus').val(defaults.status);
         $('#avatarText').val(defaults.text);
         
+        // Reset color picker
+        window.selectedAvatarColor = '';
+        $('.color-btn').css('border-color', 'transparent');
+        $('.color-btn').first().css('border-color', 'var(--text-primary)');
+        
         MetroAdmin.updateAvatarPreview();
-        console.log('🔄 DSGT Avatar demo reset to default');
+        console.log('🔄 DSGT Avatar reset to default');
     },
 
     /**
@@ -8321,3 +8352,66 @@ function filterMobileMenu(searchTerm) {
         }
     });
 }
+
+/**
+ * DSGT Avatar Page - Interactive Features
+ * Initialize avatar builder and event handlers
+ */
+$(document).ready(function() {
+    // Only run on avatars page
+    if ($('#avatarSize').length > 0 || $('#avatarPreview').length > 0) {
+        console.log('✨ DSGT Metro Template - Avatars page loaded successfully');
+        console.log('💡 Interactive avatar builder ready');
+        
+        // Avatar builder event handlers
+        $('#avatarSize, #avatarStyle, #avatarShape, #avatarStatus, #avatarText').on('change input', function() {
+            MetroAdmin.updateAvatarPreview();
+        });
+        
+        // Color picker handler
+        $('.color-btn').on('click', function() {
+            // Remove active state from all buttons
+            $('.color-btn').css('border-color', 'transparent');
+            
+            // Add active state to clicked button
+            $(this).css('border-color', 'var(--text-primary)');
+            
+            // Store selected color
+            window.selectedAvatarColor = $(this).data('color');
+            
+            // Update preview
+            MetroAdmin.updateAvatarPreview();
+            
+            console.log('🎨 Avatar color selected:', window.selectedAvatarColor || 'default');
+        });
+        
+        // Reset button handler
+        $('#resetAvatarBtn').on('click', function() {
+            MetroAdmin.resetAvatarPreview();
+            
+            // Reset color picker
+            $('.color-btn').css('border-color', 'transparent');
+            $('.color-btn').first().css('border-color', 'var(--text-primary)');
+            window.selectedAvatarColor = '';
+            
+            console.log('🔄 Avatar builder reset to default');
+        });
+        
+        // Initial update
+        MetroAdmin.updateAvatarPreview();
+        
+        // Set initial color button state
+        $('.color-btn').first().css('border-color', 'var(--text-primary)');
+        window.selectedAvatarColor = '';
+        
+        // Add tooltip to avatars
+        $('.dsgt-avatar').each(function() {
+            const title = $(this).attr('title');
+            if (title) {
+                $(this).attr('data-tooltip', title);
+            }
+        });
+        
+        console.log('✅ Avatar interactive features initialized');
+    }
+});
