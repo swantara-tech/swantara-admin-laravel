@@ -13,16 +13,10 @@
     }
 
     .calendar-content {
-        z-index: 1001 !important;
+        z-index: 10 !important;
     }   
     .calendar-picker .calendar-for-picker {
-        z-index: 1001 !important;
-    }
-    .date-wrapper {
         z-index: 10 !important;
-    }
-    .select-wrapper {
-        z-index: 1001 !important;
     }
 </style>
 @endpush
