@@ -36,7 +36,6 @@
     
     <!-- App Styles -->
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/grid.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/datatables.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/animations.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/dark.css') }}">

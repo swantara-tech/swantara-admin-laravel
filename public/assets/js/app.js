@@ -3519,17 +3519,60 @@ clearAllDSGTCarousels(containerId = 'dynamicCarouselContainer', placeholderHTML 
      * Sets up event delegation and keyboard navigation
      */
     initDropdowns() {
+        // Card header dropdown toggle
+        $(document).on('click', '[data-dropdown-toggle]', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const $dropdown = $(this).closest('.dsgt-dropdown');
+            const $menu = $dropdown.find('.dsgt-dropdown-menu');
+            const isOpen = $menu.hasClass('show');
+            
+            // Close all dropdowns first
+            $('.dsgt-dropdown-menu').removeClass('show');
+            $('[data-dropdown-toggle]').removeClass('active');
+            
+            // Toggle current dropdown
+            if (!isOpen) {
+                // Auto-position: check if dropdown will overflow right edge
+                const dropdownRect = $dropdown[0].getBoundingClientRect();
+                const menuWidth = 200; // min-width dari CSS
+                const viewportWidth = window.innerWidth;
+                const spaceOnRight = viewportWidth - dropdownRect.right;
+                
+                // If less than 200px space on right, align to right
+                if (spaceOnRight < menuWidth) {
+                    $menu.css({
+                        'left': 'auto',
+                        'right': '0'
+                    });
+                    $menu.addClass('align-right');
+                } else {
+                    $menu.css({
+                        'left': '0',
+                        'right': 'auto'
+                    });
+                    $menu.removeClass('align-right');
+                }
+                
+                $menu.addClass('show');
+                $(this).addClass('active');
+            }
+        });
+        
         // Close dropdown when clicking outside
         $(document).on('click', function(e) {
             if (!$(e.target).closest('.dsgt-dropdown').length) {
-                MetroAdmin.closeAllDropdowns();
+                $('.dsgt-dropdown-menu').removeClass('show');
+                $('[data-dropdown-toggle]').removeClass('active');
             }
         });
 
         // Close on Escape key
         $(document).on('keydown', function(e) {
             if (e.key === 'Escape') {
-                MetroAdmin.closeAllDropdowns();
+                $('.dsgt-dropdown-menu').removeClass('show');
+                $('[data-dropdown-toggle]').removeClass('active');
             }
         });
 

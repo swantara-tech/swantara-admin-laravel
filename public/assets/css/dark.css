@@ -848,3 +848,32 @@ select {
     background: rgba(255, 185, 0, 0.2);
     color: #ffc933;
 }
+
+/* ============================================
+   Modal Components - Dark Mode
+   Brighter borders for better visibility
+   ============================================ */
+
+[data-theme="dark"] .dsgt-modal-header {
+    border-bottom-color: var(--border-strong);
+    background: var(--surface);
+}
+
+[data-theme="dark"] .dsgt-modal-icon-header {
+    background: transparent;
+}
+
+[data-theme="dark"] .dsgt-modal-body {
+    background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .dsgt-modal-footer {
+    border-top-color: var(--border-strong);
+    background: var(--surface);
+}
+
+/* Icon Header Modal Footer - No border in dark mode too */
+[data-theme="dark"] .dsgt-modal-footer.dsgt-modal-footer-icon {
+    border-top: none;
+    background: transparent;
+}

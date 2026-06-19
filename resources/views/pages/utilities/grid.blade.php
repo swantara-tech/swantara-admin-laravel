@@ -991,8 +991,8 @@
     <div class="card-body">
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Horizontal Flex (Default)</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-gap-3"&gt;</div>
-            <div class="dsgt-d-flex dsgt-gap-3">
+            <div class="dsgt-grid-code">&lt;div class="d-flex gap-3"&gt;</div>
+            <div class="d-flex gap-3">
                 <div class="dsgt-grid-box" style="min-width: 100px;">Item 1</div>
                 <div class="dsgt-grid-box" style="min-width: 100px;">Item 2</div>
                 <div class="dsgt-grid-box" style="min-width: 100px;">Item 3</div>
@@ -1001,8 +1001,8 @@
 
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Vertical Flex (Column)</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-flex-column dsgt-gap-2"&gt;</div>
-            <div class="dsgt-d-flex dsgt-flex-column dsgt-gap-2">
+            <div class="dsgt-grid-code">&lt;div class="d-flex flex-column gap-2"&gt;</div>
+            <div class="d-flex flex-column gap-2">
                 <div class="dsgt-grid-box">Item 1</div>
                 <div class="dsgt-grid-box">Item 2</div>
                 <div class="dsgt-grid-box">Item 3</div>
@@ -1011,8 +1011,8 @@
 
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Wrap Flex (Multi-line)</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-flex-wrap dsgt-gap-2"&gt;</div>
-            <div class="dsgt-d-flex dsgt-flex-wrap dsgt-gap-2">
+            <div class="dsgt-grid-code">&lt;div class="d-flex flex-wrap gap-2"&gt;</div>
+            <div class="d-flex flex-wrap gap-2">
                 <div class="dsgt-grid-box" style="min-width: 150px;">Wrap 1</div>
                 <div class="dsgt-grid-box" style="min-width: 150px;">Wrap 2</div>
                 <div class="dsgt-grid-box" style="min-width: 150px;">Wrap 3</div>
@@ -1043,8 +1043,8 @@
     <div class="card-body">
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Center Both Axes</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-justify-content-center dsgt-align-items-center" style="height: 150px"&gt;</div>
-            <div class="dsgt-d-flex dsgt-justify-content-center dsgt-align-items-center" style="min-height: 150px; background: var(--light); border-radius: var(--radius-md);">
+            <div class="dsgt-grid-code">&lt;div class="d-flex justify-content-center align-items-center" style="height: 150px"&gt;</div>
+            <div class="d-flex justify-content-center align-items-center" style="min-height: 150px; background: var(--light); border-radius: var(--radius-md);">
                 <div class="dsgt-grid-box" style="background: var(--accent); padding: 20px 30px; font-size: 16px;">
                     <i class="fa-solid fa-check"></i> Perfectly Centered!
                 </div>
@@ -1053,9 +1053,9 @@
 
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Space Between (Header Pattern)</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-justify-content-between dsgt-align-items-center"&gt;</div>
-            <div class="dsgt-d-flex dsgt-justify-content-between dsgt-align-items-center" style="background: var(--light); padding: 15px 20px; border-radius: var(--radius-md);">
-                <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2">
+            <div class="dsgt-grid-code">&lt;div class="d-flex justify-content-between align-items-center"&gt;</div>
+            <div class="d-flex justify-content-between align-items-center" style="background: var(--light); padding: 15px 20px; border-radius: var(--radius-md);">
+                <div class="d-flex align-items-center gap-2">
                     <i class="fa-solid fa-user-circle" style="font-size: 24px; color: var(--accent);"></i>
                     <div>
                         <strong>John Doe</strong>
@@ -1070,8 +1070,8 @@
 
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">End Alignment</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-justify-content-end dsgt-align-items-end" style="height: 150px"&gt;</div>
-            <div class="dsgt-d-flex dsgt-justify-content-end dsgt-align-items-end" style="min-height: 150px; background: var(--light); border-radius: var(--radius-md); padding: 15px;">
+            <div class="dsgt-grid-code">&lt;div class="d-flex justify-content-end align-items-end" style="height: 150px"&gt;</div>
+            <div class="d-flex justify-content-end align-items-end" style="min-height: 150px; background: var(--light); border-radius: var(--radius-md); padding: 15px;">
                 <div class="dsgt-grid-box" style="background: var(--success);">
                     Bottom Right
                 </div>
@@ -1080,8 +1080,8 @@
 
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Stretch Items (Equal Height)</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-align-items-stretch dsgt-gap-3"&gt;</div>
-            <div class="dsgt-d-flex dsgt-align-items-stretch dsgt-gap-3">
+            <div class="dsgt-grid-code">&lt;div class="d-flex align-items-stretch gap-3"&gt;</div>
+            <div class="d-flex align-items-stretch gap-3">
                 <div class="dsgt-grid-box" style="flex: 1; background: var(--accent);">
                     Short content
                 </div>
@@ -1119,8 +1119,8 @@
     <div class="card-body">
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Card with Icon + Text + Button</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-3"&gt;</div>
-            <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-3" style="background: var(--light); padding: 20px; border-radius: var(--radius-md);">
+            <div class="dsgt-grid-code">&lt;div class="d-flex align-items-center gap-3"&gt;</div>
+            <div class="d-flex align-items-center gap-3" style="background: var(--light); padding: 20px; border-radius: var(--radius-md);">
                 <div class="dsgt-grid-box" style="min-width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--accent);">
                     <i class="fa-solid fa-chart-line" style="font-size: 24px; color: white;"></i>
                 </div>
@@ -1136,8 +1136,8 @@
 
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Tag/Badge List</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-flex-wrap dsgt-gap-2"&gt;</div>
-            <div class="dsgt-d-flex dsgt-flex-wrap dsgt-gap-2">
+            <div class="dsgt-grid-code">&lt;div class="d-flex flex-wrap gap-2"&gt;</div>
+            <div class="d-flex flex-wrap gap-2">
                 <span class="badge badge-primary">JavaScript</span>
                 <span class="badge badge-success">Laravel</span>
                 <span class="badge badge-warning">PHP</span>
@@ -1149,8 +1149,8 @@
 
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Breadcrumb Navigation</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2"&gt;</div>
-            <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2" style="font-size: 14px;">
+            <div class="dsgt-grid-code">&lt;div class="d-flex align-items-center gap-2"&gt;</div>
+            <div class="d-flex align-items-center gap-2" style="font-size: 14px;">
                 <a href="#" style="color: var(--accent); text-decoration: none;"><i class="fa-solid fa-house"></i> Home</a>
                 <i class="fa-solid fa-chevron-right" style="font-size: 10px; color: var(--text-secondary);"></i>
                 <a href="#" style="color: var(--accent); text-decoration: none;">Dashboard</a>
@@ -1161,8 +1161,8 @@
 
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Action Buttons Group</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-gap-2"&gt;</div>
-            <div class="dsgt-d-flex dsgt-gap-2">
+            <div class="dsgt-grid-code">&lt;div class="d-flex gap-2"&gt;</div>
+            <div class="d-flex gap-2">
                 <button class="btn btn-primary">
                     <i class="fa-solid fa-plus"></i> Add New
                 </button>
@@ -1180,8 +1180,8 @@
 
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Form Inline</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2"&gt;</div>
-            <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2">
+            <div class="dsgt-grid-code">&lt;div class="d-flex align-items-center gap-2"&gt;</div>
+            <div class="d-flex align-items-center gap-2">
                 <label style="white-space: nowrap; font-weight: 500;">Search:</label>
                 <input type="text" class="form-control" placeholder="Type to search..." style="flex: 1;">
                 <button class="btn btn-primary">
@@ -1192,8 +1192,8 @@
 
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Pagination</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-1"&gt;</div>
-            <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-1">
+            <div class="dsgt-grid-code">&lt;div class="d-flex align-items-center gap-1"&gt;</div>
+            <div class="d-flex align-items-center gap-1">
                 <button class="btn btn-secondary btn-sm">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
@@ -1232,14 +1232,14 @@
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Margin Scale</span>
             <div class="dsgt-grid-code">m-0 (0) → m-1 (0.25rem) → m-2 (0.5rem) → m-3 (1rem) → m-4 (1.5rem) → m-5 (3rem)</div>
-            <div class="dsgt-d-flex dsgt-flex-column dsgt-gap-3">
-                <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2">
+            <div class="d-flex flex-column gap-3">
+                <div class="d-flex align-items-center gap-2">
                     <code class="dsgt-grid-box" style="min-width: 80px; padding: 8px; font-size: 12px;">m-3</code>
                     <div style="flex: 1; background: var(--light); padding: 1rem; border-radius: var(--radius-md); border: 2px dashed var(--border);">
                         Margin: 1rem
                     </div>
                 </div>
-                <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2">
+                <div class="d-flex align-items-center gap-2">
                     <code class="dsgt-grid-box" style="min-width: 80px; padding: 8px; font-size: 12px;">m-4</code>
                     <div style="flex: 1; background: var(--light); padding: 1.5rem; border-radius: var(--radius-md); border: 2px dashed var(--border);">
                         Margin: 1.5rem
@@ -1250,9 +1250,9 @@
 
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Directional Margin (mt, mb, ml, mr)</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-mt-3 dsgt-mb-4 dsgt-ml-2 dsgt-mr-2"&gt;</div>
+            <div class="dsgt-grid-code">&lt;div class="mt-3 mb-4 ml-2 mr-2"&gt;</div>
             <div style="background: var(--light); padding: 20px; border-radius: var(--radius-md);">
-                <div class="dsgt-mt-3 dsgt-mb-4 dsgt-ml-2 dsgt-mr-2" style="background: var(--accent); padding: 15px; border-radius: var(--radius-md); color: white;">
+                <div class="mt-3 mb-4 ml-2 mr-2" style="background: var(--accent); padding: 15px; border-radius: var(--radius-md); color: white;">
                     Has directional margins!
                 </div>
             </div>
@@ -1261,14 +1261,14 @@
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Padding Scale</span>
             <div class="dsgt-grid-code">p-1 (0.25rem) → p-2 (0.5rem) → p-3 (1rem) → p-4 (1.5rem) → p-5 (3rem)</div>
-            <div class="dsgt-d-flex dsgt-gap-3">
-                <div class="dsgt-p-1" style="background: var(--success); color: white; border-radius: var(--radius-md);">
+            <div class="d-flex gap-3">
+                <div class="p-1" style="background: var(--success); color: white; border-radius: var(--radius-md);">
                     p-1
                 </div>
-                <div class="dsgt-p-3" style="background: var(--info); color: white; border-radius: var(--radius-md);">
+                <div class="p-3" style="background: var(--info); color: white; border-radius: var(--radius-md);">
                     p-3
                 </div>
-                <div class="dsgt-p-5" style="background: var(--warning); color: white; border-radius: var(--radius-md);">
+                <div class="p-5" style="background: var(--warning); color: white; border-radius: var(--radius-md);">
                     p-5
                 </div>
             </div>
@@ -1276,9 +1276,9 @@
 
         <div class="dsgt-grid-example">
             <span class="dsgt-grid-example-label">Auto Center (mx-auto)</span>
-            <div class="dsgt-grid-code">&lt;div class="dsgt-w-50 dsgt-mx-auto"&gt;</div>
+            <div class="dsgt-grid-code">&lt;div class="w-50 mx-auto"&gt;</div>
             <div style="background: var(--light); padding: 20px; border-radius: var(--radius-md);">
-                <div class="dsgt-w-50 dsgt-mx-auto" style="background: var(--accent); padding: 15px; border-radius: var(--radius-md); color: white; text-align: center;">
+                <div class="w-50 mx-auto" style="background: var(--accent); padding: 15px; border-radius: var(--radius-md); color: white; text-align: center;">
                     Centered with mx-auto!
                 </div>
             </div>

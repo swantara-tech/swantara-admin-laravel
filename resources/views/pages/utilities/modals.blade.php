@@ -522,10 +522,10 @@
             </div>
             <h3 class="dsgt-modal-title">Success!</h3>
         </div>
-        <div class="dsgt-modal-body" style="text-align: center;">
+        <div class="dsgt-modal-body " style="text-align: center; ">
             <p style="font-size: 14px; color: var(--text-secondary);">Your action has been completed successfully. The operation was processed without any errors.</p>
         </div>
-        <div class="dsgt-modal-footer" style="justify-content: center;">
+        <div class="dsgt-modal-footer dsgt-modal-footer-icon" style="justify-content: center;">
             <button class="btn btn-success" onclick="MetroAdmin.closeDSGTModal('success-modal')">Great!</button>
         </div>
     </div>
@@ -543,7 +543,7 @@
         <div class="dsgt-modal-body" style="text-align: center;">
             <p style="font-size: 14px; color: var(--text-secondary);">Please be careful! This action may have unintended consequences. Review carefully before proceeding.</p>
         </div>
-        <div class="dsgt-modal-footer" style="justify-content: center;">
+        <div class="dsgt-modal-footer dsgt-modal-footer-icon" style="justify-content: center;">
             <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('warning-modal')">Cancel</button>
             <button class="btn btn-warning" onclick="MetroAdmin.closeDSGTModal('warning-modal')">Proceed</button>
         </div>
@@ -562,7 +562,7 @@
         <div class="dsgt-modal-body" style="text-align: center;">
             <p style="font-size: 14px; color: var(--text-secondary);">Are you sure you want to delete this item? This action cannot be undone and all data will be permanently removed.</p>
         </div>
-        <div class="dsgt-modal-footer" style="justify-content: center;">
+        <div class="dsgt-modal-footer dsgt-modal-footer-icon" style="justify-content: center;">
             <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('danger-modal')">Cancel</button>
             <button class="btn btn-danger" onclick="MetroAdmin.closeDSGTModal('danger-modal')">Delete</button>
         </div>
