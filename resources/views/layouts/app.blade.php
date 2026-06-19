@@ -21,9 +21,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Metro UI -->
-    <link rel="stylesheet" href="{{ asset('assets/plugins/metro-ui/metro.css') }}">
-    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('assets/plugins/font-awesome/css/all.min.css') }}">
     
@@ -33,9 +30,13 @@
     <!-- NProgress -->
     <link rel="stylesheet" href="{{ asset('assets/plugins/nprogress/nprogress.min.css') }}">
     
+    <!-- Flatpickr CSS (for date/time pickers) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/light.css">
+    
     <!-- App Styles -->
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/grid.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/datatables.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/animations.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/dark.css') }}">
@@ -89,7 +90,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('assets/plugins/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/metro-ui/metro.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/id.js"></script>
     <script src="{{ asset('assets/plugins/gsap/gsap.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/nprogress/nprogress.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/chartjs/chart.umd.min.js') }}"></script>

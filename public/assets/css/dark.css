@@ -807,3 +807,44 @@ textarea,
 select {
     transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* ============================================
+   Icon Containers - Dark Mode
+   Brighter backgrounds for better visibility
+   ============================================ */
+
+/* Card Icons */
+[data-theme="dark"] .card-icon.bg-primary { background: rgba(0, 120, 212, 0.2); color: #4da3ff; }
+[data-theme="dark"] .card-icon.bg-success { background: rgba(22, 198, 12, 0.2); color: #4de838; }
+[data-theme="dark"] .card-icon.bg-warning { background: rgba(255, 185, 0, 0.2); color: #ffc933; }
+[data-theme="dark"] .card-icon.bg-danger { background: rgba(232, 17, 35, 0.2); color: #ff4d5e; }
+[data-theme="dark"] .card-icon.bg-info { background: rgba(0, 188, 242, 0.2); color: #33ccff; }
+
+/* Item Icons (dropdowns) */
+[data-theme="dark"] .item-icon.bg-primary { background: rgba(0, 120, 212, 0.2); color: #4da3ff; }
+[data-theme="dark"] .item-icon.bg-success { background: rgba(22, 198, 12, 0.2); color: #4de838; }
+[data-theme="dark"] .item-icon.bg-warning { background: rgba(255, 185, 0, 0.2); color: #ffc933; }
+[data-theme="dark"] .item-icon.bg-danger { background: rgba(232, 17, 35, 0.2); color: #ff4d5e; }
+[data-theme="dark"] .item-icon.bg-info { background: rgba(0, 188, 242, 0.2); color: #33ccff; }
+
+/* Notification Icons */
+[data-theme="dark"] .notif-icon.bg-primary { background: rgba(0, 120, 212, 0.2); color: #4da3ff; }
+[data-theme="dark"] .notif-icon.bg-success { background: rgba(22, 198, 12, 0.2); color: #4de838; }
+[data-theme="dark"] .notif-icon.bg-warning { background: rgba(255, 185, 0, 0.2); color: #ffc933; }
+[data-theme="dark"] .notif-icon.bg-danger { background: rgba(232, 17, 35, 0.2); color: #ff4d5e; }
+
+/* Dropdown Icon Boxes */
+[data-theme="dark"] .dropdown-icon-box.bg-primary {
+    background: rgba(0, 120, 212, 0.2);
+    color: #4da3ff;
+}
+
+[data-theme="dark"] .dropdown-icon-box.bg-success {
+    background: rgba(22, 198, 12, 0.2);
+    color: #4de838;
+}
+
+[data-theme="dark"] .dropdown-icon-box.bg-warning {
+    background: rgba(255, 185, 0, 0.2);
+    color: #ffc933;
+}

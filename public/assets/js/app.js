@@ -65,6 +65,7 @@ const MetroAdmin = {
         this.initTooltips();
         this.initTypographies();
         this.initVideos();
+        this.initFlatpickrs();
         // Touch Spin initialized in touch-spin.js
     },
 
@@ -8110,6 +8111,77 @@ initVideos() {
 },
 
 /**
+ * Initialize Flatpickr date/time pickers
+ */
+initFlatpickrs() {
+    if (typeof flatpickr === 'undefined') {
+        console.log('⚠️ [DSGT] Flatpickr not loaded, skipping');
+        return;
+    }
+
+    // Initialize all flatpickr inputs
+    $('.dsgt-flatpickr').each(function() {
+        const $input = $(this);
+        const config = {
+            locale: 'id',
+            dateFormat: 'd/m/Y',
+            allowInput: true,
+            disableMobile: true
+        };
+        
+        // Check if time picker is enabled
+        if ($input.data('show-time') === true || $input.data('enable-time')) {
+            config.enableTime = true;
+            config.time_24hr = true;
+            config.dateFormat = 'd/m/Y H:i';
+        }
+        
+        // Min/Max dates
+        if ($input.data('min-date')) {
+            config.minDate = $input.data('min-date');
+        }
+        if ($input.data('max-date')) {
+            config.maxDate = $input.data('max-date');
+        }
+        
+        // Week numbers
+        if ($input.data('week-numbers') === true) {
+            config.weekNumbers = true;
+        }
+        
+        $input.flatpickr(config);
+    });
+    
+    // Initialize inline calendars
+    $('.dsgt-flatpickr-inline').each(function() {
+        const $container = $(this);
+        const config = {
+            inline: true,
+            locale: 'id',
+            dateFormat: 'd/m/Y',
+            disableMobile: true
+        };
+        
+        if ($container.data('show-time')) {
+            config.enableTime = true;
+            config.time_24hr = true;
+        }
+        
+        if ($container.data('multi-select')) {
+            config.mode = 'multiple';
+        }
+        
+        if ($container.data('week-numbers') === true) {
+            config.weekNumbers = true;
+        }
+        
+        $container.flatpickr(config);
+    });
+    
+    console.log('✅ [DSGT] Flatpickr initialized');
+},
+
+/**
  * Setup video modal functionality
  * Handles opening and closing video modal with YouTube embeds
  */
@@ -8773,30 +8845,33 @@ function dsgtToggleDateInputs(operatorId, containerId, input1Id) {
             separator.className = 'dsgt-date-separator';
             separator.textContent = 'to';
             
-            // Create second date input with Metro UI calendar-picker
+            // Create second date input with flatpickr
             dateInput2 = document.createElement('input');
             dateInput2.type = 'text';
-            dateInput2.className = 'dsgt-filter-input dsgt-date-input-2';
-            dateInput2.setAttribute('data-role', 'calendar-picker');
-            dateInput2.setAttribute('data-format', 'DD/MM/YYYY');
-            dateInput2.setAttribute('data-clear-button', 'true');
+            dateInput2.className = 'dsgt-filter-input dsgt-date-input-2 dsgt-flatpickr';
+            dateInput2.setAttribute('data-date-format', 'd/m/Y');
             dateInput2.placeholder = 'Select end date...';
             
             // Append to container
             container.appendChild(separator);
             container.appendChild(dateInput2);
             
-            // Re-initialize Metro UI calendar picker for new element
-            if (typeof Metro !== 'undefined' && Metro.init) {
-                Metro.init(dateInput2);
+            // Initialize flatpickr for new element
+            if (typeof flatpickr !== 'undefined') {
+                flatpickr(dateInput2, {
+                    locale: 'id',
+                    dateFormat: 'd/m/Y',
+                    allowInput: true,
+                    disableMobile: true
+                });
             }
         }
     } else {
         // Remove second date input if exists
         if (dateInput2) {
-            // Destroy Metro UI component before removing
-            if (typeof Metro !== 'undefined' && Metro.destroy) {
-                Metro.destroy(dateInput2);
+            // Destroy flatpickr instance before removing
+            if (dateInput2._flatpickr) {
+                dateInput2._flatpickr.destroy();
             }
             dateInput2.remove();
         }

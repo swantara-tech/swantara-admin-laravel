@@ -4,31 +4,115 @@
 
 @push('styles')
 <style>
-    /* Additional z-index fixes for Metro UI picker dropdowns */
-    .time-picker {
-        z-index: 10 !important;
+    /* Flatpickr custom styling to match DSGT theme */
+    .flatpickr-calendar {
+        z-index: 1060 !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+        border: 1px solid var(--border-color, #e0e0e0) !important;
+        border-radius: 8px !important;
     }
-    .date-picker {
-        z-index: 10 !important;
+    
+    .flatpickr-day.selected {
+        background: var(--accent, #0078d4) !important;
+        border-color: var(--accent, #0078d4) !important;
     }
-
-    .calendar-content {
-        z-index: 10 !important;
-    }   
-    .calendar-picker .calendar-for-picker {
-        z-index: 10 !important;
+    
+    .flatpickr-day.selected:hover {
+        background: var(--accent-dark, #005a9e) !important;
+    }
+    
+    .flatpickr-day.today {
+        border-color: var(--accent, #0078d4) !important;
+    }
+    
+    .flatpickr-current-month .flatpickr-monthDropdown-months,
+    .flatpickr-current-month input.cur-year {
+        font-weight: 600 !important;
+    }
+    
+    .flatpickr-time input {
+        color: var(--text-primary, #333) !important;
     }
 </style>
+@endpush
+
+@push('scripts')
+<script>
+$(document).ready(function() {
+    // Initialize all flatpickr instances
+    $('.dsgt-flatpickr').each(function() {
+        const $input = $(this);
+        const config = {
+            locale: 'id',
+            dateFormat: 'd/m/Y',
+            allowInput: true,
+            disableMobile: true
+        };
+        
+        // Check if time picker is enabled
+        if ($input.data('show-time') === true || $input.data('enable-time')) {
+            config.enableTime = true;
+            config.time_24hr = true;
+            config.dateFormat = 'd/m/Y H:i';
+            
+            if ($input.data('initial-time')) {
+                config.defaultDate = $input.val() || new Date();
+            }
+        }
+        
+        // Min/Max dates
+        if ($input.data('min-date')) {
+            config.minDate = $input.data('min-date');
+        }
+        if ($input.data('max-date')) {
+            config.maxDate = $input.data('max-date');
+        }
+        
+        // Week start (Monday = 1)
+        if ($input.data('week-start') === 1) {
+            config.locale = 'id'; // Indonesian locale already starts on Monday
+        }
+        
+        $input.flatpickr(config);
+    });
+    
+    // Inline calendars
+    $('.dsgt-flatpickr-inline').each(function() {
+        const $container = $(this);
+        const config = {
+            inline: true,
+            locale: 'id',
+            dateFormat: 'd/m/Y',
+            disableMobile: true
+        };
+        
+        if ($container.data('show-time')) {
+            config.enableTime = true;
+            config.time_24hr = true;
+        }
+        
+        if ($container.data('multi-select')) {
+            config.mode = 'multiple';
+        }
+        
+        if ($container.data('week-start') === 1) {
+            config.locale = 'id';
+        }
+        
+        $container.flatpickr(config);
+    });
+});
+</script>
 @endpush
 
 @section('content')
 <div class="page-header">
     <div>
         <h1>Datetimepicker</h1>
-        <p>Date and time picker components menggunakan Metro UI built-in</p>
+        <p>Date and time picker components menggunakan Flatpickr</p>
     </div>
     <div style="display: flex; gap: 10px;">
-        <a href="https://v5.metroui.org.ua/components/calendar-picker/" target="_blank" class="btn btn-secondary">
+        <a href="https://flatpickr.js.org/" target="_blank" class="btn btn-secondary">
             <i class="fa-solid fa-book"></i>
             <span>Documentation</span>
         </a>
@@ -41,13 +125,11 @@
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
             <div style="flex: 1;">
-                <h4 style="margin-bottom: 4px; font-size: 14px;">Metro UI Date & Time Components</h4>
+                <h4 style="margin-bottom: 4px; font-size: 14px;">Flatpickr Date & Time Components</h4>
                 <p style="font-size: 13px; color: var(--text-secondary); margin: 0;">
-                    Metro UI menyediakan 4 komponen: 
-                    <strong>Calendar Picker</strong> (input + calendar popup), 
-                    <strong>Date Picker</strong> (wheel-based), 
-                    <strong>Time Picker</strong> (wheel-based), dan 
-                    <strong>Calendar</strong> (inline). Semua sudah ter-include di <code>metro.js</code>.
+                    Flatpickr adalah lightweight datepicker yang powerful dan customizable. 
+                    Mendukung <strong>date picker</strong>, <strong>time picker</strong>, <strong>datetime picker</strong>, 
+                    <strong>inline calendar</strong>, dan <strong>multi-select</strong>. Lebih ringan dan modern dibanding Metro UI.
                 </p>
             </div>
         </div>
@@ -57,7 +139,7 @@
 <!-- Calendar Picker Section -->
 <div class="dtp-section-title">
     <i class="fa-solid fa-calendar-days"></i>
-    Calendar Picker <span class="badge badge-primary">Recommended</span>
+    Date Picker <span class="badge badge-primary">Recommended</span>
 </div>
 
 <div class="datetimepicker-grid">
@@ -68,7 +150,7 @@
                     <i class="fa-solid fa-calendar"></i>
                 </div>
                 <div>
-                    <h3>Basic Calendar Picker</h3>
+                    <h3>Basic Date Picker</h3>
                     <p class="card-subtitle">Input field with calendar popup</p>
                 </div>
             </div>
@@ -77,21 +159,21 @@
             <div class="dtp-example">
                 <label class="dtp-label">
                     Default
-                    <span class="dtp-pattern">data-role="calendar-picker"</span>
+                    <span class="dtp-pattern">class="dsgt-flatpickr"</span>
                 </label>
-                <input data-role="calendar-picker">
+                <input type="text" class="dsgt-flatpickr" placeholder="Select date...">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Basic calendar picker dengan format default
+                    Basic date picker dengan format default (DD/MM/YYYY)
                 </div>
             </div>
 
             <div class="dtp-example">
                 <label class="dtp-label">
                     With Value
-                    <span class="dtp-pattern">value="2026/06/15"</span>
+                    <span class="dtp-pattern">value="15/06/2026"</span>
                 </label>
-                <input data-role="calendar-picker" value="2026/06/15">
+                <input type="text" class="dsgt-flatpickr" value="15/06/2026">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Dengan initial value
@@ -101,11 +183,11 @@
             <div class="dtp-example">
                 <label class="dtp-label">
                     Custom Format
-                    <span class="dtp-pattern">DD/MM/YYYY</span>
+                    <span class="dtp-pattern">data-date-format="d/m/Y"</span>
                 </label>
-                <input data-role="calendar-picker" 
-                       data-format="DD/MM/YYYY" 
-                       value="2026/06/15">
+                <input type="text" class="dsgt-flatpickr" 
+                       data-date-format="d/m/Y" 
+                       value="15/06/2026">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Format: <code>DD/MM/YYYY</code>
@@ -115,12 +197,18 @@
             <div class="dtp-example">
                 <label class="dtp-label">
                     With Clear Button
-                    <span class="dtp-pattern">clear-button</span>
+                    <span class="dtp-pattern">allowInput + wrap</span>
                 </label>
-                <input data-role="calendar-picker" 
-                       data-clear-button="true"
-                       data-format="DD, MMM YYYY"
-                       value="2026/07/01">
+                <div class="input-group">
+                    <input type="text" class="dsgt-flatpickr" 
+                           data-allow-clear="true"
+                           data-date-format="D, d M Y"
+                           value="01/07/2026"
+                           placeholder="Select date...">
+                    <button class="btn btn-outline-secondary" type="button" data-clear>
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Dengan tombol clear & format: <code>DD, MMM YYYY</code>
@@ -136,7 +224,7 @@
                     <i class="fa-solid fa-clock"></i>
                 </div>
                 <div>
-                    <h3>Calendar Picker + Time</h3>
+                    <h3>Date + Time Picker</h3>
                     <p class="card-subtitle">Date and time selection</p>
                 </div>
             </div>
@@ -145,27 +233,26 @@
             <div class="dtp-example">
                 <label class="dtp-label">
                     DateTime
-                    <span class="dtp-pattern">show-time="true"</span>
+                    <span class="dtp-pattern">data-show-time="true"</span>
                 </label>
-                <input data-role="calendar-picker" 
+                <input type="text" class="dsgt-flatpickr" 
                        data-show-time="true"
-                       data-format="DD/MM/YYYY HH:mm">
+                       data-date-format="d/m/Y H:i">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Calendar picker dengan time selection
+                    Date picker dengan time selection (24-hour)
                 </div>
             </div>
 
             <div class="dtp-example">
                 <label class="dtp-label">
                     With Initial Time
-                    <span class="dtp-pattern">initial-time="14:30"</span>
+                    <span class="dtp-pattern">value with time</span>
                 </label>
-                <input data-role="calendar-picker" 
+                <input type="text" class="dsgt-flatpickr" 
                        data-show-time="true"
-                       data-initial-time="14:30"
-                       data-format="DD/MM/YYYY HH:mm"
-                       value="2026/06/15">
+                       data-date-format="d/m/Y H:i"
+                       value="15/06/2026 14:30">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Dengan waktu awal 14:30
@@ -177,11 +264,11 @@
                     Min/Max Date
                     <span class="dtp-pattern">Restricted range</span>
                 </label>
-                <input data-role="calendar-picker" 
-                       data-min-date="2026/01/01"
-                       data-max-date="2026/12/31"
-                       data-format="DD/MM/YYYY"
-                       data-clear-button="true">
+                <input type="text" class="dsgt-flatpickr" 
+                       data-min-date="2026-01-01"
+                       data-max-date="2026-12-31"
+                       data-date-format="d/m/Y"
+                       placeholder="Select date in 2026...">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Hanya bisa pilih tanggal tahun 2026
@@ -190,16 +277,16 @@
 
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Week Start Monday
-                    <span class="dtp-pattern">week-start="1"</span>
+                    Week Numbers
+                    <span class="dtp-pattern">week-numbers="true"</span>
                 </label>
-                <input data-role="calendar-picker" 
-                       data-week-start="1"
-                       data-format="DD/MM/YYYY"
-                       data-show-week-number="true">
+                <input type="text" class="dsgt-flatpickr" 
+                       data-week-numbers="true"
+                       data-date-format="d/m/Y"
+                       placeholder="Select date...">
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Minggu dimulai Senin + nomor minggu
+                    Dengan nomor minggu (minggu dimulai Senin)
                 </div>
             </div>
         </div>
@@ -229,9 +316,9 @@
             <div class="dtp-example">
                 <label class="dtp-label">
                     Default Calendar
-                    <span class="dtp-pattern">data-role="calendar"</span>
+                    <span class="dtp-pattern">class="dsgt-flatpickr-inline"</span>
                 </label>
-                <div data-role="calendar"></div>
+                <div class="dsgt-flatpickr-inline"></div>
             </div>
         </div>
     </div>
@@ -243,8 +330,8 @@
                     <i class="fa-solid fa-calendar-check"></i>
                 </div>
                 <div>
-                    <h3>Calendar Options</h3>
-                    <p class="card-subtitle">Customized inline calendars</p>
+                    <h3>Calendar with Time</h3>
+                    <p class="card-subtitle">Inline calendar with time selection</p>
                 </div>
             </div>
         </div>
@@ -252,12 +339,11 @@
             <div class="dtp-example">
                 <label class="dtp-label">
                     With Time
-                    <span class="dtp-pattern">show-time="true"</span>
+                    <span class="dtp-pattern">data-show-time="true"</span>
                 </label>
-                <div data-role="calendar" 
+                <div class="dsgt-flatpickr-inline" 
                      data-show-time="true"
-                     data-initial-time="09:30"
-                     data-buttons="today, clear, done"></div>
+                     data-default-date="09:30"></div>
             </div>
         </div>
     </div>
@@ -286,11 +372,10 @@
             <div class="dtp-example">
                 <label class="dtp-label">
                     Multi-Select Calendar
-                    <span class="dtp-pattern">multi-select="true"</span>
+                    <span class="dtp-pattern">data-multi-select="true"</span>
                 </label>
-                <div data-role="calendar" 
+                <div class="dsgt-flatpickr-inline" 
                      data-multi-select="true"
-                     data-buttons="today, clear, done"
                      data-week-start="1"></div>
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
@@ -307,25 +392,23 @@
                     <i class="fa-solid fa-arrows-left-right"></i>
                 </div>
                 <div>
-                    <h3>Wide Calendar</h3>
-                    <p class="card-subtitle">Wide layout with week numbers</p>
+                    <h3>Week Numbers</h3>
+                    <p class="card-subtitle">Calendar with week numbers</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div class="dtp-example">
                 <label class="dtp-label">
-                    Wide Mode
-                    <span class="dtp-pattern">wide="true"</span>
+                    Week Numbers
+                    <span class="dtp-pattern">data-week-numbers="true"</span>
                 </label>
-                <div data-role="calendar" 
-                     data-wide="true"
-                     data-show-week-number="true"
-                     data-week-start="1"
-                     data-buttons="today, clear"></div>
+                <div class="dsgt-flatpickr-inline" 
+                     data-week-numbers="true"
+                     data-week-start="1"></div>
                 <div class="dtp-helper">
                     <i class="fa-solid fa-circle-info"></i>
-                    Layout lebar dengan nomor minggu
+                    Layout dengan nomor minggu
                 </div>
             </div>
         </div>
@@ -356,31 +439,31 @@
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
                     <div class="dtp-example">
                         <label class="dtp-label">Check-in Date & Time <span style="color: var(--danger);">*</span></label>
-                        <input data-role="calendar-picker" 
-                               data-format="DD/MM/YYYY HH:mm"
+                        <input type="text" class="dsgt-flatpickr" 
                                data-show-time="true"
-                               data-min-date="2026/01/01"
-                               data-clear-button="true"
-                               id="checkin-date">
+                               data-date-format="d/m/Y H:i"
+                               data-min-date="2026-01-01"
+                               id="checkin-date"
+                               placeholder="Select check-in...">
                     </div>
 
                     <div class="dtp-example">
                         <label class="dtp-label">Check-out Date & Time <span style="color: var(--danger);">*</span></label>
-                        <input data-role="calendar-picker" 
-                               data-format="DD/MM/YYYY HH:mm"
+                        <input type="text" class="dsgt-flatpickr" 
                                data-show-time="true"
-                               data-min-date="2026/01/01"
-                               data-clear-button="true"
-                               id="checkout-date">
+                               data-date-format="d/m/Y H:i"
+                               data-min-date="2026-01-01"
+                               id="checkout-date"
+                               placeholder="Select check-out...">
                     </div>
                 </div>
 
                 <div class="dtp-example" style="margin-bottom: 20px;">
                     <label class="dtp-label">Event Date & Time (Optional)</label>
-                    <input data-role="calendar-picker" 
+                    <input type="text" class="dsgt-flatpickr" 
                            data-show-time="true"
-                           data-format="DD/MM/YYYY HH:mm"
-                           data-clear-button="true">
+                           data-date-format="d/m/Y H:i"
+                           placeholder="Select event date...">
                     <div class="dtp-helper">
                         <i class="fa-solid fa-circle-info"></i>
                         Untuk layanan atau event terjadwal
@@ -419,17 +502,17 @@
                 </div>
                 <div>
                     <h3>Usage Examples</h3>
-                    <p class="card-subtitle">How to implement Metro UI date/time pickers</p>
+                    <p class="card-subtitle">How to implement Flatpickr date/time pickers</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div class="code-block">
-                <div style="color: var(--text-tertiary); margin-bottom: 8px;">1. Calendar Picker (Input + Popup):</div>
+                <div style="color: var(--text-tertiary); margin-bottom: 8px;">1. Date Picker (Input + Popup):</div>
                 <code style="color: var(--accent);">
-                    &lt;input data-role="calendar-picker"<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-format="DD/MM/YYYY"<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-clear-button="true"<br>
+                    &lt;input type="text" class="dsgt-flatpickr"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-date-format="d/m/Y"<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-min-date="2026-01-01"<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-show-time="true"&gt;
                 </code>
             </div>
@@ -437,10 +520,10 @@
             <div class="code-block">
                 <div style="color: var(--text-tertiary); margin-bottom: 8px; margin-top: 16px;">2. Inline Calendar:</div>
                 <code style="color: var(--info);">
-                    &lt;div data-role="calendar"<br>
+                    &lt;div class="dsgt-flatpickr-inline"<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-multi-select="true"<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-show-time="true"<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-buttons="today, clear, done"&gt;&lt;/div&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-week-numbers="true"&gt;&lt;/div&gt;
                 </code>
             </div>
 
@@ -448,24 +531,36 @@
                 <div style="color: var(--text-tertiary); margin-bottom: 8px; margin-top: 16px;">3. JavaScript API:</div>
                 <code style="color: var(--text-primary);">
                     // Get/Set value<br>
-                    const picker = Metro.getPlugin('#myPicker', 'calendar-picker');<br>
-                    picker.val('2026/12/25');<br>
-                    const value = picker.val();
+                    const fp = $("#myPicker").flatpickr();<br>
+                    fp.setDate('25/12/2026');<br>
+                    const value = fp.selectedDates[0];
                 </code>
             </div>
 
             <div class="divider"></div>
 
             <div class="form-group">
-                <h4 style="font-size: 14px; margin-bottom: 12px;">Available Components:</h4>
+                <h4 style="font-size: 14px; margin-bottom: 12px;">Available Features:</h4>
                 <ul class="feature-list">
                     <li>
                         <i class="fa-solid fa-circle-check"></i>
-                        <span><strong>calendar-picker</strong> - Input + calendar popup (recommended)</span>
+                        <span><strong>dsgt-flatpickr</strong> - Input + calendar popup (recommended)</span>
                     </li>
                     <li>
                         <i class="fa-solid fa-circle-check"></i>
-                        <span><strong>calendar</strong> - Inline embedded calendar</span>
+                        <span><strong>dsgt-flatpickr-inline</strong> - Inline embedded calendar</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span><strong>Time picker</strong> - 24-hour format with data-show-time="true"</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span><strong>Multi-select</strong> - Select multiple dates</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span><strong>Week numbers</strong> - Show ISO week numbers</span>
                     </li>
                 </ul>
             </div>

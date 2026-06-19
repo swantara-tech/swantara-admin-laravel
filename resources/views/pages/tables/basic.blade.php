@@ -146,7 +146,7 @@
                                     <option value="=" selected>=</option>
                                     <option value="BETWEEN">⇄</option>
                                 </select>
-                                <input type="text" id="dateInput1" class="dsgt-filter-input" data-role="calendar-picker" data-format="DD/MM/YYYY" data-clear-button="true" placeholder="Select date...">
+                                <input type="text" id="dateInput1" class="dsgt-filter-input dsgt-flatpickr" data-date-format="d/m/Y" placeholder="Select date...">
                             </div>
                         </div>
 

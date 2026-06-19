@@ -35,10 +35,10 @@
     </div>
 </div>
 
-<!-- Metro UI Grid System -->
+<!-- DSGT Grid System -->
 <div class="dsgt-grid-section-title">
     <i class="fa-solid fa-border-all"></i>
-    Metro UI Grid System <span class="badge badge-primary">12 Column</span>
+    DSGT Grid System <span class="badge badge-primary">12 Column</span>
 </div>
 
 <div class="content-card">
@@ -49,111 +49,99 @@
             </div>
             <div>
                 <h3>Grid & Row Components</h3>
-                <p class="card-subtitle">Using Metro UI v5 built-in grid classes</p>
+                <p class="card-subtitle">Using DSGT 12-column responsive grid system</p>
             </div>
         </div>
     </div>
     <div class="card-body">
         <div class="dsgt-grid-example">
-            <span class="dsgt-grid-example-label">Grid with 12 Equal Columns (col-1 x12)</span>
-            <div class="dsgt-grid-code">&lt;div class="grid"&gt; &lt;div class="row"&gt; &lt;div class="col-1"&gt;</div>
-            <div class="grid">
-                <div class="row">
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                </div>
+            <span class="dsgt-grid-example-label">Grid with 12 Equal Columns (dsgt-col-1 x12)</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-row"&gt; &lt;div class="dsgt-col-1"&gt;</div>
+            <div class="dsgt-row">
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
             </div>
             <div class="dsgt-grid-helper">
                 <i class="fa-solid fa-circle-info"></i>
-                12 columns - each col-1 takes 1/12 of width
+                12 columns - each dsgt-col-1 takes 1/12 of width
             </div>
         </div>
 
         <div class="dsgt-grid-example">
-            <span class="dsgt-grid-example-label">Grid with 6 Columns (col-2 x6)</span>
-            <div class="dsgt-grid-code">&lt;div class="col-2"&gt; - Each spans 2/12</div>
-            <div class="grid">
-                <div class="row">
-                    <div class="col-2"><div class="dsgt-grid-box">2</div></div>
-                    <div class="col-2"><div class="dsgt-grid-box">2</div></div>
-                    <div class="col-2"><div class="dsgt-grid-box">2</div></div>
-                    <div class="col-2"><div class="dsgt-grid-box">2</div></div>
-                    <div class="col-2"><div class="dsgt-grid-box">2</div></div>
-                    <div class="col-2"><div class="dsgt-grid-box">2</div></div>
-                </div>
+            <span class="dsgt-grid-example-label">Grid with 6 Columns (dsgt-col-2 x6)</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-col-2"&gt; - Each spans 2/12</div>
+            <div class="dsgt-row">
+                <div class="dsgt-col-2"><div class="dsgt-grid-box">2</div></div>
+                <div class="dsgt-col-2"><div class="dsgt-grid-box">2</div></div>
+                <div class="dsgt-col-2"><div class="dsgt-grid-box">2</div></div>
+                <div class="dsgt-col-2"><div class="dsgt-grid-box">2</div></div>
+                <div class="dsgt-col-2"><div class="dsgt-grid-box">2</div></div>
+                <div class="dsgt-col-2"><div class="dsgt-grid-box">2</div></div>
             </div>
             <div class="dsgt-grid-helper">
                 <i class="fa-solid fa-circle-info"></i>
-                6 columns - each col-2 takes 2/12 (1/6) of width
+                6 columns - each dsgt-col-2 takes 2/12 (1/6) of width
             </div>
         </div>
 
         <div class="dsgt-grid-example">
-            <span class="dsgt-grid-example-label">Grid with 4 Columns (col-3 x4)</span>
-            <div class="dsgt-grid-code">&lt;div class="col-3"&gt; - Each spans 3/12</div>
-            <div class="grid">
-                <div class="row">
-                    <div class="col-3"><div class="dsgt-grid-box">3</div></div>
-                    <div class="col-3"><div class="dsgt-grid-box">3</div></div>
-                    <div class="col-3"><div class="dsgt-grid-box">3</div></div>
-                    <div class="col-3"><div class="dsgt-grid-box">3</div></div>
-                </div>
+            <span class="dsgt-grid-example-label">Grid with 4 Columns (dsgt-col-3 x4)</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-col-3"&gt; - Each spans 3/12</div>
+            <div class="dsgt-row">
+                <div class="dsgt-col-3"><div class="dsgt-grid-box">3</div></div>
+                <div class="dsgt-col-3"><div class="dsgt-grid-box">3</div></div>
+                <div class="dsgt-col-3"><div class="dsgt-grid-box">3</div></div>
+                <div class="dsgt-col-3"><div class="dsgt-grid-box">3</div></div>
             </div>
             <div class="dsgt-grid-helper">
                 <i class="fa-solid fa-circle-info"></i>
-                4 columns - each col-3 takes 3/12 (1/4) of width
+                4 columns - each dsgt-col-3 takes 3/12 (1/4) of width
             </div>
         </div>
 
         <div class="dsgt-grid-example">
-            <span class="dsgt-grid-example-label">Grid with 3 Columns (col-4 x3)</span>
-            <div class="dsgt-grid-code">&lt;div class="col-4"&gt; - Each spans 4/12</div>
-            <div class="grid">
-                <div class="row">
-                    <div class="col-4"><div class="dsgt-grid-box">4</div></div>
-                    <div class="col-4"><div class="dsgt-grid-box">4</div></div>
-                    <div class="col-4"><div class="dsgt-grid-box">4</div></div>
-                </div>
+            <span class="dsgt-grid-example-label">Grid with 3 Columns (dsgt-col-4 x3)</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-col-4"&gt; - Each spans 4/12</div>
+            <div class="dsgt-row">
+                <div class="dsgt-col-4"><div class="dsgt-grid-box">4</div></div>
+                <div class="dsgt-col-4"><div class="dsgt-grid-box">4</div></div>
+                <div class="dsgt-col-4"><div class="dsgt-grid-box">4</div></div>
             </div>
             <div class="dsgt-grid-helper">
                 <i class="fa-solid fa-circle-info"></i>
-                3 columns - each col-4 takes 4/12 (1/3) of width
+                3 columns - each dsgt-col-4 takes 4/12 (1/3) of width
             </div>
         </div>
 
         <div class="dsgt-grid-example">
-            <span class="dsgt-grid-example-label">Grid with 2 Columns (col-6 x2)</span>
-            <div class="dsgt-grid-code">&lt;div class="col-6"&gt; - Each spans 6/12</div>
-            <div class="grid">
-                <div class="row">
-                    <div class="col-6"><div class="dsgt-grid-box">6</div></div>
-                    <div class="col-6"><div class="dsgt-grid-box">6</div></div>
-                </div>
+            <span class="dsgt-grid-example-label">Grid with 2 Columns (dsgt-col-6 x2)</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-col-6"&gt; - Each spans 6/12</div>
+            <div class="dsgt-row">
+                <div class="dsgt-col-6"><div class="dsgt-grid-box">6</div></div>
+                <div class="dsgt-col-6"><div class="dsgt-grid-box">6</div></div>
             </div>
             <div class="dsgt-grid-helper">
                 <i class="fa-solid fa-circle-info"></i>
-                2 columns - each col-6 takes 6/12 (1/2) of width
+                2 columns - each dsgt-col-6 takes 6/12 (1/2) of width
             </div>
         </div>
 
         <div class="dsgt-grid-example">
-            <span class="dsgt-grid-example-label">Mixed Grid (col-1 + col-11)</span>
-            <div class="grid-code">col-1 + col-11 = 12</div>
-            <div class="grid">
-                <div class="row">
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-11"><div class="dsgt-grid-box">11</div></div>
-                </div>
+            <span class="dsgt-grid-example-label">Mixed Grid (dsgt-col-1 + dsgt-col-11)</span>
+            <div class="grid-code">dsgt-col-1 + dsgt-col-11 = 12</div>
+            <div class="dsgt-row">
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-11"><div class="dsgt-grid-box">11</div></div>
             </div>
             <div class="dsgt-grid-helper">
                 <i class="fa-solid fa-circle-info"></i>
@@ -162,14 +150,12 @@
         </div>
 
         <div class="dsgt-grid-example">
-            <span class="dsgt-grid-example-label">Mixed Grid (col-1 + col-2 + col-9)</span>
-            <div class="grid-code">col-1 + col-2 + col-9 = 12</div>
-            <div class="grid">
-                <div class="row">
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-2"><div class="dsgt-grid-box">2</div></div>
-                    <div class="col-9"><div class="dsgt-grid-box">9</div></div>
-                </div>
+            <span class="dsgt-grid-example-label">Mixed Grid (dsgt-col-1 + dsgt-col-2 + dsgt-col-9)</span>
+            <div class="grid-code">dsgt-col-1 + dsgt-col-2 + dsgt-col-9 = 12</div>
+            <div class="dsgt-row">
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-2"><div class="dsgt-grid-box">2</div></div>
+                <div class="dsgt-col-9"><div class="dsgt-grid-box">9</div></div>
             </div>
             <div class="dsgt-grid-helper">
                 <i class="fa-solid fa-circle-info"></i>
@@ -178,15 +164,13 @@
         </div>
 
         <div class="dsgt-grid-example">
-            <span class="dsgt-grid-example-label">Mixed Grid (col-1 + col-2 + col-3 + col-6)</span>
-            <div class="grid-code">col-1 + col-2 + col-3 + col-6 = 12</div>
-            <div class="grid">
-                <div class="row">
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-2"><div class="dsgt-grid-box">2</div></div>
-                    <div class="col-3"><div class="dsgt-grid-box">3</div></div>
-                    <div class="col-6"><div class="dsgt-grid-box">6</div></div>
-                </div>
+            <span class="dsgt-grid-example-label">Mixed Grid (dsgt-col-1 + dsgt-col-2 + dsgt-col-3 + dsgt-col-6)</span>
+            <div class="grid-code">dsgt-col-1 + dsgt-col-2 + dsgt-col-3 + dsgt-col-6 = 12</div>
+            <div class="dsgt-row">
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-2"><div class="dsgt-grid-box">2</div></div>
+                <div class="dsgt-col-3"><div class="dsgt-grid-box">3</div></div>
+                <div class="dsgt-col-6"><div class="dsgt-grid-box">6</div></div>
             </div>
             <div class="dsgt-grid-helper">
                 <i class="fa-solid fa-circle-info"></i>
@@ -195,16 +179,14 @@
         </div>
 
         <div class="dsgt-grid-example">
-            <span class="dsgt-grid-example-label">Complex Grid (col-1 + col-2 + col-3 + col-4 + col-2)</span>
-            <div class="grid-code">col-1 + col-2 + col-3 + col-4 + col-2 = 12</div>
-            <div class="grid">
-                <div class="row">
-                    <div class="col-1"><div class="dsgt-grid-box">1</div></div>
-                    <div class="col-2"><div class="dsgt-grid-box">2</div></div>
-                    <div class="col-3"><div class="dsgt-grid-box">3</div></div>
-                    <div class="col-4"><div class="dsgt-grid-box">4</div></div>
-                    <div class="col-2"><div class="dsgt-grid-box">2</div></div>
-                </div>
+            <span class="dsgt-grid-example-label">Complex Grid (dsgt-col-1 + dsgt-col-2 + dsgt-col-3 + dsgt-col-4 + dsgt-col-2)</span>
+            <div class="grid-code">dsgt-col-1 + dsgt-col-2 + dsgt-col-3 + dsgt-col-4 + dsgt-col-2 = 12</div>
+            <div class="dsgt-row">
+                <div class="dsgt-col-1"><div class="dsgt-grid-box">1</div></div>
+                <div class="dsgt-col-2"><div class="dsgt-grid-box">2</div></div>
+                <div class="dsgt-col-3"><div class="dsgt-grid-box">3</div></div>
+                <div class="dsgt-col-4"><div class="dsgt-grid-box">4</div></div>
+                <div class="dsgt-col-2"><div class="dsgt-grid-box">2</div></div>
             </div>
             <div class="dsgt-grid-helper">
                 <i class="fa-solid fa-circle-info"></i>
@@ -213,12 +195,10 @@
         </div>
 
         <div class="dsgt-grid-example">
-            <span class="dsgt-grid-example-label">Full Width (col-12)</span>
-            <div class="grid-code">col-12 - Full width column</div>
-            <div class="grid">
-                <div class="row">
-                    <div class="col-12"><div class="dsgt-grid-box">12 - Full Width</div></div>
-                </div>
+            <span class="dsgt-grid-example-label">Full Width (dsgt-col-12)</span>
+            <div class="grid-code">dsgt-col-12 - Full width column</div>
+            <div class="dsgt-row">
+                <div class="dsgt-col-12"><div class="dsgt-grid-box">12 - Full Width</div></div>
             </div>
             <div class="dsgt-grid-helper">
                 <i class="fa-solid fa-circle-info"></i>
@@ -986,6 +966,379 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </div>
+</div>
+
+<!-- Flexbox Utilities Section -->
+<div class="dsgt-grid-section-title">
+    <i class="fa-solid fa-arrows-left-right"></i>
+    Flexbox Utilities <span class="badge badge-success">New</span>
+</div>
+
+<div class="content-card">
+    <div class="card-header">
+        <div class="card-header-left">
+            <div class="card-icon bg-primary">
+                <i class="fa-solid fa-display"></i>
+            </div>
+            <div>
+                <h3>Flexbox Display & Direction</h3>
+                <p class="card-subtitle">Control layout with flex utilities</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Horizontal Flex (Default)</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-gap-3"&gt;</div>
+            <div class="dsgt-d-flex dsgt-gap-3">
+                <div class="dsgt-grid-box" style="min-width: 100px;">Item 1</div>
+                <div class="dsgt-grid-box" style="min-width: 100px;">Item 2</div>
+                <div class="dsgt-grid-box" style="min-width: 100px;">Item 3</div>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Vertical Flex (Column)</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-flex-column dsgt-gap-2"&gt;</div>
+            <div class="dsgt-d-flex dsgt-flex-column dsgt-gap-2">
+                <div class="dsgt-grid-box">Item 1</div>
+                <div class="dsgt-grid-box">Item 2</div>
+                <div class="dsgt-grid-box">Item 3</div>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Wrap Flex (Multi-line)</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-flex-wrap dsgt-gap-2"&gt;</div>
+            <div class="dsgt-d-flex dsgt-flex-wrap dsgt-gap-2">
+                <div class="dsgt-grid-box" style="min-width: 150px;">Wrap 1</div>
+                <div class="dsgt-grid-box" style="min-width: 150px;">Wrap 2</div>
+                <div class="dsgt-grid-box" style="min-width: 150px;">Wrap 3</div>
+                <div class="dsgt-grid-box" style="min-width: 150px;">Wrap 4</div>
+                <div class="dsgt-grid-box" style="min-width: 150px;">Wrap 5</div>
+            </div>
+            <div class="dsgt-grid-helper">
+                <i class="fa-solid fa-circle-info"></i>
+                Items wrap to next line when no space
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Flexbox Alignment Examples -->
+<div class="content-card">
+    <div class="card-header">
+        <div class="card-header-left">
+            <div class="card-icon bg-success">
+                <i class="fa-solid fa-align-center"></i>
+            </div>
+            <div>
+                <h3>Flexbox Alignment Patterns</h3>
+                <p class="card-subtitle">Common alignment use cases</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Center Both Axes</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-justify-content-center dsgt-align-items-center" style="height: 150px"&gt;</div>
+            <div class="dsgt-d-flex dsgt-justify-content-center dsgt-align-items-center" style="min-height: 150px; background: var(--light); border-radius: var(--radius-md);">
+                <div class="dsgt-grid-box" style="background: var(--accent); padding: 20px 30px; font-size: 16px;">
+                    <i class="fa-solid fa-check"></i> Perfectly Centered!
+                </div>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Space Between (Header Pattern)</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-justify-content-between dsgt-align-items-center"&gt;</div>
+            <div class="dsgt-d-flex dsgt-justify-content-between dsgt-align-items-center" style="background: var(--light); padding: 15px 20px; border-radius: var(--radius-md);">
+                <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2">
+                    <i class="fa-solid fa-user-circle" style="font-size: 24px; color: var(--accent);"></i>
+                    <div>
+                        <strong>John Doe</strong>
+                        <div style="font-size: 12px; color: var(--text-secondary);">Administrator</div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-gear"></i> Settings
+                </button>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">End Alignment</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-justify-content-end dsgt-align-items-end" style="height: 150px"&gt;</div>
+            <div class="dsgt-d-flex dsgt-justify-content-end dsgt-align-items-end" style="min-height: 150px; background: var(--light); border-radius: var(--radius-md); padding: 15px;">
+                <div class="dsgt-grid-box" style="background: var(--success);">
+                    Bottom Right
+                </div>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Stretch Items (Equal Height)</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-align-items-stretch dsgt-gap-3"&gt;</div>
+            <div class="dsgt-d-flex dsgt-align-items-stretch dsgt-gap-3">
+                <div class="dsgt-grid-box" style="flex: 1; background: var(--accent);">
+                    Short content
+                </div>
+                <div class="dsgt-grid-box" style="flex: 1; background: var(--success);">
+                    Medium content here<br>
+                    Second line
+                </div>
+                <div class="dsgt-grid-box" style="flex: 1; background: var(--warning);">
+                    Long content here<br>
+                    Second line<br>
+                    Third line
+                </div>
+            </div>
+            <div class="dsgt-grid-helper">
+                <i class="fa-solid fa-circle-info"></i>
+                All items stretch to same height automatically!
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Flexbox Real-World Patterns -->
+<div class="content-card">
+    <div class="card-header">
+        <div class="card-header-left">
+            <div class="card-icon bg-warning">
+                <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div>
+                <h3>Real-World Flexbox Patterns</h3>
+                <p class="card-subtitle">Common UI layouts with flex</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Card with Icon + Text + Button</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-3"&gt;</div>
+            <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-3" style="background: var(--light); padding: 20px; border-radius: var(--radius-md);">
+                <div class="dsgt-grid-box" style="min-width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--accent);">
+                    <i class="fa-solid fa-chart-line" style="font-size: 24px; color: white;"></i>
+                </div>
+                <div style="flex: 1;">
+                    <h4 style="margin: 0 0 4px 0;">Revenue Growth</h4>
+                    <p style="margin: 0; font-size: 13px; color: var(--text-secondary);">+25% from last month</p>
+                </div>
+                <button class="btn btn-secondary btn-sm">
+                    View Details
+                </button>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Tag/Badge List</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-flex-wrap dsgt-gap-2"&gt;</div>
+            <div class="dsgt-d-flex dsgt-flex-wrap dsgt-gap-2">
+                <span class="badge badge-primary">JavaScript</span>
+                <span class="badge badge-success">Laravel</span>
+                <span class="badge badge-warning">PHP</span>
+                <span class="badge badge-danger">MySQL</span>
+                <span class="badge badge-info">Vue.js</span>
+                <span class="badge badge-secondary">Docker</span>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Breadcrumb Navigation</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2"&gt;</div>
+            <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2" style="font-size: 14px;">
+                <a href="#" style="color: var(--accent); text-decoration: none;"><i class="fa-solid fa-house"></i> Home</a>
+                <i class="fa-solid fa-chevron-right" style="font-size: 10px; color: var(--text-secondary);"></i>
+                <a href="#" style="color: var(--accent); text-decoration: none;">Dashboard</a>
+                <i class="fa-solid fa-chevron-right" style="font-size: 10px; color: var(--text-secondary);"></i>
+                <span style="color: var(--text-secondary);">Analytics</span>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Action Buttons Group</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-gap-2"&gt;</div>
+            <div class="dsgt-d-flex dsgt-gap-2">
+                <button class="btn btn-primary">
+                    <i class="fa-solid fa-plus"></i> Add New
+                </button>
+                <button class="btn btn-success">
+                    <i class="fa-solid fa-file-export"></i> Export
+                </button>
+                <button class="btn btn-info">
+                    <i class="fa-solid fa-print"></i> Print
+                </button>
+                <button class="btn btn-danger">
+                    <i class="fa-solid fa-trash"></i> Delete
+                </button>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Form Inline</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2"&gt;</div>
+            <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2">
+                <label style="white-space: nowrap; font-weight: 500;">Search:</label>
+                <input type="text" class="form-control" placeholder="Type to search..." style="flex: 1;">
+                <button class="btn btn-primary">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Pagination</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-1"&gt;</div>
+            <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-1">
+                <button class="btn btn-secondary btn-sm">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="btn btn-primary btn-sm" style="min-width: 40px;">1</button>
+                <button class="btn btn-secondary btn-sm" style="min-width: 40px;">2</button>
+                <button class="btn btn-secondary btn-sm" style="min-width: 40px;">3</button>
+                <span style="padding: 0 5px;">...</span>
+                <button class="btn btn-secondary btn-sm" style="min-width: 40px;">10</button>
+                <button class="btn btn-secondary btn-sm">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Spacing Utilities Section -->
+<div class="dsgt-grid-section-title">
+    <i class="fa-solid fa-ruler-combined"></i>
+    Spacing Utilities <span class="badge badge-info">Margin & Padding</span>
+</div>
+
+<div class="content-card">
+    <div class="card-header">
+        <div class="card-header-left">
+            <div class="card-icon bg-success">
+                <i class="fa-solid fa-expand"></i>
+            </div>
+            <div>
+                <h3>Margin & Padding Examples</h3>
+                <p class="card-subtitle">Bootstrap-like spacing scale (0-5)</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Margin Scale</span>
+            <div class="dsgt-grid-code">m-0 (0) → m-1 (0.25rem) → m-2 (0.5rem) → m-3 (1rem) → m-4 (1.5rem) → m-5 (3rem)</div>
+            <div class="dsgt-d-flex dsgt-flex-column dsgt-gap-3">
+                <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2">
+                    <code class="dsgt-grid-box" style="min-width: 80px; padding: 8px; font-size: 12px;">m-3</code>
+                    <div style="flex: 1; background: var(--light); padding: 1rem; border-radius: var(--radius-md); border: 2px dashed var(--border);">
+                        Margin: 1rem
+                    </div>
+                </div>
+                <div class="dsgt-d-flex dsgt-align-items-center dsgt-gap-2">
+                    <code class="dsgt-grid-box" style="min-width: 80px; padding: 8px; font-size: 12px;">m-4</code>
+                    <div style="flex: 1; background: var(--light); padding: 1.5rem; border-radius: var(--radius-md); border: 2px dashed var(--border);">
+                        Margin: 1.5rem
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Directional Margin (mt, mb, ml, mr)</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-mt-3 dsgt-mb-4 dsgt-ml-2 dsgt-mr-2"&gt;</div>
+            <div style="background: var(--light); padding: 20px; border-radius: var(--radius-md);">
+                <div class="dsgt-mt-3 dsgt-mb-4 dsgt-ml-2 dsgt-mr-2" style="background: var(--accent); padding: 15px; border-radius: var(--radius-md); color: white;">
+                    Has directional margins!
+                </div>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Padding Scale</span>
+            <div class="dsgt-grid-code">p-1 (0.25rem) → p-2 (0.5rem) → p-3 (1rem) → p-4 (1.5rem) → p-5 (3rem)</div>
+            <div class="dsgt-d-flex dsgt-gap-3">
+                <div class="dsgt-p-1" style="background: var(--success); color: white; border-radius: var(--radius-md);">
+                    p-1
+                </div>
+                <div class="dsgt-p-3" style="background: var(--info); color: white; border-radius: var(--radius-md);">
+                    p-3
+                </div>
+                <div class="dsgt-p-5" style="background: var(--warning); color: white; border-radius: var(--radius-md);">
+                    p-5
+                </div>
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Auto Center (mx-auto)</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-w-50 dsgt-mx-auto"&gt;</div>
+            <div style="background: var(--light); padding: 20px; border-radius: var(--radius-md);">
+                <div class="dsgt-w-50 dsgt-mx-auto" style="background: var(--accent); padding: 15px; border-radius: var(--radius-md); color: white; text-align: center;">
+                    Centered with mx-auto!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Responsive Utilities Section -->
+<div class="dsgt-grid-section-title">
+    <i class="fa-solid fa-mobile-screen-button"></i>
+    Responsive Utilities <span class="badge badge-warning">Breakpoints</span>
+</div>
+
+<div class="content-card">
+    <div class="card-header">
+        <div class="card-header-left">
+            <div class="card-icon bg-info">
+                <i class="fa-solid fa-desktop"></i>
+            </div>
+            <div>
+                <h3>Responsive Display & Grid</h3>
+                <p class="card-subtitle">Control visibility per breakpoint</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Responsive Columns</span>
+            <div class="dsgt-grid-code">&lt;div class="dsgt-col-12 dsgt-col-md-6 dsgt-col-lg-4"&gt;</div>
+            <div class="dsgt-row dsgt-gap-3">
+                <div class="dsgt-col-12 dsgt-col-md-6 dsgt-col-lg-4">
+                    <div class="dsgt-grid-box" style="background: var(--accent);">Mobile: Full<br>Tablet: 1/2<br>Desktop: 1/3</div>
+                </div>
+                <div class="dsgt-col-12 dsgt-col-md-6 dsgt-col-lg-4">
+                    <div class="dsgt-grid-box" style="background: var(--success);">Mobile: Full<br>Tablet: 1/2<br>Desktop: 1/3</div>
+                </div>
+                <div class="dsgt-col-12 dsgt-col-md-6 dsgt-col-lg-4">
+                    <div class="dsgt-grid-box" style="background: var(--warning);">Mobile: Full<br>Tablet: 1/2<br>Desktop: 1/3</div>
+                </div>
+            </div>
+            <div class="dsgt-grid-helper">
+                <i class="fa-solid fa-circle-info"></i>
+                Resize browser to see responsive behavior!
+            </div>
+        </div>
+
+        <div class="dsgt-grid-example">
+            <span class="dsgt-grid-example-label">Hide/Show per Breakpoint</span>
+            <div class="dsgt-grid-code">
+                &lt;div class="dsgt-d-none dsgt-d-md-block"&gt; Hidden on mobile&lt;/div&gt;<br>
+                &lt;div class="dsgt-d-block dsgt-d-lg-none"&gt; Hidden on desktop&lt;/div&gt;
+            </div>
+            <div class="dsgt-d-flex dsgt-flex-column dsgt-gap-2">
+                <div class="dsgt-d-none dsgt-d-md-block dsgt-grid-box" style="background: var(--danger);">
+                    <i class="fa-solid fa-eye-slash"></i> Mobile: HIDDEN | Tablet+: VISIBLE
+                </div>
+                <div class="dsgt-d-block dsgt-d-lg-none dsgt-grid-box" style="background: var(--info);">
+                    <i class="fa-solid fa-eye"></i> Mobile/Tablet: VISIBLE | Desktop: HIDDEN
+                </div>
+            </div>
         </div>
     </div>
 </div>
