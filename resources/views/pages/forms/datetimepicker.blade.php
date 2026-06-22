@@ -218,20 +218,20 @@
                     <h5 class="card-title mb-3">Quick Start</h5>
 
                     <h6 class="mt-4">1. Basic Date Input</h6>
-                    <pre class="bg-dark text-light p-3 rounded"><code>&lt;input type="text" class="form-control" data-toggle="flatpickr" placeholder="Select date..."&gt;</code></pre>
+                    <pre class="bg-dark p-3 rounded" style="color: #e5e7eb !important;"><code>&lt;input type="text" class="form-control" data-toggle="flatpickr" placeholder="Select date..."&gt;</code></pre>
 
                     <h6 class="mt-4">2. Enable Time Picker</h6>
-                    <pre class="bg-dark text-light p-3 rounded"><code>&lt;input type="text" class="form-control" data-toggle="flatpickr"
+                    <pre class="bg-dark p-3 rounded" style="color: #e5e7eb !important;"><code>&lt;input type="text" class="form-control" data-toggle="flatpickr"
        data-show-time="true"
        placeholder="Select date and time..."&gt;</code></pre>
 
                     <h6 class="mt-4">3. Date Range Selection</h6>
-                    <pre class="bg-dark text-light p-3 rounded"><code>&lt;input type="text" class="form-control" data-toggle="flatpickr"
+                    <pre class="bg-dark p-3 rounded" style="color: #e5e7eb !important;"><code>&lt;input type="text" class="form-control" data-toggle="flatpickr"
        data-mode="range"
        placeholder="Select range..."&gt;</code></pre>
 
                     <h6 class="mt-4">4. Set Min/Max Dates</h6>
-                    <pre class="bg-dark text-light p-3 rounded"><code>&lt;input type="text" class="form-control" data-toggle="flatpickr"
+                    <pre class="bg-dark p-3 rounded" style="color: #e5e7eb !important;"><code>&lt;input type="text" class="form-control" data-toggle="flatpickr"
        data-min-date="today"
        data-max-date="+30"
        placeholder="Next 30 days..."&gt;</code></pre>
@@ -457,23 +457,60 @@
     font-size: 15px !important;
     font-weight: 600 !important;
     font-family: inherit !important;
-    padding: 0 0 0 4px !important;
+    padding: 0 20px 0 4px !important; /* Right padding for arrows */
     margin: 0 !important;
-    width: 5ch !important;
+    width: 65px !important; /* Sufficient width for year + arrows */
+    box-sizing: border-box !important;
     outline: none !important;
-    cursor: default !important;
+    cursor: text !important;
     appearance: textfield !important;
     -moz-appearance: textfield !important;
     -webkit-appearance: none !important;
 }
 
-/* Sembunyikan spinner arrows year */
+/* Tampilkan spinner arrows year dengan positioning yang benar */
 .numInputWrapper span {
-    display: none !important;
+    position: absolute !important;
+    right: 2px !important;
+    width: 14px !important;
+    padding: 0 4px 0 2px !important;
+    height: 50% !important;
+    line-height: 50% !important;
+    opacity: 1 !important; /* Make arrows visible */
+    display: block !important;
+    cursor: pointer !important;
+    border: 1px solid rgba(255, 255, 255, .3) !important;
+}
+
+.numInputWrapper span:hover {
+    background: rgba(255, 255, 255, .2) !important;
+}
+
+.numInputWrapper span.arrowUp {
+    top: 0 !important;
+    border-bottom: 0 !important;
+}
+
+.numInputWrapper span.arrowUp:after {
+    border-left: 4px solid transparent !important;
+    border-right: 4px solid transparent !important;
+    border-bottom: 4px solid #fff !important; /* White arrow for indigo header */
+    top: 26% !important;
+}
+
+.numInputWrapper span.arrowDown {
+    top: 50% !important;
+}
+
+.numInputWrapper span.arrowDown:after {
+    border-left: 4px solid transparent !important;
+    border-right: 4px solid transparent !important;
+    border-top: 4px solid #fff !important; /* White arrow for indigo header */
+    top: 40% !important;
 }
 
 .numInputWrapper:hover {
-    background: transparent !important;
+    background: rgba(255, 255, 255, .1) !important;
 }
 
 /* 3. WEEKDAYS HEADER */
