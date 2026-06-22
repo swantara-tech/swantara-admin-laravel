@@ -602,6 +602,185 @@
                 </div>
             </div>
 
+            <div class="s2-example">
+                <label class="s2-label">
+                    Email Provider
+                    <span class="s2-hint">📧 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <select>
+                        <option value="">-- Select Email --</option>
+                        <option value="gmail" selected>📧 Gmail</option>
+                        <option value="outlook">📧 Outlook</option>
+                        <option value="yahoo">📧 Yahoo Mail</option>
+                        <option value="proton">🔒 ProtonMail</option>
+                        <option value="custom">🏢 Custom Domain</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Phone Type
+                    <span class="s2-hint">📱 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-phone"></i>
+                    <select>
+                        <option value="">-- Select Phone Type --</option>
+                        <option value="mobile" selected>📱 Mobile</option>
+                        <option value="home">🏠 Home</option>
+                        <option value="work">💼 Work</option>
+                        <option value="fax">📠 Fax</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Schedule Type
+                    <span class="s2-hint">📅 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <select>
+                        <option value="">-- Select Schedule --</option>
+                        <option value="daily">📅 Daily</option>
+                        <option value="weekly" selected>📆 Weekly</option>
+                        <option value="monthly">🗓️ Monthly</option>
+                        <option value="yearly">🎉 Yearly</option>
+                        <option value="custom">⚙️ Custom</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Location
+                    <span class="s2-hint">📍 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select>
+                        <option value="">-- Select Location --</option>
+                        <option value="jakarta" selected>🏙️ Jakarta</option>
+                        <option value="surabaya">🌊 Surabaya</option>
+                        <option value="bandung">⛰️ Bandung</option>
+                        <option value="bali">🏝️ Bali</option>
+                        <option value="yogyakarta">🏛️ Yogyakarta</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Job Position
+                    <span class="s2-hint">💼 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <select>
+                        <option value="">-- Select Position --</option>
+                        <option value="manager">👔 Manager</option>
+                        <option value="developer" selected>💻 Developer</option>
+                        <option value="designer">🎨 Designer</option>
+                        <option value="analyst">📊 Analyst</option>
+                        <option value="intern">🎓 Intern</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Language
+                    <span class="s2-hint">🌐 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-globe"></i>
+                    <select>
+                        <option value="">-- Select Language --</option>
+                        <option value="en">🇬🇧 English</option>
+                        <option value="id" selected>🇮🇩 Bahasa Indonesia</option>
+                        <option value="jp">🇯🇵 日本語</option>
+                        <option value="kr">🇰🇷 한국어</option>
+                        <option value="cn">🇨🇳 中文</option>
+                        <option value="es">🇪🇸 Español</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Currency
+                    <span class="s2-hint">💵 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <select>
+                        <option value="">-- Select Currency --</option>
+                        <option value="usd">💵 USD ($)</option>
+                        <option value="eur">💶 EUR (€)</option>
+                        <option value="idr" selected>🇮🇩 IDR (Rp)</option>
+                        <option value="gbp">💷 GBP (£)</option>
+                        <option value="jpy">💴 JPY (¥)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Notification Type
+                    <span class="s2-hint">🔔 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-bell"></i>
+                    <select>
+                        <option value="">-- Select Notification --</option>
+                        <option value="email">📧 Email</option>
+                        <option value="sms">📱 SMS</option>
+                        <option value="push" selected>🔔 Push Notification</option>
+                        <option value="inapp">💻 In-App</option>
+                        <option value="whatsapp">💬 WhatsApp</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Security Level
+                    <span class="s2-hint">🔒 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <select>
+                        <option value="">-- Select Security --</option>
+                        <option value="low">🟢 Low</option>
+                        <option value="medium" selected>🟡 Medium</option>
+                        <option value="high">🟠 High</option>
+                        <option value="maximum">🔴 Maximum</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Theme Color
+                    <span class="s2-hint">🎨 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-palette"></i>
+                    <select>
+                        <option value="">-- Select Theme --</option>
+                        <option value="blue" selected>🔵 Blue</option>
+                        <option value="green">🟢 Green</option>
+                        <option value="purple">🟣 Purple</option>
+                        <option value="orange">🟠 Orange</option>
+                        <option value="red">🔴 Red</option>
+                    </select>
+                </div>
+            </div>
+
             <div class="divider"></div>
 
             <div class="helper-text">
@@ -1156,7 +1335,20 @@ $(document).ready(function() {
             'fa-lock': '\\f023',
             'fa-clipboard-list': '\\f46d',
             'fa-user-plus': '\\f234',
-            'fa-code': '\\f121'
+            'fa-code': '\\f121',
+            'fa-building': '\\f1ad',
+            'fa-box': '\\f466',
+            'fa-truck': '\\f0d1',
+            'fa-star': '\\f005',
+            'fa-envelope': '\\f0e0',
+            'fa-phone': '\\f095',
+            'fa-calendar-days': '\\f073',
+            'fa-location-dot': '\\f3c5',
+            'fa-briefcase': '\\f0b1',
+            'fa-dollar-sign': '\\f155',
+            'fa-bell': '\\f0f3',
+            'fa-shield-halved': '\\f3ed',
+            'fa-palette': '\\f53f'
         };
         
         for (const [key, value] of Object.entries(iconMap)) {
