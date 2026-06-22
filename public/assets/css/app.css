@@ -5944,6 +5944,11 @@ select.form-control[multiple] option {
     display: none !important;
 }
 
+/* Hide icon pseudo-element for select-with-icon (use real icon instead) */
+.select-with-icon .select2-container .select2-selection--single::before {
+    display: none !important;
+}
+
 /* Select2 Integration with Icon */
 .select-with-icon .select2-container {
     width: 100% !important;
@@ -5951,51 +5956,6 @@ select.form-control[multiple] option {
 
 .select-with-icon .select2-container .select2-selection--single {
     padding-left: 44px !important;
-}
-
-/* Custom Icon for Select2 */
-.select-with-icon .select2-container .select2-selection--single::before {
-    content: var(--icon-content, '');
-    position: absolute;
-    left: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #64748b;
-    font-size: 16px;
-    font-family: 'Font Awesome 6 Free', 'Font Awesome 5 Free' !important;
-    font-weight: 900 !important;
-    pointer-events: none;
-    z-index: 2;
-    transition: color 0.2s ease;
-}
-
-/* Icon Color on Focus */
-.select-with-icon .select2-container--default.select2-container--focus .select2-selection--single::before,
-.select-with-icon .select2-container--default.select2-container--open .select2-selection--single::before {
-    color: #3b82f6;
-}
-
-/* Dark Mode for Icon */
-[data-theme="dark"] .select-with-icon i {
-    color: #94a3b8;
-}
-
-[data-theme="dark"] .select-with-icon:hover i {
-    color: #60a5fa;
-}
-
-[data-theme="dark"] .select-with-icon .select2-container .select2-selection--single::before {
-    color: #94a3b8;
-}
-
-[data-theme="dark"] .select-with-icon .select2-container--default.select2-container--focus .select2-selection--single::before,
-[data-theme="dark"] .select-with-icon .select2-container--default.select2-container--open .select2-selection--single::before {
-    color: #60a5fa;
 }
 
 /* Select States */

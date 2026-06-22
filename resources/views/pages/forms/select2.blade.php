@@ -1383,19 +1383,25 @@ $(document).ready(function() {
         // Mark wrapper as initialized to hide original icon
         $wrapper.addClass('select2-initialized');
         
-        // If wrapper has icon, transfer icon class to Select2 container
+        // If wrapper has icon, clone it into Select2 container
         if ($wrapper.hasClass('select-with-icon')) {
             const $icon = $wrapper.find('i.fa-solid, i.fas, i.far, i.fab');
             if ($icon.length) {
-                const iconClass = $icon.attr('class');
                 const $select2Container = $select.next('.select2-container');
                 $select2Container.addClass('select-with-icon');
                 
-                // Add icon data attribute for CSS pseudo-element
-                const iconUnicode = getIconUnicode($icon);
-                if (iconUnicode) {
-                    $select2Container.css('--icon-content', `"${iconUnicode}"`);
-                }
+                // Clone the icon and prepend to Select2 selection
+                const $clonedIcon = $icon.clone();
+                $clonedIcon.css({
+                    'position': 'absolute',
+                    'left': '14px',
+                    'top': '50%',
+                    'transform': 'translateY(-50%)',
+                    'pointer-events': 'none',
+                    'z-index': '2'
+                });
+                $select2Container.find('.select2-selection').css('position', 'relative');
+                $select2Container.find('.select2-selection').prepend($clonedIcon);
             }
         }
     });
