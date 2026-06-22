@@ -463,19 +463,18 @@
         <div class="card-body">
             <div class="s2-example">
                 <label class="s2-label">
-                    Payment Method
-                    <span class="s2-hint">💳 icon</span>
+                    User Role
+                    <span class="s2-hint">👤 icon</span>
                 </label>
-                <div class="select-wrapper select-with-icon" data-icon="credit-card">
-                    <i class="fa-solid fa-credit-card"></i>
-
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-user-shield"></i>
                     <select>
                         <option value="">-- Select Role --</option>
-                        <option value="visa" selected>💳 Visa</option>
-                        <option value="editor">Editor</option>
-                        <option value="author">Author</option>
-                        <option value="user">User</option>
-                        <option value="guest">Guest</option>
+                        <option value="admin" selected>👨‍💼 Administrator</option>
+                        <option value="editor">✍️ Editor</option>
+                        <option value="author">📝 Author</option>
+                        <option value="user">👤 User</option>
+                        <option value="guest">🌐 Guest</option>
                     </select>
                 </div>
             </div>
@@ -485,7 +484,7 @@
                     Payment Method
                     <span class="s2-hint">💳 icon</span>
                 </label>
-                <div class="select-wrapper select-with-icon" data-icon="credit-card">
+                <div class="select-wrapper select-with-icon">
                     <i class="fa-solid fa-credit-card"></i>
                     <select>
                         <option value="">-- Select Payment --</option>
@@ -501,9 +500,9 @@
             <div class="s2-example">
                 <label class="s2-label">
                     Priority Level
-                    <span class="s2-hint">⚡ icon</span>
+                    <span class="s2-hint">🚩 icon</span>
                 </label>
-                <div class="select-wrapper select-with-icon" data-icon="flag">
+                <div class="select-wrapper select-with-icon">
                     <i class="fa-solid fa-flag"></i>
                     <select>
                         <option value="">-- Select Priority --</option>
@@ -511,6 +510,94 @@
                         <option value="high">🟠 High</option>
                         <option value="medium" selected>🟡 Medium</option>
                         <option value="low">🟢 Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Department
+                    <span class="s2-hint">🏢 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-building"></i>
+                    <select>
+                        <option value="">-- Select Department --</option>
+                        <option value="engineering" selected>💻 Engineering</option>
+                        <option value="design">🎨 Design</option>
+                        <option value="marketing">📢 Marketing</option>
+                        <option value="sales">💰 Sales</option>
+                        <option value="hr">👥 Human Resources</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Status
+                    <span class="s2-hint">✅ icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <select>
+                        <option value="">-- Select Status --</option>
+                        <option value="active" selected>🟢 Active</option>
+                        <option value="inactive">⚫ Inactive</option>
+                        <option value="pending">🟡 Pending</option>
+                        <option value="suspended">🔴 Suspended</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Category
+                    <span class="s2-hint">📦 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-box"></i>
+                    <select>
+                        <option value="">-- Select Category --</option>
+                        <option value="electronics">📱 Electronics</option>
+                        <option value="clothing">👕 Clothing</option>
+                        <option value="food" selected>🍔 Food & Beverage</option>
+                        <option value="books">📚 Books</option>
+                        <option value="sports">⚽ Sports</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Shipping Method
+                    <span class="s2-hint">🚚 icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-truck"></i>
+                    <select>
+                        <option value="">-- Select Shipping --</option>
+                        <option value="standard">📦 Standard (5-7 days)</option>
+                        <option value="express" selected>⚡ Express (2-3 days)</option>
+                        <option value="overnight">🌙 Overnight</option>
+                        <option value="pickup">🏪 Store Pickup</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="s2-example">
+                <label class="s2-label">
+                    Rating
+                    <span class="s2-hint">⭐ icon</span>
+                </label>
+                <div class="select-wrapper select-with-icon">
+                    <i class="fa-solid fa-star"></i>
+                    <select>
+                        <option value="">-- Select Rating --</option>
+                        <option value="5">⭐⭐⭐⭐⭐ Excellent (5)</option>
+                        <option value="4" selected>⭐⭐⭐⭐ Good (4)</option>
+                        <option value="3">⭐⭐⭐ Average (3)</option>
+                        <option value="2">⭐⭐ Poor (2)</option>
+                        <option value="1">⭐ Terrible (1)</option>
                     </select>
                 </div>
             </div>
