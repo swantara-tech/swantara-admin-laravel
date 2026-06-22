@@ -293,8 +293,20 @@
 <style>
 /* ============================================================
    FLATPICKR CUSTOM THEME — DSGT Metro Template
-   Fix: scroll position + clean UI
+   Fix: overflow + positioning issue
    ============================================================ */
+
+/* Override overflow pada container untuk flatpickr */
+.dsgt-container-fluid,
+.dsgt-row,
+.dsgt-col-12,
+.dsgt-col-md-6,
+.dsgt-col-md-5,
+.dsgt-col-md-2,
+.card,
+.card-body {
+    overflow: visible !important;
+}
 
 /* 1. KONTAINER UTAMA */
 .flatpickr-calendar {
@@ -920,57 +932,127 @@ $(document).ready(function () {
         flatpickr.localize(flatpickr.l10ns.id);
     }
 
+    // Helper: update posisi kalender saat scroll dengan smooth animation
+    function repositionOnScroll(instance) {
+        let ticking = false;
+        let lastScrollY = 0;
+        
+        function handler() {
+            lastScrollY = window.scrollY;
+            
+            // RequestAnimationFrame untuk smooth 60fps
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    if (instance.isOpen) {
+                        // Tambahkan CSS transition untuk smooth movement
+                        const calendar = instance.calendarContainer;
+                        if (calendar) {
+                            calendar.style.transition = 'top 0.1s ease-out, left 0.1s ease-out';
+                        }
+                        
+                        instance._positionCalendar();
+                        
+                        // Remove transition setelah selesai (biar tidak interfere dengan interaksi lain)
+                        setTimeout(() => {
+                            if (calendar) {
+                                calendar.style.transition = '';
+                            }
+                        }, 100);
+                    }
+                    ticking = false;
+                });
+                
+                ticking = true;
+            }
+        }
+        
+        // Listen scroll dengan capture phase
+        window.addEventListener('scroll', handler, { passive: true, capture: true });
+        
+        // Cleanup kalau kalender ditutup manual
+        instance.config.onClose.push(function () {
+            window.removeEventListener('scroll', handler, { capture: true });
+        });
+    }
+
     // ─────────────────────────────────────────────────────────────
-    // 1. Basic Date Pickers — semua pakai appendTo: document.body
-    //    supaya tidak geser saat di-scroll
+    // 1. Basic Date Pickers — LAZY INIT (render saat first click)
     // ─────────────────────────────────────────────────────────────
     $('[data-toggle="flatpickr"]').each(function () {
         const $input = $(this);
 
-        const config = {
-            locale: 'id',
-            dateFormat: 'd/m/Y',
-            allowInput: false,
-            disableMobile: true,
-            appendTo: document.body,   // FIX: kalender di-render ke body,
-                                        // posisi otomatis mengikuti input saat scroll
-        };
+        // Build config object (tapi JANGAN init sekarang)
+        function buildConfig() {
+            const config = {
+                locale: 'id',
+                dateFormat: 'd/m/Y',
+                allowInput: false,
+                disableMobile: true,
+                static: false,  // Calendar akan di-render ke body
+                onOpen: function (selectedDates, dateStr, instance) {
+                    repositionOnScroll(instance);  // Update posisi saat scroll
+                },
+            };
 
-        // Aktifkan time picker
-        if ($input.data('show-time')) {
-            config.enableTime  = true;
-            config.time_24hr   = true;
-            config.dateFormat  = 'd/m/Y H:i';
+            // Aktifkan time picker
+            if ($input.data('show-time')) {
+                config.enableTime  = true;
+                config.time_24hr   = true;
+                config.dateFormat  = 'd/m/Y H:i';
+            }
+
+            // Mode: range / multiple
+            if ($input.data('mode')) {
+                config.mode = $input.data('mode');
+            }
+
+            // Min / Max date
+            if ($input.data('min-date')) config.minDate = $input.data('min-date');
+            if ($input.data('max-date')) config.maxDate = $input.data('max-date');
+
+            // Week numbers
+            if ($input.data('week-numbers')) config.weekNumbers = true;
+
+            // Custom date format
+            if ($input.data('date-format')) config.dateFormat = $input.data('date-format');
+
+            return config;
         }
 
-        // Mode: range / multiple
-        if ($input.data('mode')) {
-            config.mode = $input.data('mode');
+        // LAZY INIT: Hanya init saat first click/focus
+        let fpInitialized = false;
+        let fpInstance = null;
+
+        function initFlatpickr() {
+            if (fpInitialized) return fpInstance;
+            
+            fpInstance = $input.flatpickr(buildConfig());
+            fpInitialized = true;
+            
+            // Auto-open setelah init
+            setTimeout(() => fpInstance.open(), 0);
+            
+            return fpInstance;
         }
 
-        // Min / Max date
-        if ($input.data('min-date')) config.minDate = $input.data('min-date');
-        if ($input.data('max-date')) config.maxDate = $input.data('max-date');
-
-        // Week numbers
-        if ($input.data('week-numbers')) config.weekNumbers = true;
-
-        // Custom date format
-        if ($input.data('date-format')) config.dateFormat = $input.data('date-format');
-
-        // Init
-        const fp = $input[0]._flatpickr || $input.flatpickr(config);
+        // Trigger init saat click atau focus
+        $input.on('click focus', function (e) {
+            if (!fpInitialized) {
+                e.preventDefault();
+                initFlatpickr();
+            }
+        });
 
         // Clear button (opsional)
         if ($input.data('allow-clear')) {
             $input.siblings('[data-clear]').on('click', function () {
-                fp.clear();
+                if (fpInstance) fpInstance.clear();
             });
         }
     });
 
     // ─────────────────────────────────────────────────────────────
-    // 2. Inline Calendar #1 — tanpa appendTo (inline = tidak perlu)
+    // 2. Inline Calendar #1 — tidak perlu closeOnScroll (inline)
     // ─────────────────────────────────────────────────────────────
     if ($('#inline-calendar-1').length) {
         flatpickr('#inline-calendar-1', {
@@ -998,50 +1080,86 @@ $(document).ready(function () {
     }
 
     // ─────────────────────────────────────────────────────────────
-    // 4. Hotel Booking — linked check-in & check-out
+    // 4. Hotel Booking — linked check-in & check-out (LAZY INIT)
     // ─────────────────────────────────────────────────────────────
     if ($('#checkin-date').length && $('#checkout-date').length) {
 
-        const checkinFp = flatpickr('#checkin-date', {
-            locale: 'id',
-            dateFormat: 'd/m/Y H:i',
-            enableTime: true,
-            time_24hr: true,
-            minDate: 'today',
-            appendTo: document.body,   // FIX scroll
-            onChange: function (selectedDates) {
-                if (selectedDates.length > 0) {
-                    // Set minimum checkout = checkin + 1 hari
-                    const minCheckout = new Date(selectedDates[0]);
-                    minCheckout.setDate(minCheckout.getDate() + 1);
-                    checkoutFp.set('minDate', minCheckout);
+        let checkinFp = null;
+        let checkoutFp = null;
 
-                    $('#display-checkin').text(
-                        selectedDates[0].toLocaleString('id-ID', {
-                            day: '2-digit', month: 'long', year: 'numeric',
-                            hour: '2-digit', minute: '2-digit'
-                        })
-                    );
+        // LAZY INIT untuk check-in
+        function initCheckin() {
+            if (checkinFp) return;
+            
+            checkinFp = flatpickr('#checkin-date', {
+                locale: 'id',
+                dateFormat: 'd/m/Y H:i',
+                enableTime: true,
+                time_24hr: true,
+                minDate: 'today',
+                static: false,
+                onOpen: function (selectedDates, dateStr, instance) {
+                    repositionOnScroll(instance);  // Update posisi saat scroll
+                },
+                onChange: function (selectedDates) {
+                    if (selectedDates.length > 0) {
+                        // Set minimum checkout = checkin + 1 hari
+                        const minCheckout = new Date(selectedDates[0]);
+                        minCheckout.setDate(minCheckout.getDate() + 1);
+                        if (checkoutFp) checkoutFp.set('minDate', minCheckout);
+
+                        $('#display-checkin').text(
+                            selectedDates[0].toLocaleString('id-ID', {
+                                day: '2-digit', month: 'long', year: 'numeric',
+                                hour: '2-digit', minute: '2-digit'
+                            })
+                        );
+                    }
                 }
+            });
+        }
+
+        // LAZY INIT untuk check-out
+        function initCheckout() {
+            if (checkoutFp) return;
+            
+            checkoutFp = flatpickr('#checkout-date', {
+                locale: 'id',
+                dateFormat: 'd/m/Y H:i',
+                enableTime: true,
+                time_24hr: true,
+                minDate: new Date().fp_incr(1),
+                static: false,
+                onOpen: function (selectedDates, dateStr, instance) {
+                    repositionOnScroll(instance);  // Update posisi saat scroll
+                },
+                onChange: function (selectedDates) {
+                    if (selectedDates.length > 0) {
+                        $('#display-checkout').text(
+                            selectedDates[0].toLocaleString('id-ID', {
+                                day: '2-digit', month: 'long', year: 'numeric',
+                                hour: '2-digit', minute: '2-digit'
+                            })
+                        );
+                    }
+                }
+            });
+        }
+
+        // Trigger lazy init
+        $('#checkin-date').on('click focus', function (e) {
+            if (!checkinFp) {
+                e.preventDefault();
+                initCheckin();
+                setTimeout(() => checkinFp.open(), 0);
             }
         });
 
-        const checkoutFp = flatpickr('#checkout-date', {
-            locale: 'id',
-            dateFormat: 'd/m/Y H:i',
-            enableTime: true,
-            time_24hr: true,
-            minDate: new Date().fp_incr(1),
-            appendTo: document.body,   // FIX scroll
-            onChange: function (selectedDates) {
-                if (selectedDates.length > 0) {
-                    $('#display-checkout').text(
-                        selectedDates[0].toLocaleString('id-ID', {
-                            day: '2-digit', month: 'long', year: 'numeric',
-                            hour: '2-digit', minute: '2-digit'
-                        })
-                    );
-                }
+        $('#checkout-date').on('click focus', function (e) {
+            if (!checkoutFp) {
+                e.preventDefault();
+                initCheckout();
+                setTimeout(() => checkoutFp.open(), 0);
             }
         });
     }
