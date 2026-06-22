@@ -23553,13 +23553,11 @@ span.flatpickr-weekday {
 
 /* Hover Rows Only */
 .table-hover tbody tr {
-    transition: all 0.2s ease;
+    transition: background-color 0.15s ease-in-out;
 }
 
 .table-hover tbody tr:hover {
     background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-    transform: scale(1.002);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 /* Contextual Colors */
