@@ -2634,8 +2634,37 @@ select.form-control[multiple] option {
 }
 
 .checkbox-card.selected {
-    border-color: var(--accent);
+    border-color: #0078d4; /* Menyamakan warna border dengan badge */
     background: var(--accent-light);
+    position: relative; /* Wajib agar badge menempel di pojok */
+    overflow: hidden; /* Opsional: Agar badge terpotong mengikuti lengkungan border-radius kartu */
+}
+
+/* Badge Centang di Pojok Kanan Atas */
+.checkmark-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #0078d4; /* Warna biru */
+    
+    /* Membuat bentuk segitiga di pojok kanan atas */
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    
+    /* Mengatur posisi ikon centang di dalam segitiga */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 4px 6px; /* Menyesuaikan posisi ikon agar pas di tengah segitiga */
+    pointer-events: none; /* Agar tidak mengganggu klik pada kartu */
+}
+
+/* Style untuk ikon SVG di dalamnya */
+.checkmark-badge svg {
+    width: 16px;
+    height: 16px;
+    stroke: white; /* Warna centang putih */
 }
 
 .checkbox-card-title {

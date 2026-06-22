@@ -446,6 +446,11 @@
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
                 <div class="checkbox-card selected" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
                     <input type="checkbox" checked hidden>
+                    <div class="checkmark-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
                     <div class="checkbox-card-title">💎 Premium</div>
                     <div class="checkbox-card-desc">Full access to all features</div>
                     <div style="margin-top: 8px; font-size: 16px; font-weight: 700; color: var(--accent);">$99/mo</div>
@@ -491,10 +496,20 @@
             <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px;">
                 <div class="checkbox-card selected" style="text-align: center; padding: 12px 8px;" onclick="this.classList.toggle('selected');">
                     <input type="checkbox" hidden checked>
+                    <div class="checkmark-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
                     <div style="font-weight: 600; font-size: 13px;">Mon</div>
                 </div>
                 <div class="checkbox-card selected" style="text-align: center; padding: 12px 8px;" onclick="this.classList.toggle('selected');">
                     <input type="checkbox" hidden checked>
+                    <div class="checkmark-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
                     <div style="font-weight: 600; font-size: 13px;">Tue</div>
                 </div>
                 <div class="checkbox-card" style="text-align: center; padding: 12px 8px;" onclick="this.classList.toggle('selected');">
@@ -503,6 +518,11 @@
                 </div>
                 <div class="checkbox-card selected" style="text-align: center; padding: 12px 8px;" onclick="this.classList.toggle('selected');">
                     <input type="checkbox" hidden checked>
+                    <div class="checkmark-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
                     <div style="font-weight: 600; font-size: 13px;">Thu</div>
                 </div>
                 <div class="checkbox-card" style="text-align: center; padding: 12px 8px;" onclick="this.classList.toggle('selected');">
