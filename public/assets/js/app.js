@@ -8941,3 +8941,170 @@ function dsgtResetFilterForm(formId, dateOperatorId) {
         }
     }
 }
+
+/* ============================================
+   FLATPICKR REUSABLE MODULE
+   Lazy initialization + smooth scroll repositioning
+   ============================================ */
+
+const DSGTFlatpickr = {
+    // Helper: update posisi kalender saat scroll dengan smooth animation
+    repositionOnScroll(instance) {
+        let ticking = false;
+        
+        const handler = () => {
+            // RequestAnimationFrame untuk smooth 60fps
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    if (instance.isOpen) {
+                        // Tambahkan CSS transition untuk smooth movement
+                        const calendar = instance.calendarContainer;
+                        if (calendar) {
+                            calendar.style.transition = 'top 0.1s ease-out, left 0.1s ease-out';
+                        }
+                        
+                        instance._positionCalendar();
+                        
+                        // Remove transition setelah selesai
+                        setTimeout(() => {
+                            if (calendar) {
+                                calendar.style.transition = '';
+                            }
+                        }, 100);
+                    }
+                    ticking = false;
+                });
+                
+                ticking = true;
+            }
+        };
+        
+        // Listen scroll dengan capture phase
+        window.addEventListener('scroll', handler, { passive: true, capture: true });
+        
+        // Cleanup kalau kalender ditutup manual
+        instance.config.onClose.push(function () {
+            window.removeEventListener('scroll', handler, { capture: true });
+        });
+    },
+
+    // Build config dari data attributes
+    buildConfigFromData($input, customConfig = {}) {
+        const config = {
+            locale: 'id',
+            dateFormat: 'd/m/Y',
+            allowInput: false,
+            disableMobile: true,
+            static: false,
+            onOpen: function (selectedDates, dateStr, instance) {
+                DSGTFlatpickr.repositionOnScroll(instance);
+            },
+            ...customConfig
+        };
+
+        // Aktifkan time picker
+        if ($input.data('show-time')) {
+            config.enableTime = true;
+            config.time_24hr = true;
+            config.dateFormat = 'd/m/Y H:i';
+        }
+
+        // Mode: range / multiple
+        if ($input.data('mode')) {
+            config.mode = $input.data('mode');
+        }
+
+        // Min / Max date
+        if ($input.data('min-date')) config.minDate = $input.data('min-date');
+        if ($input.data('max-date')) config.maxDate = $input.data('max-date');
+
+        // Week numbers
+        if ($input.data('week-numbers')) config.weekNumbers = true;
+
+        // Custom date format
+        if ($input.data('date-format')) config.dateFormat = $input.data('date-format');
+
+        return config;
+    },
+
+    // Initialize single flatpickr dengan lazy loading
+    initLazy(inputSelector, customConfig = {}) {
+        const $input = $(inputSelector);
+        if (!$input.length) return null;
+
+        let fpInitialized = false;
+        let fpInstance = null;
+
+        function initFlatpickr() {
+            if (fpInitialized) return fpInstance;
+            
+            const config = DSGTFlatpickr.buildConfigFromData($input, customConfig);
+            fpInstance = $input.flatpickr(config);
+            fpInitialized = true;
+            
+            // Auto-open setelah init
+            setTimeout(() => fpInstance.open(), 0);
+            
+            return fpInstance;
+        }
+
+        // Trigger init saat click atau focus
+        $input.on('click focus', function (e) {
+            if (!fpInitialized) {
+                e.preventDefault();
+                initFlatpickr();
+            }
+        });
+
+        return {
+            getInstance: () => fpInstance,
+            isInitialized: () => fpInitialized
+        };
+    },
+
+    // Initialize multiple flatpickr dari selector (lazy)
+    initMultipleLazy(selector, customConfig = {}) {
+        const instances = [];
+        
+        $(selector).each(function () {
+            const result = DSGTFlatpickr.initLazy(this, customConfig);
+            if (result) instances.push(result);
+        });
+        
+        return instances;
+    },
+
+    // Initialize flatpickr langsung (bukan lazy)
+    init(selector, customConfig = {}) {
+        const $input = $(selector);
+        if (!$input.length) return null;
+
+        const config = DSGTFlatpickr.buildConfigFromData($input, customConfig);
+        const instance = $input.flatpickr(config);
+        
+        return instance;
+    },
+
+    // Initialize inline calendar
+    initInline(containerSelector, customConfig = {}) {
+        const $container = $(containerSelector);
+        if (!$container.length) return null;
+
+        const config = {
+            inline: true,
+            locale: 'id',
+            dateFormat: 'd/m/Y',
+            ...customConfig
+        };
+
+        return flatpickr(containerSelector, config);
+    },
+
+    // Auto-init semua element dengan data-toggle="flatpickr"
+    autoInit(customConfig = {}) {
+        return DSGTFlatpickr.initMultipleLazy('[data-toggle="flatpickr"]', customConfig);
+    }
+};
+
+// Export ke global scope untuk usage di Blade templates
+window.DSGTFlatpickr = DSGTFlatpickr;
