@@ -647,10 +647,19 @@
                         <label class="ig-label">Action Dropdown</label>
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Select action...">
-                            <button class="btn btn-primary">Action</button>
-                            <button class="btn btn-primary dropdown-toggle" style="border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
-                                <i class="fa-solid fa-caret-down"></i>
-                            </button>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Action</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus me-2"></i>Add New</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-edit me-2"></i>Edit</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash me-2"></i>Delete</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-download me-2"></i>Export</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -658,12 +667,20 @@
                         <label class="ig-label">Search with Filter</label>
                         <div class="input-group">
                             <input type="search" class="form-control" placeholder="Search items...">
-                            <button class="btn btn-success">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                            <button class="btn btn-success dropdown-toggle" style="border-radius: 0 var(--radius-sm) var(--radius-sm) 0;">
-                                <i class="fa-solid fa-caret-down"></i>
-                            </button>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-success">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-filter me-2"></i>All Items</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user me-2"></i>Users</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-box me-2"></i>Products</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-shopping-cart me-2"></i>Orders</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
