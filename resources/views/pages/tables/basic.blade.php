@@ -150,6 +150,20 @@
                             </div>
                         </div>
 
+                        <!-- Filter: Updated Date (DateTime) -->
+                        <div class="dsgt-filter-row">
+                            <label class="dsgt-filter-label">Updated Date</label>
+                            <div class="dsgt-filter-inputs" id="updatedDateFilterContainer">
+                                <select class="dsgt-filter-operator" id="updatedDateOperator" onchange="dsgtToggleDateInputs('updatedDateOperator', 'updatedDateFilterContainer', 'updatedDateInput1')">
+                                    <option value=">=">>=</option>
+                                    <option value="<="><=</option>
+                                    <option value="=" selected>=</option>
+                                    <option value="BETWEEN">⇄</option>
+                                </select>
+                                <input type="text" id="updatedDateInput1" class="dsgt-filter-input dsgt-flatpickr" data-date-format="d/m/Y H:i" data-show-time="true" placeholder="Select date & time...">
+                            </div>
+                        </div>
+
                         <!-- Filter: Phone -->
                         <div class="dsgt-filter-row">
                             <label class="dsgt-filter-label">Phone</label>
