@@ -21374,17 +21374,40 @@ table.dataTable tbody tr:nth-child(even):hover {
 .dsgt-filter-operator {
     width: 100px;
     height: 40px;
-    padding: 8px 12px;
-    text-align: center;
+    padding: 8px 32px 8px 12px;
+    text-align: left;
     border: 1px solid var(--border);
     border-radius: 8px;
     background: white;
     cursor: pointer;
     transition: border-color 0.2s;
+    
+    /* Custom arrow - disable native */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    /* Custom SVG Arrow */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4"><path fill="%23666" d="M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 10px auto;
 }
 
 .dsgt-filter-operator:focus {
     outline: none;
+    border-color: var(--accent);
+}
+
+/* Dark Mode for Filter Operator */
+[data-theme="dark"] .dsgt-filter-operator {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    border-color: #334155;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4"><path fill="%2394a3b8" d="M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z"/></svg>');
+}
+
+[data-theme="dark"] .dsgt-filter-operator:focus {
     border-color: var(--accent);
 }
 
