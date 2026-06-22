@@ -463,14 +463,15 @@
         <div class="card-body">
             <div class="s2-example">
                 <label class="s2-label">
-                    User Role
-                    <span class="s2-hint">👤 icon</span>
+                    Payment Method
+                    <span class="s2-hint">💳 icon</span>
                 </label>
-                <div class="select-wrapper select-with-icon" data-icon="user-shield">
-                    <i class="fa-solid fa-user-shield"></i>
+                <div class="select-wrapper select-with-icon" data-icon="credit-card">
+                    <i class="fa-solid fa-credit-card"></i>
+
                     <select>
                         <option value="">-- Select Role --</option>
-                        <option value="admin" selected>Administrator</option>
+                        <option value="visa" selected>💳 Visa</option>
                         <option value="editor">Editor</option>
                         <option value="author">Author</option>
                         <option value="user">User</option>
@@ -1049,6 +1050,36 @@
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script>
 $(document).ready(function() {
+    // Helper function to get icon Unicode from Font Awesome class
+    function getIconUnicode($icon) {
+        const iconMap = {
+            'fa-user-shield': '\\f505',
+            'fa-credit-card': '\\f09d',
+            'fa-flag': '\\f024',
+            'fa-globe': '\\f0ac',
+            'fa-layer-group': '\\f5fd',
+            'fa-list-check': '\\f0ae',
+            'fa-check-double': '\\f560',
+            'fa-tags': '\\f02c',
+            'fa-magnifying-glass': '\\f002',
+            'fa-icons': '\\f86d',
+            'fa-circle-check': '\\f058',
+            'fa-circle-xmark': '\\f057',
+            'fa-ban': '\\f05e',
+            'fa-lock': '\\f023',
+            'fa-clipboard-list': '\\f46d',
+            'fa-user-plus': '\\f234',
+            'fa-code': '\\f121'
+        };
+        
+        for (const [key, value] of Object.entries(iconMap)) {
+            if ($icon.hasClass(key)) {
+                return value;
+            }
+        }
+        return null;
+    }
+    
     // Initialize all basic select elements with Select2
     $('.select-wrapper select').not('[multiple]').each(function() {
         const $select = $(this);
@@ -1072,6 +1103,22 @@ $(document).ready(function() {
         
         // Mark wrapper as initialized to hide original icon
         $wrapper.addClass('select2-initialized');
+        
+        // If wrapper has icon, transfer icon class to Select2 container
+        if ($wrapper.hasClass('select-with-icon')) {
+            const $icon = $wrapper.find('i.fa-solid, i.fas, i.far, i.fab');
+            if ($icon.length) {
+                const iconClass = $icon.attr('class');
+                const $select2Container = $select.next('.select2-container');
+                $select2Container.addClass('select-with-icon');
+                
+                // Add icon data attribute for CSS pseudo-element
+                const iconUnicode = getIconUnicode($icon);
+                if (iconUnicode) {
+                    $select2Container.css('--icon-content', `"${iconUnicode}"`);
+                }
+            }
+        }
     });
     
     // Initialize multi-select with Select2
