@@ -22734,14 +22734,21 @@ table.dataTable tbody tr:nth-child(even):hover {
    ============================================ */
 
 /* Override overflow pada container untuk flatpickr */
-.dsgt-container-fluid,
-.dsgt-row,
-.dsgt-col-12,
-.dsgt-col-md-6,
-.dsgt-col-md-5,
-.dsgt-col-md-2,
-.card,
-.card-body {
+.dsgt-flatpickr-wrapper,
+.dsgt-flatpickr-container,
+[data-toggle="flatpickr"] {
+    overflow: visible !important;
+}
+
+/* Fix overflow untuk parent containers flatpickr */
+.dsgt-container-fluid:has([data-toggle="flatpickr"]),
+.dsgt-row:has([data-toggle="flatpickr"]),
+.dsgt-col-12:has([data-toggle="flatpickr"]),
+.dsgt-col-md-6:has([data-toggle="flatpickr"]),
+.dsgt-col-md-5:has([data-toggle="flatpickr"]),
+.dsgt-col-md-2:has([data-toggle="flatpickr"]),
+.card:has([data-toggle="flatpickr"]),
+.card-body:has([data-toggle="flatpickr"]) {
     overflow: visible !important;
 }
 
