@@ -621,98 +621,266 @@
     </div>
 </div>
 
-<!-- Segmented Buttons -->
+<!-- Input with Dropdown -->
 <div class="ig-section-title">
-    <i class="fa-solid fa-grip"></i>
-    Segmented Buttons
+    <i class="fa-solid fa-list-dropdown"></i>
+    Input with Dropdown <span class="badge badge-warning">Popular</span>
 </div>
 
-<div class="input-groups-grid full-width">
+<div class="input-groups-grid">
+    <!-- Dropdown on Left -->
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
-                <div class="card-icon bg-info">
-                    <i class="fa-solid fa-rectangle-list"></i>
+                <div class="card-icon bg-primary">
+                    <i class="fa-solid fa-arrow-left"></i>
                 </div>
                 <div>
-                    <h3>Dropdown with Split Button</h3>
-                    <p class="card-subtitle">Button + dropdown toggle</p>
+                    <h3>Dropdown Prepend (Left)</h3>
+                    <p class="card-subtitle">Dropdown before input field</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
-            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-                <div>
-                    <div class="ig-example">
-                        <label class="ig-label">Action Dropdown</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Select action...">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-primary">Action</button>
-                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="visually-hidden">Toggle Dropdown</span>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus me-2"></i>Add New</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-edit me-2"></i>Edit</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash me-2"></i>Delete</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-download me-2"></i>Export</a></li>
-                                </ul>
-                            </div>
-                        </div>
+            <div class="ig-example">
+                <label class="ig-label">Search with Category</label>
+                <div class="input-group">
+                    <div class="dropdown input-group-dropdown">
+                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-folder"></i>
+                            <span>All Categories</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-value="all"><i class="fa-solid fa-layer-group"></i> All Categories</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="products"><i class="fa-solid fa-box"></i> Products</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="services"><i class="fa-solid fa-briefcase"></i> Services</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="blog"><i class="fa-solid fa-newspaper"></i> Blog</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="support"><i class="fa-solid fa-headset"></i> Support</a></li>
+                        </ul>
                     </div>
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button class="btn btn-primary" type="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
 
-                    <div class="ig-example">
-                        <label class="ig-label">Search with Filter</label>
-                        <div class="input-group">
-                            <input type="search" class="form-control" placeholder="Search items...">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-success">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="visually-hidden">Toggle Dropdown</span>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-filter me-2"></i>All Items</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user me-2"></i>Users</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-box me-2"></i>Products</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-shopping-cart me-2"></i>Orders</a></li>
-                                </ul>
-                            </div>
-                        </div>
+            <div class="ig-example">
+                <label class="ig-label">Phone with Country Code</label>
+                <div class="input-group">
+                    <div class="dropdown input-group-dropdown">
+                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="flag-icon">🇮🇩</span>
+                            <span>+62</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-value="+62"><span class="flag-icon">🇮🇩</span> Indonesia (+62)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="+1"><span class="flag-icon">🇺🇸</span> USA (+1)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="+44"><span class="flag-icon">🇬🇧</span> UK (+44)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="+81"><span class="flag-icon">🇯🇵</span> Japan (+81)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="+86"><span class="flag-icon">🇨🇳</span> China (+86)</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="+61"><span class="flag-icon">🇦🇺</span> Australia (+61)</a></li>
+                        </ul>
+                    </div>
+                    <input type="tel" class="form-control" placeholder="812-3456-7890">
+                </div>
+            </div>
+
+            <div class="ig-example">
+                <label class="ig-label">Currency Amount</label>
+                <div class="input-group">
+                    <div class="dropdown input-group-dropdown">
+                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span>USD</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-value="USD"><i class="fa-solid fa-dollar-sign"></i> USD - US Dollar</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="EUR"><i class="fa-solid fa-euro-sign"></i> EUR - Euro</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="GBP"><i class="fa-solid fa-sterling-sign"></i> GBP - British Pound</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="IDR"><i class="fa-solid fa-rupiah-sign"></i> IDR - Indonesian Rupiah</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="JPY"><i class="fa-solid fa-yen-sign"></i> JPY - Japanese Yen</a></li>
+                        </ul>
+                    </div>
+                    <input type="number" class="form-control" placeholder="0.00">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown on Right -->
+    <div class="content-card">
+        <div class="card-header">
+            <div class="card-header-left">
+                <div class="card-icon bg-success">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div>
+                    <h3>Dropdown Append (Right)</h3>
+                    <p class="card-subtitle">Dropdown after input field</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="ig-example">
+                <label class="ig-label">Email with Domain</label>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="username">
+                    <div class="dropdown input-group-dropdown">
+                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>@gmail.com</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-value="@gmail.com">@gmail.com</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="@yahoo.com">@yahoo.com</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="@outlook.com">@outlook.com</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="@company.com">@company.com</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="custom">Custom Domain...</a></li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
+            <div class="ig-example">
+                <label class="ig-label">API Endpoint</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="api/v1/resource">
+                    <div class="dropdown input-group-dropdown">
+                        <button class="btn btn-dropdown btn-dropdown-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>GET</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-value="GET"><i class="fa-solid fa-circle-check text-success"></i> GET</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="POST"><i class="fa-solid fa-circle-plus text-primary"></i> POST</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="PUT"><i class="fa-solid fa-circle-arrow-up text-warning"></i> PUT</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="DELETE"><i class="fa-solid fa-circle-xmark text-danger"></i> DELETE</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="PATCH"><i class="fa-solid fa-circle-half-stroke text-info"></i> PATCH</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ig-example">
+                <label class="ig-label">Filter Value</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Enter value">
+                    <div class="dropdown input-group-dropdown">
+                        <button class="btn btn-dropdown btn-dropdown-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-filter"></i>
+                            <span>equals</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-value="equals"><i class="fa-solid fa-equals"></i> equals</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="contains"><i class="fa-solid fa-percent"></i> contains</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="starts"><i class="fa-solid fa-arrow-right"></i> starts with</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="ends"><i class="fa-solid fa-arrow-left"></i> ends with</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="regex"><i class="fa-solid fa-code"></i> regex</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown Both Sides -->
+    <div class="content-card">
+        <div class="card-header">
+            <div class="card-header-left">
+                <div class="card-icon bg-warning">
+                    <i class="fa-solid fa-arrows-left-right"></i>
+                </div>
                 <div>
-                    <div class="form-group">
-                        <h4 style="font-size: 14px; margin-bottom: 12px;">Input Group Features:</h4>
-                        <ul class="feature-list">
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <span>Text addons (prepend/append)</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <span>Icon addons</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <span>Button integration</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <span>Dropdown menus</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <span>Checkbox/Radio addons</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <span>Multiple addons support</span>
-                            </li>
+                    <h3>Dropdown on Both Sides</h3>
+                    <p class="card-subtitle">Dropdowns before and after input</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="ig-example">
+                <label class="ig-label">Advanced Search</label>
+                <div class="input-group">
+                    <div class="dropdown input-group-dropdown">
+                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Contains</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-value="contains"><i class="fa-solid fa-percent"></i> Contains</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="equals"><i class="fa-solid fa-equals"></i> Equals</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="starts"><i class="fa-solid fa-arrow-right"></i> Starts With</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="ends"><i class="fa-solid fa-arrow-left"></i> Ends With</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search term...">
+                    <div class="dropdown input-group-dropdown">
+                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-folder"></i>
+                            <span>All Fields</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-value="all"><i class="fa-solid fa-layer-group"></i> All Fields</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="name"><i class="fa-solid fa-user"></i> Name</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="email"><i class="fa-solid fa-envelope"></i> Email</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="phone"><i class="fa-solid fa-phone"></i> Phone</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ig-example">
+                <label class="ig-label">Price Range</label>
+                <div class="input-group">
+                    <div class="dropdown input-group-dropdown">
+                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span>USD</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-value="USD"><i class="fa-solid fa-dollar-sign"></i> USD</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="EUR"><i class="fa-solid fa-euro-sign"></i> EUR</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="IDR"><i class="fa-solid fa-rupiah-sign"></i> IDR</a></li>
+                        </ul>
+                    </div>
+                    <input type="number" class="form-control" placeholder="0">
+                    <div class="dropdown input-group-dropdown">
+                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>per unit</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-value="unit">per unit</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="kg">per kg</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="hour">per hour</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="month">per month</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ig-example">
+                <label class="ig-label">Date Range Filter</label>
+                <div class="input-group">
+                    <div class="dropdown input-group-dropdown">
+                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-calendar"></i>
+                            <span>From</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-value="from"><i class="fa-solid fa-calendar-day"></i> From Date</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="to"><i class="fa-solid fa-calendar-check"></i> To Date</a></li>
+                        </ul>
+                    </div>
+                    <input type="date" class="form-control">
+                    <div class="dropdown input-group-dropdown">
+                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Today</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-value="today">Today</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="yesterday">Yesterday</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="week">This Week</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="month">This Month</a></li>
                         </ul>
                     </div>
                 </div>
@@ -720,6 +888,653 @@
         </div>
     </div>
 </div>
+
+<!-- Segmented Buttons -->
+<div class="ig-section-title">
+    <i class="fa-solid fa-grip"></i>
+    Segmented Buttons <span class="badge badge-info">Advanced</span>
+</div>
+
+{{-- Segmented Buttons Section --}}
+<div class="input-groups-grid">
+    <!-- Basic Segmented Buttons -->
+    <div class="content-card">
+        <div class="card-header">
+            <div class="card-header-left">
+                <div class="card-icon bg-primary">
+                    <i class="fa-solid fa-toggle-on"></i>
+                </div>
+                <div>
+                    <h3>Basic Segmented Buttons</h3>
+                    <p class="card-subtitle">Toggle between multiple options</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="ig-example">
+                <label class="ig-label">View Mode</label>
+                <div class="btn-group-segmented" role="group" aria-label="View mode selector">
+                    <button type="button" class="btn-segment active" data-value="grid">
+                        <i class="fa-solid fa-grid-2"></i>
+                        <span>Grid</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="list">
+                        <i class="fa-solid fa-list"></i>
+                        <span>List</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="table">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Table</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="ig-example">
+                <label class="ig-label">Status Filter</label>
+                <div class="btn-group-segmented" role="group" aria-label="Status filter">
+                    <button type="button" class="btn-segment active" data-value="all">
+                        <span>All</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="active">
+                        <span>Active</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="inactive">
+                        <span>Inactive</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="pending">
+                        <span>Pending</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="ig-example">
+                <label class="ig-label">Time Range</label>
+                <div class="btn-group-segmented" role="group" aria-label="Time range">
+                    <button type="button" class="btn-segment" data-value="day">
+                        <span>24H</span>
+                    </button>
+                    <button type="button" class="btn-segment active" data-value="week">
+                        <span>7D</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="month">
+                        <span>30D</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="year">
+                        <span>1Y</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Icon Segmented Buttons -->
+    <div class="content-card">
+        <div class="card-header">
+            <div class="card-header-left">
+                <div class="card-icon bg-success">
+                    <i class="fa-solid fa-icons"></i>
+                </div>
+                <div>
+                    <h3>Icon Segmented Buttons</h3>
+                    <p class="card-subtitle">Icon-only segmented controls</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="ig-example">
+                <label class="ig-label">Text Alignment</label>
+                <div class="btn-group-segmented btn-group-icons" role="group" aria-label="Text alignment">
+                    <button type="button" class="btn-segment btn-segment-icon" data-value="left" title="Align Left">
+                        <i class="fa-solid fa-align-left"></i>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-icon active" data-value="center" title="Align Center">
+                        <i class="fa-solid fa-align-center"></i>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-icon" data-value="right" title="Align Right">
+                        <i class="fa-solid fa-align-right"></i>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-icon" data-value="justify" title="Justify">
+                        <i class="fa-solid fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="ig-example">
+                <label class="ig-label">Sort Order</label>
+                <div class="btn-group-segmented btn-group-icons" role="group" aria-label="Sort order">
+                    <button type="button" class="btn-segment btn-segment-icon active" data-value="asc" title="Ascending">
+                        <i class="fa-solid fa-arrow-down-a-z"></i>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-icon" data-value="desc" title="Descending">
+                        <i class="fa-solid fa-arrow-down-z-a"></i>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-icon" data-value="custom" title="Custom">
+                        <i class="fa-solid fa-sliders"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="ig-example">
+                <label class="ig-label">Display Density</label>
+                <div class="btn-group-segmented btn-group-icons" role="group" aria-label="Display density">
+                    <button type="button" class="btn-segment btn-segment-icon" data-value="compact" title="Compact">
+                        <i class="fa-solid fa-compress"></i>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-icon active" data-value="comfortable" title="Comfortable">
+                        <i class="fa-solid fa-expand"></i>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-icon" data-value="spacious" title="Spacious">
+                        <i class="fa-solid fa-arrows-to-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Color Variants -->
+    <div class="content-card">
+        <div class="card-header">
+            <div class="card-header-left">
+                <div class="card-icon bg-warning">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <div>
+                    <h3>Color Variants</h3>
+                    <p class="card-subtitle">Different color schemes</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="ig-example">
+                <label class="ig-label">Priority Level</label>
+                <div class="btn-group-segmented" role="group" aria-label="Priority level">
+                    <button type="button" class="btn-segment btn-segment-danger" data-value="urgent">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>Urgent</span>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-warning" data-value="high">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <span>High</span>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-success" data-value="normal">
+                        <i class="fa-solid fa-check-circle"></i>
+                        <span>Normal</span>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-info" data-value="low">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Low</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="ig-example">
+                <label class="ig-label">Theme Selection</label>
+                <div class="btn-group-segmented" role="group" aria-label="Theme selection">
+                    <button type="button" class="btn-segment btn-segment-primary active" data-value="light">
+                        <i class="fa-solid fa-sun"></i>
+                        <span>Light</span>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-dark" data-value="dark">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>Dark</span>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-secondary" data-value="auto">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>Auto</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="ig-example">
+                <label class="ig-label">Approval Status</label>
+                <div class="btn-group-segmented" role="group" aria-label="Approval status">
+                    <button type="button" class="btn-segment btn-segment-success active" data-value="approved">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Approved</span>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-warning" data-value="pending">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Pending</span>
+                    </button>
+                    <button type="button" class="btn-segment btn-segment-danger" data-value="rejected">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                        <span>Rejected</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Size Variants -->
+    <div class="content-card">
+        <div class="card-header">
+            <div class="card-header-left">
+                <div class="card-icon bg-info">
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+                <div>
+                    <h3>Size Variants</h3>
+                    <p class="card-subtitle">Small, default, and large sizes</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="ig-example">
+                <label class="ig-label">Small Size</label>
+                <div class="btn-group-segmented btn-group-sm" role="group" aria-label="Small size">
+                    <button type="button" class="btn-segment active" data-value="small">
+                        <span>Small</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="medium">
+                        <span>Medium</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="large">
+                        <span>Large</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="ig-example">
+                <label class="ig-label">Default Size</label>
+                <div class="btn-group-segmented" role="group" aria-label="Default size">
+                    <button type="button" class="btn-segment active" data-value="basic">
+                        <span>Basic</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="standard">
+                        <span>Standard</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="premium">
+                        <span>Premium</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="ig-example">
+                <label class="ig-label">Large Size</label>
+                <div class="btn-group-segmented btn-group-lg" role="group" aria-label="Large size">
+                    <button type="button" class="btn-segment active" data-value="starter">
+                        <i class="fa-solid fa-rocket"></i>
+                        <span>Starter</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="professional">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Professional</span>
+                    </button>
+                    <button type="button" class="btn-segment" data-value="enterprise">
+                        <i class="fa-solid fa-building"></i>
+                        <span>Enterprise</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@push('styles')
+<style>
+/* Input Group Dropdown Styles */
+.input-group-dropdown {
+    position: relative;
+    z-index: 1050 !important;
+}
+
+/* Elevate container when dropdown is shown */
+.ig-example:has(.show) {
+    position: relative;
+    z-index: 100;
+}
+
+/* Ensure dropdown menu appears above all content */
+.input-group-dropdown .dropdown-menu {
+    position: absolute;
+    z-index: 1050;
+    margin-top: 4px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius);
+    padding: 4px 0;
+    min-width: 180px;
+    background: var(--bg-primary);
+}
+
+/* Prevent parent containers from clipping dropdown - scoped to input-groups page only */
+.input-groups-grid .input-group,
+.input-groups-grid .ig-example {
+    overflow: visible !important;
+}
+
+/* Only apply to cards that contain input groups with dropdowns */
+.input-groups-grid .content-card .card-body:has(.input-group-dropdown) {
+    overflow: visible !important;
+}
+
+.input-group-dropdown .btn-dropdown {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-right: none;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    position: relative;
+}
+
+/* Remove right border from dropdown when it's not the last element */
+.input-group .input-group-dropdown:not(:last-child) .btn-dropdown {
+    border-right: none;
+}
+
+.input-group .input-group-dropdown:last-child .btn-dropdown {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    border-right: 1px solid var(--border-color);
+    border-left: none;
+}
+
+/* Input field border adjustments */
+.input-group .form-control {
+    border-left: 1px solid #d1d5db !important;
+}
+
+.input-group .form-control:first-child {
+    border-left: 1px solid #d1d5db !important;
+}
+
+.input-group .form-control:last-child {
+    border-right: 1px solid #d1d5db !important;
+}
+
+/* Button at the end */
+.input-group .btn:last-child {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.input-group-dropdown .btn-dropdown:hover {
+    background: var(--bg-hover);
+    border-color: var(--accent);
+    z-index: 10;
+}
+
+.input-group-dropdown .btn-dropdown.show {
+    background: var(--bg-hover);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+    z-index: 20;
+}
+
+/* Focus states for form controls */
+.input-group .form-control:focus {
+    z-index: 5;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.input-group-dropdown .btn-dropdown .flag-icon {
+    font-size: 16px;
+}
+
+/* Color variants for dropdown buttons */
+.btn-dropdown-success {
+    background: var(--success) !important;
+    color: #fff !important;
+    border-color: var(--success) !important;
+}
+
+.btn-dropdown-success:hover,
+.btn-dropdown-success.show {
+    background: var(--success-dark) !important;
+    border-color: var(--success-dark) !important;
+}
+
+.btn-dropdown-info {
+    background: var(--info) !important;
+    color: #fff !important;
+    border-color: var(--info) !important;
+}
+
+.btn-dropdown-info:hover,
+.btn-dropdown-info.show {
+    background: var(--info-dark) !important;
+    border-color: var(--info-dark) !important;
+}
+
+.btn-dropdown-warning {
+    background: var(--warning) !important;
+    color: #000 !important;
+    border-color: var(--warning) !important;
+}
+
+.btn-dropdown-warning:hover,
+.btn-dropdown-warning.show {
+    background: var(--warning-dark) !important;
+    border-color: var(--warning-dark) !important;
+}
+
+.btn-dropdown-danger {
+    background: var(--danger) !important;
+    color: #fff !important;
+    border-color: var(--danger) !important;
+}
+
+.btn-dropdown-danger:hover,
+.btn-dropdown-danger.show {
+    background: var(--danger-dark) !important;
+    border-color: var(--danger-dark) !important;
+}
+
+/* Dropdown menu styling */
+.input-group-dropdown .dropdown-menu {
+    margin-top: 4px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius);
+    padding: 4px 0;
+    min-width: 180px;
+    background: var(--bg-primary);
+}
+
+/* Remove bullet points from dropdown menu */
+ul.dropdown-menu.show {
+    list-style-type: none !important;
+    list-style-image: none !important;
+    list-style-position: outside;
+    padding-left: 0px !important;
+}
+
+/* Ensure no bullets on list items */
+ul.dropdown-menu.show li {
+    list-style-type: none !important;
+}
+
+.input-group-dropdown .dropdown-item {
+    padding: 8px 16px;
+    font-size: 13px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.15s ease;
+}
+
+.input-group-dropdown .dropdown-item:hover {
+    background: var(--bg-hover);
+    color: var(--accent);
+}
+
+.input-group-dropdown .dropdown-item i {
+    font-size: 14px;
+    width: 16px;
+    text-align: center;
+}
+
+/* Segmented Button Group */
+.btn-group-segmented {
+    display: inline-flex;
+    gap: 0;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+}
+
+.btn-group-segmented.btn-group-icons {
+    width: 100%;
+}
+
+/* Individual Segment */
+.btn-segment {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    position: relative;
+}
+
+.btn-segment:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+}
+
+.btn-segment.active {
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-segment:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Icon-only segments */
+.btn-segment-icon {
+    padding: 8px 12px;
+    min-width: 40px;
+}
+
+.btn-segment-icon i {
+    font-size: 14px;
+}
+
+/* Color variants */
+.btn-segment-primary.active {
+    background: var(--primary);
+}
+
+.btn-segment-success.active {
+    background: var(--success);
+}
+
+.btn-segment-warning.active {
+    background: var(--warning);
+    color: #000;
+}
+
+.btn-segment-danger.active {
+    background: var(--danger);
+}
+
+.btn-segment-info.active {
+    background: var(--info);
+}
+
+.btn-segment-dark.active {
+    background: var(--dark);
+}
+
+.btn-segment-secondary.active {
+    background: var(--secondary);
+}
+
+/* Size variants */
+.btn-group-sm .btn-segment {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.btn-group-lg .btn-segment {
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+.btn-group-lg .btn-segment i {
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .btn-group-segmented {
+        width: 100%;
+    }
+    
+    .btn-segment {
+        flex: 1;
+        padding: 8px 8px;
+    }
+    
+    .btn-segment span {
+        display: none;
+    }
+    
+    .btn-segment i {
+        margin: 0;
+    }
+}
+</style>
+@endpush
+
+@push('scripts')
+<script>
+$(document).ready(function() {
+    // Input group dropdown selection handler
+    $('.input-group-dropdown .dropdown-item').on('click', function(e) {
+        e.preventDefault();
+        
+        const dropdown = $(this).closest('.input-group-dropdown');
+        const button = dropdown.find('.btn-dropdown');
+        const selectedValue = $(this).data('value');
+        
+        // Update button content
+        button.find('span').html($(this).html());
+        
+        // Store selected value
+        button.data('selected', selectedValue);
+        
+        console.log('Dropdown selected:', selectedValue);
+    });
+    
+    // Segmented button click handler
+    $('.btn-segment').on('click', function() {
+        const group = $(this).closest('.btn-group-segmented');
+        
+        // Remove active class from siblings
+        group.find('.btn-segment').removeClass('active');
+        
+        // Add active class to clicked button
+        $(this).addClass('active');
+        
+        // Get selected value
+        const selectedValue = $(this).data('value');
+        console.log('Segment selected:', selectedValue);
+    });
+});
+</script>
+@endpush
 
 <!-- Complete Form Example -->
 <div class="ig-section-title">
