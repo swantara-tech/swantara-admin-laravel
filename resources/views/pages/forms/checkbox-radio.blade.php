@@ -445,7 +445,7 @@
         <div class="card-body">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
                 <div class="checkbox-card selected" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
-                    <input type="checkbox" checked hidden>
+                    <input type="checkbox" checked>
                     <div class="checkmark-badge">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="20 6 9 17 4 12"></polyline>
@@ -457,21 +457,21 @@
                 </div>
 
                 <div class="checkbox-card" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
-                    <input type="checkbox" hidden>
+                    <input type="checkbox">
                     <div class="checkbox-card-title">🥈 Standard</div>
                     <div class="checkbox-card-desc">Basic features included</div>
                     <div style="margin-top: 8px; font-size: 16px; font-weight: 700; color: var(--text-secondary);">$49/mo</div>
                 </div>
 
                 <div class="checkbox-card" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
-                    <input type="checkbox" hidden>
+                    <input type="checkbox">
                     <div class="checkbox-card-title">🥉 Basic</div>
                     <div class="checkbox-card-desc">Limited features</div>
                     <div style="margin-top: 8px; font-size: 16px; font-weight: 700; color: var(--text-secondary);">$19/mo</div>
                 </div>
 
                 <div class="checkbox-card" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
-                    <input type="checkbox" hidden>
+                    <input type="checkbox">
                     <div class="checkbox-card-title">🆓 Free</div>
                     <div class="checkbox-card-desc">Try before you buy</div>
                     <div style="margin-top: 8px; font-size: 16px; font-weight: 700; color: var(--success);">Free</div>
@@ -495,7 +495,7 @@
         <div class="card-body">
             <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px;">
                 <div class="checkbox-card selected" style="text-align: center; padding: 12px 8px;" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
-                    <input type="checkbox" hidden checked>
+                    <input type="checkbox" checked>
                     <div class="checkmark-badge">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="20 6 9 17 4 12"></polyline>
@@ -504,7 +504,7 @@
                     <div style="font-weight: 600; font-size: 13px;">Mon</div>
                 </div>
                 <div class="checkbox-card selected" style="text-align: center; padding: 12px 8px;" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
-                    <input type="checkbox" hidden checked>
+                    <input type="checkbox" checked>
                     <div class="checkmark-badge">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="20 6 9 17 4 12"></polyline>
@@ -513,11 +513,11 @@
                     <div style="font-weight: 600; font-size: 13px;">Tue</div>
                 </div>
                 <div class="checkbox-card" style="text-align: center; padding: 12px 8px;" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
-                    <input type="checkbox" hidden>
+                    <input type="checkbox">
                     <div style="font-weight: 600; font-size: 13px;">Wed</div>
                 </div>
                 <div class="checkbox-card selected" style="text-align: center; padding: 12px 8px;" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
-                    <input type="checkbox" hidden checked>
+                    <input type="checkbox" checked>
                     <div class="checkmark-badge">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="20 6 9 17 4 12"></polyline>
@@ -526,15 +526,15 @@
                     <div style="font-weight: 600; font-size: 13px;">Thu</div>
                 </div>
                 <div class="checkbox-card" style="text-align: center; padding: 12px 8px;" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
-                    <input type="checkbox" hidden>
+                    <input type="checkbox">
                     <div style="font-weight: 600; font-size: 13px;">Fri</div>
                 </div>
                 <div class="checkbox-card" style="text-align: center; padding: 12px 8px;" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
-                    <input type="checkbox" hidden>
+                    <input type="checkbox">
                     <div style="font-weight: 600; font-size: 13px;">Sat</div>
                 </div>
                 <div class="checkbox-card" style="text-align: center; padding: 12px 8px;" onclick="this.classList.toggle('selected'); this.querySelector('input').checked = !this.querySelector('input').checked;">
-                    <input type="checkbox" hidden>
+                    <input type="checkbox">
                     <div style="font-weight: 600; font-size: 13px;">Sun</div>
                 </div>
             </div>

@@ -2631,6 +2631,10 @@ select.form-control[multiple] option {
     position: absolute;
     top: 12px;
     right: 12px;
+    opacity: 0; /* Sembunyikan checkbox tapi tetap bisa di-select */
+    width: 0;
+    height: 0;
+    pointer-events: none;
 }
 
 .checkbox-card.selected {
