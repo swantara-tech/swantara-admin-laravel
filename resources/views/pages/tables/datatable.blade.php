@@ -24,6 +24,165 @@
         </div>
     </div>
     <div class="card-body no-padding">
+
+        <!-- Filter Section -->
+        <div style="margin-bottom: 20px; padding: 20px 24px;">
+            <!-- Advanced Search Toggle -->
+            <div style="display: flex; justify-content: flex-end; margin-bottom: 12px;">
+                <a href="#filterForm" class="dsgt-advanced-search-toggle" id="advancedSearchToggle">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span>Advanced Search</span>
+                    <i class="fa-solid fa-chevron-down" id="advancedSearchIcon"></i>
+                </a>
+            </div>
+
+            <!-- Filter Form -->
+            <div id="filterForm" class="dsgt-filter-form dsgt-filter-expanded">
+                <form id="userFilterForm">
+                    <div class="dsgt-filter-fields">
+                        <!-- Filter: Username -->
+                        <div class="dsgt-filter-row">
+                            <label class="dsgt-filter-label">Username</label>
+                            <div class="dsgt-filter-inputs">
+                                <select class="dsgt-filter-operator">
+                                    <option value="=">=</option>
+                                    <option value="LIKE" selected>LIKE</option>
+                                    <option value="LIKE -%">LIKE -%</option>
+                                    <option value="!=">!=</option>
+                                    <option value="IN">IN</option>
+                                    <option value="NOT IN">NOT IN</option>
+                                </select>
+                                <input type="text" class="dsgt-filter-input" placeholder="Enter username...">
+                            </div>
+                        </div>
+
+                        <!-- Filter: Email -->
+                        <div class="dsgt-filter-row">
+                            <label class="dsgt-filter-label">Email</label>
+                            <div class="dsgt-filter-inputs">
+                                <select class="dsgt-filter-operator">
+                                    <option value="=">=</option>
+                                    <option value="LIKE" selected>LIKE</option>
+                                    <option value="LIKE -%">LIKE -%</option>
+                                    <option value="!=">!=</option>
+                                </select>
+                                <input type="email" class="dsgt-filter-input" placeholder="Enter email...">
+                            </div>
+                        </div>
+
+                        <!-- Filter: Role -->
+                        <div class="dsgt-filter-row">
+                            <label class="dsgt-filter-label">Role</label>
+                            <div class="dsgt-filter-inputs">
+                                <select class="dsgt-filter-operator">
+                                    <option value="=" selected>=</option>
+                                    <option value="!=">!=</option>
+                                    <option value="IN">IN</option>
+                                    <option value="NOT IN">NOT IN</option>
+                                </select>
+                                <select class="dsgt-filter-select">
+                                    <option value="">All Roles</option>
+                                    <option value="Administrator">Administrator</option>
+                                    <option value="Editor">Editor</option>
+                                    <option value="Author">Author</option>
+                                    <option value="User">User</option>
+                                    <option value="Support">Support</option>
+                                    <option value="Analyst">Analyst</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Filter: Status -->
+                        <div class="dsgt-filter-row">
+                            <label class="dsgt-filter-label">Status</label>
+                            <div class="dsgt-filter-inputs">
+                                <select class="dsgt-filter-operator">
+                                    <option value="=" selected>=</option>
+                                    <option value="!=">!=</option>
+                                </select>
+                                <select class="dsgt-filter-select">
+                                    <option value="">All Status</option>
+                                    <option value="Active">Active</option>
+                                    <option value="Inactive">Inactive</option>
+                                    <option value="Pending">Pending</option>
+                                    <option value="Suspended">Suspended</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Filter: Date Range -->
+                        <div class="dsgt-filter-row">
+                            <label class="dsgt-filter-label">Created Date</label>
+                            <div class="dsgt-filter-inputs" id="dateFilterContainer">
+                                <select class="dsgt-filter-operator" id="dateOperator" onchange="dsgtToggleDateInputs('dateOperator', 'dateFilterContainer', 'dateInput1')">
+                                    <option value=">=">>=</option>
+                                    <option value="<="><=</option>
+                                    <option value="=" selected>=</option>
+                                    <option value="BETWEEN">⇄</option>
+                                </select>
+                                <input type="text" id="dateInput1" class="dsgt-filter-input dsgt-flatpickr" data-date-format="d/m/Y" placeholder="Select date...">
+                            </div>
+                        </div>
+
+                        <!-- Filter: Updated Date (DateTime) -->
+                        <div class="dsgt-filter-row">
+                            <label class="dsgt-filter-label">Updated Date</label>
+                            <div class="dsgt-filter-inputs" id="updatedDateFilterContainer">
+                                <select class="dsgt-filter-operator" id="updatedDateOperator" onchange="dsgtToggleDateInputs('updatedDateOperator', 'updatedDateFilterContainer', 'updatedDateInput1')">
+                                    <option value=">=">>=</option>
+                                    <option value="<="><=</option>
+                                    <option value="=" selected>=</option>
+                                    <option value="BETWEEN">⇄</option>
+                                </select>
+                                <input type="text" id="updatedDateInput1" class="dsgt-filter-input dsgt-flatpickr" data-date-format="d/m/Y H:i" data-show-time="true" placeholder="Select date & time...">
+                            </div>
+                        </div>
+
+                        <!-- Filter: Jam Masuk (Time Only) -->
+                        <div class="dsgt-filter-row">
+                            <label class="dsgt-filter-label">Jam Masuk</label>
+                            <div class="dsgt-filter-inputs" id="jamMasukFilterContainer">
+                                <select class="dsgt-filter-operator" id="jamMasukOperator" onchange="dsgtToggleDateInputs('jamMasukOperator', 'jamMasukFilterContainer', 'jamMasukInput1')">
+                                    <option value=">=">>=</option>
+                                    <option value="<="><=</option>
+                                    <option value="=" selected>=</option>
+                                    <option value="BETWEEN">⇄</option>
+                                </select>
+                                <input type="text" id="jamMasukInput1" class="dsgt-filter-input dsgt-flatpickr" data-date-format="H:i" placeholder="Select time...">
+                            </div>
+                        </div>
+
+                        <!-- Filter: Phone -->
+                        <div class="dsgt-filter-row">
+                            <label class="dsgt-filter-label">Phone</label>
+                            <div class="dsgt-filter-inputs">
+                                <select class="dsgt-filter-operator">
+                                    <option value="=">=</option>
+                                    <option value="LIKE" selected>LIKE</option>
+                                    <option value="LIKE -%">LIKE -%</option>
+                                </select>
+                                <input type="tel" class="dsgt-filter-input" placeholder="+62 xxx-xxxx-xxxx">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filter Actions -->
+                    <div class="dsgt-filter-actions">
+                        <button type="button" class="btn btn-secondary" onclick="dsgtResetFilterForm('userFilterForm', 'dateOperator')">
+                            <i class="fa-solid fa-rotate-left" style="margin-right: 6px;"></i>
+                            Reset
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa-solid fa-magnifying-glass" style="margin-right: 6px;"></i>
+                            Filter
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="divider" style="margin: 0 0 20px 0;"></div>
+        
         <div class="data-table-wrapper">
             <table id="basicTable" class="display" style="width:100%">
                 <thead>
