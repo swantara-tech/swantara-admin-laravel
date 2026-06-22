@@ -21536,11 +21536,13 @@ Dark mode for global selects
 }
 
 /* 8. Multi-Select Tags Modernization */
+/* Kontainer utama Select2 */
 .select2-container--default .select2-selection--multiple {
     border: 1px solid #e2e8f0 !important;
     border-radius: 8px !important;
-    min-height: 42px !important;
-    padding: 2px 6px !important;
+    min-height: 38px !important;
+    height: auto !important;
+    padding: 2px 8px !important;
     display: flex !important;
     flex-wrap: wrap !important;
     align-items: center !important;
@@ -21556,13 +21558,24 @@ Dark mode for global selects
     outline: none !important;
 }
 
+/* Daftar pilihan (tag) yang sudah dipilih */
+.select2-selection__rendered {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    gap: 4px !important;
+    width: auto !important;
+}
+
 /* 2. Gaya Label Pilihan (Tags) */
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
     background-color: #f8fafc !important;
     border: 1px solid #cbd5e1 !important;
     border-radius: 6px !important;
     padding: 4px 8px 4px 28px !important;
-    margin: 4px 4px 4px 0 !important;
+    margin: 4px 0 4px 0 !important;
     position: relative !important;
     color: #334155 !important;
     font-size: 14px !important;
@@ -21630,16 +21643,20 @@ Dark mode for global selects
     transform: translateY(-50%) scale(0.95) !important;
 }
 
-/* 4. Perbaikan Input Search */
-.select2-container--default .select2-selection--multiple .select2-search--inline {
-    margin: 2px 0 !important;
-    flex: 1;
-    min-width: 120px;
+/* Kontainer input pencarian */
+.select2-search--inline {
+    display: inline-flex !important;
+    flex-grow: 1 !important;
+    width: auto !important;
+    margin: 0 !important;
 }
 
-.select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field {
-    margin-top: 0 !important;
-    height: 32px !important;
+/* Input pencarian di dalam Select2 */
+.select2-search--inline .select2-search__field {
+    margin: 0 !important;
+    height: 30px !important;
+    width: 100% !important;
+    min-width: 50px !important;
     font-family: inherit !important;
     border: none !important;
     outline: none !important;
@@ -21647,7 +21664,6 @@ Dark mode for global selects
     padding: 4px 8px !important;
     font-size: 14px !important;
     color: #0f172a !important;
-    min-width: 120px !important;
 }
 
 .select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field::placeholder {
