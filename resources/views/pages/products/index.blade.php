@@ -8,7 +8,7 @@
                         <h1>Manajemen Produk</h1>
                         <p>Kelola semua produk yang tersedia di toko</p>
                     </div>
-                    <button class="btn btn-primary" onclick="showAddProductModal()">
+                    <button class="btn btn-primary" onclick="MetroAdmin.openDSGTModal('add-product-modal')">
                         <i class="fa-solid fa-plus"></i> Tambah Produk
                     </button>
                 </div>
@@ -38,7 +38,7 @@
                 </div>
                 
                 <!-- Filters & Search -->
-                <div class="content-card" style="margin-bottom: 24px;">
+                <div class="content-card" style="margin-bottom: 24px; background: var(--surface); border: 1px solid var(--border-subtle);">
                     <div class="card-body">
                         <div style="display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap;">
                             <!-- Search -->
@@ -46,13 +46,13 @@
                                 <div class="input-group">
                                     <i class="fa-solid fa-search"></i>
                                     <input type="text" id="searchProduct" placeholder="Cari produk..." 
-                                           style="width: 100%; padding: 10px 12px 10px 36px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-secondary); color: var(--text-primary);">
+                                           style="width: 100%; padding: 10px 12px 10px 36px; border-radius: 8px;">
                                 </div>
                             </div>
                             
                             <!-- Category Filter -->
                             <div style="min-width: 200px;">
-                                <select id="filterCategory" style="width: 100%; padding: 10px 12px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-secondary); color: var(--text-primary);">
+                                <select id="filterCategory" style="width: 100%; padding: 10px 12px; border-radius: 8px;">
                                     <option value="">Semua Kategori</option>
                                     <option value="elektronik">Elektronik</option>
                                     <option value="audio">Audio</option>
@@ -65,7 +65,7 @@
                             
                             <!-- Status Filter -->
                             <div style="min-width: 200px;">
-                                <select id="filterStatus" style="width: 100%; padding: 10px 12px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-secondary); color: var(--text-primary);">
+                                <select id="filterStatus" style="width: 100%; padding: 10px 12px; border-radius: 8px;">
                                     <option value="">Semua Status</option>
                                     <option value="available">Stok Tersedia</option>
                                     <option value="low">Stok Menipis</option>
@@ -75,7 +75,7 @@
                             
                             <!-- Sort -->
                             <div style="min-width: 200px;">
-                                <select id="sortBy" style="width: 100%; padding: 10px 12px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-secondary); color: var(--text-primary);">
+                                <select id="sortBy" style="width: 100%; padding: 10px 12px; border-radius: 8px;">
                                     <option value="newest">Terbaru</option>
                                     <option value="price-low">Harga: Rendah - Tinggi</option>
                                     <option value="price-high">Harga: Tinggi - Rendah</option>
@@ -91,7 +91,7 @@
                         </div>
                         
                         <!-- Active Filters Display -->
-                        <div id="activeFilters" style="display: none; padding: 12px; background: var(--bg-secondary); border-radius: 8px; margin-bottom: 16px;">
+                        <div id="activeFilters" style="display: none; padding: 12px; background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: 8px; margin-bottom: 16px;">
                             <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
                                 <i class="fa-solid fa-filter" style="color: var(--accent);"></i>
                                 <span style="font-weight: 500; font-size: 13px;">Filter Aktif:</span>
@@ -337,6 +337,60 @@
                         </div>
                     </div>
                 </div>
+
+<!-- Add Product Modal -->
+<div id="add-product-modal" class="dsgt-custom-modal">
+    <div class="dsgt-modal-dialog dsgt-modal-dialog-lg">
+        <div class="dsgt-modal-header">
+            <h3 class="dsgt-modal-title">
+                <i class="fa-solid fa-plus" style="color: var(--accent); margin-right: 8px;"></i>
+                Tambah Produk Baru
+            </h3>
+            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('add-product-modal')">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <div class="dsgt-modal-body">
+            <div class="dsgt-modal-form-group">
+                <label class="dsgt-modal-form-label">Nama Produk</label>
+                <input type="text" class="dsgt-modal-form-input" id="productName" placeholder="Masukkan nama produk">
+            </div>
+            <div class="dsgt-modal-form-group">
+                <label class="dsgt-modal-form-label">Harga</label>
+                <input type="number" class="dsgt-modal-form-input" id="productPrice" placeholder="Masukkan harga produk">
+            </div>
+            <div class="dsgt-modal-form-group">
+                <label class="dsgt-modal-form-label">Stok</label>
+                <input type="number" class="dsgt-modal-form-input" id="productStock" placeholder="Masukkan jumlah stok">
+            </div>
+            <div class="dsgt-modal-form-group">
+                <label class="dsgt-modal-form-label">Kategori</label>
+                <select class="dsgt-modal-form-input" id="productCategory">
+                    <option value="">Pilih Kategori</option>
+                    <option value="elektronik">Elektronik</option>
+                    <option value="audio">Audio</option>
+                    <option value="aksesoris">Aksesoris</option>
+                    <option value="olahraga">Olahraga</option>
+                    <option value="kesehatan">Kesehatan</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+            </div>
+            <div class="dsgt-modal-form-group">
+                <label class="dsgt-modal-form-label">Deskripsi</label>
+                <textarea class="dsgt-modal-form-input" id="productDesc" rows="3" placeholder="Masukkan deskripsi produk" style="resize: vertical;"></textarea>
+            </div>
+        </div>
+        <div class="dsgt-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('add-product-modal')">
+                <i class="fa-solid fa-times"></i> Batal
+            </button>
+            <button class="btn btn-primary" onclick="saveProduct()">
+                <i class="fa-solid fa-save"></i> Simpan Produk
+            </button>
+        </div>
+    </div>
+</div>
+
 @endsection
 
 @push('styles')
@@ -348,16 +402,18 @@
 }
 
 .product-card {
-    background: var(--bg-primary);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
     overflow: hidden;
+    box-shadow: var(--shadow-card);
     transition: all 0.3s ease;
 }
 
 .product-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-elevated);
+    border-color: var(--border);
 }
 
 .product-image {
@@ -484,6 +540,14 @@
     transform: translateY(-50%);
     color: var(--text-tertiary);
     pointer-events: none;
+    z-index: 1;
+}
+
+.input-group input,
+.input-group select {
+    background: var(--bg-secondary) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text-primary) !important;
 }
 
 /* List View */
@@ -631,30 +695,47 @@ function switchView(view) {
     }
 }
 
-function showAddProductModal() {
-    Swal.fire({
-        title: 'Tambah Produk Baru',
-        width: '600px',
-        html: `
-            <input id="productName" class="swal2-input" placeholder="Nama Produk">
-            <input id="productPrice" class="swal2-input" placeholder="Harga">
-            <input id="productStock" class="swal2-input" placeholder="Stok">
-            <select id="productCategory" class="swal2-select" style="width: 100%; padding: 10px; margin: 10px 0;">
-                <option value="">Pilih Kategori</option>
-                <option value="elektronik">Elektronik</option>
-                <option value="audio">Audio</option>
-                <option value="aksesoris">Aksesoris</option>
-                <option value="olahraga">Olahraga</option>
-                <option value="kesehatan">Kesehatan</option>
-                <option value="fashion">Fashion</option>
-            </select>
-            <textarea id="productDesc" class="swal2-textarea" placeholder="Deskripsi Produk"></textarea>
-        `,
-        confirmButtonText: 'Simpan',
-        confirmButtonColor: '#0078D4',
-        showCancelButton: true,
-        cancelButtonText: 'Batal'
-    });
+function saveProduct() {
+    const name = $('#productName').val();
+    const price = $('#productPrice').val();
+    const stock = $('#productStock').val();
+    const category = $('#productCategory').val();
+    const desc = $('#productDesc').val();
+    
+    // Validation
+    if (!name || !price || !stock || !category) {
+        if (typeof MetroAdmin !== 'undefined' && MetroAdmin.showToast) {
+            MetroAdmin.showToast('Harap isi semua field yang wajib!', 'error');
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Harap isi semua field yang wajib!'
+            });
+        }
+        return;
+    }
+    
+    // Show success message
+    if (typeof MetroAdmin !== 'undefined' && MetroAdmin.showToast) {
+        MetroAdmin.showToast(`Produk "${name}" berhasil ditambahkan!`, 'success');
+    } else {
+        Swal.fire({
+            icon: 'success',
+            title: 'Berhasil!',
+            text: `Produk "${name}" berhasil ditambahkan!`
+        });
+    }
+    
+    // Clear form
+    $('#productName').val('');
+    $('#productPrice').val('');
+    $('#productStock').val('');
+    $('#productCategory').val('');
+    $('#productDesc').val('');
+    
+    // Close modal
+    MetroAdmin.closeDSGTModal('add-product-modal');
 }
 
 function viewProduct(name) {

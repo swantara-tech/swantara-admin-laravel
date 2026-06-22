@@ -26,7 +26,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-info-card">
+<div class="content-card dsgt-info-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -45,7 +45,7 @@
 </div>
 
 <div class="dsgt-modal-grid">
-    <div class="content-card">
+    <div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-primary">
@@ -72,7 +72,7 @@
         </div>
     </div>
 
-    <div class="content-card">
+    <div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-success">
@@ -99,7 +99,7 @@
         </div>
     </div>
 
-    <div class="content-card">
+    <div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-warning">
@@ -126,7 +126,7 @@
         </div>
     </div>
 
-    <div class="content-card">
+    <div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-danger">
@@ -160,7 +160,7 @@
     Modal Sizes
 </div>
 
-<div class="content-card">
+<div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
     <div class="card-header">
         <div class="card-header-left">
             <div class="card-icon bg-info">
@@ -206,7 +206,7 @@
     Modal Animations
 </div>
 
-<div class="content-card">
+<div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
     <div class="card-header">
         <div class="card-header-left">
             <div class="card-icon bg-warning">
@@ -252,7 +252,7 @@
     Modal with Form
 </div>
 
-<div class="content-card">
+<div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
     <div class="card-header">
         <div class="card-header-left">
             <div class="card-icon bg-primary">
@@ -280,7 +280,7 @@
 </div>
 
 <!-- Scrollable Modal -->
-<div class="content-card">
+<div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
     <div class="card-header">
         <div class="card-header-left">
             <div class="card-icon bg-success">
@@ -308,7 +308,7 @@
 </div>
 
 <!-- Image Modal -->
-<div class="content-card">
+<div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
     <div class="card-header">
         <div class="card-header-left">
             <div class="card-icon bg-info">
@@ -341,7 +341,7 @@
     Stacked Modals
 </div>
 
-<div class="content-card">
+<div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
     <div class="card-header">
         <div class="card-header-left">
             <div class="card-icon bg-danger">
@@ -375,7 +375,7 @@
 </div>
 
 <div class="dsgt-modal-grid">
-    <div class="content-card">
+    <div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-primary">
@@ -402,7 +402,7 @@
         </div>
     </div>
 
-    <div class="content-card">
+    <div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-secondary">
@@ -429,7 +429,7 @@
         </div>
     </div>
 
-    <div class="content-card">
+    <div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-danger">
@@ -458,7 +458,7 @@
 </div>
 
 <!-- Modal with Form Validation -->
-<div class="content-card">
+<div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
     <div class="card-header">
         <div class="card-header-left">
             <div class="card-icon bg-success">
@@ -522,7 +522,7 @@
             </div>
             <h3 class="dsgt-modal-title">Success!</h3>
         </div>
-        <div class="dsgt-modal-body " style="text-align: center; ">
+        <div class="dsgt-modal-body  bg-white" style="text-align: center; ">
             <p style="font-size: 14px; color: var(--text-secondary);">Your action has been completed successfully. The operation was processed without any errors.</p>
         </div>
         <div class="dsgt-modal-footer dsgt-modal-footer-icon" style="justify-content: center;">
@@ -540,7 +540,7 @@
             </div>
             <h3 class="dsgt-modal-title">Warning!</h3>
         </div>
-        <div class="dsgt-modal-body" style="text-align: center;">
+        <div class="dsgt-modal-body  bg-white" style="text-align: center;">
             <p style="font-size: 14px; color: var(--text-secondary);">Please be careful! This action may have unintended consequences. Review carefully before proceeding.</p>
         </div>
         <div class="dsgt-modal-footer dsgt-modal-footer-icon" style="justify-content: center;">
@@ -559,7 +559,7 @@
             </div>
             <h3 class="dsgt-modal-title">Delete Item?</h3>
         </div>
-        <div class="dsgt-modal-body" style="text-align: center;">
+        <div class="dsgt-modal-body bg-white" style="text-align: center;">
             <p style="font-size: 14px; color: var(--text-secondary);">Are you sure you want to delete this item? This action cannot be undone and all data will be permanently removed.</p>
         </div>
         <div class="dsgt-modal-footer dsgt-modal-footer-icon" style="justify-content: center;">
@@ -1043,7 +1043,7 @@
 </div>
 
 <div class="dsgt-modal-grid">
-    <div class="content-card">
+    <div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-primary">
@@ -1056,7 +1056,7 @@
             </div>
         </div>
         <div class="card-body">
-            <pre style="background: var(--bg-tertiary); padding: 16px; border-radius: 8px; font-size: 12px; overflow-x: auto;"><code>// Open modal
+            <pre style="background: var(--bg-secondary); padding: 16px; border-radius: 8px; font-size: 12px; overflow-x: auto; border: 1px solid var(--border-subtle);"><code>// Open modal
 openModal('modal-id');
 
 // Close modal
@@ -1078,7 +1078,7 @@ $(document).on('keydown', function(e) {
         </div>
     </div>
 
-    <div class="content-card">
+    <div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
         <div class="card-header">
             <div class="card-header-left">
                 <div class="card-icon bg-success">
