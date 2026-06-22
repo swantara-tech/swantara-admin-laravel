@@ -21399,7 +21399,7 @@ select:not([multiple]):not(.select2-hidden-accessible)::-ms-expand {
     display: none;
 }
 
-/* Dark mode for global selects */
+Dark mode for global selects
 [data-theme="dark"] select:not([multiple]):not(.select2-hidden-accessible):not([class*="select2"]) {
     background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4"><path fill="%2394a3b8" d="M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z"/></svg>');
 }
@@ -21535,45 +21535,117 @@ select:not([multiple]):not(.select2-hidden-accessible)::-ms-expand {
     opacity: 0.6;
 }
 
-/* 8. Multi-Select Tags */
+/* 8. Multi-Select Tags Modernization */
 .select2-container--default .select2-selection--multiple {
     border: 1px solid #e2e8f0 !important;
     border-radius: 8px !important;
-    min-height: 40px !important;
+    min-height: 42px !important;
     padding: 4px 8px !important;
-    transition: all 0.2s ease-in-out;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #ffffff;
+    position: relative;
 }
 
-.select2-container--default.select2-container--focus .select2-selection--multiple {
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default.select2-container--open .select2-selection--multiple {
     border-color: #3b82f6 !important;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
 }
 
+/* Modernized Tags with Proper Spacing */
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
-    background-color: #eff6ff !important;
-    border: 1px solid #bfdbfe !important;
+    padding: 6px 28px 6px 12px !important;
+    position: relative !important;
+    border: 1px solid #cbd5e1 !important;
+    background-color: #f8fafc !important;
     border-radius: 6px !important;
-    color: #1e40af !important;
-    padding: 2px 8px !important;
-    margin: 2px 4px 2px 0 !important;
+    margin: 4px 4px 4px 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px;
     font-size: 13px !important;
-    line-height: 20px !important;
+    color: #334155 !important;
+    transition: all 0.2s ease-in-out;
+    cursor: default;
 }
 
+/* Tag Hover State */
+.select2-container--default .select2-selection--multiple .select2-selection__choice:hover {
+    background-color: #f1f5f9 !important;
+    border-color: #94a3b8 !important;
+}
+
+/* Circular Modern Delete Icon */
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
-    color: #3b82f6 !important;
-    margin-right: 4px !important;
+    width: 18px !important;
+    height: 18px !important;
+    background-color: #cbd5e1 !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    right: 4px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease-in-out;
+    color: transparent !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+}
+
+/* Delete Icon Symbol */
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove::before {
+    content: "×" !important;
+    color: white !important;
     font-size: 14px !important;
+    font-weight: bold !important;
+    line-height: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
+/* Delete Icon Hover */
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
-    color: #ef4444 !important;
-    background: transparent !important;
+    background-color: #ef4444 !important;
+    transform: translateY(-50%) scale(1.1) !important;
+    box-shadow: 0 2px 4px rgba(239, 68, 68, 0.3) !important;
 }
 
-.select2-container--default .select2-selection--multiple .select2-search__field {
-    height: 28px !important;
-    margin: 2px 0 !important;
+/* Delete Icon Active */
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:active {
+    transform: translateY(-50%) scale(0.95) !important;
+}
+
+/* Search Input Inside Multi-Select */
+.select2-container--default .select2-selection--multiple .select2-search--inline {
+    margin: 4px 0 !important;
+    flex: 1;
+    min-width: 120px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field {
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    padding: 4px 8px !important;
+    font-size: 14px !important;
+    color: #0f172a !important;
+    min-width: 120px !important;
+    margin: 0 !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field::placeholder {
+    color: #94a3b8 !important;
 }
 
 /* 9. Dropdown Styling */
@@ -21644,13 +21716,60 @@ select:not([multiple]):not(.select2-hidden-accessible)::-ms-expand {
 }
 
 [data-theme="dark"] .select2-container--default .select2-selection--multiple .select2-selection__choice {
-    background-color: #1e3a8a !important;
-    border-color: #1e40af !important;
-    color: #93c5fd !important;
+    background-color: #334155 !important;
+    border-color: #475569 !important;
+    color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .select2-container--default .select2-selection--multiple .select2-selection__choice:hover {
+    background-color: #475569 !important;
+    border-color: #64748b !important;
 }
 
 [data-theme="dark"] .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
-    color: #60a5fa !important;
+    background-color: #64748b !important;
+}
+
+[data-theme="dark"] .select2-container--default .select2-selection--multiple .select2-selection__choice__remove::before {
+    color: #f1f5f9 !important;
+}
+
+[data-theme="dark"] .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+    background-color: #ef4444 !important;
+}
+
+[data-theme="dark"] .select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field {
+    color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .select2-container--default .select2-selection--multiple .select2-search--inline .select2-search__field::placeholder {
+    color: #64748b !important;
+}
+
+/* Scrollbar for Multi-Select */
+.select2-container--default .select2-selection--multiple::-webkit-scrollbar {
+    height: 4px;
+}
+
+.select2-container--default .select2-selection--multiple::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.select2-container--default .select2-selection--multiple::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 2px;
+}
+
+.select2-container--default .select2-selection--multiple::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+[data-theme="dark"] .select2-container--default .select2-selection--multiple::-webkit-scrollbar-thumb {
+    background: #475569;
+}
+
+[data-theme="dark"] .select2-container--default .select2-selection--multiple::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
 }
 
 [data-theme="dark"] .select2-dropdown {
