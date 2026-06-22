@@ -21370,6 +21370,44 @@ table.dataTable tbody tr:nth-child(even):hover {
     flex: 1;
 }
 
+/* ============================================
+   GLOBAL CUSTOM SELECT ARROWS
+   Apply to all native selects except Select2
+   ============================================ */
+
+/* Apply to all selects except those managed by Select2 */
+select:not(.select2-hidden-accessible):not([class*="select2"]) {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    /* Downward custom arrow */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4"><path fill="%23666" d="M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 10px;
+    padding-right: 32px;
+}
+
+/* Upward custom arrow on focus */
+select:not(.select2-hidden-accessible):not([class*="select2"]):focus {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4"><path fill="%23666" d="M5.4 223a17.6 17.6 0 0 0 13 5.4h255.2c5 0 9.3-1.8 12.9-5.4A17.6 17.6 0 0 0 292.4 210.2c0-5-1.8-9.3-5.4-12.9L159 69.4c-3.6-3.6-7.8-5.4-12.8-5.4s-9.2 1.8-12.8 5.4L5.4 197.4C2 201 0 205.2 0 210.2c0 5 1.9 9.2 5.5 12.8z"/></svg>');
+}
+
+/* Hide native IE arrow */
+select:not(.select2-hidden-accessible)::-ms-expand {
+    display: none;
+}
+
+/* Dark mode for global selects */
+[data-theme="dark"] select:not(.select2-hidden-accessible):not([class*="select2"]) {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4"><path fill="%2394a3b8" d="M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z"/></svg>');
+}
+
+[data-theme="dark"] select:not(.select2-hidden-accessible):not([class*="select2"]):focus {
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4"><path fill="%2394a3b8" d="M5.4 223a17.6 17.6 0 0 0 13 5.4h255.2c5 0 9.3-1.8 12.9-5.4A17.6 17.6 0 0 0 292.4 210.2c0-5-1.8-9.3-5.4-12.9L159 69.4c-3.6-3.6-7.8-5.4-12.8-5.4s-9.2 1.8-12.8 5.4L5.4 197.4C2 201 0 205.2 0 210.2c0 5 1.9 9.2 5.5 12.8z"/></svg>');
+}
+
 /* Filter Operator Select */
 .dsgt-filter-operator {
     width: 100px;
