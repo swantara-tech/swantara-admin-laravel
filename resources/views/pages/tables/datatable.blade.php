@@ -29,7 +29,7 @@
         <div style="margin-bottom: 20px; padding: 20px 24px;">
             <!-- Advanced Search Toggle -->
             <div style="display: flex; justify-content: flex-end; margin-bottom: 12px;">
-                <a href="#filterForm" class="dsgt-advanced-search-toggle" id="advancedSearchToggle">
+                <a href="#filterForm" class="sw-advanced-search-toggle" id="advancedSearchToggle">
                     <i class="fa-solid fa-sliders"></i>
                     <span>Advanced Search</span>
                     <i class="fa-solid fa-chevron-down" id="advancedSearchIcon"></i>
@@ -37,14 +37,14 @@
             </div>
 
             <!-- Filter Form -->
-            <div id="filterForm" class="dsgt-filter-form dsgt-filter-expanded">
+            <div id="filterForm" class="sw-filter-form sw-filter-expanded">
                 <form id="userFilterForm">
-                    <div class="dsgt-filter-fields">
+                    <div class="sw-filter-fields">
                         <!-- Filter: Username -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Username</label>
-                            <div class="dsgt-filter-inputs">
-                                <select class="dsgt-filter-operator">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Username</label>
+                            <div class="sw-filter-inputs">
+                                <select class="sw-filter-operator">
                                     <option value="=">=</option>
                                     <option value="LIKE" selected>LIKE</option>
                                     <option value="LIKE -%">LIKE -%</option>
@@ -52,35 +52,35 @@
                                     <option value="IN">IN</option>
                                     <option value="NOT IN">NOT IN</option>
                                 </select>
-                                <input type="text" class="dsgt-filter-input" placeholder="Enter username...">
+                                <input type="text" class="sw-filter-input" placeholder="Enter username...">
                             </div>
                         </div>
 
                         <!-- Filter: Email -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Email</label>
-                            <div class="dsgt-filter-inputs">
-                                <select class="dsgt-filter-operator">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Email</label>
+                            <div class="sw-filter-inputs">
+                                <select class="sw-filter-operator">
                                     <option value="=">=</option>
                                     <option value="LIKE" selected>LIKE</option>
                                     <option value="LIKE -%">LIKE -%</option>
                                     <option value="!=">!=</option>
                                 </select>
-                                <input type="email" class="dsgt-filter-input" placeholder="Enter email...">
+                                <input type="email" class="sw-filter-input" placeholder="Enter email...">
                             </div>
                         </div>
 
                         <!-- Filter: Role -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Role</label>
-                            <div class="dsgt-filter-inputs">
-                                <select class="dsgt-filter-operator">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Role</label>
+                            <div class="sw-filter-inputs">
+                                <select class="sw-filter-operator">
                                     <option value="=" selected>=</option>
                                     <option value="!=">!=</option>
                                     <option value="IN">IN</option>
                                     <option value="NOT IN">NOT IN</option>
                                 </select>
-                                <select class="dsgt-filter-select">
+                                <select class="sw-filter-select">
                                     <option value="">All Roles</option>
                                     <option value="Administrator">Administrator</option>
                                     <option value="Editor">Editor</option>
@@ -93,14 +93,14 @@
                         </div>
 
                         <!-- Filter: Status -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Status</label>
-                            <div class="dsgt-filter-inputs">
-                                <select class="dsgt-filter-operator">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Status</label>
+                            <div class="sw-filter-inputs">
+                                <select class="sw-filter-operator">
                                     <option value="=" selected>=</option>
                                     <option value="!=">!=</option>
                                 </select>
-                                <select class="dsgt-filter-select">
+                                <select class="sw-filter-select">
                                     <option value="">All Status</option>
                                     <option value="Active">Active</option>
                                     <option value="Inactive">Inactive</option>
@@ -111,64 +111,64 @@
                         </div>
 
                         <!-- Filter: Date Range -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Created Date</label>
-                            <div class="dsgt-filter-inputs" id="dateFilterContainer">
-                                <select class="dsgt-filter-operator" id="dateOperator" onchange="dsgtToggleDateInputs('dateOperator', 'dateFilterContainer', 'dateInput1')">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Created Date</label>
+                            <div class="sw-filter-inputs" id="dateFilterContainer">
+                                <select class="sw-filter-operator" id="dateOperator" onchange="swToggleDateInputs('dateOperator', 'dateFilterContainer', 'dateInput1')">
                                     <option value=">=">>=</option>
                                     <option value="<="><=</option>
                                     <option value="=" selected>=</option>
                                     <option value="BETWEEN">⇄</option>
                                 </select>
-                                <input type="text" id="dateInput1" class="dsgt-filter-input dsgt-flatpickr" data-date-format="d/m/Y" placeholder="Select date...">
+                                <input type="text" id="dateInput1" class="sw-filter-input sw-flatpickr" data-date-format="d/m/Y" placeholder="Select date...">
                             </div>
                         </div>
 
                         <!-- Filter: Updated Date (DateTime) -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Updated Date</label>
-                            <div class="dsgt-filter-inputs" id="updatedDateFilterContainer">
-                                <select class="dsgt-filter-operator" id="updatedDateOperator" onchange="dsgtToggleDateInputs('updatedDateOperator', 'updatedDateFilterContainer', 'updatedDateInput1')">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Updated Date</label>
+                            <div class="sw-filter-inputs" id="updatedDateFilterContainer">
+                                <select class="sw-filter-operator" id="updatedDateOperator" onchange="swToggleDateInputs('updatedDateOperator', 'updatedDateFilterContainer', 'updatedDateInput1')">
                                     <option value=">=">>=</option>
                                     <option value="<="><=</option>
                                     <option value="=" selected>=</option>
                                     <option value="BETWEEN">⇄</option>
                                 </select>
-                                <input type="text" id="updatedDateInput1" class="dsgt-filter-input dsgt-flatpickr" data-date-format="d/m/Y H:i" data-show-time="true" placeholder="Select date & time...">
+                                <input type="text" id="updatedDateInput1" class="sw-filter-input sw-flatpickr" data-date-format="d/m/Y H:i" data-show-time="true" placeholder="Select date & time...">
                             </div>
                         </div>
 
                         <!-- Filter: Jam Masuk (Time Only) -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Jam Masuk</label>
-                            <div class="dsgt-filter-inputs" id="jamMasukFilterContainer">
-                                <select class="dsgt-filter-operator" id="jamMasukOperator" onchange="dsgtToggleDateInputs('jamMasukOperator', 'jamMasukFilterContainer', 'jamMasukInput1')">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Jam Masuk</label>
+                            <div class="sw-filter-inputs" id="jamMasukFilterContainer">
+                                <select class="sw-filter-operator" id="jamMasukOperator" onchange="swToggleDateInputs('jamMasukOperator', 'jamMasukFilterContainer', 'jamMasukInput1')">
                                     <option value=">=">>=</option>
                                     <option value="<="><=</option>
                                     <option value="=" selected>=</option>
                                     <option value="BETWEEN">⇄</option>
                                 </select>
-                                <input type="text" id="jamMasukInput1" class="dsgt-filter-input dsgt-flatpickr" data-date-format="H:i" placeholder="Select time...">
+                                <input type="text" id="jamMasukInput1" class="sw-filter-input sw-flatpickr" data-date-format="H:i" placeholder="Select time...">
                             </div>
                         </div>
 
                         <!-- Filter: Phone -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Phone</label>
-                            <div class="dsgt-filter-inputs">
-                                <select class="dsgt-filter-operator">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Phone</label>
+                            <div class="sw-filter-inputs">
+                                <select class="sw-filter-operator">
                                     <option value="=">=</option>
                                     <option value="LIKE" selected>LIKE</option>
                                     <option value="LIKE -%">LIKE -%</option>
                                 </select>
-                                <input type="tel" class="dsgt-filter-input" placeholder="+62 xxx-xxxx-xxxx">
+                                <input type="tel" class="sw-filter-input" placeholder="+62 xxx-xxxx-xxxx">
                             </div>
                         </div>
                     </div>
 
                     <!-- Filter Actions -->
-                    <div class="dsgt-filter-actions">
-                        <button type="button" class="btn btn-secondary" onclick="dsgtResetFilterForm('userFilterForm', 'dateOperator')">
+                    <div class="sw-filter-actions">
+                        <button type="button" class="btn btn-secondary" onclick="swResetFilterForm('userFilterForm', 'dateOperator')">
                             <i class="fa-solid fa-rotate-left" style="margin-right: 6px;"></i>
                             Reset
                         </button>

@@ -23,7 +23,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-list-group-info-card">
+<div class="content-card sw-list-group-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -36,12 +36,12 @@
 </div>
 
 <!-- Basic List Group -->
-<div class="dsgt-list-group-section-title">
+<div class="sw-list-group-section-title">
     <i class="fa-solid fa-list"></i>
     Basic List Group <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-list-group-grid">
+<div class="sw-list-group-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -55,16 +55,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-list-group-example">
+            <div class="sw-list-group-example">
                 <span class="lg-example-label">Default List Group</span>
-                <ul class="dsgt-modern-list-group">
-                    <li class="dsgt-list-group-item">Dashboard</li>
-                    <li class="dsgt-list-group-item">Analytics</li>
-                    <li class="dsgt-list-group-item">Reports</li>
-                    <li class="dsgt-list-group-item">Settings</li>
-                    <li class="dsgt-list-group-item">Help Center</li>
+                <ul class="sw-modern-list-group">
+                    <li class="sw-list-group-item">Dashboard</li>
+                    <li class="sw-list-group-item">Analytics</li>
+                    <li class="sw-list-group-item">Reports</li>
+                    <li class="sw-list-group-item">Settings</li>
+                    <li class="sw-list-group-item">Help Center</li>
                 </ul>
-                <div class="dsgt-list-group-helper">
+                <div class="sw-list-group-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Hover over items to see highlight effect
                 </div>
@@ -85,16 +85,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-list-group-example">
+            <div class="sw-list-group-example">
                 <span class="lg-example-label">Active Item</span>
-                <ul class="dsgt-modern-list-group">
-                    <li class="dsgt-list-group-item">Profile</li>
-                    <li class="dsgt-list-group-item active">Account Settings</li>
-                    <li class="dsgt-list-group-item">Security</li>
-                    <li class="dsgt-list-group-item">Notifications</li>
-                    <li class="dsgt-list-group-item">Billing</li>
+                <ul class="sw-modern-list-group">
+                    <li class="sw-list-group-item">Profile</li>
+                    <li class="sw-list-group-item active">Account Settings</li>
+                    <li class="sw-list-group-item">Security</li>
+                    <li class="sw-list-group-item">Notifications</li>
+                    <li class="sw-list-group-item">Billing</li>
                 </ul>
-                <div class="dsgt-list-group-helper">
+                <div class="sw-list-group-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Active item has accent background and left border
                 </div>
@@ -117,20 +117,20 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-list-group-example">
+        <div class="sw-list-group-example">
             <span class="lg-example-label">Complete Structure</span>
-            <ul class="dsgt-modern-list-group">
-                <li class="dsgt-list-group-header">Team Members (5)</li>
-                <li class="dsgt-list-group-item">John Doe - Project Manager</li>
-                <li class="dsgt-list-group-item">Jane Smith - Developer</li>
-                <li class="dsgt-list-group-item">Bob Johnson - Designer</li>
-                <li class="dsgt-list-group-item">Alice Williams - QA Engineer</li>
-                <li class="dsgt-list-group-item">Charlie Brown - DevOps</li>
-                <li class="dsgt-list-group-footer">
+            <ul class="sw-modern-list-group">
+                <li class="sw-list-group-header">Team Members (5)</li>
+                <li class="sw-list-group-item">John Doe - Project Manager</li>
+                <li class="sw-list-group-item">Jane Smith - Developer</li>
+                <li class="sw-list-group-item">Bob Johnson - Designer</li>
+                <li class="sw-list-group-item">Alice Williams - QA Engineer</li>
+                <li class="sw-list-group-item">Charlie Brown - DevOps</li>
+                <li class="sw-list-group-footer">
                     <button>+ Add New Member</button>
                 </li>
             </ul>
-            <div class="dsgt-list-group-helper">
+            <div class="sw-list-group-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Header shows count, footer has action button
             </div>
@@ -139,12 +139,12 @@
 </div>
 
 <!-- List Group with Icons -->
-<div class="dsgt-list-group-section-title">
+<div class="sw-list-group-section-title">
     <i class="fa-solid fa-icons"></i>
     List Group with Icons
 </div>
 
-<div class="dsgt-list-group-grid">
+<div class="sw-list-group-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -158,47 +158,47 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-list-group-example">
+            <div class="sw-list-group-example">
                 <span class="lg-example-label">Settings Navigation</span>
-                <ul class="dsgt-modern-list-group">
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-icon">
-                        <div class="dsgt-list-group-icon dsgt-dsgt-list-group-icon-primary">
+                <ul class="sw-modern-list-group">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-icon">
+                        <div class="sw-list-group-icon sw-sw-list-group-icon-primary">
                             <i class="fa-solid fa-user"></i>
                         </div>
                         <div>
-                            <div class="dsgt-list-group-title">Profile</div>
-                            <p class="dsgt-list-group-desc">Manage your account</p>
+                            <div class="sw-list-group-title">Profile</div>
+                            <p class="sw-list-group-desc">Manage your account</p>
                         </div>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-icon">
-                        <div class="dsgt-list-group-icon dsgt-dsgt-list-group-icon-success">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-icon">
+                        <div class="sw-list-group-icon sw-sw-list-group-icon-success">
                             <i class="fa-solid fa-shield-halved"></i>
                         </div>
                         <div>
-                            <div class="dsgt-list-group-title">Security</div>
-                            <p class="dsgt-list-group-desc">Password & 2FA</p>
+                            <div class="sw-list-group-title">Security</div>
+                            <p class="sw-list-group-desc">Password & 2FA</p>
                         </div>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-icon">
-                        <div class="dsgt-list-group-icon dsgt-dsgt-list-group-icon-warning">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-icon">
+                        <div class="sw-list-group-icon sw-sw-list-group-icon-warning">
                             <i class="fa-solid fa-bell"></i>
                         </div>
                         <div>
-                            <div class="dsgt-list-group-title">Notifications</div>
-                            <p class="dsgt-list-group-desc">Configure alerts</p>
+                            <div class="sw-list-group-title">Notifications</div>
+                            <p class="sw-list-group-desc">Configure alerts</p>
                         </div>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-icon">
-                        <div class="dsgt-list-group-icon dsgt-dsgt-list-group-icon-info">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-icon">
+                        <div class="sw-list-group-icon sw-sw-list-group-icon-info">
                             <i class="fa-solid fa-palette"></i>
                         </div>
                         <div>
-                            <div class="dsgt-list-group-title">Appearance</div>
-                            <p class="dsgt-list-group-desc">Theme & colors</p>
+                            <div class="sw-list-group-title">Appearance</div>
+                            <p class="sw-list-group-desc">Theme & colors</p>
                         </div>
                     </li>
                 </ul>
-                <div class="dsgt-list-group-helper">
+                <div class="sw-list-group-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     36x36px icon containers with soft backgrounds
                 </div>
@@ -219,38 +219,38 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-list-group-example">
+            <div class="sw-list-group-example">
                 <span class="lg-example-label">Task Management</span>
-                <ul class="dsgt-modern-list-group">
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-icon">
-                        <div class="dsgt-list-group-icon dsgt-dsgt-list-group-icon-success">
+                <ul class="sw-modern-list-group">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-icon">
+                        <div class="sw-list-group-icon sw-sw-list-group-icon-success">
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
                         <div>
-                            <div class="dsgt-list-group-title">Design System</div>
-                            <p class="dsgt-list-group-desc">Completed</p>
+                            <div class="sw-list-group-title">Design System</div>
+                            <p class="sw-list-group-desc">Completed</p>
                         </div>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-icon">
-                        <div class="dsgt-list-group-icon dsgt-dsgt-list-group-icon-warning">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-icon">
+                        <div class="sw-list-group-icon sw-sw-list-group-icon-warning">
                             <i class="fa-solid fa-spinner"></i>
                         </div>
                         <div>
-                            <div class="dsgt-list-group-title">API Integration</div>
-                            <p class="dsgt-list-group-desc">In Progress</p>
+                            <div class="sw-list-group-title">API Integration</div>
+                            <p class="sw-list-group-desc">In Progress</p>
                         </div>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-icon">
-                        <div class="dsgt-list-group-icon dsgt-dsgt-list-group-icon-danger">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-icon">
+                        <div class="sw-list-group-icon sw-sw-list-group-icon-danger">
                             <i class="fa-solid fa-circle-xmark"></i>
                         </div>
                         <div>
-                            <div class="dsgt-list-group-title">Testing</div>
-                            <p class="dsgt-list-group-desc">Not Started</p>
+                            <div class="sw-list-group-title">Testing</div>
+                            <p class="sw-list-group-desc">Not Started</p>
                         </div>
                     </li>
                 </ul>
-                <div class="dsgt-list-group-helper">
+                <div class="sw-list-group-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Icons indicate task status
                 </div>
@@ -260,7 +260,7 @@
 </div>
 
 <!-- List Group with Badges -->
-<div class="dsgt-list-group-section-title">
+<div class="sw-list-group-section-title">
     <i class="fa-solid fa-badge"></i>
     List Group with Badges
 </div>
@@ -278,39 +278,39 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-list-group-example">
+        <div class="sw-list-group-example">
             <span class="lg-example-label">Email Inbox</span>
-            <ul class="dsgt-modern-list-group">
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-badge">
+            <ul class="sw-modern-list-group">
+                <li class="sw-list-group-item sw-sw-list-group-item-with-badge">
                     <div>
-                        <div class="dsgt-list-group-title">Inbox</div>
-                        <p class="dsgt-list-group-desc">All received emails</p>
+                        <div class="sw-list-group-title">Inbox</div>
+                        <p class="sw-list-group-desc">All received emails</p>
                     </div>
-                    <span class="dsgt-list-group-badge" style="background: var(--accent); color: white;">24</span>
+                    <span class="sw-list-group-badge" style="background: var(--accent); color: white;">24</span>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-badge">
+                <li class="sw-list-group-item sw-sw-list-group-item-with-badge">
                     <div>
-                        <div class="dsgt-list-group-title">Starred</div>
-                        <p class="dsgt-list-group-desc">Important messages</p>
+                        <div class="sw-list-group-title">Starred</div>
+                        <p class="sw-list-group-desc">Important messages</p>
                     </div>
-                    <span class="dsgt-list-group-badge" style="background: var(--warning); color: white;">8</span>
+                    <span class="sw-list-group-badge" style="background: var(--warning); color: white;">8</span>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-badge">
+                <li class="sw-list-group-item sw-sw-list-group-item-with-badge">
                     <div>
-                        <div class="dsgt-list-group-title">Sent</div>
-                        <p class="dsgt-list-group-desc">Sent emails</p>
+                        <div class="sw-list-group-title">Sent</div>
+                        <p class="sw-list-group-desc">Sent emails</p>
                     </div>
-                    <span class="dsgt-list-group-badge" style="background: var(--success); color: white;">156</span>
+                    <span class="sw-list-group-badge" style="background: var(--success); color: white;">156</span>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-badge">
+                <li class="sw-list-group-item sw-sw-list-group-item-with-badge">
                     <div>
-                        <div class="dsgt-list-group-title">Spam</div>
-                        <p class="dsgt-list-group-desc">Filtered messages</p>
+                        <div class="sw-list-group-title">Spam</div>
+                        <p class="sw-list-group-desc">Filtered messages</p>
                     </div>
-                    <span class="dsgt-list-group-badge" style="background: var(--danger); color: white;">42</span>
+                    <span class="sw-list-group-badge" style="background: var(--danger); color: white;">42</span>
                 </li>
             </ul>
-            <div class="dsgt-list-group-helper">
+            <div class="sw-list-group-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Badges show item counts
             </div>
@@ -319,7 +319,7 @@
 </div>
 
 <!-- List Group with Avatars -->
-<div class="dsgt-list-group-section-title">
+<div class="sw-list-group-section-title">
     <i class="fa-solid fa-users"></i>
     List Group with Avatars
 </div>
@@ -337,35 +337,35 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-list-group-example">
+        <div class="sw-list-group-example">
             <span class="lg-example-label">User Directory</span>
-            <ul class="dsgt-modern-list-group">
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-avatar">
-                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=0078D4&color=fff&size=96" class="dsgt-list-group-avatar" alt="John Doe">
-                    <div class="dsgt-list-group-content">
-                        <div class="dsgt-list-group-title">John Doe</div>
-                        <p class="dsgt-list-group-desc">john.doe@example.com</p>
-                        <p class="dsgt-list-group-meta">Project Manager • Online</p>
+            <ul class="sw-modern-list-group">
+                <li class="sw-list-group-item sw-sw-list-group-item-with-avatar">
+                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=0078D4&color=fff&size=96" class="sw-list-group-avatar" alt="John Doe">
+                    <div class="sw-list-group-content">
+                        <div class="sw-list-group-title">John Doe</div>
+                        <p class="sw-list-group-desc">john.doe@example.com</p>
+                        <p class="sw-list-group-meta">Project Manager • Online</p>
                     </div>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-avatar">
-                    <img src="https://ui-avatars.com/api/?name=Jane+Smith&background=16C60C&color=fff&size=96" class="dsgt-list-group-avatar" alt="Jane Smith">
-                    <div class="dsgt-list-group-content">
-                        <div class="dsgt-list-group-title">Jane Smith</div>
-                        <p class="dsgt-list-group-desc">jane.smith@example.com</p>
-                        <p class="dsgt-list-group-meta">Developer • Online</p>
+                <li class="sw-list-group-item sw-sw-list-group-item-with-avatar">
+                    <img src="https://ui-avatars.com/api/?name=Jane+Smith&background=16C60C&color=fff&size=96" class="sw-list-group-avatar" alt="Jane Smith">
+                    <div class="sw-list-group-content">
+                        <div class="sw-list-group-title">Jane Smith</div>
+                        <p class="sw-list-group-desc">jane.smith@example.com</p>
+                        <p class="sw-list-group-meta">Developer • Online</p>
                     </div>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-avatar">
-                    <img src="https://ui-avatars.com/api/?name=Bob+Johnson&background=FFB900&color=fff&size=96" class="dsgt-list-group-avatar" alt="Bob Johnson">
-                    <div class="dsgt-list-group-content">
-                        <div class="dsgt-list-group-title">Bob Johnson</div>
-                        <p class="dsgt-list-group-desc">bob.johnson@example.com</p>
-                        <p class="dsgt-list-group-meta">Designer • Away</p>
+                <li class="sw-list-group-item sw-sw-list-group-item-with-avatar">
+                    <img src="https://ui-avatars.com/api/?name=Bob+Johnson&background=FFB900&color=fff&size=96" class="sw-list-group-avatar" alt="Bob Johnson">
+                    <div class="sw-list-group-content">
+                        <div class="sw-list-group-title">Bob Johnson</div>
+                        <p class="sw-list-group-desc">bob.johnson@example.com</p>
+                        <p class="sw-list-group-meta">Designer • Away</p>
                     </div>
                 </li>
             </ul>
-            <div class="dsgt-list-group-helper">
+            <div class="sw-list-group-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 48x48px circular avatars with user info
             </div>
@@ -374,7 +374,7 @@
 </div>
 
 <!-- Colored List Items -->
-<div class="dsgt-list-group-section-title">
+<div class="sw-list-group-section-title">
     <i class="fa-solid fa-palette"></i>
     Colored List Items
 </div>
@@ -392,27 +392,27 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-list-group-example">
+        <div class="sw-list-group-example">
             <span class="lg-example-label">Status Indicators</span>
-            <ul class="dsgt-modern-list-group">
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-success">
-                    <div class="dsgt-list-group-title">System Update</div>
-                    <p class="dsgt-list-group-desc">Successfully completed</p>
+            <ul class="sw-modern-list-group">
+                <li class="sw-list-group-item sw-sw-list-group-item-success">
+                    <div class="sw-list-group-title">System Update</div>
+                    <p class="sw-list-group-desc">Successfully completed</p>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-warning">
-                    <div class="dsgt-list-group-title">Disk Space</div>
-                    <p class="dsgt-list-group-desc">Running low (15% remaining)</p>
+                <li class="sw-list-group-item sw-sw-list-group-item-warning">
+                    <div class="sw-list-group-title">Disk Space</div>
+                    <p class="sw-list-group-desc">Running low (15% remaining)</p>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-danger">
-                    <div class="dsgt-list-group-title">Server Down</div>
-                    <p class="dsgt-list-group-desc">Critical issue detected</p>
+                <li class="sw-list-group-item sw-sw-list-group-item-danger">
+                    <div class="sw-list-group-title">Server Down</div>
+                    <p class="sw-list-group-desc">Critical issue detected</p>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-info">
-                    <div class="dsgt-list-group-title">Backup</div>
-                    <p class="dsgt-list-group-desc">Scheduled for tonight</p>
+                <li class="sw-list-group-item sw-sw-list-group-item-info">
+                    <div class="sw-list-group-title">Backup</div>
+                    <p class="sw-list-group-desc">Scheduled for tonight</p>
                 </li>
             </ul>
-            <div class="dsgt-list-group-helper">
+            <div class="sw-list-group-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Colors indicate status severity
             </div>
@@ -421,12 +421,12 @@
 </div>
 
 <!-- Interactive List Group -->
-<div class="dsgt-list-group-section-title">
+<div class="sw-list-group-section-title">
     <i class="fa-solid fa-hand-pointer"></i>
     Interactive List Group
 </div>
 
-<div class="dsgt-list-group-grid">
+<div class="sw-list-group-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -440,27 +440,27 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-list-group-example">
+            <div class="sw-list-group-example">
                 <span class="lg-example-label">Task Selection</span>
-                <ul class="dsgt-modern-list-group">
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-checkbox">
-                        <input type="checkbox" class="dsgt-list-group-checkbox">
+                <ul class="sw-modern-list-group">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-checkbox">
+                        <input type="checkbox" class="sw-list-group-checkbox">
                         <span>Complete documentation</span>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-checkbox">
-                        <input type="checkbox" class="dsgt-list-group-checkbox" checked>
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-checkbox">
+                        <input type="checkbox" class="sw-list-group-checkbox" checked>
                         <span>Review pull requests</span>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-checkbox">
-                        <input type="checkbox" class="dsgt-list-group-checkbox">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-checkbox">
+                        <input type="checkbox" class="sw-list-group-checkbox">
                         <span>Update dependencies</span>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-checkbox">
-                        <input type="checkbox" class="dsgt-list-group-checkbox">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-checkbox">
+                        <input type="checkbox" class="sw-list-group-checkbox">
                         <span>Deploy to production</span>
                     </li>
                 </ul>
-                <div class="dsgt-list-group-helper">
+                <div class="sw-list-group-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Click checkboxes to select/deselect
                 </div>
@@ -481,41 +481,41 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-list-group-example">
+            <div class="sw-list-group-example">
                 <span class="lg-example-label">Settings Toggles</span>
-                <ul class="dsgt-modern-list-group">
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-switch">
+                <ul class="sw-modern-list-group">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-switch">
                         <div>
-                            <div class="dsgt-list-group-title">Dark Mode</div>
-                            <p class="dsgt-list-group-desc">Enable dark theme</p>
+                            <div class="sw-list-group-title">Dark Mode</div>
+                            <p class="sw-list-group-desc">Enable dark theme</p>
                         </div>
-                        <label class="dsgt-metro-switch">
+                        <label class="sw-metro-switch">
                             <input type="checkbox">
-                            <span class="dsgt-dsgt-metro-switch-slider"></span>
+                            <span class="sw-sw-metro-switch-slider"></span>
                         </label>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-switch">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-switch">
                         <div>
-                            <div class="dsgt-list-group-title">Notifications</div>
-                            <p class="dsgt-list-group-desc">Push notifications</p>
+                            <div class="sw-list-group-title">Notifications</div>
+                            <p class="sw-list-group-desc">Push notifications</p>
                         </div>
-                        <label class="dsgt-metro-switch">
+                        <label class="sw-metro-switch">
                             <input type="checkbox" checked>
-                            <span class="dsgt-dsgt-metro-switch-slider"></span>
+                            <span class="sw-sw-metro-switch-slider"></span>
                         </label>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-switch">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-switch">
                         <div>
-                            <div class="dsgt-list-group-title">Auto-Save</div>
-                            <p class="dsgt-list-group-desc">Save every 5 minutes</p>
+                            <div class="sw-list-group-title">Auto-Save</div>
+                            <p class="sw-list-group-desc">Save every 5 minutes</p>
                         </div>
-                        <label class="dsgt-metro-switch">
+                        <label class="sw-metro-switch">
                             <input type="checkbox" checked>
-                            <span class="dsgt-dsgt-metro-switch-slider"></span>
+                            <span class="sw-sw-metro-switch-slider"></span>
                         </label>
                     </li>
                 </ul>
-                <div class="dsgt-list-group-helper">
+                <div class="sw-list-group-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Toggle switches for quick settings
                 </div>
@@ -538,53 +538,53 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-list-group-example">
+        <div class="sw-list-group-example">
             <span class="lg-example-label">File Manager</span>
-            <ul class="dsgt-modern-list-group">
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-actions">
+            <ul class="sw-modern-list-group">
+                <li class="sw-list-group-item sw-sw-list-group-item-with-actions">
                     <div>
-                        <div class="dsgt-list-group-title"><i class="fa-solid fa-file-pdf" style="color: var(--danger);"></i> Report.pdf</div>
-                        <p class="dsgt-list-group-desc">2.4 MB • Modified 2 hours ago</p>
+                        <div class="sw-list-group-title"><i class="fa-solid fa-file-pdf" style="color: var(--danger);"></i> Report.pdf</div>
+                        <p class="sw-list-group-desc">2.4 MB • Modified 2 hours ago</p>
                     </div>
-                    <div class="dsgt-list-group-actions">
-                        <button class="dsgt-list-group-action-btn" title="Edit">
+                    <div class="sw-list-group-actions">
+                        <button class="sw-list-group-action-btn" title="Edit">
                             <i class="fa-solid fa-pen"></i>
                         </button>
-                        <button class="dsgt-list-group-action-btn danger" title="Delete">
+                        <button class="sw-list-group-action-btn danger" title="Delete">
                             <i class="fa-solid fa-trash"></i>
                         </button>
                     </div>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-actions">
+                <li class="sw-list-group-item sw-sw-list-group-item-with-actions">
                     <div>
-                        <div class="dsgt-list-group-title"><i class="fa-solid fa-file-word" style="color: var(--info);"></i> Document.docx</div>
-                        <p class="dsgt-list-group-desc">1.8 MB • Modified yesterday</p>
+                        <div class="sw-list-group-title"><i class="fa-solid fa-file-word" style="color: var(--info);"></i> Document.docx</div>
+                        <p class="sw-list-group-desc">1.8 MB • Modified yesterday</p>
                     </div>
-                    <div class="dsgt-list-group-actions">
-                        <button class="dsgt-list-group-action-btn" title="Edit">
+                    <div class="sw-list-group-actions">
+                        <button class="sw-list-group-action-btn" title="Edit">
                             <i class="fa-solid fa-pen"></i>
                         </button>
-                        <button class="dsgt-list-group-action-btn danger" title="Delete">
+                        <button class="sw-list-group-action-btn danger" title="Delete">
                             <i class="fa-solid fa-trash"></i>
                         </button>
                     </div>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-actions">
+                <li class="sw-list-group-item sw-sw-list-group-item-with-actions">
                     <div>
-                        <div class="dsgt-list-group-title"><i class="fa-solid fa-file-image" style="color: var(--success);"></i> Image.png</div>
-                        <p class="dsgt-list-group-desc">3.2 MB • Modified 3 days ago</p>
+                        <div class="sw-list-group-title"><i class="fa-solid fa-file-image" style="color: var(--success);"></i> Image.png</div>
+                        <p class="sw-list-group-desc">3.2 MB • Modified 3 days ago</p>
                     </div>
-                    <div class="dsgt-list-group-actions">
-                        <button class="dsgt-list-group-action-btn" title="Edit">
+                    <div class="sw-list-group-actions">
+                        <button class="sw-list-group-action-btn" title="Edit">
                             <i class="fa-solid fa-pen"></i>
                         </button>
-                        <button class="dsgt-list-group-action-btn danger" title="Delete">
+                        <button class="sw-list-group-action-btn danger" title="Delete">
                             <i class="fa-solid fa-trash"></i>
                         </button>
                     </div>
                 </li>
             </ul>
-            <div class="dsgt-list-group-helper">
+            <div class="sw-list-group-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Hover action buttons for quick operations
             </div>
@@ -593,12 +593,12 @@
 </div>
 
 <!-- Notification List -->
-<div class="dsgt-list-group-section-title">
+<div class="sw-list-group-section-title">
     <i class="fa-solid fa-bell"></i>
     Notification & Timeline Lists
 </div>
 
-<div class="dsgt-list-group-grid">
+<div class="sw-list-group-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -612,26 +612,26 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-list-group-example">
+            <div class="sw-list-group-example">
                 <span class="lg-example-label">Activity Feed</span>
-                <ul class="dsgt-modern-list-group">
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-notification">
-                        <div class="dsgt-notification-dot"></div>
-                        <div class="dsgt-list-group-title">New user registered</div>
-                        <p class="dsgt-list-group-meta">2 minutes ago</p>
+                <ul class="sw-modern-list-group">
+                    <li class="sw-list-group-item sw-sw-list-group-item-notification">
+                        <div class="sw-notification-dot"></div>
+                        <div class="sw-list-group-title">New user registered</div>
+                        <p class="sw-list-group-meta">2 minutes ago</p>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-notification">
-                        <div class="dsgt-notification-dot" style="background: var(--success);"></div>
-                        <div class="dsgt-list-group-title">Payment confirmed</div>
-                        <p class="dsgt-list-group-meta">15 minutes ago</p>
+                    <li class="sw-list-group-item sw-sw-list-group-item-notification">
+                        <div class="sw-notification-dot" style="background: var(--success);"></div>
+                        <div class="sw-list-group-title">Payment confirmed</div>
+                        <p class="sw-list-group-meta">15 minutes ago</p>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-notification">
-                        <div class="dsgt-notification-dot" style="background: var(--warning);"></div>
-                        <div class="dsgt-list-group-title">Low stock alert</div>
-                        <p class="dsgt-list-group-meta">1 hour ago</p>
+                    <li class="sw-list-group-item sw-sw-list-group-item-notification">
+                        <div class="sw-notification-dot" style="background: var(--warning);"></div>
+                        <div class="sw-list-group-title">Low stock alert</div>
+                        <p class="sw-list-group-meta">1 hour ago</p>
                     </li>
                 </ul>
-                <div class="dsgt-list-group-helper">
+                <div class="sw-list-group-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Timeline with colored notification dots
                 </div>
@@ -652,26 +652,26 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-list-group-example">
+            <div class="sw-list-group-example">
                 <span class="lg-example-label">Project Timeline</span>
-                <div class="dsgt-list-group-timeline">
-                    <div class="dsgt-dsgt-list-group-timeline-item">
-                        <div class="dsgt-list-group-title">Project Started</div>
-                        <p class="dsgt-list-group-desc">Initial setup and planning</p>
-                        <p class="dsgt-list-group-meta">Jan 15, 2024</p>
+                <div class="sw-list-group-timeline">
+                    <div class="sw-sw-list-group-timeline-item">
+                        <div class="sw-list-group-title">Project Started</div>
+                        <p class="sw-list-group-desc">Initial setup and planning</p>
+                        <p class="sw-list-group-meta">Jan 15, 2024</p>
                     </div>
-                    <div class="dsgt-dsgt-list-group-timeline-item">
-                        <div class="dsgt-list-group-title">Design Phase</div>
-                        <p class="dsgt-list-group-desc">UI/UX design completed</p>
-                        <p class="dsgt-list-group-meta">Feb 20, 2024</p>
+                    <div class="sw-sw-list-group-timeline-item">
+                        <div class="sw-list-group-title">Design Phase</div>
+                        <p class="sw-list-group-desc">UI/UX design completed</p>
+                        <p class="sw-list-group-meta">Feb 20, 2024</p>
                     </div>
-                    <div class="dsgt-dsgt-list-group-timeline-item">
-                        <div class="dsgt-list-group-title">Development</div>
-                        <p class="dsgt-list-group-desc">Core features implemented</p>
-                        <p class="dsgt-list-group-meta">Apr 10, 2024</p>
+                    <div class="sw-sw-list-group-timeline-item">
+                        <div class="sw-list-group-title">Development</div>
+                        <p class="sw-list-group-desc">Core features implemented</p>
+                        <p class="sw-list-group-meta">Apr 10, 2024</p>
                     </div>
                 </div>
-                <div class="dsgt-list-group-helper">
+                <div class="sw-list-group-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Timeline with connecting line
                 </div>
@@ -681,7 +681,7 @@
 </div>
 
 <!-- Clickable & Disabled Items -->
-<div class="dsgt-list-group-section-title">
+<div class="sw-list-group-section-title">
     <i class="fa-solid fa-hand-pointer"></i>
     Clickable & Disabled Items
 </div>
@@ -699,31 +699,31 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-list-group-example">
+        <div class="sw-list-group-example">
             <span class="lg-example-label">Navigation Menu</span>
-            <ul class="dsgt-modern-list-group">
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-clickable active">
-                    <div class="dsgt-list-group-title">Dashboard</div>
-                    <p class="dsgt-list-group-desc">Overview and analytics</p>
+            <ul class="sw-modern-list-group">
+                <li class="sw-list-group-item sw-sw-list-group-item-clickable active">
+                    <div class="sw-list-group-title">Dashboard</div>
+                    <p class="sw-list-group-desc">Overview and analytics</p>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-clickable">
-                    <div class="dsgt-list-group-title">Products</div>
-                    <p class="dsgt-list-group-desc">Manage your inventory</p>
+                <li class="sw-list-group-item sw-sw-list-group-item-clickable">
+                    <div class="sw-list-group-title">Products</div>
+                    <p class="sw-list-group-desc">Manage your inventory</p>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-clickable">
-                    <div class="dsgt-list-group-title">Orders</div>
-                    <p class="dsgt-list-group-desc">View and process orders</p>
+                <li class="sw-list-group-item sw-sw-list-group-item-clickable">
+                    <div class="sw-list-group-title">Orders</div>
+                    <p class="sw-list-group-desc">View and process orders</p>
                 </li>
-                <li class="dsgt-list-group-item" style="opacity: 0.5; pointer-events: none; cursor: not-allowed;">
-                    <div class="dsgt-list-group-title">Reports (Disabled)</div>
-                    <p class="dsgt-list-group-desc">Coming soon feature</p>
+                <li class="sw-list-group-item" style="opacity: 0.5; pointer-events: none; cursor: not-allowed;">
+                    <div class="sw-list-group-title">Reports (Disabled)</div>
+                    <p class="sw-list-group-desc">Coming soon feature</p>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-clickable">
-                    <div class="dsgt-list-group-title">Settings</div>
-                    <p class="dsgt-list-group-desc">Configure your account</p>
+                <li class="sw-list-group-item sw-sw-list-group-item-clickable">
+                    <div class="sw-list-group-title">Settings</div>
+                    <p class="sw-list-group-desc">Configure your account</p>
                 </li>
             </ul>
-            <div class="dsgt-list-group-helper">
+            <div class="sw-list-group-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Click items to see active state, disabled items are not clickable
             </div>
@@ -732,12 +732,12 @@
 </div>
 
 <!-- Media & Content List -->
-<div class="dsgt-list-group-section-title">
+<div class="sw-list-group-section-title">
     <i class="fa-solid fa-photo-film"></i>
     Media & Content Lists
 </div>
 
-<div class="dsgt-list-group-grid">
+<div class="sw-list-group-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -751,41 +751,41 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-list-group-example">
+            <div class="sw-list-group-example">
                 <span class="lg-example-label">Photo Albums</span>
-                <ul class="dsgt-modern-list-group">
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-avatar">
+                <ul class="sw-modern-list-group">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-avatar">
                         <div style="width: 48px; height: 48px; border-radius: 8px; background: linear-gradient(135deg, var(--accent), #1A86D9); display: flex; align-items: center; justify-content: center; color: white; flex-shrink: 0;">
                             <i class="fa-solid fa-image"></i>
                         </div>
-                        <div class="dsgt-list-group-content">
-                            <div class="dsgt-list-group-title">Vacation Photos</div>
-                            <p class="dsgt-list-group-desc">24 images • 156 MB</p>
-                            <p class="dsgt-list-group-meta">Created 2 days ago</p>
+                        <div class="sw-list-group-content">
+                            <div class="sw-list-group-title">Vacation Photos</div>
+                            <p class="sw-list-group-desc">24 images • 156 MB</p>
+                            <p class="sw-list-group-meta">Created 2 days ago</p>
                         </div>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-avatar">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-avatar">
                         <div style="width: 48px; height: 48px; border-radius: 8px; background: linear-gradient(135deg, var(--success), #2DD41A); display: flex; align-items: center; justify-content: center; color: white; flex-shrink: 0;">
                             <i class="fa-solid fa-images"></i>
                         </div>
-                        <div class="dsgt-list-group-content">
-                            <div class="dsgt-list-group-title">Product Shots</div>
-                            <p class="dsgt-list-group-desc">48 images • 320 MB</p>
-                            <p class="dsgt-list-group-meta">Created 1 week ago</p>
+                        <div class="sw-list-group-content">
+                            <div class="sw-list-group-title">Product Shots</div>
+                            <p class="sw-list-group-desc">48 images • 320 MB</p>
+                            <p class="sw-list-group-meta">Created 1 week ago</p>
                         </div>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-avatar">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-avatar">
                         <div style="width: 48px; height: 48px; border-radius: 8px; background: linear-gradient(135deg, var(--warning), #FFD740); display: flex; align-items: center; justify-content: center; color: white; flex-shrink: 0;">
                             <i class="fa-solid fa-video"></i>
                         </div>
-                        <div class="dsgt-list-group-content">
-                            <div class="dsgt-list-group-title">Marketing Videos</div>
-                            <p class="dsgt-list-group-desc">12 videos • 1.2 GB</p>
-                            <p class="dsgt-list-group-meta">Created 3 weeks ago</p>
+                        <div class="sw-list-group-content">
+                            <div class="sw-list-group-title">Marketing Videos</div>
+                            <p class="sw-list-group-desc">12 videos • 1.2 GB</p>
+                            <p class="sw-list-group-meta">Created 3 weeks ago</p>
                         </div>
                     </li>
                 </ul>
-                <div class="dsgt-list-group-helper">
+                <div class="sw-list-group-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Image thumbnails with metadata and file info
                 </div>
@@ -806,41 +806,41 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-list-group-example">
+            <div class="sw-list-group-example">
                 <span class="lg-example-label">Recent Articles</span>
-                <ul class="dsgt-modern-list-group">
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-icon">
-                        <div class="dsgt-list-group-icon dsgt-dsgt-list-group-icon-primary">
+                <ul class="sw-modern-list-group">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-icon">
+                        <div class="sw-list-group-icon sw-sw-list-group-icon-primary">
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <div class="dsgt-list-group-content">
-                            <div class="dsgt-list-group-title">Getting Started with Laravel 11</div>
-                            <p class="dsgt-list-group-desc">Learn the basics of the latest Laravel version</p>
-                            <p class="dsgt-list-group-meta">5 min read • Published 2 days ago</p>
+                        <div class="sw-list-group-content">
+                            <div class="sw-list-group-title">Getting Started with Laravel 11</div>
+                            <p class="sw-list-group-desc">Learn the basics of the latest Laravel version</p>
+                            <p class="sw-list-group-meta">5 min read • Published 2 days ago</p>
                         </div>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-icon">
-                        <div class="dsgt-list-group-icon dsgt-dsgt-list-group-icon-success">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-icon">
+                        <div class="sw-list-group-icon sw-sw-list-group-icon-success">
                             <i class="fa-solid fa-fire"></i>
                         </div>
-                        <div class="dsgt-list-group-content">
-                            <div class="dsgt-list-group-title">10 CSS Tips for Modern UI</div>
-                            <p class="dsgt-list-group-desc">Improve your frontend skills with these tricks</p>
-                            <p class="dsgt-list-group-meta">8 min read • Published 1 week ago</p>
+                        <div class="sw-list-group-content">
+                            <div class="sw-list-group-title">10 CSS Tips for Modern UI</div>
+                            <p class="sw-list-group-desc">Improve your frontend skills with these tricks</p>
+                            <p class="sw-list-group-meta">8 min read • Published 1 week ago</p>
                         </div>
                     </li>
-                    <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-icon">
-                        <div class="dsgt-list-group-icon dsgt-dsgt-list-group-icon-warning">
+                    <li class="sw-list-group-item sw-sw-list-group-item-with-icon">
+                        <div class="sw-list-group-icon sw-sw-list-group-icon-warning">
                             <i class="fa-solid fa-bookmark"></i>
                         </div>
-                        <div class="dsgt-list-group-content">
-                            <div class="dsgt-list-group-title">Database Optimization Guide</div>
-                            <p class="dsgt-list-group-desc">Speed up your queries with indexing</p>
-                            <p class="dsgt-list-group-meta">12 min read • Published 2 weeks ago</p>
+                        <div class="sw-list-group-content">
+                            <div class="sw-list-group-title">Database Optimization Guide</div>
+                            <p class="sw-list-group-desc">Speed up your queries with indexing</p>
+                            <p class="sw-list-group-meta">12 min read • Published 2 weeks ago</p>
                         </div>
                     </li>
                 </ul>
-                <div class="dsgt-list-group-helper">
+                <div class="sw-list-group-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Blog posts with reading time and publish date
                 </div>
@@ -863,62 +863,62 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-list-group-example">
+        <div class="sw-list-group-example">
             <span class="lg-example-label">Priority Tasks (Drag to Reorder)</span>
-            <ul class="dsgt-modern-list-group" id="sortableList">
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-actions" style="cursor: grab;">
+            <ul class="sw-modern-list-group" id="sortableList">
+                <li class="sw-list-group-item sw-sw-list-group-item-with-actions" style="cursor: grab;">
                     <div style="display: flex; align-items: center; gap: 12px;">
                         <i class="fa-solid fa-grip-vertical" style="color: var(--text-secondary); cursor: grab;"></i>
                         <div>
-                            <div class="dsgt-list-group-title">Fix critical bug #1234</div>
-                            <p class="dsgt-list-group-desc">High Priority</p>
+                            <div class="sw-list-group-title">Fix critical bug #1234</div>
+                            <p class="sw-list-group-desc">High Priority</p>
                         </div>
                     </div>
-                    <div class="dsgt-list-group-actions">
-                        <button class="dsgt-list-group-action-btn" title="Edit">
+                    <div class="sw-list-group-actions">
+                        <button class="sw-list-group-action-btn" title="Edit">
                             <i class="fa-solid fa-pen"></i>
                         </button>
-                        <button class="dsgt-list-group-action-btn danger" title="Delete">
+                        <button class="sw-list-group-action-btn danger" title="Delete">
                             <i class="fa-solid fa-trash"></i>
                         </button>
                     </div>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-actions" style="cursor: grab;">
+                <li class="sw-list-group-item sw-sw-list-group-item-with-actions" style="cursor: grab;">
                     <div style="display: flex; align-items: center; gap: 12px;">
                         <i class="fa-solid fa-grip-vertical" style="color: var(--text-secondary); cursor: grab;"></i>
                         <div>
-                            <div class="dsgt-list-group-title">Update documentation</div>
-                            <p class="dsgt-list-group-desc">Medium Priority</p>
+                            <div class="sw-list-group-title">Update documentation</div>
+                            <p class="sw-list-group-desc">Medium Priority</p>
                         </div>
                     </div>
-                    <div class="dsgt-list-group-actions">
-                        <button class="dsgt-list-group-action-btn" title="Edit">
+                    <div class="sw-list-group-actions">
+                        <button class="sw-list-group-action-btn" title="Edit">
                             <i class="fa-solid fa-pen"></i>
                         </button>
-                        <button class="dsgt-list-group-action-btn danger" title="Delete">
+                        <button class="sw-list-group-action-btn danger" title="Delete">
                             <i class="fa-solid fa-trash"></i>
                         </button>
                     </div>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-actions" style="cursor: grab;">
+                <li class="sw-list-group-item sw-sw-list-group-item-with-actions" style="cursor: grab;">
                     <div style="display: flex; align-items: center; gap: 12px;">
                         <i class="fa-solid fa-grip-vertical" style="color: var(--text-secondary); cursor: grab;"></i>
                         <div>
-                            <div class="dsgt-list-group-title">Add new feature request</div>
-                            <p class="dsgt-list-group-desc">Low Priority</p>
+                            <div class="sw-list-group-title">Add new feature request</div>
+                            <p class="sw-list-group-desc">Low Priority</p>
                         </div>
                     </div>
-                    <div class="dsgt-list-group-actions">
-                        <button class="dsgt-list-group-action-btn" title="Edit">
+                    <div class="sw-list-group-actions">
+                        <button class="sw-list-group-action-btn" title="Edit">
                             <i class="fa-solid fa-pen"></i>
                         </button>
-                        <button class="dsgt-list-group-action-btn danger" title="Delete">
+                        <button class="sw-list-group-action-btn danger" title="Delete">
                             <i class="fa-solid fa-trash"></i>
                         </button>
                     </div>
                 </li>
             </ul>
-            <div class="dsgt-list-group-helper">
+            <div class="sw-list-group-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Visual grip icons indicate draggable items
             </div>
@@ -927,7 +927,7 @@
 </div>
 
 <!-- Searchable & Filterable List -->
-<div class="dsgt-list-group-section-title">
+<div class="sw-list-group-section-title">
     <i class="fa-solid fa-magnifying-glass"></i>
     Searchable & Filterable Lists
 </div>
@@ -945,7 +945,7 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-list-group-example">
+        <div class="sw-list-group-example">
             <span class="lg-example-label">Contact Directory</span>
             <div style="margin-bottom: 16px;">
                 <div style="position: relative;">
@@ -953,37 +953,37 @@
                     <input type="text" id="searchInput" placeholder="Search contacts..." style="width: 100%; padding: 10px 12px 10px 36px; border: 1px solid var(--border-color); border-radius: 6px; background: var(--surface); font-size: 13px;">
                 </div>
             </div>
-            <ul class="dsgt-modern-list-group" id="contactList">
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-avatar" data-search="alice johnson alice.johnson@example.com">
-                    <img src="https://ui-avatars.com/api/?name=Alice+Johnson&background=0078D4&color=fff&size=80" class="dsgt-list-group-avatar dsgt-dsgt-list-group-avatar-sm" alt="Alice">
-                    <div class="dsgt-list-group-content">
-                        <div class="dsgt-list-group-title">Alice Johnson</div>
-                        <p class="dsgt-list-group-desc">alice.johnson@example.com</p>
+            <ul class="sw-modern-list-group" id="contactList">
+                <li class="sw-list-group-item sw-sw-list-group-item-with-avatar" data-search="alice johnson alice.johnson@example.com">
+                    <img src="https://ui-avatars.com/api/?name=Alice+Johnson&background=0078D4&color=fff&size=80" class="sw-list-group-avatar sw-sw-list-group-avatar-sm" alt="Alice">
+                    <div class="sw-list-group-content">
+                        <div class="sw-list-group-title">Alice Johnson</div>
+                        <p class="sw-list-group-desc">alice.johnson@example.com</p>
                     </div>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-avatar" data-search="bob smith bob.smith@example.com">
-                    <img src="https://ui-avatars.com/api/?name=Bob+Smith&background=16C60C&color=fff&size=80" class="dsgt-list-group-avatar dsgt-dsgt-list-group-avatar-sm" alt="Bob">
-                    <div class="dsgt-list-group-content">
-                        <div class="dsgt-list-group-title">Bob Smith</div>
-                        <p class="dsgt-list-group-desc">bob.smith@example.com</p>
+                <li class="sw-list-group-item sw-sw-list-group-item-with-avatar" data-search="bob smith bob.smith@example.com">
+                    <img src="https://ui-avatars.com/api/?name=Bob+Smith&background=16C60C&color=fff&size=80" class="sw-list-group-avatar sw-sw-list-group-avatar-sm" alt="Bob">
+                    <div class="sw-list-group-content">
+                        <div class="sw-list-group-title">Bob Smith</div>
+                        <p class="sw-list-group-desc">bob.smith@example.com</p>
                     </div>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-avatar" data-search="charlie brown charlie.brown@example.com">
-                    <img src="https://ui-avatars.com/api/?name=Charlie+Brown&background=FFB900&color=fff&size=80" class="dsgt-list-group-avatar dsgt-dsgt-list-group-avatar-sm" alt="Charlie">
-                    <div class="dsgt-list-group-content">
-                        <div class="dsgt-list-group-title">Charlie Brown</div>
-                        <p class="dsgt-list-group-desc">charlie.brown@example.com</p>
+                <li class="sw-list-group-item sw-sw-list-group-item-with-avatar" data-search="charlie brown charlie.brown@example.com">
+                    <img src="https://ui-avatars.com/api/?name=Charlie+Brown&background=FFB900&color=fff&size=80" class="sw-list-group-avatar sw-sw-list-group-avatar-sm" alt="Charlie">
+                    <div class="sw-list-group-content">
+                        <div class="sw-list-group-title">Charlie Brown</div>
+                        <p class="sw-list-group-desc">charlie.brown@example.com</p>
                     </div>
                 </li>
-                <li class="dsgt-list-group-item dsgt-dsgt-list-group-item-with-avatar" data-search="diana prince diana.prince@example.com">
-                    <img src="https://ui-avatars.com/api/?name=Diana+Prince&background=EF4444&color=fff&size=80" class="dsgt-list-group-avatar dsgt-dsgt-list-group-avatar-sm" alt="Diana">
-                    <div class="dsgt-list-group-content">
-                        <div class="dsgt-list-group-title">Diana Prince</div>
-                        <p class="dsgt-list-group-desc">diana.prince@example.com</p>
+                <li class="sw-list-group-item sw-sw-list-group-item-with-avatar" data-search="diana prince diana.prince@example.com">
+                    <img src="https://ui-avatars.com/api/?name=Diana+Prince&background=EF4444&color=fff&size=80" class="sw-list-group-avatar sw-sw-list-group-avatar-sm" alt="Diana">
+                    <div class="sw-list-group-content">
+                        <div class="sw-list-group-title">Diana Prince</div>
+                        <p class="sw-list-group-desc">diana.prince@example.com</p>
                     </div>
                 </li>
             </ul>
-            <div class="dsgt-list-group-helper">
+            <div class="sw-list-group-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Type in search box to filter contacts by name or email
             </div>
@@ -992,12 +992,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-list-group-section-title">
+<div class="sw-list-group-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-list-group-grid">
+<div class="sw-list-group-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -1024,19 +1024,19 @@
                         <td>Base list container</td>
                     </tr>
                     <tr>
-                        <td><code>.dsgt-list-group-item</code></td>
+                        <td><code>.sw-list-group-item</code></td>
                         <td>Individual item</td>
                     </tr>
                     <tr>
-                        <td><code>.dsgt-dsgt-list-group-item-with-icon</code></td>
+                        <td><code>.sw-sw-list-group-item-with-icon</code></td>
                         <td>Item with icon</td>
                     </tr>
                     <tr>
-                        <td><code>.dsgt-dsgt-list-group-item-with-badge</code></td>
+                        <td><code>.sw-sw-list-group-item-with-badge</code></td>
                         <td>Item with badge</td>
                     </tr>
                     <tr>
-                        <td><code>.dsgt-dsgt-list-group-item-with-avatar</code></td>
+                        <td><code>.sw-sw-list-group-item-with-avatar</code></td>
                         <td>Item with avatar</td>
                     </tr>
                 </tbody>
@@ -1097,11 +1097,11 @@
 <script>
 // List Group page initialization
 $(document).ready(function() {
-    console.log('📋 DSGT List Group page loaded successfully');
+    console.log('📋 SW List Group page loaded successfully');
     
     // Initialize search functionality
     if ($('#searchInput').length && $('#contactList').length) {
-        MetroAdmin.initDSGTListGroupSearch('searchInput', 'contactList');
+        MetroAdmin.initSWListGroupSearch('searchInput', 'contactList');
     }
 });
 </script>

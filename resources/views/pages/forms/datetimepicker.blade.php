@@ -3,14 +3,14 @@
 @section('title', 'Date & Time Picker')
 
 @section('content')
-<div class="dsgt-container-fluid">
+<div class="sw-container-fluid">
     <!-- Page Header -->
-    <div class="dsgt-row mb-4">
-        <div class="dsgt-col-12">
-            <div class="dsgt-page-header">
+    <div class="sw-row mb-4">
+        <div class="sw-col-12">
+            <div class="sw-page-header">
                 <div>
-                    <h1 class="dsgt-page-title">Date & Time Picker</h1>
-                    <p class="dsgt-page-subtitle">Flatpickr - Lightweight and powerful date & time picker</p>
+                    <h1 class="sw-page-title">Date & Time Picker</h1>
+                    <p class="sw-page-subtitle">Flatpickr - Lightweight and powerful date & time picker</p>
                 </div>
                 <a href="https://flatpickr.js.org/" target="_blank" class="btn btn-outline-primary">
                     <i class="fa-solid fa-book"></i> Documentation
@@ -20,8 +20,8 @@
     </div>
 
     <!-- Info Alert -->
-    <div class="dsgt-row mb-4">
-        <div class="dsgt-col-12">
+    <div class="sw-row mb-4">
+        <div class="sw-col-12">
             <div class="alert alert-info d-flex align-items-start gap-3" role="alert" style="background: var(--bg-info); border: 1px solid var(--border-info); border-radius: var(--radius-lg); padding: 16px;">
                 <i class="fa-solid fa-circle-info fa-lg" style="color: var(--info);"></i>
                 <div>
@@ -37,26 +37,26 @@
         Basic Date Picker
     </div>
 
-    <div class="dsgt-row g-4 mb-4">
+    <div class="sw-row g-4 mb-4">
         <!-- Simple Date Input -->
-        <div class="dsgt-col-md-6">
+        <div class="sw-col-md-6">
             <div class="card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
                 <div class="card-body">
                     <h5 class="card-title mb-3">Simple Date Input</h5>
                     <label class="form-label">Select Date</label>
-                    <input type="text" class="form-control dsgt-flatpickr" data-toggle="flatpickr" placeholder="Select date...">
+                    <input type="text" class="form-control sw-flatpickr" data-toggle="flatpickr" placeholder="Select date...">
                     <small class="text-muted mt-2 d-block">Click to open calendar popup</small>
                 </div>
             </div>
         </div>
 
         <!-- Date + Time Input -->
-        <div class="dsgt-col-md-6">
+        <div class="sw-col-md-6">
             <div class="card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
                 <div class="card-body">
                     <h5 class="card-title mb-3">Date & Time</h5>
                     <label class="form-label">Select Date & Time</label>
-                    <input type="text" class="form-control dsgt-flatpickr" data-toggle="flatpickr" data-show-time="true" placeholder="Select date and time...">
+                    <input type="text" class="form-control sw-flatpickr" data-toggle="flatpickr" data-show-time="true" placeholder="Select date and time...">
                     <small class="text-muted mt-2 d-block">Includes 24-hour time selection</small>
                 </div>
             </div>
@@ -69,9 +69,9 @@
         Inline Calendar
     </div>
 
-    <div class="dsgt-row g-4 mb-4">
+    <div class="sw-row g-4 mb-4">
         <!-- Simple Inline Calendar -->
-        <div class="dsgt-col-md-6">
+        <div class="sw-col-md-6">
             <div class="card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
                 <div class="card-body">
                     <h5 class="card-title mb-3">Simple Inline Calendar</h5>
@@ -84,7 +84,7 @@
         </div>
 
         <!-- Inline Calendar with Display -->
-        <div class="dsgt-col-md-6">
+        <div class="sw-col-md-6">
             <div class="card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
                 <div class="card-body">
                     <h5 class="card-title mb-3">Calendar with Input</h5>
@@ -102,50 +102,50 @@
         Advanced Features
     </div>
 
-    <div class="dsgt-row g-4 mb-4">
+    <div class="sw-row g-4 mb-4">
         <!-- Date Range -->
-        <div class="dsgt-col-md-6">
+        <div class="sw-col-md-6">
             <div class="card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
                 <div class="card-body">
                     <h5 class="card-title mb-3">Date Range</h5>
                     <label class="form-label">Select Range</label>
-                    <input type="text" class="form-control dsgt-flatpickr" data-toggle="flatpickr" data-mode="range" placeholder="Select start and end date...">
+                    <input type="text" class="form-control sw-flatpickr" data-toggle="flatpickr" data-mode="range" placeholder="Select start and end date...">
                     <small class="text-muted mt-2 d-block">Click two dates to select range</small>
                 </div>
             </div>
         </div>
 
         <!-- Multiple Dates -->
-        <div class="dsgt-col-md-6">
+        <div class="sw-col-md-6">
             <div class="card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
                 <div class="card-body">
                     <h5 class="card-title mb-3">Multiple Dates</h5>
                     <label class="form-label">Select Multiple</label>
-                    <input type="text" class="form-control dsgt-flatpickr" data-toggle="flatpickr" data-mode="multiple" placeholder="Select multiple dates...">
+                    <input type="text" class="form-control sw-flatpickr" data-toggle="flatpickr" data-mode="multiple" placeholder="Select multiple dates...">
                     <small class="text-muted mt-2 d-block">Hold Ctrl/Cmd to select multiple</small>
                 </div>
             </div>
         </div>
 
         <!-- Min/Max Dates -->
-        <div class="dsgt-col-md-6">
+        <div class="sw-col-md-6">
             <div class="card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
                 <div class="card-body">
                     <h5 class="card-title mb-3">Min & Max Dates</h5>
                     <label class="form-label">Restricted Range</label>
-                    <input type="text" class="form-control dsgt-flatpickr" data-toggle="flatpickr" data-min-date="today" data-max-date="+30" placeholder="Next 30 days only...">
+                    <input type="text" class="form-control sw-flatpickr" data-toggle="flatpickr" data-min-date="today" data-max-date="+30" placeholder="Next 30 days only...">
                     <small class="text-muted mt-2 d-block">Limited to next 30 days from today</small>
                 </div>
             </div>
         </div>
 
         <!-- Week Numbers -->
-        <div class="dsgt-col-md-6">
+        <div class="sw-col-md-6">
             <div class="card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
                 <div class="card-body">
                     <h5 class="card-title mb-3">Week Numbers</h5>
                     <label class="form-label">Show Week Numbers</label>
-                    <input type="text" class="form-control dsgt-flatpickr" data-toggle="flatpickr" data-week-numbers="true" placeholder="Select date...">
+                    <input type="text" class="form-control sw-flatpickr" data-toggle="flatpickr" data-week-numbers="true" placeholder="Select date...">
                     <small class="text-muted mt-2 d-block">Displays ISO week numbers on left</small>
                 </div>
             </div>
@@ -158,24 +158,24 @@
         Real-World Example: Hotel Booking
     </div>
 
-    <div class="dsgt-row g-4 mb-4">
-        <div class="dsgt-col-12">
+    <div class="sw-row g-4 mb-4">
+        <div class="sw-col-12">
             <div class="card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
                 <div class="card-body">
                     <h5 class="card-title mb-4">Book a Room</h5>
 
-                    <div class="dsgt-row g-3">
-                        <div class="dsgt-col-md-5">
+                    <div class="sw-row g-3">
+                        <div class="sw-col-md-5">
                             <label class="form-label">Check-in Date & Time</label>
                             <input type="text" class="form-control" id="checkin-date" placeholder="Select check-in...">
                         </div>
 
-                        <div class="dsgt-col-md-5">
+                        <div class="sw-col-md-5">
                             <label class="form-label">Check-out Date & Time</label>
                             <input type="text" class="form-control" id="checkout-date" placeholder="Select check-out...">
                         </div>
 
-                        <div class="dsgt-col-md-2 d-flex align-items-end">
+                        <div class="sw-col-md-2 d-flex align-items-end">
                             <button class="btn btn-primary w-100" onclick="bookRoom()">
                                 <i class="fa-solid fa-check"></i> Book
                             </button>
@@ -183,13 +183,13 @@
                     </div>
 
                     <div class="mt-3">
-                        <div class="dsgt-row g-2">
-                            <div class="dsgt-col-md-6">
+                        <div class="sw-row g-2">
+                            <div class="sw-col-md-6">
                                 <div class="p-3 rounded" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle);">
                                     <strong>Check-in:</strong> <span id="display-checkin" class="text-primary">-</span>
                                 </div>
                             </div>
-                            <div class="dsgt-col-md-6">
+                            <div class="sw-col-md-6">
                                 <div class="p-3 rounded" style="background: var(--bg-secondary); border: 1px solid var(--border-subtle);">
                                     <strong>Check-out:</strong> <span id="display-checkout" class="text-primary">-</span>
                                 </div>
@@ -211,8 +211,8 @@
         Implementation Guide
     </div>
 
-    <div class="dsgt-row g-4 mb-4">
-        <div class="dsgt-col-12">
+    <div class="sw-row g-4 mb-4">
+        <div class="sw-col-12">
             <div class="card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
                 <div class="card-body">
                     <h5 class="card-title mb-3">Quick Start</h5>
@@ -249,33 +249,33 @@
                     </ul>
 
                     <h6 class="mt-4">Features</h6>
-                    <div class="dsgt-row g-2 mt-2">
-                        <div class="dsgt-col-md-4">
+                    <div class="sw-row g-2 mt-2">
+                        <div class="sw-col-md-4">
                             <div class="p-2 rounded" style="background: var(--bg-secondary);">
                                 <i class="fa-solid fa-check text-success"></i> Zero dependencies
                             </div>
                         </div>
-                        <div class="dsgt-col-md-4">
+                        <div class="sw-col-md-4">
                             <div class="p-2 rounded" style="background: var(--bg-secondary);">
                                 <i class="fa-solid fa-check text-success"></i> Lightweight (6KB gzipped)
                             </div>
                         </div>
-                        <div class="dsgt-col-md-4">
+                        <div class="sw-col-md-4">
                             <div class="p-2 rounded" style="background: var(--bg-secondary);">
                                 <i class="fa-solid fa-check text-success"></i> Mobile-friendly
                             </div>
                         </div>
-                        <div class="dsgt-col-md-4">
+                        <div class="sw-col-md-4">
                             <div class="p-2 rounded" style="background: var(--bg-secondary);">
                                 <i class="fa-solid fa-check text-success"></i> Localization support
                             </div>
                         </div>
-                        <div class="dsgt-col-md-4">
+                        <div class="sw-col-md-4">
                             <div class="p-2 rounded" style="background: var(--bg-secondary);">
                                 <i class="fa-solid fa-check text-success"></i> Inline calendar mode
                             </div>
                         </div>
-                        <div class="dsgt-col-md-4">
+                        <div class="sw-col-md-4">
                             <div class="p-2 rounded" style="background: var(--bg-secondary);">
                                 <i class="fa-solid fa-check text-success"></i> Custom date formats
                             </div>
@@ -303,11 +303,11 @@ $(document).ready(function () {
     }
 
     // Auto-init semua flatpickr dengan data-toggle="flatpickr"
-    DSGTFlatpickr.autoInit();
+    SWFlatpickr.autoInit();
 
     // Inline Calendar #1
     if ($('#inline-calendar-1').length) {
-        DSGTFlatpickr.initInline('#inline-calendar-1', {
+        SWFlatpickr.initInline('#inline-calendar-1', {
             onChange: function (selectedDates, dateStr) {
                 $('#inline-date-1').text(dateStr || 'None');
             }
@@ -316,7 +316,7 @@ $(document).ready(function () {
 
     // Inline Calendar #2
     if ($('#inline-calendar-2').length) {
-        DSGTFlatpickr.initInline('#inline-calendar-2', {
+        SWFlatpickr.initInline('#inline-calendar-2', {
             onChange: function (selectedDates, dateStr) {
                 $('#inline-input-2').val(dateStr);
             }
@@ -341,7 +341,7 @@ $(document).ready(function () {
                 minDate: 'today',
                 static: false,
                 onOpen: function (selectedDates, dateStr, instance) {
-                    DSGTFlatpickr.repositionOnScroll(instance);
+                    SWFlatpickr.repositionOnScroll(instance);
                 },
                 onChange: function (selectedDates) {
                     if (selectedDates.length > 0) {
@@ -372,7 +372,7 @@ $(document).ready(function () {
                 minDate: new Date().fp_incr(1),
                 static: false,
                 onOpen: function (selectedDates, dateStr, instance) {
-                    DSGTFlatpickr.repositionOnScroll(instance);
+                    SWFlatpickr.repositionOnScroll(instance);
                 },
                 onChange: function (selectedDates) {
                     if (selectedDates.length > 0) {

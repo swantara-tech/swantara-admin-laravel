@@ -55,7 +55,7 @@
         <div style="margin-bottom: 20px;">
             <!-- Advanced Search Toggle -->
             <div style="display: flex; justify-content: flex-end; margin-bottom: 12px;">
-                <a href="#filterForm" class="dsgt-advanced-search-toggle" id="advancedSearchToggle">
+                <a href="#filterForm" class="sw-advanced-search-toggle" id="advancedSearchToggle">
                     <i class="fa-solid fa-sliders"></i>
                     <span>Advanced Search</span>
                     <i class="fa-solid fa-chevron-down" id="advancedSearchIcon"></i>
@@ -63,14 +63,14 @@
             </div>
 
             <!-- Filter Form -->
-            <div id="filterForm" class="dsgt-filter-form dsgt-filter-expanded">
+            <div id="filterForm" class="sw-filter-form sw-filter-expanded">
                 <form id="userFilterForm">
-                    <div class="dsgt-filter-fields">
+                    <div class="sw-filter-fields">
                         <!-- Filter: Username -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Username</label>
-                            <div class="dsgt-filter-inputs">
-                                <select class="dsgt-filter-operator">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Username</label>
+                            <div class="sw-filter-inputs">
+                                <select class="sw-filter-operator">
                                     <option value="=">=</option>
                                     <option value="LIKE" selected>LIKE</option>
                                     <option value="LIKE -%">LIKE -%</option>
@@ -78,35 +78,35 @@
                                     <option value="IN">IN</option>
                                     <option value="NOT IN">NOT IN</option>
                                 </select>
-                                <input type="text" class="dsgt-filter-input" placeholder="Enter username...">
+                                <input type="text" class="sw-filter-input" placeholder="Enter username...">
                             </div>
                         </div>
 
                         <!-- Filter: Email -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Email</label>
-                            <div class="dsgt-filter-inputs">
-                                <select class="dsgt-filter-operator">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Email</label>
+                            <div class="sw-filter-inputs">
+                                <select class="sw-filter-operator">
                                     <option value="=">=</option>
                                     <option value="LIKE" selected>LIKE</option>
                                     <option value="LIKE -%">LIKE -%</option>
                                     <option value="!=">!=</option>
                                 </select>
-                                <input type="email" class="dsgt-filter-input" placeholder="Enter email...">
+                                <input type="email" class="sw-filter-input" placeholder="Enter email...">
                             </div>
                         </div>
 
                         <!-- Filter: Role -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Role</label>
-                            <div class="dsgt-filter-inputs">
-                                <select class="dsgt-filter-operator">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Role</label>
+                            <div class="sw-filter-inputs">
+                                <select class="sw-filter-operator">
                                     <option value="=" selected>=</option>
                                     <option value="!=">!=</option>
                                     <option value="IN">IN</option>
                                     <option value="NOT IN">NOT IN</option>
                                 </select>
-                                <select class="dsgt-filter-select">
+                                <select class="sw-filter-select">
                                     <option value="">All Roles</option>
                                     <option value="Administrator">Administrator</option>
                                     <option value="Editor">Editor</option>
@@ -119,14 +119,14 @@
                         </div>
 
                         <!-- Filter: Status -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Status</label>
-                            <div class="dsgt-filter-inputs">
-                                <select class="dsgt-filter-operator">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Status</label>
+                            <div class="sw-filter-inputs">
+                                <select class="sw-filter-operator">
                                     <option value="=" selected>=</option>
                                     <option value="!=">!=</option>
                                 </select>
-                                <select class="dsgt-filter-select">
+                                <select class="sw-filter-select">
                                     <option value="">All Status</option>
                                     <option value="Active">Active</option>
                                     <option value="Inactive">Inactive</option>
@@ -137,64 +137,64 @@
                         </div>
 
                         <!-- Filter: Date Range -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Created Date</label>
-                            <div class="dsgt-filter-inputs" id="dateFilterContainer">
-                                <select class="dsgt-filter-operator" id="dateOperator" onchange="dsgtToggleDateInputs('dateOperator', 'dateFilterContainer', 'dateInput1')">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Created Date</label>
+                            <div class="sw-filter-inputs" id="dateFilterContainer">
+                                <select class="sw-filter-operator" id="dateOperator" onchange="swToggleDateInputs('dateOperator', 'dateFilterContainer', 'dateInput1')">
                                     <option value=">=">>=</option>
                                     <option value="<="><=</option>
                                     <option value="=" selected>=</option>
                                     <option value="BETWEEN">⇄</option>
                                 </select>
-                                <input type="text" id="dateInput1" class="dsgt-filter-input dsgt-flatpickr" data-date-format="d/m/Y" placeholder="Select date...">
+                                <input type="text" id="dateInput1" class="sw-filter-input sw-flatpickr" data-date-format="d/m/Y" placeholder="Select date...">
                             </div>
                         </div>
 
                         <!-- Filter: Updated Date (DateTime) -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Updated Date</label>
-                            <div class="dsgt-filter-inputs" id="updatedDateFilterContainer">
-                                <select class="dsgt-filter-operator" id="updatedDateOperator" onchange="dsgtToggleDateInputs('updatedDateOperator', 'updatedDateFilterContainer', 'updatedDateInput1')">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Updated Date</label>
+                            <div class="sw-filter-inputs" id="updatedDateFilterContainer">
+                                <select class="sw-filter-operator" id="updatedDateOperator" onchange="swToggleDateInputs('updatedDateOperator', 'updatedDateFilterContainer', 'updatedDateInput1')">
                                     <option value=">=">>=</option>
                                     <option value="<="><=</option>
                                     <option value="=" selected>=</option>
                                     <option value="BETWEEN">⇄</option>
                                 </select>
-                                <input type="text" id="updatedDateInput1" class="dsgt-filter-input dsgt-flatpickr" data-date-format="d/m/Y H:i" data-show-time="true" placeholder="Select date & time...">
+                                <input type="text" id="updatedDateInput1" class="sw-filter-input sw-flatpickr" data-date-format="d/m/Y H:i" data-show-time="true" placeholder="Select date & time...">
                             </div>
                         </div>
 
                         <!-- Filter: Jam Masuk (Time Only) -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Jam Masuk</label>
-                            <div class="dsgt-filter-inputs" id="jamMasukFilterContainer">
-                                <select class="dsgt-filter-operator" id="jamMasukOperator" onchange="dsgtToggleDateInputs('jamMasukOperator', 'jamMasukFilterContainer', 'jamMasukInput1')">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Jam Masuk</label>
+                            <div class="sw-filter-inputs" id="jamMasukFilterContainer">
+                                <select class="sw-filter-operator" id="jamMasukOperator" onchange="swToggleDateInputs('jamMasukOperator', 'jamMasukFilterContainer', 'jamMasukInput1')">
                                     <option value=">=">>=</option>
                                     <option value="<="><=</option>
                                     <option value="=" selected>=</option>
                                     <option value="BETWEEN">⇄</option>
                                 </select>
-                                <input type="text" id="jamMasukInput1" class="dsgt-filter-input dsgt-flatpickr" data-date-format="H:i" placeholder="Select time...">
+                                <input type="text" id="jamMasukInput1" class="sw-filter-input sw-flatpickr" data-date-format="H:i" placeholder="Select time...">
                             </div>
                         </div>
 
                         <!-- Filter: Phone -->
-                        <div class="dsgt-filter-row">
-                            <label class="dsgt-filter-label">Phone</label>
-                            <div class="dsgt-filter-inputs">
-                                <select class="dsgt-filter-operator">
+                        <div class="sw-filter-row">
+                            <label class="sw-filter-label">Phone</label>
+                            <div class="sw-filter-inputs">
+                                <select class="sw-filter-operator">
                                     <option value="=">=</option>
                                     <option value="LIKE" selected>LIKE</option>
                                     <option value="LIKE -%">LIKE -%</option>
                                 </select>
-                                <input type="tel" class="dsgt-filter-input" placeholder="+62 xxx-xxxx-xxxx">
+                                <input type="tel" class="sw-filter-input" placeholder="+62 xxx-xxxx-xxxx">
                             </div>
                         </div>
                     </div>
 
                     <!-- Filter Actions -->
-                    <div class="dsgt-filter-actions">
-                        <button type="button" class="btn btn-secondary" onclick="dsgtResetFilterForm('userFilterForm', 'dateOperator')">
+                    <div class="sw-filter-actions">
+                        <button type="button" class="btn btn-secondary" onclick="swResetFilterForm('userFilterForm', 'dateOperator')">
                             <i class="fa-solid fa-rotate-left" style="margin-right: 6px;"></i>
                             Reset
                         </button>
@@ -2062,34 +2062,34 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th><div class="dsgt-shimmer" style="height: 16px; border-radius: 4px; width: 80px;"></div></th>
-                        <th><div class="dsgt-shimmer" style="height: 16px; border-radius: 4px; width: 120px;"></div></th>
-                        <th><div class="dsgt-shimmer" style="height: 16px; border-radius: 4px; width: 150px;"></div></th>
-                        <th><div class="dsgt-shimmer" style="height: 16px; border-radius: 4px; width: 100px;"></div></th>
-                        <th><div class="dsgt-shimmer" style="height: 16px; border-radius: 4px; width: 90px;"></div></th>
+                        <th><div class="sw-shimmer" style="height: 16px; border-radius: 4px; width: 80px;"></div></th>
+                        <th><div class="sw-shimmer" style="height: 16px; border-radius: 4px; width: 120px;"></div></th>
+                        <th><div class="sw-shimmer" style="height: 16px; border-radius: 4px; width: 150px;"></div></th>
+                        <th><div class="sw-shimmer" style="height: 16px; border-radius: 4px; width: 100px;"></div></th>
+                        <th><div class="sw-shimmer" style="height: 16px; border-radius: 4px; width: 90px;"></div></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
                     </tr>
                     <tr>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
                     </tr>
                     <tr>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
-                        <td><div class="dsgt-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
+                        <td><div class="sw-shimmer" style="height: 40px; border-radius: 4px;"></div></td>
                     </tr>
                 </tbody>
             </table>
@@ -2112,33 +2112,33 @@
         <div class="badge" style="background: #2d3748; color: white;">Dark Theme</div>
     </div>
     <div class="card-body" style="padding: 0;">
-        <div class="dsgt-dark-table">
+        <div class="sw-dark-table">
             <div class="table-responsive">
                 <table class="table table-hover">
                     <thead>
                         <tr>
                             <th>
-                                <i class="fa-solid fa-server dsgt-icon-blue"></i>
+                                <i class="fa-solid fa-server sw-icon-blue"></i>
                                 Server Name
                             </th>
                             <th>
-                                <i class="fa-solid fa-network-wired dsgt-icon-green"></i>
+                                <i class="fa-solid fa-network-wired sw-icon-green"></i>
                                 IP Address
                             </th>
                             <th>
-                                <i class="fa-solid fa-microchip dsgt-icon-orange"></i>
+                                <i class="fa-solid fa-microchip sw-icon-orange"></i>
                                 CPU Usage
                             </th>
                             <th>
-                                <i class="fa-solid fa-memory dsgt-icon-purple"></i>
+                                <i class="fa-solid fa-memory sw-icon-purple"></i>
                                 Memory
                             </th>
                             <th>
-                                <i class="fa-solid fa-hard-drive dsgt-icon-cyan"></i>
+                                <i class="fa-solid fa-hard-drive sw-icon-cyan"></i>
                                 Disk
                             </th>
                             <th>
-                                <i class="fa-solid fa-circle-info dsgt-icon-pink"></i>
+                                <i class="fa-solid fa-circle-info sw-icon-pink"></i>
                                 Status
                             </th>
                         </tr>
@@ -2146,184 +2146,184 @@
                     <tbody>
                         <tr>
                             <td>
-                                <div class="dsgt-server-info">
-                                    <div class="dsgt-server-icon dsgt-bg-success">
+                                <div class="sw-server-info">
+                                    <div class="sw-server-icon sw-bg-success">
                                         <i class="fa-solid fa-server"></i>
                                     </div>
                                     <div>
-                                        <div class="dsgt-server-name">Production Server</div>
-                                        <div class="dsgt-server-region">US-East-1</div>
+                                        <div class="sw-server-name">Production Server</div>
+                                        <div class="sw-server-region">US-East-1</div>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <code class="dsgt-ip-code">192.168.1.100</code>
+                                <code class="sw-ip-code">192.168.1.100</code>
                             </td>
                             <td>
-                                <div class="dsgt-progress-container">
-                                    <div class="dsgt-progress-bar">
-                                        <div class="dsgt-progress-fill dsgt-progress-success" style="width: 45%;"></div>
+                                <div class="sw-progress-container">
+                                    <div class="sw-progress-bar">
+                                        <div class="sw-progress-fill sw-progress-success" style="width: 45%;"></div>
                                     </div>
-                                    <span class="dsgt-progress-value dsgt-text-success">45%</span>
+                                    <span class="sw-progress-value sw-text-success">45%</span>
                                 </div>
                             </td>
                             <td>
-                                <div class="dsgt-progress-container">
-                                    <div class="dsgt-progress-bar">
-                                        <div class="dsgt-progress-fill dsgt-progress-warning" style="width: 62%;"></div>
+                                <div class="sw-progress-container">
+                                    <div class="sw-progress-bar">
+                                        <div class="sw-progress-fill sw-progress-warning" style="width: 62%;"></div>
                                     </div>
-                                    <span class="dsgt-progress-value dsgt-text-warning">62%</span>
+                                    <span class="sw-progress-value sw-text-warning">62%</span>
                                 </div>
                             </td>
                             <td>
-                                <div class="dsgt-progress-container">
-                                    <div class="dsgt-progress-bar">
-                                        <div class="dsgt-progress-fill dsgt-progress-warning" style="width: 78%;"></div>
+                                <div class="sw-progress-container">
+                                    <div class="sw-progress-bar">
+                                        <div class="sw-progress-fill sw-progress-warning" style="width: 78%;"></div>
                                     </div>
-                                    <span class="dsgt-progress-value dsgt-text-warning">78%</span>
+                                    <span class="sw-progress-value sw-text-warning">78%</span>
                                 </div>
                             </td>
                             <td>
-                                <span class="dsgt-status-badge dsgt-status-online">
-                                    <span class="dsgt-status-dot dsgt-pulse"></span>
+                                <span class="sw-status-badge sw-status-online">
+                                    <span class="sw-status-dot sw-pulse"></span>
                                     Online
                                 </span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="dsgt-server-info">
-                                    <div class="dsgt-server-icon dsgt-bg-info">
+                                <div class="sw-server-info">
+                                    <div class="sw-server-icon sw-bg-info">
                                         <i class="fa-solid fa-server"></i>
                                     </div>
                                     <div>
-                                        <div class="dsgt-server-name">Staging Server</div>
-                                        <div class="dsgt-server-region">EU-West-1</div>
+                                        <div class="sw-server-name">Staging Server</div>
+                                        <div class="sw-server-region">EU-West-1</div>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <code class="dsgt-ip-code">192.168.1.101</code>
+                                <code class="sw-ip-code">192.168.1.101</code>
                             </td>
                             <td>
-                                <div class="dsgt-progress-container">
-                                    <div class="dsgt-progress-bar">
-                                        <div class="dsgt-progress-fill dsgt-progress-success" style="width: 32%;"></div>
+                                <div class="sw-progress-container">
+                                    <div class="sw-progress-bar">
+                                        <div class="sw-progress-fill sw-progress-success" style="width: 32%;"></div>
                                     </div>
-                                    <span class="dsgt-progress-value dsgt-text-success">32%</span>
+                                    <span class="sw-progress-value sw-text-success">32%</span>
                                 </div>
                             </td>
                             <td>
-                                <div class="dsgt-progress-container">
-                                    <div class="dsgt-progress-bar">
-                                        <div class="dsgt-progress-fill dsgt-progress-success" style="width: 48%;"></div>
+                                <div class="sw-progress-container">
+                                    <div class="sw-progress-bar">
+                                        <div class="sw-progress-fill sw-progress-success" style="width: 48%;"></div>
                                     </div>
-                                    <span class="dsgt-progress-value dsgt-text-success">48%</span>
+                                    <span class="sw-progress-value sw-text-success">48%</span>
                                 </div>
                             </td>
                             <td>
-                                <div class="dsgt-progress-container">
-                                    <div class="dsgt-progress-bar">
-                                        <div class="dsgt-progress-fill dsgt-progress-success" style="width: 55%;"></div>
+                                <div class="sw-progress-container">
+                                    <div class="sw-progress-bar">
+                                        <div class="sw-progress-fill sw-progress-success" style="width: 55%;"></div>
                                     </div>
-                                    <span class="dsgt-progress-value dsgt-text-success">55%</span>
+                                    <span class="sw-progress-value sw-text-success">55%</span>
                                 </div>
                             </td>
                             <td>
-                                <span class="dsgt-status-badge dsgt-status-online">
-                                    <span class="dsgt-status-dot dsgt-pulse"></span>
+                                <span class="sw-status-badge sw-status-online">
+                                    <span class="sw-status-dot sw-pulse"></span>
                                     Online
                                 </span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="dsgt-server-info">
-                                    <div class="dsgt-server-icon dsgt-bg-warning">
+                                <div class="sw-server-info">
+                                    <div class="sw-server-icon sw-bg-warning">
                                         <i class="fa-solid fa-server"></i>
                                     </div>
                                     <div>
-                                        <div class="dsgt-server-name">Development Server</div>
-                                        <div class="dsgt-server-region">AP-Southeast-1</div>
+                                        <div class="sw-server-name">Development Server</div>
+                                        <div class="sw-server-region">AP-Southeast-1</div>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <code class="dsgt-ip-code">192.168.1.102</code>
+                                <code class="sw-ip-code">192.168.1.102</code>
                             </td>
                             <td>
-                                <div class="dsgt-progress-container">
-                                    <div class="dsgt-progress-bar">
-                                        <div class="dsgt-progress-fill dsgt-progress-danger" style="width: 78%;"></div>
+                                <div class="sw-progress-container">
+                                    <div class="sw-progress-bar">
+                                        <div class="sw-progress-fill sw-progress-danger" style="width: 78%;"></div>
                                     </div>
-                                    <span class="dsgt-progress-value dsgt-text-danger">78%</span>
+                                    <span class="sw-progress-value sw-text-danger">78%</span>
                                 </div>
                             </td>
                             <td>
-                                <div class="dsgt-progress-container">
-                                    <div class="dsgt-progress-bar">
-                                        <div class="dsgt-progress-fill dsgt-progress-danger" style="width: 85%;"></div>
+                                <div class="sw-progress-container">
+                                    <div class="sw-progress-bar">
+                                        <div class="sw-progress-fill sw-progress-danger" style="width: 85%;"></div>
                                     </div>
-                                    <span class="dsgt-progress-value dsgt-text-danger">85%</span>
+                                    <span class="sw-progress-value sw-text-danger">85%</span>
                                 </div>
                             </td>
                             <td>
-                                <div class="dsgt-progress-container">
-                                    <div class="dsgt-progress-bar">
-                                        <div class="dsgt-progress-fill dsgt-progress-danger" style="width: 92%;"></div>
+                                <div class="sw-progress-container">
+                                    <div class="sw-progress-bar">
+                                        <div class="sw-progress-fill sw-progress-danger" style="width: 92%;"></div>
                                     </div>
-                                    <span class="dsgt-progress-value dsgt-text-danger">92%</span>
+                                    <span class="sw-progress-value sw-text-danger">92%</span>
                                 </div>
                             </td>
                             <td>
-                                <span class="dsgt-status-badge dsgt-status-high-load">
-                                    <span class="dsgt-status-dot dsgt-pulse"></span>
+                                <span class="sw-status-badge sw-status-high-load">
+                                    <span class="sw-status-dot sw-pulse"></span>
                                     High Load
                                 </span>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="dsgt-server-info">
-                                    <div class="dsgt-server-icon dsgt-bg-secondary">
+                                <div class="sw-server-info">
+                                    <div class="sw-server-icon sw-bg-secondary">
                                         <i class="fa-solid fa-server"></i>
                                     </div>
                                     <div>
-                                        <div class="dsgt-server-name">Backup Server</div>
-                                        <div class="dsgt-server-region">US-West-2</div>
+                                        <div class="sw-server-name">Backup Server</div>
+                                        <div class="sw-server-region">US-West-2</div>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <code class="dsgt-ip-code">192.168.1.103</code>
+                                <code class="sw-ip-code">192.168.1.103</code>
                             </td>
                             <td>
-                                <div class="dsgt-progress-container">
-                                    <div class="dsgt-progress-bar">
-                                        <div class="dsgt-progress-fill dsgt-progress-success" style="width: 12%;"></div>
+                                <div class="sw-progress-container">
+                                    <div class="sw-progress-bar">
+                                        <div class="sw-progress-fill sw-progress-success" style="width: 12%;"></div>
                                     </div>
-                                    <span class="dsgt-progress-value dsgt-text-success">12%</span>
+                                    <span class="sw-progress-value sw-text-success">12%</span>
                                 </div>
                             </td>
                             <td>
-                                <div class="dsgt-progress-container">
-                                    <div class="dsgt-progress-bar">
-                                        <div class="dsgt-progress-fill dsgt-progress-success" style="width: 25%;"></div>
+                                <div class="sw-progress-container">
+                                    <div class="sw-progress-bar">
+                                        <div class="sw-progress-fill sw-progress-success" style="width: 25%;"></div>
                                     </div>
-                                    <span class="dsgt-progress-value dsgt-text-success">25%</span>
+                                    <span class="sw-progress-value sw-text-success">25%</span>
                                 </div>
                             </td>
                             <td>
-                                <div class="dsgt-progress-container">
-                                    <div class="dsgt-progress-bar">
-                                        <div class="dsgt-progress-fill dsgt-progress-success" style="width: 35%;"></div>
+                                <div class="sw-progress-container">
+                                    <div class="sw-progress-bar">
+                                        <div class="sw-progress-fill sw-progress-success" style="width: 35%;"></div>
                                     </div>
-                                    <span class="dsgt-progress-value dsgt-text-success">35%</span>
+                                    <span class="sw-progress-value sw-text-success">35%</span>
                                 </div>
                             </td>
                             <td>
-                                <span class="dsgt-status-badge dsgt-status-offline">
-                                    <span class="dsgt-status-dot"></span>
+                                <span class="sw-status-badge sw-status-offline">
+                                    <span class="sw-status-dot"></span>
                                     Standby
                                 </span>
                             </td>
@@ -2406,7 +2406,7 @@
 @push('scripts')
 <script>
 // Note: Advanced Search Filter functionality is now handled globally in app.js
-// All CSS classes are prefixed with dsgt-* for reusability
+// All CSS classes are prefixed with sw-* for reusability
 
 // Select All Checkbox Functionality for Filtered Table
 document.addEventListener('DOMContentLoaded', function() {

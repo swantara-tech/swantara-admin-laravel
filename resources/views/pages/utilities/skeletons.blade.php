@@ -18,7 +18,7 @@
             <i class="fa-solid fa-book"></i>
             <span>Documentation</span>
         </button>
-        <button class="btn btn-primary" onclick="MetroAdmin.simulateDSGTLoading()">
+        <button class="btn btn-primary" onclick="MetroAdmin.simulateSWLoading()">
             <i class="fa-solid fa-play"></i>
             <span>Demo Loading</span>
         </button>
@@ -26,7 +26,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-info-card">
+<div class="content-card sw-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -39,12 +39,12 @@
 </div>
 
 <!-- Basic Skeletons -->
-<div class="dsgt-skeleton-section-title">
+<div class="sw-skeleton-section-title">
     <i class="fa-solid fa-border-all"></i>
     Basic Skeletons <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-skeleton-grid">
+<div class="sw-skeleton-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -58,14 +58,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-skeleton-example">
-                <span class="dsgt-skeleton-example-label">Text Placeholders</span>
-                <div class="dsgt-skeleton dsgt-skeleton-title"></div>
-                <div class="dsgt-skeleton dsgt-skeleton-text"></div>
-                <div class="dsgt-skeleton dsgt-skeleton-text"></div>
-                <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 80%;"></div>
+            <div class="sw-skeleton-example">
+                <span class="sw-skeleton-example-label">Text Placeholders</span>
+                <div class="sw-skeleton sw-skeleton-title"></div>
+                <div class="sw-skeleton sw-skeleton-text"></div>
+                <div class="sw-skeleton sw-skeleton-text"></div>
+                <div class="sw-skeleton sw-skeleton-text" style="width: 80%;"></div>
             </div>
-            <div class="dsgt-skeleton-helper">
+            <div class="sw-skeleton-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Shimmer animation on text blocks
             </div>
@@ -85,18 +85,18 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-skeleton-example">
-                <span class="dsgt-skeleton-example-label">Circle Placeholders</span>
+            <div class="sw-skeleton-example">
+                <span class="sw-skeleton-example-label">Circle Placeholders</span>
                 <div style="display: flex; gap: 16px; align-items: center;">
-                    <div class="dsgt-skeleton dsgt-skeleton-avatar"></div>
-                    <div class="dsgt-skeleton dsgt-skeleton-avatar-lg"></div>
+                    <div class="sw-skeleton sw-skeleton-avatar"></div>
+                    <div class="sw-skeleton sw-skeleton-avatar-lg"></div>
                     <div>
-                        <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 120px; height: 20px;"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 80px;"></div>
+                        <div class="sw-skeleton sw-skeleton-text" style="width: 120px; height: 20px;"></div>
+                        <div class="sw-skeleton sw-skeleton-text" style="width: 80px;"></div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-skeleton-helper">
+            <div class="sw-skeleton-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Circular shapes for avatars
             </div>
@@ -105,12 +105,12 @@
 </div>
 
 <!-- Card Skeletons -->
-<div class="dsgt-skeleton-section-title">
+<div class="sw-skeleton-section-title">
     <i class="fa-solid fa-id-card"></i>
     Card Skeletons
 </div>
 
-<div class="dsgt-skeleton-grid">
+<div class="sw-skeleton-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -124,16 +124,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-skeleton-card" id="demo-card-1">
-                <div class="dsgt-skeleton dsgt-skeleton-image"></div>
+            <div class="sw-skeleton-card" id="demo-card-1">
+                <div class="sw-skeleton sw-skeleton-image"></div>
                 <div style="padding-top: 16px;">
-                    <div class="dsgt-skeleton dsgt-skeleton-title"></div>
-                    <div class="dsgt-skeleton dsgt-skeleton-text"></div>
-                    <div class="dsgt-skeleton dsgt-skeleton-text"></div>
-                    <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 60%;"></div>
+                    <div class="sw-skeleton sw-skeleton-title"></div>
+                    <div class="sw-skeleton sw-skeleton-text"></div>
+                    <div class="sw-skeleton sw-skeleton-text"></div>
+                    <div class="sw-skeleton sw-skeleton-text" style="width: 60%;"></div>
                 </div>
             </div>
-            <div class="dsgt-skeleton-helper">
+            <div class="sw-skeleton-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Full card loading state
             </div>
@@ -148,26 +148,26 @@
                 </div>
                 <div>
                     <h3>Profile Card</h3>
-                    <p class="card-subtitle">User profile dsgt-skeleton</p>
+                    <p class="card-subtitle">User profile sw-skeleton</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-skeleton-card">
-                <div class="dsgt-skeleton-card-header">
-                    <div class="dsgt-skeleton dsgt-skeleton-avatar-lg"></div>
+            <div class="sw-skeleton-card">
+                <div class="sw-skeleton-card-header">
+                    <div class="sw-skeleton sw-skeleton-avatar-lg"></div>
                     <div style="flex: 1;">
-                        <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 70%; height: 20px;"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 50%;"></div>
+                        <div class="sw-skeleton sw-skeleton-text" style="width: 70%; height: 20px;"></div>
+                        <div class="sw-skeleton sw-skeleton-text" style="width: 50%;"></div>
                     </div>
                 </div>
-                <div class="dsgt-skeleton-card-body">
-                    <div class="dsgt-skeleton dsgt-skeleton-text"></div>
-                    <div class="dsgt-skeleton dsgt-skeleton-text"></div>
-                    <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 80%;"></div>
+                <div class="sw-skeleton-card-body">
+                    <div class="sw-skeleton sw-skeleton-text"></div>
+                    <div class="sw-skeleton sw-skeleton-text"></div>
+                    <div class="sw-skeleton sw-skeleton-text" style="width: 80%;"></div>
                 </div>
             </div>
-            <div class="dsgt-skeleton-helper">
+            <div class="sw-skeleton-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 User profile loading state
             </div>
@@ -176,12 +176,12 @@
 </div>
 
 <!-- List & Table Skeletons -->
-<div class="dsgt-skeleton-section-title">
+<div class="sw-skeleton-section-title">
     <i class="fa-solid fa-list"></i>
     List & Table Skeletons
 </div>
 
-<div class="dsgt-skeleton-grid">
+<div class="sw-skeleton-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -195,31 +195,31 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-skeleton-example">
-                <span class="dsgt-skeleton-example-label">List Loading State</span>
-                <div class="dsgt-skeleton-list-item">
-                    <div class="dsgt-skeleton dsgt-skeleton-circle-md"></div>
+            <div class="sw-skeleton-example">
+                <span class="sw-skeleton-example-label">List Loading State</span>
+                <div class="sw-skeleton-list-item">
+                    <div class="sw-skeleton sw-skeleton-circle-md"></div>
                     <div style="flex: 1;">
-                        <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 80%;"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 60%;"></div>
+                        <div class="sw-skeleton sw-skeleton-text" style="width: 80%;"></div>
+                        <div class="sw-skeleton sw-skeleton-text" style="width: 60%;"></div>
                     </div>
                 </div>
-                <div class="dsgt-skeleton-list-item">
-                    <div class="dsgt-skeleton dsgt-skeleton-circle-md"></div>
+                <div class="sw-skeleton-list-item">
+                    <div class="sw-skeleton sw-skeleton-circle-md"></div>
                     <div style="flex: 1;">
-                        <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 70%;"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 50%;"></div>
+                        <div class="sw-skeleton sw-skeleton-text" style="width: 70%;"></div>
+                        <div class="sw-skeleton sw-skeleton-text" style="width: 50%;"></div>
                     </div>
                 </div>
-                <div class="dsgt-skeleton-list-item">
-                    <div class="dsgt-skeleton dsgt-skeleton-circle-md"></div>
+                <div class="sw-skeleton-list-item">
+                    <div class="sw-skeleton sw-skeleton-circle-md"></div>
                     <div style="flex: 1;">
-                        <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 90%;"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 40%;"></div>
+                        <div class="sw-skeleton sw-skeleton-text" style="width: 90%;"></div>
+                        <div class="sw-skeleton sw-skeleton-text" style="width: 40%;"></div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-skeleton-helper">
+            <div class="sw-skeleton-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Repeated list items
             </div>
@@ -239,27 +239,27 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-skeleton-example">
-                <span class="dsgt-skeleton-example-label">Table Loading State</span>
-                <div class="dsgt-skeleton-table">
-                    <div class="dsgt-skeleton-table-row">
-                        <div class="dsgt-skeleton dsgt-skeleton-table-cell"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-table-cell"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-table-cell"></div>
+            <div class="sw-skeleton-example">
+                <span class="sw-skeleton-example-label">Table Loading State</span>
+                <div class="sw-skeleton-table">
+                    <div class="sw-skeleton-table-row">
+                        <div class="sw-skeleton sw-skeleton-table-cell"></div>
+                        <div class="sw-skeleton sw-skeleton-table-cell"></div>
+                        <div class="sw-skeleton sw-skeleton-table-cell"></div>
                     </div>
-                    <div class="dsgt-skeleton-table-row">
-                        <div class="dsgt-skeleton dsgt-skeleton-table-cell"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-table-cell"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-table-cell"></div>
+                    <div class="sw-skeleton-table-row">
+                        <div class="sw-skeleton sw-skeleton-table-cell"></div>
+                        <div class="sw-skeleton sw-skeleton-table-cell"></div>
+                        <div class="sw-skeleton sw-skeleton-table-cell"></div>
                     </div>
-                    <div class="dsgt-skeleton-table-row">
-                        <div class="dsgt-skeleton dsgt-skeleton-table-cell"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-table-cell"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-table-cell"></div>
+                    <div class="sw-skeleton-table-row">
+                        <div class="sw-skeleton sw-skeleton-table-cell"></div>
+                        <div class="sw-skeleton sw-skeleton-table-cell"></div>
+                        <div class="sw-skeleton sw-skeleton-table-cell"></div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-skeleton-helper">
+            <div class="sw-skeleton-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Table rows and columns
             </div>
@@ -268,12 +268,12 @@
 </div>
 
 <!-- Skeleton Variants -->
-<div class="dsgt-skeleton-section-title">
+<div class="sw-skeleton-section-title">
     <i class="fa-solid fa-layer-group"></i>
     Skeleton Variations
 </div>
 
-<div class="dsgt-skeleton-grid">
+<div class="sw-skeleton-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -287,14 +287,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-skeleton-example">
-                <span class="dsgt-skeleton-example-label">Shimmer Animation</span>
-                <div class="dsgt-skeleton dsgt-skeleton-title"></div>
-                <div class="dsgt-skeleton dsgt-skeleton-text"></div>
-                <div class="dsgt-skeleton dsgt-skeleton-text"></div>
-                <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 75%;"></div>
+            <div class="sw-skeleton-example">
+                <span class="sw-skeleton-example-label">Shimmer Animation</span>
+                <div class="sw-skeleton sw-skeleton-title"></div>
+                <div class="sw-skeleton sw-skeleton-text"></div>
+                <div class="sw-skeleton sw-skeleton-text"></div>
+                <div class="sw-skeleton sw-skeleton-text" style="width: 75%;"></div>
             </div>
-            <div class="dsgt-skeleton-helper">
+            <div class="sw-skeleton-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Smooth gradient animation
             </div>
@@ -314,14 +314,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-skeleton-example">
-                <span class="dsgt-skeleton-example-label">Pulse Animation</span>
-                <div class="dsgt-skeleton dsgt-skeleton-pulse dsgt-skeleton-title"></div>
-                <div class="dsgt-skeleton dsgt-skeleton-pulse dsgt-skeleton-text"></div>
-                <div class="dsgt-skeleton dsgt-skeleton-pulse dsgt-skeleton-text"></div>
-                <div class="dsgt-skeleton dsgt-skeleton-pulse dsgt-skeleton-text" style="width: 75%;"></div>
+            <div class="sw-skeleton-example">
+                <span class="sw-skeleton-example-label">Pulse Animation</span>
+                <div class="sw-skeleton sw-skeleton-pulse sw-skeleton-title"></div>
+                <div class="sw-skeleton sw-skeleton-pulse sw-skeleton-text"></div>
+                <div class="sw-skeleton sw-skeleton-pulse sw-skeleton-text"></div>
+                <div class="sw-skeleton sw-skeleton-pulse sw-skeleton-text" style="width: 75%;"></div>
             </div>
-            <div class="dsgt-skeleton-helper">
+            <div class="sw-skeleton-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Fading opacity effect
             </div>
@@ -330,12 +330,12 @@
 </div>
 
 <!-- Advanced Skeleton Demos -->
-<div class="dsgt-skeleton-section-title">
+<div class="sw-skeleton-section-title">
     <i class="fa-solid fa-wand-magic-sparkles"></i>
     Advanced Demos
 </div>
 
-<div class="dsgt-skeleton-grid">
+<div class="sw-skeleton-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -349,27 +349,27 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-skeleton-example">
-                <span class="dsgt-skeleton-example-label">Stats Cards Loading</span>
+            <div class="sw-skeleton-example">
+                <span class="sw-skeleton-example-label">Stats Cards Loading</span>
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
                     <div style="padding: 16px; background: var(--surface); border: 1px solid var(--border-color); border-radius: 8px;">
-                        <div class="dsgt-skeleton" style="width: 40px; height: 40px; border-radius: 8px; margin-bottom: 12px;"></div>
-                        <div class="dsgt-skeleton" style="width: 60%; height: 24px; margin-bottom: 8px;"></div>
-                        <div class="dsgt-skeleton" style="width: 80%; height: 14px;"></div>
+                        <div class="sw-skeleton" style="width: 40px; height: 40px; border-radius: 8px; margin-bottom: 12px;"></div>
+                        <div class="sw-skeleton" style="width: 60%; height: 24px; margin-bottom: 8px;"></div>
+                        <div class="sw-skeleton" style="width: 80%; height: 14px;"></div>
                     </div>
                     <div style="padding: 16px; background: var(--surface); border: 1px solid var(--border-color); border-radius: 8px;">
-                        <div class="dsgt-skeleton" style="width: 40px; height: 40px; border-radius: 8px; margin-bottom: 12px;"></div>
-                        <div class="dsgt-skeleton" style="width: 60%; height: 24px; margin-bottom: 8px;"></div>
-                        <div class="dsgt-skeleton" style="width: 80%; height: 14px;"></div>
+                        <div class="sw-skeleton" style="width: 40px; height: 40px; border-radius: 8px; margin-bottom: 12px;"></div>
+                        <div class="sw-skeleton" style="width: 60%; height: 24px; margin-bottom: 8px;"></div>
+                        <div class="sw-skeleton" style="width: 80%; height: 14px;"></div>
                     </div>
                     <div style="padding: 16px; background: var(--surface); border: 1px solid var(--border-color); border-radius: 8px;">
-                        <div class="dsgt-skeleton" style="width: 40px; height: 40px; border-radius: 8px; margin-bottom: 12px;"></div>
-                        <div class="dsgt-skeleton" style="width: 60%; height: 24px; margin-bottom: 8px;"></div>
-                        <div class="dsgt-skeleton" style="width: 80%; height: 14px;"></div>
+                        <div class="sw-skeleton" style="width: 40px; height: 40px; border-radius: 8px; margin-bottom: 12px;"></div>
+                        <div class="sw-skeleton" style="width: 60%; height: 24px; margin-bottom: 8px;"></div>
+                        <div class="sw-skeleton" style="width: 80%; height: 14px;"></div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-skeleton-helper">
+            <div class="sw-skeleton-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Dashboard stats cards loading state
             </div>
@@ -389,33 +389,33 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-skeleton-example">
-                <span class="dsgt-skeleton-example-label">Chat Messages Loading</span>
+            <div class="sw-skeleton-example">
+                <span class="sw-skeleton-example-label">Chat Messages Loading</span>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
                     <div style="display: flex; gap: 10px;">
-                        <div class="dsgt-skeleton dsgt-skeleton-circle-md" style="flex-shrink: 0;"></div>
+                        <div class="sw-skeleton sw-skeleton-circle-md" style="flex-shrink: 0;"></div>
                         <div style="flex: 1;">
-                            <div class="dsgt-skeleton" style="width: 100px; height: 14px; margin-bottom: 6px;"></div>
-                            <div class="dsgt-skeleton" style="width: 100%; height: 40px; border-radius: 8px;"></div>
+                            <div class="sw-skeleton" style="width: 100px; height: 14px; margin-bottom: 6px;"></div>
+                            <div class="sw-skeleton" style="width: 100%; height: 40px; border-radius: 8px;"></div>
                         </div>
                     </div>
                     <div style="display: flex; gap: 10px; flex-direction: row-reverse;">
-                        <div class="dsgt-skeleton dsgt-skeleton-circle-md" style="flex-shrink: 0;"></div>
+                        <div class="sw-skeleton sw-skeleton-circle-md" style="flex-shrink: 0;"></div>
                         <div style="flex: 1; text-align: right;">
-                            <div class="dsgt-skeleton" style="width: 100px; height: 14px; margin-bottom: 6px; margin-left: auto;"></div>
-                            <div class="dsgt-skeleton" style="width: 80%; height: 40px; border-radius: 8px; margin-left: auto;"></div>
+                            <div class="sw-skeleton" style="width: 100px; height: 14px; margin-bottom: 6px; margin-left: auto;"></div>
+                            <div class="sw-skeleton" style="width: 80%; height: 40px; border-radius: 8px; margin-left: auto;"></div>
                         </div>
                     </div>
                     <div style="display: flex; gap: 10px;">
-                        <div class="dsgt-skeleton dsgt-skeleton-circle-md" style="flex-shrink: 0;"></div>
+                        <div class="sw-skeleton sw-skeleton-circle-md" style="flex-shrink: 0;"></div>
                         <div style="flex: 1;">
-                            <div class="dsgt-skeleton" style="width: 100px; height: 14px; margin-bottom: 6px;"></div>
-                            <div class="dsgt-skeleton" style="width: 90%; height: 50px; border-radius: 8px;"></div>
+                            <div class="sw-skeleton" style="width: 100px; height: 14px; margin-bottom: 6px;"></div>
+                            <div class="sw-skeleton" style="width: 90%; height: 50px; border-radius: 8px;"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-skeleton-helper">
+            <div class="sw-skeleton-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Chat messages loading state
             </div>
@@ -435,34 +435,34 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-skeleton-example">
-                <span class="dsgt-skeleton-example-label">Product Cards Loading</span>
+            <div class="sw-skeleton-example">
+                <span class="sw-skeleton-example-label">Product Cards Loading</span>
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
                     <div style="background: var(--surface); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden;">
-                        <div class="dsgt-skeleton" style="width: 100%; height: 120px;"></div>
+                        <div class="sw-skeleton" style="width: 100%; height: 120px;"></div>
                         <div style="padding: 12px;">
-                            <div class="dsgt-skeleton" style="width: 90%; height: 16px; margin-bottom: 8px;"></div>
-                            <div class="dsgt-skeleton" style="width: 60%; height: 14px; margin-bottom: 12px;"></div>
+                            <div class="sw-skeleton" style="width: 90%; height: 16px; margin-bottom: 8px;"></div>
+                            <div class="sw-skeleton" style="width: 60%; height: 14px; margin-bottom: 12px;"></div>
                             <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <div class="dsgt-skeleton" style="width: 50px; height: 20px;"></div>
-                                <div class="dsgt-skeleton dsgt-skeleton-button" style="width: 60px; height: 32px;"></div>
+                                <div class="sw-skeleton" style="width: 50px; height: 20px;"></div>
+                                <div class="sw-skeleton sw-skeleton-button" style="width: 60px; height: 32px;"></div>
                             </div>
                         </div>
                     </div>
                     <div style="background: var(--surface); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden;">
-                        <div class="dsgt-skeleton" style="width: 100%; height: 120px;"></div>
+                        <div class="sw-skeleton" style="width: 100%; height: 120px;"></div>
                         <div style="padding: 12px;">
-                            <div class="dsgt-skeleton" style="width: 90%; height: 16px; margin-bottom: 8px;"></div>
-                            <div class="dsgt-skeleton" style="width: 60%; height: 14px; margin-bottom: 12px;"></div>
+                            <div class="sw-skeleton" style="width: 90%; height: 16px; margin-bottom: 8px;"></div>
+                            <div class="sw-skeleton" style="width: 60%; height: 14px; margin-bottom: 12px;"></div>
                             <div style="display: flex; justify-content: space-between; align-items: center;">
-                                <div class="dsgt-skeleton" style="width: 50px; height: 20px;"></div>
-                                <div class="dsgt-skeleton dsgt-skeleton-button" style="width: 60px; height: 32px;"></div>
+                                <div class="sw-skeleton" style="width: 50px; height: 20px;"></div>
+                                <div class="sw-skeleton sw-skeleton-button" style="width: 60px; height: 32px;"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-skeleton-helper">
+            <div class="sw-skeleton-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Product cards loading state
             </div>
@@ -482,24 +482,24 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-skeleton-example">
-                <span class="dsgt-skeleton-example-label">Form Loading State</span>
+            <div class="sw-skeleton-example">
+                <span class="sw-skeleton-example-label">Form Loading State</span>
                 <div style="display: flex; flex-direction: column; gap: 16px;">
                     <div>
-                        <div class="dsgt-skeleton" style="width: 80px; height: 14px; margin-bottom: 8px;"></div>
-                        <div class="dsgt-skeleton" style="width: 100%; height: 40px; border-radius: 6px;"></div>
+                        <div class="sw-skeleton" style="width: 80px; height: 14px; margin-bottom: 8px;"></div>
+                        <div class="sw-skeleton" style="width: 100%; height: 40px; border-radius: 6px;"></div>
                     </div>
                     <div>
-                        <div class="dsgt-skeleton" style="width: 80px; height: 14px; margin-bottom: 8px;"></div>
-                        <div class="dsgt-skeleton" style="width: 100%; height: 40px; border-radius: 6px;"></div>
+                        <div class="sw-skeleton" style="width: 80px; height: 14px; margin-bottom: 8px;"></div>
+                        <div class="sw-skeleton" style="width: 100%; height: 40px; border-radius: 6px;"></div>
                     </div>
                     <div style="display: flex; gap: 12px;">
-                        <div class="dsgt-skeleton dsgt-skeleton-button" style="width: 100px;"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-button" style="width: 80px; background: rgba(0,0,0,0.08);"></div>
+                        <div class="sw-skeleton sw-skeleton-button" style="width: 100px;"></div>
+                        <div class="sw-skeleton sw-skeleton-button" style="width: 80px; background: rgba(0,0,0,0.08);"></div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-skeleton-helper">
+            <div class="sw-skeleton-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Form fields loading state
             </div>
@@ -508,7 +508,7 @@
 </div>
 
 <!-- Interactive Demo -->
-<div class="dsgt-skeleton-section-title">
+<div class="sw-skeleton-section-title">
     <i class="fa-solid fa-hand-pointer"></i>
     Interactive Demo <span class="badge badge-primary">Try It</span>
 </div>
@@ -521,11 +521,11 @@
             </div>
             <div>
                 <h3>Loading State Simulation</h3>
-                <p class="card-subtitle">See dsgt-skeleton in action with realistic loading</p>
+                <p class="card-subtitle">See sw-skeleton in action with realistic loading</p>
             </div>
         </div>
         <div>
-            <button class="btn btn-primary btn-lg" onclick="MetroAdmin.simulateDSGTLoading()" id="loadingBtn">
+            <button class="btn btn-primary btn-lg" onclick="MetroAdmin.simulateSWLoading()" id="loadingBtn">
                 <i class="fa-solid fa-play"></i>
                 <span>Start Demo</span>
             </button>
@@ -535,27 +535,27 @@
         <!-- Status Indicator -->
         <div id="statusIndicator" style="margin-bottom: 20px; padding: 12px 16px; border-radius: 8px; background: rgba(0, 0, 0, 0.03); display: flex; align-items: center; gap: 10px; transition: all 0.3s;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent);"></i>
-            <span style="font-size: 13px; color: var(--text-secondary);">Click "Start Demo" to see dsgt-skeleton loading animation</span>
+            <span style="font-size: 13px; color: var(--text-secondary);">Click "Start Demo" to see sw-skeleton loading animation</span>
         </div>
         
         <!-- Content Area with Smooth Transition -->
         <div id="contentArea" style="transition: opacity 0.3s ease;">
-            <div class="dsgt-skeleton-card">
-                <div class="dsgt-skeleton-card-header">
-                    <div class="dsgt-skeleton dsgt-skeleton-avatar-lg"></div>
+            <div class="sw-skeleton-card">
+                <div class="sw-skeleton-card-header">
+                    <div class="sw-skeleton sw-skeleton-avatar-lg"></div>
                     <div style="flex: 1;">
-                        <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 70%; height: 20px; margin-bottom: 8px;"></div>
-                        <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 50%;"></div>
+                        <div class="sw-skeleton sw-skeleton-text" style="width: 70%; height: 20px; margin-bottom: 8px;"></div>
+                        <div class="sw-skeleton sw-skeleton-text" style="width: 50%;"></div>
                     </div>
                 </div>
                 <div style="margin-top: 16px;">
-                    <div class="dsgt-skeleton dsgt-skeleton-image" style="height: 150px; margin-bottom: 16px;"></div>
-                    <div class="dsgt-skeleton dsgt-skeleton-text" style="margin-bottom: 8px;"></div>
-                    <div class="dsgt-skeleton dsgt-skeleton-text" style="margin-bottom: 8px;"></div>
-                    <div class="dsgt-skeleton dsgt-skeleton-text" style="width: 80%; margin-bottom: 16px;"></div>
+                    <div class="sw-skeleton sw-skeleton-image" style="height: 150px; margin-bottom: 16px;"></div>
+                    <div class="sw-skeleton sw-skeleton-text" style="margin-bottom: 8px;"></div>
+                    <div class="sw-skeleton sw-skeleton-text" style="margin-bottom: 8px;"></div>
+                    <div class="sw-skeleton sw-skeleton-text" style="width: 80%; margin-bottom: 16px;"></div>
                     <div style="display: flex; gap: 8px;">
-                        <div class="dsgt-skeleton" style="width: 100px; height: 36px; border-radius: 6px;"></div>
-                        <div class="dsgt-skeleton" style="width: 80px; height: 36px; border-radius: 6px; background: rgba(0,0,0,0.08);"></div>
+                        <div class="sw-skeleton" style="width: 100px; height: 36px; border-radius: 6px;"></div>
+                        <div class="sw-skeleton" style="width: 80px; height: 36px; border-radius: 6px; background: rgba(0,0,0,0.08);"></div>
                     </div>
                 </div>
             </div>
@@ -564,12 +564,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-skeleton-section-title">
+<div class="sw-skeleton-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-skeleton-grid">
+<div class="sw-skeleton-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -578,23 +578,23 @@
                 </div>
                 <div>
                     <h3>HTML Structure</h3>
-                    <p class="card-subtitle">Basic dsgt-skeleton markup</p>
+                    <p class="card-subtitle">Basic sw-skeleton markup</p>
                 </div>
             </div>
         </div>
         <div class="card-body">
             <div class="code-block">
 &lt;!-- Text Skeleton --&gt;<br>
-&lt;div class="dsgt-skeleton dsgt-skeleton-text"&gt;&lt;/div&gt;<br>
+&lt;div class="sw-skeleton sw-skeleton-text"&gt;&lt;/div&gt;<br>
 <br>
 &lt;!-- Avatar Skeleton --&gt;<br>
-&lt;div class="dsgt-skeleton dsgt-skeleton-avatar"&gt;&lt;/div&gt;<br>
+&lt;div class="sw-skeleton sw-skeleton-avatar"&gt;&lt;/div&gt;<br>
 <br>
 &lt;!-- Card Skeleton --&gt;<br>
-&lt;div class="dsgt-skeleton-card"&gt;<br>
-&nbsp;&nbsp;&lt;div class="dsgt-skeleton dsgt-skeleton-image"&gt;&lt;/div&gt;<br>
-&nbsp;&nbsp;&lt;div class="dsgt-skeleton dsgt-skeleton-title"&gt;&lt;/div&gt;<br>
-&nbsp;&nbsp;&lt;div class="dsgt-skeleton dsgt-skeleton-text"&gt;&lt;/div&gt;<br>
+&lt;div class="sw-skeleton-card"&gt;<br>
+&nbsp;&nbsp;&lt;div class="sw-skeleton sw-skeleton-image"&gt;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="sw-skeleton sw-skeleton-title"&gt;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="sw-skeleton sw-skeleton-text"&gt;&lt;/div&gt;<br>
 &lt;/div&gt;
             </div>
         </div>
@@ -649,12 +649,12 @@
 <script>
 // Skeletons page initialization
 $(document).ready(function() {
-    console.log('💀 DSGT Skeletons page loaded successfully');
+    console.log('💀 SW Skeletons page loaded successfully');
     
     // Demo: Show welcome toast
     setTimeout(() => {
         if (typeof MetroAdmin !== 'undefined') {
-            MetroAdmin.showDSGTInfoToast('Welcome to the Skeletons demo page!');
+            MetroAdmin.showSWInfoToast('Welcome to the Skeletons demo page!');
         }
     }, 1000);
 });

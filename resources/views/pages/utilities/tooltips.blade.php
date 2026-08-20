@@ -25,7 +25,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-tooltip-info-card">
+<div class="content-card sw-tooltip-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -38,12 +38,12 @@
 </div>
 
 <!-- Tooltip Positions -->
-<div class="dsgt-tooltip-section-title">
+<div class="sw-tooltip-section-title">
     <i class="fa-solid fa-arrows-left-right"></i>
     Tooltip Positions <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-tooltip-grid">
+<div class="sw-tooltip-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -57,14 +57,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-tooltip-example">
-                <span class="dsgt-tooltip-example-label">Hover to see tooltip</span>
-                <div class="dsgt-tooltip-wrapper">
-                    <button class="dsgt-tooltip-trigger">Hover Me (Top)</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-top">Tooltip on top</div>
+            <div class="sw-tooltip-example">
+                <span class="sw-tooltip-example-label">Hover to see tooltip</span>
+                <div class="sw-tooltip-wrapper">
+                    <button class="sw-tooltip-trigger">Hover Me (Top)</button>
+                    <div class="sw-tooltip sw-tooltip-top">Tooltip on top</div>
                 </div>
             </div>
-            <div class="dsgt-tooltip-helper">
+            <div class="sw-tooltip-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Default position, appears above
             </div>
@@ -84,14 +84,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-tooltip-example">
-                <span class="dsgt-tooltip-example-label">Hover to see tooltip</span>
-                <div class="dsgt-tooltip-wrapper">
-                    <button class="dsgt-tooltip-trigger">Hover Me (Bottom)</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-bottom">Tooltip on bottom</div>
+            <div class="sw-tooltip-example">
+                <span class="sw-tooltip-example-label">Hover to see tooltip</span>
+                <div class="sw-tooltip-wrapper">
+                    <button class="sw-tooltip-trigger">Hover Me (Bottom)</button>
+                    <div class="sw-tooltip sw-tooltip-bottom">Tooltip on bottom</div>
                 </div>
             </div>
-            <div class="dsgt-tooltip-helper">
+            <div class="sw-tooltip-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Appears below the element
             </div>
@@ -111,14 +111,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-tooltip-example">
-                <span class="dsgt-tooltip-example-label">Hover to see tooltip</span>
-                <div class="dsgt-tooltip-wrapper">
-                    <button class="dsgt-tooltip-trigger">Hover Me (Left)</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-left">Tooltip on left</div>
+            <div class="sw-tooltip-example">
+                <span class="sw-tooltip-example-label">Hover to see tooltip</span>
+                <div class="sw-tooltip-wrapper">
+                    <button class="sw-tooltip-trigger">Hover Me (Left)</button>
+                    <div class="sw-tooltip sw-tooltip-left">Tooltip on left</div>
                 </div>
             </div>
-            <div class="dsgt-tooltip-helper">
+            <div class="sw-tooltip-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Appears on the left side
             </div>
@@ -138,14 +138,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-tooltip-example">
-                <span class="dsgt-tooltip-example-label">Hover to see tooltip</span>
-                <div class="dsgt-tooltip-wrapper">
-                    <button class="dsgt-tooltip-trigger">Hover Me (Right)</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-right">Tooltip on right</div>
+            <div class="sw-tooltip-example">
+                <span class="sw-tooltip-example-label">Hover to see tooltip</span>
+                <div class="sw-tooltip-wrapper">
+                    <button class="sw-tooltip-trigger">Hover Me (Right)</button>
+                    <div class="sw-tooltip sw-tooltip-right">Tooltip on right</div>
                 </div>
             </div>
-            <div class="dsgt-tooltip-helper">
+            <div class="sw-tooltip-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Appears on the right side
             </div>
@@ -154,12 +154,12 @@
 </div>
 
 <!-- Tooltip Colors -->
-<div class="dsgt-tooltip-section-title">
+<div class="sw-tooltip-section-title">
     <i class="fa-solid fa-palette"></i>
     Tooltip Colors
 </div>
 
-<div class="dsgt-tooltip-grid">
+<div class="sw-tooltip-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -173,14 +173,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-tooltip-example">
-                <span class="dsgt-tooltip-example-label">Primary color</span>
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-primary">
-                    <button class="dsgt-tooltip-trigger">Primary</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-top">Primary tooltip</div>
+            <div class="sw-tooltip-example">
+                <span class="sw-tooltip-example-label">Primary color</span>
+                <div class="sw-tooltip-wrapper sw-tooltip-primary">
+                    <button class="sw-tooltip-trigger">Primary</button>
+                    <div class="sw-tooltip sw-tooltip-top">Primary tooltip</div>
                 </div>
             </div>
-            <div class="dsgt-tooltip-helper">
+            <div class="sw-tooltip-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 var(--accent) background
             </div>
@@ -200,14 +200,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-tooltip-example">
-                <span class="dsgt-tooltip-example-label">Success color</span>
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-success">
-                    <button class="dsgt-tooltip-trigger" style="border-color: var(--success); color: var(--success);">Success</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-top">Success action completed</div>
+            <div class="sw-tooltip-example">
+                <span class="sw-tooltip-example-label">Success color</span>
+                <div class="sw-tooltip-wrapper sw-tooltip-success">
+                    <button class="sw-tooltip-trigger" style="border-color: var(--success); color: var(--success);">Success</button>
+                    <div class="sw-tooltip sw-tooltip-top">Success action completed</div>
                 </div>
             </div>
-            <div class="dsgt-tooltip-helper">
+            <div class="sw-tooltip-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 var(--success) background
             </div>
@@ -227,14 +227,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-tooltip-example">
-                <span class="dsgt-tooltip-example-label">Warning color</span>
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-warning">
-                    <button class="dsgt-tooltip-trigger" style="border-color: var(--warning); color: var(--warning);">Warning</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-top">Caution: Review before proceeding</div>
+            <div class="sw-tooltip-example">
+                <span class="sw-tooltip-example-label">Warning color</span>
+                <div class="sw-tooltip-wrapper sw-tooltip-warning">
+                    <button class="sw-tooltip-trigger" style="border-color: var(--warning); color: var(--warning);">Warning</button>
+                    <div class="sw-tooltip sw-tooltip-top">Caution: Review before proceeding</div>
                 </div>
             </div>
-            <div class="dsgt-tooltip-helper">
+            <div class="sw-tooltip-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 var(--warning) background
             </div>
@@ -254,14 +254,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-tooltip-example">
-                <span class="dsgt-tooltip-example-label">Danger color</span>
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-danger">
-                    <button class="dsgt-tooltip-trigger" style="border-color: var(--danger); color: var(--danger);">Danger</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-top">Error: Please fix this issue</div>
+            <div class="sw-tooltip-example">
+                <span class="sw-tooltip-example-label">Danger color</span>
+                <div class="sw-tooltip-wrapper sw-tooltip-danger">
+                    <button class="sw-tooltip-trigger" style="border-color: var(--danger); color: var(--danger);">Danger</button>
+                    <div class="sw-tooltip sw-tooltip-top">Error: Please fix this issue</div>
                 </div>
             </div>
-            <div class="dsgt-tooltip-helper">
+            <div class="sw-tooltip-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 var(--danger) background
             </div>
@@ -281,14 +281,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-tooltip-example">
-                <span class="dsgt-tooltip-example-label">Info color</span>
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-info">
-                    <button class="dsgt-tooltip-trigger" style="border-color: var(--info); color: var(--info);">Info</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-top">Informational message</div>
+            <div class="sw-tooltip-example">
+                <span class="sw-tooltip-example-label">Info color</span>
+                <div class="sw-tooltip-wrapper sw-tooltip-info">
+                    <button class="sw-tooltip-trigger" style="border-color: var(--info); color: var(--info);">Info</button>
+                    <div class="sw-tooltip sw-tooltip-top">Informational message</div>
                 </div>
             </div>
-            <div class="dsgt-tooltip-helper">
+            <div class="sw-tooltip-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 var(--info) background
             </div>
@@ -297,7 +297,7 @@
 </div>
 
 <!-- Tooltip with Icons -->
-<div class="dsgt-tooltip-section-title">
+<div class="sw-tooltip-section-title">
     <i class="fa-solid fa-icons"></i>
     Tooltip with Icons
 </div>
@@ -315,44 +315,44 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-tooltip-example" style="min-height: 100px;">
-            <span class="dsgt-tooltip-example-label">Hover over icons</span>
+        <div class="sw-tooltip-example" style="min-height: 100px;">
+            <span class="sw-tooltip-example-label">Hover over icons</span>
             <div style="display: flex; gap: 24px; align-items: center;">
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-primary">
+                <div class="sw-tooltip-wrapper sw-tooltip-primary">
                     <i class="fa-solid fa-house" style="font-size: 24px; cursor: pointer; color: var(--accent);"></i>
-                    <div class="dsgt-tooltip dsgt-tooltip-top dsgt-tooltip-with-icon">
+                    <div class="sw-tooltip sw-tooltip-top sw-tooltip-with-icon">
                         <i class="fa-solid fa-circle-info"></i>
                         Home Dashboard
                     </div>
                 </div>
                 
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-success">
+                <div class="sw-tooltip-wrapper sw-tooltip-success">
                     <i class="fa-solid fa-check-circle" style="font-size: 24px; cursor: pointer; color: var(--success);"></i>
-                    <div class="dsgt-tooltip dsgt-tooltip-top dsgt-tooltip-with-icon">
+                    <div class="sw-tooltip sw-tooltip-top sw-tooltip-with-icon">
                         <i class="fa-solid fa-check"></i>
                         Verified Account
                     </div>
                 </div>
                 
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-warning">
+                <div class="sw-tooltip-wrapper sw-tooltip-warning">
                     <i class="fa-solid fa-exclamation-triangle" style="font-size: 24px; cursor: pointer; color: var(--warning);"></i>
-                    <div class="dsgt-tooltip dsgt-tooltip-top dsgt-tooltip-with-icon">
+                    <div class="sw-tooltip sw-tooltip-top sw-tooltip-with-icon">
                         <i class="fa-solid fa-triangle-exclamation"></i>
                         Pending Review
                     </div>
                 </div>
                 
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-danger">
+                <div class="sw-tooltip-wrapper sw-tooltip-danger">
                     <i class="fa-solid fa-trash" style="font-size: 24px; cursor: pointer; color: var(--danger);"></i>
-                    <div class="dsgt-tooltip dsgt-tooltip-top dsgt-tooltip-with-icon">
+                    <div class="sw-tooltip sw-tooltip-top sw-tooltip-with-icon">
                         <i class="fa-solid fa-circle-exclamation"></i>
                         Delete Item
                     </div>
                 </div>
                 
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-info">
+                <div class="sw-tooltip-wrapper sw-tooltip-info">
                     <i class="fa-solid fa-question-circle" style="font-size: 24px; cursor: pointer; color: var(--info);"></i>
-                    <div class="dsgt-tooltip dsgt-tooltip-top dsgt-tooltip-with-icon">
+                    <div class="sw-tooltip sw-tooltip-top sw-tooltip-with-icon">
                         <i class="fa-solid fa-circle-question"></i>
                         Need Help?
                     </div>
@@ -367,12 +367,12 @@
 </div>
 
 <!-- HTML Content Tooltips -->
-<div class="dsgt-tooltip-section-title">
+<div class="sw-tooltip-section-title">
     <i class="fa-solid fa-code"></i>
     HTML Content Tooltips
 </div>
 
-<div class="dsgt-tooltip-grid">
+<div class="sw-tooltip-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -386,17 +386,17 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-tooltip-example">
-                <span class="dsgt-tooltip-example-label">Complex tooltip content</span>
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-html dsgt-tooltip-primary">
-                    <button class="dsgt-tooltip-trigger">Rich Tooltip</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-top">
+            <div class="sw-tooltip-example">
+                <span class="sw-tooltip-example-label">Complex tooltip content</span>
+                <div class="sw-tooltip-wrapper sw-tooltip-html sw-tooltip-primary">
+                    <button class="sw-tooltip-trigger">Rich Tooltip</button>
+                    <div class="sw-tooltip sw-tooltip-top">
                         <strong>Product Info</strong><br>
                         <span style="font-size: 11px;">Price: $99.99<br>In Stock: Yes<br>Rating: ★★★★☆</span>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-tooltip-helper">
+            <div class="sw-tooltip-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 HTML formatting supported
             </div>
@@ -416,11 +416,11 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-tooltip-example">
-                <span class="dsgt-tooltip-example-label">List in tooltip</span>
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-html dsgt-tooltip-success">
-                    <button class="dsgt-tooltip-trigger" style="border-color: var(--success); color: var(--success);">Features</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-top">
+            <div class="sw-tooltip-example">
+                <span class="sw-tooltip-example-label">List in tooltip</span>
+                <div class="sw-tooltip-wrapper sw-tooltip-html sw-tooltip-success">
+                    <button class="sw-tooltip-trigger" style="border-color: var(--success); color: var(--success);">Features</button>
+                    <div class="sw-tooltip sw-tooltip-top">
                         <strong>Key Features:</strong><br>
                         <span style="font-size: 11px;">
                         ✓ Fast Performance<br>
@@ -430,7 +430,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dsgt-tooltip-helper">
+            <div class="sw-tooltip-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Structured information display
             </div>
@@ -439,7 +439,7 @@
 </div>
 
 <!-- Tooltip Triggers -->
-<div class="dsgt-tooltip-section-title">
+<div class="sw-tooltip-section-title">
     <i class="fa-solid fa-hand-pointer"></i>
     Tooltip Triggers
 </div>
@@ -457,26 +457,26 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-tooltip-example" style="min-height: 100px;">
-            <span class="dsgt-tooltip-example-label">Different trigger methods</span>
+        <div class="sw-tooltip-example" style="min-height: 100px;">
+            <span class="sw-tooltip-example-label">Different trigger methods</span>
             <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-primary">
-                    <button class="dsgt-tooltip-trigger">Hover (Default)</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-top">Shows on hover</div>
+                <div class="sw-tooltip-wrapper sw-tooltip-primary">
+                    <button class="sw-tooltip-trigger">Hover (Default)</button>
+                    <div class="sw-tooltip sw-tooltip-top">Shows on hover</div>
                 </div>
                 
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-success dsgt-tooltip-show">
-                    <button class="dsgt-tooltip-trigger" style="border-color: var(--success); color: var(--success);">Always Show</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-bottom">Always visible</div>
+                <div class="sw-tooltip-wrapper sw-tooltip-success sw-tooltip-show">
+                    <button class="sw-tooltip-trigger" style="border-color: var(--success); color: var(--success);">Always Show</button>
+                    <div class="sw-tooltip sw-tooltip-bottom">Always visible</div>
                 </div>
                 
-                <div class="dsgt-tooltip-wrapper dsgt-tooltip-warning" id="click-tooltip">
-                    <button class="dsgt-tooltip-trigger" style="border-color: var(--warning); color: var(--warning);" onclick="MetroAdmin.toggleDSGTTooltip('#click-tooltip')">Click Me</button>
-                    <div class="dsgt-tooltip dsgt-tooltip-top">Clicked!</div>
+                <div class="sw-tooltip-wrapper sw-tooltip-warning" id="click-tooltip">
+                    <button class="sw-tooltip-trigger" style="border-color: var(--warning); color: var(--warning);" onclick="MetroAdmin.toggleSWTooltip('#click-tooltip')">Click Me</button>
+                    <div class="sw-tooltip sw-tooltip-top">Clicked!</div>
                 </div>
             </div>
         </div>
-        <div class="dsgt-tooltip-helper">
+        <div class="sw-tooltip-helper">
             <i class="fa-solid fa-circle-info"></i>
             Hover, persistent, and click triggers
         </div>
@@ -484,12 +484,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-tooltip-section-title">
+<div class="sw-tooltip-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-tooltip-grid">
+<div class="sw-tooltip-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -503,27 +503,27 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-tooltip-code-block">
+            <div class="sw-tooltip-code-block">
 &lt;!-- Basic Tooltip --&gt;<br>
-&lt;div class="dsgt-tooltip-wrapper"&gt;<br>
+&lt;div class="sw-tooltip-wrapper"&gt;<br>
 &nbsp;&nbsp;&lt;button&gt;Hover Me&lt;/button&gt;<br>
-&nbsp;&nbsp;&lt;div class="dsgt-tooltip dsgt-tooltip-top"&gt;<br>
+&nbsp;&nbsp;&lt;div class="sw-tooltip sw-tooltip-top"&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Tooltip text here<br>
 &nbsp;&nbsp;&lt;/div&gt;<br>
 &lt;/div&gt;<br>
 <br>
 &lt;!-- With Color --&gt;<br>
-&lt;div class="dsgt-tooltip-wrapper dsgt-tooltip-success"&gt;<br>
+&lt;div class="sw-tooltip-wrapper sw-tooltip-success"&gt;<br>
 &nbsp;&nbsp;&lt;button&gt;Success&lt;/button&gt;<br>
-&nbsp;&nbsp;&lt;div class="dsgt-tooltip dsgt-tooltip-bottom"&gt;<br>
+&nbsp;&nbsp;&lt;div class="sw-tooltip sw-tooltip-bottom"&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Success message<br>
 &nbsp;&nbsp;&lt;/div&gt;<br>
 &lt;/div&gt;<br>
 <br>
 &lt;!-- With Icon --&gt;<br>
-&lt;div class="dsgt-tooltip-wrapper dsgt-tooltip-primary"&gt;<br>
+&lt;div class="sw-tooltip-wrapper sw-tooltip-primary"&gt;<br>
 &nbsp;&nbsp;&lt;i class="fa-solid fa-info"&gt;&lt;/i&gt;<br>
-&nbsp;&nbsp;&lt;div class="dsgt-tooltip dsgt-tooltip-top dsgt-tooltip-with-icon"&gt;<br>
+&nbsp;&nbsp;&lt;div class="sw-tooltip sw-tooltip-top sw-tooltip-with-icon"&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa-solid fa-circle-info"&gt;&lt;/i&gt;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Helpful info<br>
 &nbsp;&nbsp;&lt;/div&gt;<br>
@@ -585,7 +585,7 @@
 <script>
 // Tooltips page initialization
 $(document).ready(function() {
-    console.log('✨ DSGT Tooltips page loaded successfully');
+    console.log('✨ SW Tooltips page loaded successfully');
     
     // Initialize tooltips via MetroAdmin
     if (typeof MetroAdmin !== 'undefined') {
@@ -593,13 +593,13 @@ $(document).ready(function() {
         
         // Auto-show first tooltip briefly as demo
         setTimeout(() => {
-            const firstTooltip = $('.dsgt-tooltip-wrapper').first();
+            const firstTooltip = $('.sw-tooltip-wrapper').first();
             if (firstTooltip.length) {
-                firstTooltip.addClass('dsgt-tooltip-show');
+                firstTooltip.addClass('sw-tooltip-show');
                 console.log('💡 Demo: First tooltip shown briefly');
                 
                 setTimeout(() => {
-                    firstTooltip.removeClass('dsgt-tooltip-show');
+                    firstTooltip.removeClass('sw-tooltip-show');
                 }, 2000);
             }
         }, 1500);

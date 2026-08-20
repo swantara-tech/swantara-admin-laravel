@@ -18,7 +18,7 @@
             <i class="fa-solid fa-book"></i>
             <span>Documentation</span>
         </button>
-        <button class="btn btn-primary" onclick="MetroAdmin.openDSGTVideoModal('dQw4w9WgXcQ')">
+        <button class="btn btn-primary" onclick="MetroAdmin.openSWVideoModal('dQw4w9WgXcQ')">
             <i class="fa-solid fa-play"></i>
             <span>Watch Demo</span>
         </button>
@@ -30,7 +30,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="dsgt-video-info-card content-card">
+<div class="sw-video-info-card content-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -43,12 +43,12 @@
 </div>
 
 <!-- YouTube Embed -->
-<div class="dsgt-video-section-title">
+<div class="sw-video-section-title">
     <i class="fa-brands fa-youtube"></i>
     YouTube Embed <span class="badge badge-danger">Popular</span>
 </div>
 
-<div class="dsgt-video-grid">
+<div class="sw-video-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -62,15 +62,15 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-video-example">
-                <span class="dsgt-video-example-label">YouTube Video</span>
-                <div class="dsgt-video-wrapper dsgt-video-ratio-16-9">
+            <div class="sw-video-example">
+                <span class="sw-video-example-label">YouTube Video</span>
+                <div class="sw-video-wrapper sw-video-ratio-16-9">
                     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
                             title="YouTube video" 
                             allowfullscreen>
                     </iframe>
                 </div>
-                <div class="dsgt-video-helper">
+                <div class="sw-video-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Responsive 16:9 aspect ratio
                 </div>
@@ -91,15 +91,15 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-video-example">
-                <span class="dsgt-video-example-label">Classic Ratio</span>
-                <div class="dsgt-video-wrapper dsgt-video-ratio-4-3">
+            <div class="sw-video-example">
+                <span class="sw-video-example-label">Classic Ratio</span>
+                <div class="sw-video-wrapper sw-video-ratio-4-3">
                     <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
                             title="YouTube video" 
                             allowfullscreen>
                     </iframe>
                 </div>
-                <div class="dsgt-video-helper">
+                <div class="sw-video-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Traditional 4:3 aspect ratio
                 </div>
@@ -109,7 +109,7 @@
 </div>
 
 <!-- Vimeo Embed -->
-<div class="dsgt-video-section-title">
+<div class="sw-video-section-title">
     <i class="fa-brands fa-vimeo"></i>
     Vimeo Embed
 </div>
@@ -127,15 +127,15 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-video-example">
-            <span class="dsgt-video-example-label">Vimeo Video</span>
-            <div class="dsgt-video-wrapper dsgt-video-ratio-16-9">
+        <div class="sw-video-example">
+            <span class="sw-video-example-label">Vimeo Video</span>
+            <div class="sw-video-wrapper sw-video-ratio-16-9">
                 <iframe src="https://player.vimeo.com/video/76979871" 
                         title="Vimeo video" 
                         allowfullscreen>
                 </iframe>
             </div>
-            <div class="dsgt-video-helper">
+            <div class="sw-video-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 High-quality Vimeo embed
             </div>
@@ -144,7 +144,7 @@
 </div>
 
 <!-- HTML5 Video -->
-<div class="dsgt-video-section-title">
+<div class="sw-video-section-title">
     <i class="fa-solid fa-film"></i>
     HTML5 Video
 </div>
@@ -162,18 +162,18 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-video-example">
-            <span class="dsgt-video-example-label">HTML5 Video</span>
-            <div class="dsgt-video-wrapper dsgt-video-ratio-16-9" style="background: linear-gradient(135deg, var(--accent), #1A86D9); display: flex; align-items: center; justify-content: center;">
+        <div class="sw-video-example">
+            <span class="sw-video-example-label">HTML5 Video</span>
+            <div class="sw-video-wrapper sw-video-ratio-16-9" style="background: linear-gradient(135deg, var(--accent), #1A86D9); display: flex; align-items: center; justify-content: center;">
                 <div style="text-align: center; color: white;">
                     <i class="fa-solid fa-video" style="font-size: 48px; margin-bottom: 12px; display: block;"></i>
                     <p style="font-size: 16px; font-weight: 600; margin: 0;">HTML5 Video Player</p>
                     <p style="font-size: 13px; margin: 8px 0 0 0; opacity: 0.9;">Add your video source to enable playback</p>
                 </div>
             </div>
-            <div class="dsgt-video-embed-info">
+            <div class="sw-video-embed-info">
                 <p style="font-size: 12px; color: var(--text-secondary); margin: 0 0 8px 0; font-weight: 600;">HTML Code:</p>
-                <div class="dsgt-video-embed-code">
+                <div class="sw-video-embed-code">
 &lt;video controls poster="thumbnail.jpg"&gt;
   &lt;source src="video.mp4" type="video/mp4"&gt;
   &lt;source src="video.webm" type="video/webm"&gt;
@@ -181,7 +181,7 @@
 &lt;/video&gt;
                 </div>
             </div>
-            <div class="dsgt-video-helper">
+            <div class="sw-video-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Native browser video player
             </div>
@@ -190,7 +190,7 @@
 </div>
 
 <!-- Video Cards -->
-<div class="dsgt-video-section-title">
+<div class="sw-video-section-title">
     <i class="fa-solid fa-clone"></i>
     Video Cards
 </div>
@@ -208,28 +208,28 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-video-example" style="padding: 0; background: transparent; border: none;">
-            <span class="dsgt-video-example-label" style="padding: 0 24px;">Normal Video Cards (Closable)</span>
-            <div class="dsgt-video-gallery-grid" style="padding: 0 24px 24px;">
+        <div class="sw-video-example" style="padding: 0; background: transparent; border: none;">
+            <span class="sw-video-example-label" style="padding: 0 24px;">Normal Video Cards (Closable)</span>
+            <div class="sw-video-gallery-grid" style="padding: 0 24px 24px;">
                 <!-- Video Card 1 -->
-                <div class="dsgt-video-card" onclick="MetroAdmin.openDSGTVideoModal('dQw4w9WgXcQ')">
-                    <div class="dsgt-video-card-thumbnail">
+                <div class="sw-video-card" onclick="MetroAdmin.openSWVideoModal('dQw4w9WgXcQ')">
+                    <div class="sw-video-card-thumbnail">
                         <img src="https://picsum.photos/seed/video1/640/360" alt="Video 1">
-                        <div class="dsgt-video-card-play">
+                        <div class="sw-video-card-play">
                             <i class="fa-solid fa-play"></i>
                         </div>
-                        <div class="dsgt-video-card-duration">3:32</div>
+                        <div class="sw-video-card-duration">3:32</div>
                     </div>
-                    <div class="dsgt-video-card-content">
-                        <h4 class="dsgt-video-card-title">Introduction to Web Development</h4>
-                        <div class="dsgt-video-card-meta">
-                            <span class="dsgt-video-card-meta-item">
+                    <div class="sw-video-card-content">
+                        <h4 class="sw-video-card-title">Introduction to Web Development</h4>
+                        <div class="sw-video-card-meta">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-eye"></i> 12.5K
                             </span>
-                            <span class="dsgt-video-card-meta-item">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-heart"></i> 856
                             </span>
-                            <span class="dsgt-video-card-meta-item">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-clock"></i> 2 days ago
                             </span>
                         </div>
@@ -237,24 +237,24 @@
                 </div>
 
                 <!-- Video Card 2 -->
-                <div class="dsgt-video-card" onclick="MetroAdmin.openDSGTVideoModal('dQw4w9WgXcQ')">
-                    <div class="dsgt-video-card-thumbnail">
+                <div class="sw-video-card" onclick="MetroAdmin.openSWVideoModal('dQw4w9WgXcQ')">
+                    <div class="sw-video-card-thumbnail">
                         <img src="https://picsum.photos/seed/video2/640/360" alt="Video 2">
-                        <div class="dsgt-video-card-play">
+                        <div class="sw-video-card-play">
                             <i class="fa-solid fa-play"></i>
                         </div>
-                        <div class="dsgt-video-card-duration">5:18</div>
+                        <div class="sw-video-card-duration">5:18</div>
                     </div>
-                    <div class="dsgt-video-card-content">
-                        <h4 class="dsgt-video-card-title">CSS Grid Layout Tutorial</h4>
-                        <div class="dsgt-video-card-meta">
-                            <span class="dsgt-video-card-meta-item">
+                    <div class="sw-video-card-content">
+                        <h4 class="sw-video-card-title">CSS Grid Layout Tutorial</h4>
+                        <div class="sw-video-card-meta">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-eye"></i> 8.3K
                             </span>
-                            <span class="dsgt-video-card-meta-item">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-heart"></i> 542
                             </span>
-                            <span class="dsgt-video-card-meta-item">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-clock"></i> 5 days ago
                             </span>
                         </div>
@@ -262,24 +262,24 @@
                 </div>
 
                 <!-- Video Card 3 -->
-                <div class="dsgt-video-card" onclick="MetroAdmin.openDSGTVideoModal('dQw4w9WgXcQ')">
-                    <div class="dsgt-video-card-thumbnail">
+                <div class="sw-video-card" onclick="MetroAdmin.openSWVideoModal('dQw4w9WgXcQ')">
+                    <div class="sw-video-card-thumbnail">
                         <img src="https://picsum.photos/seed/video3/640/360" alt="Video 3">
-                        <div class="dsgt-video-card-play">
+                        <div class="sw-video-card-play">
                             <i class="fa-solid fa-play"></i>
                         </div>
-                        <div class="dsgt-video-card-duration">8:45</div>
+                        <div class="sw-video-card-duration">8:45</div>
                     </div>
-                    <div class="dsgt-video-card-content">
-                        <h4 class="dsgt-video-card-title">JavaScript ES6 Features</h4>
-                        <div class="dsgt-video-card-meta">
-                            <span class="dsgt-video-card-meta-item">
+                    <div class="sw-video-card-content">
+                        <h4 class="sw-video-card-title">JavaScript ES6 Features</h4>
+                        <div class="sw-video-card-meta">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-eye"></i> 15.2K
                             </span>
-                            <span class="dsgt-video-card-meta-item">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-heart"></i> 1.2K
                             </span>
-                            <span class="dsgt-video-card-meta-item">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-clock"></i> 1 week ago
                             </span>
                         </div>
@@ -287,31 +287,31 @@
                 </div>
 
                 <!-- Video Card 4 -->
-                <div class="dsgt-video-card" onclick="MetroAdmin.openDSGTVideoModal('dQw4w9WgXcQ')">
-                    <div class="dsgt-video-card-thumbnail">
+                <div class="sw-video-card" onclick="MetroAdmin.openSWVideoModal('dQw4w9WgXcQ')">
+                    <div class="sw-video-card-thumbnail">
                         <img src="https://picsum.photos/seed/video4/640/360" alt="Video 4">
-                        <div class="dsgt-video-card-play">
+                        <div class="sw-video-card-play">
                             <i class="fa-solid fa-play"></i>
                         </div>
-                        <div class="dsgt-video-card-duration">12:20</div>
+                        <div class="sw-video-card-duration">12:20</div>
                     </div>
-                    <div class="dsgt-video-card-content">
-                        <h4 class="dsgt-video-card-title">React Hooks Deep Dive</h4>
-                        <div class="dsgt-video-card-meta">
-                            <span class="dsgt-video-card-meta-item">
+                    <div class="sw-video-card-content">
+                        <h4 class="sw-video-card-title">React Hooks Deep Dive</h4>
+                        <div class="sw-video-card-meta">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-eye"></i> 22.1K
                             </span>
-                            <span class="dsgt-video-card-meta-item">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-heart"></i> 1.8K
                             </span>
-                            <span class="dsgt-video-card-meta-item">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-clock"></i> 2 weeks ago
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-video-helper" style="margin: 0 24px 24px;">
+            <div class="sw-video-helper" style="margin: 0 24px 24px;">
                 <i class="fa-solid fa-circle-info"></i>
                 Click any card to play video in modal (can be closed with X, ESC, or backdrop click)
             </div>
@@ -320,7 +320,7 @@
 </div>
 
 <!-- Locked Video Cards -->
-<div class="dsgt-video-section-title">
+<div class="sw-video-section-title">
     <i class="fa-solid fa-lock"></i>
     Locked Video Cards <span class="badge badge-danger">Cannot Close</span>
 </div>
@@ -338,31 +338,31 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-video-example" style="padding: 0; background: transparent; border: none;">
-            <span class="dsgt-video-example-label" style="padding: 0 24px;">🔒 Locked Video Cards (Unclosable)</span>
-            <div class="dsgt-video-gallery-grid" style="padding: 0 24px 24px;">
+        <div class="sw-video-example" style="padding: 0; background: transparent; border: none;">
+            <span class="sw-video-example-label" style="padding: 0 24px;">🔒 Locked Video Cards (Unclosable)</span>
+            <div class="sw-video-gallery-grid" style="padding: 0 24px 24px;">
                 <!-- Locked Video Card 1 -->
-                <div class="dsgt-video-card" onclick="window.openLockedVideo('dQw4w9WgXcQ')" style="position: relative;">
-                    <div class="dsgt-video-card-thumbnail">
+                <div class="sw-video-card" onclick="window.openLockedVideo('dQw4w9WgXcQ')" style="position: relative;">
+                    <div class="sw-video-card-thumbnail">
                         <img src="https://picsum.photos/seed/locked1/640/360" alt="Locked Video 1">
-                        <div class="dsgt-video-card-play" style="background: rgba(220, 53, 69, 0.9);">
+                        <div class="sw-video-card-play" style="background: rgba(220, 53, 69, 0.9);">
                             <i class="fa-solid fa-lock"></i>
                         </div>
-                        <div class="dsgt-video-card-duration">3:32</div>
+                        <div class="sw-video-card-duration">3:32</div>
                         <div style="position: absolute; top: 8px; left: 8px; background: var(--danger); color: white; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">
                             <i class="fa-solid fa-lock"></i> LOCKED
                         </div>
                     </div>
-                    <div class="dsgt-video-card-content">
-                        <h4 class="dsgt-video-card-title">🔒 Mandatory Safety Training</h4>
+                    <div class="sw-video-card-content">
+                        <h4 class="sw-video-card-title">🔒 Mandatory Safety Training</h4>
                         <p style="font-size: 12px; color: var(--danger); margin: 4px 0 0 0; font-weight: 500;">
                             <i class="fa-solid fa-circle-exclamation"></i> Must watch - cannot be closed
                         </p>
-                        <div class="dsgt-video-card-meta">
-                            <span class="dsgt-video-card-meta-item">
+                        <div class="sw-video-card-meta">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-eye"></i> Required
                             </span>
-                            <span class="dsgt-video-card-meta-item">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-clock"></i> 3 min 32 sec
                             </span>
                         </div>
@@ -370,27 +370,27 @@
                 </div>
 
                 <!-- Locked Video Card 2 -->
-                <div class="dsgt-video-card" onclick="window.openLockedVideo('dQw4w9WgXcQ')" style="position: relative;">
-                    <div class="dsgt-video-card-thumbnail">
+                <div class="sw-video-card" onclick="window.openLockedVideo('dQw4w9WgXcQ')" style="position: relative;">
+                    <div class="sw-video-card-thumbnail">
                         <img src="https://picsum.photos/seed/locked2/640/360" alt="Locked Video 2">
-                        <div class="dsgt-video-card-play" style="background: rgba(220, 53, 69, 0.9);">
+                        <div class="sw-video-card-play" style="background: rgba(220, 53, 69, 0.9);">
                             <i class="fa-solid fa-lock"></i>
                         </div>
-                        <div class="dsgt-video-card-duration">5:18</div>
+                        <div class="sw-video-card-duration">5:18</div>
                         <div style="position: absolute; top: 8px; left: 8px; background: var(--danger); color: white; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">
                             <i class="fa-solid fa-lock"></i> LOCKED
                         </div>
                     </div>
-                    <div class="dsgt-video-card-content">
-                        <h4 class="dsgt-video-card-title">🔒 Company Policy Overview</h4>
+                    <div class="sw-video-card-content">
+                        <h4 class="sw-video-card-title">🔒 Company Policy Overview</h4>
                         <p style="font-size: 12px; color: var(--danger); margin: 4px 0 0 0; font-weight: 500;">
                             <i class="fa-solid fa-circle-exclamation"></i> Must watch - cannot be closed
                         </p>
-                        <div class="dsgt-video-card-meta">
-                            <span class="dsgt-video-card-meta-item">
+                        <div class="sw-video-card-meta">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-eye"></i> Required
                             </span>
-                            <span class="dsgt-video-card-meta-item">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-clock"></i> 5 min 18 sec
                             </span>
                         </div>
@@ -398,27 +398,27 @@
                 </div>
 
                 <!-- Locked Video Card 3 -->
-                <div class="dsgt-video-card" onclick="window.openLockedVideo('dQw4w9WgXcQ')" style="position: relative;">
-                    <div class="dsgt-video-card-thumbnail">
+                <div class="sw-video-card" onclick="window.openLockedVideo('dQw4w9WgXcQ')" style="position: relative;">
+                    <div class="sw-video-card-thumbnail">
                         <img src="https://picsum.photos/seed/locked3/640/360" alt="Locked Video 3">
-                        <div class="dsgt-video-card-play" style="background: rgba(220, 53, 69, 0.9);">
+                        <div class="sw-video-card-play" style="background: rgba(220, 53, 69, 0.9);">
                             <i class="fa-solid fa-lock"></i>
                         </div>
-                        <div class="dsgt-video-card-duration">8:45</div>
+                        <div class="sw-video-card-duration">8:45</div>
                         <div style="position: absolute; top: 8px; left: 8px; background: var(--danger); color: white; padding: 4px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">
                             <i class="fa-solid fa-lock"></i> LOCKED
                         </div>
                     </div>
-                    <div class="dsgt-video-card-content">
-                        <h4 class="dsgt-video-card-title">🔒 New Employee Onboarding</h4>
+                    <div class="sw-video-card-content">
+                        <h4 class="sw-video-card-title">🔒 New Employee Onboarding</h4>
                         <p style="font-size: 12px; color: var(--danger); margin: 4px 0 0 0; font-weight: 500;">
                             <i class="fa-solid fa-circle-exclamation"></i> Must watch - cannot be closed
                         </p>
-                        <div class="dsgt-video-card-meta">
-                            <span class="dsgt-video-card-meta-item">
+                        <div class="sw-video-card-meta">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-eye"></i> Required
                             </span>
-                            <span class="dsgt-video-card-meta-item">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-clock"></i> 8 min 45 sec
                             </span>
                         </div>
@@ -426,30 +426,30 @@
                 </div>
 
                 <!-- Force Close Demo Card -->
-                <div class="dsgt-video-card" onclick="showForceCloseDemo()" style="position: relative; border: 2px dashed var(--success); background: rgba(16, 185, 129, 0.05);">
-                    <div class="dsgt-video-card-thumbnail" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05)); display: flex; align-items: center; justify-content: center;">
+                <div class="sw-video-card" onclick="showForceCloseDemo()" style="position: relative; border: 2px dashed var(--success); background: rgba(16, 185, 129, 0.05);">
+                    <div class="sw-video-card-thumbnail" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05)); display: flex; align-items: center; justify-content: center;">
                         <div style="text-align: center; color: var(--success);">
                             <i class="fa-solid fa-unlock-keyhole" style="font-size: 48px; margin-bottom: 8px;"></i>
                             <p style="font-size: 14px; font-weight: 600; margin: 0;">Force Close Demo</p>
                         </div>
                     </div>
-                    <div class="dsgt-video-card-content">
-                        <h4 class="dsgt-video-card-title">🔓 Force Close Programmatically</h4>
+                    <div class="sw-video-card-content">
+                        <h4 class="sw-video-card-title">🔓 Force Close Programmatically</h4>
                         <p style="font-size: 12px; color: var(--success); margin: 4px 0 0 0; font-weight: 500;">
                             <i class="fa-solid fa-code"></i> Open locked modal, then close via console
                         </p>
-                        <div class="dsgt-video-card-meta">
-                            <span class="dsgt-video-card-meta-item">
+                        <div class="sw-video-card-meta">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-terminal"></i> Developer
                             </span>
-                            <span class="dsgt-video-card-meta-item">
+                            <span class="sw-video-card-meta-item">
                                 <i class="fa-solid fa-circle-info"></i> Demo
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-video-embed-info" style="margin: 0 24px 16px;">
+            <div class="sw-video-embed-info" style="margin: 0 24px 16px;">
                 <p style="font-size: 12px; color: var(--text-secondary); margin: 0 0 8px 0; font-weight: 600;">🔒 Locked Modal Features:</p>
                 <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.6;">
                     <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
@@ -470,7 +470,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dsgt-video-helper" style="margin: 0 24px 24px;">
+            <div class="sw-video-helper" style="margin: 0 24px 24px;">
                 <i class="fa-solid fa-circle-info"></i>
                 Locked modal can ONLY be closed programmatically via JavaScript: <code style="background: var(--border-color); padding: 2px 6px; border-radius: 3px;">MetroAdmin.forceCloseVideoModal()</code>
             </div>
@@ -479,12 +479,12 @@
 </div>
 
 <!-- Video Playlist -->
-<div class="dsgt-video-section-title">
+<div class="sw-video-section-title">
     <i class="fa-solid fa-list-ol"></i>
     Video Playlist
 </div>
 
-<div class="dsgt-video-grid">
+<div class="sw-video-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -498,17 +498,17 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-video-example" style="padding: 0; background: transparent; border: none;">
-                <div class="dsgt-video-playlist">
-                    <div class="dsgt-video-playlist-header">
-                        <h4 class="dsgt-video-playlist-title">Web Development Course</h4>
-                        <p class="dsgt-video-playlist-count">8 videos • 2 hours 45 minutes</p>
+            <div class="sw-video-example" style="padding: 0; background: transparent; border: none;">
+                <div class="sw-video-playlist">
+                    <div class="sw-video-playlist-header">
+                        <h4 class="sw-video-playlist-title">Web Development Course</h4>
+                        <p class="sw-video-playlist-count">8 videos • 2 hours 45 minutes</p>
                     </div>
-                    <div class="dsgt-video-playlist-items">
-                        <div class="dsgt-video-playlist-item active">
-                            <div class="dsgt-video-playlist-thumb">
+                    <div class="sw-video-playlist-items">
+                        <div class="sw-video-playlist-item active">
+                            <div class="sw-video-playlist-thumb">
                                 <img src="https://picsum.photos/seed/lesson1/240/135" alt="Lesson 1">
-                                <span class="dsgt-video-playlist-thumb-duration">15:30</span>
+                                <span class="sw-video-playlist-thumb-duration">15:30</span>
                             </div>
                             <div class="video-playlist-info">
                                 <h5 class="video-playlist-item-title">1. Introduction to HTML</h5>
@@ -516,10 +516,10 @@
                             </div>
                         </div>
                         
-                        <div class="dsgt-video-playlist-item">
-                            <div class="dsgt-video-playlist-thumb">
+                        <div class="sw-video-playlist-item">
+                            <div class="sw-video-playlist-thumb">
                                 <img src="https://picsum.photos/seed/lesson2/240/135" alt="Lesson 2">
-                                <span class="dsgt-video-playlist-thumb-duration">22:15</span>
+                                <span class="sw-video-playlist-thumb-duration">22:15</span>
                             </div>
                             <div class="video-playlist-info">
                                 <h5 class="video-playlist-item-title">2. CSS Fundamentals</h5>
@@ -527,10 +527,10 @@
                             </div>
                         </div>
                         
-                        <div class="dsgt-video-playlist-item">
-                            <div class="dsgt-video-playlist-thumb">
+                        <div class="sw-video-playlist-item">
+                            <div class="sw-video-playlist-thumb">
                                 <img src="https://picsum.photos/seed/lesson3/240/135" alt="Lesson 3">
-                                <span class="dsgt-video-playlist-thumb-duration">18:45</span>
+                                <span class="sw-video-playlist-thumb-duration">18:45</span>
                             </div>
                             <div class="video-playlist-info">
                                 <h5 class="video-playlist-item-title">3. JavaScript Basics</h5>
@@ -538,10 +538,10 @@
                             </div>
                         </div>
                         
-                        <div class="dsgt-video-playlist-item">
-                            <div class="dsgt-video-playlist-thumb">
+                        <div class="sw-video-playlist-item">
+                            <div class="sw-video-playlist-thumb">
                                 <img src="https://picsum.photos/seed/lesson4/240/135" alt="Lesson 4">
-                                <span class="dsgt-video-playlist-thumb-duration">25:00</span>
+                                <span class="sw-video-playlist-thumb-duration">25:00</span>
                             </div>
                             <div class="video-playlist-info">
                                 <h5 class="video-playlist-item-title">4. Responsive Design</h5>
@@ -549,10 +549,10 @@
                             </div>
                         </div>
                         
-                        <div class="dsgt-video-playlist-item">
-                            <div class="dsgt-video-playlist-thumb">
+                        <div class="sw-video-playlist-item">
+                            <div class="sw-video-playlist-thumb">
                                 <img src="https://picsum.photos/seed/lesson5/240/135" alt="Lesson 5">
-                                <span class="dsgt-video-playlist-thumb-duration">20:30</span>
+                                <span class="sw-video-playlist-thumb-duration">20:30</span>
                             </div>
                             <div class="video-playlist-info">
                                 <h5 class="video-playlist-item-title">5. Advanced CSS Techniques</h5>
@@ -561,7 +561,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="dsgt-video-helper" style="margin-top: 16px;">
+                <div class="sw-video-helper" style="margin-top: 16px;">
                     <i class="fa-solid fa-circle-info"></i>
                     Click playlist items to switch video
                 </div>
@@ -582,12 +582,12 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-video-example">
+            <div class="sw-video-example">
                 <span class="video-example-label">Ratio Comparison</span>
                 <div style="margin-bottom: 16px;">
                     <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">21:9 (Ultra Wide)</p>
-                    <div class="dsgt-video-wrapper dsgt-video-ratio-21-9">
-                        <div class="dsgt-video-placeholder" style="background: linear-gradient(135deg, var(--success), #0FA80A);">
+                    <div class="sw-video-wrapper sw-video-ratio-21-9">
+                        <div class="sw-video-placeholder" style="background: linear-gradient(135deg, var(--success), #0FA80A);">
                             <span>21:9 Cinematic</span>
                         </div>
                     </div>
@@ -595,8 +595,8 @@
                 
                 <div style="margin-bottom: 16px;">
                     <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">16:9 (Widescreen)</p>
-                    <div class="dsgt-video-wrapper dsgt-video-ratio-16-9">
-                        <div class="dsgt-video-placeholder" style="background: linear-gradient(135deg, var(--accent), #1A86D9);">
+                    <div class="sw-video-wrapper sw-video-ratio-16-9">
+                        <div class="sw-video-placeholder" style="background: linear-gradient(135deg, var(--accent), #1A86D9);">
                             <span>16:9 Standard</span>
                         </div>
                     </div>
@@ -604,8 +604,8 @@
                 
                 <div style="margin-bottom: 16px;">
                     <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">4:3 (Classic)</p>
-                    <div class="dsgt-video-wrapper dsgt-video-ratio-4-3">
-                        <div class="dsgt-video-placeholder" style="background: linear-gradient(135deg, var(--warning), #FF8C00);">
+                    <div class="sw-video-wrapper sw-video-ratio-4-3">
+                        <div class="sw-video-placeholder" style="background: linear-gradient(135deg, var(--warning), #FF8C00);">
                             <span>4:3 Classic</span>
                         </div>
                     </div>
@@ -613,14 +613,14 @@
                 
                 <div>
                     <p style="font-size: 12px; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600;">1:1 (Square)</p>
-                    <div class="dsgt-video-wrapper dsgt-video-ratio-1-1">
-                        <div class="dsgt-video-placeholder" style="background: linear-gradient(135deg, var(--danger), #C50F1F);">
+                    <div class="sw-video-wrapper sw-video-ratio-1-1">
+                        <div class="sw-video-placeholder" style="background: linear-gradient(135deg, var(--danger), #C50F1F);">
                             <span>1:1 Square</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="dsgt-video-helper">
+                <div class="sw-video-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Four aspect ratio options
                 </div>
@@ -630,24 +630,24 @@
 </div>
 
 <!-- Video Modal -->
-<div id="videoModal" class="dsgt-video-modal">
-    <div class="dsgt-video-modal-content" onclick="event.stopPropagation()">
-        <button class="dsgt-video-modal-close" onclick="MetroAdmin.closeDSGTVideoModal()">
+<div id="videoModal" class="sw-video-modal">
+    <div class="sw-video-modal-content" onclick="event.stopPropagation()">
+        <button class="sw-video-modal-close" onclick="MetroAdmin.closeSWVideoModal()">
             <i class="fa-solid fa-times"></i>
         </button>
-        <div class="dsgt-video-modal-wrapper">
+        <div class="sw-video-modal-wrapper">
             <iframe id="videoModalIframe" src="" allowfullscreen></iframe>
         </div>
     </div>
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-video-section-title">
+<div class="sw-video-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-video-grid">
+<div class="sw-video-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -661,9 +661,9 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-video-embed-info" style="margin: 0;">
+            <div class="sw-video-embed-info" style="margin: 0;">
                 <p style="font-size: 12px; color: var(--text-secondary); margin: 0 0 8px 0; font-weight: 600;">YouTube Embed:</p>
-                <div class="dsgt-video-embed-code">
+                <div class="sw-video-embed-code">
 &lt;div class="video-wrapper video-ratio-16-9"&gt;
   &lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" 
           allowfullscreen&gt;
@@ -672,7 +672,7 @@
                 </div>
                 
                 <p style="font-size: 12px; color: var(--text-secondary); margin: 16px 0 8px 0; font-weight: 600;">Vimeo Embed:</p>
-                <div class="dsgt-video-embed-code">
+                <div class="sw-video-embed-code">
 &lt;div class="video-wrapper video-ratio-16-9"&gt;
   &lt;iframe src="https://player.vimeo.com/video/VIDEO_ID" 
           allowfullscreen&gt;
@@ -681,12 +681,12 @@
                 </div>
                 
                 <p style="font-size: 12px; color: var(--text-secondary); margin: 16px 0 8px 0; font-weight: 600;">JavaScript API:</p>
-                <div class="dsgt-video-embed-code">
+                <div class="sw-video-embed-code">
 // Normal modal (can be closed)
-MetroAdmin.openDSGTVideoModal('VIDEO_ID');
+MetroAdmin.openSWVideoModal('VIDEO_ID');
 
 // Locked modal (cannot be closed by user)
-MetroAdmin.openDSGTVideoModalLocked('VIDEO_ID');
+MetroAdmin.openSWVideoModalLocked('VIDEO_ID');
 
 // Force close locked modal (programmatically)
 MetroAdmin.forceCloseVideoModal();
@@ -750,7 +750,7 @@ MetroAdmin.forceCloseVideoModal();
 window.openLockedVideo = function(videoId) {
     console.log('🔓 [INLINE] Opening locked video:', videoId);
     if (typeof MetroAdmin !== 'undefined') {
-        MetroAdmin.openDSGTVideoModal(videoId, true);
+        MetroAdmin.openSWVideoModal(videoId, true);
     } else {
         console.error('❌ MetroAdmin not found!');
     }
@@ -774,13 +774,13 @@ function showForceCloseDemo() {
 
 // Videos page initialization
 $(document).ready(function() {
-    console.log('✨ DSGT Videos page loaded successfully');
+    console.log('✨ SW Videos page loaded successfully');
     
     // Initialize videos via MetroAdmin
     if (typeof MetroAdmin !== 'undefined') {
         MetroAdmin.initVideos();
         console.log('✅ MetroAdmin.initVideos() called');
-        console.log('✅ Locked modal function available:', typeof MetroAdmin.openDSGTVideoModalLocked);
+        console.log('✅ Locked modal function available:', typeof MetroAdmin.openSWVideoModalLocked);
     }
 });
 </script>

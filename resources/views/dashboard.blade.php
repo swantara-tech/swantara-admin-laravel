@@ -5,8 +5,8 @@
 
 @section('content')
 <!-- KPI Cards -->
-<div class="dsgt-row dsgt-gap-3 mb-3" id="statsGrid">
-    <div class="dsgt-col-12 dsgt-col-md-6 dsgt-col-lg-3">
+<div class="sw-row sw-gap-3 mb-3" id="statsGrid">
+    <div class="sw-col-12 sw-col-md-6 sw-col-lg-3">
         <div class="stat-card hover-lift">
             <div class="stat-icon blue"><i class="fa-solid fa-users"></i></div>
             <div class="stat-value counter" data-target="12458">0</div>
@@ -14,7 +14,7 @@
             <span class="stat-trend up"><i class="fa-solid fa-arrow-up"></i> +12.5%</span>
         </div>
     </div>
-    <div class="dsgt-col-12 dsgt-col-md-6 dsgt-col-lg-3">
+    <div class="sw-col-12 sw-col-md-6 sw-col-lg-3">
         <div class="stat-card hover-lift">
             <div class="stat-icon green"><i class="fa-solid fa-box"></i></div>
             <div class="stat-value counter" data-target="3847">0</div>
@@ -22,7 +22,7 @@
             <span class="stat-trend up"><i class="fa-solid fa-arrow-up"></i> +8.2%</span>
         </div>
     </div>
-    <div class="dsgt-col-12 dsgt-col-md-6 dsgt-col-lg-3">
+    <div class="sw-col-12 sw-col-md-6 sw-col-lg-3">
         <div class="stat-card hover-lift">
             <div class="stat-icon orange"><i class="fa-solid fa-cart-shopping"></i></div>
             <div class="stat-value counter" data-target="7621">0</div>
@@ -30,7 +30,7 @@
             <span class="stat-trend up"><i class="fa-solid fa-arrow-up"></i> +23.1%</span>
         </div>
     </div>
-    <div class="dsgt-col-12 dsgt-col-md-6 dsgt-col-lg-3">
+    <div class="sw-col-12 sw-col-md-6 sw-col-lg-3">
         <div class="stat-card hover-lift">
             <div class="stat-icon red"><i class="fa-solid fa-wallet"></i></div>
             <div class="stat-value counter" data-target="892" data-suffix="M">0</div>
@@ -41,8 +41,8 @@
 </div>
 
 <!-- Charts Row -->
-<div class="dsgt-row dsgt-gap-3 mb-3" style="display: flex; align-items: stretch;">
-    <div class="dsgt-col-12">
+<div class="sw-row sw-gap-3 mb-3" style="display: flex; align-items: stretch;">
+    <div class="sw-col-12">
         <div class="content-card">
             <div class="card-header">
                 <div class="card-header-left">
@@ -54,25 +54,25 @@
                         <p class="card-subtitle">Performa pendapatan 12 bulan terakhir</p>
                     </div>
                 </div>
-                <div class="dsgt-dropdown">
+                <div class="sw-dropdown">
                     <button class="btn-card-action" data-dropdown-toggle>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </button>
-                    <div class="dsgt-dropdown-menu">
-                        <a href="#" class="dsgt-dropdown-item">
+                    <div class="sw-dropdown-menu">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-eye"></i>
                             <span>View Details</span>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-pen"></i>
                             <span>Edit</span>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-download"></i>
                             <span>Export</span>
                         </a>
-                        <div class="dsgt-dropdown-divider"></div>
-                        <a href="#" class="dsgt-dropdown-item text-danger">
+                        <div class="sw-dropdown-divider"></div>
+                        <a href="#" class="sw-dropdown-item text-danger">
                             <i class="fa-solid fa-trash"></i>
                             <span>Delete</span>
                         </a>
@@ -90,8 +90,8 @@
 
 <!-- Second Row: User Growth + Sales + Top Products -->
 
-<div class="dsgt-row dsgt-gap-3 mb-3" style="display: flex; align-items: stretch;">
-    <div class="dsgt-col-4 dsgt-col-lg-6 dsgt-col-md-12">
+<div class="sw-row sw-gap-3 mb-3" style="display: flex; align-items: stretch;">
+    <div class="sw-col-4 sw-col-lg-6 sw-col-md-12">
         <div class="content-card">
             <div class="card-header">
                 <div class="card-header-left">
@@ -103,21 +103,21 @@
                         <p class="card-subtitle">Akun baru per bulan</p>
                     </div>
                 </div>
-                <div class="dsgt-dropdown">
+                <div class="sw-dropdown">
                     <button class="btn-card-action" data-dropdown-toggle>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </button>
-                    <div class="dsgt-dropdown-menu">
-                        <a href="#" class="dsgt-dropdown-item">
+                    <div class="sw-dropdown-menu">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-eye"></i>
                             <span>View Details</span>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-pen"></i>
                             <span>Edit</span>
                         </a>
-                        <div class="dsgt-dropdown-divider"></div>
-                        <a href="#" class="dsgt-dropdown-item text-danger">
+                        <div class="sw-dropdown-divider"></div>
+                        <a href="#" class="sw-dropdown-item text-danger">
                             <i class="fa-solid fa-trash"></i>
                             <span>Delete</span>
                         </a>
@@ -131,7 +131,7 @@
             </div>
         </div>
     </div>
-    <div class="dsgt-col-4 dsgt-col-lg-6 dsgt-col-md-12">
+    <div class="sw-col-4 sw-col-lg-6 sw-col-md-12">
         <div class="content-card">
             <div class="card-header">
                 <div class="card-header-left">
@@ -143,21 +143,21 @@
                         <p class="card-subtitle">Per kategori</p>
                     </div>
                 </div>
-                <div class="dsgt-dropdown">
+                <div class="sw-dropdown">
                     <button class="btn-card-action" data-dropdown-toggle>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </button>
-                    <div class="dsgt-dropdown-menu">
-                        <a href="#" class="dsgt-dropdown-item">
+                    <div class="sw-dropdown-menu">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-eye"></i>
                             <span>View Details</span>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-download"></i>
                             <span>Export</span>
                         </a>
-                        <div class="dsgt-dropdown-divider"></div>
-                        <a href="#" class="dsgt-dropdown-item text-danger">
+                        <div class="sw-dropdown-divider"></div>
+                        <a href="#" class="sw-dropdown-item text-danger">
                             <i class="fa-solid fa-trash"></i>
                             <span>Delete</span>
                         </a>
@@ -171,7 +171,7 @@
             </div>
         </div>
     </div>
-    <div class="dsgt-col-4 dsgt-col-lg-6 dsgt-col-md-12">
+    <div class="sw-col-4 sw-col-lg-6 sw-col-md-12">
         <div class="content-card">
             <div class="card-header">
                 <div class="card-header-left">
@@ -183,25 +183,25 @@
                         <p class="card-subtitle">Top 5 penjualan</p>
                     </div>
                 </div>
-                <div class="dsgt-dropdown">
+                <div class="sw-dropdown">
                     <button class="btn-card-action" data-dropdown-toggle>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </button>
-                    <div class="dsgt-dropdown-menu">
-                        <a href="#" class="dsgt-dropdown-item">
+                    <div class="sw-dropdown-menu">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-eye"></i>
                             <span>View Details</span>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-pen"></i>
                             <span>Edit</span>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-chart-line"></i>
                             <span>Analytics</span>
                         </a>
-                        <div class="dsgt-dropdown-divider"></div>
-                        <a href="#" class="dsgt-dropdown-item text-danger">
+                        <div class="sw-dropdown-divider"></div>
+                        <a href="#" class="sw-dropdown-item text-danger">
                             <i class="fa-solid fa-trash"></i>
                             <span>Delete</span>
                         </a>
@@ -218,8 +218,8 @@
 </div>
 
 <!-- Activity & Recent Orders -->
-<div class="dsgt-row dsgt-gap-3" style="display: flex; align-items: stretch;">
-    <div class="dsgt-col-6 dsgt-col-lg-12">
+<div class="sw-row sw-gap-3" style="display: flex; align-items: stretch;">
+    <div class="sw-col-6 sw-col-lg-12">
         <div class="content-card">
             <div class="card-header">
                 <div class="card-header-left">
@@ -269,7 +269,7 @@
             </div>
         </div>
     </div>
-    <div class="dsgt-col-6 dsgt-col-lg-12">
+    <div class="sw-col-6 sw-col-lg-12">
         <div class="content-card">
             <div class="card-header">
                 <div class="card-header-left">

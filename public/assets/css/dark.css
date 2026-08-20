@@ -854,26 +854,26 @@ select {
    Brighter borders for better visibility
    ============================================ */
 
-[data-theme="dark"] .dsgt-modal-header {
+[data-theme="dark"] .sw-modal-header {
     border-bottom-color: var(--border-strong);
     background: var(--surface);
 }
 
-[data-theme="dark"] .dsgt-modal-icon-header {
+[data-theme="dark"] .sw-modal-icon-header {
     background: transparent;
 }
 
-[data-theme="dark"] .dsgt-modal-body {
+[data-theme="dark"] .sw-modal-body {
     background: var(--bg-secondary);
 }
 
-[data-theme="dark"] .dsgt-modal-footer {
+[data-theme="dark"] .sw-modal-footer {
     border-top-color: var(--border-strong);
     background: var(--surface);
 }
 
 /* Icon Header Modal Footer - No border in dark mode too */
-[data-theme="dark"] .dsgt-modal-footer.dsgt-modal-footer-icon {
+[data-theme="dark"] .sw-modal-footer.sw-modal-footer-icon {
     border-top: none;
     background: transparent;
 }

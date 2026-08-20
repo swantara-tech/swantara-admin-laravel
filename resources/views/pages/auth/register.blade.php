@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <!-- App Styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/swantara.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/animations.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/swal-custom.css') }}">
     

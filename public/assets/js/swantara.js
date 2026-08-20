@@ -1,6 +1,8 @@
-/* ============================================
-   Metro Admin - Core Application Logic
-   ============================================ */
+/*!
+ * Swantara UI JS v1.0.0
+ * Modern Windows 11 Fluent & Metro Design Component Logic
+ * Copyright (c) 2026 Swantara Tech
+ */
 
 'use strict';
 
@@ -9111,3 +9113,4 @@ window.Swantara = MetroAdmin;
 window.MetroAdmin = MetroAdmin;
 window.SWFlatpickr = SWFlatpickr;
 window.DSGTFlatpickr = SWFlatpickr;
+

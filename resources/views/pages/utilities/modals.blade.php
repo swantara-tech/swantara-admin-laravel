@@ -18,7 +18,7 @@
             <i class="fa-solid fa-book"></i>
             <span>Documentation</span>
         </button>
-        <button class="btn btn-primary" onclick="MetroAdmin.openDSGTModal('basic-modal')">
+        <button class="btn btn-primary" onclick="MetroAdmin.openSWModal('basic-modal')">
             <i class="fa-solid fa-window-maximize"></i>
             <span>Try Modal</span>
         </button>
@@ -26,7 +26,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-info-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
+<div class="content-card sw-info-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -39,12 +39,12 @@
 </div>
 
 <!-- Basic Modals -->
-<div class="dsgt-modals-section-title">
+<div class="sw-modals-section-title">
     <i class="fa-solid fa-window-maximize"></i>
     Basic Modals <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-modal-grid">
+<div class="sw-modal-grid">
     <div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
         <div class="card-header">
             <div class="card-header-left">
@@ -58,13 +58,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-md-example">
-                <span class="dsgt-md-example-label">Basic Dialog</span>
-                <button class="btn btn-primary" onclick="MetroAdmin.openDSGTModal('basic-modal')">
+            <div class="sw-md-example">
+                <span class="sw-md-example-label">Basic Dialog</span>
+                <button class="btn btn-primary" onclick="MetroAdmin.openSWModal('basic-modal')">
                     <i class="fa-solid fa-window-maximize"></i>
                     Open Basic Modal
                 </button>
-                <div class="dsgt-md-helper">
+                <div class="sw-md-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Standard modal with header, body, and footer
                 </div>
@@ -85,13 +85,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-md-example">
-                <span class="dsgt-md-example-label">Success State</span>
-                <button class="btn btn-success" onclick="MetroAdmin.openDSGTModal('success-modal')">
+            <div class="sw-md-example">
+                <span class="sw-md-example-label">Success State</span>
+                <button class="btn btn-success" onclick="MetroAdmin.openSWModal('success-modal')">
                     <i class="fa-solid fa-check"></i>
                     Open Success Modal
                 </button>
-                <div class="dsgt-md-helper">
+                <div class="sw-md-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Green icon with success message
                 </div>
@@ -112,13 +112,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-md-example">
-                <span class="dsgt-md-example-label">Warning State</span>
-                <button class="btn btn-warning" onclick="MetroAdmin.openDSGTModal('warning-modal')">
+            <div class="sw-md-example">
+                <span class="sw-md-example-label">Warning State</span>
+                <button class="btn btn-warning" onclick="MetroAdmin.openSWModal('warning-modal')">
                     <i class="fa-solid fa-triangle-exclamation"></i>
                     Open Warning Modal
                 </button>
-                <div class="dsgt-md-helper">
+                <div class="sw-md-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Yellow icon with warning message
                 </div>
@@ -139,13 +139,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-md-example">
-                <span class="dsgt-md-example-label">Danger State</span>
-                <button class="btn btn-danger" onclick="MetroAdmin.openDSGTModal('danger-modal')">
+            <div class="sw-md-example">
+                <span class="sw-md-example-label">Danger State</span>
+                <button class="btn btn-danger" onclick="MetroAdmin.openSWModal('danger-modal')">
                     <i class="fa-solid fa-trash"></i>
                     Open Danger Modal
                 </button>
-                <div class="dsgt-md-helper">
+                <div class="sw-md-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Red icon with delete confirmation
                 </div>
@@ -155,7 +155,7 @@
 </div>
 
 <!-- Modal Sizes -->
-<div class="dsgt-modals-section-title">
+<div class="sw-modals-section-title">
     <i class="fa-solid fa-expand"></i>
     Modal Sizes
 </div>
@@ -173,26 +173,26 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-md-example">
-            <span class="dsgt-md-example-label">Size Options</span>
+        <div class="sw-md-example">
+            <span class="sw-md-example-label">Size Options</span>
             <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
-                <button class="btn btn-secondary" onclick="MetroAdmin.openDSGTModal('size-sm-modal')">
+                <button class="btn btn-secondary" onclick="MetroAdmin.openSWModal('size-sm-modal')">
                     Small
                 </button>
-                <button class="btn btn-primary" onclick="MetroAdmin.openDSGTModal('size-md-modal')">
+                <button class="btn btn-primary" onclick="MetroAdmin.openSWModal('size-md-modal')">
                     Medium
                 </button>
-                <button class="btn btn-success" onclick="MetroAdmin.openDSGTModal('size-lg-modal')">
+                <button class="btn btn-success" onclick="MetroAdmin.openSWModal('size-lg-modal')">
                     Large
                 </button>
-                <button class="btn btn-warning" onclick="MetroAdmin.openDSGTModal('size-xl-modal')">
+                <button class="btn btn-warning" onclick="MetroAdmin.openSWModal('size-xl-modal')">
                     Extra Large
                 </button>
-                <button class="btn btn-danger" onclick="MetroAdmin.openDSGTModal('size-full-modal')">
+                <button class="btn btn-danger" onclick="MetroAdmin.openSWModal('size-full-modal')">
                     Fullscreen
                 </button>
             </div>
-            <div class="dsgt-md-helper">
+            <div class="sw-md-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Widths: 400px, 500px, 700px, 900px, 95vw
             </div>
@@ -201,7 +201,7 @@
 </div>
 
 <!-- Modal Animations -->
-<div class="dsgt-modals-section-title">
+<div class="sw-modals-section-title">
     <i class="fa-solid fa-wand-magic-sparkles"></i>
     Modal Animations
 </div>
@@ -219,26 +219,26 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-md-example">
-            <span class="dsgt-md-example-label">Animation Styles</span>
+        <div class="sw-md-example">
+            <span class="sw-md-example-label">Animation Styles</span>
             <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
-                <button class="btn btn-primary" onclick="MetroAdmin.openDSGTModal('anim-slideup-modal')">
+                <button class="btn btn-primary" onclick="MetroAdmin.openSWModal('anim-slideup-modal')">
                     Slide Up
                 </button>
-                <button class="btn btn-success" onclick="MetroAdmin.openDSGTModal('anim-zoom-modal')">
+                <button class="btn btn-success" onclick="MetroAdmin.openSWModal('anim-zoom-modal')">
                     Zoom In
                 </button>
-                <button class="btn btn-info" onclick="MetroAdmin.openDSGTModal('anim-slideleft-modal')">
+                <button class="btn btn-info" onclick="MetroAdmin.openSWModal('anim-slideleft-modal')">
                     Slide Left
                 </button>
-                <button class="btn btn-warning" onclick="MetroAdmin.openDSGTModal('anim-slideright-modal')">
+                <button class="btn btn-warning" onclick="MetroAdmin.openSWModal('anim-slideright-modal')">
                     Slide Right
                 </button>
-                <button class="btn btn-danger" onclick="MetroAdmin.openDSGTModal('anim-flip-modal')">
+                <button class="btn btn-danger" onclick="MetroAdmin.openSWModal('anim-flip-modal')">
                     Flip
                 </button>
             </div>
-            <div class="dsgt-md-helper">
+            <div class="sw-md-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Each animation creates unique entrance effect
             </div>
@@ -247,7 +247,7 @@
 </div>
 
 <!-- Modal with Form -->
-<div class="dsgt-modals-section-title">
+<div class="sw-modals-section-title">
     <i class="fa-solid fa-form"></i>
     Modal with Form
 </div>
@@ -265,13 +265,13 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-md-example">
-            <span class="dsgt-md-example-label">User Registration</span>
-            <button class="btn btn-primary" onclick="MetroAdmin.openDSGTModal('form-modal')">
+        <div class="sw-md-example">
+            <span class="sw-md-example-label">User Registration</span>
+            <button class="btn btn-primary" onclick="MetroAdmin.openSWModal('form-modal')">
                 <i class="fa-solid fa-user-plus"></i>
                 Open Form Modal
             </button>
-            <div class="dsgt-md-helper">
+            <div class="sw-md-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Modal with form inputs and validation
             </div>
@@ -293,13 +293,13 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-md-example">
-            <span class="dsgt-md-example-label">Terms & Conditions</span>
-            <button class="btn btn-success" onclick="MetroAdmin.openDSGTModal('scrollable-modal')">
+        <div class="sw-md-example">
+            <span class="sw-md-example-label">Terms & Conditions</span>
+            <button class="btn btn-success" onclick="MetroAdmin.openSWModal('scrollable-modal')">
                 <i class="fa-solid fa-file-lines"></i>
                 Open Scrollable Modal
             </button>
-            <div class="dsgt-md-helper">
+            <div class="sw-md-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Body scrolls while header/footer stay fixed
             </div>
@@ -321,13 +321,13 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-md-example">
-            <span class="dsgt-md-example-label">Photo Viewer</span>
-            <button class="btn btn-info" onclick="MetroAdmin.openDSGTModal('image-modal')">
+        <div class="sw-md-example">
+            <span class="sw-md-example-label">Photo Viewer</span>
+            <button class="btn btn-info" onclick="MetroAdmin.openSWModal('image-modal')">
                 <i class="fa-solid fa-image"></i>
                 Open Image Modal
             </button>
-            <div class="dsgt-md-helper">
+            <div class="sw-md-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Large image with caption
             </div>
@@ -336,7 +336,7 @@
 </div>
 
 <!-- Stacked Modals -->
-<div class="dsgt-modals-section-title">
+<div class="sw-modals-section-title">
     <i class="fa-solid fa-layer-group"></i>
     Stacked Modals
 </div>
@@ -354,13 +354,13 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-md-example">
-            <span class="dsgt-md-example-label">Nested Dialogs</span>
-            <button class="btn btn-danger" onclick="MetroAdmin.openDSGTModal('stacked-1')">
+        <div class="sw-md-example">
+            <span class="sw-md-example-label">Nested Dialogs</span>
+            <button class="btn btn-danger" onclick="MetroAdmin.openSWModal('stacked-1')">
                 <i class="fa-solid fa-window-restore"></i>
                 Open Stacked Modals
             </button>
-            <div class="dsgt-md-helper">
+            <div class="sw-md-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Up to 3 modals can be stacked
             </div>
@@ -369,12 +369,12 @@
 </div>
 
 <!-- Modal Backdrop Behavior -->
-<div class="dsgt-modals-section-title">
+<div class="sw-modals-section-title">
     <i class="fa-solid fa-mouse-pointer"></i>
     Modal Backdrop Behavior <span class="badge badge-warning">Important</span>
 </div>
 
-<div class="dsgt-modal-grid">
+<div class="sw-modal-grid">
     <div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
         <div class="card-header">
             <div class="card-header-left">
@@ -388,13 +388,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-md-example">
-                <span class="dsgt-md-example-label">Default Behavior</span>
-                <button class="btn btn-primary" onclick="MetroAdmin.openDSGTModal('dismissible-modal')">
+            <div class="sw-md-example">
+                <span class="sw-md-example-label">Default Behavior</span>
+                <button class="btn btn-primary" onclick="MetroAdmin.openSWModal('dismissible-modal')">
                     <i class="fa-solid fa-window-maximize"></i>
                     Open Dismissible Modal
                 </button>
-                <div class="dsgt-md-helper">
+                <div class="sw-md-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Can close by clicking backdrop, pressing Escape, or close button
                 </div>
@@ -415,13 +415,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-md-example">
-                <span class="dsgt-md-example-label">X Button Only</span>
-                <button class="btn btn-secondary" onclick="MetroAdmin.openDSGTModal('x-button-only-modal')">
+            <div class="sw-md-example">
+                <span class="sw-md-example-label">X Button Only</span>
+                <button class="btn btn-secondary" onclick="MetroAdmin.openSWModal('x-button-only-modal')">
                     <i class="fa-solid fa-xmark"></i>
                     Open X-Only Modal
                 </button>
-                <div class="dsgt-md-helper">
+                <div class="sw-md-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Can ONLY close with X button - backdrop & Escape disabled
                 </div>
@@ -442,13 +442,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-md-example">
-                <span class="dsgt-md-example-label">Locked Modal</span>
-                <button class="btn btn-danger" onclick="MetroAdmin.openDSGTModal('locked-modal')">
+            <div class="sw-md-example">
+                <span class="sw-md-example-label">Locked Modal</span>
+                <button class="btn btn-danger" onclick="MetroAdmin.openSWModal('locked-modal')">
                     <i class="fa-solid fa-lock"></i>
                     Open Locked Modal
                 </button>
-                <div class="dsgt-md-helper">
+                <div class="sw-md-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Can ONLY close with close button - backdrop & Escape disabled
                 </div>
@@ -471,13 +471,13 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-md-example">
-            <span class="dsgt-md-example-label">Agreement Form</span>
-            <button class="btn btn-success" onclick="MetroAdmin.openDSGTModal('required-form-modal')">
+        <div class="sw-md-example">
+            <span class="sw-md-example-label">Agreement Form</span>
+            <button class="btn btn-success" onclick="MetroAdmin.openSWModal('required-form-modal')">
                 <i class="fa-solid fa-file-contract"></i>
                 Open Required Form Modal
             </button>
-            <div class="dsgt-md-helper">
+            <div class="sw-md-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Must check agreement checkbox before modal can be closed
             </div>
@@ -488,15 +488,15 @@
 <!-- MODAL DEFINITIONS -->
 
 <!-- Basic Modal -->
-<div id="basic-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Basic Modal</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('basic-modal')">
+<div id="basic-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-md">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Basic Modal</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('basic-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This is a basic modal dialog. It contains a header with title, a body with content, and a footer with action buttons.</p>
             <p style="font-size: 14px; color: var(--text-secondary); margin-top: 12px;">Modals are useful for:</p>
             <ul style="font-size: 14px; color: var(--text-primary); padding-left: 20px;">
@@ -506,266 +506,266 @@
                 <li>Content display</li>
             </ul>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('basic-modal')">Cancel</button>
-            <button class="btn btn-primary" onclick="MetroAdmin.closeDSGTModal('basic-modal')">OK</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('basic-modal')">Cancel</button>
+            <button class="btn btn-primary" onclick="MetroAdmin.closeSWModal('basic-modal')">OK</button>
         </div>
     </div>
 </div>
 
 <!-- Success Modal -->
-<div id="success-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md">
-        <div class="dsgt-modal-icon-header">
-            <div class="dsgt-modal-icon dsgt-modal-icon-success">
+<div id="success-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-md">
+        <div class="sw-modal-icon-header">
+            <div class="sw-modal-icon sw-modal-icon-success">
                 <i class="fa-solid fa-check"></i>
             </div>
-            <h3 class="dsgt-modal-title">Success!</h3>
+            <h3 class="sw-modal-title">Success!</h3>
         </div>
-        <div class="dsgt-modal-body  bg-white" style="text-align: center; ">
+        <div class="sw-modal-body  bg-white" style="text-align: center; ">
             <p style="font-size: 14px; color: var(--text-secondary);">Your action has been completed successfully. The operation was processed without any errors.</p>
         </div>
-        <div class="dsgt-modal-footer dsgt-modal-footer-icon" style="justify-content: center;">
-            <button class="btn btn-success" onclick="MetroAdmin.closeDSGTModal('success-modal')">Great!</button>
+        <div class="sw-modal-footer sw-modal-footer-icon" style="justify-content: center;">
+            <button class="btn btn-success" onclick="MetroAdmin.closeSWModal('success-modal')">Great!</button>
         </div>
     </div>
 </div>
 
 <!-- Warning Modal -->
-<div id="warning-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md">
-        <div class="dsgt-modal-icon-header">
-            <div class="dsgt-modal-icon dsgt-modal-icon-warning">
+<div id="warning-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-md">
+        <div class="sw-modal-icon-header">
+            <div class="sw-modal-icon sw-modal-icon-warning">
                 <i class="fa-solid fa-exclamation-triangle"></i>
             </div>
-            <h3 class="dsgt-modal-title">Warning!</h3>
+            <h3 class="sw-modal-title">Warning!</h3>
         </div>
-        <div class="dsgt-modal-body  bg-white" style="text-align: center;">
+        <div class="sw-modal-body  bg-white" style="text-align: center;">
             <p style="font-size: 14px; color: var(--text-secondary);">Please be careful! This action may have unintended consequences. Review carefully before proceeding.</p>
         </div>
-        <div class="dsgt-modal-footer dsgt-modal-footer-icon" style="justify-content: center;">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('warning-modal')">Cancel</button>
-            <button class="btn btn-warning" onclick="MetroAdmin.closeDSGTModal('warning-modal')">Proceed</button>
+        <div class="sw-modal-footer sw-modal-footer-icon" style="justify-content: center;">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('warning-modal')">Cancel</button>
+            <button class="btn btn-warning" onclick="MetroAdmin.closeSWModal('warning-modal')">Proceed</button>
         </div>
     </div>
 </div>
 
 <!-- Danger Modal -->
-<div id="danger-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md">
-        <div class="dsgt-modal-icon-header">
-            <div class="dsgt-modal-icon dsgt-modal-icon-danger">
+<div id="danger-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-md">
+        <div class="sw-modal-icon-header">
+            <div class="sw-modal-icon sw-modal-icon-danger">
                 <i class="fa-solid fa-trash"></i>
             </div>
-            <h3 class="dsgt-modal-title">Delete Item?</h3>
+            <h3 class="sw-modal-title">Delete Item?</h3>
         </div>
-        <div class="dsgt-modal-body bg-white" style="text-align: center;">
+        <div class="sw-modal-body bg-white" style="text-align: center;">
             <p style="font-size: 14px; color: var(--text-secondary);">Are you sure you want to delete this item? This action cannot be undone and all data will be permanently removed.</p>
         </div>
-        <div class="dsgt-modal-footer dsgt-modal-footer-icon" style="justify-content: center;">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('danger-modal')">Cancel</button>
-            <button class="btn btn-danger" onclick="MetroAdmin.closeDSGTModal('danger-modal')">Delete</button>
+        <div class="sw-modal-footer sw-modal-footer-icon" style="justify-content: center;">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('danger-modal')">Cancel</button>
+            <button class="btn btn-danger" onclick="MetroAdmin.closeSWModal('danger-modal')">Delete</button>
         </div>
     </div>
 </div>
 
 <!-- Size Modals -->
-<div id="size-sm-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-sm">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Small Modal (400px)</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('size-sm-modal')">
+<div id="size-sm-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-sm">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Small Modal (400px)</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('size-sm-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This is a small modal, perfect for simple confirmations.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('size-sm-modal')">Close</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('size-sm-modal')">Close</button>
         </div>
     </div>
 </div>
 
-<div id="size-md-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Medium Modal (500px)</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('size-md-modal')">
+<div id="size-md-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-md">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Medium Modal (500px)</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('size-md-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This is a medium modal, the default size for most dialogs.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('size-md-modal')">Close</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('size-md-modal')">Close</button>
         </div>
     </div>
 </div>
 
-<div id="size-lg-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-lg">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Large Modal (700px)</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('size-lg-modal')">
+<div id="size-lg-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-lg">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Large Modal (700px)</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('size-lg-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This is a large modal, suitable for forms and detailed content.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('size-lg-modal')">Close</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('size-lg-modal')">Close</button>
         </div>
     </div>
 </div>
 
-<div id="size-xl-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-xl">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Extra Large Modal (900px)</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('size-xl-modal')">
+<div id="size-xl-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-xl">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Extra Large Modal (900px)</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('size-xl-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This is an extra large modal, ideal for tables and complex layouts.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('size-xl-modal')">Close</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('size-xl-modal')">Close</button>
         </div>
     </div>
 </div>
 
-<div id="size-full-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-full">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Fullscreen Modal (95vw)</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('size-full-modal')">
+<div id="size-full-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-full">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Fullscreen Modal (95vw)</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('size-full-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This is a fullscreen modal, perfect for immersive experiences.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('size-full-modal')">Close</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('size-full-modal')">Close</button>
         </div>
     </div>
 </div>
 
 <!-- Animation Modals -->
-<div id="anim-slideup-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Slide Up Animation</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('anim-slideup-modal')">
+<div id="anim-slideup-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-md">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Slide Up Animation</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('anim-slideup-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This modal slides up from the bottom with a smooth animation.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-primary" onclick="MetroAdmin.closeDSGTModal('anim-slideup-modal')">Close</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-primary" onclick="MetroAdmin.closeSWModal('anim-slideup-modal')">Close</button>
         </div>
     </div>
 </div>
 
-<div id="anim-zoom-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md dsgt-modal-dialog-zoom">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Zoom In Animation</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('anim-zoom-modal')">
+<div id="anim-zoom-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-md sw-modal-dialog-zoom">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Zoom In Animation</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('anim-zoom-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This modal zooms in from the center with a scale animation.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-success" onclick="MetroAdmin.closeDSGTModal('anim-zoom-modal')">Close</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-success" onclick="MetroAdmin.closeSWModal('anim-zoom-modal')">Close</button>
         </div>
     </div>
 </div>
 
-<div id="anim-slideleft-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md dsgt-modal-dialog-slide-left">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Slide Left Animation</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('anim-slideleft-modal')">
+<div id="anim-slideleft-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-md sw-modal-dialog-slide-left">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Slide Left Animation</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('anim-slideleft-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This modal slides in from the right side.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-info" onclick="MetroAdmin.closeDSGTModal('anim-slideleft-modal')">Close</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-info" onclick="MetroAdmin.closeSWModal('anim-slideleft-modal')">Close</button>
         </div>
     </div>
 </div>
 
-<div id="anim-slideright-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md dsgt-modal-dialog-slide-right">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Slide Right Animation</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('anim-slideright-modal')">
+<div id="anim-slideright-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-md sw-modal-dialog-slide-right">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Slide Right Animation</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('anim-slideright-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This modal slides in from the left side.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-warning" onclick="MetroAdmin.closeDSGTModal('anim-slideright-modal')">Close</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-warning" onclick="MetroAdmin.closeSWModal('anim-slideright-modal')">Close</button>
         </div>
     </div>
 </div>
 
-<div id="anim-flip-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md dsgt-modal-dialog-flip">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Flip Animation</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('anim-flip-modal')">
+<div id="anim-flip-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-md sw-modal-dialog-flip">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Flip Animation</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('anim-flip-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This modal flips in with a 3D rotation effect.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-danger" onclick="MetroAdmin.closeDSGTModal('anim-flip-modal')">Close</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-danger" onclick="MetroAdmin.closeSWModal('anim-flip-modal')">Close</button>
         </div>
     </div>
 </div>
 
 <!-- Form Modal -->
-<div id="form-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-lg">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">User Registration</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('form-modal')">
+<div id="form-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-lg">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">User Registration</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('form-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
-            <div class="dsgt-modal-form-group">
-                <label class="dsgt-modal-form-label">Full Name</label>
-                <input type="text" class="dsgt-modal-form-input" placeholder="Enter your name">
+        <div class="sw-modal-body">
+            <div class="sw-modal-form-group">
+                <label class="sw-modal-form-label">Full Name</label>
+                <input type="text" class="sw-modal-form-input" placeholder="Enter your name">
             </div>
-            <div class="dsgt-modal-form-group">
-                <label class="dsgt-modal-form-label">Email Address</label>
-                <input type="email" class="dsgt-modal-form-input" placeholder="Enter your email">
+            <div class="sw-modal-form-group">
+                <label class="sw-modal-form-label">Email Address</label>
+                <input type="email" class="sw-modal-form-input" placeholder="Enter your email">
             </div>
-            <div class="dsgt-modal-form-group">
-                <label class="dsgt-modal-form-label">Password</label>
-                <input type="password" class="dsgt-modal-form-input" placeholder="Create password">
+            <div class="sw-modal-form-group">
+                <label class="sw-modal-form-label">Password</label>
+                <input type="password" class="sw-modal-form-input" placeholder="Create password">
             </div>
-            <div class="dsgt-modal-form-group">
-                <label class="dsgt-modal-form-label">Role</label>
-                <select class="dsgt-modal-form-input">
+            <div class="sw-modal-form-group">
+                <label class="sw-modal-form-label">Role</label>
+                <select class="sw-modal-form-input">
                     <option>Select role...</option>
                     <option>Administrator</option>
                     <option>Editor</option>
@@ -773,23 +773,23 @@
                 </select>
             </div>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('form-modal')">Cancel</button>
-            <button class="btn btn-primary" onclick="MetroAdmin.closeDSGTModal('form-modal')">Register</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('form-modal')">Cancel</button>
+            <button class="btn btn-primary" onclick="MetroAdmin.closeSWModal('form-modal')">Register</button>
         </div>
     </div>
 </div>
 
 <!-- Scrollable Modal -->
-<div id="scrollable-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-lg">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Terms & Conditions</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('scrollable-modal')">
+<div id="scrollable-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-lg">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Terms & Conditions</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('scrollable-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body dsgt-modal-body-scrollable">
+        <div class="sw-modal-body sw-modal-body-scrollable">
             <h4 style="margin: 0 0 12px 0;">1. Introduction</h4>
             <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">Welcome to our service. By accessing or using our platform, you agree to be bound by these terms and conditions. Please read them carefully.</p>
             
@@ -811,31 +811,31 @@
             <h4 style="margin: 0 0 12px 0;">7. Changes to Terms</h4>
             <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 16px;">We may update these terms from time to time. Your continued use after changes constitutes acceptance of the new terms.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('scrollable-modal')">Decline</button>
-            <button class="btn btn-success" onclick="MetroAdmin.closeDSGTModal('scrollable-modal')">Accept</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('scrollable-modal')">Decline</button>
+            <button class="btn btn-success" onclick="MetroAdmin.closeSWModal('scrollable-modal')">Accept</button>
         </div>
     </div>
 </div>
 
 <!-- Image Modal -->
-<div id="image-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-lg">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Photo Viewer</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('image-modal')">
+<div id="image-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-lg">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Photo Viewer</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('image-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
-            <div class="dsgt-image-modal-content">
+        <div class="sw-modal-body">
+            <div class="sw-image-modal-content">
                 <img src="https://picsum.photos/seed/modalimg/800/400" alt="Photo">
                 <p style="font-size: 14px; color: var(--text-secondary); margin: 0;">Beautiful landscape photography - Click to view full resolution</p>
             </div>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('image-modal')">Close</button>
-            <button class="btn btn-primary" onclick="MetroAdmin.closeDSGTModal('image-modal')">
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('image-modal')">Close</button>
+            <button class="btn btn-primary" onclick="MetroAdmin.closeSWModal('image-modal')">
                 <i class="fa-solid fa-download"></i>
                 Download
             </button>
@@ -844,69 +844,69 @@
 </div>
 
 <!-- Stacked Modals -->
-<div id="stacked-1" class="dsgt-custom-modal dsgt-modal-stacked-1">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">First Modal</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('stacked-1')">
+<div id="stacked-1" class="sw-custom-modal sw-modal-stacked-1">
+    <div class="sw-modal-dialog sw-modal-dialog-md">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">First Modal</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('stacked-1')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This is the first modal. Click the button below to open another modal on top of this one.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('stacked-1')">Close</button>
-            <button class="btn btn-primary" onclick="MetroAdmin.openDSGTModal('stacked-2')">Open Second Modal</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('stacked-1')">Close</button>
+            <button class="btn btn-primary" onclick="MetroAdmin.openSWModal('stacked-2')">Open Second Modal</button>
         </div>
     </div>
 </div>
 
-<div id="stacked-2" class="dsgt-custom-modal dsgt-modal-stacked-2">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Second Modal</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('stacked-2')">
+<div id="stacked-2" class="sw-custom-modal sw-modal-stacked-2">
+    <div class="sw-modal-dialog sw-modal-dialog-md">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Second Modal</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('stacked-2')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This is the second modal stacked on top of the first one. You can open one more modal.</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('stacked-2')">Close</button>
-            <button class="btn btn-success" onclick="MetroAdmin.openDSGTModal('stacked-3')">Open Third Modal</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('stacked-2')">Close</button>
+            <button class="btn btn-success" onclick="MetroAdmin.openSWModal('stacked-3')">Open Third Modal</button>
         </div>
     </div>
 </div>
 
-<div id="stacked-3" class="dsgt-custom-modal dsgt-modal-stacked-3">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Third Modal</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('stacked-3')">
+<div id="stacked-3" class="sw-custom-modal sw-modal-stacked-3">
+    <div class="sw-modal-dialog sw-modal-dialog-md">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Third Modal</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('stacked-3')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary);">This is the third and final stacked modal. Maximum depth reached!</p>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-danger" onclick="MetroAdmin.closeDSGTModal('stacked-3'); MetroAdmin.closeDSGTModal('stacked-2'); MetroAdmin.closeDSGTModal('stacked-1');">Close All</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-danger" onclick="MetroAdmin.closeSWModal('stacked-3'); MetroAdmin.closeSWModal('stacked-2'); MetroAdmin.closeSWModal('stacked-1');">Close All</button>
         </div>
     </div>
 </div>
 
 <!-- Dismissible Modal (Default Behavior) -->
-<div id="dismissible-modal" class="dsgt-custom-modal" data-dismissible="true">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Dismissible Modal</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('dismissible-modal')">
+<div id="dismissible-modal" class="sw-custom-modal" data-dismissible="true">
+    <div class="sw-modal-dialog sw-modal-dialog-md">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Dismissible Modal</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('dismissible-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <div style="text-align: center; padding: 20px 0;">
                 <i class="fa-solid fa-hand-pointer" style="font-size: 48px; color: var(--accent); margin-bottom: 16px;"></i>
                 <p style="font-size: 14px; color: var(--text-primary); font-weight: 600; margin-bottom: 8px;">Click Anywhere Outside</p>
@@ -918,22 +918,22 @@
                 </ul>
             </div>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-primary" onclick="MetroAdmin.closeDSGTModal('dismissible-modal')">Got it!</button>
+        <div class="sw-modal-footer">
+            <button class="btn btn-primary" onclick="MetroAdmin.closeSWModal('dismissible-modal')">Got it!</button>
         </div>
     </div>
 </div>
 
 <!-- X-Button Only Modal (Simple - No Warning, Just Locked) -->
-<div id="x-button-only-modal" class="dsgt-custom-modal" data-dismissible="false">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">Simple Information Modal</h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('x-button-only-modal')">
+<div id="x-button-only-modal" class="sw-custom-modal" data-dismissible="false">
+    <div class="sw-modal-dialog sw-modal-dialog-md">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">Simple Information Modal</h3>
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('x-button-only-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">
                 This is a simple modal that can only be closed by clicking the X button in the top right corner.
             </p>
@@ -945,18 +945,18 @@
 </div>
 
 <!-- Non-Dismissible Modal (Locked - Must Click Close Button) -->
-<div id="locked-modal" class="dsgt-custom-modal" data-dismissible="false">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-md">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">
+<div id="locked-modal" class="sw-custom-modal" data-dismissible="false">
+    <div class="sw-modal-dialog sw-modal-dialog-md">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">
                 <i class="fa-solid fa-lock" style="color: var(--danger); margin-right: 8px;"></i>
                 Locked Modal
             </h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('locked-modal')">
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('locked-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <div style="background: rgba(232, 17, 35, 0.1); border: 1px solid var(--danger); border-radius: 8px; padding: 16px; margin-bottom: 16px;">
                 <div style="display: flex; gap: 12px; align-items: start;">
                     <i class="fa-solid fa-circle-exclamation" style="color: var(--danger); font-size: 20px; margin-top: 2px;"></i>
@@ -975,9 +975,9 @@
                 <li>Essential information display</li>
             </ul>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('locked-modal')">Cancel</button>
-            <button class="btn btn-danger" onclick="MetroAdmin.closeDSGTModal('locked-modal')">
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('locked-modal')">Cancel</button>
+            <button class="btn btn-danger" onclick="MetroAdmin.closeSWModal('locked-modal')">
                 <i class="fa-solid fa-check"></i>
                 I Understand
             </button>
@@ -986,18 +986,18 @@
 </div>
 
 <!-- Required Form Modal (Must Complete Before Closing) -->
-<div id="required-form-modal" class="dsgt-custom-modal" data-dismissible="false">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-lg">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">
+<div id="required-form-modal" class="sw-custom-modal" data-dismissible="false">
+    <div class="sw-modal-dialog sw-modal-dialog-lg">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">
                 <i class="fa-solid fa-file-contract" style="color: var(--success); margin-right: 8px;"></i>
                 Terms Agreement
             </h3>
-            <button class="dsgt-modal-close" id="required-form-close" onclick="MetroAdmin.handleDSGTModalRequiredFormClose()" disabled style="opacity: 0.5; cursor: not-allowed;">
+            <button class="sw-modal-close" id="required-form-close" onclick="MetroAdmin.handleSWModalRequiredFormClose()" disabled style="opacity: 0.5; cursor: not-allowed;">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
+        <div class="sw-modal-body">
             <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; margin-bottom: 20px; max-height: 300px; overflow-y: auto;">
                 <h4 style="margin: 0 0 12px 0; font-size: 16px;">Terms and Conditions</h4>
                 <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px;">By using this service, you agree to the following terms:</p>
@@ -1019,16 +1019,16 @@
             </div>
             
             <label style="display: flex; align-items: start; gap: 12px; padding: 16px; background: var(--bg-secondary); border: 2px solid var(--border-color); border-radius: 8px; cursor: pointer; transition: all 0.2s ease;" id="agreement-label">
-                <input type="checkbox" id="agreement-checkbox" onchange="MetroAdmin.handleDSGTModalAgreementChange()" style="width: 20px; height: 20px; margin-top: 2px; cursor: pointer; flex-shrink: 0;">
+                <input type="checkbox" id="agreement-checkbox" onchange="MetroAdmin.handleSWModalAgreementChange()" style="width: 20px; height: 20px; margin-top: 2px; cursor: pointer; flex-shrink: 0;">
                 <div>
                     <p style="font-size: 14px; color: var(--text-primary); font-weight: 600; margin: 0 0 4px 0;">I Agree to the Terms and Conditions</p>
                     <p style="font-size: 12px; color: var(--text-secondary); margin: 0;">By checking this box, you confirm that you have read and understood all the terms listed above.</p>
                 </div>
             </label>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.handleDSGTModalRequiredFormClose()" id="required-form-cancel" disabled style="opacity: 0.5; cursor: not-allowed;">Cancel</button>
-            <button class="btn btn-success" onclick="MetroAdmin.handleDSGTModalAgreementAccept()" id="required-form-accept" disabled style="opacity: 0.5; cursor: not-allowed;">
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.handleSWModalRequiredFormClose()" id="required-form-cancel" disabled style="opacity: 0.5; cursor: not-allowed;">Cancel</button>
+            <button class="btn btn-success" onclick="MetroAdmin.handleSWModalAgreementAccept()" id="required-form-accept" disabled style="opacity: 0.5; cursor: not-allowed;">
                 <i class="fa-solid fa-check"></i>
                 Accept & Continue
             </button>
@@ -1037,12 +1037,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-modals-section-title">
+<div class="sw-modals-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-modal-grid">
+<div class="sw-modal-grid">
     <div class="content-card" style="background: var(--surface); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-card);">
         <div class="card-header">
             <div class="card-header-left">
@@ -1131,7 +1131,7 @@ $(document).on('keydown', function(e) {
 <script>
 // Modals page initialization
 $(document).ready(function() {
-    console.log('📋 DSGT Modals page loaded successfully');
+    console.log('📋 SW Modals page loaded successfully');
 });
 </script>
 @endpush

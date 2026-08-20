@@ -37,12 +37,15 @@
     <!-- Select2 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     
-    <!-- App Styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
+    <!-- Swantara UI Core Framework Styles -->
+    <link rel="stylesheet" href="{{ asset('assets/css/swantara.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/datatables.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/animations.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/dark.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/swal-custom.css') }}">
+    
+    <!-- Template Theme Styles -->
+    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
     
     @stack('styles')
 </head>
@@ -112,8 +115,12 @@
     <!-- SweetAlert2 Custom Config -->
     <script src="{{ asset('assets/js/swal-config.js') }}"></script>
     
-    <script src="{{ asset('assets/js/app.js') }}"></script>
+    <!-- Swantara UI Core JS -->
+    <script src="{{ asset('assets/js/swantara.js') }}"></script>
     <script src="{{ asset('assets/js/touch-spin.js') }}"></script>
+    
+    <!-- Template App Logic -->
+    <script src="{{ asset('assets/js/app.js') }}"></script>
     
     @stack('scripts')
 </body>

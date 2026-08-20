@@ -23,7 +23,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-images-info-card">
+<div class="content-card sw-images-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -36,12 +36,12 @@
 </div>
 
 <!-- Basic Image Styles -->
-<div class="dsgt-images-section-title">
+<div class="sw-images-section-title">
     <i class="fa-solid fa-image"></i>
     Basic Image Styles <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-images-grid">
+<div class="sw-images-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -55,19 +55,19 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-images-example">
-                <span class="dsgt-images-example-label">Responsive Image</span>
-                <div class="dsgt-lightbox-trigger">
-                    <img src="https://picsum.photos/seed/default/600/400" class="dsgt-demo-image" alt="Default image">
-                    <div class="dsgt-lightbox-icon">
+            <div class="sw-images-example">
+                <span class="sw-images-example-label">Responsive Image</span>
+                <div class="sw-lightbox-trigger">
+                    <img src="https://picsum.photos/seed/default/600/400" class="sw-demo-image" alt="Default image">
+                    <div class="sw-lightbox-icon">
                         <i class="fa-solid fa-expand"></i>
                     </div>
                 </div>
-                <div class="dsgt-img-caption">
+                <div class="sw-img-caption">
                     <h4>Default Style</h4>
                     <p>width: 100%, border-radius: 8px</p>
                 </div>
-                <div class="dsgt-images-helper">
+                <div class="sw-images-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Click image to open zoom viewer
                 </div>
@@ -88,19 +88,19 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-images-example">
-                <span class="dsgt-images-example-label">Rounded Corners</span>
-                <div class="dsgt-lightbox-trigger">
-                    <img src="https://picsum.photos/seed/rounded/600/400" class="dsgt-demo-image dsgt-img-rounded" alt="Rounded image">
-                    <div class="dsgt-lightbox-icon">
+            <div class="sw-images-example">
+                <span class="sw-images-example-label">Rounded Corners</span>
+                <div class="sw-lightbox-trigger">
+                    <img src="https://picsum.photos/seed/rounded/600/400" class="sw-demo-image sw-img-rounded" alt="Rounded image">
+                    <div class="sw-lightbox-icon">
                         <i class="fa-solid fa-expand"></i>
                     </div>
                 </div>
-                <div class="dsgt-img-caption">
+                <div class="sw-img-caption">
                     <h4>Rounded Style</h4>
                     <p>border-radius: 12px</p>
                 </div>
-                <div class="dsgt-images-helper">
+                <div class="sw-images-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Click image to open zoom viewer
                 </div>
@@ -121,14 +121,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-images-example">
-                <span class="dsgt-images-example-label">With Border</span>
-                <img src="https://picsum.photos/seed/border/600/400" class="dsgt-demo-image dsgt-img-bordered" alt="Bordered image">
-                <div class="dsgt-img-caption">
+            <div class="sw-images-example">
+                <span class="sw-images-example-label">With Border</span>
+                <img src="https://picsum.photos/seed/border/600/400" class="sw-demo-image sw-img-bordered" alt="Bordered image">
+                <div class="sw-img-caption">
                     <h4>Bordered Style</h4>
                     <p>border: 3px solid var(--accent)</p>
                 </div>
-                <div class="dsgt-images-helper">
+                <div class="sw-images-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Border highlights and frames the image
                 </div>
@@ -149,19 +149,19 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-images-example">
-                <span class="dsgt-images-example-label">With Shadow</span>
-                <div class="dsgt-lightbox-trigger">
-                    <img src="https://picsum.photos/seed/shadow/600/400" class="dsgt-demo-image dsgt-img-shadow" alt="Image with shadow">
-                    <div class="dsgt-lightbox-icon">
+            <div class="sw-images-example">
+                <span class="sw-images-example-label">With Shadow</span>
+                <div class="sw-lightbox-trigger">
+                    <img src="https://picsum.photos/seed/shadow/600/400" class="sw-demo-image sw-img-shadow" alt="Image with shadow">
+                    <div class="sw-lightbox-icon">
                         <i class="fa-solid fa-expand"></i>
                     </div>
                 </div>
-                <div class="dsgt-img-caption">
+                <div class="sw-img-caption">
                     <h4>Shadow Style</h4>
                     <p>box-shadow: 0 8px 24px rgba(0,0,0,0.15)</p>
                 </div>
-                <div class="dsgt-images-helper">
+                <div class="sw-images-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Click image to open zoom viewer
                 </div>
@@ -171,12 +171,12 @@
 </div>
 
 <!-- Thumbnails & Frames -->
-<div class="dsgt-images-section-title">
+<div class="sw-images-section-title">
     <i class="fa-solid fa-images"></i>
     Thumbnails & Frames
 </div>
 
-<div class="dsgt-images-grid">
+<div class="sw-images-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -190,14 +190,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-images-example">
-                <span class="dsgt-images-example-label">Thumbnail Style</span>
-                <img src="https://picsum.photos/seed/thumb/400/300" class="dsgt-demo-image dsgt-img-thumbnail" alt="Thumbnail">
-                <div class="dsgt-img-caption">
+            <div class="sw-images-example">
+                <span class="sw-images-example-label">Thumbnail Style</span>
+                <img src="https://picsum.photos/seed/thumb/400/300" class="sw-demo-image sw-img-thumbnail" alt="Thumbnail">
+                <div class="sw-img-caption">
                     <h4>Thumbnail</h4>
                     <p>padding: 4px, background: white, border: 1px</p>
                 </div>
-                <div class="dsgt-images-helper">
+                <div class="sw-images-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Thumbnail creates photo frame effect
                 </div>
@@ -218,16 +218,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-images-example">
-                <span class="dsgt-images-example-label">Frame Style</span>
-                <div class="dsgt-img-frame">
-                    <img src="https://picsum.photos/seed/frame/400/300" class="dsgt-demo-image" alt="Framed image">
+            <div class="sw-images-example">
+                <span class="sw-images-example-label">Frame Style</span>
+                <div class="sw-img-frame">
+                    <img src="https://picsum.photos/seed/frame/400/300" class="sw-demo-image" alt="Framed image">
                 </div>
-                <div class="dsgt-img-caption">
+                <div class="sw-img-caption">
                     <h4>Framed Image</h4>
                     <p>padding: 12px, shadow, rounded corners</p>
                 </div>
-                <div class="dsgt-images-helper">
+                <div class="sw-images-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Frame adds professional presentation
                 </div>
@@ -248,13 +248,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-images-example">
-                <span class="dsgt-images-example-label">Polaroid Effect</span>
-                <div class="dsgt-img-polaroid">
+            <div class="sw-images-example">
+                <span class="sw-images-example-label">Polaroid Effect</span>
+                <div class="sw-img-polaroid">
                     <img src="https://picsum.photos/seed/polaroid/400/350" alt="Polaroid">
-                    <div class="dsgt-img-polaroid-caption">Summer Vacation 2024</div>
+                    <div class="sw-img-polaroid-caption">Summer Vacation 2024</div>
                 </div>
-                <div class="dsgt-images-helper">
+                <div class="sw-images-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Hover to see rotation effect
                 </div>
@@ -264,7 +264,7 @@
 </div>
 
 <!-- Avatars -->
-<div class="dsgt-images-section-title">
+<div class="sw-images-section-title">
     <i class="fa-solid fa-user-circle"></i>
     Avatar System <span class="badge badge-success">Popular</span>
 </div>
@@ -282,31 +282,31 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-images-example">
-            <span class="dsgt-images-example-label">Size Variations</span>
-            <div class="dsgt-avatar-grid">
+        <div class="sw-images-example">
+            <span class="sw-images-example-label">Size Variations</span>
+            <div class="sw-avatar-grid">
                 <div style="text-align: center;">
-                    <img src="https://ui-avatars.com/api/?name=XS&background=0078D4&color=fff&size=64" class="dsgt-avatar-xs" alt="XS">
+                    <img src="https://ui-avatars.com/api/?name=XS&background=0078D4&color=fff&size=64" class="sw-avatar-xs" alt="XS">
                     <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary);">XS (32px)</div>
                 </div>
                 <div style="text-align: center;">
-                    <img src="https://ui-avatars.com/api/?name=SM&background=16C60C&color=fff&size=96" class="dsgt-avatar-sm" alt="SM">
+                    <img src="https://ui-avatars.com/api/?name=SM&background=16C60C&color=fff&size=96" class="sw-avatar-sm" alt="SM">
                     <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary);">SM (48px)</div>
                 </div>
                 <div style="text-align: center;">
-                    <img src="https://ui-avatars.com/api/?name=MD&background=FFB900&color=fff&size=128" class="dsgt-avatar-md" alt="MD">
+                    <img src="https://ui-avatars.com/api/?name=MD&background=FFB900&color=fff&size=128" class="sw-avatar-md" alt="MD">
                     <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary);">MD (64px)</div>
                 </div>
                 <div style="text-align: center;">
-                    <img src="https://ui-avatars.com/api/?name=LG&background=E81123&color=fff&size=192" class="dsgt-avatar-lg" alt="LG">
+                    <img src="https://ui-avatars.com/api/?name=LG&background=E81123&color=fff&size=192" class="sw-avatar-lg" alt="LG">
                     <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary);">LG (96px)</div>
                 </div>
                 <div style="text-align: center;">
-                    <img src="https://ui-avatars.com/api/?name=XL&background=00BCF2&color=fff&size=256" class="dsgt-avatar-xl" alt="XL">
+                    <img src="https://ui-avatars.com/api/?name=XL&background=00BCF2&color=fff&size=256" class="sw-avatar-xl" alt="XL">
                     <div style="margin-top: 8px; font-size: 11px; color: var(--text-secondary);">XL (128px)</div>
                 </div>
             </div>
-            <div class="dsgt-images-helper">
+            <div class="sw-images-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Avatars scale proportionally with object-fit: cover
             </div>
@@ -328,26 +328,26 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-images-example">
-            <span class="dsgt-images-example-label">Status Indicators</span>
-            <div class="dsgt-avatar-grid">
-                <div class="dsgt-avatar-wrapper">
-                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=16C60C&color=fff&size=192" class="dsgt-avatar-lg" alt="Online">
-                    <span class="dsgt-avatar-status online"></span>
+        <div class="sw-images-example">
+            <span class="sw-images-example-label">Status Indicators</span>
+            <div class="sw-avatar-grid">
+                <div class="sw-avatar-wrapper">
+                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=16C60C&color=fff&size=192" class="sw-avatar-lg" alt="Online">
+                    <span class="sw-avatar-status online"></span>
                     <div style="margin-top: 12px; text-align: center; font-size: 12px;">Online</div>
                 </div>
-                <div class="dsgt-avatar-wrapper">
-                    <img src="https://ui-avatars.com/api/?name=Jane+Smith&background=808080&color=fff&size=192" class="dsgt-avatar-lg" alt="Offline">
-                    <span class="dsgt-avatar-status offline"></span>
+                <div class="sw-avatar-wrapper">
+                    <img src="https://ui-avatars.com/api/?name=Jane+Smith&background=808080&color=fff&size=192" class="sw-avatar-lg" alt="Offline">
+                    <span class="sw-avatar-status offline"></span>
                     <div style="margin-top: 12px; text-align: center; font-size: 12px;">Offline</div>
                 </div>
-                <div class="dsgt-avatar-wrapper">
-                    <img src="https://ui-avatars.com/api/?name=Bob+Johnson&background=E81123&color=fff&size=192" class="dsgt-avatar-lg" alt="Busy">
-                    <span class="dsgt-avatar-status busy"></span>
+                <div class="sw-avatar-wrapper">
+                    <img src="https://ui-avatars.com/api/?name=Bob+Johnson&background=E81123&color=fff&size=192" class="sw-avatar-lg" alt="Busy">
+                    <span class="sw-avatar-status busy"></span>
                     <div style="margin-top: 12px; text-align: center; font-size: 12px;">Busy</div>
                 </div>
             </div>
-            <div class="dsgt-images-helper">
+            <div class="sw-images-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Status badges show user availability
             </div>
@@ -356,12 +356,12 @@
 </div>
 
 <!-- Image Overlays -->
-<div class="dsgt-images-section-title">
+<div class="sw-images-section-title">
     <i class="fa-solid fa-layer-group"></i>
     Image Overlays
 </div>
 
-<div class="dsgt-images-grid">
+<div class="sw-images-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -375,15 +375,15 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-images-example">
-                <span class="dsgt-images-example-label">Overlay Effect</span>
-                <div class="dsgt-img-overlay-container">
-                    <img src="https://picsum.photos/seed/overlay/600/400" class="dsgt-demo-image" alt="Overlay">
-                    <div class="dsgt-img-overlay">
+            <div class="sw-images-example">
+                <span class="sw-images-example-label">Overlay Effect</span>
+                <div class="sw-img-overlay-container">
+                    <img src="https://picsum.photos/seed/overlay/600/400" class="sw-demo-image" alt="Overlay">
+                    <div class="sw-img-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus"></i>
                     </div>
                 </div>
-                <div class="dsgt-images-helper">
+                <div class="sw-images-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Hover over image to see overlay
                 </div>
@@ -404,15 +404,15 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-images-example">
-                <span class="dsgt-images-example-label">Lightbox Effect</span>
-                <div class="dsgt-img-overlay-container dsgt-lightbox-trigger">
-                    <img src="https://picsum.photos/seed/lightbox/600/400" class="dsgt-demo-image" alt="Lightbox">
-                    <div class="dsgt-lightbox-icon">
+            <div class="sw-images-example">
+                <span class="sw-images-example-label">Lightbox Effect</span>
+                <div class="sw-img-overlay-container sw-lightbox-trigger">
+                    <img src="https://picsum.photos/seed/lightbox/600/400" class="sw-demo-image" alt="Lightbox">
+                    <div class="sw-lightbox-icon">
                         <i class="fa-solid fa-expand"></i>
                     </div>
                 </div>
-                <div class="dsgt-images-helper">
+                <div class="sw-images-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Hover to see expand icon
                 </div>
@@ -422,7 +422,7 @@
 </div>
 
 <!-- Image Gallery -->
-<div class="dsgt-images-section-title">
+<div class="sw-images-section-title">
     <i class="fa-solid fa-grip"></i>
     Image Gallery
 </div>
@@ -440,47 +440,47 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-images-example">
-            <span class="dsgt-images-example-label">Photo Gallery</span>
-            <div class="dsgt-gallery-grid">
-                <div class="dsgt-gallery-item">
+        <div class="sw-images-example">
+            <span class="sw-images-example-label">Photo Gallery</span>
+            <div class="sw-gallery-grid">
+                <div class="sw-gallery-item">
                     <img src="https://picsum.photos/seed/gallery1/300/300" alt="Gallery 1">
-                    <div class="dsgt-gallery-item-overlay">
+                    <div class="sw-gallery-item-overlay">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
-                <div class="dsgt-gallery-item">
+                <div class="sw-gallery-item">
                     <img src="https://picsum.photos/seed/gallery2/300/300" alt="Gallery 2">
-                    <div class="dsgt-gallery-item-overlay">
+                    <div class="sw-gallery-item-overlay">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
-                <div class="dsgt-gallery-item">
+                <div class="sw-gallery-item">
                     <img src="https://picsum.photos/seed/gallery3/300/300" alt="Gallery 3">
-                    <div class="dsgt-gallery-item-overlay">
+                    <div class="sw-gallery-item-overlay">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
-                <div class="dsgt-gallery-item">
+                <div class="sw-gallery-item">
                     <img src="https://picsum.photos/seed/gallery4/300/300" alt="Gallery 4">
-                    <div class="dsgt-gallery-item-overlay">
+                    <div class="sw-gallery-item-overlay">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
-                <div class="dsgt-gallery-item">
+                <div class="sw-gallery-item">
                     <img src="https://picsum.photos/seed/gallery5/300/300" alt="Gallery 5">
-                    <div class="dsgt-gallery-item-overlay">
+                    <div class="sw-gallery-item-overlay">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
-                <div class="dsgt-gallery-item">
+                <div class="sw-gallery-item">
                     <img src="https://picsum.photos/seed/gallery6/300/300" alt="Gallery 6">
-                    <div class="dsgt-gallery-item-overlay">
+                    <div class="sw-gallery-item-overlay">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-images-helper">
+            <div class="sw-images-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Click any image to open zoom viewer with drag support
             </div>
@@ -489,7 +489,7 @@
 </div>
 
 <!-- Image Shapes -->
-<div class="dsgt-images-section-title">
+<div class="sw-images-section-title">
     <i class="fa-solid fa-shapes"></i>
     Image Shapes
 </div>
@@ -507,33 +507,33 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-images-example">
-            <span class="dsgt-images-example-label">Shape Variations</span>
+        <div class="sw-images-example">
+            <span class="sw-images-example-label">Shape Variations</span>
             <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; align-items: center;">
                 <div style="text-align: center;">
-                    <img src="https://picsum.photos/seed/circle/200/200" class="dsgt-shape-circle" style="width: 120px; height: 120px; object-fit: cover;" alt="Circle">
+                    <img src="https://picsum.photos/seed/circle/200/200" class="sw-shape-circle" style="width: 120px; height: 120px; object-fit: cover;" alt="Circle">
                     <div style="margin-top: 12px; font-size: 12px;">Circle</div>
                 </div>
                 <div style="text-align: center;">
-                    <img src="https://picsum.photos/seed/rounded2/200/200" class="dsgt-shape-rounded" style="width: 120px; height: 120px; object-fit: cover;" alt="Rounded">
+                    <img src="https://picsum.photos/seed/rounded2/200/200" class="sw-shape-rounded" style="width: 120px; height: 120px; object-fit: cover;" alt="Rounded">
                     <div style="margin-top: 12px; font-size: 12px;">Rounded</div>
                 </div>
                 <div style="text-align: center;">
-                    <img src="https://picsum.photos/seed/pill/200/150" class="dsgt-shape-pill" style="width: 160px; height: 120px; object-fit: cover;" alt="Pill">
+                    <img src="https://picsum.photos/seed/pill/200/150" class="sw-shape-pill" style="width: 160px; height: 120px; object-fit: cover;" alt="Pill">
                     <div style="margin-top: 12px; font-size: 12px;">Pill</div>
                 </div>
                 <div style="text-align: center;">
                     <div style="width: 120px; height: 120px; overflow: hidden;">
-                        <img src="https://picsum.photos/seed/diamond/200/200" class="dsgt-shape-diamond" style="width: 140px; height: 140px; object-fit: cover; margin: -10px;" alt="Diamond">
+                        <img src="https://picsum.photos/seed/diamond/200/200" class="sw-shape-diamond" style="width: 140px; height: 140px; object-fit: cover; margin: -10px;" alt="Diamond">
                     </div>
                     <div style="margin-top: 12px; font-size: 12px;">Diamond</div>
                 </div>
                 <div style="text-align: center;">
-                    <img src="https://picsum.photos/seed/hexagon/200/200" class="dsgt-shape-hexagon" style="width: 120px; height: 120px; object-fit: cover;" alt="Hexagon">
+                    <img src="https://picsum.photos/seed/hexagon/200/200" class="sw-shape-hexagon" style="width: 120px; height: 120px; object-fit: cover;" alt="Hexagon">
                     <div style="margin-top: 12px; font-size: 12px;">Hexagon</div>
                 </div>
             </div>
-            <div class="dsgt-images-helper">
+            <div class="sw-images-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Shapes use border-radius and clip-path
             </div>
@@ -555,23 +555,23 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-images-example">
-            <span class="dsgt-images-example-label">Badge Indicator</span>
+        <div class="sw-images-example">
+            <span class="sw-images-example-label">Badge Indicator</span>
             <div style="display: flex; gap: 24px; flex-wrap: wrap; align-items: center;">
-                <div class="dsgt-img-badge-container">
-                    <img src="https://ui-avatars.com/api/?name=Messages&background=0078D4&color=fff&size=192" class="dsgt-avatar-xl" alt="Messages">
-                    <span class="dsgt-img-badge">5</span>
+                <div class="sw-img-badge-container">
+                    <img src="https://ui-avatars.com/api/?name=Messages&background=0078D4&color=fff&size=192" class="sw-avatar-xl" alt="Messages">
+                    <span class="sw-img-badge">5</span>
                 </div>
-                <div class="dsgt-img-badge-container">
-                    <img src="https://ui-avatars.com/api/?name=Notifications&background=16C60C&color=fff&size=192" class="dsgt-avatar-xl" alt="Notifications">
-                    <span class="dsgt-img-badge">12</span>
+                <div class="sw-img-badge-container">
+                    <img src="https://ui-avatars.com/api/?name=Notifications&background=16C60C&color=fff&size=192" class="sw-avatar-xl" alt="Notifications">
+                    <span class="sw-img-badge">12</span>
                 </div>
-                <div class="dsgt-img-badge-container">
-                    <img src="https://ui-avatars.com/api/?name=Alerts&background=E81123&color=fff&size=192" class="dsgt-avatar-xl" alt="Alerts">
-                    <span class="dsgt-img-badge">3</span>
+                <div class="sw-img-badge-container">
+                    <img src="https://ui-avatars.com/api/?name=Alerts&background=E81123&color=fff&size=192" class="sw-avatar-xl" alt="Alerts">
+                    <span class="sw-img-badge">3</span>
                 </div>
             </div>
-            <div class="dsgt-images-helper">
+            <div class="sw-images-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Badges show count indicators
             </div>
@@ -580,7 +580,7 @@
 </div>
 
 <!-- Responsive Images -->
-<div class="dsgt-images-section-title">
+<div class="sw-images-section-title">
     <i class="fa-solid fa-mobile-screen"></i>
     Responsive Images
 </div>
@@ -598,19 +598,19 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-images-example">
-            <span class="dsgt-images-example-label">Before & After (Responsive)</span>
-            <div class="dsgt-comparison-grid">
-                <div class="dsgt-comparison-item">
+        <div class="sw-images-example">
+            <span class="sw-images-example-label">Before & After (Responsive)</span>
+            <div class="sw-comparison-grid">
+                <div class="sw-comparison-item">
                     <img src="https://picsum.photos/seed/desktop/800/400" alt="Desktop">
-                    <div class="dsgt-comparison-label">Desktop View</div>
+                    <div class="sw-comparison-label">Desktop View</div>
                 </div>
-                <div class="dsgt-comparison-item">
+                <div class="sw-comparison-item">
                     <img src="https://picsum.photos/seed/mobile/400/400" alt="Mobile">
-                    <div class="dsgt-comparison-label">Mobile View</div>
+                    <div class="sw-comparison-label">Mobile View</div>
                 </div>
             </div>
-            <div class="dsgt-images-helper">
+            <div class="sw-images-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Images automatically scale to container width
             </div>
@@ -619,12 +619,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-images-section-title">
+<div class="sw-images-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-images-grid">
+<div class="sw-images-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -728,7 +728,7 @@
 <script>
 // Images page initialization
 $(document).ready(function() {
-    console.log('📋 DSGT Images page loaded successfully');
+    console.log('📋 SW Images page loaded successfully');
 });
 </script>
 @endpush

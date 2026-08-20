@@ -17,7 +17,7 @@
             <i class="fa-solid fa-book"></i>
             <span>Documentation</span>
         </button>
-        <button class="btn btn-primary" onclick="MetroAdmin.showDSGTDemoToast('success')">
+        <button class="btn btn-primary" onclick="MetroAdmin.showSWDemoToast('success')">
             <i class="fa-solid fa-play"></i>
             <span>Show Toast</span>
         </button>
@@ -25,7 +25,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-toast-info-card">
+<div class="content-card sw-toast-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -38,12 +38,12 @@
 </div>
 
 <!-- Toast Positions -->
-<div class="dsgt-toast-section-title">
+<div class="sw-toast-section-title">
     <i class="fa-solid fa-arrows-left-right"></i>
     Toast Positions <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-toast-grid">
+<div class="sw-toast-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -57,13 +57,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Top Right Position</span>
-                <button class="btn btn-primary" onclick="MetroAdmin.showDSGTDemoToast('success', 'top-right')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Top Right Position</span>
+                <button class="btn btn-primary" onclick="MetroAdmin.showSWDemoToast('success', 'top-right')">
                     <i class="fa-solid fa-bell"></i> Show Success Toast
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Most common position for notifications
             </div>
@@ -83,13 +83,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Bottom Right Position</span>
-                <button class="btn btn-success" onclick="MetroAdmin.showDSGTDemoToast('info', 'bottom-right')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Bottom Right Position</span>
+                <button class="btn btn-success" onclick="MetroAdmin.showSWDemoToast('info', 'bottom-right')">
                     <i class="fa-solid fa-bell"></i> Show Info Toast
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Less intrusive position
             </div>
@@ -109,13 +109,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Top Left Position</span>
-                <button class="btn btn-info" onclick="MetroAdmin.showDSGTDemoToast('warning', 'top-left')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Top Left Position</span>
+                <button class="btn btn-info" onclick="MetroAdmin.showSWDemoToast('warning', 'top-left')">
                     <i class="fa-solid fa-bell"></i> Show Warning Toast
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Good for RTL languages
             </div>
@@ -135,13 +135,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Bottom Left Position</span>
-                <button class="btn btn-warning" onclick="MetroAdmin.showDSGTDemoToast('danger', 'bottom-left')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Bottom Left Position</span>
+                <button class="btn btn-warning" onclick="MetroAdmin.showSWDemoToast('danger', 'bottom-left')">
                     <i class="fa-solid fa-bell"></i> Show Error Toast
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Bottom-left alternative
             </div>
@@ -161,13 +161,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Top Center Position</span>
-                <button class="btn btn-primary" onclick="MetroAdmin.showDSGTDemoToast('success', 'top-center')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Top Center Position</span>
+                <button class="btn btn-primary" onclick="MetroAdmin.showSWDemoToast('success', 'top-center')">
                     <i class="fa-solid fa-bell"></i> Show Success Toast
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Highly visible, centered
             </div>
@@ -187,13 +187,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Bottom Center Position</span>
-                <button class="btn btn-success" onclick="MetroAdmin.showDSGTDemoToast('info', 'bottom-center')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Bottom Center Position</span>
+                <button class="btn btn-success" onclick="MetroAdmin.showSWDemoToast('info', 'bottom-center')">
                     <i class="fa-solid fa-bell"></i> Show Info Toast
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Subtle bottom-center position
             </div>
@@ -202,12 +202,12 @@
 </div>
 
 <!-- Toast Sizes -->
-<div class="dsgt-toast-section-title">
+<div class="sw-toast-section-title">
     <i class="fa-solid fa-expand"></i>
     Toast Sizes
 </div>
 
-<div class="dsgt-toast-grid">
+<div class="sw-toast-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -221,13 +221,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Small Size</span>
-                <button class="btn btn-secondary" onclick="MetroAdmin.showDSGTDemoToast('success', 'top-right', 'sm')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Small Size</span>
+                <button class="btn btn-secondary" onclick="MetroAdmin.showSWDemoToast('success', 'top-right', 'sm')">
                     <i class="fa-solid fa-minus"></i> Show Small Toast
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Minimal space, quick reading
             </div>
@@ -247,13 +247,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Default Size</span>
-                <button class="btn btn-primary" onclick="MetroAdmin.showDSGTDemoToast('info', 'top-right', 'md')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Default Size</span>
+                <button class="btn btn-primary" onclick="MetroAdmin.showSWDemoToast('info', 'top-right', 'md')">
                     <i class="fa-solid fa-circle"></i> Show Default Toast
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Balanced readability
             </div>
@@ -273,13 +273,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Large Size</span>
-                <button class="btn btn-lg btn-primary" onclick="MetroAdmin.showDSGTDemoToast('warning', 'top-right', 'lg')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Large Size</span>
+                <button class="btn btn-lg btn-primary" onclick="MetroAdmin.showSWDemoToast('warning', 'top-right', 'lg')">
                     <i class="fa-solid fa-plus"></i> Show Large Toast
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 More content, detailed info
             </div>
@@ -288,12 +288,12 @@
 </div>
 
 <!-- Advanced Features -->
-<div class="dsgt-toast-section-title">
+<div class="sw-toast-section-title">
     <i class="fa-solid fa-wand-magic-sparkles"></i>
     Advanced Features
 </div>
 
-<div class="dsgt-toast-grid">
+<div class="sw-toast-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -307,13 +307,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Stack Demo</span>
-                <button class="btn btn-success" onclick="MetroAdmin.showDSGTMultipleToasts()">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Stack Demo</span>
+                <button class="btn btn-success" onclick="MetroAdmin.showSWMultipleToasts()">
                     <i class="fa-solid fa-layer-group"></i> Show 3 Toasts
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Toasts stack automatically with spacing
             </div>
@@ -333,13 +333,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Longer Display</span>
-                <button class="btn btn-warning" onclick="MetroAdmin.showDSGTDemoToast('info', 'top-right', 'md', 5000)">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Longer Display</span>
+                <button class="btn btn-warning" onclick="MetroAdmin.showSWDemoToast('info', 'top-right', 'md', 5000)">
                     <i class="fa-solid fa-clock"></i> Show 5s Toast
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Extended time for reading
             </div>
@@ -359,13 +359,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">HTML Content</span>
-                <button class="btn btn-info" onclick="MetroAdmin.showDSGTCustomHtmlToast()">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">HTML Content</span>
+                <button class="btn btn-info" onclick="MetroAdmin.showSWCustomHtmlToast()">
                     <i class="fa-solid fa-code"></i> Show HTML Toast
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Support links, buttons, and formatting
             </div>
@@ -385,13 +385,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">With Action</span>
-                <button class="btn btn-danger" onclick="MetroAdmin.showDSGTActionToast()">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">With Action</span>
+                <button class="btn btn-danger" onclick="MetroAdmin.showSWActionToast()">
                     <i class="fa-solid fa-hand-pointer"></i> Show Action Toast
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Undo, view details, or other actions
             </div>
@@ -400,12 +400,12 @@
 </div>
 
 <!-- Toast Types -->
-<div class="dsgt-toast-section-title">
+<div class="sw-toast-section-title">
     <i class="fa-solid fa-circle-info"></i>
     Toast Types
 </div>
 
-<div class="dsgt-toast-grid">
+<div class="sw-toast-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -419,13 +419,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Success Notification</span>
-                <button class="btn btn-success" onclick="MetroAdmin.showDSGTDemoToast('success')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Success Notification</span>
+                <button class="btn btn-success" onclick="MetroAdmin.showSWDemoToast('success')">
                     <i class="fa-solid fa-check"></i> Show Success
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Green border with check icon
             </div>
@@ -445,13 +445,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Error Notification</span>
-                <button class="btn btn-danger" onclick="MetroAdmin.showDSGTDemoToast('danger')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Error Notification</span>
+                <button class="btn btn-danger" onclick="MetroAdmin.showSWDemoToast('danger')">
                     <i class="fa-solid fa-times"></i> Show Error
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Red border with error icon
             </div>
@@ -471,13 +471,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Warning Notification</span>
-                <button class="btn btn-warning" onclick="MetroAdmin.showDSGTDemoToast('warning')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Warning Notification</span>
+                <button class="btn btn-warning" onclick="MetroAdmin.showSWDemoToast('warning')">
                     <i class="fa-solid fa-exclamation"></i> Show Warning
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Yellow border with warning icon
             </div>
@@ -497,13 +497,13 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-toast-example">
-                <span class="dsgt-toast-example-label">Info Notification</span>
-                <button class="btn btn-info" onclick="MetroAdmin.showDSGTDemoToast('info')">
+            <div class="sw-toast-example">
+                <span class="sw-toast-example-label">Info Notification</span>
+                <button class="btn btn-info" onclick="MetroAdmin.showSWDemoToast('info')">
                     <i class="fa-solid fa-info"></i> Show Info
                 </button>
             </div>
-            <div class="dsgt-toast-helper">
+            <div class="sw-toast-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Blue border with info icon
             </div>
@@ -512,12 +512,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-toast-section-title">
+<div class="sw-toast-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-toast-grid">
+<div class="sw-toast-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -532,7 +532,7 @@
         </div>
         <div class="card-body">
             <pre style="background: rgba(0, 0, 0, 0.04); padding: 16px; border-radius: 8px; font-size: 11px; overflow-x: auto; line-height: 1.6;"><code>// Show toast
-MetroAdmin.showDSGTDemoToast('success', 'top-right')
+MetroAdmin.showSWDemoToast('success', 'top-right')
 
 // Types: success, danger, warning, info
 // Positions: top-right, bottom-right</code></pre>
@@ -588,13 +588,13 @@ MetroAdmin.showDSGTDemoToast('success', 'top-right')
 <script>
 // Toasts page initialization
 $(document).ready(function() {
-    console.log('✨ DSGT Toasts page loaded successfully');
+    console.log('✨ SW Toasts page loaded successfully');
     console.log('💡 Using swal-config.js toast system with MetroAdmin wrapper');
     
     // Auto-show first toast as demo
     setTimeout(() => {
         if (typeof MetroAdmin !== 'undefined') {
-            MetroAdmin.showDSGTDemoToast('success', 'top-right');
+            MetroAdmin.showSWDemoToast('success', 'top-right');
         }
     }, 1000);
 });

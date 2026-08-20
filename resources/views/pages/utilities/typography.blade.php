@@ -25,7 +25,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-typo-info-card">
+<div class="content-card sw-typo-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -38,36 +38,36 @@
 </div>
 
 <!-- Headings -->
-<div class="dsgt-typo-section-title">
+<div class="sw-typo-section-title">
     <i class="fa-solid fa-heading"></i>
     Headings <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-typo-showcase">
-    <h3 class="dsgt-typo-showcase-title">Heading Hierarchy</h3>
-    <div class="dsgt-heading-showcase">
-        <h1>Heading 1 <span class="dsgt-heading-meta">36px / 700</span></h1>
-        <h2>Heading 2 <span class="dsgt-heading-meta">30px / 700</span></h2>
-        <h3>Heading 3 <span class="dsgt-heading-meta">24px / 600</span></h3>
-        <h4>Heading 4 <span class="dsgt-heading-meta">20px / 600</span></h4>
-        <h5>Heading 5 <span class="dsgt-heading-meta">16px / 600</span></h5>
-        <h6>Heading 6 <span class="dsgt-heading-meta">14px / 600</span></h6>
+<div class="sw-typo-showcase">
+    <h3 class="sw-typo-showcase-title">Heading Hierarchy</h3>
+    <div class="sw-heading-showcase">
+        <h1>Heading 1 <span class="sw-heading-meta">36px / 700</span></h1>
+        <h2>Heading 2 <span class="sw-heading-meta">30px / 700</span></h2>
+        <h3>Heading 3 <span class="sw-heading-meta">24px / 600</span></h3>
+        <h4>Heading 4 <span class="sw-heading-meta">20px / 600</span></h4>
+        <h5>Heading 5 <span class="sw-heading-meta">16px / 600</span></h5>
+        <h6>Heading 6 <span class="sw-heading-meta">14px / 600</span></h6>
     </div>
-    <div class="dsgt-typo-helper">
+    <div class="sw-typo-helper">
         <i class="fa-solid fa-circle-info"></i>
         Six heading levels with clear visual hierarchy
     </div>
 </div>
 
 <!-- Heading with Subtitle -->
-<div class="dsgt-typo-section-title">
+<div class="sw-typo-section-title">
     <i class="fa-solid fa-text-height"></i>
     Headings with Subtitle
 </div>
 
-<div class="dsgt-typo-showcase">
-    <h3 class="dsgt-typo-showcase-title">Page Titles</h3>
-    <div class="dsgt-heading-showcase">
+<div class="sw-typo-showcase">
+    <h3 class="sw-typo-showcase-title">Page Titles</h3>
+    <div class="sw-heading-showcase">
         <h1 style="margin-bottom: 4px;">Dashboard Overview</h1>
         <p style="color: var(--text-secondary); margin: 0 0 24px 0;">Welcome back, here's what's happening today</p>
         
@@ -77,19 +77,19 @@
         <h3 style="margin-bottom: 4px;">Quick Stats</h3>
         <p style="color: var(--text-secondary); margin: 0 0 0 0;">Performance metrics and analytics</p>
     </div>
-    <div class="dsgt-typo-helper">
+    <div class="sw-typo-helper">
         <i class="fa-solid fa-circle-info"></i>
         Headings paired with descriptive subtitles
     </div>
 </div>
 
 <!-- Paragraphs -->
-<div class="dsgt-typo-section-title">
+<div class="sw-typo-section-title">
     <i class="fa-solid fa-paragraph"></i>
     Paragraphs
 </div>
 
-<div class="dsgt-typo-grid">
+<div class="sw-typo-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -103,20 +103,20 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-typo-example">
-                <span class="dsgt-typo-example-label">Paragraph Variants</span>
-                <p class="dsgt-paragraph-lead">
+            <div class="sw-typo-example">
+                <span class="sw-typo-example-label">Paragraph Variants</span>
+                <p class="sw-paragraph-lead">
                     Lead paragraph: This is larger introductory text that draws attention and provides an overview of the content.
                 </p>
-                <hr class="dsgt-typo-hr">
-                <p class="dsgt-paragraph-normal">
+                <hr class="sw-typo-hr">
+                <p class="sw-paragraph-normal">
                     Normal paragraph: This is the standard text size used for body content. It provides optimal readability for long-form content and is the most commonly used text style.
                 </p>
-                <hr class="dsgt-typo-hr">
-                <p class="dsgt-paragraph-small">
+                <hr class="sw-typo-hr">
+                <p class="sw-paragraph-small">
                     Small paragraph: Used for supplementary information, captions, and less important text that doesn't need to stand out.
                 </p>
-                <div class="dsgt-typo-helper">
+                <div class="sw-typo-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     18px lead, 14px normal, 12px small
                 </div>
@@ -137,12 +137,12 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-typo-example">
-                <span class="dsgt-typo-example-label">Drop Cap Style</span>
-                <p class="dsgt-drop-cap" style="font-size: 14px; line-height: 1.7; color: var(--text-secondary);">
+            <div class="sw-typo-example">
+                <span class="sw-typo-example-label">Drop Cap Style</span>
+                <p class="sw-drop-cap" style="font-size: 14px; line-height: 1.7; color: var(--text-secondary);">
                     Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed. The arrangement of type involves selecting typefaces, point sizes, line lengths, line-spacing, and letter-spacing, as well as adjusting space between pairs of letters.
                 </p>
-                <div class="dsgt-typo-helper">
+                <div class="sw-typo-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     First letter enlarged and styled
                 </div>
@@ -152,12 +152,12 @@
 </div>
 
 <!-- Text Formatting -->
-<div class="dsgt-typo-section-title">
+<div class="sw-typo-section-title">
     <i class="fa-solid fa-bold"></i>
     Text Formatting
 </div>
 
-<div class="dsgt-typo-grid">
+<div class="sw-typo-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -171,14 +171,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-typo-example">
-                <span class="dsgt-typo-example-label">Weight Classes</span>
-                <p class="dsgt-font-weight-light">Light (300) - Subtle and elegant</p>
-                <p class="dsgt-font-weight-normal">Normal (400) - Standard text</p>
-                <p class="dsgt-font-weight-medium">Medium (500) - Slightly emphasized</p>
-                <p class="dsgt-font-weight-semibold">Semibold (600) - Moderate emphasis</p>
-                <p class="dsgt-font-weight-bold">Bold (700) - Strong emphasis</p>
-                <div class="dsgt-typo-helper">
+            <div class="sw-typo-example">
+                <span class="sw-typo-example-label">Weight Classes</span>
+                <p class="sw-font-weight-light">Light (300) - Subtle and elegant</p>
+                <p class="sw-font-weight-normal">Normal (400) - Standard text</p>
+                <p class="sw-font-weight-medium">Medium (500) - Slightly emphasized</p>
+                <p class="sw-font-weight-semibold">Semibold (600) - Moderate emphasis</p>
+                <p class="sw-font-weight-bold">Bold (700) - Strong emphasis</p>
+                <div class="sw-typo-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Five weight options available
                 </div>
@@ -199,14 +199,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-typo-example">
-                <span class="dsgt-typo-example-label">Transform Classes</span>
-                <p class="dsgt-text-uppercase">Uppercase text transformation</p>
-                <p class="dsgt-text-lowercase">LOWERCASE TEXT TRANSFORMATION</p>
-                <p class="dsgt-text-capitalize">capitalize each word transformation</p>
-                <p class="dsgt-text-decoration-underline">Underlined text decoration</p>
-                <p class="dsgt-text-decoration-line-through">Line-through text decoration</p>
-                <div class="dsgt-typo-helper">
+            <div class="sw-typo-example">
+                <span class="sw-typo-example-label">Transform Classes</span>
+                <p class="sw-text-uppercase">Uppercase text transformation</p>
+                <p class="sw-text-lowercase">LOWERCASE TEXT TRANSFORMATION</p>
+                <p class="sw-text-capitalize">capitalize each word transformation</p>
+                <p class="sw-text-decoration-underline">Underlined text decoration</p>
+                <p class="sw-text-decoration-line-through">Line-through text decoration</p>
+                <div class="sw-typo-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Transform and decoration utilities
                 </div>
@@ -216,7 +216,7 @@
 </div>
 
 <!-- Inline Elements -->
-<div class="dsgt-typo-section-title">
+<div class="sw-typo-section-title">
     <i class="fa-solid fa-pen-fancy"></i>
     Inline Elements
 </div>
@@ -234,29 +234,29 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-typo-example">
-            <span class="dsgt-typo-example-label">Inline Components</span>
+        <div class="sw-typo-example">
+            <span class="sw-typo-example-label">Inline Components</span>
             <div style="margin-bottom: 16px;">
                 <p style="font-size: 14px; margin-bottom: 8px;">
-                    <strong>Bold text:</strong> Use <span class="dsgt-typo-code">&lt;strong&gt;</span> for importance
+                    <strong>Bold text:</strong> Use <span class="sw-typo-code">&lt;strong&gt;</span> for importance
                 </p>
                 <p style="font-size: 14px; margin-bottom: 8px;">
-                    <em>Italic text:</em> Use <span class="dsgt-typo-code">&lt;em&gt;</span> for emphasis
+                    <em>Italic text:</em> Use <span class="sw-typo-code">&lt;em&gt;</span> for emphasis
                 </p>
                 <p style="font-size: 14px; margin-bottom: 8px;">
-                    <span class="dsgt-typo-mark">Highlighted text:</span> Use mark for emphasis
+                    <span class="sw-typo-mark">Highlighted text:</span> Use mark for emphasis
                 </p>
                 <p style="font-size: 14px; margin-bottom: 8px;">
-                    <span class="dsgt-typo-abbr" title="Cascading Style Sheets">CSS</span>: Abbreviation with tooltip
+                    <span class="sw-typo-abbr" title="Cascading Style Sheets">CSS</span>: Abbreviation with tooltip
                 </p>
                 <p style="font-size: 14px; margin-bottom: 8px;">
-                    <span class="dsgt-typo-code">code snippets</span>: Inline code styling
+                    <span class="sw-typo-code">code snippets</span>: Inline code styling
                 </p>
                 <p style="font-size: 14px; margin-bottom: 0;">
-                    <span class="dsgt-text-gradient" style="font-weight: 600;">Gradient text:</span> Eye-catching effects
+                    <span class="sw-text-gradient" style="font-weight: 600;">Gradient text:</span> Eye-catching effects
                 </p>
             </div>
-            <div class="dsgt-typo-helper">
+            <div class="sw-typo-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Various inline text styling options
             </div>
@@ -265,7 +265,7 @@
 </div>
 
 <!-- Blockquotes -->
-<div class="dsgt-typo-section-title">
+<div class="sw-typo-section-title">
     <i class="fa-solid fa-quote-left"></i>
     Blockquotes
 </div>
@@ -284,14 +284,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-typo-example">
-                <span class="dsgt-typo-example-label">Primary Quote</span>
-                <blockquote class="dsgt-typo-blockquote">
+            <div class="sw-typo-example">
+                <span class="sw-typo-example-label">Primary Quote</span>
+                <blockquote class="sw-typo-blockquote">
                     <p>"Good design is as little design as possible. Less, but better — because it concentrates on the essential aspects."
                     </p>
                     <footer>Dieter Rams, Designer</footer>
                 </blockquote>
-                <div class="dsgt-typo-helper">
+                <div class="sw-typo-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Left border accent with attribution
                 </div>
@@ -312,17 +312,17 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-typo-example">
-                <span class="dsgt-typo-example-label">Success Quote</span>
-                <blockquote class="dsgt-typo-blockquote dsgt-blockquote-success">
+            <div class="sw-typo-example">
+                <span class="sw-typo-example-label">Success Quote</span>
+                <blockquote class="sw-typo-blockquote sw-blockquote-success">
                     <p>"Success is not final, failure is not fatal: it is the courage to continue that counts."</p>
                     <footer>Winston Churchill</footer>
                 </blockquote>
-                <blockquote class="dsgt-typo-blockquote dsgt-blockquote-warning">
+                <blockquote class="sw-typo-blockquote sw-blockquote-warning">
                     <p>"The only way to do great work is to love what you do."</p>
                     <footer>Steve Jobs</footer>
                 </blockquote>
-                <div class="dsgt-typo-helper">
+                <div class="sw-typo-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Contextual color emphasis
                 </div>
@@ -332,7 +332,7 @@
 </div>
 
 <!-- Lists -->
-<div class="dsgt-typo-section-title">
+<div class="sw-typo-section-title">
     <i class="fa-solid fa-list"></i>
     Lists
 </div>
@@ -351,15 +351,15 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-typo-example">
-                <span class="dsgt-typo-example-label">Bullet List</span>
-                <ul class="dsgt-typo-list">
+            <div class="sw-typo-example">
+                <span class="sw-typo-example-label">Bullet List</span>
+                <ul class="sw-typo-list">
                     <li>First item with bullet point</li>
                     <li>Second item with description text</li>
                     <li>Third item in the list</li>
                     <li>Fourth and final item</li>
                 </ul>
-                <div class="dsgt-typo-helper">
+                <div class="sw-typo-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Custom bullet styling
                 </div>
@@ -380,15 +380,15 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-typo-example">
-                <span class="dsgt-typo-example-label">Numbered List</span>
-                <ol class="dsgt-typo-list dsgt-typo-list-ordered">
+            <div class="sw-typo-example">
+                <span class="sw-typo-example-label">Numbered List</span>
+                <ol class="sw-typo-list sw-typo-list-ordered">
                     <li>First step in the process</li>
                     <li>Second step to complete</li>
                     <li>Third step for completion</li>
                     <li>Final step to finish</li>
                 </ol>
-                <div class="dsgt-typo-helper">
+                <div class="sw-typo-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Sequential numbered items
                 </div>
@@ -409,15 +409,15 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-typo-example">
-                <span class="dsgt-typo-example-label">Feature List</span>
-                <ul class="dsgt-typo-list dsgt-typo-list-icon">
+            <div class="sw-typo-example">
+                <span class="sw-typo-example-label">Feature List</span>
+                <ul class="sw-typo-list sw-typo-list-icon">
                     <li>Responsive design included</li>
                     <li>Modern UI components</li>
                     <li>Cross-browser compatibility</li>
                     <li>Accessible markup</li>
                 </ul>
-                <div class="dsgt-typo-helper">
+                <div class="sw-typo-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Icon-based list items
                 </div>
@@ -427,7 +427,7 @@
 </div>
 
 <!-- Code Blocks -->
-<div class="dsgt-typo-section-title">
+<div class="sw-typo-section-title">
     <i class="fa-solid fa-code"></i>
     Code Blocks
 </div>
@@ -445,9 +445,9 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-typo-example">
-            <span class="dsgt-typo-example-label">Code Example</span>
-            <div class="dsgt-typo-pre">
+        <div class="sw-typo-example">
+            <span class="sw-typo-example-label">Code Example</span>
+            <div class="sw-typo-pre">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -460,7 +460,7 @@
 &lt;/body&gt;
 &lt;/html&gt;
             </div>
-            <div class="dsgt-typo-helper">
+            <div class="sw-typo-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Monospace font with preserved spacing
             </div>
@@ -469,7 +469,7 @@
 </div>
 
 <!-- Horizontal Rules -->
-<div class="dsgt-typo-section-title">
+<div class="sw-typo-section-title">
     <i class="fa-solid fa-minus"></i>
     Horizontal Rules
 </div>
@@ -487,16 +487,16 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-typo-example">
-            <span class="dsgt-typo-example-label">Rule Variants</span>
+        <div class="sw-typo-example">
+            <span class="sw-typo-example-label">Rule Variants</span>
             <p style="font-size: 14px; margin-bottom: 16px;">Content above the divider</p>
-            <hr class="dsgt-typo-hr">
+            <hr class="sw-typo-hr">
             <p style="font-size: 12px; color: var(--text-secondary); margin: 16px 0;">Default gradient rule</p>
             
-            <hr class="dsgt-typo-hr dsgt-typo-hr-thick">
+            <hr class="sw-typo-hr sw-typo-hr-thick">
             <p style="font-size: 12px; color: var(--text-secondary); margin: 16px 0;">Thick accent rule</p>
             
-            <hr class="dsgt-typo-hr dsgt-typo-hr-dashed">
+            <hr class="sw-typo-hr sw-typo-hr-dashed">
             <p style="font-size: 12px; color: var(--text-secondary); margin: 16px 0;">Dashed rule</p>
             
             <p style="font-size: 14px; margin-top: 16px; margin-bottom: 0;">Content below the divider</p>
@@ -510,7 +510,7 @@
 </div>
 
 <!-- Typography Scale -->
-<div class="dsgt-typo-section-title">
+<div class="sw-typo-section-title">
     <i class="fa-solid fa-ruler-vertical"></i>
     Typography Scale
 </div>
@@ -528,13 +528,13 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-typo-showcase">
-            <h3 class="dsgt-typo-showcase-title">Font Size Scale</h3>
+        <div class="sw-typo-showcase">
+            <h3 class="sw-typo-showcase-title">Font Size Scale</h3>
             <div style="margin-bottom: 12px;">
                 <span style="font-size: 11px; color: var(--text-secondary);">11px - Caption text</span>
             </div>
             <div style="margin-bottom: 12px;">
-                <span class="dsgt-typo-small">12px - Small text / Helper text</span>
+                <span class="sw-typo-small">12px - Small text / Helper text</span>
             </div>
             <div style="margin-bottom: 12px;">
                 <span style="font-size: 13px; color: var(--text-secondary);">13px - Secondary text</span>
@@ -543,7 +543,7 @@
                 <span style="font-size: 14px; color: var(--text-primary);">14px - Body text (default)</span>
             </div>
             <div style="margin-bottom: 12px;">
-                <span class="dsgt-typo-large">18px - Large text / Lead</span>
+                <span class="sw-typo-large">18px - Large text / Lead</span>
             </div>
             <div style="margin-bottom: 12px;">
                 <span style="font-size: 20px; font-weight: 600; color: var(--text-primary);">20px - H4 heading</span>
@@ -557,7 +557,7 @@
             <div>
                 <span style="font-size: 36px; font-weight: 700; color: var(--text-primary);">36px - H1 heading</span>
             </div>
-            <div class="dsgt-typo-helper">
+            <div class="sw-typo-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Consistent scale from 11px to 36px
             </div>
@@ -566,12 +566,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-typo-section-title">
+<div class="sw-typo-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-typo-grid">
+<div class="sw-typo-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -675,14 +675,14 @@
 <script>
 // Typography page initialization
 $(document).ready(function() {
-    console.log('✨ DSGT Typography page loaded successfully');
+    console.log('✨ SW Typography page loaded successfully');
     
     // Initialize typography via MetroAdmin
     if (typeof MetroAdmin !== 'undefined') {
         MetroAdmin.initTypographies();
         
         // Add click-to-copy for code elements
-        $('.dsgt-typo-code').on('click', function() {
+        $('.sw-typo-code').on('click', function() {
             const text = $(this).text();
             navigator.clipboard.writeText(text).then(() => {
                 $(this).css({
@@ -702,7 +702,7 @@ $(document).ready(function() {
         // Font Guide button in header
         $('.page-header .btn-primary').on('click', function() {
             $('html, body').animate({
-                scrollTop: $('.dsgt-typo-showcase').first().offset().top - 100
+                scrollTop: $('.sw-typo-showcase').first().offset().top - 100
             }, 800);
         });
     }

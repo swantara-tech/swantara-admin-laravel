@@ -36,9 +36,9 @@
 </div>
 
 <!-- Basic Badges -->
-<div class="dsgt-bd-section-title">
+<div class="sw-bd-section-title">
     <i class="fa-solid fa-certificate"></i>
-    Basic Badges <span class="badge dsgt-badge-primary">Essential</span>
+    Basic Badges <span class="badge sw-badge-primary">Essential</span>
 </div>
 
 <div class="badge-grid">
@@ -55,19 +55,19 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-bd-example">
+            <div class="sw-bd-example">
                 <span class="bd-example-label">Color Variants</span>
-                <div class="dsgt-badge-group">
-                    <span class="dsgt-badge dsgt-badge-primary">Primary</span>
-                    <span class="dsgt-badge dsgt-badge-success">Success</span>
-                    <span class="dsgt-badge dsgt-badge-warning">Warning</span>
-                    <span class="dsgt-badge dsgt-badge-danger">Danger</span>
-                    <span class="dsgt-badge dsgt-badge-info">Info</span>
-                    <span class="dsgt-badge dsgt-badge-secondary">Secondary</span>
-                    <span class="dsgt-badge dsgt-badge-dark">Dark</span>
-                    <span class="dsgt-badge dsgt-badge-light">Light</span>
+                <div class="sw-badge-group">
+                    <span class="sw-badge sw-badge-primary">Primary</span>
+                    <span class="sw-badge sw-badge-success">Success</span>
+                    <span class="sw-badge sw-badge-warning">Warning</span>
+                    <span class="sw-badge sw-badge-danger">Danger</span>
+                    <span class="sw-badge sw-badge-info">Info</span>
+                    <span class="sw-badge sw-badge-secondary">Secondary</span>
+                    <span class="sw-badge sw-badge-dark">Dark</span>
+                    <span class="sw-badge sw-badge-light">Light</span>
                 </div>
-                <div class="dsgt-bd-helper">
+                <div class="sw-bd-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Solid badges use gradient backgrounds for modern look
                 </div>
@@ -88,16 +88,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-bd-example">
+            <div class="sw-bd-example">
                 <span class="bd-example-label">Outline Style</span>
-                <div class="dsgt-badge-group">
-                    <span class="dsgt-badge dsgt-badge-outline-primary">Primary</span>
-                    <span class="dsgt-badge dsgt-badge-outline-success">Success</span>
-                    <span class="dsgt-badge dsgt-badge-outline-warning">Warning</span>
-                    <span class="dsgt-badge dsgt-badge-outline-danger">Danger</span>
-                    <span class="dsgt-badge dsgt-badge-outline-info">Info</span>
+                <div class="sw-badge-group">
+                    <span class="sw-badge sw-badge-outline-primary">Primary</span>
+                    <span class="sw-badge sw-badge-outline-success">Success</span>
+                    <span class="sw-badge sw-badge-outline-warning">Warning</span>
+                    <span class="sw-badge sw-badge-outline-danger">Danger</span>
+                    <span class="sw-badge sw-badge-outline-info">Info</span>
                 </div>
-                <div class="dsgt-bd-helper">
+                <div class="sw-bd-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Outline badges provide subtle, non-intrusive indicators
                 </div>
@@ -107,9 +107,9 @@
 </div>
 
 <!-- Soft Badges -->
-<div class="dsgt-bd-section-title">
+<div class="sw-bd-section-title">
     <i class="fa-solid fa-droplet"></i>
-    Soft Badges <span class="badge dsgt-badge-info">Modern</span>
+    Soft Badges <span class="badge sw-badge-info">Modern</span>
 </div>
 
 <div class="content-card">
@@ -125,16 +125,16 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-bd-example">
+        <div class="sw-bd-example">
             <span class="bd-example-label">Soft Color Variants</span>
-            <div class="dsgt-badge-group">
-                <span class="dsgt-badge dsgt-badge-soft-primary">Primary</span>
-                <span class="dsgt-badge dsgt-badge-soft-success">Success</span>
-                <span class="dsgt-badge dsgt-badge-soft-warning">Warning</span>
-                <span class="dsgt-badge dsgt-badge-soft-danger">Danger</span>
-                <span class="dsgt-badge dsgt-badge-soft-info">Info</span>
+            <div class="sw-badge-group">
+                <span class="sw-badge sw-badge-soft-primary">Primary</span>
+                <span class="sw-badge sw-badge-soft-success">Success</span>
+                <span class="sw-badge sw-badge-soft-warning">Warning</span>
+                <span class="sw-badge sw-badge-soft-danger">Danger</span>
+                <span class="sw-badge sw-badge-soft-info">Info</span>
             </div>
-            <div class="dsgt-bd-helper">
+            <div class="sw-bd-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Soft badges use transparent backgrounds (10% opacity) - perfect for modern UI
             </div>
@@ -143,9 +143,9 @@
 </div>
 
 <!-- Badge Sizes -->
-<div class="dsgt-bd-section-title">
+<div class="sw-bd-section-title">
     <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-    Badge Sizes <span class="badge dsgt-badge-warning">Sizing</span>
+    Badge Sizes <span class="badge sw-badge-warning">Sizing</span>
 </div>
 
 <div class="content-card">
@@ -161,16 +161,16 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-bd-example">
+        <div class="sw-bd-example">
             <span class="bd-example-label">Size Comparison</span>
             <div class="badge-group" style="align-items: center;">
-                <span class="dsgt-badge dsgt-badge-primary dsgt-badge-xs">XS Badge</span>
-                <span class="dsgt-badge dsgt-badge-success dsgt-badge-sm">SM Badge</span>
-                <span class="dsgt-badge dsgt-badge-warning dsgt-badge-md">MD Badge</span>
-                <span class="dsgt-badge dsgt-badge-danger dsgt-badge-lg">LG Badge</span>
-                <span class="dsgt-badge dsgt-badge-info dsgt-badge-xl">XL Badge</span>
+                <span class="sw-badge sw-badge-primary sw-badge-xs">XS Badge</span>
+                <span class="sw-badge sw-badge-success sw-badge-sm">SM Badge</span>
+                <span class="sw-badge sw-badge-warning sw-badge-md">MD Badge</span>
+                <span class="sw-badge sw-badge-danger sw-badge-lg">LG Badge</span>
+                <span class="sw-badge sw-badge-info sw-badge-xl">XL Badge</span>
             </div>
-            <div class="dsgt-bd-helper">
+            <div class="sw-bd-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Use XS-SM for compact UI, MD for general use, LG-XL for emphasis
             </div>
@@ -179,9 +179,9 @@
 </div>
 
 <!-- Badges with Icons -->
-<div class="dsgt-bd-section-title">
+<div class="sw-bd-section-title">
     <i class="fa-solid fa-icons"></i>
-    Badges with Icons <span class="badge dsgt-badge-success">Enhanced</span>
+    Badges with Icons <span class="badge sw-badge-success">Enhanced</span>
 </div>
 
 <div class="badge-grid">
@@ -198,29 +198,29 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-bd-example">
+            <div class="sw-bd-example">
                 <span class="bd-example-label">Icon + Text Badges</span>
-                <div class="dsgt-badge-group">
-                    <span class="dsgt-badge dsgt-badge-primary dsgt-badge-with-icon">
+                <div class="sw-badge-group">
+                    <span class="sw-badge sw-badge-primary sw-badge-with-icon">
                         <i class="fa-solid fa-star"></i> Featured
                     </span>
-                    <span class="dsgt-badge dsgt-badge-success dsgt-badge-with-icon">
+                    <span class="sw-badge sw-badge-success sw-badge-with-icon">
                         <i class="fa-solid fa-check"></i> Verified
                     </span>
-                    <span class="dsgt-badge dsgt-badge-warning dsgt-badge-with-icon">
+                    <span class="sw-badge sw-badge-warning sw-badge-with-icon">
                         <i class="fa-solid fa-crown"></i> Premium
                     </span>
-                    <span class="dsgt-badge dsgt-badge-danger dsgt-badge-with-icon">
+                    <span class="sw-badge sw-badge-danger sw-badge-with-icon">
                         <i class="fa-solid fa-fire"></i> Hot
                     </span>
-                    <span class="dsgt-badge dsgt-badge-info dsgt-badge-with-icon">
+                    <span class="sw-badge sw-badge-info sw-badge-with-icon">
                         <i class="fa-solid fa-bolt"></i> New
                     </span>
-                    <span class="dsgt-badge dsgt-badge-secondary dsgt-badge-with-icon">
+                    <span class="sw-badge sw-badge-secondary sw-badge-with-icon">
                         <i class="fa-solid fa-lock"></i> Locked
                     </span>
                 </div>
-                <div class="dsgt-bd-helper">
+                <div class="sw-bd-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Icons improve visual recognition and user comprehension
                 </div>
@@ -241,27 +241,27 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-bd-example">
+            <div class="sw-bd-example">
                 <span class="bd-example-label">Dot Badges</span>
-                <div class="dsgt-badge-group">
-                    <span class="dsgt-badge dsgt-badge-dot dsgt-badge-success" title="Online"></span>
-                    <span class="dsgt-badge dsgt-badge-dot dsgt-badge-warning" title="Away"></span>
-                    <span class="dsgt-badge dsgt-badge-dot dsgt-badge-danger" title="Busy"></span>
-                    <span class="dsgt-badge dsgt-badge-dot dsgt-badge-secondary" title="Offline"></span>
+                <div class="sw-badge-group">
+                    <span class="sw-badge sw-badge-dot sw-badge-success" title="Online"></span>
+                    <span class="sw-badge sw-badge-dot sw-badge-warning" title="Away"></span>
+                    <span class="sw-badge sw-badge-dot sw-badge-danger" title="Busy"></span>
+                    <span class="sw-badge sw-badge-dot sw-badge-secondary" title="Offline"></span>
                     <span style="margin-left: 16px;"></span>
-                    <span class="dsgt-badge dsgt-badge-dot dsgt-dsgt-badge-dot-lg dsgt-badge-success"></span>
-                    <span class="dsgt-badge dsgt-badge-dot dsgt-dsgt-badge-dot-lg dsgt-badge-warning"></span>
-                    <span class="dsgt-badge dsgt-badge-dot dsgt-dsgt-badge-dot-lg dsgt-badge-danger"></span>
-                    <span class="dsgt-badge dsgt-badge-dot dsgt-dsgt-badge-dot-lg dsgt-badge-secondary"></span>
+                    <span class="sw-badge sw-badge-dot sw-sw-badge-dot-lg sw-badge-success"></span>
+                    <span class="sw-badge sw-badge-dot sw-sw-badge-dot-lg sw-badge-warning"></span>
+                    <span class="sw-badge sw-badge-dot sw-sw-badge-dot-lg sw-badge-danger"></span>
+                    <span class="sw-badge sw-badge-dot sw-sw-badge-dot-lg sw-badge-secondary"></span>
                 </div>
 
                 <span class="bd-example-label">Pill Badges</span>
-                <div class="dsgt-badge-group">
-                    <span class="dsgt-badge dsgt-badge-primary dsgt-badge-pill">Fully Rounded</span>
-                    <span class="dsgt-badge dsgt-badge-success dsgt-badge-pill">Pill Style</span>
-                    <span class="dsgt-badge dsgt-badge-warning dsgt-badge-pill">Elongated</span>
+                <div class="sw-badge-group">
+                    <span class="sw-badge sw-badge-primary sw-badge-pill">Fully Rounded</span>
+                    <span class="sw-badge sw-badge-success sw-badge-pill">Pill Style</span>
+                    <span class="sw-badge sw-badge-warning sw-badge-pill">Elongated</span>
                 </div>
-                <div class="dsgt-bd-helper">
+                <div class="sw-bd-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Dot badges for status indicators, pill badges for labels
                 </div>
@@ -271,9 +271,9 @@
 </div>
 
 <!-- Status Badges -->
-<div class="dsgt-bd-section-title">
+<div class="sw-bd-section-title">
     <i class="fa-solid fa-signal"></i>
-    Status Badges <span class="badge dsgt-badge-danger">Live</span>
+    Status Badges <span class="badge sw-badge-danger">Live</span>
 </div>
 
 <div class="content-card">
@@ -289,27 +289,27 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-bd-example">
+        <div class="sw-bd-example">
             <span class="bd-example-label">Online Status</span>
-            <div class="dsgt-badge-group">
-                <span class="dsgt-badge dsgt-badge-status dsgt-badge-soft-success">
-                    <span class="dsgt-dsgt-badge-status-dot"></span>
+            <div class="sw-badge-group">
+                <span class="sw-badge sw-badge-status sw-badge-soft-success">
+                    <span class="sw-sw-badge-status-dot"></span>
                     Online
                 </span>
-                <span class="dsgt-badge dsgt-badge-status dsgt-badge-soft-danger">
-                    <span class="dsgt-dsgt-badge-status-dot"></span>
+                <span class="sw-badge sw-badge-status sw-badge-soft-danger">
+                    <span class="sw-sw-badge-status-dot"></span>
                     Busy
                 </span>
-                <span class="dsgt-badge dsgt-badge-status dsgt-badge-soft-warning">
-                    <span class="dsgt-dsgt-badge-status-dot"></span>
+                <span class="sw-badge sw-badge-status sw-badge-soft-warning">
+                    <span class="sw-sw-badge-status-dot"></span>
                     Away
                 </span>
-                <span class="dsgt-badge dsgt-badge-status dsgt-badge-soft-secondary">
-                    <span class="dsgt-dsgt-badge-status-dot"></span>
+                <span class="sw-badge sw-badge-status sw-badge-soft-secondary">
+                    <span class="sw-sw-badge-status-dot"></span>
                     Offline
                 </span>
             </div>
-            <div class="dsgt-bd-helper">
+            <div class="sw-bd-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Status dots have pulse animation (except offline)
             </div>
@@ -318,9 +318,9 @@
 </div>
 
 <!-- Badges in Context -->
-<div class="dsgt-bd-section-title">
+<div class="sw-bd-section-title">
     <i class="fa-solid fa-eye"></i>
-    Badges in Context <span class="badge dsgt-badge-info">Real-world</span>
+    Badges in Context <span class="badge sw-badge-info">Real-world</span>
 </div>
 
 <div class="badge-grid">
@@ -337,64 +337,64 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-bd-example">
+            <div class="sw-bd-example">
                 <span class="bd-example-label">Project Tasks</span>
-                <div class="dsgt-badge-context-item">
-                    <div class="dsgt-badge-context-left">
-                        <div class="dsgt-badge-context-icon" style="background: rgba(0, 120, 212, 0.1); color: var(--accent);">
+                <div class="sw-badge-context-item">
+                    <div class="sw-badge-context-left">
+                        <div class="sw-badge-context-icon" style="background: rgba(0, 120, 212, 0.1); color: var(--accent);">
                             <i class="fa-solid fa-file-code"></i>
                         </div>
-                        <div class="dsgt-badge-context-text">
+                        <div class="sw-badge-context-text">
                             <h4>Update Homepage</h4>
                             <p>Frontend Development</p>
                         </div>
                     </div>
-                    <span class="dsgt-badge dsgt-badge-soft-warning dsgt-badge-with-icon">
+                    <span class="sw-badge sw-badge-soft-warning sw-badge-with-icon">
                         <i class="fa-solid fa-clock"></i> In Progress
                     </span>
                 </div>
 
-                <div class="dsgt-badge-context-item">
-                    <div class="dsgt-badge-context-left">
-                        <div class="dsgt-badge-context-icon" style="background: rgba(22, 198, 12, 0.1); color: var(--success);">
+                <div class="sw-badge-context-item">
+                    <div class="sw-badge-context-left">
+                        <div class="sw-badge-context-icon" style="background: rgba(22, 198, 12, 0.1); color: var(--success);">
                             <i class="fa-solid fa-database"></i>
                         </div>
-                        <div class="dsgt-badge-context-text">
+                        <div class="sw-badge-context-text">
                             <h4>Database Migration</h4>
                             <p>Backend Development</p>
                         </div>
                     </div>
-                    <span class="dsgt-badge dsgt-badge-soft-success dsgt-badge-with-icon">
+                    <span class="sw-badge sw-badge-soft-success sw-badge-with-icon">
                         <i class="fa-solid fa-check-circle"></i> Completed
                     </span>
                 </div>
 
-                <div class="dsgt-badge-context-item">
-                    <div class="dsgt-badge-context-left">
-                        <div class="dsgt-badge-context-icon" style="background: rgba(232, 17, 35, 0.1); color: var(--danger);">
+                <div class="sw-badge-context-item">
+                    <div class="sw-badge-context-left">
+                        <div class="sw-badge-context-icon" style="background: rgba(232, 17, 35, 0.1); color: var(--danger);">
                             <i class="fa-solid fa-bug"></i>
                         </div>
-                        <div class="dsgt-badge-context-text">
+                        <div class="sw-badge-context-text">
                             <h4>Fix Login Bug</h4>
                             <p>Bug Fix - Critical</p>
                         </div>
                     </div>
-                    <span class="dsgt-badge dsgt-badge-soft-danger dsgt-badge-with-icon">
+                    <span class="sw-badge sw-badge-soft-danger sw-badge-with-icon">
                         <i class="fa-solid fa-fire"></i> Urgent
                     </span>
                 </div>
 
-                <div class="dsgt-badge-context-item">
-                    <div class="dsgt-badge-context-left">
-                        <div class="dsgt-badge-context-icon" style="background: rgba(128, 128, 128, 0.1); color: var(--text-secondary);">
+                <div class="sw-badge-context-item">
+                    <div class="sw-badge-context-left">
+                        <div class="sw-badge-context-icon" style="background: rgba(128, 128, 128, 0.1); color: var(--text-secondary);">
                             <i class="fa-solid fa-hourglass-start"></i>
                         </div>
-                        <div class="dsgt-badge-context-text">
+                        <div class="sw-badge-context-text">
                             <h4>User Testing</h4>
                             <p>QA & Testing</p>
                         </div>
                     </div>
-                    <span class="dsgt-badge dsgt-badge-soft-secondary dsgt-badge-with-icon">
+                    <span class="sw-badge sw-badge-soft-secondary sw-badge-with-icon">
                         <i class="fa-solid fa-pause-circle"></i> Pending
                     </span>
                 </div>
@@ -415,62 +415,62 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-bd-example">
+            <div class="sw-bd-example">
                 <span class="bd-example-label">Notification Counts</span>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <div class="dsgt-badge-context-item">
-                        <div class="dsgt-badge-context-left">
-                            <div class="dsgt-badge-context-icon" style="background: rgba(0, 120, 212, 0.1); color: var(--accent);">
+                    <div class="sw-badge-context-item">
+                        <div class="sw-badge-context-left">
+                            <div class="sw-badge-context-icon" style="background: rgba(0, 120, 212, 0.1); color: var(--accent);">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
-                            <div class="dsgt-badge-context-text">
+                            <div class="sw-badge-context-text">
                                 <h4>Messages</h4>
                                 <p>Unread conversations</p>
                             </div>
                         </div>
-                        <span class="dsgt-badge dsgt-badge-danger dsgt-badge-notification">7</span>
+                        <span class="sw-badge sw-badge-danger sw-badge-notification">7</span>
                     </div>
 
-                    <div class="dsgt-badge-context-item">
-                        <div class="dsgt-badge-context-left">
-                            <div class="dsgt-badge-context-icon" style="background: rgba(22, 198, 12, 0.1); color: var(--success);">
+                    <div class="sw-badge-context-item">
+                        <div class="sw-badge-context-left">
+                            <div class="sw-badge-context-icon" style="background: rgba(22, 198, 12, 0.1); color: var(--success);">
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </div>
-                            <div class="dsgt-badge-context-text">
+                            <div class="sw-badge-context-text">
                                 <h4>Orders</h4>
                                 <p>New orders today</p>
                             </div>
                         </div>
-                        <span class="dsgt-badge dsgt-badge-success dsgt-badge-notification">12</span>
+                        <span class="sw-badge sw-badge-success sw-badge-notification">12</span>
                     </div>
 
-                    <div class="dsgt-badge-context-item">
-                        <div class="dsgt-badge-context-left">
-                            <div class="dsgt-badge-context-icon" style="background: rgba(255, 185, 0, 0.1); color: var(--warning);">
+                    <div class="sw-badge-context-item">
+                        <div class="sw-badge-context-left">
+                            <div class="sw-badge-context-icon" style="background: rgba(255, 185, 0, 0.1); color: var(--warning);">
                                 <i class="fa-solid fa-triangle-exclamation"></i>
                             </div>
-                            <div class="dsgt-badge-context-text">
+                            <div class="sw-badge-context-text">
                                 <h4>Alerts</h4>
                                 <p>System warnings</p>
                             </div>
                         </div>
-                        <span class="dsgt-badge dsgt-badge-warning dsgt-badge-notification">3</span>
+                        <span class="sw-badge sw-badge-warning sw-badge-notification">3</span>
                     </div>
 
-                    <div class="dsgt-badge-context-item">
-                        <div class="dsgt-badge-context-left">
-                            <div class="dsgt-badge-context-icon" style="background: rgba(232, 17, 35, 0.1); color: var(--danger);">
+                    <div class="sw-badge-context-item">
+                        <div class="sw-badge-context-left">
+                            <div class="sw-badge-context-icon" style="background: rgba(232, 17, 35, 0.1); color: var(--danger);">
                                 <i class="fa-solid fa-bug"></i>
                             </div>
-                            <div class="dsgt-badge-context-text">
+                            <div class="sw-badge-context-text">
                                 <h4>Errors</h4>
                                 <p>Critical issues</p>
                             </div>
                         </div>
-                        <span class="dsgt-badge dsgt-badge-danger dsgt-badge-notification">1</span>
+                        <span class="sw-badge sw-badge-danger sw-badge-notification">1</span>
                     </div>
                 </div>
-                <div class="dsgt-bd-helper">
+                <div class="sw-bd-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Notification badges use circular shape with small size
                 </div>
@@ -480,9 +480,9 @@
 </div>
 
 <!-- Interactive Badge Demo -->
-<div class="dsgt-bd-section-title">
+<div class="sw-bd-section-title">
     <i class="fa-solid fa-wand-magic-sparkles"></i>
-    Interactive Demo <span class="badge dsgt-badge-success">Try It</span>
+    Interactive Demo <span class="badge sw-badge-success">Try It</span>
 </div>
 
 <div class="content-card">
@@ -498,9 +498,9 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-bd-example">
-            <span class="dsgt-bd-example-label">Generate Badges</span>
-            <div class="dsgt-badge-demo-controls">
+        <div class="sw-bd-example">
+            <span class="sw-bd-example-label">Generate Badges</span>
+            <div class="sw-badge-demo-controls">
                 <button class="btn btn-primary">
                     <i class="fa-solid fa-plus"></i> Primary
                 </button>
@@ -521,14 +521,14 @@
                 </button>
             </div>
 
-            <div id="dsgtDynamicBadgeDisplay">
+            <div id="swDynamicBadgeDisplay">
                 <p style="text-align: center; color: var(--text-secondary); font-size: 13px; margin: 0;">
                     <i class="fa-solid fa-arrow-up" style="margin-right: 8px;"></i>
                     Click buttons above to generate badges here
                 </p>
             </div>
 
-            <div class="dsgt-bd-helper">
+            <div class="sw-bd-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Badges are generated with pop animation and can be cleared individually or all at once
             </div>
@@ -537,7 +537,7 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-bd-section-title">
+<div class="sw-bd-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
@@ -557,18 +557,18 @@
         </div>
         <div class="card-body">
             <pre style="background: var(--bg-tertiary); padding: 16px; border-radius: 8px; font-size: 12px; overflow-x: auto;"><code>&lt;!-- Basic Badge --&gt;
-&lt;span class="dsgt-badge dsgt-badge-primary"&gt;
+&lt;span class="sw-badge sw-badge-primary"&gt;
   Label
 &lt;/span&gt;
 
 &lt;!-- Badge with Icon --&gt;
-&lt;span class="dsgt-badge dsgt-badge-success dsgt-badge-with-icon"&gt;
+&lt;span class="sw-badge sw-badge-success sw-badge-with-icon"&gt;
   &lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;
   Verified
 &lt;/span&gt;
 
 &lt;!-- Notification Badge --&gt;
-&lt;span class="dsgt-badge dsgt-badge-danger dsgt-badge-notification"&gt;
+&lt;span class="sw-badge sw-badge-danger sw-badge-notification"&gt;
   7
 &lt;/span&gt;</code></pre>
         </div>
@@ -596,23 +596,23 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><span class="dsgt-badge dsgt-badge-primary dsgt-badge-xs">Solid</span></td>
+                        <td><span class="sw-badge sw-badge-primary sw-badge-xs">Solid</span></td>
                         <td>Primary actions, important labels</td>
                     </tr>
                     <tr>
-                        <td><span class="dsgt-badge dsgt-badge-outline-primary dsgt-badge-xs">Outline</span></td>
+                        <td><span class="sw-badge sw-badge-outline-primary sw-badge-xs">Outline</span></td>
                         <td>Secondary info, subtle indicators</td>
                     </tr>
                     <tr>
-                        <td><span class="dsgt-badge dsgt-badge-soft-primary dsgt-badge-xs">Soft</span></td>
+                        <td><span class="sw-badge sw-badge-soft-primary sw-badge-xs">Soft</span></td>
                         <td>Modern UI, status labels</td>
                     </tr>
                     <tr>
-                        <td><span class="dsgt-badge dsgt-badge-dot dsgt-badge-success"></span> Dot</td>
+                        <td><span class="sw-badge sw-badge-dot sw-badge-success"></span> Dot</td>
                         <td>Online status, minimal indicators</td>
                     </tr>
                     <tr>
-                        <td><span class="dsgt-badge dsgt-badge-danger dsgt-badge-notification">3</span></td>
+                        <td><span class="sw-badge sw-badge-danger sw-badge-notification">3</span></td>
                         <td>Notification counts, alerts</td>
                     </tr>
                 </tbody>
@@ -626,27 +626,27 @@
 @push('scripts')
 <script>
 /**
- * DSGT Metro Template - Badge Page
+ * SW Metro Template - Badge Page
  * Uses global MetroAdmin badge functions from app.js
  */
 
 // Initialize on page load
 $(document).ready(function() {
-    console.log('✨ DSGT Metro Template - Badges page loaded successfully');
+    console.log('✨ SW Metro Template - Badges page loaded successfully');
     console.log('💡 Dynamic badge generator ready');
     
     // Badge generation buttons
-    $('.dsgt-badge-demo-controls .btn').on('click', function() {
+    $('.sw-badge-demo-controls .btn').on('click', function() {
         const type = $(this).text().trim().toLowerCase();
         
         if (type.includes('clear')) {
-            MetroAdmin.clearAllBadges('dsgtDynamicBadgeDisplay');
+            MetroAdmin.clearAllBadges('swDynamicBadgeDisplay');
         } else {
             const badgeType = type.includes('primary') ? 'primary' :
                             type.includes('success') ? 'success' :
                             type.includes('warning') ? 'warning' :
                             type.includes('danger') ? 'danger' : 'icon';
-            MetroAdmin.addDynamicBadge(badgeType, 'dsgtDynamicBadgeDisplay');
+            MetroAdmin.addDynamicBadge(badgeType, 'swDynamicBadgeDisplay');
         }
     });
 });

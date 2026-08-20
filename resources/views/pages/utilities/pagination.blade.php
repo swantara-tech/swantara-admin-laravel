@@ -36,7 +36,7 @@
 </div>
 
 <!-- Basic Pagination -->
-<div class="dsgt-pagination-section-title">
+<div class="sw-pagination-section-title">
     <i class="fa-solid fa-forward"></i>
     Basic Pagination <span class="badge badge-primary">Essential</span>
 </div>
@@ -54,24 +54,24 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-pagination-example">
-            <span class="dsgt-pagination-example-label">Basic Pagination</span>
-            <ul class="dsgt-pagination">
-                <li class="dsgt-pagination-item disabled">
+        <div class="sw-pagination-example">
+            <span class="sw-pagination-example-label">Basic Pagination</span>
+            <ul class="sw-pagination">
+                <li class="sw-pagination-item disabled">
                     <i class="fa-solid fa-chevron-left"></i>
                 </li>
-                <li class="dsgt-pagination-item active">1</li>
-                <li class="dsgt-pagination-item">2</li>
-                <li class="dsgt-pagination-item">3</li>
-                <li class="dsgt-pagination-item">4</li>
-                <li class="dsgt-pagination-item">5</li>
-                <li class="dsgt-pagination-ellipsis">...</li>
-                <li class="dsgt-pagination-item">20</li>
-                <li class="dsgt-pagination-item">
+                <li class="sw-pagination-item active">1</li>
+                <li class="sw-pagination-item">2</li>
+                <li class="sw-pagination-item">3</li>
+                <li class="sw-pagination-item">4</li>
+                <li class="sw-pagination-item">5</li>
+                <li class="sw-pagination-ellipsis">...</li>
+                <li class="sw-pagination-item">20</li>
+                <li class="sw-pagination-item">
                     <i class="fa-solid fa-chevron-right"></i>
                 </li>
             </ul>
-            <div class="dsgt-pagination-helper">
+            <div class="sw-pagination-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Click page numbers to navigate
             </div>
@@ -80,7 +80,7 @@
 </div>
 
 <!-- Pagination Sizes -->
-<div class="dsgt-pagination-section-title">
+<div class="sw-pagination-section-title">
     <i class="fa-solid fa-expand"></i>
     Pagination Sizes
 </div>
@@ -98,53 +98,53 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-pagination-example">
-            <span class="dsgt-pagination-example-label">Extra Small (28px)</span>
-            <ul class="dsgt-pagination dsgt-pagination-xs" style="margin-bottom: 20px;">
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
-                <li class="dsgt-pagination-item">1</li>
-                <li class="dsgt-pagination-item active">2</li>
-                <li class="dsgt-pagination-item">3</li>
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+        <div class="sw-pagination-example">
+            <span class="sw-pagination-example-label">Extra Small (28px)</span>
+            <ul class="sw-pagination sw-pagination-xs" style="margin-bottom: 20px;">
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
+                <li class="sw-pagination-item">1</li>
+                <li class="sw-pagination-item active">2</li>
+                <li class="sw-pagination-item">3</li>
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
             </ul>
 
-            <span class="dsgt-pagination-example-label">Small (32px)</span>
-            <ul class="dsgt-pagination dsgt-pagination-sm" style="margin-bottom: 20px;">
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
-                <li class="dsgt-pagination-item">1</li>
-                <li class="dsgt-pagination-item active">2</li>
-                <li class="dsgt-pagination-item">3</li>
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+            <span class="sw-pagination-example-label">Small (32px)</span>
+            <ul class="sw-pagination sw-pagination-sm" style="margin-bottom: 20px;">
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
+                <li class="sw-pagination-item">1</li>
+                <li class="sw-pagination-item active">2</li>
+                <li class="sw-pagination-item">3</li>
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
             </ul>
 
-            <span class="dsgt-pagination-example-label">Medium (36px) - Default</span>
-            <ul class="dsgt-pagination dsgt-pagination-md" style="margin-bottom: 20px;">
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
-                <li class="dsgt-pagination-item">1</li>
-                <li class="dsgt-pagination-item active">2</li>
-                <li class="dsgt-pagination-item">3</li>
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+            <span class="sw-pagination-example-label">Medium (36px) - Default</span>
+            <ul class="sw-pagination sw-pagination-md" style="margin-bottom: 20px;">
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
+                <li class="sw-pagination-item">1</li>
+                <li class="sw-pagination-item active">2</li>
+                <li class="sw-pagination-item">3</li>
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
             </ul>
 
-            <span class="dsgt-pagination-example-label">Large (42px)</span>
-            <ul class="dsgt-pagination dsgt-pagination-lg" style="margin-bottom: 20px;">
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
-                <li class="dsgt-pagination-item">1</li>
-                <li class="dsgt-pagination-item active">2</li>
-                <li class="dsgt-pagination-item">3</li>
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+            <span class="sw-pagination-example-label">Large (42px)</span>
+            <ul class="sw-pagination sw-pagination-lg" style="margin-bottom: 20px;">
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
+                <li class="sw-pagination-item">1</li>
+                <li class="sw-pagination-item active">2</li>
+                <li class="sw-pagination-item">3</li>
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
             </ul>
 
-            <span class="dsgt-pagination-example-label">Extra Large (48px)</span>
-            <ul class="dsgt-pagination dsgt-pagination-xl">
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
-                <li class="dsgt-pagination-item">1</li>
-                <li class="dsgt-pagination-item active">2</li>
-                <li class="dsgt-pagination-item">3</li>
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+            <span class="sw-pagination-example-label">Extra Large (48px)</span>
+            <ul class="sw-pagination sw-pagination-xl">
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
+                <li class="sw-pagination-item">1</li>
+                <li class="sw-pagination-item active">2</li>
+                <li class="sw-pagination-item">3</li>
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
             </ul>
 
-            <div class="dsgt-pagination-helper">
+            <div class="sw-pagination-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Sizes range from 28px to 48px
             </div>
@@ -153,12 +153,12 @@
 </div>
 
 <!-- Pagination Styles -->
-<div class="dsgt-pagination-section-title">
+<div class="sw-pagination-section-title">
     <i class="fa-solid fa-palette"></i>
     Pagination Styles
 </div>
 
-<div class="dsgt-pagination-grid">
+<div class="sw-pagination-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -172,17 +172,17 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-pagination-example">
-                <span class="dsgt-pagination-example-label">Rounded Buttons</span>
-                <ul class="dsgt-pagination dsgt-pagination-rounded">
-                    <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
-                    <li class="dsgt-pagination-item">1</li>
-                    <li class="dsgt-pagination-item active">2</li>
-                    <li class="dsgt-pagination-item">3</li>
-                    <li class="dsgt-pagination-item">4</li>
-                    <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+            <div class="sw-pagination-example">
+                <span class="sw-pagination-example-label">Rounded Buttons</span>
+                <ul class="sw-pagination sw-pagination-rounded">
+                    <li class="sw-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
+                    <li class="sw-pagination-item">1</li>
+                    <li class="sw-pagination-item active">2</li>
+                    <li class="sw-pagination-item">3</li>
+                    <li class="sw-pagination-item">4</li>
+                    <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
                 </ul>
-                <div class="dsgt-pagination-helper">
+                <div class="sw-pagination-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     border-radius: 50% for circular buttons
                 </div>
@@ -203,17 +203,17 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-pagination-example">
-                <span class="dsgt-pagination-example-label">Thick Borders</span>
-                <ul class="dsgt-pagination dsgt-pagination-bordered">
-                    <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
-                    <li class="dsgt-pagination-item">1</li>
-                    <li class="dsgt-pagination-item active">2</li>
-                    <li class="dsgt-pagination-item">3</li>
-                    <li class="dsgt-pagination-item">4</li>
-                    <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+            <div class="sw-pagination-example">
+                <span class="sw-pagination-example-label">Thick Borders</span>
+                <ul class="sw-pagination sw-pagination-bordered">
+                    <li class="sw-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
+                    <li class="sw-pagination-item">1</li>
+                    <li class="sw-pagination-item active">2</li>
+                    <li class="sw-pagination-item">3</li>
+                    <li class="sw-pagination-item">4</li>
+                    <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
                 </ul>
-                <div class="dsgt-pagination-helper">
+                <div class="sw-pagination-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     border-width: 2px for emphasis
                 </div>
@@ -234,17 +234,17 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-pagination-example">
-                <span class="dsgt-pagination-example-label">With Shadows</span>
-                <ul class="dsgt-pagination dsgt-pagination-shadow">
-                    <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
-                    <li class="dsgt-pagination-item">1</li>
-                    <li class="dsgt-pagination-item active">2</li>
-                    <li class="dsgt-pagination-item">3</li>
-                    <li class="dsgt-pagination-item">4</li>
-                    <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+            <div class="sw-pagination-example">
+                <span class="sw-pagination-example-label">With Shadows</span>
+                <ul class="sw-pagination sw-pagination-shadow">
+                    <li class="sw-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
+                    <li class="sw-pagination-item">1</li>
+                    <li class="sw-pagination-item active">2</li>
+                    <li class="sw-pagination-item">3</li>
+                    <li class="sw-pagination-item">4</li>
+                    <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
                 </ul>
-                <div class="dsgt-pagination-helper">
+                <div class="sw-pagination-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     box-shadow for depth effect
                 </div>
@@ -254,7 +254,7 @@
 </div>
 
 <!-- Pagination Alignment -->
-<div class="dsgt-pagination-section-title">
+<div class="sw-pagination-section-title">
     <i class="fa-solid fa-align-center"></i>
     Pagination Alignment
 </div>
@@ -272,35 +272,35 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-pagination-example">
-            <span class="dsgt-pagination-example-label">Left Aligned</span>
-            <ul class="dsgt-pagination dsgt-pagination-left" style="margin-bottom: 20px;">
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
-                <li class="dsgt-pagination-item">1</li>
-                <li class="dsgt-pagination-item active">2</li>
-                <li class="dsgt-pagination-item">3</li>
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+        <div class="sw-pagination-example">
+            <span class="sw-pagination-example-label">Left Aligned</span>
+            <ul class="sw-pagination sw-pagination-left" style="margin-bottom: 20px;">
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
+                <li class="sw-pagination-item">1</li>
+                <li class="sw-pagination-item active">2</li>
+                <li class="sw-pagination-item">3</li>
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
             </ul>
 
-            <span class="dsgt-pagination-example-label">Center Aligned</span>
-            <ul class="dsgt-pagination dsgt-pagination-center" style="margin-bottom: 20px;">
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
-                <li class="dsgt-pagination-item">1</li>
-                <li class="dsgt-pagination-item active">2</li>
-                <li class="dsgt-pagination-item">3</li>
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+            <span class="sw-pagination-example-label">Center Aligned</span>
+            <ul class="sw-pagination sw-pagination-center" style="margin-bottom: 20px;">
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
+                <li class="sw-pagination-item">1</li>
+                <li class="sw-pagination-item active">2</li>
+                <li class="sw-pagination-item">3</li>
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
             </ul>
 
-            <span class="dsgt-pagination-example-label">Right Aligned</span>
-            <ul class="dsgt-pagination dsgt-pagination-right">
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
-                <li class="dsgt-pagination-item">1</li>
-                <li class="dsgt-pagination-item active">2</li>
-                <li class="dsgt-pagination-item">3</li>
-                <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+            <span class="sw-pagination-example-label">Right Aligned</span>
+            <ul class="sw-pagination sw-pagination-right">
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
+                <li class="sw-pagination-item">1</li>
+                <li class="sw-pagination-item active">2</li>
+                <li class="sw-pagination-item">3</li>
+                <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
             </ul>
 
-            <div class="dsgt-pagination-helper">
+            <div class="sw-pagination-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Use flexbox justify-content for alignment
             </div>
@@ -309,7 +309,7 @@
 </div>
 
 <!-- Pagination with Info -->
-<div class="dsgt-pagination-section-title">
+<div class="sw-pagination-section-title">
     <i class="fa-solid fa-circle-info"></i>
     Pagination with Info
 </div>
@@ -327,26 +327,26 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-pagination-example">
-            <span class="dsgt-pagination-example-label">With Information</span>
-            <div class="dsgt-pagination-with-info" style="margin-bottom: 20px;">
-                <div class="dsgt-pagination-info">
+        <div class="sw-pagination-example">
+            <span class="sw-pagination-example-label">With Information</span>
+            <div class="sw-pagination-with-info" style="margin-bottom: 20px;">
+                <div class="sw-pagination-info">
                     Showing <strong>1-10</strong> of <strong>200</strong> results
                 </div>
-                <ul class="dsgt-pagination">
-                    <li class="dsgt-pagination-item disabled"><i class="fa-solid fa-chevron-left"></i></li>
-                    <li class="dsgt-pagination-item active">1</li>
-                    <li class="dsgt-pagination-item">2</li>
-                    <li class="dsgt-pagination-item">3</li>
-                    <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+                <ul class="sw-pagination">
+                    <li class="sw-pagination-item disabled"><i class="fa-solid fa-chevron-left"></i></li>
+                    <li class="sw-pagination-item active">1</li>
+                    <li class="sw-pagination-item">2</li>
+                    <li class="sw-pagination-item">3</li>
+                    <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
                 </ul>
             </div>
 
-            <span class="dsgt-pagination-example-label">With Page Size Selector</span>
-            <div class="dsgt-pagination-with-info">
-                <div class="dsgt-pagination-info">
+            <span class="sw-pagination-example-label">With Page Size Selector</span>
+            <div class="sw-pagination-with-info">
+                <div class="sw-pagination-info">
                     Show
-                    <select class="dsgt-pagination-select">
+                    <select class="sw-pagination-select">
                         <option>10</option>
                         <option>25</option>
                         <option>50</option>
@@ -354,16 +354,16 @@
                     </select>
                     per page
                 </div>
-                <ul class="dsgt-pagination">
-                    <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
-                    <li class="dsgt-pagination-item">1</li>
-                    <li class="dsgt-pagination-item active">2</li>
-                    <li class="dsgt-pagination-item">3</li>
-                    <li class="dsgt-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
+                <ul class="sw-pagination">
+                    <li class="sw-pagination-item"><i class="fa-solid fa-chevron-left"></i></li>
+                    <li class="sw-pagination-item">1</li>
+                    <li class="sw-pagination-item active">2</li>
+                    <li class="sw-pagination-item">3</li>
+                    <li class="sw-pagination-item"><i class="fa-solid fa-chevron-right"></i></li>
                 </ul>
             </div>
 
-            <div class="dsgt-pagination-helper">
+            <div class="sw-pagination-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Info helps users understand context
             </div>
@@ -372,7 +372,7 @@
 </div>
 
 <!-- Breadcrumb Pagination -->
-<div class="dsgt-pagination-section-title">
+<div class="sw-pagination-section-title">
     <i class="fa-solid fa-location-dot"></i>
     Breadcrumb Navigation
 </div>
@@ -390,26 +390,26 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-pagination-example">
-            <span class="dsgt-pagination-example-label">Breadcrumb Pagination</span>
-            <ul class="dsgt-breadcrumb-pagination">
-                <li class="dsgt-breadcrumb-item">
-                    <a href="#" class="dsgt-breadcrumb-link"><i class="fa-solid fa-house"></i> Home</a>
+        <div class="sw-pagination-example">
+            <span class="sw-pagination-example-label">Breadcrumb Pagination</span>
+            <ul class="sw-breadcrumb-pagination">
+                <li class="sw-breadcrumb-item">
+                    <a href="#" class="sw-breadcrumb-link"><i class="fa-solid fa-house"></i> Home</a>
                 </li>
-                <li class="dsgt-breadcrumb-item">
-                    <span class="dsgt-breadcrumb-separator"><i class="fa-solid fa-chevron-right"></i></span>
-                    <a href="#" class="dsgt-breadcrumb-link">Products</a>
+                <li class="sw-breadcrumb-item">
+                    <span class="sw-breadcrumb-separator"><i class="fa-solid fa-chevron-right"></i></span>
+                    <a href="#" class="sw-breadcrumb-link">Products</a>
                 </li>
-                <li class="dsgt-breadcrumb-item">
-                    <span class="dsgt-breadcrumb-separator"><i class="fa-solid fa-chevron-right"></i></span>
-                    <a href="#" class="dsgt-breadcrumb-link">Electronics</a>
+                <li class="sw-breadcrumb-item">
+                    <span class="sw-breadcrumb-separator"><i class="fa-solid fa-chevron-right"></i></span>
+                    <a href="#" class="sw-breadcrumb-link">Electronics</a>
                 </li>
-                <li class="dsgt-breadcrumb-item">
-                    <span class="dsgt-breadcrumb-separator"><i class="fa-solid fa-chevron-right"></i></span>
-                    <span class="dsgt-breadcrumb-current">Smartphones</span>
+                <li class="sw-breadcrumb-item">
+                    <span class="sw-breadcrumb-separator"><i class="fa-solid fa-chevron-right"></i></span>
+                    <span class="sw-breadcrumb-current">Smartphones</span>
                 </li>
             </ul>
-            <div class="dsgt-pagination-helper">
+            <div class="sw-pagination-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Shows current location in hierarchy
             </div>
@@ -418,7 +418,7 @@
 </div>
 
 <!-- Pager Navigation -->
-<div class="dsgt-pagination-section-title">
+<div class="sw-pagination-section-title">
     <i class="fa-solid fa-arrows-left-right"></i>
     Pager Navigation
 </div>
@@ -436,29 +436,29 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-pagination-example">
-            <span class="dsgt-pagination-example-label">Basic Pager</span>
-            <div class="dsgt-pager-nav" style="margin-bottom: 20px;">
+        <div class="sw-pagination-example">
+            <span class="sw-pagination-example-label">Basic Pager</span>
+            <div class="sw-pager-nav" style="margin-bottom: 20px;">
                 <button class="pager-btn disabled">
                     <i class="fa-solid fa-arrow-left"></i>
                     Previous
                 </button>
-                <button class="dsgt-pager-btn">
+                <button class="sw-pager-btn">
                     Next
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
 
-            <span class="dsgt-pagination-example-label">With Page Info</span>
-            <div class="dsgt-pager-nav">
-                <button class="dsgt-pager-btn">
+            <span class="sw-pagination-example-label">With Page Info</span>
+            <div class="sw-pager-nav">
+                <button class="sw-pager-btn">
                     <i class="fa-solid fa-arrow-left"></i>
                     <div>
                         <div style="font-size: 12px; font-weight: 400;">Previous</div>
                         <div>Page 1</div>
                     </div>
                 </button>
-                <button class="dsgt-pager-btn">
+                <button class="sw-pager-btn">
                     <div style="text-align: right;">
                         <div style="font-size: 12px; font-weight: 400;">Next</div>
                         <div>Page 3</div>
@@ -467,7 +467,7 @@
                 </button>
             </div>
 
-            <div class="dsgt-pagination-helper">
+            <div class="sw-pagination-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Simple navigation for sequential content
             </div>
@@ -476,7 +476,7 @@
 </div>
 
 <!-- Load More -->
-<div class="dsgt-pagination-section-title">
+<div class="sw-pagination-section-title">
     <i class="fa-solid fa-plus"></i>
     Load More / Infinite Scroll
 </div>
@@ -494,16 +494,16 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-pagination-example">
-            <span class="dsgt-pagination-example-label">Load More Button</span>
-            <div class="dsgt-infinite-scroll-indicator">
-                <button class="dsgt-load-more-btn">
+        <div class="sw-pagination-example">
+            <span class="sw-pagination-example-label">Load More Button</span>
+            <div class="sw-infinite-scroll-indicator">
+                <button class="sw-load-more-btn">
                     <i class="fa-solid fa-plus"></i>
                     Load More Items
                 </button>
                 <p style="font-size: 12px; color: var(--text-secondary); margin-top: 12px;">Showing 12 of 48 items</p>
             </div>
-            <div class="dsgt-pagination-helper">
+            <div class="sw-pagination-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Alternative to traditional pagination
             </div>
@@ -512,12 +512,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-pagination-section-title">
+<div class="sw-pagination-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-pagination-grid">
+<div class="sw-pagination-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -617,12 +617,12 @@
 <script>
 // Pagination page initialization
 $(document).ready(function() {
-    console.log('📄 DSGT Pagination page loaded successfully');
+    console.log('📄 SW Pagination page loaded successfully');
     
     // Demo: Show welcome toast
     setTimeout(() => {
         if (typeof MetroAdmin !== 'undefined') {
-            MetroAdmin.showDSGTInfoToast('Welcome to the Pagination demo page!');
+            MetroAdmin.showSWInfoToast('Welcome to the Pagination demo page!');
         }
     }, 1000);
 });

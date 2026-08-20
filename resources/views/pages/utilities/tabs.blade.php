@@ -4,7 +4,7 @@
 @section('breadcrumb', 'Tabs')
 
 @push('styles')
-<!-- DSGT Tabs styles are now in app.css -->
+<!-- SW Tabs styles are now in app.css -->
 @endpush
 
 @section('content')
@@ -19,7 +19,7 @@
             <i class="fa-solid fa-book"></i>
             <span>Documentation</span>
         </button>
-        <button class="btn btn-primary" onclick="MetroAdmin.switchDSGTTab(0, 'basic-tabs')">
+        <button class="btn btn-primary" onclick="MetroAdmin.switchSWTab(0, 'basic-tabs')">
             <i class="fa-solid fa-play"></i>
             <span>Try Tabs</span>
         </button>
@@ -27,7 +27,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-info-card">
+<div class="content-card sw-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -40,7 +40,7 @@
 </div>
 
 <!-- Basic Tabs -->
-<div class="dsgt-tabs-section-title">
+<div class="sw-tabs-section-title">
     <i class="fa-solid fa-folder"></i>
     Basic Tabs <span class="badge badge-primary">Essential</span>
 </div>
@@ -58,52 +58,52 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-tabs-example">
-            <span class="dsgt-tabs-example-label">Basic Tab Navigation</span>
-            <div class="dsgt-modern-tabs" data-tab-group="basic-tabs">
-                <button class="dsgt-tab-item active" onclick="MetroAdmin.switchDSGTTab(0, 'basic-tabs')">
+        <div class="sw-tabs-example">
+            <span class="sw-tabs-example-label">Basic Tab Navigation</span>
+            <div class="sw-modern-tabs" data-tab-group="basic-tabs">
+                <button class="sw-tab-item active" onclick="MetroAdmin.switchSWTab(0, 'basic-tabs')">
                     <i class="fa-solid fa-house"></i> Dashboard
                 </button>
-                <button class="dsgt-tab-item" onclick="MetroAdmin.switchDSGTTab(1, 'basic-tabs')">
+                <button class="sw-tab-item" onclick="MetroAdmin.switchSWTab(1, 'basic-tabs')">
                     <i class="fa-solid fa-chart-line"></i> Analytics
                 </button>
-                <button class="dsgt-tab-item" onclick="MetroAdmin.switchDSGTTab(2, 'basic-tabs')">
+                <button class="sw-tab-item" onclick="MetroAdmin.switchSWTab(2, 'basic-tabs')">
                     <i class="fa-solid fa-users"></i> Users
                 </button>
-                <button class="dsgt-tab-item" onclick="MetroAdmin.switchDSGTTab(3, 'basic-tabs')">
+                <button class="sw-tab-item" onclick="MetroAdmin.switchSWTab(3, 'basic-tabs')">
                     <i class="fa-solid fa-gear"></i> Settings
                 </button>
             </div>
             
-            <div id="basic-tabs-content-0" class="dsgt-tab-content active">
-                <div class="dsgt-tab-content-card">
+            <div id="basic-tabs-content-0" class="sw-tab-content active">
+                <div class="sw-tab-content-card">
                     <h4>Dashboard Overview</h4>
                     <p>Welcome to your dashboard. Here you can see an overview of your recent activity, key metrics, and quick access to important features. The dashboard provides a centralized location for monitoring your application's performance.</p>
                 </div>
             </div>
             
-            <div id="basic-tabs-content-1" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="basic-tabs-content-1" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Analytics & Reports</h4>
                     <p>View detailed analytics and generate comprehensive reports. Track user engagement, conversion rates, and other key performance indicators. Data is updated in real-time to help you make informed decisions.</p>
                 </div>
             </div>
             
-            <div id="basic-tabs-content-2" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="basic-tabs-content-2" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>User Management</h4>
                     <p>Manage user accounts, roles, and permissions. View user activity logs, send notifications, and configure access levels. Keep your team organized and ensure proper access controls are in place.</p>
                 </div>
             </div>
             
-            <div id="basic-tabs-content-3" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="basic-tabs-content-3" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>System Settings</h4>
                     <p>Configure application settings, integrations, and preferences. Customize the appearance, manage API keys, and set up automated workflows. Keep your system optimized for your team's needs.</p>
                 </div>
             </div>
             
-            <div class="dsgt-tabs-helper">
+            <div class="sw-tabs-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Click tabs to switch between content panels
             </div>
@@ -112,7 +112,7 @@
 </div>
 
 <!-- Pill Tabs -->
-<div class="dsgt-tabs-section-title">
+<div class="sw-tabs-section-title">
     <i class="fa-solid fa-capsules"></i>
     Pill Tabs
 </div>
@@ -130,78 +130,78 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-tabs-example">
-            <span class="dsgt-tabs-example-label">Pill Tab Style</span>
-            <div class="dsgt-modern-tabs dsgt-pill-tabs" data-tab-group="pill-tabs">
-                <button class="dsgt-tab-item active" onclick="MetroAdmin.switchDSGTTab(0, 'pill-tabs')">
+        <div class="sw-tabs-example">
+            <span class="sw-tabs-example-label">Pill Tab Style</span>
+            <div class="sw-modern-tabs sw-pill-tabs" data-tab-group="pill-tabs">
+                <button class="sw-tab-item active" onclick="MetroAdmin.switchSWTab(0, 'pill-tabs')">
                     <i class="fa-solid fa-image"></i> Images
                 </button>
-                <button class="dsgt-tab-item" onclick="MetroAdmin.switchDSGTTab(1, 'pill-tabs')">
+                <button class="sw-tab-item" onclick="MetroAdmin.switchSWTab(1, 'pill-tabs')">
                     <i class="fa-solid fa-file"></i> Documents
                 </button>
-                <button class="dsgt-tab-item" onclick="MetroAdmin.switchDSGTTab(2, 'pill-tabs')">
+                <button class="sw-tab-item" onclick="MetroAdmin.switchSWTab(2, 'pill-tabs')">
                     <i class="fa-solid fa-video"></i> Videos
                 </button>
             </div>
             
-            <div id="pill-tabs-content-0" class="dsgt-tab-content active">
-                <div class="dsgt-tab-content-card">
-                    <div class="dsgt-tab-stats">
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value">1,234</div>
-                            <div class="dsgt-tab-stat-label">Total Images</div>
+            <div id="pill-tabs-content-0" class="sw-tab-content active">
+                <div class="sw-tab-content-card">
+                    <div class="sw-tab-stats">
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value">1,234</div>
+                            <div class="sw-tab-stat-label">Total Images</div>
                         </div>
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value">2.4 GB</div>
-                            <div class="dsgt-tab-stat-label">Storage Used</div>
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value">2.4 GB</div>
+                            <div class="sw-tab-stat-label">Storage Used</div>
                         </div>
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value">156</div>
-                            <div class="dsgt-tab-stat-label">This Week</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="pill-tabs-content-1" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
-                    <div class="dsgt-tab-stats">
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value">567</div>
-                            <div class="dsgt-tab-stat-label">Total Files</div>
-                        </div>
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value">1.8 GB</div>
-                            <div class="dsgt-tab-stat-label">Storage Used</div>
-                        </div>
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value">45</div>
-                            <div class="dsgt-tab-stat-label">This Week</div>
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value">156</div>
+                            <div class="sw-tab-stat-label">This Week</div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div id="pill-tabs-content-2" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
-                    <div class="dsgt-tab-stats">
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value">89</div>
-                            <div class="dsgt-tab-stat-label">Total Videos</div>
+            <div id="pill-tabs-content-1" class="sw-tab-content">
+                <div class="sw-tab-content-card">
+                    <div class="sw-tab-stats">
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value">567</div>
+                            <div class="sw-tab-stat-label">Total Files</div>
                         </div>
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value">5.2 GB</div>
-                            <div class="dsgt-tab-stat-label">Storage Used</div>
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value">1.8 GB</div>
+                            <div class="sw-tab-stat-label">Storage Used</div>
                         </div>
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value">12</div>
-                            <div class="dsgt-tab-stat-label">This Week</div>
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value">45</div>
+                            <div class="sw-tab-stat-label">This Week</div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="dsgt-tabs-helper">
+            <div id="pill-tabs-content-2" class="sw-tab-content">
+                <div class="sw-tab-content-card">
+                    <div class="sw-tab-stats">
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value">89</div>
+                            <div class="sw-tab-stat-label">Total Videos</div>
+                        </div>
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value">5.2 GB</div>
+                            <div class="sw-tab-stat-label">Storage Used</div>
+                        </div>
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value">12</div>
+                            <div class="sw-tab-stat-label">This Week</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sw-tabs-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Pill tabs with highlighted active state
             </div>
@@ -242,28 +242,28 @@
                 </button>
             </div>
             
-            <div id="border-tabs-content-0" class="dsgt-tab-content active">
-                <div class="dsgt-tab-content-card">
+            <div id="border-tabs-content-0" class="sw-tab-content active">
+                <div class="sw-tab-content-card">
                     <h4>Profile Information</h4>
                     <p>Update your personal information, profile picture, and bio. Keep your profile up to date so others can easily recognize and connect with you.</p>
                 </div>
             </div>
             
-            <div id="border-tabs-content-1" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="border-tabs-content-1" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Security Settings</h4>
                     <p>Manage your password, two-factor authentication, and login history. Ensure your account is protected with strong security measures.</p>
                 </div>
             </div>
             
-            <div id="border-tabs-content-2" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="border-tabs-content-2" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Notification Preferences</h4>
                     <p>Configure email notifications, push notifications, and SMS alerts. Choose which updates you want to receive and how you want to be notified.</p>
                 </div>
             </div>
             
-            <div class="dsgt-tabs-helper">
+            <div class="sw-tabs-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Filled tabs with border container
             </div>
@@ -308,19 +308,19 @@
                     </button>
                 </div>
                 <div class="vertical-tabs-content">
-                    <div id="vertical-tabs-content-0" class="dsgt-tab-content active">
+                    <div id="vertical-tabs-content-0" class="sw-tab-content active">
                         <h4>General Settings</h4>
                         <p>Configure general application settings including language, timezone, and default preferences. These settings apply globally across your account.</p>
                     </div>
-                    <div id="vertical-tabs-content-1" class="dsgt-tab-content">
+                    <div id="vertical-tabs-content-1" class="sw-tab-content">
                         <h4>Appearance Settings</h4>
                         <p>Customize the look and feel of your application. Choose themes, adjust font sizes, and configure dark mode preferences.</p>
                     </div>
-                    <div id="vertical-tabs-content-2" class="dsgt-tab-content">
+                    <div id="vertical-tabs-content-2" class="sw-tab-content">
                         <h4>Notification Settings</h4>
                         <p>Manage how and when you receive notifications. Configure email alerts, push notifications, and in-app notification preferences.</p>
                     </div>
-                    <div id="vertical-tabs-content-3" class="dsgt-tab-content">
+                    <div id="vertical-tabs-content-3" class="sw-tab-content">
                         <h4>Privacy Settings</h4>
                         <p>Control who can see your information and activity. Manage visibility settings, blocked users, and data sharing preferences.</p>
                     </div>
@@ -374,35 +374,35 @@
                 </button>
             </div>
             
-            <div id="icon-tabs-content-0" class="dsgt-tab-content active">
-                <div class="dsgt-tab-content-card">
+            <div id="icon-tabs-content-0" class="sw-tab-content active">
+                <div class="sw-tab-content-card">
                     <h4>Home Feed</h4>
                     <p>Welcome to your home feed. Stay updated with the latest posts, announcements, and activities from your network and followed topics.</p>
                 </div>
             </div>
             
-            <div id="icon-tabs-content-1" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="icon-tabs-content-1" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Search & Discovery</h4>
                     <p>Find content, users, and resources. Use advanced filters to narrow down your search results and discover new content.</p>
                 </div>
             </div>
             
-            <div id="icon-tabs-content-2" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="icon-tabs-content-2" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Favorite Items</h4>
                     <p>Access your saved and favorited content. Organize your favorites into collections for easy access later.</p>
                 </div>
             </div>
             
-            <div id="icon-tabs-content-3" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="icon-tabs-content-3" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Your Profile</h4>
                     <p>View and edit your profile information. Manage your public presence and showcase your work and achievements.</p>
                 </div>
             </div>
             
-            <div class="dsgt-tabs-helper">
+            <div class="sw-tabs-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Icon tabs with labels below
             </div>
@@ -433,7 +433,7 @@
             <span class="tabs-example-label">Tabs with Badges</span>
             <div class="modern-tabs tabs-with-badge" data-tab-group="badge-tabs">
                 <button class="tab-item active" onclick="switchTab(0, 'badge-tabs')">
-                    Inbox <span class="dsgt-tab-badge">12</span>
+                    Inbox <span class="sw-tab-badge">12</span>
                 </button>
                 <button class="tab-item" onclick="switchTab(1, 'badge-tabs')">
                     Sent <span class="tab-badge tab-badge-success">5</span>
@@ -446,35 +446,35 @@
                 </button>
             </div>
             
-            <div id="badge-tabs-content-0" class="dsgt-tab-content active">
-                <div class="dsgt-tab-content-card">
+            <div id="badge-tabs-content-0" class="sw-tab-content active">
+                <div class="sw-tab-content-card">
                     <h4>Inbox Messages</h4>
                     <p>You have 12 unread messages. Review your inbox to stay updated with important communications and respond to pending requests.</p>
                 </div>
             </div>
             
-            <div id="badge-tabs-content-1" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="badge-tabs-content-1" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Sent Messages</h4>
                     <p>View messages you've sent. Track delivery status and see when recipients have read your messages.</p>
                 </div>
             </div>
             
-            <div id="badge-tabs-content-2" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="badge-tabs-content-2" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Draft Messages</h4>
                     <p>You have 3 draft messages. Continue editing and send them when ready.</p>
                 </div>
             </div>
             
-            <div id="badge-tabs-content-3" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="badge-tabs-content-3" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Trash</h4>
                     <p>Deleted messages are kept here for 30 days before permanent removal. Restore or permanently delete items.</p>
                 </div>
             </div>
             
-            <div class="dsgt-tabs-helper">
+            <div class="sw-tabs-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Badges show unread counts
             </div>
@@ -519,20 +519,20 @@
                 </button>
             </div>
             
-            <div id="dashboard-tabs-content-0" class="dsgt-tab-content active">
-                <div class="dsgt-tab-content-card">
-                    <div class="dsgt-tab-stats">
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value" style="color: var(--success);">$48,295</div>
-                            <div class="dsgt-tab-stat-label">Total Revenue</div>
+            <div id="dashboard-tabs-content-0" class="sw-tab-content active">
+                <div class="sw-tab-content-card">
+                    <div class="sw-tab-stats">
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value" style="color: var(--success);">$48,295</div>
+                            <div class="sw-tab-stat-label">Total Revenue</div>
                         </div>
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value" style="color: var(--accent);">2,456</div>
-                            <div class="dsgt-tab-stat-label">Active Users</div>
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value" style="color: var(--accent);">2,456</div>
+                            <div class="sw-tab-stat-label">Active Users</div>
                         </div>
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value" style="color: var(--warning);">89.3%</div>
-                            <div class="dsgt-tab-stat-label">Conversion Rate</div>
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value" style="color: var(--warning);">89.3%</div>
+                            <div class="sw-tab-stat-label">Conversion Rate</div>
                         </div>
                     </div>
                     <div style="background: rgba(99, 102, 241, 0.05); border-radius: 8px; padding: 20px; margin-top: 16px; border-left: 4px solid var(--accent);">
@@ -545,20 +545,20 @@
                 </div>
             </div>
             
-            <div id="dashboard-tabs-content-1" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
-                    <div class="dsgt-tab-stats">
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value">1,845</div>
-                            <div class="dsgt-tab-stat-label">New Users</div>
+            <div id="dashboard-tabs-content-1" class="sw-tab-content">
+                <div class="sw-tab-content-card">
+                    <div class="sw-tab-stats">
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value">1,845</div>
+                            <div class="sw-tab-stat-label">New Users</div>
                         </div>
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value">611</div>
-                            <div class="dsgt-tab-stat-label">Churned</div>
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value">611</div>
+                            <div class="sw-tab-stat-label">Churned</div>
                         </div>
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value" style="color: var(--success);">75%</div>
-                            <div class="dsgt-tab-stat-label">Retention</div>
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value" style="color: var(--success);">75%</div>
+                            <div class="sw-tab-stat-label">Retention</div>
                         </div>
                     </div>
                     <div style="margin-top: 16px;">
@@ -584,20 +584,20 @@
                 </div>
             </div>
             
-            <div id="dashboard-tabs-content-2" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
-                    <div class="dsgt-tab-stats">
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value" style="color: var(--success);">$12,847</div>
-                            <div class="dsgt-tab-stat-label">This Month</div>
+            <div id="dashboard-tabs-content-2" class="sw-tab-content">
+                <div class="sw-tab-content-card">
+                    <div class="sw-tab-stats">
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value" style="color: var(--success);">$12,847</div>
+                            <div class="sw-tab-stat-label">This Month</div>
                         </div>
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value" style="color: var(--accent);">$8,432</div>
-                            <div class="dsgt-tab-stat-label">Last Month</div>
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value" style="color: var(--accent);">$8,432</div>
+                            <div class="sw-tab-stat-label">Last Month</div>
                         </div>
-                        <div class="dsgt-tab-stat-item">
-                            <div class="dsgt-tab-stat-value" style="color: var(--warning);">$52.3</div>
-                            <div class="dsgt-tab-stat-label">Avg. Order</div>
+                        <div class="sw-tab-stat-item">
+                            <div class="sw-tab-stat-value" style="color: var(--warning);">$52.3</div>
+                            <div class="sw-tab-stat-label">Avg. Order</div>
                         </div>
                     </div>
                     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px;">
@@ -620,8 +620,8 @@
                 </div>
             </div>
             
-            <div id="dashboard-tabs-content-3" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="dashboard-tabs-content-3" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4 style="margin-bottom: 16px;">Monthly Goals Progress</h4>
                     <div style="margin-bottom: 16px;">
                         <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px;">
@@ -653,7 +653,7 @@
                 </div>
             </div>
             
-            <div class="dsgt-tabs-helper">
+            <div class="sw-tabs-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Real-time analytics dashboard with tabbed navigation
             </div>
@@ -704,8 +704,8 @@
                 </button>
             </div>
             
-            <div id="scrollable-tabs-content-0" class="dsgt-tab-content active">
-                <div class="dsgt-tab-content-card">
+            <div id="scrollable-tabs-content-0" class="sw-tab-content active">
+                <div class="sw-tab-content-card">
                     <h4>Electronics Category</h4>
                     <p>Browse our wide selection of electronics including smartphones, laptops, tablets, cameras, and accessories. Find the latest tech from top brands.</p>
                     <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 16px;">
@@ -729,56 +729,56 @@
                 </div>
             </div>
             
-            <div id="scrollable-tabs-content-1" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="scrollable-tabs-content-1" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Clothing & Fashion</h4>
                     <p>Discover the latest fashion trends for men, women, and children. From casual wear to formal attire, find your perfect style.</p>
                 </div>
             </div>
             
-            <div id="scrollable-tabs-content-2" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="scrollable-tabs-content-2" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Home & Furniture</h4>
                     <p>Transform your living space with our curated collection of furniture, decor, and home essentials.</p>
                 </div>
             </div>
             
-            <div id="scrollable-tabs-content-3" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="scrollable-tabs-content-3" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Books & Literature</h4>
                     <p>Explore thousands of titles across all genres. From bestsellers to classics, find your next great read.</p>
                 </div>
             </div>
             
-            <div id="scrollable-tabs-content-4" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="scrollable-tabs-content-4" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Sports & Outdoors</h4>
                     <p>Gear up for your next adventure with our sports equipment, outdoor gear, and fitness accessories.</p>
                 </div>
             </div>
             
-            <div id="scrollable-tabs-content-5" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="scrollable-tabs-content-5" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Music & Instruments</h4>
                     <p>Find musical instruments, recordings, and accessories for musicians of all skill levels.</p>
                 </div>
             </div>
             
-            <div id="scrollable-tabs-content-6" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="scrollable-tabs-content-6" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Gaming & Entertainment</h4>
                     <p>Level up your gaming experience with the latest consoles, games, and gaming accessories.</p>
                 </div>
             </div>
             
-            <div id="scrollable-tabs-content-7" class="dsgt-tab-content">
-                <div class="dsgt-tab-content-card">
+            <div id="scrollable-tabs-content-7" class="sw-tab-content">
+                <div class="sw-tab-content-card">
                     <h4>Automotive Parts</h4>
                     <p>Quality automotive parts, accessories, and tools for car enthusiasts and professionals.</p>
                 </div>
             </div>
             
-            <div class="dsgt-tabs-helper">
+            <div class="sw-tabs-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Scroll horizontally to view all categories
             </div>
@@ -800,14 +800,14 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-tabs-example">
-            <span class="dsgt-tabs-example-label">Tab Configuration</span>
+        <div class="sw-tabs-example">
+            <span class="sw-tabs-example-label">Tab Configuration</span>
             
             <!-- Controls -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px; padding: 20px; background: rgba(0,0,0,0.02); border-radius: 8px; border: 1px solid var(--border-color);">
                 <div>
                     <label style="display: block; font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Tab Style</label>
-                    <select id="tabStyle" onchange="MetroAdmin.updateDSGTTabsBuilder({
+                    <select id="tabStyle" onchange="MetroAdmin.updateSWTabsBuilder({
                         style: this.value,
                         count: parseInt(document.getElementById('tabCount').value),
                         showIcons: document.getElementById('showIcons').value === 'yes',
@@ -822,7 +822,7 @@
                 
                 <div>
                     <label style="display: block; font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Tab Count</label>
-                    <input type="range" id="tabCount" min="2" max="6" value="4" oninput="document.getElementById('tabCountDisplay').textContent = this.value + ' tabs'; MetroAdmin.updateDSGTTabsBuilder({
+                    <input type="range" id="tabCount" min="2" max="6" value="4" oninput="document.getElementById('tabCountDisplay').textContent = this.value + ' tabs'; MetroAdmin.updateSWTabsBuilder({
                         style: document.getElementById('tabStyle').value,
                         count: parseInt(this.value),
                         showIcons: document.getElementById('showIcons').value === 'yes',
@@ -833,7 +833,7 @@
                 
                 <div>
                     <label style="display: block; font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Show Icons</label>
-                    <select id="showIcons" onchange="MetroAdmin.updateDSGTTabsBuilder({
+                    <select id="showIcons" onchange="MetroAdmin.updateSWTabsBuilder({
                         style: document.getElementById('tabStyle').value,
                         count: parseInt(document.getElementById('tabCount').value),
                         showIcons: this.value === 'yes',
@@ -846,7 +846,7 @@
                 
                 <div>
                     <label style="display: block; font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Show Badges</label>
-                    <select id="showBadges" onchange="MetroAdmin.updateDSGTTabsBuilder({
+                    <select id="showBadges" onchange="MetroAdmin.updateSWTabsBuilder({
                         style: document.getElementById('tabStyle').value,
                         count: parseInt(document.getElementById('tabCount').value),
                         showIcons: document.getElementById('showIcons').value === 'yes',
@@ -860,51 +860,51 @@
             
             <!-- Live Preview -->
             <div id="tabsBuilderPreview">
-                <div class="dsgt-modern-tabs" data-tab-group="builder-tabs">
-                    <button class="dsgt-tab-item active" onclick="MetroAdmin.switchDSGTTab(0, 'builder-tabs')">
+                <div class="sw-modern-tabs" data-tab-group="builder-tabs">
+                    <button class="sw-tab-item active" onclick="MetroAdmin.switchSWTab(0, 'builder-tabs')">
                         <i class="fa-solid fa-house"></i> Dashboard
                     </button>
-                    <button class="dsgt-tab-item" onclick="MetroAdmin.switchDSGTTab(1, 'builder-tabs')">
+                    <button class="sw-tab-item" onclick="MetroAdmin.switchSWTab(1, 'builder-tabs')">
                         <i class="fa-solid fa-chart-line"></i> Analytics
                     </button>
-                    <button class="dsgt-tab-item" onclick="MetroAdmin.switchDSGTTab(2, 'builder-tabs')">
+                    <button class="sw-tab-item" onclick="MetroAdmin.switchSWTab(2, 'builder-tabs')">
                         <i class="fa-solid fa-users"></i> Users
                     </button>
-                    <button class="dsgt-tab-item" onclick="MetroAdmin.switchDSGTTab(3, 'builder-tabs')">
+                    <button class="sw-tab-item" onclick="MetroAdmin.switchSWTab(3, 'builder-tabs')">
                         <i class="fa-solid fa-gear"></i> Settings
                     </button>
                 </div>
                 
-                <div id="builder-tabs-content-0" class="dsgt-tab-content active">
-                    <div class="dsgt-tab-content-card">
+                <div id="builder-tabs-content-0" class="sw-tab-content active">
+                    <div class="sw-tab-content-card">
                         <h4>Dashboard Content</h4>
                         <p>This is the dashboard tab content. Configure the tabs above to see different styles and configurations.</p>
                     </div>
                 </div>
                 
-                <div id="builder-tabs-content-1" class="dsgt-tab-content">
-                    <div class="dsgt-tab-content-card">
+                <div id="builder-tabs-content-1" class="sw-tab-content">
+                    <div class="sw-tab-content-card">
                         <h4>Analytics Content</h4>
                         <p>View detailed analytics and performance metrics here.</p>
                     </div>
                 </div>
                 
-                <div id="builder-tabs-content-2" class="dsgt-tab-content">
-                    <div class="dsgt-tab-content-card">
+                <div id="builder-tabs-content-2" class="sw-tab-content">
+                    <div class="sw-tab-content-card">
                         <h4>Users Content</h4>
                         <p>Manage user accounts and permissions.</p>
                     </div>
                 </div>
                 
-                <div id="builder-tabs-content-3" class="dsgt-tab-content">
-                    <div class="dsgt-tab-content-card">
+                <div id="builder-tabs-content-3" class="sw-tab-content">
+                    <div class="sw-tab-content-card">
                         <h4>Settings Content</h4>
                         <p>Configure application settings and preferences.</p>
                     </div>
                 </div>
             </div>
             
-            <div class="dsgt-tabs-helper">
+            <div class="sw-tabs-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Adjust the controls above to customize tab appearance
             </div>
@@ -932,14 +932,14 @@
             </div>
         </div>
         <div class="card-body">
-            <pre style="background: rgba(0, 0, 0, 0.04); padding: 16px; border-radius: 8px; font-size: 11px; overflow-x: auto; line-height: 1.6;"><code>// Switch tab with DSGT Metro Template
-MetroAdmin.switchDSGTTab(index, group);
+            <pre style="background: rgba(0, 0, 0, 0.04); padding: 16px; border-radius: 8px; font-size: 11px; overflow-x: auto; line-height: 1.6;"><code>// Switch tab with SW Metro Template
+MetroAdmin.switchSWTab(index, group);
 
 // Switch vertical tab
-MetroAdmin.switchDSGTVerticalTab(index);
+MetroAdmin.switchSWVerticalTab(index);
 
 // Generate tabs dynamically
-MetroAdmin.generateDSGTTabs({
+MetroAdmin.generateSWTabs({
   group: 'my-tabs',
   tabs: [
     { icon: 'fa-solid fa-house', label: 'Home' },
@@ -949,7 +949,7 @@ MetroAdmin.generateDSGTTabs({
 });
 
 // Update tabs builder
-MetroAdmin.updateDSGTTabsBuilder({
+MetroAdmin.updateSWTabsBuilder({
   style: 'pill',
   count: 4,
   showIcons: true,
@@ -1014,7 +1014,7 @@ MetroAdmin.updateDSGTTabsBuilder({
 <script>
 // Tabs page initialization
 $(document).ready(function() {
-    console.log('🏷️ DSGT Tabs page loaded successfully');
+    console.log('🏷️ SW Tabs page loaded successfully');
     
     // Update tab builder count display
     $('#tabCount').on('input', function() {
@@ -1024,8 +1024,8 @@ $(document).ready(function() {
     // Try Tabs button functionality
     setTimeout(() => {
         if (typeof MetroAdmin !== 'undefined') {
-            MetroAdmin.switchDSGTTab(0, 'basic-tabs');
-            MetroAdmin.showDSGTInfoToast('Welcome to the Tabs demo page!');
+            MetroAdmin.switchSWTab(0, 'basic-tabs');
+            MetroAdmin.showSWInfoToast('Welcome to the Tabs demo page!');
         }
     }, 1000);
 });

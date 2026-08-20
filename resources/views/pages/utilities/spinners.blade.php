@@ -18,7 +18,7 @@
             <i class="fa-solid fa-book"></i>
             <span>Documentation</span>
         </button>
-        <button class="btn btn-primary" onclick="MetroAdmin.showDSGTFullScreenSpinner()">
+        <button class="btn btn-primary" onclick="MetroAdmin.showSWFullScreenSpinner()">
             <i class="fa-solid fa-play"></i>
             <span>Demo Spinner</span>
         </button>
@@ -26,7 +26,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-info-card">
+<div class="content-card sw-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -39,12 +39,12 @@
 </div>
 
 <!-- Circular Spinners -->
-<div class="dsgt-spinner-section-title">
+<div class="sw-spinner-section-title">
     <i class="fa-solid fa-circle-notch"></i>
     Circular Spinners <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-spinner-grid">
+<div class="sw-spinner-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -58,28 +58,28 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-spinner-example">
-                <span class="dsgt-spinner-example-label">Size Variations</span>
+            <div class="sw-spinner-example">
+                <span class="sw-spinner-example-label">Size Variations</span>
                 <div style="display: flex; gap: 24px; align-items: center;">
                     <div style="text-align: center;">
-                        <div class="dsgt-spinner-demo dsgt-spinner-sm"></div>
+                        <div class="sw-spinner-demo sw-spinner-sm"></div>
                         <div style="font-size: 11px; margin-top: 8px;">20px</div>
                     </div>
                     <div style="text-align: center;">
-                        <div class="dsgt-spinner-demo dsgt-spinner-md"></div>
+                        <div class="sw-spinner-demo sw-spinner-md"></div>
                         <div style="font-size: 11px; margin-top: 8px;">40px</div>
                     </div>
                     <div style="text-align: center;">
-                        <div class="dsgt-spinner-demo dsgt-spinner-lg"></div>
+                        <div class="sw-spinner-demo sw-spinner-lg"></div>
                         <div style="font-size: 11px; margin-top: 8px;">60px</div>
                     </div>
                     <div style="text-align: center;">
-                        <div class="dsgt-spinner-demo dsgt-spinner-xl"></div>
+                        <div class="sw-spinner-demo sw-spinner-xl"></div>
                         <div style="font-size: 11px; margin-top: 8px;">80px</div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-spinner-helper">
+            <div class="sw-spinner-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Four size options available
             </div>
@@ -99,17 +99,17 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-spinner-example">
-                <span class="dsgt-spinner-example-label">Color Variations</span>
+            <div class="sw-spinner-example">
+                <span class="sw-spinner-example-label">Color Variations</span>
                 <div style="display: flex; gap: 24px; align-items: center;">
-                    <div class="dsgt-spinner-demo dsgt-spinner-md"></div>
-                    <div class="dsgt-spinner-demo dsgt-spinner-md dsgt-spinner-success"></div>
-                    <div class="dsgt-spinner-demo dsgt-spinner-md dsgt-spinner-warning"></div>
-                    <div class="dsgt-spinner-demo dsgt-spinner-md dsgt-spinner-danger"></div>
-                    <div class="dsgt-spinner-demo dsgt-spinner-md dsgt-spinner-info"></div>
+                    <div class="sw-spinner-demo sw-spinner-md"></div>
+                    <div class="sw-spinner-demo sw-spinner-md sw-spinner-success"></div>
+                    <div class="sw-spinner-demo sw-spinner-md sw-spinner-warning"></div>
+                    <div class="sw-spinner-demo sw-spinner-md sw-spinner-danger"></div>
+                    <div class="sw-spinner-demo sw-spinner-md sw-spinner-info"></div>
                 </div>
             </div>
-            <div class="dsgt-spinner-helper">
+            <div class="sw-spinner-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Five color options available
             </div>
@@ -118,12 +118,12 @@
 </div>
 
 <!-- Alternative Spinners -->
-<div class="dsgt-spinner-section-title">
+<div class="sw-spinner-section-title">
     <i class="fa-solid fa-shapes"></i>
     Alternative Spinners
 </div>
 
-<div class="dsgt-spinner-grid">
+<div class="sw-spinner-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -137,15 +137,15 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-spinner-example">
-                <span class="dsgt-spinner-example-label">Dots Animation</span>
-                <div class="dsgt-spinner-dots">
-                    <div class="dsgt-spinner-dot"></div>
-                    <div class="dsgt-spinner-dot"></div>
-                    <div class="dsgt-spinner-dot"></div>
+            <div class="sw-spinner-example">
+                <span class="sw-spinner-example-label">Dots Animation</span>
+                <div class="sw-spinner-dots">
+                    <div class="sw-spinner-dot"></div>
+                    <div class="sw-spinner-dot"></div>
+                    <div class="sw-spinner-dot"></div>
                 </div>
             </div>
-            <div class="dsgt-spinner-helper">
+            <div class="sw-spinner-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Three dots with staggered animation
             </div>
@@ -165,11 +165,11 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-spinner-example">
-                <span class="dsgt-spinner-example-label">Pulse Animation</span>
-                <div class="dsgt-spinner-pulse"></div>
+            <div class="sw-spinner-example">
+                <span class="sw-spinner-example-label">Pulse Animation</span>
+                <div class="sw-spinner-pulse"></div>
             </div>
-            <div class="dsgt-spinner-helper">
+            <div class="sw-spinner-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Scale and opacity animation
             </div>
@@ -189,17 +189,17 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-spinner-example">
-                <span class="dsgt-spinner-example-label">Bars Animation</span>
-                <div class="dsgt-spinner-bars">
-                    <div class="dsgt-spinner-bar"></div>
-                    <div class="dsgt-spinner-bar"></div>
-                    <div class="dsgt-spinner-bar"></div>
-                    <div class="dsgt-spinner-bar"></div>
-                    <div class="dsgt-spinner-bar"></div>
+            <div class="sw-spinner-example">
+                <span class="sw-spinner-example-label">Bars Animation</span>
+                <div class="sw-spinner-bars">
+                    <div class="sw-spinner-bar"></div>
+                    <div class="sw-spinner-bar"></div>
+                    <div class="sw-spinner-bar"></div>
+                    <div class="sw-spinner-bar"></div>
+                    <div class="sw-spinner-bar"></div>
                 </div>
             </div>
-            <div class="dsgt-spinner-helper">
+            <div class="sw-spinner-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Five bars with staggered timing
             </div>
@@ -219,11 +219,11 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-spinner-example">
-                <span class="dsgt-spinner-example-label">Ring Animation</span>
-                <div class="dsgt-spinner-ring"></div>
+            <div class="sw-spinner-example">
+                <span class="sw-spinner-example-label">Ring Animation</span>
+                <div class="sw-spinner-ring"></div>
             </div>
-            <div class="dsgt-spinner-helper">
+            <div class="sw-spinner-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Two borders spinning together
             </div>
@@ -243,11 +243,11 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-spinner-example">
-                <span class="dsgt-spinner-example-label">Growing Animation</span>
-                <div class="dsgt-spinner-growing"></div>
+            <div class="sw-spinner-example">
+                <span class="sw-spinner-example-label">Growing Animation</span>
+                <div class="sw-spinner-growing"></div>
             </div>
-            <div class="dsgt-spinner-helper">
+            <div class="sw-spinner-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Scale and fade animation
             </div>
@@ -256,7 +256,7 @@
 </div>
 
 <!-- Button Integration -->
-<div class="dsgt-spinner-section-title">
+<div class="sw-spinner-section-title">
     <i class="fa-solid fa-hand-pointer"></i>
     Button Integration
 </div>
@@ -274,26 +274,26 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-spinner-example" style="min-height: 100px;">
-            <span class="dsgt-spinner-example-label">Button Loading States</span>
+        <div class="sw-spinner-example" style="min-height: 100px;">
+            <span class="sw-spinner-example-label">Button Loading States</span>
             <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
-                <button class="btn btn-primary dsgt-btn-spinner">
-                    <div class="dsgt-spinner-demo"></div>
+                <button class="btn btn-primary sw-btn-spinner">
+                    <div class="sw-spinner-demo"></div>
                     <span>Loading...</span>
                 </button>
                 
-                <button class="btn btn-success dsgt-btn-spinner">
-                    <div class="dsgt-spinner-demo dsgt-spinner-success"></div>
+                <button class="btn btn-success sw-btn-spinner">
+                    <div class="sw-spinner-demo sw-spinner-success"></div>
                     <span>Processing...</span>
                 </button>
                 
-                <button class="btn btn-warning dsgt-btn-spinner">
-                    <div class="dsgt-spinner-demo dsgt-spinner-warning"></div>
+                <button class="btn btn-warning sw-btn-spinner">
+                    <div class="sw-spinner-demo sw-spinner-warning"></div>
                     <span>Saving...</span>
                 </button>
             </div>
         </div>
-        <div class="dsgt-spinner-helper">
+        <div class="sw-spinner-helper">
             <i class="fa-solid fa-circle-info"></i>
             Disabled buttons with loading indicator
         </div>
@@ -301,12 +301,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-spinner-section-title">
+<div class="sw-spinner-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-spinner-grid">
+<div class="sw-spinner-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -322,16 +322,16 @@
         <div class="card-body">
             <div class="code-block">
 &lt;!-- Basic Spinner --&gt;<br>
-&lt;div class="dsgt-spinner-demo dsgt-spinner-md"&gt;&lt;/div&gt;<br>
+&lt;div class="sw-spinner-demo sw-spinner-md"&gt;&lt;/div&gt;<br>
 <br>
 &lt;!-- With Color --&gt;<br>
-&lt;div class="dsgt-spinner-demo dsgt-spinner-md dsgt-spinner-success"&gt;&lt;/div&gt;<br>
+&lt;div class="sw-spinner-demo sw-spinner-md sw-spinner-success"&gt;&lt;/div&gt;<br>
 <br>
 &lt;!-- Dots Spinner --&gt;<br>
-&lt;div class="dsgt-spinner-dots"&gt;<br>
-&nbsp;&nbsp;&lt;div dsgt-spinner-dot&gt;&lt;/div&gt;<br>
-&nbsp;&nbsp;&lt;div dsgt-spinner-dot&gt;&lt;/div&gt;<br>
-&nbsp;&nbsp;&lt;div dsgt-spinner-dot&gt;&lt;/div&gt;<br>
+&lt;div class="sw-spinner-dots"&gt;<br>
+&nbsp;&nbsp;&lt;div sw-spinner-dot&gt;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div sw-spinner-dot&gt;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div sw-spinner-dot&gt;&lt;/div&gt;<br>
 &lt;/div&gt;
             </div>
         </div>
@@ -381,9 +381,9 @@
 </div>
 
 <!-- Full Screen Spinner Overlay -->
-<div class="dsgt-spinner-overlay" id="fullScreenSpinner">
-    <div class="dsgt-spinner-overlay-content">
-        <div class="dsgt-spinner-demo"></div>
+<div class="sw-spinner-overlay" id="fullScreenSpinner">
+    <div class="sw-spinner-overlay-content">
+        <div class="sw-spinner-demo"></div>
         <p>Loading, please wait...</p>
     </div>
 </div>
@@ -394,12 +394,12 @@
 <script>
 // Spinners page initialization
 $(document).ready(function() {
-    console.log('🌀 DSGT Spinners page loaded successfully');
+    console.log('🌀 SW Spinners page loaded successfully');
     
     // Demo: Show welcome toast
     setTimeout(() => {
         if (typeof MetroAdmin !== 'undefined') {
-            MetroAdmin.showDSGTInfoToast('Welcome to the Spinners demo page!');
+            MetroAdmin.showSWInfoToast('Welcome to the Spinners demo page!');
         }
     }, 1000);
 });

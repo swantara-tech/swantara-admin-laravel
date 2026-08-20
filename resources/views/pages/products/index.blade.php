@@ -8,7 +8,7 @@
                         <h1>Manajemen Produk</h1>
                         <p>Kelola semua produk yang tersedia di toko</p>
                     </div>
-                    <button class="btn btn-primary" onclick="MetroAdmin.openDSGTModal('add-product-modal')">
+                    <button class="btn btn-primary" onclick="MetroAdmin.openSWModal('add-product-modal')">
                         <i class="fa-solid fa-plus"></i> Tambah Produk
                     </button>
                 </div>
@@ -339,33 +339,33 @@
                 </div>
 
 <!-- Add Product Modal -->
-<div id="add-product-modal" class="dsgt-custom-modal">
-    <div class="dsgt-modal-dialog dsgt-modal-dialog-lg">
-        <div class="dsgt-modal-header">
-            <h3 class="dsgt-modal-title">
+<div id="add-product-modal" class="sw-custom-modal">
+    <div class="sw-modal-dialog sw-modal-dialog-lg">
+        <div class="sw-modal-header">
+            <h3 class="sw-modal-title">
                 <i class="fa-solid fa-plus" style="color: var(--accent); margin-right: 8px;"></i>
                 Tambah Produk Baru
             </h3>
-            <button class="dsgt-modal-close" onclick="MetroAdmin.closeDSGTModal('add-product-modal')">
+            <button class="sw-modal-close" onclick="MetroAdmin.closeSWModal('add-product-modal')">
                 <i class="fa-solid fa-times"></i>
             </button>
         </div>
-        <div class="dsgt-modal-body">
-            <div class="dsgt-modal-form-group">
-                <label class="dsgt-modal-form-label">Nama Produk</label>
-                <input type="text" class="dsgt-modal-form-input" id="productName" placeholder="Masukkan nama produk">
+        <div class="sw-modal-body">
+            <div class="sw-modal-form-group">
+                <label class="sw-modal-form-label">Nama Produk</label>
+                <input type="text" class="sw-modal-form-input" id="productName" placeholder="Masukkan nama produk">
             </div>
-            <div class="dsgt-modal-form-group">
-                <label class="dsgt-modal-form-label">Harga</label>
-                <input type="number" class="dsgt-modal-form-input" id="productPrice" placeholder="Masukkan harga produk">
+            <div class="sw-modal-form-group">
+                <label class="sw-modal-form-label">Harga</label>
+                <input type="number" class="sw-modal-form-input" id="productPrice" placeholder="Masukkan harga produk">
             </div>
-            <div class="dsgt-modal-form-group">
-                <label class="dsgt-modal-form-label">Stok</label>
-                <input type="number" class="dsgt-modal-form-input" id="productStock" placeholder="Masukkan jumlah stok">
+            <div class="sw-modal-form-group">
+                <label class="sw-modal-form-label">Stok</label>
+                <input type="number" class="sw-modal-form-input" id="productStock" placeholder="Masukkan jumlah stok">
             </div>
-            <div class="dsgt-modal-form-group">
-                <label class="dsgt-modal-form-label">Kategori</label>
-                <select class="dsgt-modal-form-input" id="productCategory">
+            <div class="sw-modal-form-group">
+                <label class="sw-modal-form-label">Kategori</label>
+                <select class="sw-modal-form-input" id="productCategory">
                     <option value="">Pilih Kategori</option>
                     <option value="elektronik">Elektronik</option>
                     <option value="audio">Audio</option>
@@ -375,13 +375,13 @@
                     <option value="fashion">Fashion</option>
                 </select>
             </div>
-            <div class="dsgt-modal-form-group">
-                <label class="dsgt-modal-form-label">Deskripsi</label>
-                <textarea class="dsgt-modal-form-input" id="productDesc" rows="3" placeholder="Masukkan deskripsi produk" style="resize: vertical;"></textarea>
+            <div class="sw-modal-form-group">
+                <label class="sw-modal-form-label">Deskripsi</label>
+                <textarea class="sw-modal-form-input" id="productDesc" rows="3" placeholder="Masukkan deskripsi produk" style="resize: vertical;"></textarea>
             </div>
         </div>
-        <div class="dsgt-modal-footer">
-            <button class="btn btn-secondary" onclick="MetroAdmin.closeDSGTModal('add-product-modal')">
+        <div class="sw-modal-footer">
+            <button class="btn btn-secondary" onclick="MetroAdmin.closeSWModal('add-product-modal')">
                 <i class="fa-solid fa-times"></i> Batal
             </button>
             <button class="btn btn-primary" onclick="saveProduct()">
@@ -735,7 +735,7 @@ function saveProduct() {
     $('#productDesc').val('');
     
     // Close modal
-    MetroAdmin.closeDSGTModal('add-product-modal');
+    MetroAdmin.closeSWModal('add-product-modal');
 }
 
 function viewProduct(name) {

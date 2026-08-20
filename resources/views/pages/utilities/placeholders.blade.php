@@ -17,7 +17,7 @@
             <i class="fa-solid fa-book"></i>
             <span>Documentation</span>
         </button>
-        <button class="btn btn-primary" onclick="MetroAdmin.toggleDSGTAllPlaceholders()">
+        <button class="btn btn-primary" onclick="MetroAdmin.toggleSWAllPlaceholders()">
             <i class="fa-solid fa-eye"></i>
             <span>Toggle Loading</span>
         </button>
@@ -25,7 +25,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-info-card">
+<div class="content-card sw-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -38,7 +38,7 @@
 </div>
 
 <!-- Basic Placeholders -->
-<div class="dsgt-placeholders-section-title">
+<div class="sw-placeholders-section-title">
     <i class="fa-solid fa-square"></i>
     Basic Placeholders <span class="badge badge-primary">Essential</span>
 </div>
@@ -56,16 +56,16 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-placeholders-example">
-            <span class="dsgt-placeholders-example-label">Placeholder Sizes</span>
+        <div class="sw-placeholders-example">
+            <span class="sw-placeholders-example-label">Placeholder Sizes</span>
             <div style="margin-bottom: 20px;">
-                <div class="dsgt-placeholder dsgt-placeholder-xs dsgt-placeholder-w100" style="margin-bottom: 8px;"></div>
-                <div class="dsgt-placeholder dsgt-placeholder-sm dsgt-placeholder-w75" style="margin-bottom: 8px;"></div>
-                <div class="dsgt-placeholder dsgt-placeholder-md dsgt-placeholder-w50" style="margin-bottom: 8px;"></div>
-                <div class="dsgt-placeholder dsgt-placeholder-lg dsgt-placeholder-w75" style="margin-bottom: 8px;"></div>
-                <div class="dsgt-placeholder dsgt-placeholder-xl dsgt-placeholder-w100"></div>
+                <div class="sw-placeholder sw-placeholder-xs sw-placeholder-w100" style="margin-bottom: 8px;"></div>
+                <div class="sw-placeholder sw-placeholder-sm sw-placeholder-w75" style="margin-bottom: 8px;"></div>
+                <div class="sw-placeholder sw-placeholder-md sw-placeholder-w50" style="margin-bottom: 8px;"></div>
+                <div class="sw-placeholder sw-placeholder-lg sw-placeholder-w75" style="margin-bottom: 8px;"></div>
+                <div class="sw-placeholder sw-placeholder-xl sw-placeholder-w100"></div>
             </div>
-            <div class="dsgt-placeholders-helper">
+            <div class="sw-placeholders-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Heights: 8px, 12px, 16px, 20px, 24px
             </div>
@@ -74,7 +74,7 @@
 </div>
 
 <!-- Placeholder Widths -->
-<div class="dsgt-placeholders-section-title">
+<div class="sw-placeholders-section-title">
     <i class="fa-solid fa-expand"></i>
     Placeholder Widths
 </div>
@@ -92,29 +92,29 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-placeholders-example">
-            <span class="dsgt-placeholders-example-label">Width Options</span>
+        <div class="sw-placeholders-example">
+            <span class="sw-placeholders-example-label">Width Options</span>
             <div style="margin-bottom: 16px;">
                 <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 4px;">25% Width</div>
-                <div class="dsgt-placeholder dsgt-placeholder-md dsgt-placeholder-w25"></div>
+                <div class="sw-placeholder sw-placeholder-md sw-placeholder-w25"></div>
             </div>
             <div style="margin-bottom: 16px;">
                 <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 4px;">50% Width</div>
-                <div class="dsgt-placeholder dsgt-placeholder-md dsgt-placeholder-w50"></div>
+                <div class="sw-placeholder sw-placeholder-md sw-placeholder-w50"></div>
             </div>
             <div style="margin-bottom: 16px;">
                 <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 4px;">75% Width</div>
-                <div class="dsgt-placeholder dsgt-placeholder-md dsgt-placeholder-w75"></div>
+                <div class="sw-placeholder sw-placeholder-md sw-placeholder-w75"></div>
             </div>
             <div style="margin-bottom: 16px;">
                 <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 4px;">100% Width</div>
-                <div class="dsgt-placeholder dsgt-placeholder-md dsgt-placeholder-w100"></div>
+                <div class="sw-placeholder sw-placeholder-md sw-placeholder-w100"></div>
             </div>
             <div>
                 <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 4px;">Auto Width</div>
-                <div class="dsgt-placeholder dsgt-placeholder-md dsgt-placeholder-w-auto">Auto-sized content</div>
+                <div class="sw-placeholder sw-placeholder-md sw-placeholder-w-auto">Auto-sized content</div>
             </div>
-            <div class="dsgt-placeholders-helper">
+            <div class="sw-placeholders-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Use percentage or auto width classes
             </div>
@@ -123,7 +123,7 @@
 </div>
 
 <!-- Placeholder Shapes -->
-<div class="dsgt-placeholders-section-title">
+<div class="sw-placeholders-section-title">
     <i class="fa-solid fa-shapes"></i>
     Placeholder Shapes
 </div>
@@ -141,23 +141,23 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-placeholders-example">
-            <span class="dsgt-placeholders-example-label">Different Shapes</span>
+        <div class="sw-placeholders-example">
+            <span class="sw-placeholders-example-label">Different Shapes</span>
             <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
                 <div style="text-align: center;">
-                    <div class="dsgt-placeholder" style="width: 48px; height: 48px; border-radius: 4px; margin-bottom: 8px;"></div>
+                    <div class="sw-placeholder" style="width: 48px; height: 48px; border-radius: 4px; margin-bottom: 8px;"></div>
                     <div style="font-size: 11px; color: var(--text-secondary);">Square</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-placeholder dsgt-placeholder-rounded" style="width: 48px; height: 48px; margin-bottom: 8px;"></div>
+                    <div class="sw-placeholder sw-placeholder-rounded" style="width: 48px; height: 48px; margin-bottom: 8px;"></div>
                     <div style="font-size: 11px; color: var(--text-secondary);">Rounded</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-placeholder dsgt-placeholder-circle" style="width: 48px; height: 48px; margin-bottom: 8px;"></div>
+                    <div class="sw-placeholder sw-placeholder-circle" style="width: 48px; height: 48px; margin-bottom: 8px;"></div>
                     <div style="font-size: 11px; color: var(--text-secondary);">Circle</div>
                 </div>
             </div>
-            <div class="dsgt-placeholders-helper">
+            <div class="sw-placeholders-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 border-radius controls the shape
             </div>
@@ -166,7 +166,7 @@
 </div>
 
 <!-- Card Placeholder -->
-<div class="dsgt-placeholders-section-title">
+<div class="sw-placeholders-section-title">
     <i class="fa-solid fa-id-card"></i>
     Card Placeholder
 </div>
@@ -184,16 +184,16 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-placeholders-example">
-            <span class="dsgt-placeholders-example-label">Card Skeleton</span>
-            <div class="dsgt-placeholder-card">
-                <div class="dsgt-placeholder-card-image"></div>
-                <div class="dsgt-placeholder-card-title"></div>
-                <div class="dsgt-placeholder-card-text"></div>
-                <div class="dsgt-placeholder-card-text"></div>
-                <div class="dsgt-placeholder-card-text"></div>
+        <div class="sw-placeholders-example">
+            <span class="sw-placeholders-example-label">Card Skeleton</span>
+            <div class="sw-placeholder-card">
+                <div class="sw-placeholder-card-image"></div>
+                <div class="sw-placeholder-card-title"></div>
+                <div class="sw-placeholder-card-text"></div>
+                <div class="sw-placeholder-card-text"></div>
+                <div class="sw-placeholder-card-text"></div>
             </div>
-            <div class="dsgt-placeholders-helper">
+            <div class="sw-placeholders-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Mimics card with image and text
             </div>
@@ -202,7 +202,7 @@
 </div>
 
 <!-- Table Placeholder -->
-<div class="dsgt-placeholders-section-title">
+<div class="sw-placeholders-section-title">
     <i class="fa-solid fa-table"></i>
     Table Placeholder
 </div>
@@ -220,39 +220,39 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-placeholders-example">
-            <span class="dsgt-placeholders-example-label">Table Skeleton</span>
-            <table class="dsgt-placeholder-table">
+        <div class="sw-placeholders-example">
+            <span class="sw-placeholders-example-label">Table Skeleton</span>
+            <table class="sw-placeholder-table">
                 <thead>
                     <tr>
-                        <th><div class="dsgt-placeholder dsgt-placeholder-table-header"></div></th>
-                        <th><div class="dsgt-placeholder dsgt-placeholder-table-header"></div></th>
-                        <th><div class="dsgt-placeholder dsgt-placeholder-table-header"></div></th>
-                        <th><div class="dsgt-placeholder dsgt-placeholder-table-header"></div></th>
+                        <th><div class="sw-placeholder sw-placeholder-table-header"></div></th>
+                        <th><div class="sw-placeholder sw-placeholder-table-header"></div></th>
+                        <th><div class="sw-placeholder sw-placeholder-table-header"></div></th>
+                        <th><div class="sw-placeholder sw-placeholder-table-header"></div></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><div class="dsgt-placeholder dsgt-placeholder-table-row"></div></td>
-                        <td><div class="dsgt-placeholder dsgt-placeholder-table-row"></div></td>
-                        <td><div class="dsgt-placeholder dsgt-placeholder-table-row"></div></td>
-                        <td><div class="dsgt-placeholder dsgt-placeholder-table-row"></div></td>
+                        <td><div class="sw-placeholder sw-placeholder-table-row"></div></td>
+                        <td><div class="sw-placeholder sw-placeholder-table-row"></div></td>
+                        <td><div class="sw-placeholder sw-placeholder-table-row"></div></td>
+                        <td><div class="sw-placeholder sw-placeholder-table-row"></div></td>
                     </tr>
                     <tr>
-                        <td><div class="dsgt-placeholder dsgt-placeholder-table-row"></div></td>
-                        <td><div class="dsgt-placeholder dsgt-placeholder-table-row"></div></td>
-                        <td><div class="dsgt-placeholder dsgt-placeholder-table-row"></div></td>
-                        <td><div class="dsgt-placeholder dsgt-placeholder-table-row"></div></td>
+                        <td><div class="sw-placeholder sw-placeholder-table-row"></div></td>
+                        <td><div class="sw-placeholder sw-placeholder-table-row"></div></td>
+                        <td><div class="sw-placeholder sw-placeholder-table-row"></div></td>
+                        <td><div class="sw-placeholder sw-placeholder-table-row"></div></td>
                     </tr>
                     <tr>
-                        <td><div class="dsgt-placeholder dsgt-placeholder-table-row"></div></td>
-                        <td><div class="dsgt-placeholder dsgt-placeholder-table-row"></div></td>
-                        <td><div class="dsgt-placeholder dsgt-placeholder-table-row"></div></td>
-                        <td><div class="dsgt-placeholder dsgt-placeholder-table-row"></div></td>
+                        <td><div class="sw-placeholder sw-placeholder-table-row"></div></td>
+                        <td><div class="sw-placeholder sw-placeholder-table-row"></div></td>
+                        <td><div class="sw-placeholder sw-placeholder-table-row"></div></td>
+                        <td><div class="sw-placeholder sw-placeholder-table-row"></div></td>
                     </tr>
                 </tbody>
             </table>
-            <div class="dsgt-placeholders-helper">
+            <div class="sw-placeholders-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Table structure with loading blocks
             </div>
@@ -261,7 +261,7 @@
 </div>
 
 <!-- List Placeholder -->
-<div class="dsgt-placeholders-section-title">
+<div class="sw-placeholders-section-title">
     <i class="fa-solid fa-list-ul"></i>
     List Placeholder
 </div>
@@ -279,30 +279,30 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-placeholders-example">
-            <span class="dsgt-placeholders-example-label">List Skeleton</span>
-            <div class="dsgt-placeholder-list-item">
-                <div class="dsgt-placeholder-list-avatar"></div>
-                <div class="dsgt-placeholder-list-content">
-                    <div class="dsgt-placeholder-list-title"></div>
-                    <div class="dsgt-placeholder-list-desc"></div>
+        <div class="sw-placeholders-example">
+            <span class="sw-placeholders-example-label">List Skeleton</span>
+            <div class="sw-placeholder-list-item">
+                <div class="sw-placeholder-list-avatar"></div>
+                <div class="sw-placeholder-list-content">
+                    <div class="sw-placeholder-list-title"></div>
+                    <div class="sw-placeholder-list-desc"></div>
                 </div>
             </div>
-            <div class="dsgt-placeholder-list-item">
-                <div class="dsgt-placeholder-list-avatar"></div>
-                <div class="dsgt-placeholder-list-content">
-                    <div class="dsgt-placeholder-list-title"></div>
-                    <div class="dsgt-placeholder-list-desc"></div>
+            <div class="sw-placeholder-list-item">
+                <div class="sw-placeholder-list-avatar"></div>
+                <div class="sw-placeholder-list-content">
+                    <div class="sw-placeholder-list-title"></div>
+                    <div class="sw-placeholder-list-desc"></div>
                 </div>
             </div>
-            <div class="dsgt-placeholder-list-item">
-                <div class="dsgt-placeholder-list-avatar"></div>
-                <div class="dsgt-placeholder-list-content">
-                    <div class="dsgt-placeholder-list-title"></div>
-                    <div class="dsgt-placeholder-list-desc"></div>
+            <div class="sw-placeholder-list-item">
+                <div class="sw-placeholder-list-avatar"></div>
+                <div class="sw-placeholder-list-content">
+                    <div class="sw-placeholder-list-title"></div>
+                    <div class="sw-placeholder-list-desc"></div>
                 </div>
             </div>
-            <div class="dsgt-placeholders-helper">
+            <div class="sw-placeholders-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Avatar with title and description
             </div>
@@ -311,7 +311,7 @@
 </div>
 
 <!-- Profile Placeholder -->
-<div class="dsgt-placeholders-section-title">
+<div class="sw-placeholders-section-title">
     <i class="fa-solid fa-user-circle"></i>
     Profile Placeholder
 </div>
@@ -329,14 +329,14 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-placeholders-example">
-            <span class="dsgt-placeholders-example-label">Profile Skeleton</span>
-            <div class="dsgt-placeholder-profile">
-                <div class="dsgt-placeholder-profile-avatar"></div>
-                <div class="dsgt-placeholder-profile-name"></div>
-                <div class="dsgt-placeholder-profile-email"></div>
+        <div class="sw-placeholders-example">
+            <span class="sw-placeholders-example-label">Profile Skeleton</span>
+            <div class="sw-placeholder-profile">
+                <div class="sw-placeholder-profile-avatar"></div>
+                <div class="sw-placeholder-profile-name"></div>
+                <div class="sw-placeholder-profile-email"></div>
             </div>
-            <div class="dsgt-placeholders-helper">
+            <div class="sw-placeholders-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Centered profile information
             </div>
@@ -345,7 +345,7 @@
 </div>
 
 <!-- Stats Placeholder -->
-<div class="dsgt-placeholders-section-title">
+<div class="sw-placeholders-section-title">
     <i class="fa-solid fa-chart-bar"></i>
     Stats Placeholder
 </div>
@@ -363,23 +363,23 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-placeholders-example">
-            <span class="dsgt-placeholders-example-label">Stats Skeleton</span>
-            <div class="dsgt-placeholder-stats">
-                <div class="dsgt-placeholder-stat-item">
-                    <div class="dsgt-placeholder-stat-value"></div>
-                    <div class="dsgt-placeholder-stat-label"></div>
+        <div class="sw-placeholders-example">
+            <span class="sw-placeholders-example-label">Stats Skeleton</span>
+            <div class="sw-placeholder-stats">
+                <div class="sw-placeholder-stat-item">
+                    <div class="sw-placeholder-stat-value"></div>
+                    <div class="sw-placeholder-stat-label"></div>
                 </div>
-                <div class="dsgt-placeholder-stat-item">
-                    <div class="dsgt-placeholder-stat-value"></div>
-                    <div class="dsgt-placeholder-stat-label"></div>
+                <div class="sw-placeholder-stat-item">
+                    <div class="sw-placeholder-stat-value"></div>
+                    <div class="sw-placeholder-stat-label"></div>
                 </div>
-                <div class="dsgt-placeholder-stat-item">
-                    <div class="dsgt-placeholder-stat-value"></div>
-                    <div class="dsgt-placeholder-stat-label"></div>
+                <div class="sw-placeholder-stat-item">
+                    <div class="sw-placeholder-stat-value"></div>
+                    <div class="sw-placeholder-stat-label"></div>
                 </div>
             </div>
-            <div class="dsgt-placeholders-helper">
+            <div class="sw-placeholders-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Dashboard metrics loading state
             </div>
@@ -388,7 +388,7 @@
 </div>
 
 <!-- Chat Placeholder -->
-<div class="dsgt-placeholders-section-title">
+<div class="sw-placeholders-section-title">
     <i class="fa-solid fa-comments"></i>
     Chat Placeholder
 </div>
@@ -406,33 +406,33 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-placeholders-example">
-            <span class="dsgt-placeholders-example-label">Chat Skeleton</span>
-            <div class="dsgt-placeholder-chat">
-                <div class="dsgt-placeholder-chat-message">
-                    <div class="dsgt-placeholder-chat-avatar"></div>
-                    <div class="dsgt-placeholder-chat-bubble">
-                        <div class="dsgt-placeholder-chat-text"></div>
-                        <div class="dsgt-placeholder-chat-text"></div>
+        <div class="sw-placeholders-example">
+            <span class="sw-placeholders-example-label">Chat Skeleton</span>
+            <div class="sw-placeholder-chat">
+                <div class="sw-placeholder-chat-message">
+                    <div class="sw-placeholder-chat-avatar"></div>
+                    <div class="sw-placeholder-chat-bubble">
+                        <div class="sw-placeholder-chat-text"></div>
+                        <div class="sw-placeholder-chat-text"></div>
                     </div>
                 </div>
-                <div class="dsgt-placeholder-chat-message sent">
-                    <div class="dsgt-placeholder-chat-avatar"></div>
-                    <div class="dsgt-placeholder-chat-bubble sent">
-                        <div class="dsgt-placeholder-chat-text"></div>
-                        <div class="dsgt-placeholder-chat-text"></div>
-                        <div class="dsgt-placeholder-chat-text"></div>
+                <div class="sw-placeholder-chat-message sent">
+                    <div class="sw-placeholder-chat-avatar"></div>
+                    <div class="sw-placeholder-chat-bubble sent">
+                        <div class="sw-placeholder-chat-text"></div>
+                        <div class="sw-placeholder-chat-text"></div>
+                        <div class="sw-placeholder-chat-text"></div>
                     </div>
                 </div>
-                <div class="dsgt-placeholder-chat-message">
-                    <div class="dsgt-placeholder-chat-avatar"></div>
-                    <div class="dsgt-placeholder-chat-bubble">
-                        <div class="dsgt-placeholder-chat-text"></div>
-                        <div class="dsgt-placeholder-chat-text"></div>
+                <div class="sw-placeholder-chat-message">
+                    <div class="sw-placeholder-chat-avatar"></div>
+                    <div class="sw-placeholder-chat-bubble">
+                        <div class="sw-placeholder-chat-text"></div>
+                        <div class="sw-placeholder-chat-text"></div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-placeholders-helper">
+            <div class="sw-placeholders-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Received and sent messages
             </div>
@@ -441,12 +441,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-placeholders-section-title">
+<div class="sw-placeholders-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-placeholders-grid">
+<div class="sw-placeholders-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -455,7 +455,7 @@
                 </div>
                 <div>
                     <h3>CSS Classes</h3>
-                    <p class="card-subtitle">Available dsgt-placeholder utilities</p>
+                    <p class="card-subtitle">Available sw-placeholder utilities</p>
                 </div>
             </div>
         </div>
@@ -469,23 +469,23 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><code>.dsgt-placeholder</code></td>
-                        <td>Base dsgt-placeholder with animation</td>
+                        <td><code>.sw-placeholder</code></td>
+                        <td>Base sw-placeholder with animation</td>
                     </tr>
                     <tr>
-                        <td><code>.dsgt-placeholder-xs/sm/md/lg/xl</code></td>
+                        <td><code>.sw-placeholder-xs/sm/md/lg/xl</code></td>
                         <td>Size variants (height)</td>
                     </tr>
                     <tr>
-                        <td><code>.dsgt-placeholder-w25/50/75/100</code></td>
+                        <td><code>.sw-placeholder-w25/50/75/100</code></td>
                         <td>Width percentages</td>
                     </tr>
                     <tr>
-                        <td><code>.dsgt-placeholder-circle</code></td>
+                        <td><code>.sw-placeholder-circle</code></td>
                         <td>Circular shape</td>
                     </tr>
                     <tr>
-                        <td><code>.dsgt-placeholder-rounded</code></td>
+                        <td><code>.sw-placeholder-rounded</code></td>
                         <td>Rounded corners (8px)</td>
                     </tr>
                 </tbody>
@@ -546,12 +546,12 @@
 <script>
 // Placeholders page initialization
 $(document).ready(function() {
-    console.log('📝 DSGT Placeholders page loaded successfully');
+    console.log('📝 SW Placeholders page loaded successfully');
     
     // Demo: Show welcome toast
     setTimeout(() => {
         if (typeof MetroAdmin !== 'undefined') {
-            MetroAdmin.showDSGTInfoToast('Welcome to the Placeholders demo page!');
+            MetroAdmin.showSWInfoToast('Welcome to the Placeholders demo page!');
         }
     }, 1000);
 });

@@ -23,7 +23,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-btn-info-card">
+<div class="content-card sw-btn-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -36,12 +36,12 @@
 </div>
 
 <!-- Solid Buttons -->
-<div class="dsgt-btn-section-title">
+<div class="sw-btn-section-title">
     <i class="fa-solid fa-square-check"></i>
     Solid Buttons <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-btn-grid">
+<div class="sw-btn-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -55,18 +55,18 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-btn-example">
-                <span class="dsgt-btn-example-label">Solid Style Buttons</span>
-                <div class="dsgt-btn-group">
-                    <button class="dsgt-btn dsgt-btn-primary">Primary</button>
-                    <button class="dsgt-btn dsgt-btn-success">Success</button>
-                    <button class="dsgt-btn dsgt-btn-warning">Warning</button>
-                    <button class="dsgt-btn dsgt-btn-danger">Danger</button>
-                    <button class="dsgt-btn dsgt-btn-info">Info</button>
-                    <button class="dsgt-btn dsgt-btn-secondary">Secondary</button>
-                    <button class="dsgt-btn dsgt-btn-dark">Dark</button>
+            <div class="sw-btn-example">
+                <span class="sw-btn-example-label">Solid Style Buttons</span>
+                <div class="sw-btn-group">
+                    <button class="sw-btn sw-btn-primary">Primary</button>
+                    <button class="sw-btn sw-btn-success">Success</button>
+                    <button class="sw-btn sw-btn-warning">Warning</button>
+                    <button class="sw-btn sw-btn-danger">Danger</button>
+                    <button class="sw-btn sw-btn-info">Info</button>
+                    <button class="sw-btn sw-btn-secondary">Secondary</button>
+                    <button class="sw-btn sw-btn-dark">Dark</button>
                 </div>
-                <div class="dsgt-btn-helper">
+                <div class="sw-btn-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Solid buttons use gradient backgrounds for primary actions
                 </div>
@@ -87,16 +87,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-btn-example">
-                <span class="dsgt-btn-example-label">Outline Style Buttons</span>
-                <div class="dsgt-btn-group">
-                    <button class="dsgt-btn dsgt-btn-outline-primary">Primary</button>
-                    <button class="dsgt-btn dsgt-btn-outline-success">Success</button>
-                    <button class="dsgt-btn dsgt-btn-outline-warning">Warning</button>
-                    <button class="dsgt-btn dsgt-btn-outline-danger">Danger</button>
-                    <button class="dsgt-btn dsgt-btn-outline-info">Info</button>
+            <div class="sw-btn-example">
+                <span class="sw-btn-example-label">Outline Style Buttons</span>
+                <div class="sw-btn-group">
+                    <button class="sw-btn sw-btn-outline-primary">Primary</button>
+                    <button class="sw-btn sw-btn-outline-success">Success</button>
+                    <button class="sw-btn sw-btn-outline-warning">Warning</button>
+                    <button class="sw-btn sw-btn-outline-danger">Danger</button>
+                    <button class="sw-btn sw-btn-outline-info">Info</button>
                 </div>
-                <div class="dsgt-btn-helper">
+                <div class="sw-btn-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Outline buttons for secondary actions with subtle emphasis
                 </div>
@@ -106,12 +106,12 @@
 </div>
 
 <!-- Soft & Ghost Buttons -->
-<div class="dsgt-btn-section-title">
+<div class="sw-btn-section-title">
     <i class="fa-solid fa-droplet"></i>
     Soft & Ghost Buttons <span class="badge badge-info">Modern</span>
 </div>
 
-<div class="dsgt-btn-grid">
+<div class="sw-btn-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -125,16 +125,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-btn-example">
-                <span class="dsgt-btn-example-label">Soft Style Buttons</span>
-                <div class="dsgt-btn-group">
-                    <button class="dsgt-btn dsgt-btn-soft-primary">Primary</button>
-                    <button class="dsgt-btn dsgt-btn-soft-success">Success</button>
-                    <button class="dsgt-btn dsgt-btn-soft-warning">Warning</button>
-                    <button class="dsgt-btn dsgt-btn-soft-danger">Danger</button>
-                    <button class="dsgt-btn dsgt-btn-soft-info">Info</button>
+            <div class="sw-btn-example">
+                <span class="sw-btn-example-label">Soft Style Buttons</span>
+                <div class="sw-btn-group">
+                    <button class="sw-btn sw-btn-soft-primary">Primary</button>
+                    <button class="sw-btn sw-btn-soft-success">Success</button>
+                    <button class="sw-btn sw-btn-soft-warning">Warning</button>
+                    <button class="sw-btn sw-btn-soft-danger">Danger</button>
+                    <button class="sw-btn sw-btn-soft-info">Info</button>
                 </div>
-                <div class="dsgt-btn-helper">
+                <div class="sw-btn-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Soft buttons use 10% opacity backgrounds - perfect for modern UI
                 </div>
@@ -155,14 +155,14 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-btn-example">
-                <span class="dsgt-btn-example-label">Ghost Style Buttons</span>
-                <div class="dsgt-btn-group">
-                    <button class="dsgt-btn dsgt-btn-ghost-primary">Primary</button>
-                    <button class="dsgt-btn dsgt-btn-ghost-success">Success</button>
-                    <button class="dsgt-btn dsgt-btn-ghost-danger">Danger</button>
+            <div class="sw-btn-example">
+                <span class="sw-btn-example-label">Ghost Style Buttons</span>
+                <div class="sw-btn-group">
+                    <button class="sw-btn sw-btn-ghost-primary">Primary</button>
+                    <button class="sw-btn sw-btn-ghost-success">Success</button>
+                    <button class="sw-btn sw-btn-ghost-danger">Danger</button>
                 </div>
-                <div class="dsgt-btn-helper">
+                <div class="sw-btn-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Ghost buttons for tertiary actions with minimal visual weight
                 </div>
@@ -172,7 +172,7 @@
 </div>
 
 <!-- Button Sizes -->
-<div class="dsgt-btn-section-title">
+<div class="sw-btn-section-title">
     <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
     Button Sizes <span class="badge badge-warning">Sizing</span>
 </div>
@@ -190,16 +190,16 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-btn-example">
-            <span class="dsgt-btn-example-label">Size Comparison</span>
-            <div class="dsgt-btn-group" style="align-items: center;">
-                <button class="dsgt-btn dsgt-btn-primary dsgt-btn-xs">Extra Small</button>
-                <button class="dsgt-btn dsgt-btn-success dsgt-btn-sm">Small</button>
-                <button class="dsgt-btn dsgt-btn-warning dsgt-btn-md">Medium</button>
-                <button class="dsgt-btn dsgt-btn-danger dsgt-btn-lg">Large</button>
-                <button class="dsgt-btn dsgt-btn-info dsgt-btn-xl">Extra Large</button>
+        <div class="sw-btn-example">
+            <span class="sw-btn-example-label">Size Comparison</span>
+            <div class="sw-btn-group" style="align-items: center;">
+                <button class="sw-btn sw-btn-primary sw-btn-xs">Extra Small</button>
+                <button class="sw-btn sw-btn-success sw-btn-sm">Small</button>
+                <button class="sw-btn sw-btn-warning sw-btn-md">Medium</button>
+                <button class="sw-btn sw-btn-danger sw-btn-lg">Large</button>
+                <button class="sw-btn sw-btn-info sw-btn-xl">Extra Large</button>
             </div>
-            <div class="dsgt-btn-helper">
+            <div class="sw-btn-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Use XS-SM for compact UI, MD for general use, LG-XL for emphasis
             </div>
@@ -208,12 +208,12 @@
 </div>
 
 <!-- Buttons with Icons -->
-<div class="dsgt-btn-section-title">
+<div class="sw-btn-section-title">
     <i class="fa-solid fa-icons"></i>
     Buttons with Icons <span class="badge badge-success">Enhanced</span>
 </div>
 
-<div class="dsgt-btn-grid">
+<div class="sw-btn-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -227,29 +227,29 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-btn-example">
-                <span class="dsgt-btn-example-label">Icon + Text Buttons</span>
-                <div class="dsgt-btn-group">
-                    <button class="dsgt-btn dsgt-btn-primary">
+            <div class="sw-btn-example">
+                <span class="sw-btn-example-label">Icon + Text Buttons</span>
+                <div class="sw-btn-group">
+                    <button class="sw-btn sw-btn-primary">
                         <i class="fa-solid fa-plus"></i> Add New
                     </button>
-                    <button class="dsgt-btn dsgt-btn-success">
+                    <button class="sw-btn sw-btn-success">
                         <i class="fa-solid fa-check"></i> Approve
                     </button>
-                    <button class="dsgt-btn dsgt-btn-warning">
+                    <button class="sw-btn sw-btn-warning">
                         <i class="fa-solid fa-pen"></i> Edit
                     </button>
-                    <button class="dsgt-btn dsgt-btn-danger">
+                    <button class="sw-btn sw-btn-danger">
                         <i class="fa-solid fa-trash"></i> Delete
                     </button>
-                    <button class="dsgt-btn dsgt-btn-info">
+                    <button class="sw-btn sw-btn-info">
                         <i class="fa-solid fa-download"></i> Download
                     </button>
-                    <button class="dsgt-btn dsgt-btn-secondary">
+                    <button class="sw-btn sw-btn-secondary">
                         <i class="fa-solid fa-eye"></i> View
                     </button>
                 </div>
-                <div class="dsgt-btn-helper">
+                <div class="sw-btn-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Icons improve visual recognition and user comprehension
                 </div>
@@ -270,45 +270,45 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-btn-example">
-                <span class="dsgt-btn-example-label">Square Icon Buttons</span>
-                <div class="dsgt-btn-group" style="margin-bottom: 20px;">
-                    <button class="dsgt-btn dsgt-btn-primary dsgt-btn-icon dsgt-btn-sm">
+            <div class="sw-btn-example">
+                <span class="sw-btn-example-label">Square Icon Buttons</span>
+                <div class="sw-btn-group" style="margin-bottom: 20px;">
+                    <button class="sw-btn sw-btn-primary sw-btn-icon sw-btn-sm">
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="dsgt-btn dsgt-btn-success dsgt-btn-icon">
+                    <button class="sw-btn sw-btn-success sw-btn-icon">
                         <i class="fa-solid fa-check"></i>
                     </button>
-                    <button class="dsgt-btn dsgt-btn-warning dsgt-btn-icon dsgt-btn-lg">
+                    <button class="sw-btn sw-btn-warning sw-btn-icon sw-btn-lg">
                         <i class="fa-solid fa-pen"></i>
                     </button>
-                    <button class="dsgt-btn dsgt-btn-danger dsgt-btn-icon">
+                    <button class="sw-btn sw-btn-danger sw-btn-icon">
                         <i class="fa-solid fa-trash"></i>
                     </button>
-                    <button class="dsgt-btn dsgt-btn-info dsgt-btn-icon">
+                    <button class="sw-btn sw-btn-info sw-btn-icon">
                         <i class="fa-solid fa-download"></i>
                     </button>
                 </div>
 
-                <span class="dsgt-btn-example-label">Circular Icon Buttons</span>
-                <div class="dsgt-btn-group">
-                    <button class="dsgt-btn dsgt-btn-primary dsgt-btn-icon dsgt-btn-icon-circle dsgt-btn-sm">
+                <span class="sw-btn-example-label">Circular Icon Buttons</span>
+                <div class="sw-btn-group">
+                    <button class="sw-btn sw-btn-primary sw-btn-icon sw-btn-icon-circle sw-btn-sm">
                         <i class="fa-solid fa-plus"></i>
                     </button>
-                    <button class="dsgt-btn dsgt-btn-success dsgt-btn-icon dsgt-btn-icon-circle">
+                    <button class="sw-btn sw-btn-success sw-btn-icon sw-btn-icon-circle">
                         <i class="fa-solid fa-check"></i>
                     </button>
-                    <button class="dsgt-btn dsgt-btn-warning dsgt-btn-icon dsgt-btn-icon-circle dsgt-btn-lg">
+                    <button class="sw-btn sw-btn-warning sw-btn-icon sw-btn-icon-circle sw-btn-lg">
                         <i class="fa-solid fa-pen"></i>
                     </button>
-                    <button class="dsgt-btn dsgt-btn-danger dsgt-btn-icon dsgt-btn-icon-circle">
+                    <button class="sw-btn sw-btn-danger sw-btn-icon sw-btn-icon-circle">
                         <i class="fa-solid fa-trash"></i>
                     </button>
-                    <button class="dsgt-btn dsgt-btn-info dsgt-btn-icon dsgt-btn-icon-circle">
+                    <button class="sw-btn sw-btn-info sw-btn-icon sw-btn-icon-circle">
                         <i class="fa-solid fa-download"></i>
                     </button>
                 </div>
-                <div class="dsgt-btn-helper">
+                <div class="sw-btn-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Icon-only buttons for toolbars and compact interfaces
                 </div>
@@ -318,7 +318,7 @@
 </div>
 
 <!-- Pill Buttons -->
-<div class="dsgt-btn-section-title">
+<div class="sw-btn-section-title">
     <i class="fa-solid fa-capsules"></i>
     Pill Buttons <span class="badge badge-info">Rounded</span>
 </div>
@@ -336,23 +336,23 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-btn-example">
-            <span class="dsgt-btn-example-label">Pill Style Buttons</span>
-            <div class="dsgt-btn-group">
-                <button class="dsgt-btn dsgt-btn-primary dsgt-btn-pill">
+        <div class="sw-btn-example">
+            <span class="sw-btn-example-label">Pill Style Buttons</span>
+            <div class="sw-btn-group">
+                <button class="sw-btn sw-btn-primary sw-btn-pill">
                     <i class="fa-solid fa-rocket"></i> Get Started
                 </button>
-                <button class="dsgt-btn dsgt-btn-success dsgt-btn-pill">
+                <button class="sw-btn sw-btn-success sw-btn-pill">
                     <i class="fa-solid fa-check-circle"></i> Complete
                 </button>
-                <button class="dsgt-btn dsgt-btn-outline-warning dsgt-btn-pill">
+                <button class="sw-btn sw-btn-outline-warning sw-btn-pill">
                     <i class="fa-solid fa-clock"></i> Pending
                 </button>
-                <button class="dsgt-btn dsgt-btn-soft-danger dsgt-btn-pill">
+                <button class="sw-btn sw-btn-soft-danger sw-btn-pill">
                     <i class="fa-solid fa-times-circle"></i> Cancel
                 </button>
             </div>
-            <div class="dsgt-btn-helper">
+            <div class="sw-btn-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Pill buttons use border-radius: 50px for fully rounded corners
             </div>
@@ -361,12 +361,12 @@
 </div>
 
 <!-- Button States -->
-<div class="dsgt-btn-section-title">
+<div class="sw-btn-section-title">
     <i class="fa-solid fa-toggle-on"></i>
     Button States <span class="badge badge-danger">Interactive</span>
 </div>
 
-<div class="dsgt-btn-grid">
+<div class="sw-btn-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -380,20 +380,20 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-btn-example">
-                <span class="dsgt-btn-example-label">Hover over these buttons</span>
-                <div class="dsgt-btn-group">
-                    <button class="dsgt-btn dsgt-btn-primary">
+            <div class="sw-btn-example">
+                <span class="sw-btn-example-label">Hover over these buttons</span>
+                <div class="sw-btn-group">
+                    <button class="sw-btn sw-btn-primary">
                         <i class="fa-solid fa-arrow-up"></i> Normal
                     </button>
-                    <button class="dsgt-btn dsgt-btn-success">
+                    <button class="sw-btn sw-btn-success">
                         Hover me <i class="fa-solid fa-hand-pointer"></i>
                     </button>
-                    <button class="dsgt-btn dsgt-btn-warning">
+                    <button class="sw-btn sw-btn-warning">
                         Click me <i class="fa-solid fa-hand-point-up"></i>
                     </button>
                 </div>
-                <div class="dsgt-btn-helper">
+                <div class="sw-btn-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Buttons have translateY(-2px) on hover with box shadow
                 </div>
@@ -414,33 +414,33 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-btn-example">
-                <span class="dsgt-btn-example-label">Disabled Buttons</span>
-                <div class="dsgt-btn-group" style="margin-bottom: 20px;">
-                    <button class="dsgt-btn dsgt-btn-primary dsgt-btn-disabled" disabled>
+            <div class="sw-btn-example">
+                <span class="sw-btn-example-label">Disabled Buttons</span>
+                <div class="sw-btn-group" style="margin-bottom: 20px;">
+                    <button class="sw-btn sw-btn-primary sw-btn-disabled" disabled>
                         <i class="fa-solid fa-ban"></i> Disabled
                     </button>
-                    <button class="dsgt-btn dsgt-btn-success dsgt-btn-disabled" disabled>
+                    <button class="sw-btn sw-btn-success sw-btn-disabled" disabled>
                         Not Available
                     </button>
-                    <button class="dsgt-btn dsgt-btn-outline-danger dsgt-btn-disabled" disabled>
+                    <button class="sw-btn sw-btn-outline-danger sw-btn-disabled" disabled>
                         Cannot Delete
                     </button>
                 </div>
 
-                <span class="dsgt-btn-example-label">Loading Buttons (Click to trigger)</span>
-                <div class="dsgt-btn-group">
-                    <button class="dsgt-btn dsgt-btn-primary" onclick="MetroAdmin.toggleLoading(this)">
+                <span class="sw-btn-example-label">Loading Buttons (Click to trigger)</span>
+                <div class="sw-btn-group">
+                    <button class="sw-btn sw-btn-primary" onclick="MetroAdmin.toggleLoading(this)">
                         <i class="fa-solid fa-spinner"></i> Submit
                     </button>
-                    <button class="dsgt-btn dsgt-btn-success" onclick="MetroAdmin.toggleLoading(this)">
+                    <button class="sw-btn sw-btn-success" onclick="MetroAdmin.toggleLoading(this)">
                         <i class="fa-solid fa-save"></i> Save
                     </button>
-                    <button class="dsgt-btn dsgt-btn-warning" onclick="MetroAdmin.toggleLoading(this)">
+                    <button class="sw-btn sw-btn-warning" onclick="MetroAdmin.toggleLoading(this)">
                         <i class="fa-solid fa-upload"></i> Upload
                     </button>
                 </div>
-                <div class="dsgt-btn-helper">
+                <div class="sw-btn-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Disabled: 50% opacity, Loading: spinner animation
                 </div>
@@ -450,7 +450,7 @@
 </div>
 
 <!-- Block Buttons -->
-<div class="dsgt-btn-section-title">
+<div class="sw-btn-section-title">
     <i class="fa-solid fa-arrows-left-right"></i>
     Block Buttons
 </div>
@@ -468,20 +468,20 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-btn-example">
-            <span class="dsgt-btn-example-label">Block Level Buttons</span>
+        <div class="sw-btn-example">
+            <span class="sw-btn-example-label">Block Level Buttons</span>
             <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px;">
-                <button class="dsgt-btn dsgt-btn-primary dsgt-btn-block">
+                <button class="sw-btn sw-btn-primary sw-btn-block">
                     <i class="fa-solid fa-right-to-bracket"></i> Sign In
                 </button>
-                <button class="dsgt-btn dsgt-btn-success dsgt-btn-block">
+                <button class="sw-btn sw-btn-success sw-btn-block">
                     <i class="fa-solid fa-user-plus"></i> Create Account
                 </button>
-                <button class="dsgt-btn dsgt-btn-outline-secondary dsgt-btn-block">
+                <button class="sw-btn sw-btn-outline-secondary sw-btn-block">
                     <i class="fa-solid fa-arrow-left"></i> Go Back
                 </button>
             </div>
-            <div class="dsgt-btn-helper">
+            <div class="sw-btn-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Block buttons are perfect for forms and mobile interfaces
             </div>
@@ -490,12 +490,12 @@
 </div>
 
 <!-- Button Groups -->
-<div class="dsgt-btn-section-title">
+<div class="sw-btn-section-title">
     <i class="fa-solid fa-object-group"></i>
     Button Groups
 </div>
 
-<div class="dsgt-btn-grid">
+<div class="sw-btn-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -509,20 +509,20 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-btn-example">
-                <span class="dsgt-btn-example-label">Action Group</span>
-                <div class="dsgt-btn-group">
-                    <button class="dsgt-btn dsgt-btn-primary">
+            <div class="sw-btn-example">
+                <span class="sw-btn-example-label">Action Group</span>
+                <div class="sw-btn-group">
+                    <button class="sw-btn sw-btn-primary">
                         <i class="fa-solid fa-floppy-disk"></i> Save
                     </button>
-                    <button class="dsgt-btn dsgt-btn-outline-secondary">
+                    <button class="sw-btn sw-btn-outline-secondary">
                         <i class="fa-solid fa-ban"></i> Cancel
                     </button>
-                    <button class="dsgt-btn dsgt-btn-outline-danger">
+                    <button class="sw-btn sw-btn-outline-danger">
                         <i class="fa-solid fa-trash"></i> Delete
                     </button>
                 </div>
-                <div class="dsgt-btn-helper">
+                <div class="sw-btn-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Group related actions together for better UX
                 </div>
@@ -543,23 +543,23 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-btn-example">
-                <span class="dsgt-btn-example-label">Settings Menu</span>
-                <div class="dsgt-btn-group-vertical">
-                    <button class="dsgt-btn dsgt-btn-primary">
+            <div class="sw-btn-example">
+                <span class="sw-btn-example-label">Settings Menu</span>
+                <div class="sw-btn-group-vertical">
+                    <button class="sw-btn sw-btn-primary">
                         <i class="fa-solid fa-user"></i> Profile
                     </button>
-                    <button class="dsgt-btn dsgt-btn-outline-secondary">
+                    <button class="sw-btn sw-btn-outline-secondary">
                         <i class="fa-solid fa-gear"></i> Settings
                     </button>
-                    <button class="dsgt-btn dsgt-btn-outline-secondary">
+                    <button class="sw-btn sw-btn-outline-secondary">
                         <i class="fa-solid fa-shield-halved"></i> Security
                     </button>
-                    <button class="dsgt-btn dsgt-btn-outline-danger">
+                    <button class="sw-btn sw-btn-outline-danger">
                         <i class="fa-solid fa-right-from-bracket"></i> Logout
                     </button>
                 </div>
-                <div class="dsgt-btn-helper">
+                <div class="sw-btn-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Vertical groups work well for menus and settings
                 </div>
@@ -569,7 +569,7 @@
 </div>
 
 <!-- Interactive Demo -->
-<div class="dsgt-btn-section-title">
+<div class="sw-btn-section-title">
     <i class="fa-solid fa-wand-magic-sparkles"></i>
     Interactive Demo <span class="badge badge-success">Try It</span>
 </div>
@@ -587,25 +587,25 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-btn-example">
-            <span class="dsgt-btn-example-label">Generate Buttons</span>
-            <div class="dsgt-btn-group" style="margin-bottom: 20px;">
-                <button class="dsgt-btn dsgt-btn-primary" onclick="MetroAdmin.generateButton('solid')">
+        <div class="sw-btn-example">
+            <span class="sw-btn-example-label">Generate Buttons</span>
+            <div class="sw-btn-group" style="margin-bottom: 20px;">
+                <button class="sw-btn sw-btn-primary" onclick="MetroAdmin.generateButton('solid')">
                     <i class="fa-solid fa-plus"></i> Solid
                 </button>
-                <button class="dsgt-btn dsgt-btn-outline-success" onclick="MetroAdmin.generateButton('outline')">
+                <button class="sw-btn sw-btn-outline-success" onclick="MetroAdmin.generateButton('outline')">
                     <i class="fa-solid fa-plus"></i> Outline
                 </button>
-                <button class="dsgt-btn dsgt-btn-soft-warning" onclick="MetroAdmin.generateButton('soft')">
+                <button class="sw-btn sw-btn-soft-warning" onclick="MetroAdmin.generateButton('soft')">
                     <i class="fa-solid fa-plus"></i> Soft
                 </button>
-                <button class="dsgt-btn dsgt-btn-ghost-danger" onclick="MetroAdmin.generateButton('ghost')">
+                <button class="sw-btn sw-btn-ghost-danger" onclick="MetroAdmin.generateButton('ghost')">
                     <i class="fa-solid fa-plus"></i> Ghost
                 </button>
-                <button class="dsgt-btn dsgt-btn-info dsgt-btn-pill" onclick="MetroAdmin.generateButton('pill')">
+                <button class="sw-btn sw-btn-info sw-btn-pill" onclick="MetroAdmin.generateButton('pill')">
                     <i class="fa-solid fa-plus"></i> Pill
                 </button>
-                <button class="dsgt-btn dsgt-btn-secondary" onclick="MetroAdmin.clearAllButtons()">
+                <button class="sw-btn sw-btn-secondary" onclick="MetroAdmin.clearAllButtons()">
                     <i class="fa-solid fa-broom"></i> Clear All
                 </button>
             </div>
@@ -617,7 +617,7 @@
                 </p>
             </div>
 
-            <div class="dsgt-btn-helper">
+            <div class="sw-btn-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Buttons are generated with fade-in animation and can be cleared all at once
             </div>
@@ -626,12 +626,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-btn-section-title">
+<div class="sw-btn-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-btn-grid">
+<div class="sw-btn-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -646,18 +646,18 @@
         </div>
         <div class="card-body">
             <pre style="background: var(--bg-tertiary); padding: 16px; border-radius: 8px; font-size: 12px; overflow-x: auto;"><code>&lt;!-- Solid Button --&gt;
-&lt;button class="dsgt-btn dsgt-btn-primary"&gt;
+&lt;button class="sw-btn sw-btn-primary"&gt;
   &lt;i class="fa-solid fa-check"&gt;&lt;/i&gt;
   Save
 &lt;/button&gt;
 
 &lt;!-- Outline Button --&gt;
-&lt;button class="dsgt-btn dsgt-btn-outline-danger"&gt;
+&lt;button class="sw-btn sw-btn-outline-danger"&gt;
   Delete
 &lt;/button&gt;
 
 &lt;!-- Icon Button --&gt;
-&lt;button class="dsgt-btn dsgt-btn-info dsgt-btn-icon"&gt;
+&lt;button class="sw-btn sw-btn-info sw-btn-icon"&gt;
   &lt;i class="fa-solid fa-download"&gt;&lt;/i&gt;
 &lt;/button&gt;</code></pre>
         </div>
@@ -716,7 +716,7 @@
 <script>
 // Buttons page initialization
 $(document).ready(function() {
-    console.log('📋 DSGT Buttons page loaded successfully');
+    console.log('📋 SW Buttons page loaded successfully');
 });
 </script>
 @endpush

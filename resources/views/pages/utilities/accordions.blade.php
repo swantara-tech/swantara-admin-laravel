@@ -23,7 +23,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-ac-info-card">
+<div class="content-card sw-ac-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -36,12 +36,12 @@
 </div>
 
 <!-- Basic Accordion -->
-<div class="dsgt-ac-section-title">
+<div class="sw-ac-section-title">
     <i class="fa-solid fa-layer-group"></i>
     Basic Accordions <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-accordion-grid">
+<div class="sw-accordion-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -55,25 +55,25 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-ac-example">
-                <span class="dsgt-ac-example-label">Standard Accordion</span>
-                <div class="dsgt-accordion" data-one-open="true" data-open="0">
-                    <div class="dsgt-ac-frame active">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title">What is Metro UI?</span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            <div class="sw-ac-example">
+                <span class="sw-ac-example-label">Standard Accordion</span>
+                <div class="sw-accordion" data-one-open="true" data-open="0">
+                    <div class="sw-ac-frame active">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title">What is Metro UI?</span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Metro UI is a modern design language based on Microsoft's Fluent Design System. It emphasizes clean typography, flat colors, and content-over-chrome philosophy.</p>
                             <p>Our template implements Metro UI v5 with full customization capabilities.</p>
                         </div>
                     </div>
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title">What features are included?</span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title">What features are included?</span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Swantara Admin includes:</p>
                             <ul>
                                 <li>Responsive sidebar with collapsible menu</li>
@@ -85,17 +85,17 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title">Is it free to use?</span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title">Is it free to use?</span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Yes! Swantara Admin is completely free and open-source. You can use it for personal and commercial projects without any restrictions.</p>
                         </div>
                     </div>
                 </div>
-                <div class="dsgt-ac-helper">
+                <div class="sw-ac-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Only one panel can be open at a time (data-one-open="true")
                 </div>
@@ -116,15 +116,15 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-ac-example">
-                <span class="dsgt-ac-example-label">Multi-Open Accordion</span>
-                <div class="dsgt-accordion" data-one-open="false">
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title">Getting Started Guide</span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            <div class="sw-ac-example">
+                <span class="sw-ac-example-label">Multi-Open Accordion</span>
+                <div class="sw-accordion" data-one-open="false">
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title">Getting Started Guide</span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>1. Install Laragon or XAMPP for local development</p>
                             <p>2. Clone the repository to your www folder</p>
                             <p>3. Run <code>composer install</code> and <code>npm install</code></p>
@@ -132,26 +132,26 @@
                             <p>5. Run <code>php artisan key:generate</code></p>
                         </div>
                     </div>
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title">Customization Options</span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title">Customization Options</span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>You can customize colors, fonts, layouts, and components through CSS variables in app.css. Check the documentation for detailed customization guides.</p>
                         </div>
                     </div>
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title">Browser Support</span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title">Browser Support</span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Supports all modern browsers: Chrome, Firefox, Safari, Edge (Chromium-based), and Opera.</p>
                         </div>
                     </div>
                 </div>
-                <div class="dsgt-ac-helper">
+                <div class="sw-ac-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Multiple panels can be open simultaneously (data-one-open="false")
                 </div>
@@ -161,12 +161,12 @@
 </div>
 
 <!-- Accordion with Icons -->
-<div class="dsgt-ac-section-title">
+<div class="sw-ac-section-title">
     <i class="fa-solid fa-icons"></i>
     Accordions with Icons <span class="badge badge-info">Enhanced</span>
 </div>
 
-<div class="dsgt-accordion-grid">
+<div class="sw-accordion-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -180,48 +180,48 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-ac-example">
-                <span class="dsgt-ac-example-label">Accordion with Icons</span>
-                <div class="dsgt-accordion" data-one-open="true">
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title dsgt-ac-heading-icon">
+            <div class="sw-ac-example">
+                <span class="sw-ac-example-label">Accordion with Icons</span>
+                <div class="sw-accordion" data-one-open="true">
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title sw-ac-heading-icon">
                                 <i class="fa-solid fa-rocket"></i>
                                 Quick Start
                             </span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Get up and running in minutes. Follow our quick start guide to set up your development environment and create your first project.</p>
                             <button class="btn btn-primary btn-sm" style="margin-top: 12px;">
                                 <i class="fa-solid fa-play"></i> Start Tutorial
                             </button>
                         </div>
                     </div>
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title dsgt-ac-heading-icon">
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title sw-ac-heading-icon">
                                 <i class="fa-solid fa-book-open"></i>
                                 Documentation
                             </span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Comprehensive documentation covering all components, utilities, and APIs. Includes code examples, best practices, and troubleshooting guides.</p>
                             <button class="btn btn-info btn-sm" style="margin-top: 12px;">
                                 <i class="fa-solid fa-arrow-right"></i> Read Docs
                             </button>
                         </div>
                     </div>
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title dsgt-ac-heading-icon">
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title sw-ac-heading-icon">
                                 <i class="fa-solid fa-headset"></i>
                                 Support & Community
                             </span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Join our community forum, report issues on GitHub, or contact our support team directly. We're here to help!</p>
                             <button class="btn btn-success btn-sm" style="margin-top: 12px;">
                                 <i class="fa-solid fa-comments"></i> Get Help
@@ -229,7 +229,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="dsgt-ac-helper">
+                <div class="sw-ac-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Icons improve visual scanning and user comprehension
                 </div>
@@ -250,47 +250,47 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-ac-example">
-                <span class="dsgt-ac-example-label">Frequently Asked Questions</span>
-                <div class="dsgt-accordion" data-one-open="true">
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title dsgt-ac-heading-icon">
+            <div class="sw-ac-example">
+                <span class="sw-ac-example-label">Frequently Asked Questions</span>
+                <div class="sw-accordion" data-one-open="true">
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title sw-ac-heading-icon">
                                 <i class="fa-solid fa-circle-question"></i>
                                 How do I customize the theme colors?
                             </span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Theme colors are defined as CSS variables in <code>app.css</code>. Simply modify the <code>--accent</code>, <code>--success</code>, <code>--warning</code>, and other variables to match your brand colors.</p>
                         </div>
                     </div>
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title dsgt-ac-heading-icon">
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title sw-ac-heading-icon">
                                 <i class="fa-solid fa-circle-question"></i>
                                 Can I use this with Laravel 11?
                             </span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Yes! This template is built with Laravel 11 and fully compatible with all Laravel 11 features including Vite, Pest testing, and the new directory structure.</p>
                         </div>
                     </div>
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title dsgt-ac-heading-icon">
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title sw-ac-heading-icon">
                                 <i class="fa-solid fa-circle-question"></i>
                                 Is responsive design included?
                             </span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Absolutely! The template is fully responsive with mobile-first approach. Sidebar becomes overlay on mobile, tables are responsive, and all components adapt to screen size.</p>
                         </div>
                     </div>
                 </div>
-                <div class="dsgt-ac-helper">
+                <div class="sw-ac-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Perfect for FAQ sections and help documentation
                 </div>
@@ -300,12 +300,12 @@
 </div>
 
 <!-- Accordion Variants -->
-<div class="dsgt-ac-section-title">
+<div class="sw-ac-section-title">
     <i class="fa-solid fa-palette"></i>
     Accordion Variants <span class="badge badge-warning">Advanced</span>
 </div>
 
-<div class="dsgt-accordion-grid">
+<div class="sw-accordion-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -319,38 +319,38 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-ac-example">
-                <span class="dsgt-ac-example-label">No Border Style</span>
-                <div class="dsgt-accordion borderless" data-one-open="true">
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title">Section One</span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            <div class="sw-ac-example">
+                <span class="sw-ac-example-label">No Border Style</span>
+                <div class="sw-accordion borderless" data-one-open="true">
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title">Section One</span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Borderless accordions provide a cleaner look, perfect for modern minimal designs. Content flows seamlessly without visual barriers.</p>
                         </div>
                     </div>
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title">Section Two</span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title">Section Two</span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Only divider lines separate sections, creating a more open and breathable layout.</p>
                         </div>
                     </div>
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title">Section Three</span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title">Section Three</span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>Great for settings panels, user profiles, and content-heavy applications.</p>
                         </div>
                     </div>
                 </div>
-                <div class="dsgt-ac-helper">
+                <div class="sw-ac-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Minimalist approach with subtle dividers
                 </div>
@@ -371,39 +371,39 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-ac-example">
-                <span class="dsgt-ac-example-label">First Panel Open by Default</span>
-                <div class="dsgt-accordion" data-one-open="true" data-open="0">
-                    <div class="dsgt-ac-frame active">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title">Welcome Message (Open)</span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            <div class="sw-ac-example">
+                <span class="sw-ac-example-label">First Panel Open by Default</span>
+                <div class="sw-accordion" data-one-open="true" data-open="0">
+                    <div class="sw-ac-frame active">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title">Welcome Message (Open)</span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p><strong>Welcome to Swantara Admin!</strong> This panel is open by default using <code>data-open="0"</code> attribute.</p>
                             <p>Pre-opening panels is useful when you want to highlight important information immediately without requiring user interaction.</p>
                         </div>
                     </div>
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title">Additional Information</span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title">Additional Information</span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>This panel starts collapsed but can be opened by clicking the heading.</p>
                         </div>
                     </div>
-                    <div class="dsgt-ac-frame">
-                        <div class="dsgt-ac-heading">
-                            <span class="dsgt-ac-title">More Details</span>
-                            <span class="dsgt-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                    <div class="sw-ac-frame">
+                        <div class="sw-ac-heading">
+                            <span class="sw-ac-title">More Details</span>
+                            <span class="sw-ac-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
                         </div>
-                        <div class="dsgt-ac-content">
+                        <div class="sw-ac-content">
                             <p>You can pre-open any panel by setting the data-open attribute to its index (0-based).</p>
                         </div>
                     </div>
                 </div>
-                <div class="dsgt-ac-helper">
+                <div class="sw-ac-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Use data-open="0" to pre-open first panel
                 </div>
@@ -413,7 +413,7 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-ac-section-title">
+<div class="sw-ac-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Configuration
 </div>
@@ -434,13 +434,13 @@
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
             <div>
                 <h4 style="margin-bottom: 12px; font-size: 14px;">Basic Structure</h4>
-                <pre style="background: var(--bg-tertiary); padding: 16px; border-radius: 8px; font-size: 12px; overflow-x: auto;"><code>&lt;div class="dsgt-accordion" data-one-open="true" data-open="0"&gt;
-  &lt;div class="dsgt-ac-frame"&gt;
-    &lt;div class="dsgt-ac-heading"&gt;
-      &lt;span class="dsgt-ac-title"&gt;Title&lt;/span&gt;
-      &lt;span class="dsgt-ac-toggle-icon"&gt;&lt;i class="fa-solid fa-chevron-down"&gt;&lt;/i&gt;&lt;/span&gt;
+                <pre style="background: var(--bg-tertiary); padding: 16px; border-radius: 8px; font-size: 12px; overflow-x: auto;"><code>&lt;div class="sw-accordion" data-one-open="true" data-open="0"&gt;
+  &lt;div class="sw-ac-frame"&gt;
+    &lt;div class="sw-ac-heading"&gt;
+      &lt;span class="sw-ac-title"&gt;Title&lt;/span&gt;
+      &lt;span class="sw-ac-toggle-icon"&gt;&lt;i class="fa-solid fa-chevron-down"&gt;&lt;/i&gt;&lt;/span&gt;
     &lt;/div&gt;
-    &lt;div class="dsgt-ac-content"&gt;
+    &lt;div class="sw-ac-content"&gt;
       Content here
     &lt;/div&gt;
   &lt;/div&gt;
@@ -484,15 +484,15 @@
 @push('scripts')
 <script>
 /**
- * DSGT Metro Template - Accordion Page Demo
- * Uses global DSGT accordion functions from app.js
+ * SW Metro Template - Accordion Page Demo
+ * Uses global SW accordion functions from app.js
  */
 $(document).ready(function() {
-    console.log('✨ DSGT Accordions page loaded successfully');
+    console.log('✨ SW Accordions page loaded successfully');
     
-    // Handle "Try Accordions" button using DSGT global function
+    // Handle "Try Accordions" button using SW global function
     window.openFirstAccordion = function() {
-        MetroAdmin.openAccordionPanel('.dsgt-accordion', 0, true);
+        MetroAdmin.openAccordionPanel('.sw-accordion', 0, true);
     };
 });
 </script>

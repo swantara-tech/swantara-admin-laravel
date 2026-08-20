@@ -23,7 +23,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-cr-info-card">
+<div class="content-card sw-cr-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -36,12 +36,12 @@
 </div>
 
 <!-- Basic Carousel -->
-<div class="dsgt-cr-section-title">
+<div class="sw-cr-section-title">
     <i class="fa-solid fa-images"></i>
     Basic Carousel <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-cr-grid">
+<div class="sw-cr-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -55,43 +55,43 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-cr-example">
-                <span class="dsgt-cr-example-label">Hero Slider with Content</span>
-                <div class="dsgt-cr" id="heroCarousel" data-autoplay="5000">
-                    <div class="dsgt-cr-container">
-                        <div class="dsgt-cr-track">
-                            <div class="dsgt-cr-slide">
-                                <div class="dsgt-cr-slide-placeholder bg-gradient-1">
+            <div class="sw-cr-example">
+                <span class="sw-cr-example-label">Hero Slider with Content</span>
+                <div class="sw-cr" id="heroCarousel" data-autoplay="5000">
+                    <div class="sw-cr-container">
+                        <div class="sw-cr-track">
+                            <div class="sw-cr-slide">
+                                <div class="sw-cr-slide-placeholder bg-gradient-1">
                                     <i class="fa-solid fa-rocket"></i>
                                 </div>
-                                <div class="dsgt-cr-overlay">
-                                    <h3 class="dsgt-cr-slide-title">Launch Your Project</h3>
-                                    <p class="dsgt-cr-slide-description">Build amazing experiences with our platform</p>
-                                    <button class="dsgt-cr-slide-btn">
+                                <div class="sw-cr-overlay">
+                                    <h3 class="sw-cr-slide-title">Launch Your Project</h3>
+                                    <p class="sw-cr-slide-description">Build amazing experiences with our platform</p>
+                                    <button class="sw-cr-slide-btn">
                                         <i class="fa-solid fa-arrow-right"></i> Get Started
                                     </button>
                                 </div>
                             </div>
-                            <div class="dsgt-cr-slide">
-                                <div class="dsgt-cr-slide-placeholder bg-gradient-2">
+                            <div class="sw-cr-slide">
+                                <div class="sw-cr-slide-placeholder bg-gradient-2">
                                     <i class="fa-solid fa-palette"></i>
                                 </div>
-                                <div class="dsgt-cr-overlay">
-                                    <h3 class="dsgt-cr-slide-title">Beautiful Design</h3>
-                                    <p class="dsgt-cr-slide-description">Create stunning interfaces with modern tools</p>
-                                    <button class="dsgt-cr-slide-btn">
+                                <div class="sw-cr-overlay">
+                                    <h3 class="sw-cr-slide-title">Beautiful Design</h3>
+                                    <p class="sw-cr-slide-description">Create stunning interfaces with modern tools</p>
+                                    <button class="sw-cr-slide-btn">
                                         <i class="fa-solid fa-eye"></i> View Examples
                                     </button>
                                 </div>
                             </div>
-                            <div class="dsgt-cr-slide">
-                                <div class="dsgt-cr-slide-placeholder bg-gradient-3">
+                            <div class="sw-cr-slide">
+                                <div class="sw-cr-slide-placeholder bg-gradient-3">
                                     <i class="fa-solid fa-chart-line"></i>
                                 </div>
-                                <div class="dsgt-cr-overlay">
-                                    <h3 class="dsgt-cr-slide-title">Grow Your Business</h3>
-                                    <p class="dsgt-cr-slide-description">Scale with powerful analytics and insights</p>
-                                    <button class="dsgt-cr-slide-btn">
+                                <div class="sw-cr-overlay">
+                                    <h3 class="sw-cr-slide-title">Grow Your Business</h3>
+                                    <p class="sw-cr-slide-description">Scale with powerful analytics and insights</p>
+                                    <button class="sw-cr-slide-btn">
                                         <i class="fa-solid fa-chart-bar"></i> Learn More
                                     </button>
                                 </div>
@@ -99,24 +99,24 @@
                         </div>
                     </div>
                     
-                    <button class="dsgt-cr-nav dsgt-cr-nav-prev" onclick="MetroAdmin.moveDSGTCarousel('heroCarousel', -1)">
+                    <button class="sw-cr-nav sw-cr-nav-prev" onclick="MetroAdmin.moveSWCarousel('heroCarousel', -1)">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
-                    <button class="dsgt-cr-nav dsgt-cr-nav-next" onclick="MetroAdmin.moveDSGTCarousel('heroCarousel', 1)">
+                    <button class="sw-cr-nav sw-cr-nav-next" onclick="MetroAdmin.moveSWCarousel('heroCarousel', 1)">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                     
-                    <div class="dsgt-cr-indicators">
-                        <div class="dsgt-cr-indicator active" onclick="MetroAdmin.goToDSGTSlide('heroCarousel', 0)"></div>
-                        <div class="dsgt-cr-indicator" onclick="MetroAdmin.goToDSGTSlide('heroCarousel', 1)"></div>
-                        <div class="dsgt-cr-indicator" onclick="MetroAdmin.goToDSGTSlide('heroCarousel', 2)"></div>
+                    <div class="sw-cr-indicators">
+                        <div class="sw-cr-indicator active" onclick="MetroAdmin.goToSWSlide('heroCarousel', 0)"></div>
+                        <div class="sw-cr-indicator" onclick="MetroAdmin.goToSWSlide('heroCarousel', 1)"></div>
+                        <div class="sw-cr-indicator" onclick="MetroAdmin.goToSWSlide('heroCarousel', 2)"></div>
                     </div>
                     
-                    <div class="dsgt-cr-counter">
+                    <div class="sw-cr-counter">
                         <span class="current">1</span> / <span class="total">3</span>
                     </div>
                 </div>
-                <div class="dsgt-cr-helper">
+                <div class="sw-cr-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Auto-plays every 5 seconds with navigation and indicators
                 </div>
@@ -137,57 +137,57 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-cr-example">
-                <span class="dsgt-cr-example-label">Auto-play with Progress</span>
-                <div class="dsgt-cr" id="autoCarousel" data-autoplay="3000">
-                    <div class="dsgt-cr-container">
-                        <div class="dsgt-cr-track">
-                            <div class="dsgt-cr-slide">
-                                <div class="dsgt-cr-slide-placeholder bg-gradient-4">
+            <div class="sw-cr-example">
+                <span class="sw-cr-example-label">Auto-play with Progress</span>
+                <div class="sw-cr" id="autoCarousel" data-autoplay="3000">
+                    <div class="sw-cr-container">
+                        <div class="sw-cr-track">
+                            <div class="sw-cr-slide">
+                                <div class="sw-cr-slide-placeholder bg-gradient-4">
                                     <i class="fa-solid fa-leaf"></i>
                                 </div>
-                                <div class="dsgt-cr-overlay">
-                                    <h3 class="dsgt-cr-slide-title">Nature Inspired</h3>
-                                    <p class="dsgt-cr-slide-description">Design with natural elements</p>
+                                <div class="sw-cr-overlay">
+                                    <h3 class="sw-cr-slide-title">Nature Inspired</h3>
+                                    <p class="sw-cr-slide-description">Design with natural elements</p>
                                 </div>
                             </div>
-                            <div class="dsgt-cr-slide">
-                                <div class="dsgt-cr-slide-placeholder bg-gradient-5">
+                            <div class="sw-cr-slide">
+                                <div class="sw-cr-slide-placeholder bg-gradient-5">
                                     <i class="fa-solid fa-sun"></i>
                                 </div>
-                                <div class="dsgt-cr-overlay">
-                                    <h3 class="dsgt-cr-slide-title">Bright & Bold</h3>
-                                    <p class="dsgt-cr-slide-description">Vibrant colors and gradients</p>
+                                <div class="sw-cr-overlay">
+                                    <h3 class="sw-cr-slide-title">Bright & Bold</h3>
+                                    <p class="sw-cr-slide-description">Vibrant colors and gradients</p>
                                 </div>
                             </div>
-                            <div class="dsgt-cr-slide">
-                                <div class="dsgt-cr-slide-placeholder bg-gradient-1">
+                            <div class="sw-cr-slide">
+                                <div class="sw-cr-slide-placeholder bg-gradient-1">
                                     <i class="fa-solid fa-cloud"></i>
                                 </div>
-                                <div class="dsgt-cr-overlay">
-                                    <h3 class="dsgt-cr-slide-title">Cloud Solutions</h3>
-                                    <p class="dsgt-cr-slide-description">Modern cloud infrastructure</p>
+                                <div class="sw-cr-overlay">
+                                    <h3 class="sw-cr-slide-title">Cloud Solutions</h3>
+                                    <p class="sw-cr-slide-description">Modern cloud infrastructure</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <button class="dsgt-cr-nav dsgt-cr-nav-prev" onclick="MetroAdmin.moveDSGTCarousel('autoCarousel', -1)">
+                    <button class="sw-cr-nav sw-cr-nav-prev" onclick="MetroAdmin.moveSWCarousel('autoCarousel', -1)">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
-                    <button class="dsgt-cr-nav dsgt-cr-nav-next" onclick="MetroAdmin.moveDSGTCarousel('autoCarousel', 1)">
+                    <button class="sw-cr-nav sw-cr-nav-next" onclick="MetroAdmin.moveSWCarousel('autoCarousel', 1)">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                     
-                    <div class="dsgt-cr-indicators">
-                        <div class="dsgt-cr-indicator active" onclick="MetroAdmin.goToDSGTSlide('autoCarousel', 0)"></div>
-                        <div class="dsgt-cr-indicator" onclick="MetroAdmin.goToDSGTSlide('autoCarousel', 1)"></div>
-                        <div class="dsgt-cr-indicator" onclick="MetroAdmin.goToDSGTSlide('autoCarousel', 2)"></div>
+                    <div class="sw-cr-indicators">
+                        <div class="sw-cr-indicator active" onclick="MetroAdmin.goToSWSlide('autoCarousel', 0)"></div>
+                        <div class="sw-cr-indicator" onclick="MetroAdmin.goToSWSlide('autoCarousel', 1)"></div>
+                        <div class="sw-cr-indicator" onclick="MetroAdmin.goToSWSlide('autoCarousel', 2)"></div>
                     </div>
                     
-                    <div class="dsgt-cr-progress"></div>
+                    <div class="sw-cr-progress"></div>
                 </div>
-                <div class="dsgt-cr-helper">
+                <div class="sw-cr-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Progress bar shows time until next slide (3 seconds)
                 </div>
@@ -197,7 +197,7 @@
 </div>
 
 <!-- Carousel with Thumbnails -->
-<div class="dsgt-cr-section-title">
+<div class="sw-cr-section-title">
     <i class="fa-solid fa-th"></i>
     Carousel with Thumbnails <span class="badge badge-info">Gallery</span>
 </div>
@@ -217,68 +217,68 @@
     <div class="card-body">
         <div class="cr-example">
             <span class="cr-example-label">Image Gallery with Thumbnails</span>
-            <div class="dsgt-cr dsgt-cr-with-thumbnails" id="thumbnailCarousel">
-                <div class="dsgt-cr-container">
-                    <div class="dsgt-cr-track">
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-1">
+            <div class="sw-cr sw-cr-with-thumbnails" id="thumbnailCarousel">
+                <div class="sw-cr-container">
+                    <div class="sw-cr-track">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-1">
                                 <i class="fa-solid fa-mountain"></i>
                             </div>
                         </div>
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-2">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-2">
                                 <i class="fa-solid fa-water"></i>
                             </div>
                         </div>
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-3">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-3">
                                 <i class="fa-solid fa-tree"></i>
                             </div>
                         </div>
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-4">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-4">
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-5">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-5">
                                 <i class="fa-solid fa-heart"></i>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <button class="dsgt-cr-nav dsgt-cr-nav-prev" onclick="MetroAdmin.moveDSGTCarousel('thumbnailCarousel', -1)">
+                <button class="sw-cr-nav sw-cr-nav-prev" onclick="MetroAdmin.moveSWCarousel('thumbnailCarousel', -1)">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
-                <button class="dsgt-cr-nav dsgt-cr-nav-next" onclick="MetroAdmin.moveDSGTCarousel('thumbnailCarousel', 1)">
+                <button class="sw-cr-nav sw-cr-nav-next" onclick="MetroAdmin.moveSWCarousel('thumbnailCarousel', 1)">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
             
-            <div class="dsgt-cr-thumbnails">
-                <div class="dsgt-cr-thumbnail active" onclick="MetroAdmin.goToDSGTSlide('thumbnailCarousel', 0)">
-                    <div class="dsgt-cr-thumbnail-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white;">
+            <div class="sw-cr-thumbnails">
+                <div class="sw-cr-thumbnail active" onclick="MetroAdmin.goToSWSlide('thumbnailCarousel', 0)">
+                    <div class="sw-cr-thumbnail-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white;">
                         <i class="fa-solid fa-mountain"></i>
                     </div>
                 </div>
-                <div class="dsgt-cr-thumbnail" onclick="MetroAdmin.goToDSGTSlide('thumbnailCarousel', 1)">
-                    <div class="dsgt-cr-thumbnail-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white;">
+                <div class="sw-cr-thumbnail" onclick="MetroAdmin.goToSWSlide('thumbnailCarousel', 1)">
+                    <div class="sw-cr-thumbnail-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white;">
                         <i class="fa-solid fa-water"></i>
                     </div>
                 </div>
-                <div class="dsgt-cr-thumbnail" onclick="MetroAdmin.goToDSGTSlide('thumbnailCarousel', 2)">
-                    <div class="dsgt-cr-thumbnail-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white;">
+                <div class="sw-cr-thumbnail" onclick="MetroAdmin.goToSWSlide('thumbnailCarousel', 2)">
+                    <div class="sw-cr-thumbnail-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white;">
                         <i class="fa-solid fa-tree"></i>
                     </div>
                 </div>
-                <div class="dsgt-cr-thumbnail" onclick="MetroAdmin.goToDSGTSlide('thumbnailCarousel', 3)">
-                    <div class="dsgt-cr-thumbnail-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d 100%); display: flex; align-items: center; justify-content: center; color: white;">
+                <div class="sw-cr-thumbnail" onclick="MetroAdmin.goToSWSlide('thumbnailCarousel', 3)">
+                    <div class="sw-cr-thumbnail-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d 100%); display: flex; align-items: center; justify-content: center; color: white;">
                         <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
-                <div class="dsgt-cr-thumbnail" onclick="MetroAdmin.goToDSGTSlide('thumbnailCarousel', 4)">
-                    <div class="dsgt-cr-thumbnail-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center; color: white;">
+                <div class="sw-cr-thumbnail" onclick="MetroAdmin.goToSWSlide('thumbnailCarousel', 4)">
+                    <div class="sw-cr-thumbnail-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center; color: white;">
                         <i class="fa-solid fa-heart"></i>
                     </div>
                 </div>
@@ -292,7 +292,7 @@
 </div>
 
 <!-- Card Carousel -->
-<div class="dsgt-cr-section-title">
+<div class="sw-cr-section-title">
     <i class="fa-solid fa-id-card"></i>
     Card Carousel <span class="badge badge-warning">Products</span>
 </div>
@@ -312,70 +312,70 @@
     <div class="card-body">
         <div class="cr-example">
             <span class="cr-example-label">Product Cards Slider</span>
-            <div class="dsgt-cr" id="cardCarousel" style="padding: 0 48px;">
-                <div class="dsgt-cr-container">
-                    <div class="dsgt-cr-cards-track">
-                        <div class="dsgt-cr-card-item">
-                            <div class="dsgt-cr-card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="sw-cr" id="cardCarousel" style="padding: 0 48px;">
+                <div class="sw-cr-container">
+                    <div class="sw-cr-cards-track">
+                        <div class="sw-cr-card-item">
+                            <div class="sw-cr-card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                                 <i class="fa-solid fa-laptop"></i>
                             </div>
-                            <div class="dsgt-cr-card-body">
-                                <h4 class="dsgt-cr-card-title">Laptop Pro</h4>
-                                <p class="dsgt-cr-card-text">High-performance laptop for professionals</p>
+                            <div class="sw-cr-card-body">
+                                <h4 class="sw-cr-card-title">Laptop Pro</h4>
+                                <p class="sw-cr-card-text">High-performance laptop for professionals</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-card-item">
-                            <div class="dsgt-cr-card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="sw-cr-card-item">
+                            <div class="sw-cr-card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
                                 <i class="fa-solid fa-mobile-screen"></i>
                             </div>
-                            <div class="dsgt-cr-card-body">
-                                <h4 class="dsgt-cr-card-title">Smartphone X</h4>
-                                <p class="dsgt-cr-card-text">Latest smartphone with AI features</p>
+                            <div class="sw-cr-card-body">
+                                <h4 class="sw-cr-card-title">Smartphone X</h4>
+                                <p class="sw-cr-card-text">Latest smartphone with AI features</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-card-item">
-                            <div class="dsgt-cr-card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="sw-cr-card-item">
+                            <div class="sw-cr-card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
                                 <i class="fa-solid fa-headphones"></i>
                             </div>
-                            <div class="dsgt-cr-card-body">
-                                <h4 class="dsgt-cr-card-title">Wireless Headphones</h4>
-                                <p class="dsgt-cr-card-text">Premium sound quality with ANC</p>
+                            <div class="sw-cr-card-body">
+                                <h4 class="sw-cr-card-title">Wireless Headphones</h4>
+                                <p class="sw-cr-card-text">Premium sound quality with ANC</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-card-item">
-                            <div class="dsgt-cr-card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d 100%);">
+                        <div class="sw-cr-card-item">
+                            <div class="sw-cr-card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d 100%);">
                                 <i class="fa-solid fa-tablet-screen-button"></i>
                             </div>
-                            <div class="dsgt-cr-card-body">
-                                <h4 class="dsgt-cr-card-title">Tablet Ultra</h4>
-                                <p class="dsgt-cr-card-text">Creative tablet with stylus support</p>
+                            <div class="sw-cr-card-body">
+                                <h4 class="sw-cr-card-title">Tablet Ultra</h4>
+                                <p class="sw-cr-card-text">Creative tablet with stylus support</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-card-item">
-                            <div class="dsgt-cr-card-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="sw-cr-card-item">
+                            <div class="sw-cr-card-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
                                 <i class="fa-solid fa-camera"></i>
                             </div>
-                            <div class="dsgt-cr-card-body">
-                                <h4 class="dsgt-cr-card-title">DSLR Camera</h4>
-                                <p class="dsgt-cr-card-text">Professional photography equipment</p>
+                            <div class="sw-cr-card-body">
+                                <h4 class="sw-cr-card-title">DSLR Camera</h4>
+                                <p class="sw-cr-card-text">Professional photography equipment</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-card-item">
-                            <div class="dsgt-cr-card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="sw-cr-card-item">
+                            <div class="sw-cr-card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                                 <i class="fa-solid fa-keyboard"></i>
                             </div>
-                            <div class="dsgt-cr-card-body">
-                                <h4 class="dsgt-cr-card-title">Mechanical Keyboard</h4>
-                                <p class="dsgt-cr-card-text">RGB mechanical gaming keyboard</p>
+                            <div class="sw-cr-card-body">
+                                <h4 class="sw-cr-card-title">Mechanical Keyboard</h4>
+                                <p class="sw-cr-card-text">RGB mechanical gaming keyboard</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <button class="dsgt-cr-nav dsgt-cr-nav-prev" onclick="MetroAdmin.moveDSGTCardCarousel('cardCarousel', -1)" style="left: 0;">
+                <button class="sw-cr-nav sw-cr-nav-prev" onclick="MetroAdmin.moveSWCardCarousel('cardCarousel', -1)" style="left: 0;">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
-                <button class="dsgt-cr-nav dsgt-cr-nav-next" onclick="MetroAdmin.moveDSGTCardCarousel('cardCarousel', 1)" style="right: 0;">
+                <button class="sw-cr-nav sw-cr-nav-next" onclick="MetroAdmin.moveSWCardCarousel('cardCarousel', 1)" style="right: 0;">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
@@ -388,7 +388,7 @@
 </div>
 
 <!-- Vertical Carousel -->
-<div class="dsgt-cr-section-title">
+<div class="sw-cr-section-title">
     <i class="fa-solid fa-arrows-up-down"></i>
     Vertical Carousel
 </div>
@@ -406,55 +406,55 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-cr-example">
-            <span class="dsgt-cr-example-label">Vertical Navigation</span>
-            <div class="dsgt-cr dsgt-cr-vertical" id="verticalCarousel">
-                <div class="dsgt-cr-container">
-                    <div class="dsgt-cr-track">
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-3">
+        <div class="sw-cr-example">
+            <span class="sw-cr-example-label">Vertical Navigation</span>
+            <div class="sw-cr sw-cr-vertical" id="verticalCarousel">
+                <div class="sw-cr-container">
+                    <div class="sw-cr-track">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-3">
                                 <i class="fa-solid fa-globe"></i>
                             </div>
-                            <div class="dsgt-cr-overlay">
-                                <h3 class="dsgt-cr-slide-title">Global Reach</h3>
-                                <p class="dsgt-cr-slide-description">Connect with users worldwide</p>
+                            <div class="sw-cr-overlay">
+                                <h3 class="sw-cr-slide-title">Global Reach</h3>
+                                <p class="sw-cr-slide-description">Connect with users worldwide</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-1">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-1">
                                 <i class="fa-solid fa-shield-halved"></i>
                             </div>
-                            <div class="dsgt-cr-overlay">
-                                <h3 class="dsgt-cr-slide-title">Secure Platform</h3>
-                                <p class="dsgt-cr-slide-description">Enterprise-grade security</p>
+                            <div class="sw-cr-overlay">
+                                <h3 class="sw-cr-slide-title">Secure Platform</h3>
+                                <p class="sw-cr-slide-description">Enterprise-grade security</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-2">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-2">
                                 <i class="fa-solid fa-bolt"></i>
                             </div>
-                            <div class="dsgt-cr-overlay">
-                                <h3 class="dsgt-cr-slide-title">Lightning Fast</h3>
-                                <p class="dsgt-cr-slide-description">Optimized for performance</p>
+                            <div class="sw-cr-overlay">
+                                <h3 class="sw-cr-slide-title">Lightning Fast</h3>
+                                <p class="sw-cr-slide-description">Optimized for performance</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <button class="dsgt-cr-nav dsgt-cr-nav-prev" onclick="MetroAdmin.moveDSGTVerticalCarousel('verticalCarousel', -1)">
+                <button class="sw-cr-nav sw-cr-nav-prev" onclick="MetroAdmin.moveSWVerticalCarousel('verticalCarousel', -1)">
                     <i class="fa-solid fa-chevron-up"></i>
                 </button>
-                <button class="dsgt-cr-nav dsgt-cr-nav-next" onclick="MetroAdmin.moveDSGTVerticalCarousel('verticalCarousel', 1)">
+                <button class="sw-cr-nav sw-cr-nav-next" onclick="MetroAdmin.moveSWVerticalCarousel('verticalCarousel', 1)">
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
                 
-                <div class="dsgt-cr-indicators">
-                    <div class="dsgt-cr-indicator active" onclick="MetroAdmin.goToDSGTVerticalSlide('verticalCarousel', 0)"></div>
-                    <div class="dsgt-cr-indicator" onclick="MetroAdmin.goToDSGTVerticalSlide('verticalCarousel', 1)"></div>
-                    <div class="dsgt-cr-indicator" onclick="MetroAdmin.goToDSGTVerticalSlide('verticalCarousel', 2)"></div>
+                <div class="sw-cr-indicators">
+                    <div class="sw-cr-indicator active" onclick="MetroAdmin.goToSWVerticalSlide('verticalCarousel', 0)"></div>
+                    <div class="sw-cr-indicator" onclick="MetroAdmin.goToSWVerticalSlide('verticalCarousel', 1)"></div>
+                    <div class="sw-cr-indicator" onclick="MetroAdmin.goToSWVerticalSlide('verticalCarousel', 2)"></div>
                 </div>
             </div>
-            <div class="dsgt-cr-helper">
+            <div class="sw-cr-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Vertical carousel with up/down navigation
             </div>
@@ -463,7 +463,7 @@
 </div>
 
 <!-- Fade Transition Carousel -->
-<div class="dsgt-cr-section-title">
+<div class="sw-cr-section-title">
     <i class="fa-solid fa-wand-magic-sparkles"></i>
     Fade Transition Carousel <span class="badge badge-purple">Advanced</span>
 </div>
@@ -481,55 +481,55 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-cr-example">
-            <span class="dsgt-cr-example-label">Crossfade Transition</span>
-            <div class="dsgt-cr" id="fadeCarousel" data-autoplay="4000">
-                <div class="dsgt-cr-container">
-                    <div class="dsgt-cr-track">
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-5">
+        <div class="sw-cr-example">
+            <span class="sw-cr-example-label">Crossfade Transition</span>
+            <div class="sw-cr" id="fadeCarousel" data-autoplay="4000">
+                <div class="sw-cr-container">
+                    <div class="sw-cr-track">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-5">
                                 <i class="fa-solid fa-mountain-sun"></i>
                             </div>
-                            <div class="dsgt-cr-overlay">
-                                <h3 class="dsgt-cr-slide-title">Scenic Views</h3>
-                                <p class="dsgt-cr-slide-description">Beautiful landscape photography</p>
+                            <div class="sw-cr-overlay">
+                                <h3 class="sw-cr-slide-title">Scenic Views</h3>
+                                <p class="sw-cr-slide-description">Beautiful landscape photography</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-2">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-2">
                                 <i class="fa-solid fa-city"></i>
                             </div>
-                            <div class="dsgt-cr-overlay">
-                                <h3 class="dsgt-cr-slide-title">Urban Life</h3>
-                                <p class="dsgt-cr-slide-description">City architecture and design</p>
+                            <div class="sw-cr-overlay">
+                                <h3 class="sw-cr-slide-title">Urban Life</h3>
+                                <p class="sw-cr-slide-description">City architecture and design</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-4">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-4">
                                 <i class="fa-solid fa-camera-retro"></i>
                             </div>
-                            <div class="dsgt-cr-overlay">
-                                <h3 class="dsgt-cr-slide-title">Photography</h3>
-                                <p class="dsgt-cr-slide-description">Professional photo gallery</p>
+                            <div class="sw-cr-overlay">
+                                <h3 class="sw-cr-slide-title">Photography</h3>
+                                <p class="sw-cr-slide-description">Professional photo gallery</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <button class="dsgt-cr-nav dsgt-cr-nav-prev" onclick="MetroAdmin.moveDSGTCarousel('fadeCarousel', -1)">
+                <button class="sw-cr-nav sw-cr-nav-prev" onclick="MetroAdmin.moveSWCarousel('fadeCarousel', -1)">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
-                <button class="dsgt-cr-nav dsgt-cr-nav-next" onclick="MetroAdmin.moveDSGTCarousel('fadeCarousel', 1)">
+                <button class="sw-cr-nav sw-cr-nav-next" onclick="MetroAdmin.moveSWCarousel('fadeCarousel', 1)">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
                 
-                <div class="dsgt-cr-indicators">
-                    <div class="dsgt-cr-indicator active" onclick="MetroAdmin.goToDSGTSlide('fadeCarousel', 0)"></div>
-                    <div class="dsgt-cr-indicator" onclick="MetroAdmin.goToDSGTSlide('fadeCarousel', 1)"></div>
-                    <div class="dsgt-cr-indicator" onclick="MetroAdmin.goToDSGTSlide('fadeCarousel', 2)"></div>
+                <div class="sw-cr-indicators">
+                    <div class="sw-cr-indicator active" onclick="MetroAdmin.goToSWSlide('fadeCarousel', 0)"></div>
+                    <div class="sw-cr-indicator" onclick="MetroAdmin.goToSWSlide('fadeCarousel', 1)"></div>
+                    <div class="sw-cr-indicator" onclick="MetroAdmin.goToSWSlide('fadeCarousel', 2)"></div>
                 </div>
             </div>
-            <div class="dsgt-cr-helper">
+            <div class="sw-cr-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Smooth fade transitions between slides (4s autoplay)
             </div>
@@ -538,7 +538,7 @@
 </div>
 
 <!-- Fullscreen Carousel -->
-<div class="dsgt-cr-section-title">
+<div class="sw-cr-section-title">
     <i class="fa-solid fa-expand"></i>
     Fullscreen Carousel <span class="badge badge-danger">Immersive</span>
 </div>
@@ -556,43 +556,43 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-cr-example">
-            <span class="dsgt-cr-example-label">Full Viewport Slider</span>
-            <div class="dsgt-cr" id="fullscreenCarousel" data-autoplay="6000">
-                <div class="dsgt-cr-container" style="height: 500px;">
-                    <div class="dsgt-cr-track">
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-1" style="height: 500px;">
+        <div class="sw-cr-example">
+            <span class="sw-cr-example-label">Full Viewport Slider</span>
+            <div class="sw-cr" id="fullscreenCarousel" data-autoplay="6000">
+                <div class="sw-cr-container" style="height: 500px;">
+                    <div class="sw-cr-track">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-1" style="height: 500px;">
                                 <i class="fa-solid fa-rocket" style="font-size: 80px;"></i>
                             </div>
-                            <div class="dsgt-cr-overlay" style="padding: 60px 40px 40px;">
-                                <h3 class="dsgt-cr-slide-title" style="font-size: 36px;">Launch Product</h3>
-                                <p class="dsgt-cr-slide-description" style="font-size: 18px; margin-bottom: 20px;">Revolutionary platform for modern teams</p>
-                                <button class="dsgt-cr-slide-btn" style="padding: 12px 32px; font-size: 16px;">
+                            <div class="sw-cr-overlay" style="padding: 60px 40px 40px;">
+                                <h3 class="sw-cr-slide-title" style="font-size: 36px;">Launch Product</h3>
+                                <p class="sw-cr-slide-description" style="font-size: 18px; margin-bottom: 20px;">Revolutionary platform for modern teams</p>
+                                <button class="sw-cr-slide-btn" style="padding: 12px 32px; font-size: 16px;">
                                     <i class="fa-solid fa-play"></i> Start Now
                                 </button>
                             </div>
                         </div>
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-3" style="height: 500px;">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-3" style="height: 500px;">
                                 <i class="fa-solid fa-gem" style="font-size: 80px;"></i>
                             </div>
-                            <div class="dsgt-cr-overlay" style="padding: 60px 40px 40px;">
-                                <h3 class="dsgt-cr-slide-title" style="font-size: 36px;">Premium Quality</h3>
-                                <p class="dsgt-cr-slide-description" style="font-size: 18px; margin-bottom: 20px;">Enterprise-grade solutions</p>
-                                <button class="dsgt-cr-slide-btn" style="padding: 12px 32px; font-size: 16px;">
+                            <div class="sw-cr-overlay" style="padding: 60px 40px 40px;">
+                                <h3 class="sw-cr-slide-title" style="font-size: 36px;">Premium Quality</h3>
+                                <p class="sw-cr-slide-description" style="font-size: 18px; margin-bottom: 20px;">Enterprise-grade solutions</p>
+                                <button class="sw-cr-slide-btn" style="padding: 12px 32px; font-size: 16px;">
                                     <i class="fa-solid fa-crown"></i> Upgrade
                                 </button>
                             </div>
                         </div>
-                        <div class="dsgt-cr-slide">
-                            <div class="dsgt-cr-slide-placeholder bg-gradient-5" style="height: 500px;">
+                        <div class="sw-cr-slide">
+                            <div class="sw-cr-slide-placeholder bg-gradient-5" style="height: 500px;">
                                 <i class="fa-solid fa-users" style="font-size: 80px;"></i>
                             </div>
-                            <div class="dsgt-cr-overlay" style="padding: 60px 40px 40px;">
-                                <h3 class="dsgt-cr-slide-title" style="font-size: 36px;">Join Community</h3>
-                                <p class="dsgt-cr-slide-description" style="font-size: 18px; margin-bottom: 20px;">10,000+ developers worldwide</p>
-                                <button class="dsgt-cr-slide-btn" style="padding: 12px 32px; font-size: 16px;">
+                            <div class="sw-cr-overlay" style="padding: 60px 40px 40px;">
+                                <h3 class="sw-cr-slide-title" style="font-size: 36px;">Join Community</h3>
+                                <p class="sw-cr-slide-description" style="font-size: 18px; margin-bottom: 20px;">10,000+ developers worldwide</p>
+                                <button class="sw-cr-slide-btn" style="padding: 12px 32px; font-size: 16px;">
                                     <i class="fa-solid fa-user-plus"></i> Sign Up
                                 </button>
                             </div>
@@ -600,18 +600,18 @@
                     </div>
                 </div>
                 
-                <button class="dsgt-cr-nav dsgt-cr-nav-prev" onclick="MetroAdmin.moveDSGTCarousel('fullscreenCarousel', -1)" style="width: 56px; height: 56px; font-size: 24px;">
+                <button class="sw-cr-nav sw-cr-nav-prev" onclick="MetroAdmin.moveSWCarousel('fullscreenCarousel', -1)" style="width: 56px; height: 56px; font-size: 24px;">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
-                <button class="dsgt-cr-nav dsgt-cr-nav-next" onclick="MetroAdmin.moveDSGTCarousel('fullscreenCarousel', 1)" style="width: 56px; height: 56px; font-size: 24px;">
+                <button class="sw-cr-nav sw-cr-nav-next" onclick="MetroAdmin.moveSWCarousel('fullscreenCarousel', 1)" style="width: 56px; height: 56px; font-size: 24px;">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
                 
-                <div class="dsgt-cr-counter" style="top: 30px; right: 30px; font-size: 16px; padding: 8px 16px;">
+                <div class="sw-cr-counter" style="top: 30px; right: 30px; font-size: 16px; padding: 8px 16px;">
                     <span class="current">1</span> / <span class="total">3</span>
                 </div>
             </div>
-            <div class="dsgt-cr-helper">
+            <div class="sw-cr-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Large hero carousel with call-to-action buttons (6s autoplay)
             </div>
@@ -620,7 +620,7 @@
 </div>
 
 <!-- Testimonial Carousel -->
-<div class="dsgt-cr-section-title">
+<div class="sw-cr-section-title">
     <i class="fa-solid fa-quote-left"></i>
     Testimonial Carousel <span class="badge badge-success">Social Proof</span>
 </div>
@@ -638,12 +638,12 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-cr-example">
-            <span class="dsgt-cr-example-label">Client Testimonials</span>
-            <div class="dsgt-cr" id="testimonialCarousel" data-autoplay="5000">
-                <div class="dsgt-cr-container">
-                    <div class="dsgt-cr-track">
-                        <div class="dsgt-cr-slide">
+        <div class="sw-cr-example">
+            <span class="sw-cr-example-label">Client Testimonials</span>
+            <div class="sw-cr" id="testimonialCarousel" data-autoplay="5000">
+                <div class="sw-cr-container">
+                    <div class="sw-cr-track">
+                        <div class="sw-cr-slide">
                             <div style="padding: 40px; background: var(--bg-secondary);">
                                 <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
                                     <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold;">
@@ -666,7 +666,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="dsgt-cr-slide">
+                        <div class="sw-cr-slide">
                             <div style="padding: 40px; background: var(--bg-secondary);">
                                 <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
                                     <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold;">
@@ -689,7 +689,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="dsgt-cr-slide">
+                        <div class="sw-cr-slide">
                             <div style="padding: 40px; background: var(--bg-secondary);">
                                 <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
                                     <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold;">
@@ -715,20 +715,20 @@
                     </div>
                 </div>
                 
-                <button class="dsgt-cr-nav dsgt-cr-nav-prev" onclick="MetroAdmin.moveDSGTCarousel('testimonialCarousel', -1)">
+                <button class="sw-cr-nav sw-cr-nav-prev" onclick="MetroAdmin.moveSWCarousel('testimonialCarousel', -1)">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
-                <button class="dsgt-cr-nav dsgt-cr-nav-next" onclick="MetroAdmin.moveDSGTCarousel('testimonialCarousel', 1)">
+                <button class="sw-cr-nav sw-cr-nav-next" onclick="MetroAdmin.moveSWCarousel('testimonialCarousel', 1)">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
                 
-                <div class="dsgt-cr-indicators">
-                    <div class="dsgt-cr-indicator active" onclick="MetroAdmin.goToDSGTSlide('testimonialCarousel', 0)"></div>
-                    <div class="dsgt-cr-indicator" onclick="MetroAdmin.goToDSGTSlide('testimonialCarousel', 1)"></div>
-                    <div class="dsgt-cr-indicator" onclick="MetroAdmin.goToDSGTSlide('testimonialCarousel', 2)"></div>
+                <div class="sw-cr-indicators">
+                    <div class="sw-cr-indicator active" onclick="MetroAdmin.goToSWSlide('testimonialCarousel', 0)"></div>
+                    <div class="sw-cr-indicator" onclick="MetroAdmin.goToSWSlide('testimonialCarousel', 1)"></div>
+                    <div class="sw-cr-indicator" onclick="MetroAdmin.goToSWSlide('testimonialCarousel', 2)"></div>
                 </div>
             </div>
-            <div class="dsgt-cr-helper">
+            <div class="sw-cr-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Customer testimonials with avatars and star ratings (5s autoplay)
             </div>
@@ -737,7 +737,7 @@
 </div>
 
 <!-- Center Mode Carousel -->
-<div class="dsgt-cr-section-title">
+<div class="sw-cr-section-title">
     <i class="fa-solid fa-bullseye"></i>
     Center Mode Carousel <span class="badge badge-info">Gallery</span>
 </div>
@@ -755,67 +755,67 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-cr-example">
-            <span class="dsgt-cr-example-label">Center-Focused Gallery</span>
-            <div class="dsgt-cr" id="centerCarousel" style="padding: 0 80px;">
-                <div class="dsgt-cr-container">
-                    <div class="dsgt-cr-cards-track">
-                        <div class="dsgt-cr-card-item">
-                            <div class="dsgt-cr-card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 250px;">
+        <div class="sw-cr-example">
+            <span class="sw-cr-example-label">Center-Focused Gallery</span>
+            <div class="sw-cr" id="centerCarousel" style="padding: 0 80px;">
+                <div class="sw-cr-container">
+                    <div class="sw-cr-cards-track">
+                        <div class="sw-cr-card-item">
+                            <div class="sw-cr-card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 250px;">
                                 <i class="fa-solid fa-mountain" style="font-size: 48px;"></i>
                             </div>
-                            <div class="dsgt-cr-card-body">
-                                <h4 class="dsgt-cr-card-title">Mountains</h4>
-                                <p class="dsgt-cr-card-text">Majestic peak photography</p>
+                            <div class="sw-cr-card-body">
+                                <h4 class="sw-cr-card-title">Mountains</h4>
+                                <p class="sw-cr-card-text">Majestic peak photography</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-card-item">
-                            <div class="dsgt-cr-card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 250px;">
+                        <div class="sw-cr-card-item">
+                            <div class="sw-cr-card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 250px;">
                                 <i class="fa-solid fa-water" style="font-size: 48px;"></i>
                             </div>
-                            <div class="dsgt-cr-card-body">
-                                <h4 class="dsgt-cr-card-title">Ocean</h4>
-                                <p class="dsgt-cr-card-text">Deep blue sea waves</p>
+                            <div class="sw-cr-card-body">
+                                <h4 class="sw-cr-card-title">Ocean</h4>
+                                <p class="sw-cr-card-text">Deep blue sea waves</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-card-item">
-                            <div class="dsgt-cr-card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height: 250px;">
+                        <div class="sw-cr-card-item">
+                            <div class="sw-cr-card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); height: 250px;">
                                 <i class="fa-solid fa-tree" style="font-size: 48px;"></i>
                             </div>
-                            <div class="dsgt-cr-card-body">
-                                <h4 class="dsgt-cr-card-title">Forest</h4>
-                                <p class="dsgt-cr-card-text">Green nature trails</p>
+                            <div class="sw-cr-card-body">
+                                <h4 class="sw-cr-card-title">Forest</h4>
+                                <p class="sw-cr-card-text">Green nature trails</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-card-item">
-                            <div class="dsgt-cr-card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); height: 250px;">
+                        <div class="sw-cr-card-item">
+                            <div class="sw-cr-card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); height: 250px;">
                                 <i class="fa-solid fa-sun" style="font-size: 48px;"></i>
                             </div>
-                            <div class="dsgt-cr-card-body">
-                                <h4 class="dsgt-cr-card-title">Desert</h4>
-                                <p class="dsgt-cr-card-text">Golden sand dunes</p>
+                            <div class="sw-cr-card-body">
+                                <h4 class="sw-cr-card-title">Desert</h4>
+                                <p class="sw-cr-card-text">Golden sand dunes</p>
                             </div>
                         </div>
-                        <div class="dsgt-cr-card-item">
-                            <div class="dsgt-cr-card-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); height: 250px;">
+                        <div class="sw-cr-card-item">
+                            <div class="sw-cr-card-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); height: 250px;">
                                 <i class="fa-solid fa-snowflake" style="font-size: 48px;"></i>
                             </div>
-                            <div class="dsgt-cr-card-body">
-                                <h4 class="dsgt-cr-card-title">Arctic</h4>
-                                <p class="dsgt-cr-card-text">Frozen wonderland</p>
+                            <div class="sw-cr-card-body">
+                                <h4 class="sw-cr-card-title">Arctic</h4>
+                                <p class="sw-cr-card-text">Frozen wonderland</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <button class="dsgt-cr-nav dsgt-cr-nav-prev" onclick="MetroAdmin.moveDSGTCardCarousel('centerCarousel', -1)" style="left: 20px;">
+                <button class="sw-cr-nav sw-cr-nav-prev" onclick="MetroAdmin.moveSWCardCarousel('centerCarousel', -1)" style="left: 20px;">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
-                <button class="dsgt-cr-nav dsgt-cr-nav-next" onclick="MetroAdmin.moveDSGTCardCarousel('centerCarousel', 1)" style="right: 20px;">
+                <button class="sw-cr-nav sw-cr-nav-next" onclick="MetroAdmin.moveSWCardCarousel('centerCarousel', 1)" style="right: 20px;">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
-            <div class="dsgt-cr-helper">
+            <div class="sw-cr-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Card carousel with center focus and side previews
             </div>
@@ -824,12 +824,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-cr-section-title">
+<div class="sw-cr-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-cr-grid">
+<div class="sw-cr-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -912,7 +912,7 @@ goToVerticalSlide('carouselId', index);</code></pre>
 <script>
 // Carousel page initialization
 $(document).ready(function() {
-    console.log('📋 DSGT Carousel page loaded successfully');
+    console.log('📋 SW Carousel page loaded successfully');
 });
 </script>
 @endpush

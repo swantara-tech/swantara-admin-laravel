@@ -23,7 +23,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-al-info-card">
+<div class="content-card sw-al-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -36,12 +36,12 @@
 </div>
 
 <!-- Standard Alerts -->
-<div class="dsgt-al-section-title">
+<div class="sw-al-section-title">
     <i class="fa-solid fa-triangle-exclamation"></i>
     Standard Alerts <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-alert-grid">
+<div class="sw-alert-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -55,36 +55,36 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-al-example">
-                <span class="dsgt-al-example-label">Success Alert</span>
-                <div class="dsgt-alert dsgt-alert-success">
-                    <div class="dsgt-alert-icon">
+            <div class="sw-al-example">
+                <span class="sw-al-example-label">Success Alert</span>
+                <div class="sw-alert sw-alert-success">
+                    <div class="sw-alert-icon">
                         <i class="fa-solid fa-check-circle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Success!</div>
-                        <p class="dsgt-alert-message">Your changes have been saved successfully.</p>
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Success!</div>
+                        <p class="sw-alert-message">Your changes have been saved successfully.</p>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <span class="dsgt-al-example-label">Info Alert</span>
-                <div class="dsgt-alert dsgt-alert-info">
-                    <div class="dsgt-alert-icon">
+                <span class="sw-al-example-label">Info Alert</span>
+                <div class="sw-alert sw-alert-info">
+                    <div class="sw-alert-icon">
                         <i class="fa-solid fa-info-circle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Information</div>
-                        <p class="dsgt-alert-message">A new software update is available. Please review the changelog.</p>
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Information</div>
+                        <p class="sw-alert-message">A new software update is available. Please review the changelog.</p>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <div class="dsgt-al-helper">
+                <div class="sw-al-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Click the X button to dismiss alerts with animation
                 </div>
@@ -105,36 +105,36 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-al-example">
-                <span class="dsgt-al-example-label">Warning Alert</span>
-                <div class="dsgt-alert dsgt-alert-warning">
-                    <div class="dsgt-alert-icon">
+            <div class="sw-al-example">
+                <span class="sw-al-example-label">Warning Alert</span>
+                <div class="sw-alert sw-alert-warning">
+                    <div class="sw-alert-icon">
                         <i class="fa-solid fa-exclamation-triangle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Warning!</div>
-                        <p class="dsgt-alert-message">Your account will expire in 3 days. Please renew your subscription.</p>
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Warning!</div>
+                        <p class="sw-alert-message">Your account will expire in 3 days. Please renew your subscription.</p>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
                 <span class="al-example-label" style="margin-top: 20px;">Danger Alert</span>
-                <div class="dsgt-alert dsgt-alert-danger">
-                    <div class="dsgt-alert-icon">
+                <div class="sw-alert sw-alert-danger">
+                    <div class="sw-alert-icon">
                         <i class="fa-solid fa-times-circle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Error!</div>
-                        <p class="dsgt-alert-message">Failed to process your request. Please try again later.</p>
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Error!</div>
+                        <p class="sw-alert-message">Failed to process your request. Please try again later.</p>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <div class="dsgt-al-helper">
+                <div class="sw-al-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Use warning for caution, danger for critical errors
                 </div>
@@ -144,12 +144,12 @@
 </div>
 
 <!-- Alerts with Actions -->
-<div class="dsgt-al-section-title">
+<div class="sw-al-section-title">
     <i class="fa-solid fa-hand-pointer"></i>
     Alerts with Actions <span class="badge badge-warning">Interactive</span>
 </div>
 
-<div class="dsgt-alert-grid">
+<div class="sw-alert-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -163,16 +163,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-al-example">
-                <span class="dsgt-al-example-label">Success with Actions</span>
-                <div class="dsgt-alert dsgt-alert-success">
-                    <div class="dsgt-alert-icon">
+            <div class="sw-al-example">
+                <span class="sw-al-example-label">Success with Actions</span>
+                <div class="sw-alert sw-alert-success">
+                    <div class="sw-alert-icon">
                         <i class="fa-solid fa-check-circle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">File Uploaded!</div>
-                        <p class="dsgt-alert-message">Your document has been uploaded successfully.</p>
-                        <div class="dsgt-alert-actions">
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">File Uploaded!</div>
+                        <p class="sw-alert-message">Your document has been uploaded successfully.</p>
+                        <div class="sw-alert-actions">
                             <button class="btn btn-success btn-sm">
                                 <i class="fa-solid fa-eye"></i> View
                             </button>
@@ -181,20 +181,20 @@
                             </button>
                         </div>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
                 <span class="al-example-label" style="margin-top: 20px;">Warning with Actions</span>
-                <div class="dsgt-alert dsgt-alert-warning">
-                    <div class="dsgt-alert-icon">
+                <div class="sw-alert sw-alert-warning">
+                    <div class="sw-alert-icon">
                         <i class="fa-solid fa-exclamation-triangle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Unsaved Changes</div>
-                        <p class="dsgt-alert-message">You have unsaved changes. What would you like to do?</p>
-                        <div class="dsgt-alert-actions">
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Unsaved Changes</div>
+                        <p class="sw-alert-message">You have unsaved changes. What would you like to do?</p>
+                        <div class="sw-alert-actions">
                             <button class="btn btn-warning btn-sm">
                                 <i class="fa-solid fa-save"></i> Save
                             </button>
@@ -203,12 +203,12 @@
                             </button>
                         </div>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <div class="dsgt-al-helper">
+                <div class="sw-al-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Action buttons enable immediate user response
                 </div>
@@ -229,47 +229,47 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-al-example">
-                <span class="dsgt-al-example-label">Error with Details</span>
-                <div class="dsgt-alert dsgt-alert-danger">
-                    <div class="dsgt-alert-icon">
+            <div class="sw-al-example">
+                <span class="sw-al-example-label">Error with Details</span>
+                <div class="sw-alert sw-alert-danger">
+                    <div class="sw-alert-icon">
                         <i class="fa-solid fa-times-circle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Validation Failed</div>
-                        <p class="dsgt-alert-message">Please fix the following errors:</p>
-                        <ul class="dsgt-alert-list">
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Validation Failed</div>
+                        <p class="sw-alert-message">Please fix the following errors:</p>
+                        <ul class="sw-alert-list">
                             <li>Email address is already taken</li>
                             <li>Password must be at least 8 characters</li>
                             <li>Phone number format is invalid</li>
                         </ul>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
                 <span class="al-example-label" style="margin-top: 20px;">Info with Checklist</span>
-                <div class="dsgt-alert dsgt-alert-info">
-                    <div class="dsgt-alert-icon">
+                <div class="sw-alert sw-alert-info">
+                    <div class="sw-alert-icon">
                         <i class="fa-solid fa-clipboard-check"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Setup Checklist</div>
-                        <p class="dsgt-alert-message">Complete these steps to get started:</p>
-                        <ul class="dsgt-alert-list">
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Setup Checklist</div>
+                        <p class="sw-alert-message">Complete these steps to get started:</p>
+                        <ul class="sw-alert-list">
                             <li>✓ Create your account</li>
                             <li>✓ Verify email address</li>
                             <li>○ Complete profile setup</li>
                             <li>○ Add payment method</li>
                         </ul>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <div class="dsgt-al-helper">
+                <div class="sw-al-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Lists help organize multiple items within alerts
                 </div>
@@ -279,12 +279,12 @@
 </div>
 
 <!-- Outline & Solid Variants -->
-<div class="dsgt-al-section-title">
+<div class="sw-al-section-title">
     <i class="fa-solid fa-palette"></i>
     Alert Variants <span class="badge badge-info">Styling</span>
 </div>
 
-<div class="dsgt-alert-grid">
+<div class="sw-alert-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -298,61 +298,61 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-al-example">
-                <span class="dsgt-al-example-label">Outline Style Alerts</span>
-                <div class="dsgt-alert dsgt-alert-outline-success">
-                    <div class="dsgt-alert-icon">
+            <div class="sw-al-example">
+                <span class="sw-al-example-label">Outline Style Alerts</span>
+                <div class="sw-alert sw-alert-outline-success">
+                    <div class="sw-alert-icon">
                         <i class="fa-solid fa-check-circle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Success</div>
-                        <p class="dsgt-alert-message">Operation completed successfully.</p>
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Success</div>
+                        <p class="sw-alert-message">Operation completed successfully.</p>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <div class="dsgt-alert dsgt-alert-outline-info">
-                    <div class="dsgt-alert-icon">
+                <div class="sw-alert sw-alert-outline-info">
+                    <div class="sw-alert-icon">
                         <i class="fa-solid fa-info-circle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Info</div>
-                        <p class="dsgt-alert-message">New features are available.</p>
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Info</div>
+                        <p class="sw-alert-message">New features are available.</p>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <div class="dsgt-alert dsgt-alert-outline-warning">
-                    <div class="dsgt-alert-icon">
+                <div class="sw-alert sw-alert-outline-warning">
+                    <div class="sw-alert-icon">
                         <i class="fa-solid fa-exclamation-triangle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Warning</div>
-                        <p class="dsgt-alert-message">Storage space running low.</p>
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Warning</div>
+                        <p class="sw-alert-message">Storage space running low.</p>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <div class="dsgt-alert dsgt-alert-outline-danger">
-                    <div class="dsgt-alert-icon">
+                <div class="sw-alert sw-alert-outline-danger">
+                    <div class="sw-alert-icon">
                         <i class="fa-solid fa-times-circle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Error</div>
-                        <p class="dsgt-alert-message">Connection timeout occurred.</p>
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Error</div>
+                        <p class="sw-alert-message">Connection timeout occurred.</p>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <div class="dsgt-al-helper">
+                <div class="sw-al-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Outline style provides subtle, non-intrusive feedback
                 </div>
@@ -373,61 +373,61 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-al-example">
-                <span class="dsgt-al-example-label">Solid Style Alerts</span>
-                <div class="dsgt-alert dsgt-alert-solid dsgt-alert-solid-success">
+            <div class="sw-al-example">
+                <span class="sw-al-example-label">Solid Style Alerts</span>
+                <div class="sw-alert sw-alert-solid sw-alert-solid-success">
                     <div class="alert-icon" style="background: white; color: var(--success);">
                         <i class="fa-solid fa-check-circle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Success</div>
-                        <p class="dsgt-alert-message">Your order has been confirmed!</p>
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Success</div>
+                        <p class="sw-alert-message">Your order has been confirmed!</p>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <div class="dsgt-alert dsgt-alert-solid dsgt-alert-solid-info">
+                <div class="sw-alert sw-alert-solid sw-alert-solid-info">
                     <div class="alert-icon" style="background: white; color: var(--accent);">
                         <i class="fa-solid fa-info-circle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Info</div>
-                        <p class="dsgt-alert-message">System maintenance scheduled for tonight.</p>
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Info</div>
+                        <p class="sw-alert-message">System maintenance scheduled for tonight.</p>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <div class="dsgt-alert dsgt-alert-solid dsgt-alert-solid-warning">
+                <div class="sw-alert sw-alert-solid sw-alert-solid-warning">
                     <div class="alert-icon" style="background: white; color: var(--warning);">
                         <i class="fa-solid fa-exclamation-triangle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Warning</div>
-                        <p class="dsgt-alert-message">Session will expire in 5 minutes.</p>
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Warning</div>
+                        <p class="sw-alert-message">Session will expire in 5 minutes.</p>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <div class="dsgt-alert dsgt-alert-solid dsgt-alert-solid-danger">
+                <div class="sw-alert sw-alert-solid sw-alert-solid-danger">
                     <div class="alert-icon" style="background: white; color: var(--danger);">
                         <i class="fa-solid fa-times-circle"></i>
                     </div>
-                    <div class="dsgt-alert-content">
-                        <div class="dsgt-alert-title">Error</div>
-                        <p class="dsgt-alert-message">Payment processing failed.</p>
+                    <div class="sw-alert-content">
+                        <div class="sw-alert-title">Error</div>
+                        <p class="sw-alert-message">Payment processing failed.</p>
                     </div>
-                    <button class="dsgt-alert-close">
+                    <button class="sw-alert-close">
                         <i class="fa-solid fa-times"></i>
                     </button>
                 </div>
 
-                <div class="dsgt-al-helper">
+                <div class="sw-al-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Solid style commands immediate attention
                 </div>
@@ -437,7 +437,7 @@
 </div>
 
 <!-- Dynamic Alerts Demo -->
-<div class="dsgt-al-section-title">
+<div class="sw-al-section-title">
     <i class="fa-solid fa-wand-magic-sparkles"></i>
     Interactive Demo <span class="badge badge-success">Try It</span>
 </div>
@@ -475,7 +475,7 @@
                 </button>
             </div>
 
-            <div id="dynamicAlertContainer" class="dsgt-al-dynamic-container">
+            <div id="dynamicAlertContainer" class="sw-al-dynamic-container">
                 <p style="text-align: center; color: var(--text-secondary); font-size: 13px; margin: 20px 0;">
                     <i class="fa-solid fa-arrow-up" style="margin-right: 8px;"></i>
                     Click buttons above to generate alerts here
@@ -491,12 +491,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-al-section-title">
+<div class="sw-al-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-alert-grid">
+<div class="sw-alert-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -510,15 +510,15 @@
             </div>
         </div>
         <div class="card-body">
-            <pre style="background: var(--bg-tertiary); padding: 16px; border-radius: 8px; font-size: 12px; overflow-x: auto;"><code>&lt;div class="dsgt-alert dsgt-alert-success"&gt;
-  &lt;div class="dsgt-alert-icon"&gt;
+            <pre style="background: var(--bg-tertiary); padding: 16px; border-radius: 8px; font-size: 12px; overflow-x: auto;"><code>&lt;div class="sw-alert sw-alert-success"&gt;
+  &lt;div class="sw-alert-icon"&gt;
     &lt;i class="fa-solid fa-check-circle"&gt;&lt;/i&gt;
   &lt;/div&gt;
-  &lt;div class="dsgt-alert-content"&gt;
-    &lt;div class="dsgt-alert-title"&gt;Title&lt;/div&gt;
-    &lt;p class="dsgt-alert-message"&gt;Message&lt;/p&gt;
+  &lt;div class="sw-alert-content"&gt;
+    &lt;div class="sw-alert-title"&gt;Title&lt;/div&gt;
+    &lt;p class="sw-alert-message"&gt;Message&lt;/p&gt;
   &lt;/div&gt;
-  &lt;button class="dsgt-alert-close"&gt;
+  &lt;button class="sw-alert-close"&gt;
     &lt;i class="fa-solid fa-times"&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;</code></pre>
@@ -573,8 +573,8 @@
 @push('scripts')
 <script>
 /**
- * DSGT Metro Template - Alerts Page Demo
- * Uses global DSGT alert functions from app.js
+ * SW Metro Template - Alerts Page Demo
+ * Uses global SW alert functions from app.js
  */
 
 // Dynamic Alert Generator
@@ -611,7 +611,7 @@ function clearAllAlerts() {
 
 // Initialize on page load
 $(document).ready(function() {
-    console.log('✨ DSGT Alerts page loaded successfully');
+    console.log('✨ SW Alerts page loaded successfully');
 });
 </script>
 @endpush

@@ -23,7 +23,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-links-info-card">
+<div class="content-card sw-links-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -36,12 +36,12 @@
 </div>
 
 <!-- Basic Links -->
-<div class="dsgt-links-section-title">
+<div class="sw-links-section-title">
     <i class="fa-solid fa-link"></i>
     Basic Link Styles <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-links-grid">
+<div class="sw-links-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -55,23 +55,23 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-link-example">
-                <span class="dsgt-link-example-label">Basic Links</span>
+            <div class="sw-link-example">
+                <span class="sw-link-example-label">Basic Links</span>
                 <div style="display: flex; flex-direction: column; gap: 16px;">
                     <div>
-                        <a href="#" class="dsgt-modern-link">Default Link</a>
+                        <a href="#" class="sw-modern-link">Default Link</a>
                         <div style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Standard accent color link</div>
                     </div>
                     <div>
-                        <a href="#" class="dsgt-modern-link dsgt-link-underline">Underline Animation</a>
+                        <a href="#" class="sw-modern-link sw-link-underline">Underline Animation</a>
                         <div style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Hover to see underline slide</div>
                     </div>
                     <div>
-                        <a href="#" class="dsgt-modern-link dsgt-link-border-bottom">Border Bottom</a>
+                        <a href="#" class="sw-modern-link sw-link-border-bottom">Border Bottom</a>
                         <div style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Border appears on hover</div>
                     </div>
                 </div>
-                <div class="dsgt-link-helper">
+                <div class="sw-link-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Hover over links to see effects
                 </div>
@@ -92,32 +92,32 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-link-example">
+            <div class="sw-link-example">
                 <span class="lk-example-label">Icon Integration</span>
                 <div style="display: flex; flex-direction: column; gap: 16px;">
                     <div>
-                        <a href="#" class="modern-link dsgt-link-arrow">
+                        <a href="#" class="modern-link sw-link-arrow">
                             View Details
-                            <i class="fa-solid fa-arrow-right dsgt-dsgt-link-arrow-icon"></i>
+                            <i class="fa-solid fa-arrow-right sw-sw-link-arrow-icon"></i>
                         </a>
                         <div style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Arrow slides on hover</div>
                     </div>
                     <div>
-                        <a href="#" class="modern-link dsgt-link-icon dsgt-dsgt-link-icon-left">
+                        <a href="#" class="modern-link sw-link-icon sw-sw-link-icon-left">
                             <i class="fa-solid fa-file-lines"></i>
                             Documentation
                         </a>
                         <div style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Icon on left side</div>
                     </div>
                     <div>
-                        <a href="#" class="modern-link dsgt-link-icon dsgt-dsgt-link-icon-right">
+                        <a href="#" class="modern-link sw-link-icon sw-sw-link-icon-right">
                             External Link
                             <i class="fa-solid fa-external-link"></i>
                         </a>
                         <div style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Icon on right side</div>
                     </div>
                 </div>
-                <div class="dsgt-link-helper">
+                <div class="sw-link-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Icons improve link recognition
                 </div>
@@ -127,7 +127,7 @@
 </div>
 
 <!-- Colored Links -->
-<div class="dsgt-links-section-title">
+<div class="sw-links-section-title">
     <i class="fa-solid fa-palette"></i>
     Colored Links
 </div>
@@ -145,17 +145,17 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">Color Variations</span>
             <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center;">
                 <a href="#" class="modern-link">Default</a>
-                <a href="#" class="modern-link dsgt-link-success">Success</a>
-                <a href="#" class="modern-link dsgt-link-warning">Warning</a>
-                <a href="#" class="modern-link dsgt-link-danger">Danger</a>
-                <a href="#" class="modern-link dsgt-link-info">Info</a>
-                <a href="#" class="modern-link dsgt-link-muted">Muted</a>
+                <a href="#" class="modern-link sw-link-success">Success</a>
+                <a href="#" class="modern-link sw-link-warning">Warning</a>
+                <a href="#" class="modern-link sw-link-danger">Danger</a>
+                <a href="#" class="modern-link sw-link-info">Info</a>
+                <a href="#" class="modern-link sw-link-muted">Muted</a>
             </div>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Use colors to indicate link context
             </div>
@@ -177,16 +177,16 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">Size Variations</span>
             <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center;">
-                <a href="#" class="modern-link dsgt-link-xs">Extra Small (12px)</a>
-                <a href="#" class="modern-link dsgt-link-sm">Small (13px)</a>
-                <a href="#" class="modern-link dsgt-link-md">Medium (14px)</a>
-                <a href="#" class="modern-link dsgt-link-lg">Large (16px)</a>
-                <a href="#" class="modern-link dsgt-link-xl">Extra Large (18px)</a>
+                <a href="#" class="modern-link sw-link-xs">Extra Small (12px)</a>
+                <a href="#" class="modern-link sw-link-sm">Small (13px)</a>
+                <a href="#" class="modern-link sw-link-md">Medium (14px)</a>
+                <a href="#" class="modern-link sw-link-lg">Large (16px)</a>
+                <a href="#" class="modern-link sw-link-xl">Extra Large (18px)</a>
             </div>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Sizes range from 12px to 18px
             </div>
@@ -208,14 +208,14 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">State Examples</span>
             <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center;">
                 <a href="#" class="modern-link">Active Link</a>
-                <a href="#" class="modern-link dsgt-link-visited">Visited Link</a>
-                <span class="modern-link dsgt-link-disabled">Disabled Link</span>
+                <a href="#" class="modern-link sw-link-visited">Visited Link</a>
+                <span class="modern-link sw-link-disabled">Disabled Link</span>
             </div>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Disabled links have reduced opacity and pointer-events: none
             </div>
@@ -224,7 +224,7 @@
 </div>
 
 <!-- Button Links -->
-<div class="dsgt-links-section-title">
+<div class="sw-links-section-title">
     <i class="fa-solid fa-square"></i>
     Button Links <span class="badge badge-success">Interactive</span>
 </div>
@@ -242,27 +242,27 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">Button Styles</span>
             <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
-                <a href="#" class="dsgt-link-btn">
+                <a href="#" class="sw-link-btn">
                     <i class="fa-solid fa-download"></i>
                     Outline
                 </a>
-                <a href="#" class="dsgt-link-btn dsgt-dsgt-link-btn-solid">
+                <a href="#" class="sw-link-btn sw-sw-link-btn-solid">
                     <i class="fa-solid fa-cloud-arrow-down"></i>
                     Solid
                 </a>
-                <a href="#" class="dsgt-link-btn dsgt-dsgt-link-btn-soft">
+                <a href="#" class="sw-link-btn sw-sw-link-btn-soft">
                     <i class="fa-solid fa-file-export"></i>
                     Soft
                 </a>
-                <a href="#" class="dsgt-link-btn dsgt-dsgt-link-btn-ghost">
+                <a href="#" class="sw-link-btn sw-sw-link-btn-ghost">
                     <i class="fa-solid fa-share-from-square"></i>
                     Ghost
                 </a>
             </div>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Button links provide prominent CTAs
             </div>
@@ -284,26 +284,26 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">Badge Integration</span>
             <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center;">
-                <a href="#" class="modern-link dsgt-link-with-badge">
+                <a href="#" class="modern-link sw-link-with-badge">
                     <i class="fa-solid fa-envelope"></i>
                     Messages
-                    <span class="dsgt-link-badge">5</span>
+                    <span class="sw-link-badge">5</span>
                 </a>
-                <a href="#" class="modern-link dsgt-link-with-badge">
+                <a href="#" class="modern-link sw-link-with-badge">
                     <i class="fa-solid fa-bell"></i>
                     Notifications
-                    <span class="dsgt-link-badge">12</span>
+                    <span class="sw-link-badge">12</span>
                 </a>
-                <a href="#" class="modern-link dsgt-link-with-badge">
+                <a href="#" class="modern-link sw-link-with-badge">
                     <i class="fa-solid fa-cart-shopping"></i>
                     Cart
-                    <span class="dsgt-link-badge">3</span>
+                    <span class="sw-link-badge">3</span>
                 </a>
             </div>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Badges show count of new items
             </div>
@@ -312,12 +312,12 @@
 </div>
 
 <!-- Link List -->
-<div class="dsgt-links-section-title">
+<div class="sw-links-section-title">
     <i class="fa-solid fa-list"></i>
     Link Lists
 </div>
 
-<div class="dsgt-links-grid">
+<div class="sw-links-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -331,12 +331,12 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-link-example">
+            <div class="sw-link-example">
                 <span class="lk-example-label">Settings Menu</span>
-                <ul class="dsgt-link-list">
+                <ul class="sw-link-list">
                     <li>
                         <a href="#">
-                            <div class="dsgt-dsgt-link-list-icon">
+                            <div class="sw-sw-link-list-icon">
                                 <i class="fa-solid fa-user"></i>
                             </div>
                             <div>
@@ -347,7 +347,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <div class="dsgt-dsgt-link-list-icon">
+                            <div class="sw-sw-link-list-icon">
                                 <i class="fa-solid fa-shield-halved"></i>
                             </div>
                             <div>
@@ -358,7 +358,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <div class="dsgt-dsgt-link-list-icon">
+                            <div class="sw-sw-link-list-icon">
                                 <i class="fa-solid fa-bell"></i>
                             </div>
                             <div>
@@ -369,7 +369,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <div class="dsgt-dsgt-link-list-icon">
+                            <div class="sw-sw-link-list-icon">
                                 <i class="fa-solid fa-palette"></i>
                             </div>
                             <div>
@@ -379,7 +379,7 @@
                         </a>
                     </li>
                 </ul>
-                <div class="dsgt-link-helper">
+                <div class="sw-link-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Hover to see slide effect
                 </div>
@@ -400,47 +400,47 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-link-example">
+            <div class="sw-link-example">
                 <span class="lk-example-label">Card Links</span>
                 <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <a href="#" class="dsgt-link-card">
-                        <div class="dsgt-dsgt-link-card-header">
-                            <div class="dsgt-dsgt-link-card-icon" style="background: var(--accent);">
+                    <a href="#" class="sw-link-card">
+                        <div class="sw-sw-link-card-header">
+                            <div class="sw-sw-link-card-icon" style="background: var(--accent);">
                                 <i class="fa-solid fa-graduation-cap"></i>
                             </div>
                             <div>
-                                <h4 class="dsgt-dsgt-link-card-title">Tutorials</h4>
-                                <p class="dsgt-dsgt-link-card-url">learn.example.com</p>
+                                <h4 class="sw-sw-link-card-title">Tutorials</h4>
+                                <p class="sw-sw-link-card-url">learn.example.com</p>
                             </div>
                         </div>
-                        <p class="dsgt-dsgt-link-card-desc">Step-by-step guides and video tutorials</p>
+                        <p class="sw-sw-link-card-desc">Step-by-step guides and video tutorials</p>
                     </a>
-                    <a href="#" class="dsgt-link-card">
-                        <div class="dsgt-dsgt-link-card-header">
-                            <div class="dsgt-dsgt-link-card-icon" style="background: var(--success);">
+                    <a href="#" class="sw-link-card">
+                        <div class="sw-sw-link-card-header">
+                            <div class="sw-sw-link-card-icon" style="background: var(--success);">
                                 <i class="fa-solid fa-book"></i>
                             </div>
                             <div>
-                                <h4 class="dsgt-dsgt-link-card-title">Documentation</h4>
-                                <p class="dsgt-dsgt-link-card-url">docs.example.com</p>
+                                <h4 class="sw-sw-link-card-title">Documentation</h4>
+                                <p class="sw-sw-link-card-url">docs.example.com</p>
                             </div>
                         </div>
-                        <p class="dsgt-dsgt-link-card-desc">Complete API reference and guides</p>
+                        <p class="sw-sw-link-card-desc">Complete API reference and guides</p>
                     </a>
-                    <a href="#" class="dsgt-link-card">
-                        <div class="dsgt-dsgt-link-card-header">
-                            <div class="dsgt-dsgt-link-card-icon" style="background: var(--warning);">
+                    <a href="#" class="sw-link-card">
+                        <div class="sw-sw-link-card-header">
+                            <div class="sw-sw-link-card-icon" style="background: var(--warning);">
                                 <i class="fa-solid fa-comments"></i>
                             </div>
                             <div>
-                                <h4 class="dsgt-dsgt-link-card-title">Community</h4>
-                                <p class="dsgt-dsgt-link-card-url">community.example.com</p>
+                                <h4 class="sw-sw-link-card-title">Community</h4>
+                                <p class="sw-sw-link-card-url">community.example.com</p>
                             </div>
                         </div>
-                        <p class="dsgt-dsgt-link-card-desc">Join discussions and get help</p>
+                        <p class="sw-sw-link-card-desc">Join discussions and get help</p>
                     </a>
                 </div>
-                <div class="dsgt-link-helper">
+                <div class="sw-link-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Cards lift on hover with shadow
                 </div>
@@ -450,7 +450,7 @@
 </div>
 
 <!-- Animated Links -->
-<div class="dsgt-links-section-title">
+<div class="sw-links-section-title">
     <i class="fa-solid fa-wand-magic-sparkles"></i>
     Animated Links
 </div>
@@ -468,15 +468,15 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">Animation Styles</span>
             <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center;">
-                <a href="#" class="modern-link dsgt-link-glow">Glow Effect</a>
-                <a href="#" class="modern-link dsgt-link-shimmer">Shimmer Text</a>
-                <a href="#" class="modern-link dsgt-link-bounce">Bounce Hover</a>
-                <a href="#" class="modern-link dsgt-link-tooltip" data-tooltip="Click to view more">Tooltip Link</a>
+                <a href="#" class="modern-link sw-link-glow">Glow Effect</a>
+                <a href="#" class="modern-link sw-link-shimmer">Shimmer Text</a>
+                <a href="#" class="modern-link sw-link-bounce">Bounce Hover</a>
+                <a href="#" class="modern-link sw-link-tooltip" data-tooltip="Click to view more">Tooltip Link</a>
             </div>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Hover to see different animations
             </div>
@@ -498,24 +498,24 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">Breadcrumb Example</span>
-            <nav class="dsgt-breadcrumb-links">
+            <nav class="sw-breadcrumb-links">
                 <a href="#"><i class="fa-solid fa-house"></i> Home</a>
-                <span class="dsgt-breadcrumb-separator">
+                <span class="sw-breadcrumb-separator">
                     <i class="fa-solid fa-chevron-right"></i>
                 </span>
                 <a href="#">Products</a>
-                <span class="dsgt-breadcrumb-separator">
+                <span class="sw-breadcrumb-separator">
                     <i class="fa-solid fa-chevron-right"></i>
                 </span>
                 <a href="#">Electronics</a>
-                <span class="dsgt-breadcrumb-separator">
+                <span class="sw-breadcrumb-separator">
                     <i class="fa-solid fa-chevron-right"></i>
                 </span>
-                <span class="dsgt-breadcrumb-current">Smartphones</span>
+                <span class="sw-breadcrumb-current">Smartphones</span>
             </nav>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Shows current location in hierarchy
             </div>
@@ -524,7 +524,7 @@
 </div>
 
 <!-- Text Links -->
-<div class="dsgt-links-section-title">
+<div class="sw-links-section-title">
     <i class="fa-solid fa-paragraph"></i>
     Text Links <span class="badge badge-info">Common</span>
 </div>
@@ -542,26 +542,26 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">Paragraph with Links</span>
             <div style="display: flex; flex-direction: column; gap: 20px; font-size: 14px; line-height: 1.7;">
                 <p style="color: var(--text-secondary); margin: 0;">
                     Welcome to our platform! Please read our 
                     <a href="#" class="modern-link link-underline">Terms of Service</a> and 
                     <a href="#" class="modern-link link-underline">Privacy Policy</a> before continuing. 
-                    For more information, visit our <a href="#" class="modern-link dsgt-link-arrow">documentation center <i class="fa-solid fa-arrow-right dsgt-dsgt-link-arrow-icon"></i></a>.
+                    For more information, visit our <a href="#" class="modern-link sw-link-arrow">documentation center <i class="fa-solid fa-arrow-right sw-sw-link-arrow-icon"></i></a>.
                 </p>
                 <p style="color: var(--text-secondary); margin: 0;">
-                    Need help? Contact our <a href="#" class="modern-link dsgt-link-success">support team</a> or check the 
-                    <a href="#" class="modern-link dsgt-link-info">FAQ section</a>. You can also join our 
-                    <a href="#" class="modern-link dsgt-link-warning">community forum</a> to connect with other users.
+                    Need help? Contact our <a href="#" class="modern-link sw-link-success">support team</a> or check the 
+                    <a href="#" class="modern-link sw-link-info">FAQ section</a>. You can also join our 
+                    <a href="#" class="modern-link sw-link-warning">community forum</a> to connect with other users.
                 </p>
                 <p style="color: var(--text-secondary); margin: 0;">
-                    <strong>Important:</strong> Please review the <a href="#" class="modern-link dsgt-link-danger">security guidelines</a> 
-                    before uploading files. Report any issues to our <a href="#" class="modern-link dsgt-link-muted">abuse team</a>.
+                    <strong>Important:</strong> Please review the <a href="#" class="modern-link sw-link-danger">security guidelines</a> 
+                    before uploading files. Report any issues to our <a href="#" class="modern-link sw-link-muted">abuse team</a>.
                 </p>
             </div>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Inline links blend naturally with text content
             </div>
@@ -583,7 +583,7 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">External Link Indicators</span>
             <div style="display: flex; flex-direction: column; gap: 16px;">
                 <div>
@@ -601,7 +601,7 @@
                     <div style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Alternative external link icon</div>
                 </div>
                 <div>
-                    <a href="#" class="modern-link dsgt-link-info">
+                    <a href="#" class="modern-link sw-link-info">
                         <i class="fa-brands fa-twitter"></i>
                         Follow us on Twitter
                         <i class="fa-solid fa-external-link" style="font-size: 11px; margin-left: 4px;"></i>
@@ -609,7 +609,7 @@
                     <div style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Social media link with icon</div>
                 </div>
             </div>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 External links should use target="_blank" and rel="noopener noreferrer"
             </div>
@@ -618,7 +618,7 @@
 </div>
 
 <!-- Download & Action Links -->
-<div class="dsgt-links-section-title">
+<div class="sw-links-section-title">
     <i class="fa-solid fa-download"></i>
     Download & Action Links
 </div>
@@ -636,38 +636,38 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">File Downloads</span>
             <div style="display: flex; flex-direction: column; gap: 16px;">
-                <a href="#" class="modern-link dsgt-link-arrow">
+                <a href="#" class="modern-link sw-link-arrow">
                     <i class="fa-solid fa-file-pdf" style="color: var(--danger);"></i>
                     Download Report.pdf
                     <span style="font-size: 11px; color: var(--text-secondary); font-weight: 400;">(2.4 MB)</span>
-                    <i class="fa-solid fa-download dsgt-dsgt-link-arrow-icon"></i>
+                    <i class="fa-solid fa-download sw-sw-link-arrow-icon"></i>
                 </a>
                 
-                <a href="#" class="modern-link dsgt-link-arrow dsgt-link-success">
+                <a href="#" class="modern-link sw-link-arrow sw-link-success">
                     <i class="fa-solid fa-file-excel" style="color: var(--success);"></i>
                     Export Data.xlsx
                     <span style="font-size: 11px; color: var(--text-secondary); font-weight: 400;">(1.8 MB)</span>
-                    <i class="fa-solid fa-download dsgt-dsgt-link-arrow-icon"></i>
+                    <i class="fa-solid fa-download sw-sw-link-arrow-icon"></i>
                 </a>
                 
-                <a href="#" class="modern-link dsgt-link-arrow dsgt-link-info">
+                <a href="#" class="modern-link sw-link-arrow sw-link-info">
                     <i class="fa-solid fa-file-image" style="color: var(--info);"></i>
                     Product Photos.zip
                     <span style="font-size: 11px; color: var(--text-secondary); font-weight: 400;">(15.3 MB)</span>
-                    <i class="fa-solid fa-download dsgt-dsgt-link-arrow-icon"></i>
+                    <i class="fa-solid fa-download sw-sw-link-arrow-icon"></i>
                 </a>
                 
-                <a href="#" class="modern-link dsgt-link-arrow dsgt-link-warning">
+                <a href="#" class="modern-link sw-link-arrow sw-link-warning">
                     <i class="fa-solid fa-file-code" style="color: var(--warning);"></i>
                     Source Code.tar.gz
                     <span style="font-size: 11px; color: var(--text-secondary); font-weight: 400;">(856 KB)</span>
-                    <i class="fa-solid fa-download dsgt-dsgt-link-arrow-icon"></i>
+                    <i class="fa-solid fa-download sw-sw-link-arrow-icon"></i>
                 </a>
             </div>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Include file type icons and file size for better UX
             </div>
@@ -689,39 +689,39 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">Contact Links</span>
             <div style="display: flex; flex-direction: column; gap: 16px;">
                 <div>
-                    <a href="mailto:support@example.com" class="modern-link dsgt-link-icon">
+                    <a href="mailto:support@example.com" class="modern-link sw-link-icon">
                         <i class="fa-solid fa-envelope"></i>
                         support@example.com
                     </a>
                     <div style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Click to open email client</div>
                 </div>
                 <div>
-                    <a href="tel:+6281234567890" class="modern-link dsgt-link-success dsgt-link-icon">
+                    <a href="tel:+6281234567890" class="modern-link sw-link-success sw-link-icon">
                         <i class="fa-solid fa-phone"></i>
                         +62 812-3456-7890
                     </a>
                     <div style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Click to call on mobile</div>
                 </div>
                 <div>
-                    <a href="sms:+6281234567890" class="modern-link dsgt-link-info dsgt-link-icon">
+                    <a href="sms:+6281234567890" class="modern-link sw-link-info sw-link-icon">
                         <i class="fa-solid fa-comment-sms"></i>
                         Send SMS
                     </a>
                     <div style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Open SMS app</div>
                 </div>
                 <div>
-                    <a href="https://wa.me/6281234567890" class="modern-link dsgt-link-icon" target="_blank" style="color: #25D366;">
+                    <a href="https://wa.me/6281234567890" class="modern-link sw-link-icon" target="_blank" style="color: #25D366;">
                         <i class="fa-brands fa-whatsapp"></i>
                         Chat on WhatsApp
                     </a>
                     <div style="margin-top: 4px; font-size: 12px; color: var(--text-secondary);">Open WhatsApp chat</div>
                 </div>
             </div>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Use mailto:, tel:, and sms: protocols for contact links
             </div>
@@ -730,7 +730,7 @@
 </div>
 
 <!-- Anchor & Jump Links -->
-<div class="dsgt-links-section-title">
+<div class="sw-links-section-title">
     <i class="fa-solid fa-anchor"></i>
     Anchor & Jump Links
 </div>
@@ -748,47 +748,47 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">Table of Contents Style</span>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
                 <div>
                     <h4 style="font-size: 13px; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">Quick Navigation</h4>
                     <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
                         <li>
-                            <a href="#section1" class="modern-link dsgt-link-arrow" style="font-size: 13px;">
+                            <a href="#section1" class="modern-link sw-link-arrow" style="font-size: 13px;">
                                 1. Getting Started
-                                <i class="fa-solid fa-chevron-right dsgt-dsgt-link-arrow-icon"></i>
+                                <i class="fa-solid fa-chevron-right sw-sw-link-arrow-icon"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#section2" class="modern-link dsgt-link-arrow" style="font-size: 13px;">
+                            <a href="#section2" class="modern-link sw-link-arrow" style="font-size: 13px;">
                                 2. Installation
-                                <i class="fa-solid fa-chevron-right dsgt-dsgt-link-arrow-icon"></i>
+                                <i class="fa-solid fa-chevron-right sw-sw-link-arrow-icon"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#section3" class="modern-link dsgt-link-arrow" style="font-size: 13px;">
+                            <a href="#section3" class="modern-link sw-link-arrow" style="font-size: 13px;">
                                 3. Configuration
-                                <i class="fa-solid fa-chevron-right dsgt-dsgt-link-arrow-icon"></i>
+                                <i class="fa-solid fa-chevron-right sw-sw-link-arrow-icon"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#section4" class="modern-link dsgt-link-arrow" style="font-size: 13px;">
+                            <a href="#section4" class="modern-link sw-link-arrow" style="font-size: 13px;">
                                 4. Usage Examples
-                                <i class="fa-solid fa-chevron-right dsgt-dsgt-link-arrow-icon"></i>
+                                <i class="fa-solid fa-chevron-right sw-sw-link-arrow-icon"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#section5" class="modern-link dsgt-link-arrow" style="font-size: 13px;">
+                            <a href="#section5" class="modern-link sw-link-arrow" style="font-size: 13px;">
                                 5. API Reference
-                                <i class="fa-solid fa-chevron-right dsgt-dsgt-link-arrow-icon"></i>
+                                <i class="fa-solid fa-chevron-right sw-sw-link-arrow-icon"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <h4 style="font-size: 13px; font-weight: 600; margin-bottom: 12px; color: var(--text-primary);">Back to Top</h4>
-                    <a href="#" class="dsgt-link-btn dsgt-dsgt-link-btn-soft" style="font-size: 13px;">
+                    <a href="#" class="sw-link-btn sw-sw-link-btn-soft" style="font-size: 13px;">
                         <i class="fa-solid fa-arrow-up"></i>
                         Back to Top
                     </a>
@@ -798,7 +798,7 @@
                     </div>
                 </div>
             </div>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Perfect for documentation and long-form content
             </div>
@@ -807,7 +807,7 @@
 </div>
 
 <!-- Social Media Links -->
-<div class="dsgt-links-section-title">
+<div class="sw-links-section-title">
     <i class="fa-solid fa-share-nodes"></i>
     Social Media Links
 </div>
@@ -825,35 +825,35 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-link-example">
+        <div class="sw-link-example">
             <span class="lk-example-label">Social Icons with Links</span>
             <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
-                <a href="#" class="modern-link dsgt-link-icon" style="color: #1877F2;">
+                <a href="#" class="modern-link sw-link-icon" style="color: #1877F2;">
                     <i class="fa-brands fa-facebook"></i>
                     Facebook
                 </a>
-                <a href="#" class="modern-link dsgt-link-icon" style="color: #1DA1F2;">
+                <a href="#" class="modern-link sw-link-icon" style="color: #1DA1F2;">
                     <i class="fa-brands fa-twitter"></i>
                     Twitter
                 </a>
-                <a href="#" class="modern-link dsgt-link-icon" style="color: #E4405F;">
+                <a href="#" class="modern-link sw-link-icon" style="color: #E4405F;">
                     <i class="fa-brands fa-instagram"></i>
                     Instagram
                 </a>
-                <a href="#" class="modern-link dsgt-link-icon" style="color: #0A66C2;">
+                <a href="#" class="modern-link sw-link-icon" style="color: #0A66C2;">
                     <i class="fa-brands fa-linkedin"></i>
                     LinkedIn
                 </a>
-                <a href="#" class="modern-link dsgt-link-icon" style="color: #FF0000;">
+                <a href="#" class="modern-link sw-link-icon" style="color: #FF0000;">
                     <i class="fa-brands fa-youtube"></i>
                     YouTube
                 </a>
-                <a href="#" class="modern-link dsgt-link-icon" style="color: #333;">
+                <a href="#" class="modern-link sw-link-icon" style="color: #333;">
                     <i class="fa-brands fa-github"></i>
                     GitHub
                 </a>
             </div>
-            <div class="dsgt-link-helper">
+            <div class="sw-link-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Use official brand colors for social media links
             </div>
@@ -862,12 +862,12 @@
 </div>
 
 <!-- Link Groups & Footers -->
-<div class="dsgt-links-section-title">
+<div class="sw-links-section-title">
     <i class="fa-solid fa-layer-group"></i>
     Link Groups & Footers
 </div>
 
-<div class="dsgt-links-grid">
+<div class="sw-links-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -881,12 +881,12 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-link-example">
+            <div class="sw-link-example">
                 <span class="lk-example-label">Product Links</span>
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;">
                     <div>
                         <h4 style="font-size: 13px; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">Product</h4>
-                        <ul class="dsgt-link-list">
+                        <ul class="sw-link-list">
                             <li style="padding: 8px 0;">
                                 <a href="#" style="font-size: 13px; padding: 4px 0;">Features</a>
                             </li>
@@ -903,7 +903,7 @@
                     </div>
                     <div>
                         <h4 style="font-size: 13px; font-weight: 700; margin-bottom: 12px; color: var(--text-primary);">Resources</h4>
-                        <ul class="dsgt-link-list">
+                        <ul class="sw-link-list">
                             <li style="padding: 8px 0;">
                                 <a href="#" style="font-size: 13px; padding: 4px 0;">Documentation</a>
                             </li>
@@ -919,7 +919,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="dsgt-link-helper">
+                <div class="sw-link-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Common pattern for website footers
                 </div>
@@ -940,7 +940,7 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-link-example">
+            <div class="sw-link-example">
                 <span class="lk-example-label">Horizontal Nav Links</span>
                 <nav style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center; padding: 16px 0;">
                     <a href="#" class="modern-link" style="font-weight: 700;">Home</a>
@@ -948,11 +948,11 @@
                     <a href="#" class="modern-link">Services</a>
                     <a href="#" class="modern-link">Portfolio</a>
                     <a href="#" class="modern-link">Blog</a>
-                    <a href="#" class="modern-link dsgt-link-btn dsgt-dsgt-link-btn-solid" style="font-size: 13px; padding: 6px 14px;">
+                    <a href="#" class="modern-link sw-link-btn sw-sw-link-btn-solid" style="font-size: 13px; padding: 6px 14px;">
                         Contact Us
                     </a>
                 </nav>
-                <div class="dsgt-link-helper">
+                <div class="sw-link-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Horizontal navigation with CTA button
                 </div>
@@ -962,12 +962,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-links-section-title">
+<div class="sw-links-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-links-grid">
+<div class="sw-links-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -998,15 +998,15 @@
                         <td>Animated underline</td>
                     </tr>
                     <tr>
-                        <td><code>.dsgt-link-arrow</code></td>
+                        <td><code>.sw-link-arrow</code></td>
                         <td>Arrow slides on hover</td>
                     </tr>
                     <tr>
-                        <td><code>.dsgt-link-btn</code></td>
+                        <td><code>.sw-link-btn</code></td>
                         <td>Button-style link</td>
                     </tr>
                     <tr>
-                        <td><code>.dsgt-link-with-badge</code></td>
+                        <td><code>.sw-link-with-badge</code></td>
                         <td>Badge indicator</td>
                     </tr>
                 </tbody>
@@ -1067,7 +1067,7 @@
 <script>
 // Links page initialization
 $(document).ready(function() {
-    console.log('📋 DSGT Links page loaded successfully');
+    console.log('📋 SW Links page loaded successfully');
 });
 </script>
 @endpush

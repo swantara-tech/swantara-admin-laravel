@@ -23,7 +23,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="dsgt-avatar-info-card content-card">
+<div class="sw-avatar-info-card content-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -36,7 +36,7 @@
 </div>
 
 <!-- Avatar with Images -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-image"></i>
     Avatar with Images
 </div>
@@ -54,32 +54,32 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-avatar-example" style="min-height: 120px;">
-            <span class="dsgt-avatar-example-label">Image Avatars</span>
+        <div class="sw-avatar-example" style="min-height: 120px;">
+            <span class="sw-avatar-example-label">Image Avatars</span>
             <div style="display: flex; gap: 20px; align-items: center;">
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=1') center/cover;"></div>
+                    <div class="sw-avatar sw-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=1') center/cover;"></div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Small</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl" style="background: url('https://i.pravatar.cc/150?img=2') center/cover;"></div>
+                    <div class="sw-avatar sw-avatar-xl" style="background: url('https://i.pravatar.cc/150?img=2') center/cover;"></div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Medium</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-2xl" style="background: url('https://i.pravatar.cc/150?img=3') center/cover;"></div>
+                    <div class="sw-avatar sw-avatar-2xl" style="background: url('https://i.pravatar.cc/150?img=3') center/cover;"></div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Large</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-bordered" style="background: url('https://i.pravatar.cc/150?img=4') center/cover;"></div>
+                    <div class="sw-avatar sw-avatar-xl sw-avatar-bordered" style="background: url('https://i.pravatar.cc/150?img=4') center/cover;"></div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Bordered</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-status online" style="background: url('https://i.pravatar.cc/150?img=5') center/cover;"></div>
+                    <div class="sw-avatar sw-avatar-xl sw-avatar-status online" style="background: url('https://i.pravatar.cc/150?img=5') center/cover;"></div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Online</div>
                 </div>
             </div>
         </div>
-        <div class="dsgt-avatar-helper">
+        <div class="sw-avatar-helper">
             <i class="fa-solid fa-circle-info"></i>
             Images from pravatar.cc with fallback to initials
         </div>
@@ -87,7 +87,7 @@
 </div>
 
 <!-- Avatar with Icons -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-icons"></i>
     Avatar with Icons
 </div>
@@ -105,30 +105,30 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-avatar-example" style="min-height: 120px;">
-            <span class="dsgt-avatar-example-label">Icon Variations</span>
+        <div class="sw-avatar-example" style="min-height: 120px;">
+            <span class="sw-avatar-example-label">Icon Variations</span>
             <div style="display: flex; gap: 20px;">
-                <div class="dsgt-avatar dsgt-avatar-lg" title="User">
-                    <i class="fa-solid fa-user dsgt-avatar-icon"></i>
+                <div class="sw-avatar sw-avatar-lg" title="User">
+                    <i class="fa-solid fa-user sw-avatar-icon"></i>
                 </div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-success" title="Settings">
-                    <i class="fa-solid fa-gear dsgt-avatar-icon"></i>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-success" title="Settings">
+                    <i class="fa-solid fa-gear sw-avatar-icon"></i>
                 </div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-warning" title="Mail">
-                    <i class="fa-solid fa-envelope dsgt-avatar-icon"></i>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-warning" title="Mail">
+                    <i class="fa-solid fa-envelope sw-avatar-icon"></i>
                 </div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-danger" title="Heart">
-                    <i class="fa-solid fa-heart dsgt-avatar-icon"></i>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-danger" title="Heart">
+                    <i class="fa-solid fa-heart sw-avatar-icon"></i>
                 </div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-info" title="Star">
-                    <i class="fa-solid fa-star dsgt-avatar-icon"></i>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-info" title="Star">
+                    <i class="fa-solid fa-star sw-avatar-icon"></i>
                 </div>
-                <div class="dsgt-avatar dsgt-avatar-lg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);" title="Rocket">
-                    <i class="fa-solid fa-rocket dsgt-avatar-icon"></i>
+                <div class="sw-avatar sw-avatar-lg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);" title="Rocket">
+                    <i class="fa-solid fa-rocket sw-avatar-icon"></i>
                 </div>
             </div>
         </div>
-        <div class="dsgt-avatar-helper">
+        <div class="sw-avatar-helper">
             <i class="fa-solid fa-circle-info"></i>
             Use icons for system avatars or categories
         </div>
@@ -136,7 +136,7 @@
 </div>
 
 <!-- Avatar Sizes Extended -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-text-height"></i>
     Avatar Sizes <span class="badge badge-primary">Essential</span>
 </div>
@@ -154,36 +154,36 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-avatar-example" style="min-height: 100px;">
-            <span class="dsgt-avatar-example-label">All Sizes</span>
+        <div class="sw-avatar-example" style="min-height: 100px;">
+            <span class="sw-avatar-example-label">All Sizes</span>
             <div style="display: flex; gap: 16px; align-items: end;">
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xs">XS</div>
+                    <div class="sw-avatar sw-avatar-xs">XS</div>
                     <div style="font-size: 10px; margin-top: 4px;">24px</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-sm">SM</div>
+                    <div class="sw-avatar sw-avatar-sm">SM</div>
                     <div style="font-size: 10px; margin-top: 4px;">32px</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-md">MD</div>
+                    <div class="sw-avatar sw-avatar-md">MD</div>
                     <div style="font-size: 10px; margin-top: 4px;">40px</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-lg">LG</div>
+                    <div class="sw-avatar sw-avatar-lg">LG</div>
                     <div style="font-size: 10px; margin-top: 4px;">48px</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl">XL</div>
+                    <div class="sw-avatar sw-avatar-xl">XL</div>
                     <div style="font-size: 10px; margin-top: 4px;">64px</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-2xl">2XL</div>
+                    <div class="sw-avatar sw-avatar-2xl">2XL</div>
                     <div style="font-size: 10px; margin-top: 4px;">80px</div>
                 </div>
             </div>
         </div>
-        <div class="dsgt-avatar-helper">
+        <div class="sw-avatar-helper">
             <i class="fa-solid fa-circle-info"></i>
             Six size options from 24px to 80px
         </div>
@@ -191,7 +191,7 @@
 </div>
 
 <!-- Avatar Colors -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-palette"></i>
     Avatar Colors
 </div>
@@ -209,17 +209,17 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-avatar-example" style="min-height: 100px;">
-            <span class="dsgt-avatar-example-label">Color Options</span>
+        <div class="sw-avatar-example" style="min-height: 100px;">
+            <span class="sw-avatar-example-label">Color Options</span>
             <div style="display: flex; gap: 16px;">
-                <div class="dsgt-avatar dsgt-avatar-lg">P</div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-success">S</div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-warning">W</div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-danger">D</div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-info">I</div>
+                <div class="sw-avatar sw-avatar-lg">P</div>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-success">S</div>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-warning">W</div>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-danger">D</div>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-info">I</div>
             </div>
         </div>
-        <div class="dsgt-avatar-helper">
+        <div class="sw-avatar-helper">
             <i class="fa-solid fa-circle-info"></i>
             Five color variants available
         </div>
@@ -227,7 +227,7 @@
 </div>
 
 <!-- Avatar with Status -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-circle-dot"></i>
     Avatar with Status
 </div>
@@ -245,28 +245,28 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-avatar-example" style="min-height: 100px;">
-            <span class="dsgt-avatar-example-label">User Status</span>
+        <div class="sw-avatar-example" style="min-height: 100px;">
+            <span class="sw-avatar-example-label">User Status</span>
             <div style="display: flex; gap: 24px;">
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-status online">JD</div>
+                    <div class="sw-avatar sw-avatar-xl sw-avatar-status online">JD</div>
                     <div style="font-size: 11px; margin-top: 8px;">Online</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-status offline">AS</div>
+                    <div class="sw-avatar sw-avatar-xl sw-avatar-status offline">AS</div>
                     <div style="font-size: 11px; margin-top: 8px;">Offline</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-status busy">MK</div>
+                    <div class="sw-avatar sw-avatar-xl sw-avatar-status busy">MK</div>
                     <div style="font-size: 11px; margin-top: 8px;">Busy</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-status away">RW</div>
+                    <div class="sw-avatar sw-avatar-xl sw-avatar-status away">RW</div>
                     <div style="font-size: 11px; margin-top: 8px;">Away</div>
                 </div>
             </div>
         </div>
-        <div class="dsgt-avatar-helper">
+        <div class="sw-avatar-helper">
             <i class="fa-solid fa-circle-info"></i>
             Real-time user status display
         </div>
@@ -274,7 +274,7 @@
 </div>
 
 <!-- Avatar with Text -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-font"></i>
     Avatar with Text
 </div>
@@ -292,32 +292,32 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-avatar-example" style="min-height: 120px;">
-            <span class="dsgt-avatar-example-label">Text Variations</span>
+        <div class="sw-avatar-example" style="min-height: 120px;">
+            <span class="sw-avatar-example-label">Text Variations</span>
             <div style="display: flex; gap: 24px; align-items: center;">
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl">J</div>
+                    <div class="sw-avatar sw-avatar-xl">J</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">First Initial</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-success">JD</div>
+                    <div class="sw-avatar sw-avatar-xl sw-avatar-success">JD</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Initials</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-warning" style="font-size: 12px;">JD</div>
+                    <div class="sw-avatar sw-avatar-xl sw-avatar-warning" style="font-size: 12px;">JD</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">2 Letters</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-danger" style="font-size: 11px; width: auto; padding: 0 12px; border-radius: 20px;">John</div>
+                    <div class="sw-avatar sw-avatar-xl sw-avatar-danger" style="font-size: 11px; width: auto; padding: 0 12px; border-radius: 20px;">John</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Full Name</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-info" style="font-size: 10px; width: auto; padding: 0 12px; border-radius: 20px;">J. Doe</div>
+                    <div class="sw-avatar sw-avatar-xl sw-avatar-info" style="font-size: 10px; width: auto; padding: 0 12px; border-radius: 20px;">J. Doe</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Abbreviated</div>
                 </div>
             </div>
         </div>
-        <div class="dsgt-avatar-helper">
+        <div class="sw-avatar-helper">
             <i class="fa-solid fa-circle-info"></i>
             Different text formats for various use cases
         </div>
@@ -325,7 +325,7 @@
 </div>
 
 <!-- Avatar Bordered & Ring -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-circle-notch"></i>
     Bordered & Ring Styles
 </div>
@@ -343,32 +343,32 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-avatar-example" style="min-height: 120px;">
-            <span class="dsgt-avatar-example-label">Border Styles</span>
+        <div class="sw-avatar-example" style="min-height: 120px;">
+            <span class="sw-avatar-example-label">Border Styles</span>
             <div style="display: flex; gap: 24px;">
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-bordered">JD</div>
+                    <div class="sw-avatar sw-avatar-xl sw-avatar-bordered">JD</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Bordered</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl" style="border: 3px solid var(--success); box-shadow: 0 0 0 2px var(--success);">AS</div>
+                    <div class="sw-avatar sw-avatar-xl" style="border: 3px solid var(--success); box-shadow: 0 0 0 2px var(--success);">AS</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Green Ring</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl" style="border: 3px solid var(--danger); box-shadow: 0 0 0 2px var(--danger);">MK</div>
+                    <div class="sw-avatar sw-avatar-xl" style="border: 3px solid var(--danger); box-shadow: 0 0 0 2px var(--danger);">MK</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Red Ring</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl" style="border: 3px solid var(--warning); box-shadow: 0 0 0 2px var(--warning);">RW</div>
+                    <div class="sw-avatar sw-avatar-xl" style="border: 3px solid var(--warning); box-shadow: 0 0 0 2px var(--warning);">RW</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Yellow Ring</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl" style="border: 3px dashed var(--accent);">TN</div>
+                    <div class="sw-avatar sw-avatar-xl" style="border: 3px dashed var(--accent);">TN</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Dashed</div>
                 </div>
             </div>
         </div>
-        <div class="dsgt-avatar-helper">
+        <div class="sw-avatar-helper">
             <i class="fa-solid fa-circle-info"></i>
             Custom borders with CSS box-shadow technique
         </div>
@@ -376,7 +376,7 @@
 </div>
 
 <!-- Gradient Avatars -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-rainbow"></i>
     Gradient Avatars
 </div>
@@ -398,32 +398,32 @@
             <span class="avatar-example-label">Gradient Styles</span>
             <div style="display: flex; gap: 20px;">
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">JD</div>
+                    <div class="sw-avatar sw-avatar-xl" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">JD</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Purple</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">AS</div>
+                    <div class="sw-avatar sw-avatar-xl" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">AS</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Pink</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">MK</div>
+                    <div class="sw-avatar sw-avatar-xl" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">MK</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Blue</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">RW</div>
+                    <div class="sw-avatar sw-avatar-xl" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">RW</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Green</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">TN</div>
+                    <div class="sw-avatar sw-avatar-xl" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">TN</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Sunset</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="dsgt-avatar dsgt-avatar-xl" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #333;">AB</div>
+                    <div class="sw-avatar sw-avatar-xl" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #333;">AB</div>
                     <div style="font-size: 11px; margin-top: 8px; color: var(--text-secondary);">Pastel</div>
                 </div>
             </div>
         </div>
-        <div class="dsgt-avatar-helper">
+        <div class="sw-avatar-helper">
             <i class="fa-solid fa-circle-info"></i>
             Modern gradient backgrounds for premium look
         </div>
@@ -431,7 +431,7 @@
 </div>
 
 <!-- Interactive Avatar Demo -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-hand-pointer"></i>
     Interactive Demo <span class="badge badge-success">New</span>
 </div>
@@ -457,12 +457,12 @@
                 <div style="margin-bottom: 16px;">
                     <label style="font-size: 12px; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 8px;">Size</label>
                     <select id="avatarSize" class="form-control" style="width: 100%;">
-                        <option value="dsgt-avatar-xs">XS (24px)</option>
-                        <option value="dsgt-avatar-sm">SM (32px)</option>
-                        <option value="dsgt-avatar-md">MD (40px)</option>
-                        <option value="dsgt-avatar-lg" selected>LG (48px)</option>
-                        <option value="dsgt-avatar-xl">XL (64px)</option>
-                        <option value="dsgt-avatar-2xl">2XL (80px)</option>
+                        <option value="sw-avatar-xs">XS (24px)</option>
+                        <option value="sw-avatar-sm">SM (32px)</option>
+                        <option value="sw-avatar-md">MD (40px)</option>
+                        <option value="sw-avatar-lg" selected>LG (48px)</option>
+                        <option value="sw-avatar-xl">XL (64px)</option>
+                        <option value="sw-avatar-2xl">2XL (80px)</option>
                     </select>
                 </div>
                 
@@ -479,9 +479,9 @@
                 <div style="margin-bottom: 16px;">
                     <label style="font-size: 12px; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 8px;">Shape</label>
                     <select id="avatarShape" class="form-control" style="width: 100%;">
-                        <option value="dsgt-avatar-rounded">Circle</option>
-                        <option value="dsgt-avatar-square">Square</option>
-                        <option value="dsgt-avatar-rounded-lg">Rounded</option>
+                        <option value="sw-avatar-rounded">Circle</option>
+                        <option value="sw-avatar-square">Square</option>
+                        <option value="sw-avatar-rounded-lg">Rounded</option>
                     </select>
                 </div>
                 
@@ -505,10 +505,10 @@
                     <label style="font-size: 12px; font-weight: 600; color: var(--text-secondary); display: block; margin-bottom: 8px;">Background Color</label>
                     <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;">
                         <button class="color-btn" data-color="" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid var(--border-color); background: var(--accent); cursor: pointer;" title="Default"></button>
-                        <button class="color-btn" data-color="dsgt-avatar-success" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: var(--success); cursor: pointer;" title="Success"></button>
-                        <button class="color-btn" data-color="dsgt-avatar-warning" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: var(--warning); cursor: pointer;" title="Warning"></button>
-                        <button class="color-btn" data-color="dsgt-avatar-danger" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: var(--danger); cursor: pointer;" title="Danger"></button>
-                        <button class="color-btn" data-color="dsgt-avatar-info" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: var(--info); cursor: pointer;" title="Info"></button>
+                        <button class="color-btn" data-color="sw-avatar-success" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: var(--success); cursor: pointer;" title="Success"></button>
+                        <button class="color-btn" data-color="sw-avatar-warning" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: var(--warning); cursor: pointer;" title="Warning"></button>
+                        <button class="color-btn" data-color="sw-avatar-danger" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: var(--danger); cursor: pointer;" title="Danger"></button>
+                        <button class="color-btn" data-color="sw-avatar-info" style="width: 100%; aspect-ratio: 1; border-radius: 6px; border: 2px solid transparent; background: var(--info); cursor: pointer;" title="Info"></button>
                     </div>
                 </div>
                 
@@ -525,7 +525,7 @@
                 </h4>
                 
                 <div style="min-height: 300px; background: linear-gradient(135deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.05) 100%); border: 2px dashed var(--border-color); border-radius: 12px; display: flex; align-items: center; justify-content: center; position: relative;">
-                    <div id="avatarPreview" class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-status online">
+                    <div id="avatarPreview" class="sw-avatar sw-avatar-lg sw-avatar-status online">
                         JD
                     </div>
                 </div>
@@ -533,7 +533,7 @@
                 <div style="margin-top: 20px; padding: 16px; background: var(--surface-dark); border-radius: 8px; border-left: 4px solid var(--accent);">
                     <div style="font-size: 11px; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">HTML Code</div>
                     <code id="avatarCode" style="font-size: 12px; color: var(--accent); font-family: 'Fira Code', 'Courier New', monospace;">
-                        &lt;div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-status online"&gt;JD&lt;/div&gt;
+                        &lt;div class="sw-avatar sw-avatar-lg sw-avatar-status online"&gt;JD&lt;/div&gt;
                     </code>
                 </div>
                 
@@ -549,7 +549,7 @@
 </div>
 
 <!-- Avatar Group Extended -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-users"></i>
     Advanced Avatar Groups
 </div>
@@ -569,40 +569,40 @@
     <div class="card-body">
         <div class="avatar-example" style="min-height: 120px;">
             <span class="avatar-example-label">Basic Group</span>
-            <div class="dsgt-avatar-group">
-                <div class="dsgt-avatar dsgt-avatar-lg">JD</div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-success">AS</div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-warning">MK</div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-danger">RW</div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-info">+5</div>
+            <div class="sw-avatar-group">
+                <div class="sw-avatar sw-avatar-lg">JD</div>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-success">AS</div>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-warning">MK</div>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-danger">RW</div>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-info">+5</div>
             </div>
         </div>
         
         <div class="avatar-example" style="min-height: 120px; margin-top: 16px;">
             <span class="avatar-example-label">Group with Images</span>
-            <div class="dsgt-avatar-group">
-                <div class="dsgt-avatar dsgt-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=1') center/cover;"></div>
-                <div class="dsgt-avatar dsgt-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=2') center/cover;"></div>
-                <div class="dsgt-avatar dsgt-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=3') center/cover;"></div>
-                <div class="dsgt-avatar dsgt-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=4') center/cover;"></div>
-                <div class="dsgt-avatar dsgt-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=5') center/cover;"></div>
-                <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-info">+10</div>
+            <div class="sw-avatar-group">
+                <div class="sw-avatar sw-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=1') center/cover;"></div>
+                <div class="sw-avatar sw-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=2') center/cover;"></div>
+                <div class="sw-avatar sw-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=3') center/cover;"></div>
+                <div class="sw-avatar sw-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=4') center/cover;"></div>
+                <div class="sw-avatar sw-avatar-lg" style="background: url('https://i.pravatar.cc/150?img=5') center/cover;"></div>
+                <div class="sw-avatar sw-avatar-lg sw-avatar-info">+10</div>
             </div>
         </div>
         
         <div class="avatar-example" style="min-height: 120px; margin-top: 16px;">
             <span class="avatar-example-label">Large Group</span>
-            <div class="dsgt-avatar-group">
-                <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-status online">JD</div>
-                <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-status busy">AS</div>
-                <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-status away">MK</div>
-                <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-status offline">RW</div>
-                <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-status online">TN</div>
-                <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-danger">+25</div>
+            <div class="sw-avatar-group">
+                <div class="sw-avatar sw-avatar-xl sw-avatar-status online">JD</div>
+                <div class="sw-avatar sw-avatar-xl sw-avatar-status busy">AS</div>
+                <div class="sw-avatar sw-avatar-xl sw-avatar-status away">MK</div>
+                <div class="sw-avatar sw-avatar-xl sw-avatar-status offline">RW</div>
+                <div class="sw-avatar sw-avatar-xl sw-avatar-status online">TN</div>
+                <div class="sw-avatar sw-avatar-xl sw-avatar-danger">+25</div>
             </div>
         </div>
         
-        <div class="dsgt-avatar-helper">
+        <div class="sw-avatar-helper">
             <i class="fa-solid fa-circle-info"></i>
             Hover over avatars to see them pop out
         </div>
@@ -610,7 +610,7 @@
 </div>
 
 <!-- Avatar with Badge -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-bell"></i>
     Avatar with Badge
 </div>
@@ -631,21 +631,21 @@
         <div class="avatar-example" style="min-height: 100px;">
             <span class="avatar-example-label">Notifications</span>
             <div style="display: flex; gap: 24px;">
-                <div class="dsgt-avatar-badge-wrapper">
-                    <div class="dsgt-avatar dsgt-avatar-lg">JD</div>
-                    <div class="dsgt-avatar-badge">3</div>
+                <div class="sw-avatar-badge-wrapper">
+                    <div class="sw-avatar sw-avatar-lg">JD</div>
+                    <div class="sw-avatar-badge">3</div>
                 </div>
-                <div class="dsgt-avatar-badge-wrapper">
-                    <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-success">AS</div>
-                    <div class="dsgt-avatar-badge">12</div>
+                <div class="sw-avatar-badge-wrapper">
+                    <div class="sw-avatar sw-avatar-lg sw-avatar-success">AS</div>
+                    <div class="sw-avatar-badge">12</div>
                 </div>
-                <div class="dsgt-avatar-badge-wrapper">
-                    <div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-warning">MK</div>
-                    <div class="dsgt-avatar-badge">99+</div>
+                <div class="sw-avatar-badge-wrapper">
+                    <div class="sw-avatar sw-avatar-lg sw-avatar-warning">MK</div>
+                    <div class="sw-avatar-badge">99+</div>
                 </div>
             </div>
         </div>
-        <div class="dsgt-avatar-helper">
+        <div class="sw-avatar-helper">
             <i class="fa-solid fa-circle-info"></i>
             Notification count display
         </div>
@@ -653,7 +653,7 @@
 </div>
 
 <!-- Avatar Shapes -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-shapes"></i>
     Avatar Shapes
 </div>
@@ -674,18 +674,18 @@
         <div class="avatar-example" style="min-height: 100px;">
             <span class="avatar-example-label">Shape Options</span>
             <div style="display: flex; gap: 24px;">
-                <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-rounded">
-                    <i class="fa-solid fa-user dsgt-avatar-icon"></i>
+                <div class="sw-avatar sw-avatar-xl sw-avatar-rounded">
+                    <i class="fa-solid fa-user sw-avatar-icon"></i>
                 </div>
-                <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-square">
-                    <i class="fa-solid fa-user dsgt-avatar-icon"></i>
+                <div class="sw-avatar sw-avatar-xl sw-avatar-square">
+                    <i class="fa-solid fa-user sw-avatar-icon"></i>
                 </div>
-                <div class="dsgt-avatar dsgt-avatar-xl dsgt-avatar-rounded-lg">
-                    <i class="fa-solid fa-user dsgt-avatar-icon"></i>
+                <div class="sw-avatar sw-avatar-xl sw-avatar-rounded-lg">
+                    <i class="fa-solid fa-user sw-avatar-icon"></i>
                 </div>
             </div>
         </div>
-        <div class="dsgt-avatar-helper">
+        <div class="sw-avatar-helper">
             <i class="fa-solid fa-circle-info"></i>
             Three shape variants
         </div>
@@ -693,12 +693,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-avatar-section-title">
+<div class="sw-avatar-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-avatar-grid">
+<div class="sw-avatar-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -712,19 +712,19 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-avatar-code-block">
+            <div class="sw-avatar-code-block">
 &lt;!-- Basic Avatar --&gt;<br>
-&lt;div class="dsgt-avatar dsgt-avatar-md"&gt;JD&lt;/div&gt;<br>
+&lt;div class="sw-avatar sw-avatar-md"&gt;JD&lt;/div&gt;<br>
 <br>
 &lt;!-- With Status --&gt;<br>
-&lt;div class="dsgt-avatar dsgt-avatar-lg dsgt-avatar-status online"&gt;<br>
+&lt;div class="sw-avatar sw-avatar-lg sw-avatar-status online"&gt;<br>
 &nbsp;&nbsp;AS<br>
 &lt;/div&gt;<br>
 <br>
 &lt;!-- Avatar Group --&gt;<br>
 &lt;div class="avatar-group"&gt;<br>
-&nbsp;&nbsp;&lt;div class="dsgt-avatar dsgt-avatar-md"&gt;JD&lt;/div&gt;<br>
-&nbsp;&nbsp;&lt;div class="dsgt-avatar dsgt-avatar-md"&gt;AS&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="sw-avatar sw-avatar-md"&gt;JD&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;div class="sw-avatar sw-avatar-md"&gt;AS&lt;/div&gt;<br>
 &lt;/div&gt;
             </div>
         </div>

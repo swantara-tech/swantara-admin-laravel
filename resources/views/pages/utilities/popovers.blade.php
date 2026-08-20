@@ -17,7 +17,7 @@
             <i class="fa-solid fa-book"></i>
             <span>Documentation</span>
         </button>
-        <button class="btn btn-primary" onclick="MetroAdmin.openDSGTPopover('demo-popover', this)">
+        <button class="btn btn-primary" onclick="MetroAdmin.openSWPopover('demo-popover', this)">
             <i class="fa-solid fa-eye"></i>
             <span>Try Popover</span>
         </button>
@@ -25,7 +25,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-info-card">
+<div class="content-card sw-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -38,7 +38,7 @@
 </div>
 
 <!-- Smart Auto-Positioning Demo -->
-<div class="dsgt-popovers-section-title">
+<div class="sw-popovers-section-title">
     <i class="fa-solid fa-wand-magic-sparkles"></i>
     Smart Auto-Positioning <span class="badge badge-primary">NEW</span>
 </div>
@@ -52,7 +52,7 @@
     </div>
 </div>
 
-<div class="dsgt-popovers-grid">
+<div class="sw-popovers-grid">
     <!-- Top Edge Demo -->
     <div class="content-card">
         <div class="card-header">
@@ -67,16 +67,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('auto-top-demo', this)">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('auto-top-demo', this)">
                     I'm Near Top
                 </button>
-                <div id="auto-top-demo" class="dsgt-custom-popover dsgt-popover-top">
-                    <p class="dsgt-popover-title">Smart Position</p>
-                    <p class="dsgt-popover-content">Popover ini akan otomatis pindah ke bottom jika tidak cukup ruang di atas!</p>
+                <div id="auto-top-demo" class="sw-custom-popover sw-popover-top">
+                    <p class="sw-popover-title">Smart Position</p>
+                    <p class="sw-popover-content">Popover ini akan otomatis pindah ke bottom jika tidak cukup ruang di atas!</p>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Will auto-switch to bottom if needed
             </div>
@@ -97,16 +97,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('auto-bottom-demo', this)">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('auto-bottom-demo', this)">
                     I'm Near Bottom
                 </button>
-                <div id="auto-bottom-demo" class="dsgt-custom-popover dsgt-popover-bottom">
-                    <p class="dsgt-popover-title">Smart Position</p>
-                    <p class="dsgt-popover-content">Popover ini akan otomatis pindah ke top jika tidak cukup ruang di bawah!</p>
+                <div id="auto-bottom-demo" class="sw-custom-popover sw-popover-bottom">
+                    <p class="sw-popover-title">Smart Position</p>
+                    <p class="sw-popover-content">Popover ini akan otomatis pindah ke top jika tidak cukup ruang di bawah!</p>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Will auto-switch to top if needed
             </div>
@@ -127,16 +127,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('auto-left-demo', this)">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('auto-left-demo', this)">
                     I'm Near Left
                 </button>
-                <div id="auto-left-demo" class="dsgt-custom-popover dsgt-popover-left">
-                    <p class="dsgt-popover-title">Smart Position</p>
-                    <p class="dsgt-popover-content">Popover ini akan otomatis pindah ke right jika tidak cukup ruang di kiri!</p>
+                <div id="auto-left-demo" class="sw-custom-popover sw-popover-left">
+                    <p class="sw-popover-title">Smart Position</p>
+                    <p class="sw-popover-content">Popover ini akan otomatis pindah ke right jika tidak cukup ruang di kiri!</p>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Will auto-switch to right if needed
             </div>
@@ -157,16 +157,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('auto-right-demo', this)">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('auto-right-demo', this)">
                     I'm Near Right
                 </button>
-                <div id="auto-right-demo" class="dsgt-custom-popover dsgt-popover-right">
-                    <p class="dsgt-popover-title">Smart Position</p>
-                    <p class="dsgt-popover-content">Popover ini akan otomatis pindah ke left jika tidak cukup ruang di kanan!</p>
+                <div id="auto-right-demo" class="sw-custom-popover sw-popover-right">
+                    <p class="sw-popover-title">Smart Position</p>
+                    <p class="sw-popover-content">Popover ini akan otomatis pindah ke left jika tidak cukup ruang di kanan!</p>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Will auto-switch to left if needed
             </div>
@@ -175,12 +175,12 @@
 </div>
 
 <!-- Popover Positions -->
-<div class="dsgt-popovers-section-title">
+<div class="sw-popovers-section-title">
     <i class="fa-solid fa-arrows-left-right"></i>
     Popover Positions <span class="badge badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-popovers-grid">
+<div class="sw-popovers-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -194,16 +194,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('dsgt-popover-top-demo', this)">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('sw-popover-top-demo', this)">
                     Click for Top Popover
                 </button>
-                <div id="dsgt-popover-top-demo" class="dsgt-custom-popover dsgt-popover-top">
-                    <h4 class="dsgt-popover-title">Top Popover</h4>
-                    <p class="dsgt-popover-content">This popover appears above the trigger element.</p>
+                <div id="sw-popover-top-demo" class="sw-custom-popover sw-popover-top">
+                    <h4 class="sw-popover-title">Top Popover</h4>
+                    <p class="sw-popover-content">This popover appears above the trigger element.</p>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Arrow points downward
             </div>
@@ -223,16 +223,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('dsgt-popover-bottom-demo', this)">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('sw-popover-bottom-demo', this)">
                     Click for Bottom Popover
                 </button>
-                <div id="dsgt-popover-bottom-demo" class="dsgt-custom-popover dsgt-popover-bottom">
-                    <h4 class="dsgt-popover-title">Bottom Popover</h4>
-                    <p class="dsgt-popover-content">This popover appears below the trigger element.</p>
+                <div id="sw-popover-bottom-demo" class="sw-custom-popover sw-popover-bottom">
+                    <h4 class="sw-popover-title">Bottom Popover</h4>
+                    <p class="sw-popover-content">This popover appears below the trigger element.</p>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Arrow points upward
             </div>
@@ -252,16 +252,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('dsgt-popover-left-demo', this)">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('sw-popover-left-demo', this)">
                     Click for Left Popover
                 </button>
-                <div id="dsgt-popover-left-demo" class="dsgt-custom-popover dsgt-popover-left">
-                    <h4 class="dsgt-popover-title">Left Popover</h4>
-                    <p class="dsgt-popover-content">This popover appears to the left of the trigger.</p>
+                <div id="sw-popover-left-demo" class="sw-custom-popover sw-popover-left">
+                    <h4 class="sw-popover-title">Left Popover</h4>
+                    <p class="sw-popover-content">This popover appears to the left of the trigger.</p>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Arrow points rightward
             </div>
@@ -281,16 +281,16 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('dsgt-popover-right-demo', this)">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('sw-popover-right-demo', this)">
                     Click for Right Popover
                 </button>
-                <div id="dsgt-popover-right-demo" class="dsgt-custom-popover dsgt-popover-right">
-                    <h4 class="dsgt-popover-title">Right Popover</h4>
-                    <p class="dsgt-popover-content">This popover appears to the right of the trigger.</p>
+                <div id="sw-popover-right-demo" class="sw-custom-popover sw-popover-right">
+                    <h4 class="sw-popover-title">Right Popover</h4>
+                    <p class="sw-popover-content">This popover appears to the right of the trigger.</p>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Arrow points leftward
             </div>
@@ -299,12 +299,12 @@
 </div>
 
 <!-- Popover Types -->
-<div class="dsgt-popovers-section-title">
+<div class="sw-popovers-section-title">
     <i class="fa-solid fa-palette"></i>
     Popover Types
 </div>
 
-<div class="dsgt-popovers-grid">
+<div class="sw-popovers-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -318,23 +318,23 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('dsgt-popover-info-type', this)">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('sw-popover-info-type', this)">
                     Show Info
                 </button>
-                <div id="dsgt-popover-info-type" class="dsgt-custom-popover dsgt-popover-bottom dsgt-popover-info">
-                    <div class="dsgt-popover-with-icon">
-                        <div class="dsgt-popover-icon dsgt-popover-icon-info">
+                <div id="sw-popover-info-type" class="sw-custom-popover sw-popover-bottom sw-popover-info">
+                    <div class="sw-popover-with-icon">
+                        <div class="sw-popover-icon sw-popover-icon-info">
                             <i class="fa-solid fa-info-circle"></i>
                         </div>
                         <div>
-                            <h4 class="dsgt-popover-title">Information</h4>
-                            <p class="dsgt-popover-content">Here is some useful information for you to know.</p>
+                            <h4 class="sw-popover-title">Information</h4>
+                            <p class="sw-popover-content">Here is some useful information for you to know.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Blue accent color
             </div>
@@ -354,23 +354,23 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('dsgt-popover-success-type', this)">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('sw-popover-success-type', this)">
                     Show Success
                 </button>
-                <div id="dsgt-popover-success-type" class="dsgt-custom-popover dsgt-popover-bottom dsgt-popover-success">
-                    <div class="dsgt-popover-with-icon">
-                        <div class="dsgt-popover-icon dsgt-popover-icon-success">
+                <div id="sw-popover-success-type" class="sw-custom-popover sw-popover-bottom sw-popover-success">
+                    <div class="sw-popover-with-icon">
+                        <div class="sw-popover-icon sw-popover-icon-success">
                             <i class="fa-solid fa-check-circle"></i>
                         </div>
                         <div>
-                            <h4 class="dsgt-popover-title">Success!</h4>
-                            <p class="dsgt-popover-content">Your action was completed successfully.</p>
+                            <h4 class="sw-popover-title">Success!</h4>
+                            <p class="sw-popover-content">Your action was completed successfully.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Green accent color
             </div>
@@ -390,23 +390,23 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('dsgt-popover-warning-type', this)">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('sw-popover-warning-type', this)">
                     Show Warning
                 </button>
-                <div id="dsgt-popover-warning-type" class="dsgt-custom-popover dsgt-popover-bottom dsgt-popover-warning">
-                    <div class="dsgt-popover-with-icon">
-                        <div class="dsgt-popover-icon dsgt-popover-icon-warning">
+                <div id="sw-popover-warning-type" class="sw-custom-popover sw-popover-bottom sw-popover-warning">
+                    <div class="sw-popover-with-icon">
+                        <div class="sw-popover-icon sw-popover-icon-warning">
                             <i class="fa-solid fa-exclamation-triangle"></i>
                         </div>
                         <div>
-                            <h4 class="dsgt-popover-title">Warning!</h4>
-                            <p class="dsgt-popover-content">Please review carefully before proceeding.</p>
+                            <h4 class="sw-popover-title">Warning!</h4>
+                            <p class="sw-popover-content">Please review carefully before proceeding.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Yellow accent color
             </div>
@@ -426,23 +426,23 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('popover-error-type', this)">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('popover-error-type', this)">
                     Show Error
                 </button>
-                <div id="popover-error-type" class="dsgt-custom-popover dsgt-popover-bottom dsgt-popover-danger">
-                    <div class="dsgt-popover-with-icon">
-                        <div class="dsgt-popover-icon dsgt-popover-icon-danger">
+                <div id="popover-error-type" class="sw-custom-popover sw-popover-bottom sw-popover-danger">
+                    <div class="sw-popover-with-icon">
+                        <div class="sw-popover-icon sw-popover-icon-danger">
                             <i class="fa-solid fa-times-circle"></i>
                         </div>
                         <div>
-                            <h4 class="dsgt-popover-title">Error!</h4>
-                            <p class="dsgt-popover-content">Something went wrong. Please try again.</p>
+                            <h4 class="sw-popover-title">Error!</h4>
+                            <p class="sw-popover-content">Something went wrong. Please try again.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Red accent color
             </div>
@@ -451,12 +451,12 @@
 </div>
 
 <!-- Advanced Popovers -->
-<div class="dsgt-popovers-section-title">
+<div class="sw-popovers-section-title">
     <i class="fa-solid fa-gear"></i>
     Advanced Popovers
 </div>
 
-<div class="dsgt-popovers-grid">
+<div class="sw-popovers-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -470,20 +470,20 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('dsgt-popover-actions-demo')">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('sw-popover-actions-demo')">
                     Show Actions
                 </button>
-                <div id="dsgt-popover-actions-demo" class="dsgt-custom-popover dsgt-popover-bottom">
-                    <h4 class="dsgt-popover-title">Confirm Action</h4>
-                    <p class="dsgt-popover-content">Are you sure you want to proceed with this action?</p>
-                    <div class="dsgt-popover-actions">
-                        <button class="dsgt-popover-btn dsgt-popover-btn-primary">Confirm</button>
-                        <button class="dsgt-popover-btn dsgt-popover-btn-secondary" onclick="MetroAdmin.openDSGTPopover('dsgt-popover-actions-demo')">Cancel</button>
+                <div id="sw-popover-actions-demo" class="sw-custom-popover sw-popover-bottom">
+                    <h4 class="sw-popover-title">Confirm Action</h4>
+                    <p class="sw-popover-content">Are you sure you want to proceed with this action?</p>
+                    <div class="sw-popover-actions">
+                        <button class="sw-popover-btn sw-popover-btn-primary">Confirm</button>
+                        <button class="sw-popover-btn sw-popover-btn-secondary" onclick="MetroAdmin.openSWPopover('sw-popover-actions-demo')">Cancel</button>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Click actions to interact
             </div>
@@ -503,17 +503,17 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('dsgt-popover-image-demo')">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('sw-popover-image-demo')">
                     Show Image
                 </button>
-                <div id="dsgt-popover-image-demo" class="dsgt-custom-popover dsgt-popover-bottom" style="max-width: 280px;">
-                    <img src="https://picsum.photos/seed/popover/280/120" class="dsgt-popover-image" alt="Preview">
-                    <h4 class="dsgt-popover-title">Image Preview</h4>
-                    <p class="dsgt-popover-content">This popover contains an image with description.</p>
+                <div id="sw-popover-image-demo" class="sw-custom-popover sw-popover-bottom" style="max-width: 280px;">
+                    <img src="https://picsum.photos/seed/popover/280/120" class="sw-popover-image" alt="Preview">
+                    <h4 class="sw-popover-title">Image Preview</h4>
+                    <p class="sw-popover-content">This popover contains an image with description.</p>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Embed images in popovers
             </div>
@@ -533,21 +533,21 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('dsgt-popover-list-demo')">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('sw-popover-list-demo')">
                     Show List
                 </button>
-                <div id="dsgt-popover-list-demo" class="dsgt-custom-popover dsgt-popover-bottom">
-                    <h4 class="dsgt-popover-title">Quick Links</h4>
-                    <ul class="dsgt-popover-list">
-                        <li class="dsgt-popover-list-item"><i class="fa-solid fa-house"></i> Dashboard</li>
-                        <li class="dsgt-popover-list-item"><i class="fa-solid fa-user"></i> Profile</li>
-                        <li class="dsgt-popover-list-item"><i class="fa-solid fa-gear"></i> Settings</li>
-                        <li class="dsgt-popover-list-item"><i class="fa-solid fa-question-circle"></i> Help</li>
+                <div id="sw-popover-list-demo" class="sw-custom-popover sw-popover-bottom">
+                    <h4 class="sw-popover-title">Quick Links</h4>
+                    <ul class="sw-popover-list">
+                        <li class="sw-popover-list-item"><i class="fa-solid fa-house"></i> Dashboard</li>
+                        <li class="sw-popover-list-item"><i class="fa-solid fa-user"></i> Profile</li>
+                        <li class="sw-popover-list-item"><i class="fa-solid fa-gear"></i> Settings</li>
+                        <li class="sw-popover-list-item"><i class="fa-solid fa-question-circle"></i> Help</li>
                     </ul>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 List with icons
             </div>
@@ -567,21 +567,21 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-popovers-example">
-                <button class="dsgt-popovers-trigger" onclick="MetroAdmin.openDSGTPopover('dsgt-popover-form-demo')">
+            <div class="sw-popovers-example">
+                <button class="sw-popovers-trigger" onclick="MetroAdmin.openSWPopover('sw-popover-form-demo')">
                     Show Form
                 </button>
-                <div id="dsgt-popover-form-demo" class="dsgt-custom-popover dsgt-popover-bottom" style="max-width: 280px;">
-                    <h4 class="dsgt-popover-title">Quick Feedback</h4>
-                    <p class="dsgt-popover-content">Share your thoughts with us:</p>
-                    <div class="dsgt-popover-form">
+                <div id="sw-popover-form-demo" class="sw-custom-popover sw-popover-bottom" style="max-width: 280px;">
+                    <h4 class="sw-popover-title">Quick Feedback</h4>
+                    <p class="sw-popover-content">Share your thoughts with us:</p>
+                    <div class="sw-popover-form">
                         <input type="text" placeholder="Your name">
                         <textarea placeholder="Your message..."></textarea>
-                        <button class="dsgt-popover-btn dsgt-popover-btn-primary" style="width: 100%;">Submit</button>
+                        <button class="sw-popover-btn sw-popover-btn-primary" style="width: 100%;">Submit</button>
                     </div>
                 </div>
             </div>
-            <div class="dsgt-popovers-helper">
+            <div class="sw-popovers-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Interactive form elements
             </div>
@@ -590,12 +590,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-popovers-section-title">
+<div class="sw-popovers-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-popovers-grid">
+<div class="sw-popovers-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -630,7 +630,7 @@ function hidePopover(id) {
 // Hide all popovers
 document.addEventListener('click', 
   (e) => {
-    if (!e.target.closest('.dsgt-popovers-trigger')) {
+    if (!e.target.closest('.sw-popovers-trigger')) {
       hideCustomPopovers();
     }
   }
@@ -691,12 +691,12 @@ document.addEventListener('click',
 <script>
 // Popovers page initialization
 $(document).ready(function() {
-    console.log('💬 DSGT Popovers page loaded successfully');
+    console.log('💬 SW Popovers page loaded successfully');
     
     // Demo: Show welcome toast
     setTimeout(() => {
         if (typeof MetroAdmin !== 'undefined') {
-            MetroAdmin.showDSGTInfoToast('Welcome to the Popovers demo page!');
+            MetroAdmin.showSWInfoToast('Welcome to the Popovers demo page!');
         }
     }, 1000);
 });

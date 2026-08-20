@@ -57,12 +57,12 @@
         <div class="card-body">
             <div class="cl-example">
                 <span class="cl-example-label">Click to Expand</span>
-                <div class="dsgt-cl-animated">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+                <div class="sw-cl-animated">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                         <span>What is Swantara Admin?</span>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
+                    <div class="sw-cl-content">
                         <p>Swantara Admin is a modern, professional admin template built with Laravel and Metro UI. It features a clean design, responsive layout, dark mode support, and over 50 UI components.</p>
                         <p>The template is perfect for building dashboards, admin panels, and web applications with a Fluent Design aesthetic inspired by Windows 11.</p>
                     </div>
@@ -90,13 +90,13 @@
         <div class="card-body">
             <div class="cl-example">
                 <span class="cl-example-label">Multiple Independent Sections</span>
-                <div class="dsgt-cl-group">
-                    <div class="dsgt-cl-item">
-                        <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+                <div class="sw-cl-group">
+                    <div class="sw-cl-item">
+                        <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                             <span>Getting Started Guide</span>
-                            <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                            <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                         </div>
-                        <div class="dsgt-cl-content">
+                        <div class="sw-cl-content">
                             <p>1. Install Laravel and dependencies</p>
                             <p>2. Copy .env.example to .env</p>
                             <p>3. Run composer install</p>
@@ -104,22 +104,22 @@
                         </div>
                     </div>
                     
-                    <div class="dsgt-cl-item">
-                        <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+                    <div class="sw-cl-item">
+                        <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                             <span>Customization Options</span>
-                            <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                            <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                         </div>
-                        <div class="dsgt-cl-content">
+                        <div class="sw-cl-content">
                             <p>Customize colors, fonts, layouts, and components through CSS variables in app.css. The template supports theming and easy configuration.</p>
                         </div>
                     </div>
                     
-                    <div class="dsgt-cl-item">
-                        <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+                    <div class="sw-cl-item">
+                        <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                             <span>Browser Support</span>
-                            <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                            <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                         </div>
-                        <div class="dsgt-cl-content">
+                        <div class="sw-cl-content">
                             <p>Supports all modern browsers: Chrome, Firefox, Safari, Edge, and Opera. Mobile-responsive design works on all devices.</p>
                         </div>
                     </div>
@@ -154,43 +154,43 @@
     <div class="card-body">
         <div class="cl-example">
             <span class="cl-example-label">FAQ Accordion</span>
-            <div class="dsgt-cl-group" id="faqAccordion">
-                <div class="dsgt-cl-item">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTAccordion(this, 'faqAccordion')">
+            <div class="sw-cl-group" id="faqAccordion">
+                <div class="sw-cl-item">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWAccordion(this, 'faqAccordion')">
                         <span>Is this template free to use?</span>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
+                    <div class="sw-cl-content">
                         <p>Yes! Swantara Admin is completely free and open-source. You can use it for both personal and commercial projects without any restrictions or licensing fees.</p>
                     </div>
                 </div>
                 
-                <div class="dsgt-cl-item">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTAccordion(this, 'faqAccordion')">
+                <div class="sw-cl-item">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWAccordion(this, 'faqAccordion')">
                         <span>What technologies are used?</span>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
+                    <div class="sw-cl-content">
                         <p>The template is built with Laravel 11 (backend), Metro UI v5 (frontend), jQuery, Chart.js, DataTables, and Font Awesome icons. It uses Vite for asset compilation.</p>
                     </div>
                 </div>
                 
-                <div class="dsgt-cl-item">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTAccordion(this, 'faqAccordion')">
+                <div class="sw-cl-item">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWAccordion(this, 'faqAccordion')">
                         <span>Can I customize the colors?</span>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
+                    <div class="sw-cl-content">
                         <p>Absolutely! All colors are defined as CSS variables in app.css. You can easily change the accent color, success, warning, danger colors, and more to match your brand identity.</p>
                     </div>
                 </div>
                 
-                <div class="dsgt-cl-item">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTAccordion(this, 'faqAccordion')">
+                <div class="sw-cl-item">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWAccordion(this, 'faqAccordion')">
                         <span>Is it mobile responsive?</span>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
+                    <div class="sw-cl-content">
                         <p>Yes! The template is fully responsive with a mobile-first approach. The sidebar becomes an overlay on mobile, all components adapt to screen size, and touch interactions are optimized.</p>
                     </div>
                 </div>
@@ -225,34 +225,34 @@
         <div class="card-body">
             <div class="cl-example">
                 <span class="cl-example-label">Success Collapse</span>
-                <div class="dsgt-cl-success" style="margin-bottom: 12px;">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+                <div class="sw-cl-success" style="margin-bottom: 12px;">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                         <span>Success State</span>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
+                    <div class="sw-cl-content">
                         <p>This collapse uses success color (green) when active. Perfect for positive confirmations and successful operations.</p>
                     </div>
                 </div>
 
                 <span class="cl-example-label">Warning Collapse</span>
-                <div class="dsgt-cl-warning" style="margin-bottom: 12px;">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+                <div class="sw-cl-warning" style="margin-bottom: 12px;">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                         <span>Warning State</span>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
+                    <div class="sw-cl-content">
                         <p>This collapse uses warning color (yellow) when active. Great for cautionary information and important notices.</p>
                     </div>
                 </div>
 
                 <span class="cl-example-label">Danger Collapse</span>
-                <div class="dsgt-cl-danger">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+                <div class="sw-cl-danger">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                         <span>Danger State</span>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
+                    <div class="sw-cl-content">
                         <p>This collapse uses danger color (red) when active. Ideal for error messages, critical warnings, and destructive actions.</p>
                     </div>
                 </div>
@@ -279,48 +279,48 @@
         <div class="card-body">
             <div class="cl-example">
                 <span class="cl-example-label">Icon-Rich Collapse</span>
-                <div class="dsgt-cl-group">
-                    <div class="dsgt-cl-item">
-                        <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
-                            <div class="dsgt-cl-trigger-with-icon">
-                                <div class="dsgt-cl-trigger-icon-box" style="background: rgba(0, 120, 212, 0.1); color: var(--accent);">
+                <div class="sw-cl-group">
+                    <div class="sw-cl-item">
+                        <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
+                            <div class="sw-cl-trigger-with-icon">
+                                <div class="sw-cl-trigger-icon-box" style="background: rgba(0, 120, 212, 0.1); color: var(--accent);">
                                     <i class="fa-solid fa-rocket"></i>
                                 </div>
                                 <span>Quick Start</span>
                             </div>
-                            <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                            <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                         </div>
-                        <div class="dsgt-cl-content">
+                        <div class="sw-cl-content">
                             <p>Get started quickly with our comprehensive documentation and tutorials. Follow step-by-step guides to set up your project.</p>
                         </div>
                     </div>
                     
-                    <div class="dsgt-cl-item">
-                        <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
-                            <div class="dsgt-cl-trigger-with-icon">
-                                <div class="dsgt-cl-trigger-icon-box" style="background: rgba(22, 198, 12, 0.1); color: var(--success);">
+                    <div class="sw-cl-item">
+                        <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
+                            <div class="sw-cl-trigger-with-icon">
+                                <div class="sw-cl-trigger-icon-box" style="background: rgba(22, 198, 12, 0.1); color: var(--success);">
                                     <i class="fa-solid fa-book-open"></i>
                                 </div>
                                 <span>Documentation</span>
                             </div>
-                            <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                            <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                         </div>
-                        <div class="dsgt-cl-content">
+                        <div class="sw-cl-content">
                             <p>Access detailed documentation covering all components, utilities, APIs, and best practices for development.</p>
                         </div>
                     </div>
                     
-                    <div class="dsgt-cl-item">
-                        <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
-                            <div class="dsgt-cl-trigger-with-icon">
-                                <div class="dsgt-cl-trigger-icon-box" style="background: rgba(255, 185, 0, 0.1); color: var(--warning);">
+                    <div class="sw-cl-item">
+                        <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
+                            <div class="sw-cl-trigger-with-icon">
+                                <div class="sw-cl-trigger-icon-box" style="background: rgba(255, 185, 0, 0.1); color: var(--warning);">
                                     <i class="fa-solid fa-headset"></i>
                                 </div>
                                 <span>Support</span>
                             </div>
-                            <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                            <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                         </div>
-                        <div class="dsgt-cl-content">
+                        <div class="sw-cl-content">
                             <p>Get help from our community forum, report issues on GitHub, or contact our support team directly.</p>
                         </div>
                     </div>
@@ -355,17 +355,17 @@
     <div class="card-body">
         <div class="cl-example">
             <span class="cl-example-label">Collapse with Badges</span>
-            <div class="dsgt-cl-group">
-                <div class="dsgt-cl-item">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+            <div class="sw-cl-group">
+                <div class="sw-cl-item">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                         <div style="display: flex; align-items: center; gap: 12px;">
                             <span>Notifications</span>
-                            <span class="dsgt-cl-badge">12 new</span>
+                            <span class="sw-cl-badge">12 new</span>
                         </div>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
-                        <ul class="dsgt-cl-list">
+                    <div class="sw-cl-content">
+                        <ul class="sw-cl-list">
                             <li><i class="fa-solid fa-check-circle"></i> New user registration</li>
                             <li><i class="fa-solid fa-check-circle"></i> Order #1234 confirmed</li>
                             <li><i class="fa-solid fa-check-circle"></i> Payment received</li>
@@ -373,16 +373,16 @@
                     </div>
                 </div>
                 
-                <div class="dsgt-cl-item">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+                <div class="sw-cl-item">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                         <div style="display: flex; align-items: center; gap: 12px;">
                             <span>Messages</span>
-                            <span class="dsgt-cl-badge">5 unread</span>
+                            <span class="sw-cl-badge">5 unread</span>
                         </div>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
-                        <ul class="dsgt-cl-list">
+                    <div class="sw-cl-content">
+                        <ul class="sw-cl-list">
                             <li><i class="fa-solid fa-envelope"></i> Message from John</li>
                             <li><i class="fa-solid fa-envelope"></i> Message from Sarah</li>
                             <li><i class="fa-solid fa-envelope"></i> Message from Mike</li>
@@ -390,16 +390,16 @@
                     </div>
                 </div>
                 
-                <div class="dsgt-cl-item">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+                <div class="sw-cl-item">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                         <div style="display: flex; align-items: center; gap: 12px;">
                             <span>Tasks</span>
-                            <span class="dsgt-cl-badge">8 pending</span>
+                            <span class="sw-cl-badge">8 pending</span>
                         </div>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
-                        <ul class="dsgt-cl-list">
+                    <div class="sw-cl-content">
+                        <ul class="sw-cl-list">
                             <li><i class="fa-solid fa-clock"></i> Update homepage design</li>
                             <li><i class="fa-solid fa-clock"></i> Fix login bug</li>
                             <li><i class="fa-solid fa-clock"></i> Deploy to production</li>
@@ -436,56 +436,56 @@
     <div class="card-body">
         <div class="cl-example">
             <span class="cl-example-label">Analytics Collapse</span>
-            <div class="dsgt-cl-group">
-                <div class="dsgt-cl-item">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+            <div class="sw-cl-group">
+                <div class="sw-cl-item">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                         <div style="display: flex; align-items: center; gap: 12px;">
                             <span>User Analytics</span>
-                            <span class="dsgt-cl-badge">Live</span>
+                            <span class="sw-cl-badge">Live</span>
                         </div>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
+                    <div class="sw-cl-content">
                         <p>Real-time user statistics and engagement metrics:</p>
-                        <div class="dsgt-cl-stats">
-                            <div class="dsgt-cl-stat-item">
-                                <h4 class="dsgt-cl-stat-value">12,458</h4>
-                                <p class="dsgt-cl-stat-label">Total Users</p>
+                        <div class="sw-cl-stats">
+                            <div class="sw-cl-stat-item">
+                                <h4 class="sw-cl-stat-value">12,458</h4>
+                                <p class="sw-cl-stat-label">Total Users</p>
                             </div>
-                            <div class="dsgt-cl-stat-item">
-                                <h4 class="dsgt-cl-stat-value">1,245</h4>
-                                <p class="dsgt-cl-stat-label">Online Now</p>
+                            <div class="sw-cl-stat-item">
+                                <h4 class="sw-cl-stat-value">1,245</h4>
+                                <p class="sw-cl-stat-label">Online Now</p>
                             </div>
-                            <div class="dsgt-cl-stat-item">
-                                <h4 class="dsgt-cl-stat-value">842</h4>
-                                <p class="dsgt-cl-stat-label">New Today</p>
+                            <div class="sw-cl-stat-item">
+                                <h4 class="sw-cl-stat-value">842</h4>
+                                <p class="sw-cl-stat-label">New Today</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="dsgt-cl-item">
-                    <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+                <div class="sw-cl-item">
+                    <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                         <div style="display: flex; align-items: center; gap: 12px;">
                             <span>Revenue Stats</span>
-                            <span class="dsgt-cl-badge">Updated</span>
+                            <span class="sw-cl-badge">Updated</span>
                         </div>
-                        <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                        <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                     </div>
-                    <div class="dsgt-cl-content">
+                    <div class="sw-cl-content">
                         <p>Financial performance overview:</p>
-                        <div class="dsgt-cl-stats">
-                            <div class="dsgt-cl-stat-item">
-                                <h4 class="dsgt-cl-stat-value">$48.2K</h4>
-                                <p class="dsgt-cl-stat-label">Revenue</p>
+                        <div class="sw-cl-stats">
+                            <div class="sw-cl-stat-item">
+                                <h4 class="sw-cl-stat-value">$48.2K</h4>
+                                <p class="sw-cl-stat-label">Revenue</p>
                             </div>
-                            <div class="dsgt-cl-stat-item">
-                                <h4 class="dsgt-cl-stat-value">1,842</h4>
-                                <p class="dsgt-cl-stat-label">Orders</p>
+                            <div class="sw-cl-stat-item">
+                                <h4 class="sw-cl-stat-value">1,842</h4>
+                                <p class="sw-cl-stat-label">Orders</p>
                             </div>
-                            <div class="dsgt-cl-stat-item">
-                                <h4 class="dsgt-cl-stat-value">$26.1</h4>
-                                <p class="dsgt-cl-stat-label">Avg. Order</p>
+                            <div class="sw-cl-stat-item">
+                                <h4 class="sw-cl-stat-value">$26.1</h4>
+                                <p class="sw-cl-stat-label">Avg. Order</p>
                             </div>
                         </div>
                     </div>
@@ -520,21 +520,21 @@
     <div class="card-body">
         <div class="cl-example">
             <span class="cl-example-label">Nested Structure</span>
-            <div class="dsgt-cl-animated">
-                <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+            <div class="sw-cl-animated">
+                <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                     <span>Products Category</span>
-                    <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                    <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                 </div>
-                <div class="dsgt-cl-content">
+                <div class="sw-cl-content">
                     <p>Main product categories and subcategories:</p>
                     
-                    <div class="dsgt-cl-nested">
-                        <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+                    <div class="sw-cl-nested">
+                        <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                             <span>Electronics</span>
-                            <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                            <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                         </div>
-                        <div class="dsgt-cl-content">
-                            <ul class="dsgt-cl-list">
+                        <div class="sw-cl-content">
+                            <ul class="sw-cl-list">
                                 <li><i class="fa-solid fa-laptop"></i> Laptops</li>
                                 <li><i class="fa-solid fa-mobile-screen"></i> Smartphones</li>
                                 <li><i class="fa-solid fa-headphones"></i> Audio</li>
@@ -542,13 +542,13 @@
                         </div>
                     </div>
                     
-                    <div class="dsgt-cl-nested">
-                        <div class="dsgt-cl-trigger" onclick="MetroAdmin.toggleDSGTCollapse(this)">
+                    <div class="sw-cl-nested">
+                        <div class="sw-cl-trigger" onclick="MetroAdmin.toggleSWCollapse(this)">
                             <span>Clothing</span>
-                            <i class="fa-solid fa-chevron-down dsgt-cl-trigger-icon"></i>
+                            <i class="fa-solid fa-chevron-down sw-cl-trigger-icon"></i>
                         </div>
-                        <div class="dsgt-cl-content">
-                            <ul class="dsgt-cl-list">
+                        <div class="sw-cl-content">
+                            <ul class="sw-cl-list">
                                 <li><i class="fa-solid fa-shirt"></i> Men's Wear</li>
                                 <li><i class="fa-solid fa-shirt"></i> Women's Wear</li>
                                 <li><i class="fa-solid fa-child"></i> Kids' Wear</li>
@@ -592,15 +592,15 @@ toggleCollapse(triggerElement);
 toggleAccordion(triggerElement, groupId);
 
 // Programmatic control
-$('.dsgt-cl-trigger').click();
+$('.sw-cl-trigger').click();
 
 // Open all
-$('.dsgt-cl-trigger').each(function() {
+$('.sw-cl-trigger').each(function() {
     toggleCollapse(this);
 });
 
 // Close all
-$('.dsgt-cl-content.open').each(function() {
+$('.sw-cl-content.open').each(function() {
     toggleCollapse($(this).prev());
 });</code></pre>
         </div>
@@ -659,7 +659,7 @@ $('.dsgt-cl-content.open').each(function() {
 <script>
 // Collapse page initialization
 $(document).ready(function() {
-    console.log('📋 DSGT Collapse page loaded successfully');
+    console.log('📋 SW Collapse page loaded successfully');
 });
 </script>
 @endpush

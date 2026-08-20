@@ -34,22 +34,22 @@
         </div>
         <div class="card-body">
             <div class="demo-area">
-                <div class="dsgt-dropdown" id="dropdown1">
-                    <button class="dsgt-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
+                <div class="sw-dropdown" id="dropdown1">
+                    <button class="sw-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
                         <span>Actions</span>
                         <i class="fa-solid fa-chevron-down"></i>
                     </button>
-                    <div class="dsgt-dropdown-menu">
-                        <a href="#" class="dsgt-dropdown-item">
+                    <div class="sw-dropdown-menu">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-pen"></i>
                             <span>Edit</span>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-copy"></i>
                             <span>Duplicate</span>
                         </a>
-                        <div class="dsgt-dropdown-divider"></div>
-                        <a href="#" class="dsgt-dropdown-item text-danger">
+                        <div class="sw-dropdown-divider"></div>
+                        <a href="#" class="sw-dropdown-item text-danger">
                             <i class="fa-solid fa-trash"></i>
                             <span>Delete</span>
                         </a>
@@ -74,22 +74,22 @@
         </div>
         <div class="card-body">
             <div class="demo-area">
-                <div class="dsgt-dropdown" id="dropdown2">
-                    <button class="dsgt-dropdown-trigger btn-success" onclick="MetroAdmin.toggleDropdown(this)">
+                <div class="sw-dropdown" id="dropdown2">
+                    <button class="sw-dropdown-trigger btn-success" onclick="MetroAdmin.toggleDropdown(this)">
                         <i class="fa-solid fa-check-circle"></i>
                         <span>Success</span>
                         <i class="fa-solid fa-chevron-down"></i>
                     </button>
-                    <div class="dsgt-dropdown-menu">
-                        <a href="#" class="dsgt-dropdown-item">
+                    <div class="sw-dropdown-menu">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-check"></i>
                             <span>Approve</span>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-upload"></i>
                             <span>Publish</span>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-share"></i>
                             <span>Share</span>
                         </a>
@@ -114,18 +114,18 @@
         </div>
         <div class="card-body">
             <div class="demo-area">
-                <div class="dsgt-dropdown" id="dropdown3">
-                    <button class="dsgt-dropdown-trigger btn-warning" onclick="MetroAdmin.toggleDropdown(this)">
+                <div class="sw-dropdown" id="dropdown3">
+                    <button class="sw-dropdown-trigger btn-warning" onclick="MetroAdmin.toggleDropdown(this)">
                         <i class="fa-solid fa-exclamation-triangle"></i>
                         <span>Warning</span>
                         <i class="fa-solid fa-chevron-down"></i>
                     </button>
-                    <div class="dsgt-dropdown-menu">
-                        <a href="#" class="dsgt-dropdown-item">
+                    <div class="sw-dropdown-menu">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-flag"></i>
                             <span>Flag</span>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-exclamation-circle"></i>
                             <span>Report</span>
                         </a>
@@ -158,14 +158,14 @@
         </div>
         <div class="card-body">
             <div class="demo-area">
-                <div class="dsgt-dropdown" id="dropdown4">
-                    <button class="dsgt-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
+                <div class="sw-dropdown" id="dropdown4">
+                    <button class="sw-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
                         <i class="fa-solid fa-gear"></i>
                         <span>Settings</span>
                         <i class="fa-solid fa-chevron-down"></i>
                     </button>
-                    <div class="dsgt-dropdown-menu">
-                        <a href="#" class="dsgt-dropdown-item">
+                    <div class="sw-dropdown-menu">
+                        <a href="#" class="sw-dropdown-item">
                             <div class="dropdown-icon-box bg-primary">
                                 <i class="fa-solid fa-user"></i>
                             </div>
@@ -174,7 +174,7 @@
                                 <div class="dropdown-item-desc">Manage your account</div>
                             </div>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <div class="dropdown-icon-box bg-success">
                                 <i class="fa-solid fa-bell"></i>
                             </div>
@@ -183,7 +183,7 @@
                                 <div class="dropdown-item-desc">Configure alerts</div>
                             </div>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <div class="dropdown-icon-box bg-warning">
                                 <i class="fa-solid fa-shield"></i>
                             </div>
@@ -213,13 +213,13 @@
         </div>
         <div class="card-body">
             <div class="demo-area">
-                <div class="dsgt-dropdown" id="dropdown5">
-                    <button class="dsgt-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
+                <div class="sw-dropdown" id="dropdown5">
+                    <button class="sw-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
                         <img src="https://ui-avatars.com/api/?name=John+Doe&background=0078D4&color=fff&size=32" class="dropdown-avatar">
                         <span>John Doe</span>
                         <i class="fa-solid fa-chevron-down"></i>
                     </button>
-                    <div class="dsgt-dropdown-menu menu-lg">
+                    <div class="sw-dropdown-menu menu-lg">
                         <div class="dropdown-profile-header">
                             <img src="https://ui-avatars.com/api/?name=John+Doe&background=0078D4&color=fff&size=64" class="dropdown-profile-avatar">
                             <div class="dropdown-profile-info">
@@ -229,20 +229,20 @@
                             </div>
                         </div>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-user"></i>
                             <span>My Profile</span>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-gear"></i>
                             <span>Settings</span>
                         </a>
-                        <a href="#" class="dsgt-dropdown-item">
+                        <a href="#" class="sw-dropdown-item">
                             <i class="fa-solid fa-credit-card"></i>
                             <span>Billing</span>
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dsgt-dropdown-item text-danger">
+                        <a href="#" class="sw-dropdown-item text-danger">
                             <i class="fa-solid fa-sign-out-alt"></i>
                             <span>Logout</span>
                         </a>
@@ -273,39 +273,39 @@
     </div>
     <div class="card-body">
         <div class="demo-area demo-row">
-            <div class="dsgt-dropdown" id="dropdownLeft">
-                <button class="dsgt-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
+            <div class="sw-dropdown" id="dropdownLeft">
+                <button class="sw-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
                     <span>Left</span>
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
-                <div class="dsgt-dropdown-menu">
-                    <a href="#" class="dsgt-dropdown-item">Option 1</a>
-                    <a href="#" class="dsgt-dropdown-item">Option 2</a>
-                    <a href="#" class="dsgt-dropdown-item">Option 3</a>
+                <div class="sw-dropdown-menu">
+                    <a href="#" class="sw-dropdown-item">Option 1</a>
+                    <a href="#" class="sw-dropdown-item">Option 2</a>
+                    <a href="#" class="sw-dropdown-item">Option 3</a>
                 </div>
             </div>
 
-            <div class="dsgt-dropdown" id="dropdownCenter">
-                <button class="dsgt-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
+            <div class="sw-dropdown" id="dropdownCenter">
+                <button class="sw-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
                     <span>Center</span>
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
-                <div class="dsgt-dropdown-menu align-center">
-                    <a href="#" class="dsgt-dropdown-item">Option 1</a>
-                    <a href="#" class="dsgt-dropdown-item">Option 2</a>
-                    <a href="#" class="dsgt-dropdown-item">Option 3</a>
+                <div class="sw-dropdown-menu align-center">
+                    <a href="#" class="sw-dropdown-item">Option 1</a>
+                    <a href="#" class="sw-dropdown-item">Option 2</a>
+                    <a href="#" class="sw-dropdown-item">Option 3</a>
                 </div>
             </div>
 
-            <div class="dsgt-dropdown" id="dropdownRight">
-                <button class="dsgt-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
+            <div class="sw-dropdown" id="dropdownRight">
+                <button class="sw-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
                     <span>Right</span>
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
-                <div class="dsgt-dropdown-menu align-right">
-                    <a href="#" class="dsgt-dropdown-item">Option 1</a>
-                    <a href="#" class="dsgt-dropdown-item">Option 2</a>
-                    <a href="#" class="dsgt-dropdown-item">Option 3</a>
+                <div class="sw-dropdown-menu align-right">
+                    <a href="#" class="sw-dropdown-item">Option 1</a>
+                    <a href="#" class="sw-dropdown-item">Option 2</a>
+                    <a href="#" class="sw-dropdown-item">Option 3</a>
                 </div>
             </div>
         </div>

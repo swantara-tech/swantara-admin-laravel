@@ -23,7 +23,7 @@
 </div>
 
 <!-- Info Alert -->
-<div class="content-card dsgt-br-info-card">
+<div class="content-card sw-br-info-card">
     <div class="card-body" style="padding: 16px 20px;">
         <div style="display: flex; gap: 12px; align-items: start;">
             <i class="fa-solid fa-circle-info" style="color: var(--accent); font-size: 20px; margin-top: 2px;"></i>
@@ -36,12 +36,12 @@
 </div>
 
 <!-- Basic Breadcrumbs -->
-<div class="dsgt-br-section-title">
+<div class="sw-br-section-title">
     <i class="fa-solid fa-ellipsis"></i>
-    Basic Breadcrumbs <span class="dsgt-badge dsgt-badge-primary">Essential</span>
+    Basic Breadcrumbs <span class="sw-badge sw-badge-primary">Essential</span>
 </div>
 
-<div class="dsgt-breadcrumb-grid">
+<div class="sw-breadcrumb-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -55,26 +55,26 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-br-example">
-                <span class="dsgt-br-example-label">Basic Structure</span>
+            <div class="sw-br-example">
+                <span class="sw-br-example-label">Basic Structure</span>
                 <nav aria-label="breadcrumb">
-                    <ol class="dsgt-breadcrumb dsgt-breadcrumb-chevron">
+                    <ol class="sw-breadcrumb sw-breadcrumb-chevron">
                         <li>
-                            <a href="#" class="dsgt-breadcrumb-item">
+                            <a href="#" class="sw-breadcrumb-item">
                                 <i class="fa-solid fa-house"></i> Home
                             </a>
                         </li>
-                        <li><span class="dsgt-br-separator"></span></li>
+                        <li><span class="sw-br-separator"></span></li>
                         <li>
-                            <a href="#" class="dsgt-breadcrumb-item">Library</a>
+                            <a href="#" class="sw-breadcrumb-item">Library</a>
                         </li>
-                        <li><span class="dsgt-br-separator"></span></li>
+                        <li><span class="sw-br-separator"></span></li>
                         <li>
-                            <span class="dsgt-breadcrumb-item dsgt-br-active">Data</span>
+                            <span class="sw-breadcrumb-item sw-br-active">Data</span>
                         </li>
                     </ol>
                 </nav>
-                <div class="dsgt-br-helper">
+                <div class="sw-br-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Chevron separator with home icon
                 </div>
@@ -95,30 +95,30 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-br-example">
-                <span class="dsgt-br-example-label">Angle Double Right</span>
+            <div class="sw-br-example">
+                <span class="sw-br-example-label">Angle Double Right</span>
                 <nav aria-label="breadcrumb">
-                    <ol class="dsgt-breadcrumb dsgt-breadcrumb-angle">
+                    <ol class="sw-breadcrumb sw-breadcrumb-angle">
                         <li>
-                            <a href="#" class="dsgt-breadcrumb-item">
+                            <a href="#" class="sw-breadcrumb-item">
                                 <i class="fa-solid fa-house"></i> Home
                             </a>
                         </li>
-                        <li><span class="dsgt-br-separator"></span></li>
+                        <li><span class="sw-br-separator"></span></li>
                         <li>
-                            <a href="#" class="dsgt-breadcrumb-item">Products</a>
+                            <a href="#" class="sw-breadcrumb-item">Products</a>
                         </li>
-                        <li><span class="dsgt-br-separator"></span></li>
+                        <li><span class="sw-br-separator"></span></li>
                         <li>
-                            <a href="#" class="dsgt-breadcrumb-item">Electronics</a>
+                            <a href="#" class="sw-breadcrumb-item">Electronics</a>
                         </li>
-                        <li><span class="dsgt-br-separator"></span></li>
+                        <li><span class="sw-br-separator"></span></li>
                         <li>
-                            <span class="dsgt-breadcrumb-item dsgt-br-active">Laptops</span>
+                            <span class="sw-breadcrumb-item sw-br-active">Laptops</span>
                         </li>
                     </ol>
                 </nav>
-                <div class="dsgt-br-helper">
+                <div class="sw-br-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Uses Font Awesome angle-double-right icon
                 </div>
@@ -128,9 +128,9 @@
 </div>
 
 <!-- Breadcrumb with Different Separators -->
-<div class="dsgt-br-section-title">
+<div class="sw-br-section-title">
     <i class="fa-solid fa-icons"></i>
-    Separator Styles <span class="dsgt-badge dsgt-badge-info">Variants</span>
+    Separator Styles <span class="sw-badge sw-badge-info">Variants</span>
 </div>
 
 <div class="content-card">
@@ -146,40 +146,40 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-br-example">
-            <span class="dsgt-br-example-label">Slash Separator</span>
+        <div class="sw-br-example">
+            <span class="sw-br-example-label">Slash Separator</span>
             <nav aria-label="breadcrumb" style="margin-bottom: 20px;">
-                <ol class="dsgt-breadcrumb dsgt-breadcrumb-slash">
-                    <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><a href="#" class="dsgt-breadcrumb-item">Users</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><span class="dsgt-breadcrumb-item dsgt-br-active">Profile</span></li>
+                <ol class="sw-breadcrumb sw-breadcrumb-slash">
+                    <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><a href="#" class="sw-breadcrumb-item">Users</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><span class="sw-breadcrumb-item sw-br-active">Profile</span></li>
                 </ol>
             </nav>
 
-            <span class="dsgt-br-example-label">Dot Separator</span>
+            <span class="sw-br-example-label">Dot Separator</span>
             <nav aria-label="breadcrumb" style="margin-bottom: 20px;">
-                <ol class="dsgt-breadcrumb dsgt-breadcrumb-dot">
-                    <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><a href="#" class="dsgt-breadcrumb-item">Settings</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><span class="dsgt-breadcrumb-item dsgt-br-active">Account</span></li>
+                <ol class="sw-breadcrumb sw-breadcrumb-dot">
+                    <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><a href="#" class="sw-breadcrumb-item">Settings</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><span class="sw-breadcrumb-item sw-br-active">Account</span></li>
                 </ol>
             </nav>
 
-            <span class="dsgt-br-example-label">Chevron Separator</span>
+            <span class="sw-br-example-label">Chevron Separator</span>
             <nav aria-label="breadcrumb">
-                <ol class="dsgt-breadcrumb dsgt-breadcrumb-chevron">
-                    <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><a href="#" class="dsgt-breadcrumb-item">Dashboard</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><span class="dsgt-breadcrumb-item dsgt-br-active">Analytics</span></li>
+                <ol class="sw-breadcrumb sw-breadcrumb-chevron">
+                    <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><a href="#" class="sw-breadcrumb-item">Dashboard</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><span class="sw-breadcrumb-item sw-br-active">Analytics</span></li>
                 </ol>
             </nav>
-            <div class="dsgt-br-helper">
+            <div class="sw-br-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Choose separator style that matches your design language
             </div>
@@ -188,9 +188,9 @@
 </div>
 
 <!-- Arrow Breadcrumb -->
-<div class="dsgt-br-section-title">
+<div class="sw-br-section-title">
     <i class="fa-solid fa-chevron-right"></i>
-    Arrow Breadcrumb <span class="dsgt-badge dsgt-badge-warning">Modern</span>
+    Arrow Breadcrumb <span class="sw-badge sw-badge-warning">Modern</span>
 </div>
 
 <div class="content-card">
@@ -206,27 +206,27 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-br-example">
-            <span class="dsgt-br-example-label">Arrow Navigation</span>
+        <div class="sw-br-example">
+            <span class="sw-br-example-label">Arrow Navigation</span>
             <nav aria-label="breadcrumb">
-                <ol class="dsgt-breadcrumb dsgt-breadcrumb-arrow">
+                <ol class="sw-breadcrumb sw-breadcrumb-arrow">
                     <li>
-                        <a href="#" class="dsgt-breadcrumb-item">
+                        <a href="#" class="sw-breadcrumb-item">
                             <i class="fa-solid fa-house"></i> Home
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="dsgt-breadcrumb-item">Projects</a>
+                        <a href="#" class="sw-breadcrumb-item">Projects</a>
                     </li>
                     <li>
-                        <a href="#" class="dsgt-breadcrumb-item">Active</a>
+                        <a href="#" class="sw-breadcrumb-item">Active</a>
                     </li>
                     <li>
-                        <span class="dsgt-breadcrumb-item dsgt-br-active">Current</span>
+                        <span class="sw-breadcrumb-item sw-br-active">Current</span>
                     </li>
                 </ol>
             </nav>
-            <div class="dsgt-br-helper">
+            <div class="sw-br-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Uses CSS clip-path for arrow shapes - last item highlighted
             </div>
@@ -235,9 +235,9 @@
 </div>
 
 <!-- Card Breadcrumb -->
-<div class="dsgt-br-section-title">
+<div class="sw-br-section-title">
     <i class="fa-solid fa-id-card"></i>
-    Card Breadcrumb <span class="dsgt-badge dsgt-badge-success">Styled</span>
+    Card Breadcrumb <span class="sw-badge sw-badge-success">Styled</span>
 </div>
 
 <div class="content-card">
@@ -253,36 +253,36 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-br-example">
-            <span class="dsgt-br-example-label">Card Style with Hover Effect</span>
+        <div class="sw-br-example">
+            <span class="sw-br-example-label">Card Style with Hover Effect</span>
             <nav aria-label="breadcrumb">
-                <ol class="dsgt-breadcrumb dsgt-breadcrumb-card">
+                <ol class="sw-breadcrumb sw-breadcrumb-card">
                     <li>
-                        <a href="#" class="dsgt-breadcrumb-item">
+                        <a href="#" class="sw-breadcrumb-item">
                             <i class="fa-solid fa-house"></i> Home
                         </a>
                     </li>
-                    <li><span class="dsgt-br-separator">›</span></li>
+                    <li><span class="sw-br-separator">›</span></li>
                     <li>
-                        <a href="#" class="dsgt-breadcrumb-item">
+                        <a href="#" class="sw-breadcrumb-item">
                             <i class="fa-solid fa-folder"></i> Categories
                         </a>
                     </li>
-                    <li><span class="dsgt-br-separator">›</span></li>
+                    <li><span class="sw-br-separator">›</span></li>
                     <li>
-                        <a href="#" class="dsgt-breadcrumb-item">
+                        <a href="#" class="sw-breadcrumb-item">
                             <i class="fa-solid fa-tag"></i> Products
                         </a>
                     </li>
-                    <li><span class="dsgt-br-separator">›</span></li>
+                    <li><span class="sw-br-separator">›</span></li>
                     <li>
-                        <span class="dsgt-breadcrumb-item dsgt-br-active">
+                        <span class="sw-breadcrumb-item sw-br-active">
                             <i class="fa-solid fa-box"></i> Details
                         </span>
                     </li>
                 </ol>
             </nav>
-            <div class="dsgt-br-helper">
+            <div class="sw-br-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Each item has border and hover effect - active state uses accent color
             </div>
@@ -291,9 +291,9 @@
 </div>
 
 <!-- Breadcrumb Sizes -->
-<div class="dsgt-br-section-title">
+<div class="sw-br-section-title">
     <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-    Breadcrumb Sizes <span class="dsgt-badge dsgt-badge-secondary">Sizing</span>
+    Breadcrumb Sizes <span class="sw-badge sw-badge-secondary">Sizing</span>
 </div>
 
 <div class="content-card">
@@ -309,40 +309,40 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-br-example">
-            <span class="dsgt-br-example-label">Small Size</span>
+        <div class="sw-br-example">
+            <span class="sw-br-example-label">Small Size</span>
             <nav aria-label="breadcrumb" style="margin-bottom: 20px;">
-                <ol class="dsgt-breadcrumb dsgt-breadcrumb-chevron dsgt-breadcrumb-sm">
-                    <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><a href="#" class="dsgt-breadcrumb-item">Library</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><span class="dsgt-breadcrumb-item dsgt-br-active">Data</span></li>
+                <ol class="sw-breadcrumb sw-breadcrumb-chevron sw-breadcrumb-sm">
+                    <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><a href="#" class="sw-breadcrumb-item">Library</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><span class="sw-breadcrumb-item sw-br-active">Data</span></li>
                 </ol>
             </nav>
 
-            <span class="dsgt-br-example-label">Medium Size (Default)</span>
+            <span class="sw-br-example-label">Medium Size (Default)</span>
             <nav aria-label="breadcrumb" style="margin-bottom: 20px;">
-                <ol class="dsgt-breadcrumb dsgt-breadcrumb-chevron dsgt-breadcrumb-md">
-                    <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><a href="#" class="dsgt-breadcrumb-item">Library</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><span class="dsgt-breadcrumb-item dsgt-br-active">Data</span></li>
+                <ol class="sw-breadcrumb sw-breadcrumb-chevron sw-breadcrumb-md">
+                    <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><a href="#" class="sw-breadcrumb-item">Library</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><span class="sw-breadcrumb-item sw-br-active">Data</span></li>
                 </ol>
             </nav>
 
-            <span class="dsgt-br-example-label">Large Size</span>
+            <span class="sw-br-example-label">Large Size</span>
             <nav aria-label="breadcrumb">
-                <ol class="dsgt-breadcrumb dsgt-breadcrumb-chevron dsgt-breadcrumb-lg">
-                    <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><a href="#" class="dsgt-breadcrumb-item">Library</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><span class="dsgt-breadcrumb-item dsgt-br-active">Data</span></li>
+                <ol class="sw-breadcrumb sw-breadcrumb-chevron sw-breadcrumb-lg">
+                    <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><a href="#" class="sw-breadcrumb-item">Library</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><span class="sw-breadcrumb-item sw-br-active">Data</span></li>
                 </ol>
             </nav>
-            <div class="dsgt-br-helper">
+            <div class="sw-br-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Use SM for compact UI, MD for general use, LG for emphasis
             </div>
@@ -351,12 +351,12 @@
 </div>
 
 <!-- Breadcrumb with Icons -->
-<div class="dsgt-br-section-title">
+<div class="sw-br-section-title">
     <i class="fa-solid fa-icons"></i>
-    Breadcrumb with Icons <span class="dsgt-badge dsgt-badge-primary">Enhanced</span>
+    Breadcrumb with Icons <span class="sw-badge sw-badge-primary">Enhanced</span>
 </div>
 
-<div class="dsgt-breadcrumb-grid">
+<div class="sw-breadcrumb-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -370,36 +370,36 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-br-example">
-                <span class="dsgt-br-example-label">Icon-Rich Breadcrumb</span>
+            <div class="sw-br-example">
+                <span class="sw-br-example-label">Icon-Rich Breadcrumb</span>
                 <nav aria-label="breadcrumb">
-                    <ol class="dsgt-breadcrumb dsgt-breadcrumb-chevron dsgt-breadcrumb-with-icons">
+                    <ol class="sw-breadcrumb sw-breadcrumb-chevron sw-breadcrumb-with-icons">
                         <li>
-                            <a href="#" class="dsgt-breadcrumb-item">
+                            <a href="#" class="sw-breadcrumb-item">
                                 <i class="fa-solid fa-house"></i> Home
                             </a>
                         </li>
-                        <li><span class="dsgt-br-separator"></span></li>
+                        <li><span class="sw-br-separator"></span></li>
                         <li>
-                            <a href="#" class="dsgt-breadcrumb-item">
+                            <a href="#" class="sw-breadcrumb-item">
                                 <i class="fa-solid fa-users"></i> Users
                             </a>
                         </li>
-                        <li><span class="dsgt-br-separator"></span></li>
+                        <li><span class="sw-br-separator"></span></li>
                         <li>
-                            <a href="#" class="dsgt-breadcrumb-item">
+                            <a href="#" class="sw-breadcrumb-item">
                                 <i class="fa-solid fa-user-circle"></i> Profile
                             </a>
                         </li>
-                        <li><span class="dsgt-br-separator"></span></li>
+                        <li><span class="sw-br-separator"></span></li>
                         <li>
-                            <span class="dsgt-breadcrumb-item dsgt-br-active">
+                            <span class="sw-breadcrumb-item sw-br-active">
                                 <i class="fa-solid fa-gear"></i> Settings
                             </span>
                         </li>
                     </ol>
                 </nav>
-                <div class="dsgt-br-helper">
+                <div class="sw-br-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Icons improve visual recognition of each section
                 </div>
@@ -420,20 +420,20 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-br-example">
-                <span class="dsgt-br-example-label">Color-Coded Levels</span>
+            <div class="sw-br-example">
+                <span class="sw-br-example-label">Color-Coded Levels</span>
                 <nav aria-label="breadcrumb">
-                    <ol class="dsgt-breadcrumb dsgt-breadcrumb-chevron dsgt-breadcrumb-colored">
-                        <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
-                        <li><span class="dsgt-br-separator"></span></li>
-                        <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-box"></i> Products</a></li>
-                        <li><span class="dsgt-br-separator"></span></li>
-                        <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-laptop"></i> Electronics</a></li>
-                        <li><span class="dsgt-br-separator"></span></li>
-                        <li><span class="dsgt-breadcrumb-item dsgt-br-active"><i class="fa-solid fa-mobile"></i> Mobile</span></li>
+                    <ol class="sw-breadcrumb sw-breadcrumb-chevron sw-breadcrumb-colored">
+                        <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><span class="sw-br-separator"></span></li>
+                        <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-box"></i> Products</a></li>
+                        <li><span class="sw-br-separator"></span></li>
+                        <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-laptop"></i> Electronics</a></li>
+                        <li><span class="sw-br-separator"></span></li>
+                        <li><span class="sw-breadcrumb-item sw-br-active"><i class="fa-solid fa-mobile"></i> Mobile</span></li>
                     </ol>
                 </nav>
-                <div class="dsgt-br-helper">
+                <div class="sw-br-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Each level has distinct color for better hierarchy visualization
                 </div>
@@ -443,12 +443,12 @@
 </div>
 
 <!-- Breadcrumb in Context -->
-<div class="dsgt-br-section-title">
+<div class="sw-br-section-title">
     <i class="fa-solid fa-eye"></i>
-    Breadcrumb in Context <span class="dsgt-badge dsgt-badge-info">Real-world</span>
+    Breadcrumb in Context <span class="sw-badge sw-badge-info">Real-world</span>
 </div>
 
-<div class="dsgt-breadcrumb-grid">
+<div class="sw-breadcrumb-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -462,28 +462,28 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-br-example">
-                <span class="dsgt-br-example-label">E-commerce Product Page</span>
-                <div class="dsgt-br-context-card">
-                    <div class="dsgt-br-context-header">
+            <div class="sw-br-example">
+                <span class="sw-br-example-label">E-commerce Product Page</span>
+                <div class="sw-br-context-card">
+                    <div class="sw-br-context-header">
                         <nav aria-label="breadcrumb">
-                            <ol class="dsgt-breadcrumb dsgt-breadcrumb-chevron">
-                                <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
-                                <li><span class="dsgt-br-separator"></span></li>
-                                <li><a href="#" class="dsgt-breadcrumb-item">Shop</a></li>
-                                <li><span class="dsgt-br-separator"></span></li>
-                                <li><a href="#" class="dsgt-breadcrumb-item">Electronics</a></li>
-                                <li><span class="dsgt-br-separator"></span></li>
-                                <li><span class="dsgt-breadcrumb-item dsgt-br-active">Product Details</span></li>
+                            <ol class="sw-breadcrumb sw-breadcrumb-chevron">
+                                <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
+                                <li><span class="sw-br-separator"></span></li>
+                                <li><a href="#" class="sw-breadcrumb-item">Shop</a></li>
+                                <li><span class="sw-br-separator"></span></li>
+                                <li><a href="#" class="sw-breadcrumb-item">Electronics</a></li>
+                                <li><span class="sw-br-separator"></span></li>
+                                <li><span class="sw-breadcrumb-item sw-br-active">Product Details</span></li>
                             </ol>
                         </nav>
                     </div>
-                    <div class="dsgt-br-context-body">
+                    <div class="sw-br-context-body">
                         <h3 style="margin: 0 0 8px 0;">Product Name Here</h3>
                         <p style="color: var(--text-secondary); margin: 0;">Page content goes here with breadcrumb navigation above</p>
                     </div>
                 </div>
-                <div class="dsgt-br-helper">
+                <div class="sw-br-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Breadcrumb in header section with content below
                 </div>
@@ -504,36 +504,36 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="dsgt-br-example">
-                <span class="dsgt-br-example-label">File System Navigation</span>
+            <div class="sw-br-example">
+                <span class="sw-br-example-label">File System Navigation</span>
                 <nav aria-label="breadcrumb">
-                    <ol class="dsgt-breadcrumb dsgt-breadcrumb-card">
+                    <ol class="sw-breadcrumb sw-breadcrumb-card">
                         <li>
-                            <a href="#" class="dsgt-breadcrumb-item">
+                            <a href="#" class="sw-breadcrumb-item">
                                 <i class="fa-solid fa-hard-drive"></i> My Drive
                             </a>
                         </li>
-                        <li><span class="dsgt-br-separator">›</span></li>
+                        <li><span class="sw-br-separator">›</span></li>
                         <li>
-                            <a href="#" class="dsgt-breadcrumb-item">
+                            <a href="#" class="sw-breadcrumb-item">
                                 <i class="fa-solid fa-folder"></i> Documents
                             </a>
                         </li>
-                        <li><span class="dsgt-br-separator">›</span></li>
+                        <li><span class="sw-br-separator">›</span></li>
                         <li>
-                            <a href="#" class="dsgt-breadcrumb-item">
+                            <a href="#" class="sw-breadcrumb-item">
                                 <i class="fa-solid fa-folder"></i> Projects
                             </a>
                         </li>
-                        <li><span class="dsgt-br-separator">›</span></li>
+                        <li><span class="sw-br-separator">›</span></li>
                         <li>
-                            <span class="dsgt-breadcrumb-item dsgt-br-active">
+                            <span class="sw-breadcrumb-item sw-br-active">
                                 <i class="fa-solid fa-folder-open"></i> Current Project
                             </span>
                         </li>
                     </ol>
                 </nav>
-                <div class="dsgt-br-helper">
+                <div class="sw-br-helper">
                     <i class="fa-solid fa-circle-info"></i>
                     Perfect for file managers and document management systems
                 </div>
@@ -543,7 +543,7 @@
 </div>
 
 <!-- Alignment Options -->
-<div class="dsgt-br-section-title">
+<div class="sw-br-section-title">
     <i class="fa-solid fa-align-center"></i>
     Alignment Options
 </div>
@@ -561,40 +561,40 @@
         </div>
     </div>
     <div class="card-body">
-        <div class="dsgt-br-example">
-            <span class="dsgt-br-example-label">Left Aligned (Default)</span>
+        <div class="sw-br-example">
+            <span class="sw-br-example-label">Left Aligned (Default)</span>
             <nav aria-label="breadcrumb" style="margin-bottom: 20px;">
-                <ol class="dsgt-breadcrumb dsgt-breadcrumb-chevron">
-                    <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><a href="#" class="dsgt-breadcrumb-item">Products</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><span class="dsgt-breadcrumb-item dsgt-br-active">Current</span></li>
+                <ol class="sw-breadcrumb sw-breadcrumb-chevron">
+                    <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><a href="#" class="sw-breadcrumb-item">Products</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><span class="sw-breadcrumb-item sw-br-active">Current</span></li>
                 </ol>
             </nav>
 
-            <span class="dsgt-br-example-label">Center Aligned</span>
+            <span class="sw-br-example-label">Center Aligned</span>
             <nav aria-label="breadcrumb" style="margin-bottom: 20px;">
-                <ol class="dsgt-breadcrumb dsgt-breadcrumb-chevron dsgt-breadcrumb-centered">
-                    <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><a href="#" class="dsgt-breadcrumb-item">Products</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><span class="dsgt-breadcrumb-item dsgt-br-active">Current</span></li>
+                <ol class="sw-breadcrumb sw-breadcrumb-chevron sw-breadcrumb-centered">
+                    <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><a href="#" class="sw-breadcrumb-item">Products</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><span class="sw-breadcrumb-item sw-br-active">Current</span></li>
                 </ol>
             </nav>
 
-            <span class="dsgt-br-example-label">Right Aligned</span>
+            <span class="sw-br-example-label">Right Aligned</span>
             <nav aria-label="breadcrumb">
-                <ol class="dsgt-breadcrumb dsgt-breadcrumb-chevron dsgt-breadcrumb-right">
-                    <li><a href="#" class="dsgt-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><a href="#" class="dsgt-breadcrumb-item">Products</a></li>
-                    <li><span class="dsgt-br-separator"></span></li>
-                    <li><span class="dsgt-breadcrumb-item dsgt-br-active">Current</span></li>
+                <ol class="sw-breadcrumb sw-breadcrumb-chevron sw-breadcrumb-right">
+                    <li><a href="#" class="sw-breadcrumb-item"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><a href="#" class="sw-breadcrumb-item">Products</a></li>
+                    <li><span class="sw-br-separator"></span></li>
+                    <li><span class="sw-breadcrumb-item sw-br-active">Current</span></li>
                 </ol>
             </nav>
-            <div class="dsgt-br-helper">
+            <div class="sw-br-helper">
                 <i class="fa-solid fa-circle-info"></i>
                 Use flexbox utilities for alignment control
             </div>
@@ -603,12 +603,12 @@
 </div>
 
 <!-- Usage Guide -->
-<div class="dsgt-br-section-title">
+<div class="sw-br-section-title">
     <i class="fa-solid fa-code"></i>
     Usage & Best Practices
 </div>
 
-<div class="dsgt-breadcrumb-grid">
+<div class="sw-breadcrumb-grid">
     <div class="content-card">
         <div class="card-header">
             <div class="card-header-left">
@@ -692,23 +692,23 @@
 @push('scripts')
 <script>
 /**
- * DSGT Metro Template - Breadcrumb Page
+ * SW Metro Template - Breadcrumb Page
  * Uses global MetroAdmin breadcrumb functions from app.js
  */
 
 // Initialize on page load
 $(document).ready(function() {
-    console.log('✨ DSGT Metro Template - Breadcrumb page loaded successfully');
+    console.log('✨ SW Metro Template - Breadcrumb page loaded successfully');
     console.log('💡 Dynamic breadcrumb generator ready');
     
     // Breadcrumb generation buttons
-    $('.dsgt-breadcrumb-demo-controls .btn').on('click', function() {
+    $('.sw-breadcrumb-demo-controls .btn').on('click', function() {
         const type = $(this).data('type') || 'default';
         
         if (type === 'clear') {
-            MetroAdmin.clearAllBreadcrumbs('dsgtDynamicBreadcrumbContainer');
+            MetroAdmin.clearAllBreadcrumbs('swDynamicBreadcrumbContainer');
         } else {
-            MetroAdmin.addDynamicBreadcrumb(type, 'dsgtDynamicBreadcrumbContainer');
+            MetroAdmin.addDynamicBreadcrumb(type, 'swDynamicBreadcrumbContainer');
         }
     });
 });
