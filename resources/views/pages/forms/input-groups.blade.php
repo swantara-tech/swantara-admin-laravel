@@ -800,30 +800,54 @@
             <div class="ig-example">
                 <label class="ig-label">Advanced Search</label>
                 <div class="input-group">
-                    <div class="dropdown input-group-dropdown">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dsgt-dropdown input-group-dropdown">
+                        <button type="button" class="btn btn-dropdown dsgt-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <span>Contains</span>
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" data-value="contains"><i class="fa-solid fa-percent"></i> Contains</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="equals"><i class="fa-solid fa-equals"></i> Equals</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="starts"><i class="fa-solid fa-arrow-right"></i> Starts With</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="ends"><i class="fa-solid fa-arrow-left"></i> Ends With</a></li>
-                        </ul>
+                        <div class="dsgt-dropdown-menu">
+                            <a href="#" class="dsgt-dropdown-item" data-value="contains">
+                                <i class="fa-solid fa-percent"></i>
+                                <span>Contains</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="equals">
+                                <i class="fa-solid fa-equals"></i>
+                                <span>Equals</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="starts">
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <span>Starts With</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="ends">
+                                <i class="fa-solid fa-arrow-left"></i>
+                                <span>Ends With</span>
+                            </a>
+                        </div>
                     </div>
                     <input type="text" class="form-control" placeholder="Search term...">
-                    <div class="dropdown input-group-dropdown">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dsgt-dropdown input-group-dropdown">
+                        <button type="button" class="btn btn-dropdown dsgt-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
                             <i class="fa-solid fa-folder"></i>
                             <span>All Fields</span>
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" data-value="all"><i class="fa-solid fa-layer-group"></i> All Fields</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="name"><i class="fa-solid fa-user"></i> Name</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="email"><i class="fa-solid fa-envelope"></i> Email</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="phone"><i class="fa-solid fa-phone"></i> Phone</a></li>
-                        </ul>
+                        <div class="dsgt-dropdown-menu">
+                            <a href="#" class="dsgt-dropdown-item" data-value="all">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <span>All Fields</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="name">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Name</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="phone">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>Phone</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -831,28 +855,45 @@
             <div class="ig-example">
                 <label class="ig-label">Price Range</label>
                 <div class="input-group">
-                    <div class="dropdown input-group-dropdown">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dsgt-dropdown input-group-dropdown">
+                        <button type="button" class="btn btn-dropdown dsgt-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
                             <i class="fa-solid fa-dollar-sign"></i>
                             <span>USD</span>
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" data-value="USD"><i class="fa-solid fa-dollar-sign"></i> USD</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="EUR"><i class="fa-solid fa-euro-sign"></i> EUR</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="IDR"><i class="fa-solid fa-rupiah-sign"></i> IDR</a></li>
-                        </ul>
+                        <div class="dsgt-dropdown-menu">
+                            <a href="#" class="dsgt-dropdown-item" data-value="USD">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <span>USD</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="EUR">
+                                <i class="fa-solid fa-euro-sign"></i>
+                                <span>EUR</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="IDR">
+                                <i class="fa-solid fa-rupiah-sign"></i>
+                                <span>IDR</span>
+                            </a>
+                        </div>
                     </div>
                     <input type="number" class="form-control" placeholder="0">
-                    <div class="dropdown input-group-dropdown">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dsgt-dropdown input-group-dropdown">
+                        <button type="button" class="btn btn-dropdown dsgt-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
                             <span>per unit</span>
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" data-value="unit">per unit</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="kg">per kg</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="hour">per hour</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="month">per month</a></li>
-                        </ul>
+                        <div class="dsgt-dropdown-menu">
+                            <a href="#" class="dsgt-dropdown-item" data-value="unit">
+                                <span>per unit</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="kg">
+                                <span>per kg</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="hour">
+                                <span>per hour</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="month">
+                                <span>per month</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -860,28 +901,46 @@
             <div class="ig-example">
                 <label class="ig-label">Date Range Filter</label>
                 <div class="input-group">
-                    <div class="dropdown input-group-dropdown">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dsgt-dropdown input-group-dropdown">
+                        <button type="button" class="btn btn-dropdown dsgt-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
                             <i class="fa-solid fa-calendar"></i>
                             <span>From</span>
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" data-value="from"><i class="fa-solid fa-calendar-day"></i> From Date</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="to"><i class="fa-solid fa-calendar-check"></i> To Date</a></li>
-                        </ul>
+                        <div class="dsgt-dropdown-menu">
+                            <a href="#" class="dsgt-dropdown-item" data-value="from">
+                                <i class="fa-solid fa-calendar-day"></i>
+                                <span>From Date</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="to">
+                                <i class="fa-solid fa-calendar-check"></i>
+                                <span>To Date</span>
+                            </a>
+                        </div>
                     </div>
                     <input type="date" class="form-control">
-                    <div class="dropdown input-group-dropdown">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dsgt-dropdown input-group-dropdown">
+                        <button type="button" class="btn btn-dropdown dsgt-dropdown-trigger" onclick="MetroAdmin.toggleDropdown(this)">
                             <i class="fa-solid fa-clock"></i>
                             <span>Today</span>
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#" data-value="today">Today</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="yesterday">Yesterday</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="week">This Week</a></li>
-                            <li><a class="dropdown-item" href="#" data-value="month">This Month</a></li>
-                        </ul>
+                        <div class="dsgt-dropdown-menu">
+                            <a href="#" class="dsgt-dropdown-item" data-value="today">
+                                <i class="fa-solid fa-calendar-day"></i>
+                                <span>Today</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="yesterday">
+                                <i class="fa-solid fa-calendar-week"></i>
+                                <span>Yesterday</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="week">
+                                <i class="fa-solid fa-calendar-week"></i>
+                                <span>This Week</span>
+                            </a>
+                            <a href="#" class="dsgt-dropdown-item" data-value="month">
+                                <i class="fa-solid fa-calendar-alt"></i>
+                                <span>This Month</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
